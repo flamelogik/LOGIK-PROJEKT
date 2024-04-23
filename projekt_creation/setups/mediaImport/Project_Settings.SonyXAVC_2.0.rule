@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule>
+	<header>
+		<version>1</version>
+		<name>Project_Settings</name>
+		<type>0</type>
+	</header>
+	<data>
+		<name>SonyXAVC</name>
+		<version>2</version>
+		<longName>SonyXAVC</longName>
+		<options type="dict">
+			<ClipNameMode type="string">FileName</ClipNameMode>
+			<ClipNameValue type="string">Untitled</ClipNameValue>
+			<InputColourSpace type="string">Unknown</InputColourSpace>
+			<SourceNameDirLevelUp type="uint32">1</SourceNameDirLevelUp>
+			<SourceNameMode type="string">Header</SourceNameMode>
+			<SourceNameValue type="string">IMPORT</SourceNameValue>
+			<YUVColourSpace type="string">Auto</YUVColourSpace>
+			<YUVHeadroom type="int">-1</YUVHeadroom>
+		</options>
+	</data>
+</rule>

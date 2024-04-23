@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule>
+	<header>
+		<version>1</version>
+		<name>Project_Settings</name>
+		<type>0</type>
+	</header>
+	<data>
+		<name>OpenEXR</name>
+		<version>8</version>
+		<longName>OpenEXR</longName>
+		<options type="dict">
+			<DefaultChannelId type="string">Beauty</DefaultChannelId>
+			<DropMode type="string">Header</DropMode>
+			<FileSequence type="bool">true</FileSequence>
+			<InputColourSpace type="string">Unknown</InputColourSpace>
+			<PartsIndexing type="bool">true</PartsIndexing>
+			<PrependPartName type="bool">true</PrependPartName>
+			<RGBAFirst type="bool">true</RGBAFirst>
+			<RateMode type="string">Header</RateMode>
+			<RateValue type="rate">
+				<numerator>24000</numerator>
+				<denominator>1001</denominator>
+			</RateValue>
+			<SourceNameDirLevelUp type="uint32">3</SourceNameDirLevelUp>
+			<SourceNameMode type="string" label="Tape Name from Directory">Directory</SourceNameMode>
+			<SourceNameValue type="string">IMPORT</SourceNameValue>
+			<TimecodeMode type="string">Header</TimecodeMode>
+			<TimecodeValue type="time" label="0">
+				<rate/>
+				<nbTicks>0</nbTicks>
+				<dropMode>NDF</dropMode>
+			</TimecodeValue>
+			<TrackNameMode type="string">Channel</TrackNameMode>
+			<Window type="string">Display</Window>
+		</options>
+	</data>
+</rule>

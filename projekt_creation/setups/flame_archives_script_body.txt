@@ -1,0 +1,632 @@
+#!/bin/bash
+
+# -------------------------------------------------------------------------- #
+
+# Set the umask to 0
+umask 0
+
+# ========================================================================== #
+# This section echoes stderr to the shell or quits on error.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# Write stderr to shell (-x) & exit upon failure (-e). 
+# set -ex
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines script info, job info & software details.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# Archive Script Name:  ARCHIVE_SCRIPT_NAME
+# Archive Script for:   ARCHIVE_SCRIPT_PROJECT
+# Script Creation Date: SCRIPT_CREATION_DATE
+
+mmm_job_name_prefix="MMM_JOB_NAME_PREFIX"
+
+mmm_job_name_suffix="MMM_JOB_NAME_SUFFIX"
+
+mmm_job_name="MMM_JOB_NAME"
+
+flame_software_version="FLAME_SOFTWARE_VERSION"
+
+flame_workstation_name="FLAME_WORKSTATION"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section creates decorative separators for blocks of text.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# Define a variable called 'separator'
+separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
+
+# The inner printf command printf -- '=%.0s' {1..75} generates 75 '-' symbols.
+# The output is then passed as an argument '%s'to the outer printf command.
+# The outer printf command encloses the string with '# ' and ' #'.
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines a variable for the path to the running program.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# Define the path to the current script in a variable called 'path_to_here'
+path_to_here=$(cd $(dirname "$0") && pwd)
+
+# change directory to path_to_here
+cd $path_to_here
+
+# echo 'path_to_here' to the shell
+echo -e "The path to this script is:"
+echo -e "  $path_to_here"
+
+# ========================================================================== #
+# This section defines variables based on the date.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# Current Date & Time Options
+current_datetime=$(date "+%Y-%m-%d %H:%M:%S")
+today=$(date "+%Y-%m-%d")
+yesterday=$(date -v -1d "+%Y-%m-%d" 2>/dev/null \
+    || date -d "yesterday" "+%Y-%m-%d")
+tomorrow=$(date -v +1d "+%Y-%m-%d" 2>/dev/null \
+    || date -d "tomorrow" "+%Y-%m-%d")
+
+# -------------------------------------------------------------------------- #
+
+# Custom Date & Time Options
+now_h_m_s=$(date "+%H:%M:%S")
+now_h_m=$(date "+%H-%M")
+today_now=$(date "+%F_%H-%M")
+TODAY="$today"
+NOW="$now_h_m_s"
+
+# -------------------------------------------------------------------------- #
+
+# Year Options
+year_with_century=$(date "+%Y")
+year_without_century=$(date "+%y")
+YYYY=$year_with_century
+
+# -------------------------------------------------------------------------- #
+
+# Month Options
+month=$(date "+%m")
+month_full=$(date "+%B")
+month_abbrev=$(date "+%b")
+MM=$month
+
+# -------------------------------------------------------------------------- #
+
+# Day Options
+day=$(date "+%d")
+day_of_year=$(date "+%j")
+day_of_week=$(date "+%w")
+DD=$day
+
+# -------------------------------------------------------------------------- #
+
+# Time Options
+hour_24=$(date "+%H")
+hour_12=$(date "+%I")
+minute=$(date "+%M")
+second=$(date "+%S")
+
+# -------------------------------------------------------------------------- #
+
+# Other Options
+weekday_full=$(date "+%A")
+weekday_abbrev=$(date "+%a")
+week_number_sunday=$(date "+%U")
+week_number_monday=$(date "+%W")
+timezone_name=$(date "+%Z")
+timezone_offset=$(date "+%z")
+unix_timestamp=$(date "+%s")
+nanoseconds=$(date "+%N")
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section collects username, group memberships, & system info.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# Get username, primary group and group memberships.
+current_user="$USER"
+primary_group="$(id -gn)"
+all_groups="$(groups | tr ' ' ',' | sed 's/,/, /g')"
+
+# -------------------------------------------------------------------------- #
+
+# Determine the operating system
+if [[ "$(uname)" == "Darwin" ]]; then
+    # macOS
+    operating_system="macOS"
+
+elif [[ "$(uname)" == "Linux" ]]; then
+    # Linux
+    operating_system="Linux"
+
+else
+    # Default to a common directory if the OS is not recognized
+    echo -e "\n$separator\n"
+    echo -e "  Unsupported operating system."
+    echo -e "\n$separator\n"
+    exit 1
+fi
+
+# -------------------------------------------------------------------------- #
+
+# Get the workstation name
+if [[ "$operating_system" == "macOS" ]]; then
+    # For macOS
+    workstation_name=$(scutil --get ComputerName)
+elif [[ "$operating_system" == "Linux" ]]; then
+    # For Linux
+    workstation_name=$(hostname)
+else
+    # Default to a generic name if the OS is not recognized
+    workstation_name="UnknownWorkstation"
+fi
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section sets UID information.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# set the flame_archive_uid to the current user
+# flame_archive_uid="$current_user"
+
+# echo ${flame_archive_uid} to the shell
+# echo -e "flame_archive_uid:"
+# echo -e "  ${flame_archive_uid}"
+
+# echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section sets GID information.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# if [[ "$mmm_job_name_prefix" == "secure" ]]; then
+#   if getent group "$mmm_job_name" >/dev/null; then
+#     flame_archive_gid="$mmm_job_name"
+#   else
+#     flame_archive_gid="$primary_group"
+#   fi
+# else
+#   flame_archive_gid="$primary_group"
+# fi
+
+# echo ${flame_archive_gid} to the shell
+# echo -e "flame_archive_gid:"
+# echo -e "  ${flame_archive_gid}"
+
+# echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines path info for mmm_job directories.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# set the path for the mmm_root_directory
+mmm_root_directory=\
+"/JOBS"
+
+# echo ${mmm_root_directory} to the shell
+echo -e "mmm_root_directory:"
+echo -e "  ${mmm_root_directory}"
+
+# set the path for the mmm_job_directory
+mmm_job_directory=\
+"${mmm_root_directory}/${mmm_job_name}"
+
+# echo ${mmm_job_directory} to the shell
+echo -e "mmm_job_directory:"
+echo -e "  ${mmm_job_directory}"
+
+# set the path for the mmm_job_flame_archives_directory
+mmm_job_flame_archives_directory=\
+"${mmm_job_directory}/flame/archives"
+
+# echo ${mmm_job_flame_archives_directory} to the shell
+echo -e "mmm_job_flame_archives_directory:"
+echo -e "  ${mmm_job_flame_archives_directory}"
+
+# Make ${mmm_job_flame_archives_directory} if it doesn't exist
+mkdir -p -m 777 "${mmm_job_flame_archives_directory}"
+
+echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines path information for root directories.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# set the path for the flame_archives_directory
+flame_archives_directory=\
+"/ARCHIVE/flame_archives"
+
+# echo ${flame_archives_directory} to the shell
+echo -e "flame_archives_directory:"
+echo -e "  ${flame_archives_directory}"
+
+# set the path for the flame_archives_metadata_directory
+flame_archives_metadata_directory=\
+"/ARCHIVE/flame_archives_metadata"
+
+# echo ${flame_archives_metadata_directory} to the shell
+echo -e "flame_archives_metadata_directory:"
+echo -e "  ${flame_archives_metadata_directory}"
+
+# set the flame_project_archives_directory
+flame_project_archives_directory=\
+"${flame_archives_directory}/project_archives"
+
+# echo ${flame_project_archives_directory} to the shell
+echo -e "flame_project_archives_directory:"
+echo -e "  ${flame_project_archives_directory}"
+
+echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines variables using flame_project_full_name.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# set the flame_project_full_name
+flame_project_full_name=\
+"${mmm_job_name}\
+_${flame_software_version}\
+_${flame_workstation_name}"
+
+# echo ${flame_project_full_name} to the shell
+echo -e "flame_project_full_name:"
+echo -e "  ${flame_project_full_name}"
+
+echo -e "$separator"
+
+# set the flame_archive_full_name
+flame_archive_full_name=\
+"${mmm_job_name}\
+_${flame_workstation_name}\
+_archive"
+
+# echo ${flame_archive_full_name} to the shell
+echo -e "flame_archive_full_name:"
+echo -e "  ${flame_archive_full_name}"
+
+# set the path for the flame_archive_full_name_directory
+flame_archive_full_name_directory=\
+"${mmm_job_flame_archives_directory}/$flame_workstation_name"
+
+# echo ${flame_archive_full_name_directory} to the shell
+echo -e "flame_archive_full_name_directory:"
+echo -e "  ${flame_archive_full_name_directory}"
+
+# create flame_archive_full_name_directory if it doesn't exist
+mkdir -p -m 777 "${flame_archive_full_name_directory}"
+
+# set the path for the flame_archive_full_name_path
+flame_archive_full_name_path=\
+"${flame_archive_full_name_directory}/$flame_archive_full_name"
+
+# echo ${flame_archive_full_name_path} to the shell
+echo -e "flame_archive_full_name_path:"
+echo -e "  ${flame_archive_full_name_path}"
+
+echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines variables using flame_project_nickname.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# set the flame_project_nickname
+flame_project_nickname=\
+"${mmm_job_name}"
+
+# echo ${flame_project_nickname} to the shell
+echo -e "flame_project_nickname:"
+echo -e "  ${flame_project_nickname}"
+
+echo -e "$separator"
+
+# set the flame_archive_nickname
+flame_archive_nickname=\
+"${mmm_job_name}\
+_shared\
+_archive"
+
+# echo ${flame_archive_nickname} to the shell
+echo -e "flame_archive_nickname:"
+echo -e "  ${flame_archive_nickname}"
+
+# set the path for the flame_archive_full_name_directory
+flame_archive_nickname_directory=\
+"${mmm_job_flame_archives_directory}/shared" # FIX GENERIC DIRECTORY NAME?
+
+# echo ${flame_archive_nickname_directory} to the shell
+echo -e "flame_archive_nickname_directory:"
+echo -e "  ${flame_archive_nickname_directory}"
+
+# create flame_archive_full_name_directory if it doesn't exist
+mkdir -p -m 777 "${flame_archive_nickname_directory}"
+
+# set the path for the flame_archive_nickname_path
+flame_archive_nickname_path=\
+"${flame_archive_nickname_directory}/$flame_archive_nickname" # ANOTHER FIX?
+
+# echo ${flame_archive_nickname_path} to the shell
+echo -e "flame_archive_nickname_path:"
+echo -e "  ${flame_archive_nickname_path}"
+
+echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines path info for workstation-specific TOC directories.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# set flame_archive_full_name_toc_directory
+flame_archive_full_name_toc_directory=\
+"$flame_archive_full_name_directory/table_of_contents"
+
+# echo ${flame_archive_full_name_toc_directory} to the shell
+echo -e "flame_archive_full_name_toc_directory:"
+echo -e "  ${flame_archive_full_name_toc_directory}"
+
+# create flame_archive_full_name_toc_directory if it doesn't exist
+mkdir -p -m 777 "${flame_archive_full_name_toc_directory}"
+
+# set flame_archive_full_name_toc_path
+flame_archive_full_name_toc_path=\
+"${flame_archive_full_name_toc_directory}/${flame_archive_full_name}"
+
+# echo ${flame_archive_full_name_toc_path} to the shell
+echo -e "flame_archive_full_name_toc_path:"
+echo -e "  ${flame_archive_full_name_toc_path}"
+
+echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section defines path info for shared TOC directories.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# set flame_archive_nickname_toc_directory
+flame_archive_nickname_toc_directory=\
+"$flame_archive_nickname_directory/table_of_contents"
+
+# echo ${flame_archive_nickname_toc_directory} to the shell
+echo -e "flame_archive_nickname_toc_directory:"
+echo -e "  ${flame_archive_nickname_toc_directory}"
+
+# create flame_archive_nickname_toc_directory if it doesn't exist
+mkdir -p -m 777 "${flame_archive_nickname_toc_directory}"
+
+# set flame_archive_nickname_toc_path
+flame_archive_nickname_toc_path=\
+"${flame_archive_nickname_toc_directory}/${flame_archive_nickname}"
+
+# echo ${flame_archive_nickname_toc_path} to the shell
+echo -e "flame_archive_nickname_toc_path:"
+echo -e "  ${flame_archive_nickname_toc_path}"
+
+echo -e "$separator"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section checks for a workstation-specific flame archive.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# check for the existence of the archive and create it if necessary
+if [ ! -f "$flame_archive_full_name_path" ]; then
+  # Create a flame file archive (-f) with the following parameters:
+  /opt/Autodesk/io/bin/flame_archive \
+  -f \
+  -F "$flame_archive_full_name_path" \
+  -A "$flame_archive_full_name_toc_directory" \
+  -T \
+  -n "${flame_archive_full_name}" \
+  -i 25 \
+  -v
+fi
+  # -G "${flame_archive_gid}" \
+
+# -------------------------------------------------------------------------- #
+
+# check if the archive version is current and update it if necessary
+if [ -f "$flame_archive_full_name_path" ]; then
+  # Update a flame file archive (-f) with the following parameters:
+  /opt/Autodesk/io/bin/flame_archive \
+  -c \
+  -v \
+  -F "$flame_archive_full_name_path"
+fi
+  # -G "${flame_archive_gid}" \
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section checks for a shared flame archive.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# check for the existence of the archive and create it if necessary
+if [ ! -f "$flame_archive_nickname_path" ]; then
+  # Create a flame file archive (-f) with the following parameters:
+  /opt/Autodesk/io/bin/flame_archive \
+  -f \
+  -F "$flame_archive_nickname_path" \
+  -A "$flame_archive_nickname_toc_directory" \
+  -T \
+  -n "${flame_archive_nickname}" \
+  -i 25 \
+  -v
+fi
+  # -G "${flame_archive_gid}" \
+
+# -------------------------------------------------------------------------- #
+
+# check if the archive version is current and update it if necessary
+if [ -f "$flame_archive_nickname_path" ]; then
+  # Update a flame file archive (-f) with the following parameters:
+  /opt/Autodesk/io/bin/flame_archive \
+  -c \
+  -v \
+  -F "$flame_archive_nickname_path"
+fi
+  # -G "${flame_archive_gid}" \
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section opens a workstation-specific flame archive & appends changes.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# open the archive and append the project to it
+/opt/Autodesk/io/bin/flame_archive \
+-a "${flame_project_full_name}_${TODAY}_${NOW}" \
+-k \
+-g \
+-O sources,renders,maps,unused \
+-A "$flame_archive_full_name_toc_directory" \
+-T \
+-b \
+-v \
+-P "$flame_project_full_name" \
+-F "$flame_archive_full_name_path"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# ========================================================================== #
+# This section opens a shared flame archive & appends changes.
+# ========================================================================== #
+
+# -------------------------------------------------------------------------- #
+
+# open the archive and append the project to it
+/opt/Autodesk/io/bin/flame_archive \
+-a "${flame_project_nickname}_${TODAY}_${NOW}" \
+-k \
+-g \
+-O sources,renders,maps,unused \
+-A "$flame_archive_nickname_toc_directory" \
+-T \
+-b \
+-v \
+-P "$flame_project_full_name" \
+-F "$flame_archive_nickname_path"
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
