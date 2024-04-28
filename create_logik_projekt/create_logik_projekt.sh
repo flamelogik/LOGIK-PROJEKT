@@ -53,7 +53,7 @@ alias_path="$script_path/$script_name"
 # -------------------------------------------------------------------------- #
 
 # Define functions_dir
-functions_dir="$script_path/sub_functions"
+functions_dir="$script_path/subprograms"
 
 # -------------------------------------------------------------------------- #
 
@@ -62,11 +62,11 @@ functions_dir="$script_path/sub_functions"
 # ========================================================================== #
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_00-docstring.sh"
+source "$functions_dir/sub_00-docstring.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_01-separators.sh"
+source "$functions_dir/sub_01-separators.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_02-environment.sh"
+source "$functions_dir/sub_02-environment.sh"
 # -------------------------------------------------------------------------- #
 
 # ========================================================================== #
@@ -94,11 +94,11 @@ if ! grep -q "alias projekt=" "$rc_filepath"; then
 fi
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_03-date_functions.sh"
+source "$functions_dir/sub_03-date_functions.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_04-titles_and_banners.sh"
+source "$functions_dir/sub_04-titles_and_banners.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_05-logging.sh"
+source "$functions_dir/sub_05-logging.sh"
 # -------------------------------------------------------------------------- #
 
 # ========================================================================== #
@@ -142,9 +142,9 @@ echo -e "  other groups:     $other_groups"
 echo -e "\n$separator\n"
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_06-init_vars.sh"
+source "$functions_dir/sub_06-init_vars.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_07-flame_info.sh"
+source "$functions_dir/sub_07-flame_info.sh"
 # -------------------------------------------------------------------------- #
 
 # ========================================================================== #
@@ -299,37 +299,37 @@ create_logik_projekt_metadata_directories_and_files
 # -------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_08-banner_01.sh"
+# source "$functions_dir/sub_08-banner_01.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_09-display_users_groups_os.sh"
+# source "$functions_dir/sub_09-display_users_groups_os.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_10-banner_02.sh"
+# source "$functions_dir/sub_10-banner_02.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_11-check_adsk.sh"
+# source "$functions_dir/sub_11-check_adsk.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_12-init_vars.sh"
+# source "$functions_dir/sub_12-init_vars.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_13-list_flame_dirs.sh"
+# source "$functions_dir/sub_13-list_flame_dirs.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_14-print_flame_dirs.sh"
+# source "$functions_dir/sub_14-print_flame_dirs.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_15-echo_flame_versions.sh"
+# source "$functions_dir/sub_15-echo_flame_versions.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_16-end_banner_02.sh"
+# source "$functions_dir/sub_16-end_banner_02.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_17-validate_input.sh"
+source "$functions_dir/sub_17-validate_input.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_18-rsync_vars.sh"
+source "$functions_dir/sub_18-rsync_vars.sh"
 # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_19-banner_03.sh"
+# source "$functions_dir/sub_19-banner_03.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_20-validate_JOBS.sh"
+# source "$functions_dir/sub_20-validate_JOBS.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_21-end_banner_03.sh"
+# source "$functions_dir/sub_21-end_banner_03.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_22-banner_04.sh"
+# source "$functions_dir/sub_22-banner_04.sh"
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_23-get_name_info.sh"
+source "$functions_dir/sub_23-get_name_info.sh"
 
 # Call the function to gather name information
 gather_name_info
@@ -339,7 +339,7 @@ write_client_info
 write_campaign_info
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_24-get_resolution_info.sh"
+source "$functions_dir/sub_24-get_resolution_info.sh"
 
 # Call the function to gather resolution information
 gather_resolution_info
@@ -347,7 +347,7 @@ gather_resolution_info
 write_depth_info
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_25-get_depth_info.sh"
+source "$functions_dir/sub_25-get_depth_info.sh"
 
 # Call the function to gather bit depth information
 gather_depth_info
@@ -355,7 +355,7 @@ gather_depth_info
 write_resolution_info
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_26-get_framerate_info.sh"
+source "$functions_dir/sub_26-get_framerate_info.sh"
 
 # Call the function to gather framerate information
 gather_framerate_info
@@ -363,7 +363,7 @@ gather_framerate_info
 write_framerate_info
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_27-get_color_science_info.sh"
+source "$functions_dir/sub_27-get_color_science_info.sh"
 
 # Call the function to gather color science information
 gather_color_science_info
@@ -371,7 +371,7 @@ gather_color_science_info
 write_color_science_info
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_28-set_start_frame.sh"
+source "$functions_dir/sub_28-set_start_frame.sh"
 
 # Call the function to get the start frame info
 get_start_frame_info
@@ -379,7 +379,7 @@ get_start_frame_info
 write_start_frame_info
 
 # -------------------------------------------------------------------------- #
-source "$functions_dir/sub_function_29-set_and_summarize_metadata.sh"
+source "$functions_dir/sub_29-set_and_summarize_metadata.sh"
 
 # Call functions to display summary, create directories, and add metadata
 display_summary
@@ -406,48 +406,48 @@ create_directories # XML directories
 # create_or_truncate_file
 # add_metadata_to_file
 # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_30-create_project.sh"
+# source "$functions_dir/sub_30-create_project.sh"
 # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_31-create_project_dirs.sh"
+# source "$functions_dir/sub_31-create_project_dirs.sh"
 
 # # Call the functions
 # create_flame_project_dir
 # create_setup_directories
 # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_32-create_job_dirs.sh"
+# source "$functions_dir/sub_32-create_job_dirs.sh"
 
 # # Call the function
 # create_job_directories
 # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_33-create_batch_project_bins.sh"
+# source "$functions_dir/sub_33-create_batch_project_bins.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_34-create_mediaImport_rules.sh"
+# source "$functions_dir/sub_34-create_mediaImport_rules.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_35-create_bookmarks.sh"
+# source "$functions_dir/sub_35-create_bookmarks.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_36-create_burn_metadata_overlays.sh"
+# source "$functions_dir/sub_36-create_burn_metadata_overlays.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_37-add_mmm_python.sh"
+# source "$functions_dir/sub_37-add_mmm_python.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_38-add_io_presets.sh"
+# source "$functions_dir/sub_38-add_io_presets.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_39-validate_color_policies.sh"
+# source "$functions_dir/sub_39-validate_color_policies.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_40-validate_color_transforms.sh"
+# source "$functions_dir/sub_40-validate_color_transforms.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_41-add_color_policy.sh"
+# source "$functions_dir/sub_41-add_color_policy.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_42-link_setup_dirs.sh"
+# source "$functions_dir/sub_42-link_setup_dirs.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_43-backup_logs.sh"
+# source "$functions_dir/sub_43-backup_logs.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_44-create_archive_script.sh"
+# source "$functions_dir/sub_44-create_archive_script.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_45-create_backup_script.sh"
+# source "$functions_dir/sub_45-create_backup_script.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_46-end_banner_04.sh"
+# source "$functions_dir/sub_46-end_banner_04.sh"
 # # -------------------------------------------------------------------------- #
-# source "$functions_dir/sub_function_47-end_banner_02.sh"
+# source "$functions_dir/sub_47-end_banner_02.sh"
 # # -------------------------------------------------------------------------- #
 
 
