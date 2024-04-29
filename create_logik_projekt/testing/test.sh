@@ -3,23 +3,21 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_logik_projekts.sh
-# Version:          LATEST_VERSION
+# Version:          2.0.0
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Created:          2024-01-19
-# Modified:         YYYY-MM-DD
+# Modified:         2024-04-29
 # Modifier:         Phil MAN - phil_man@mac.com
-
-# Changelist:       CHANGE_COMMENTS
-
-# -------------------------------------------------------------------------- #
 
 # Description:      This program determines system information and collects
 #                   user input to create new logik projekts.
 
-# Installation:     Copy the 'LOGIK-PROJEKT' repo to your home directory,
+# Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
+#                   e.g. '/home/$USER/workspace/GitHub'
+
+# Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
 
@@ -439,3 +437,17 @@ echo -e "$end_banner_03\n"
 echo -e "\n\n$separator\n$separator\n$separator\n\n"
 
 # -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# ========================================================================== #
+
+# Changelist:       
+# -------------------------------------------------------------------------- #
+# version:               1.0.0
+# modified:              2024-04-20 - 16:20:00
+# comments:              refactored monolithic program into separate functions
+# -------------------------------------------------------------------------- #
+# version:               2.0.0
+# modified:              2024-04-29 - 11:29:27
+# comments:              testing production readiness

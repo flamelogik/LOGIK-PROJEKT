@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# filename: "update_master_script.sh"
-
 # -------------------------------------------------------------------------- #
 
-# Program Name:     update_master_script.sh
+# File Name:        update_changelists.sh
 # Version:          1.0.0
 # Language:         bash script
 # Flame Version:    2025.x
@@ -14,14 +12,12 @@
 # Modified:         2024-04-24
 # Modifier:         Phil MAN - phil_man@mac.com
 
-# Changelist:       
+# Description:      This program updates the docstrings and changelists.
 
-# -------------------------------------------------------------------------- #
+# Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
+#                   e.g. '/home/$USER/workspace/GitHub'
 
-# Description:      This program concatenates the subprograms into a new 
-#                   master script.
-
-# Installation:     Copy the 'LOGIK-PROJEKT' repo to your home directory,
+# Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
 
@@ -29,11 +25,15 @@
 # This section creates a decorative separator for blocks of text.
 # ========================================================================== #
 
-# Define a variable called 'separator'
+# Define a variable called 'separator'.
 separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
 
-# Display a separator
-echo -e "\n$separator\n"
+# ========================================================================== #
+# This section creates a decorative separator for blocks of code.
+# ========================================================================== #
+
+# Define a variable called 'separator_hash'.
+separator_hash=$(printf '# %s #' "$(printf -- '-%.0s' {1..74})")
 
 # ========================================================================== #
 # This section defines some date variables.
@@ -57,39 +57,27 @@ cd "$script_dir" || exit
 
 # -------------------------------------------------------------------------- #
 
-# Directory containing bash scripts
-subprograms_dir="$script_dir/../subprograms"
+# Get the parent directory
+parent_dir="$(dirname "$script_dir")"
 
-# Check if the directory exists or create it
-if [ ! -d "$subprograms_dir" ]; then
-    echo -e "  Directory '$subprograms_dir' not found.\n"
-    read -p "  Do you want to create it? [y/n]: " create_dir
-    echo -e "\n$separator\n"
-    if [ "$create_dir" = "y" ]; then
-        mkdir -p "$subprograms_dir" \
-        || { echo "Error: Unable to create directory '$subprograms_dir'."; \
-        exit 1; }
-        echo -e "\n$separator\n"
-    else
-        echo "Exiting. Directory not created."
-        exit 1
-        echo -e "\n$separator\n"
-    fi
-fi
+# Change directory to script_dir
+cd "$parent_dir" || exit
 
 # -------------------------------------------------------------------------- #
 
-# Define builds_dir
-builds_dir="$script_dir/../builds"
+# Define config_dir
+config_dir="$parent_dir/config"
+
+echo $config_dir
 
 # Check if the directory exists or create it
-if [ ! -d "$builds_dir" ]; then
-    echo -e "  Directory '$builds_dir' not found.\n"
+if [ ! -d "$config_dir" ]; then
+    echo -e "  Directory '$config_dir' not found.\n"
     read -p "  Do you want to create it? [y/n]: " create_dir
     echo -e "\n$separator\n"
     if [ "$create_dir" = "y" ]; then
-        mkdir -p "$builds_dir" \
-        || { echo "Error: Unable to create directory '$builds_dir'."; \
+        mkdir -p "$config_dir" \
+        || { echo "Error: Unable to create directory '$config_dir'."; \
         exit 1; }
         echo -e "\n$separator\n"
     else
@@ -99,19 +87,18 @@ if [ ! -d "$builds_dir" ]; then
     fi
 fi
 
-# Define output_script
-output_script_name="$today_underscore-$now_underscore-build.sh"
-output_script="$builds_dir/$output_script_name"
+# Define version_file
+version_file="$config_dir/version.json"
 
 # ========================================================================== #
 # This section reads the latest version from a JSON file.
 # ========================================================================== #
 
 # Read version information from JSON file
-major=$(jq -r '.major' version.json)
-minor=$(jq -r '.minor' version.json)
-patch=$(jq -r '.patch' version.json)
-full=$(jq -r '.full' version.json)
+major=$(jq -r '.major' $version_file)
+minor=$(jq -r '.minor' $version_file)
+patch=$(jq -r '.patch' $version_file)
+full=$(jq -r '.full' $version_file)
 
 # -------------------------------------------------------------------------- #
 
@@ -179,20 +166,10 @@ jq \
     --arg patch "$patch" \
     --arg full "$full" \
    '{major: $major, minor: $minor, patch: $patch, full: $full}' \
-   > version.json
+   > $version_file
 
 echo "  Version updated to $full"
 echo -e "\n$separator\n"
-
-# ========================================================================== #
-# This section concatenates the subprograms shell scripts.
-# ========================================================================== #
-
-# List bash scripts in the directory and sort alphabetically
-bash_scripts=$(find "$subprograms_dir" -type f -name "*.sh" | sort)
-
-# Concatenate the bash scripts into a new script
-cat $bash_scripts > "$output_script"
 
 # ========================================================================== #
 # This section prompts for a comment for the changelist.
@@ -209,23 +186,77 @@ echo -e "\n$separator\n"
 change_comments="${change_comments:0:56}"
 
 # ========================================================================== #
-# This section modfifies the newly concatenated file.
+# This section processes information for the shell scripts.
 # ========================================================================== #
 
-# Perform find and replace operations in the output script
-sed -i "s/LATEST_VERSION/$full/" "$output_script"
-sed -i "s/YYYY-MM-DD/$(date +%F)/" "$output_script"
-sed -i "s/CHANGE_COMMENTS/$change_comments/" "$output_script"
+# Directory containing bash scripts
+function_dir="$parent_dir/function"
+# function_dir="$parent_dir/testing"
+
+# Check if the directory exists or create it
+if [ ! -d "$function_dir" ]; then
+    echo -e "  Directory '$function_dir' not found.\n"
+    read -p "  Do you want to create it? [y/n]: " create_dir
+    echo -e "\n$separator\n"
+    if [ "$create_dir" = "y" ]; then
+        mkdir -p "$function_dir" \
+        || { echo "Error: Unable to create directory '$function_dir'."; \
+        exit 1; }
+        echo -e "\n$separator\n"
+    else
+        echo "Exiting. Directory not created."
+        exit 1
+        echo -e "\n$separator\n"
+    fi
+fi
+
+# List the shell scripts in $function_dir
+# function_scripts=$(find "$function_dir" -maxdepth 1 -type f -name '*.sh')
+function_scripts=$(find "$function_dir" -type f -name "*.sh" | sort)
+
+# Iterate over each shell script
+for function_script in $function_scripts; do
+    # Get the base name of the shell script
+    function_script_name=$(basename "$function_script")
+
+    # # Use sed -i to replace the line that begins '# File Name'
+    # sed -i "s/^# File Name:.*/# File Name:        $function_script_name/" "$function_script"
+
+    # Use sed -i to replace the line that begins '# Version'
+    sed -i "s/^# Version:.*/# Version:          $full/" "$function_script"
+
+    # Use sed -i to replace the line that begins '# Modified'
+    sed -i "s/^# Modified:.*/# Modified:         $(date +%F)/" "$function_script"
+
+    # Append the comment to the shell script
+    echo -e "$separator_hash" >> "$function_script"
+    echo -e "# version:               $full" >> "$function_script"
+    echo -e "# modified:              $(date +%F) - $(date +%H:%M:%S)" >> "$function_script"
+    echo -e "# comments:              $change_comments" >> "$function_script"
+
+done
 
 # ========================================================================== #
-# This section modfifies the newly concatenated file.
+# This section processes information for the create_logik_projekt.sh script.
 # ========================================================================== #
 
-# Display success message
-echo -e "  Bash scripts concatenated into:\n"
-echo -e "  '$output_script_name'"
-echo -e "\n$separator\n"
+# Directory containing bash scripts
+master_script="$parent_dir/create_logik_projekt.sh"
+
+# Use sed -i to replace the line that begins '# Version'
+sed -i "s/^# Version:.*/# Version:          $full/" "$master_script"
+
+# Use sed -i to replace the line that begins '# Modified'
+sed -i "s/^# Modified:.*/# Modified:         $(date +%F)/" "$master_script"
+
+# Append the comment to the shell script
+echo -e "$separator_hash" >> "$master_script"
+echo -e "# version:               $full" >> "$master_script"
+echo -e "# modified:              $(date +%F) - $(date +%H:%M:%S)" >> "$master_script"
+echo -e "# comments:              $change_comments" >> "$master_script"
 
 # ========================================================================== #
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
 # ========================================================================== #
+
+# Changelist:       
