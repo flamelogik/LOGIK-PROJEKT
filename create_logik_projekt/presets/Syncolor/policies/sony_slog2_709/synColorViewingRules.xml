@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewingRules version="1.0">
+	<default viewTransform="Raw" />
+	<ViewingRule name="Matte" viewTransform="Raw" allowedColorSpaces="Any Data" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Normals" viewTransform="normals_view" allowedColorSpaces="Normals_201605" allowedCSContext="Specific" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="rec709 - Unkown" viewTransform="Raw" allowedColorSpaces="Unknown" allowedCSContext="Specific" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="rec709" viewTransform="Raw" allowedColorSpaces="Rec.709 video" allowedCSContext="Specific" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="rec709 - CG" viewTransform="colorimetric_view" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="ACES-RRT" viewTransform="ACES11_SDR-video_rec709clip" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="Sony SLog2-709 rendering" viewTransform="SLog3/SGamut3.Cine SLog2-709 rendering" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Sony LC-709TypeA rendering" viewTransform="SLog3/SGamut3.Cine LC-709TypeA rendering" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="Sony LC-709 rendering" viewTransform="SLog3/SGamut3.Cine LC-709 rendering" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="Sony Cine+709 rendering" viewTransform="SLog3/SGamut3.Cine Cine+709 rendering" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="CanonLog2 / CinemaGamut Rec.709 rendering" viewTransform="CanonLog2 / CinemaGamut Rec.709 rendering" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="CanonLog3 / CinemaGamut Rec.709 rendering" viewTransform="CanonLog3 / CinemaGamut Rec.709 rendering" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="Alexa rendering" viewTransform="Alexa_rendering" allowedColorSpaces="Any Scene-linear or Log" allowedCSContext="Family" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="ACES 1.1 SDR-video (Rec.709 limited)" viewTransform="ACES11_SDR-video_rec709clip" allowedColorSpaces="ACES2065-1" allowedCSContext="Specific" allowedDisplays="Any SDR" allowedDisplaysContext="Family" isActive="Off" />
+</viewingRules>

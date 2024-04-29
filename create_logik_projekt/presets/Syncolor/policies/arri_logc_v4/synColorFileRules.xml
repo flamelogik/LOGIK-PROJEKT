@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules version="1.0">
+	<default colorSpace="Rec.709 video"/>
+	<FilePathRule name="rec709 - mp4" extension="[mM][pP][4]" pattern="*" colorSpace="Rec.709 video" />
+	<FilePathRule name="rec709 - mov" extension="[mM][oO][vV]" pattern="*" colorSpace="Rec.709 video" />
+	<FilePathRule name="rec709 - jpg" extension="[jJ][pP][gG]" pattern="*" colorSpace="Rec.709 video" />
+	<FilePathRule name="rec709" extension="*" pattern="*_[rR]ec709*" colorSpace="Rec.709 video" />
+	<FilePathRule name="rec2020" extension="*" pattern="*_[rR]ec2020*" colorSpace="Rec.2020 video" />
+	<FilePathRule name="rec601" extension="*" pattern="*_[rR]ec601*" colorSpace="Rec.601 video" />
+	<FilePathRule name="sRGB" extension="*" pattern="*_[sS][rR][gG][bG]*" colorSpace="sRGB display" />
+	<FilePathRule name="AdobeRGB" extension="*" pattern="*_[aA]dobe[rR][gG][bG]*" colorSpace="AdobeRGB display" />
+	<FilePathRule name="ProPhotoRGB" extension="*" pattern="*_[pP]ro[pP]hoto[rR][gG][bG]**" colorSpace="ProPhotoRGB" />
+	<FilePathRule name="ACES" extension="*" pattern="*_[aA][cC][eE][sS]*" colorSpace="ACES2065-1" />
+	<FilePathRule name="ACEScg" extension="*" pattern="*_[aA][cC][eE][sS]cg*" colorSpace="ACEScg" />
+	<FilePathRule name="ACEScc" extension="*" pattern="*_[aA][cC][eE][sS]cc*" colorSpace="ACEScc" />
+	<FilePathRule name="ACEScct" extension="*" pattern="*_[aA][cC][eE][sS]cct*" colorSpace="ACEScct" />
+	<FilePathRule name="ADX16" extension="*" pattern="*_[aA][dD][xX]16*" colorSpace="Log film scan (ADX16)" />
+	<FilePathRule name="ADX10" extension="*" pattern="*_[aA][dD][xX]10*" colorSpace="Log film scan (ADX)" />
+	<FilePathRule name="PanasonicVlogVG" extension="*" pattern="*_[pP]anasonic[vV]log[vV][gG]*" colorSpace="Panasonic V-Log/V-Gamut" />
+	<FilePathRule name="slog3SG3" extension="*" pattern="*_slog3[sS][gG]3*" colorSpace="Sony SLog3" />
+	<FilePathRule name="slog3SG3cine" extension="*" pattern="*_slog3[sS][gG]3cine*" colorSpace="SLog3 / SGamut3.Cine" />
+	<FilePathRule name="slog3SG3cinevenice" extension="*" pattern="*_slog3[sS][gG]3cinevenice*" colorSpace="SLog3 / SGamut3.Cine-Venice" />
+	<FilePathRule name="sonySG3" extension="*" pattern="*_sony[sS][gG]3*" colorSpace="Raw (safeBlack) / SGamut3" />
+	<FilePathRule name="AlexaV3LogC" extension="*" pattern="*_[aA]lexa[vV]3[lL]og[cC]*" colorSpace="ARRI LogC" />
+	<FilePathRule name="AlexaV4LogC" extension="*" pattern="*_[aA]lexa[vV]4[lL]og[cC]*" colorSpace="LogC4 / ARRI Wide Gamut 4" />
+	<FilePathRule name="lnRed" extension="*" pattern="*_ln[rR]ed*" colorSpace="Scene-linear / REDcolor" />
+	<FilePathRule name="logRed" extension="*" pattern="*_log[rR]ed*" colorSpace="REDlogFilm / REDcolor" />
+	<FilePathRule name="lnRed2" extension="*" pattern="*_ln[rR]ed2*" colorSpace="Scene-linear / REDcolor2" />
+	<FilePathRule name="logRed2" extension="*" pattern="*_log[rR]ed2*" colorSpace="REDlogFilm / REDcolor2" />
+	<FilePathRule name="lnRed3" extension="*" pattern="*_ln[rR]ed3*" colorSpace="Scene-linear / REDcolor3" />
+	<FilePathRule name="logRed3" extension="*" pattern="*_log[rR]ed3*" colorSpace="REDlogFilm / REDcolor3" />
+	<FilePathRule name="lnRed4" extension="*" pattern="*_ln[rR]ed4*" colorSpace="Scene-linear / REDcolor4" />
+	<FilePathRule name="logRed4" extension="*" pattern="*_log[rR]ed4*" colorSpace="REDlogFilm / REDcolor4" />
+	<FilePathRule name="lnRedWG" extension="*" pattern="*_ln[rR]ed[wW][gG]*" colorSpace="Scene-linear / REDWideGamutRGB" />
+	<FilePathRule name="Log3RedWG" extension="*" pattern="*_log3[rR]ed[wW][gG]*" colorSpace="Log3G10 / REDWideGamutRGB" />
+	<FilePathRule name="lnDragon" extension="*" pattern="*_ln[dD]ragon*" colorSpace="Scene-linear / DRAGONcolor" />
+	<FilePathRule name="logDragon2" extension="*" pattern="*_log[dD]ragon2*" colorSpace="REDlogFilm / DRAGONcolor2" />
+	<FilePathRule name="lnDragon2" extension="*" pattern="*_ln[dD]ragon2*" colorSpace="Scene-linear / DRAGONcolor2" />
+	<FilePathRule name="lnf" extension="*" pattern="*_lnf*" colorSpace="scene-linear Rec 709/sRGB" />
+	<FilePathRule name="lnRec709" extension="*" pattern="*_ln[rR]ec709*" colorSpace="scene-linear Rec 709/sRGB" />
+	<FilePathRule name="lnAlexaWG" extension="*" pattern="*_ln[aA]lexa[wW][gG]*" colorSpace="scene-linear Alexa WideGamut" />
+	<FilePathRule name="lnXYZ" extension="*" pattern="*_ln[xX][yY][zZ]*" colorSpace="scene-linear CIE XYZ" />
+	<FilePathRule name="lnP3" extension="*" pattern="*_ln[pP]3*" colorSpace="scene-linear DCI-P3" />
+	<FilePathRule name="lnProPhoto" extension="*" pattern="*_ln[pP]ro[pP]hoto*" colorSpace="scene-linear ProPhoto RGB" />
+	<FilePathRule name="lnRec2020" extension="*" pattern="*_ln[rR]ec2020*" colorSpace="scene-linear Rec 2020" />
+</rules>

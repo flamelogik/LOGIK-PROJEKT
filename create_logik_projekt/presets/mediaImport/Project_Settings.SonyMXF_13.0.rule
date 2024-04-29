@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule>
+	<header>
+		<version>1</version>
+		<name>Project_Settings</name>
+		<type>0</type>
+	</header>
+	<data>
+		<name>SonyMXF</name>
+		<version>13</version>
+		<longName>SonyRaw</longName>
+		<options type="dict">
+			<ClipNameMode type="string">FileName</ClipNameMode>
+			<ClipNameValue type="string">Untitled</ClipNameValue>
+			<ColorSpace type="uint">7</ColorSpace>
+			<DownscaleFactor type="uint">256</DownscaleFactor>
+			<DownscaleQuality type="string" label="High">High</DownscaleQuality>
+			<ExpMode type="string">Header</ExpMode>
+			<ExpValue type="float">0</ExpValue>
+			<FlipSettings type="string">Camera</FlipSettings>
+			<InputColourSpace type="string">Unknown</InputColourSpace>
+			<Kelvin type="uint32">4300</Kelvin>
+			<ProcessingUnit type="string">GPUWhenAvailable</ProcessingUnit>
+			<Sharpness type="int32">0</Sharpness>
+			<SourceNameDirLevelUp type="uint32">1</SourceNameDirLevelUp>
+			<SourceNameMode type="string">Header</SourceNameMode>
+			<SourceNameValue type="string">IMPORT</SourceNameValue>
+			<Tint type="int32">0</Tint>
+			<WBMode type="string">NoAdjust</WBMode>
+		</options>
+	</data>
+</rule>
