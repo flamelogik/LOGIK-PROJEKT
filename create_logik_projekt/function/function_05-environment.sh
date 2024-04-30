@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_05-environment.sh
-# Version:          2.0.0
+# Version:          2.0.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -26,17 +26,29 @@
 # ========================================================================== #
 
 # Declare global variables
-declare -g operating_system=""
-declare -g workstation_name=""
-declare -g current_user=""
-declare -g primary_group=""
-declare -g all_groups=""
-declare -g other_groups=""
-declare -g user_home=""
+# declare -g operating_system=""
+# declare -g workstation_name=""
+# declare -g current_user=""
+# declare -g primary_group=""
+# declare -g all_groups=""
+# declare -g other_groups=""
+# declare -g user_home=""
 
-declare -g shell_type=""
-declare -g rc_filename=""
-declare -g rc_filepath=""
+# declare -g shell_type=""
+# declare -g rc_filename=""
+# declare -g rc_filepath=""
+
+operating_system=""
+workstation_name=""
+current_user=""
+primary_group=""
+all_groups=""
+other_groups=""
+user_home=""
+
+shell_type=""
+rc_filename=""
+rc_filepath=""
 
 # ========================================================================== #
 # This section defines functions to gather environment information.
@@ -282,3 +294,7 @@ get_environment
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility

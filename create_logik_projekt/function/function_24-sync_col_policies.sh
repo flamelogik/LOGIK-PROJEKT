@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_24-sync_col_policies.sh
-# Version:          2.0.0
+# Version:          2.0.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -28,15 +28,15 @@
 # Function to synchronize color management policies
 sync_color_policies() {
     # Set the source parent directory
-    local src_policies_dir="presets/Syncolor/policies"
+    src_policies_dir="presets/Syncolor/policies"
 
     # Set the target parent directory based on the operating system
     if [ "$operating_system" == "Linux" ]; then
-        local tgt_synergy_dir="/opt/Autodesk/Synergy"
-        local tgt_policies_dir="$tgt_synergy_dir/SynColor/Shared/policies"
+        tgt_synergy_dir="/opt/Autodesk/Synergy"
+        tgt_policies_dir="$tgt_synergy_dir/SynColor/Shared/policies"
     elif [ "$operating_system" == "macOS" ]; then
-        local tgt_synergy_dir="/Applications/Autodesk/Synergy"
-        local tgt_policies_dir="$tgt_synergy_dir/SynColor/Shared/policies"
+        tgt_synergy_dir="/Applications/Autodesk/Synergy"
+        tgt_policies_dir="$tgt_synergy_dir/SynColor/Shared/policies"
     else
         echo "unsupported operating system."
         return 1
@@ -60,6 +60,7 @@ sync_color_policies() {
 
 # Check if the script is being sourced or executed
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    umask 0
     sync_color_policies
 fi
 
@@ -78,3 +79,7 @@ fi
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility

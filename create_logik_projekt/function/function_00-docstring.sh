@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_00-docstring.sh
-# Version:          2.0.0
+# Version:          2.0.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -57,3 +57,7 @@ functions_dir="$script_path/functions"
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility

@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_13-projekt_summary.sh
-# Version:          2.0.0
+# Version:          2.0.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -26,21 +26,37 @@
 # ========================================================================== #
 
 # Declare global variables
-declare -g name=""
-declare -g nickname=""
-declare -g description=""
-declare -g shotgun_name=""
-declare -g setup_dir=""
-declare -g partition=""
-declare -g version=""
-declare -g frame_width=""
-declare -g frame_height=""
-declare -g frame_depth=""
-declare -g aspect_ratio=""
-declare -g field_dominance=""
-declare -g frame_rate=""
-declare -g default_start_frame=""
-declare -g proj_color_science=""
+# declare -g name=""
+# declare -g nickname=""
+# declare -g description=""
+# declare -g shotgun_name=""
+# declare -g setup_dir=""
+# declare -g partition=""
+# declare -g version=""
+# declare -g frame_width=""
+# declare -g frame_height=""
+# declare -g frame_depth=""
+# declare -g aspect_ratio=""
+# declare -g field_dominance=""
+# declare -g frame_rate=""
+# declare -g default_start_frame=""
+# declare -g proj_color_science=""
+
+name=""
+nickname=""
+description=""
+shotgun_name=""
+setup_dir=""
+partition=""
+version=""
+frame_width=""
+frame_height=""
+frame_depth=""
+aspect_ratio=""
+field_dominance=""
+frame_rate=""
+default_start_frame=""
+proj_color_science=""
 
 # ========================================================================== #
 # This section creates the logik projekt metadata directories.
@@ -230,3 +246,7 @@ fi
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility

@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_14-rsync_options.sh
-# Version:          2.0.0
+# Version:          2.0.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -31,7 +31,8 @@
 # Wrap the rsync options as an array into the variable 'sync_opts'
 # sync_opts=(-av --no-group --no-perms --no-times --size-only --ignore-existing)
 # sync_opts="-av --no-group --no-perms --no-times --size-only --ignore-existing"
-sync_opts="-Rav"
+# sync_opts="-av --ignore-existing"
+sync_opts="-av"
 
 # To use the variable in your rsync command
 # rsync "${sync_opts[@]}" source_directory/ destination_directory/
@@ -51,3 +52,7 @@ sync_opts="-Rav"
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility

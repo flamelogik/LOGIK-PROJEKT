@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_22-sync_python.sh
-# Version:          2.0.0
+# Version:          2.0.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -28,8 +28,8 @@
 # Function to synchronize python scripts
 sync_python_scripts() {
     # Set the source and target man_made_material python directories
-    local src_shared_python_dir="presets/shared/python"
-    local tgt_shared_python_dir="/opt/Autodesk/shared/python"
+    src_shared_python_dir="presets/shared/python"
+    tgt_shared_python_dir="/opt/Autodesk/shared/python"
 
     echo -e "  synchronizing python directories.\n"
 
@@ -55,6 +55,7 @@ sync_python_scripts() {
 
 # Check if the script is being sourced or executed
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    umask 0
     sync_python_scripts
 fi
 
@@ -73,3 +74,7 @@ fi
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility
