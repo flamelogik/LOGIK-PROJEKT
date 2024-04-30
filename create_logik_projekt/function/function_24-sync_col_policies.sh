@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_24-sync_col_policies.sh
-# Version:          2.0.1
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -44,6 +44,9 @@ sync_color_policies() {
 
     echo -e "  synchronizing Syncolor policies directories.\n"
 
+    # Set the umask to 0
+    umask 0
+
     # Use rsync to copy the policies
     rsync "${sync_opts[@]}" "${src_policies_dir}/" "${tgt_policies_dir}/" | sed 's/^/  /'
 
@@ -83,3 +86,7 @@ fi
 # version:               2.0.1
 # modified:              2024-04-30 - 07:06:00
 # comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

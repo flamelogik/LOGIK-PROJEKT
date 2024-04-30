@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_02-date.sh
-# Version:          2.0.1
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -108,3 +108,7 @@ nanoseconds=$(date "+%N")
 # version:               2.0.1
 # modified:              2024-04-30 - 07:06:00
 # comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

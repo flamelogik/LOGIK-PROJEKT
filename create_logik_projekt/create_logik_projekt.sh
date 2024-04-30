@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_logik_projekts.sh
-# Version:          2.0.1
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -383,15 +383,20 @@ echo -e "\n$separator\n"
 
 # -------------------------------------------------------------------------- #
 
-umask 0
-
 sync_batch_project_bins
+
 sync_mediaImport_rules
+
 sync_bookmarks
+
 sync_overlays
+
 sync_python_scripts
+
 sync_io_presets
+
 sync_color_policies
+
 sync_color_transforms
 
 # -------------------------------------------------------------------------- #
@@ -457,3 +462,7 @@ echo -e "\n\n$separator\n$separator\n$separator\n\n"
 # version:               2.0.1
 # modified:              2024-04-30 - 07:06:00
 # comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

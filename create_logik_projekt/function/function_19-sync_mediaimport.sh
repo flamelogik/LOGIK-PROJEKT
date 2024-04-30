@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_19-sync_mediaimport.sh
-# Version:          2.0.1
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -32,6 +32,9 @@ sync_mediaImport_rules() {
     tgt_mediaimport_dir="$flame_proj_dir/mediaImport"
 
     echo -e "  synchronizing media import preferences & rules.\n"
+    
+    # Set the umask to 0
+    umask 0
 
     # Use rsync to copy the media import rules and files
     rsync \
@@ -76,3 +79,7 @@ fi
 # version:               2.0.1
 # modified:              2024-04-30 - 07:06:00
 # comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

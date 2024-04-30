@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_20-sync_bookmarks.sh
-# Version:          2.0.1
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -33,6 +33,9 @@ sync_bookmarks() {
     local tgt_job_dir="/JOBS/$nickname"
 
     echo -e "  creating project bookmarks.\n"
+
+    # Set the umask to 0
+    umask 0
 
     # Check if tgt_project_bookmarks exists and rename if it does
     if [ -e "$tgt_project_bookmarks" ]; then
@@ -143,3 +146,7 @@ fi
 # version:               2.0.1
 # modified:              2024-04-30 - 07:06:00
 # comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

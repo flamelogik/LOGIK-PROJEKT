@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_14-rsync_options.sh
-# Version:          2.0.1
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -29,10 +29,10 @@
 # 'rsync -av --no-group --no-perms --no-times --size-only --ignore-existing '
 
 # Wrap the rsync options as an array into the variable 'sync_opts'
-# sync_opts=(-av --no-group --no-perms --no-times --size-only --ignore-existing)
+sync_opts=(-av --no-group --no-perms --no-times --size-only --ignore-existing)
 # sync_opts="-av --no-group --no-perms --no-times --size-only --ignore-existing"
 # sync_opts="-av --ignore-existing"
-sync_opts="-av"
+# sync_opts="-av"
 
 # To use the variable in your rsync command
 # rsync "${sync_opts[@]}" source_directory/ destination_directory/
@@ -56,3 +56,7 @@ sync_opts="-av"
 # version:               2.0.1
 # modified:              2024-04-30 - 07:06:00
 # comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

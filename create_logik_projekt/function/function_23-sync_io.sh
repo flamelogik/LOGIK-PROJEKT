@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_23-sync_io.sh
-# Version:          2.0.1
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -33,6 +33,9 @@ sync_io_presets() {
     tgt_project_export_presets_dir="$flame_proj_dir/export/presets"
 
     echo -e "  synchronizing project export presets directories.\n"
+
+    # Set the umask to 0
+    umask 0
 
     # Use rsync to copy the export presets to the project directory
     rsync "${sync_opts[@]}" "${src_shared_export_presets_dir}/" "${tgt_project_export_presets_dir}/" | sed 's/^/  /'
@@ -86,3 +89,7 @@ fi
 # version:               2.0.1
 # modified:              2024-04-30 - 07:06:00
 # comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands
