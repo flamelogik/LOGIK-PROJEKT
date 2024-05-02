@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_logik_projekts.sh
-# Version:          2.0.0
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program determines system information and collects
@@ -384,12 +384,19 @@ echo -e "\n$separator\n"
 # -------------------------------------------------------------------------- #
 
 sync_batch_project_bins
+
 sync_mediaImport_rules
+
 sync_bookmarks
+
 sync_overlays
+
 sync_python_scripts
+
 sync_io_presets
+
 sync_color_policies
+
 sync_color_transforms
 
 # -------------------------------------------------------------------------- #
@@ -451,3 +458,11 @@ echo -e "\n\n$separator\n$separator\n$separator\n\n"
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

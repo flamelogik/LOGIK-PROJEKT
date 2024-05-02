@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_04-setup.sh
-# Version:          2.0.0
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -26,12 +26,17 @@
 # ========================================================================== #
 
 # Declare global variables
-declare -g projekt_log_dir=""
-declare -g projekt_creation_log_file=""
-declare -g projekt_setup_file=""
-declare -g projekt_setup_template=""
-declare -g has_projekt_setup_template=""
+# declare -g projekt_log_dir=""
+# declare -g projekt_creation_log_file=""
+# declare -g projekt_setup_file=""
+# declare -g projekt_setup_template=""
+# declare -g has_projekt_setup_template=""
 # declare -g has_projekt_setup_template="False"
+projekt_log_dir=""
+projekt_creation_log_file=""
+projekt_setup_file=""
+projekt_setup_template=""
+has_projekt_setup_template=""
 
 # ========================================================================== #
 # This section defines variables based on the date.
@@ -246,3 +251,11 @@ fi
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

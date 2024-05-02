@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_23-sync_io.sh
-# Version:          2.0.0
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -28,11 +28,14 @@
 # Function to synchronize export and import presets
 sync_io_presets() {
     # Set the source and target export presets directories
-    local src_shared_export_presets_dir="presets/shared/export/presets"
-    local tgt_shared_export_presets_dir="/opt/Autodesk/shared/export/presets"
-    local tgt_project_export_presets_dir="$flame_proj_dir/export/presets"
+    src_shared_export_presets_dir="presets/shared/export/presets"
+    tgt_shared_export_presets_dir="/opt/Autodesk/shared/export/presets"
+    tgt_project_export_presets_dir="$flame_proj_dir/export/presets"
 
     echo -e "  synchronizing project export presets directories.\n"
+
+    # Set the umask to 0
+    umask 0
 
     # Use rsync to copy the export presets to the project directory
     rsync "${sync_opts[@]}" "${src_shared_export_presets_dir}/" "${tgt_project_export_presets_dir}/" | sed 's/^/  /'
@@ -41,9 +44,9 @@ sync_io_presets() {
     echo -e "\n$separator\n"
 
     # Set the source and target import presets directories
-    local src_shared_import_presets_dir="presets/shared/import"
-    local tgt_shared_import_presets_dir="/opt/Autodesk/shared/import"
-    local tgt_project_import_presets_dir="$flame_proj_dir/import"
+    src_shared_import_presets_dir="presets/shared/import"
+    tgt_shared_import_presets_dir="/opt/Autodesk/shared/import"
+    tgt_project_import_presets_dir="$flame_proj_dir/import"
 
     echo -e "  synchronizing project import presets directories.\n"
 
@@ -63,6 +66,7 @@ sync_io_presets() {
 
 # Check if the script is being sourced or executed
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    umask 0
     sync_io_presets
 fi
 
@@ -81,3 +85,11 @@ fi
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

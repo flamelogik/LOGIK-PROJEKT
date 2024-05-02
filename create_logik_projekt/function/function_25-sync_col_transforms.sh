@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_25-sync_col_transforms.sh
-# Version:          2.0.0
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -28,21 +28,24 @@
 # Function to synchronize color management transforms
 sync_color_transforms() {
     # Set the source parent directory
-    local src_transforms_dir="presets/Syncolor/transforms"
+    src_transforms_dir="presets/Syncolor/transforms"
 
     # Set the target parent directory based on the operating system
     if [ "$operating_system" == "Linux" ]; then
-        local tgt_synergy_dir="/opt/Autodesk/Synergy"
-        local tgt_transforms_dir="$tgt_synergy_dir/SynColor/Shared/transforms"
+        tgt_synergy_dir="/opt/Autodesk/Synergy"
+        tgt_transforms_dir="$tgt_synergy_dir/SynColor/Shared/transforms"
     elif [ "$operating_system" == "macOS" ]; then
-        local tgt_synergy_dir="/Applications/Autodesk/Synergy"
-        local tgt_transforms_dir="$tgt_synergy_dir/SynColor/Shared/transforms"
+        tgt_synergy_dir="/Applications/Autodesk/Synergy"
+        tgt_transforms_dir="$tgt_synergy_dir/SynColor/Shared/transforms"
     else
         echo "unsupported operating system."
         return 1
     fi
 
     echo -e "  synchronizing Syncolor transforms directories.\n"
+    
+    # Set the umask to 0
+    umask 0
 
     # Use rsync to copy the transforms
     rsync "${sync_opts[@]}" "${src_transforms_dir}/" "${tgt_transforms_dir}/" | sed 's/^/  /'
@@ -60,6 +63,7 @@ sync_color_transforms() {
 
 # Check if the script is being sourced or executed
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    umask 0
     sync_color_transforms
 fi
 
@@ -78,3 +82,11 @@ fi
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands

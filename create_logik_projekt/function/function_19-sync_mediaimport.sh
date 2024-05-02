@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_19-sync_mediaimport.sh
-# Version:          2.0.0
+# Version:          2.0.2
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-29
+# Modified:         2024-04-30
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -28,10 +28,13 @@
 # Function to create default mediaImport rules for the MediaHub
 sync_mediaImport_rules() {
     # Set the source and target directories for copying
-    local src_mediaimport_dir="presets/mediaImport"
-    local tgt_mediaimport_dir="$flame_proj_dir/mediaImport"
+    src_mediaimport_dir="presets/mediaImport"
+    tgt_mediaimport_dir="$flame_proj_dir/mediaImport"
 
     echo -e "  synchronizing media import preferences & rules.\n"
+    
+    # Set the umask to 0
+    umask 0
 
     # Use rsync to copy the media import rules and files
     rsync \
@@ -53,6 +56,7 @@ sync_mediaImport_rules() {
 
 # Check if the script is being sourced or executed
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    umask 0
     sync_mediaImport_rules
 fi
 
@@ -71,3 +75,11 @@ fi
 # version:               2.0.0
 # modified:              2024-04-29 - 11:29:27
 # comments:              testing production readiness
+# -------------------------------------------------------------------------- #
+# version:               2.0.1
+# modified:              2024-04-30 - 07:06:00
+# comments:              Removed 'declare -g' statements for macOS compatibility
+# -------------------------------------------------------------------------- #
+# version:               2.0.2
+# modified:              2024-04-30 - 12:29:07
+# comments:              added 'umask 0' statements for rsync commands
