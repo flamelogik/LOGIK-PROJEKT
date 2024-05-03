@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_script.py
-# Version:          0.0.4
+# Version:          0.0.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -217,7 +217,7 @@ def create_nuke_scripts(extracted_info):
 	<handler>
 		<name>MIO Clip</name>
 		<options>
-			<ScanPattern type="string">{shots_dir}/{shot_name}/media/renders/{shot_name}_{app_name}_{task_type}_v{{version}}/{shot_name}_{app_name}_{task_type}_v{{version}}.{{frame}}.exr</ScanPattern>
+			<ScanPattern type="string">{shots_dir}/{shot_name}/media/renders/{shot_task_name}_v{{version}}/{shot_task_name}_v{{version}}.{{frame}}.exr</ScanPattern>
 		</options>
 	</handler>
 </clip>
@@ -268,7 +268,7 @@ Read {{
 }}
 set Ndbbb980 [stack 0]
 Write {{
- file "{renders_dir}/{shot_task_name}/{shot_task_name}.%08d.exr"
+ file "{renders_dir}/{shot_task_name}_{version_name}/{shot_task_name}_{version_name}.%08d.exr"
  file_type exr
  write_ACES_compliant_EXR true
  metadata "all metadata"
@@ -387,3 +387,7 @@ if __name__ == "__main__":
 # version:               0.0.4
 # modified:              2024-05-03 - 11:38:31
 # comments:              Standardizd 'logik-projekt' menu entries
+# -------------------------------------------------------------------------- #
+# version:               0.0.5
+# modified:              2024-05-03 - 12:29:29
+# comments:              Restored '_{version_name}' in script construction
