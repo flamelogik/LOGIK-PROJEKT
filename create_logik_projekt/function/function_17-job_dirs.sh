@@ -31,8 +31,8 @@ create_projekt_job_directories() {
     umask 0
 
     # Declare variables
-    # local src_dir="$flame_proj_dir"
-    local jobs_dir="/JOBS"
+    # local jobs_dir="/JOBS"
+    local jobs_dir="/Volumes/logik/salt/JOBS"
     local tgt_job_dir="$jobs_dir/$nickname"
 
     # Create directories
