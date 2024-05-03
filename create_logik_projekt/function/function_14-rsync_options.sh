@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_14-rsync_options.sh
-# Version:          2.0.3
+# Version:          2.0.4
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -64,3 +64,7 @@ sync_opts=(-av --no-group --no-perms --no-times --size-only --ignore-existing)
 # version:               2.0.3
 # modified:              2024-05-03 - 10:16:09
 # comments:              Restored CamelCase keys for projekt_metadata_xml_file
+# -------------------------------------------------------------------------- #
+# version:               2.0.4
+# modified:              2024-05-03 - 10:56:34
+# comments:              Restore 'jobs_dir' to /JOBS

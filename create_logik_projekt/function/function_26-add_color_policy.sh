@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_26-add_color_policy.sh
-# Version:          2.0.3
+# Version:          2.0.4
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -95,3 +95,7 @@ fi
 # version:               2.0.3
 # modified:              2024-05-03 - 10:16:10
 # comments:              Restored CamelCase keys for projekt_metadata_xml_file
+# -------------------------------------------------------------------------- #
+# version:               2.0.4
+# modified:              2024-05-03 - 10:56:34
+# comments:              Restore 'jobs_dir' to /JOBS
