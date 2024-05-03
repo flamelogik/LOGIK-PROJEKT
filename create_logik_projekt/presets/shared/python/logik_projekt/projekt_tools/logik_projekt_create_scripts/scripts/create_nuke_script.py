@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_script.py
-# Version:          0.0.5
+# Version:          0.0.6
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -198,13 +198,19 @@ def create_nuke_scripts(extracted_info):
             if not os.path.exists(app_task_dir):
                 os.makedirs(app_task_dir)
 
-            
             # Create shot task name
             shot_task_name = f"{shot_name}_{app_name}_{task_type}"
 
-            # Define openclip variables
-            shot_task_openclip_name = f"{shot_task_name}.clip"
+            # Check if openclip file already exists
+            shot_task_openclip_name = f"{shot_name}_{app_name}_{task_type}.clip"
             shot_task_openclip_path = os.path.join(openclips_app_dir, shot_task_openclip_name)
+            if os.path.exists(shot_task_openclip_path):
+                print(f"Openclip for {shot_name} and {task_type} already exists. Skipping...")
+                continue
+
+            # # Define openclip variables
+            # shot_task_openclip_name = f"{shot_task_name}.clip"
+            # shot_task_openclip_path = os.path.join(openclips_app_dir, shot_task_openclip_name)
 
             # Create openclip file
             with open(shot_task_openclip_path, 'w') as shot_task_openclip_file:
@@ -223,9 +229,16 @@ def create_nuke_scripts(extracted_info):
 </clip>
 """)
 
-            # Define script variables
-            shot_task_script_name = f"{shot_task_name}_{version_name}.nk"
+            # Check if Nuke script already exists
+            shot_task_script_name = f"{shot_name}_{app_name}_{task_type}_{version_name}.nk"
             shot_task_script_path = os.path.join(app_task_dir, shot_task_script_name)
+            if os.path.exists(shot_task_script_path):
+                print(f"Nuke script for {shot_name} and {task_type} already exists. Skipping...")
+                continue
+
+            # # Define script variables
+            # shot_task_script_name = f"{shot_task_name}_{version_name}.nk"
+            # shot_task_script_path = os.path.join(app_task_dir, shot_task_script_name)
 
             # Create script file
             with open(shot_task_script_path, 'w') as nuke_script_file:
@@ -286,9 +299,6 @@ Write {{
  ypos 192
  postage_stamp true
 }}""")
-            
-# Call the function to create Nuke composition scripts with the extracted information
-# create_nuke_scripts(extracted_info)
 
 # ========================================================================== #
 # This section defines the flame menu entries.
@@ -391,3 +401,7 @@ if __name__ == "__main__":
 # version:               0.0.5
 # modified:              2024-05-03 - 12:29:29
 # comments:              Restored '_{version_name}' in script construction
+# -------------------------------------------------------------------------- #
+# version:               0.0.6
+# modified:              2024-05-03 - 13:37:01
+# comments:              Added validation for file existence
