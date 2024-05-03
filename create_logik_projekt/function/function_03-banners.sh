@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_03-banners.sh
-# Version:          2.0.2
+# Version:          2.0.3
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-04-30
+# Modified:         2024-05-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -84,3 +84,7 @@ end_banner_04=$(generate_end_title_line "$end_title_04")
 # version:               2.0.2
 # modified:              2024-04-30 - 12:29:07
 # comments:              added 'umask 0' statements for rsync commands
+# -------------------------------------------------------------------------- #
+# version:               2.0.3
+# modified:              2024-05-03 - 10:16:09
+# comments:              Restored CamelCase keys for projekt_metadata_xml_file
