@@ -160,20 +160,20 @@ write_projekt_metadata() {
     echo -n "<Project>" >> "$projekt_metadata_xml_file"
 
     declare -a ProjektParameters=(
-        "name:$name"
-        "nickname:$nickname"
-        "description:$description"
-        "shotgunprojectname:$shotgun_name"
-        "setupdir:$setup_dir"
-        "partition:$partition"
-        "version:$version"
-        "framewidth:$frame_width"
-        "frameheight:$frame_height"
-        "framedepth:$frame_depth"
-        "aspectratio:$aspect_ratio"
-        "fielddominance:$field_dominance"
-        "framerate:$frame_rate"
-        "defaultstartframe:$default_start_frame"
+        "Name:$name"
+        "Nickname:$nickname"
+        "Description:$description"
+        "ShotgunProjectName:$shotgun_name"
+        "SetupDir:$setup_dir"
+        "Partition:$partition"
+        "Version:$version"
+        "FrameWidth:$frame_width"
+        "FrameHeight:$frame_height"
+        "FrameDepth:$frame_depth"
+        "AspectRatio:$aspect_ratio"
+        "FieldDominance:$field_dominance"
+        "FrameRate:$frame_rate"
+        "DefaultStartFrame:$default_start_frame"
     )
 
     for ProjektParameter in "${ProjektParameters[@]}"; do
@@ -185,6 +185,7 @@ write_projekt_metadata() {
 
     echo -e "  projekt XML:         $(basename "$projekt_metadata_xml_file")"
 
+    # return $projekt_metadata_xml_file
 }
 
 # ========================================================================== #
@@ -201,7 +202,7 @@ write_projekt_metadata() {
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 
     # # Create directories
-    # create_metadata_directories
+    create_metadata_directories
 
     # Set metadata
     set_projekt_metadata
