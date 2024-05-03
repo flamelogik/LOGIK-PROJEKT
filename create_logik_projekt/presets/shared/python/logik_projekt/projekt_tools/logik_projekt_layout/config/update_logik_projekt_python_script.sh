@@ -2,14 +2,14 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        update_changelists.sh
+# File Name:        update_logik_projekt_python_script.sh
 # Version:          1.0.0
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
-# Toolset:          MAN_MADE_MATERIAL
+# Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-04-24
+# Modified:         2024-05-02
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program updates the docstrings and changelists.
@@ -186,21 +186,21 @@ echo -e "\n$separator\n"
 change_comments="${change_comments:0:56}"
 
 # ========================================================================== #
-# This section processes information for the shell scripts.
+# This section processes information for logik projekt python scripts.
 # ========================================================================== #
 
-# Directory containing bash scripts
-function_dir="$parent_dir/function"
-# function_dir="$parent_dir/testing"
+# Directory containing logik projekt python scripts.
+scripts_dir="$parent_dir/scripts"
+# scripts_dir="$parent_dir/testing"
 
 # Check if the directory exists or create it
-if [ ! -d "$function_dir" ]; then
-    echo -e "  Directory '$function_dir' not found.\n"
+if [ ! -d "$scripts_dir" ]; then
+    echo -e "  Directory '$scripts_dir' not found.\n"
     read -p "  Do you want to create it? [y/n]: " create_dir
     echo -e "\n$separator\n"
     if [ "$create_dir" = "y" ]; then
-        mkdir -p "$function_dir" \
-        || { echo "Error: Unable to create directory '$function_dir'."; \
+        mkdir -p "$scripts_dir" \
+        || { echo "Error: Unable to create directory '$scripts_dir'."; \
         exit 1; }
         echo -e "\n$separator\n"
     else
@@ -210,13 +210,12 @@ if [ ! -d "$function_dir" ]; then
     fi
 fi
 
-# List the shell scripts in $function_dir
-# function_scripts=$(find "$function_dir" -maxdepth 1 -type f -name '*.sh')
-function_scripts=$(find "$function_dir" -type f -name "*.sh" | sort)
+# List the logik projekt python scripts in $scripts_dir
+function_scripts=$(find "$scripts_dir" -type f -name "*.py" | sort)
 
 # Iterate over each shell script
 for function_script in $function_scripts; do
-    # Get the base name of the shell script
+    # Get the base name of the logik projekt python script
     function_script_name=$(basename "$function_script")
 
     # # Use sed -i to replace the line that begins '# File Name'
@@ -235,25 +234,6 @@ for function_script in $function_scripts; do
     echo -e "# comments:              $change_comments" >> "$function_script"
 
 done
-
-# ========================================================================== #
-# This section processes information for the create_logik_projekt.sh script.
-# ========================================================================== #
-
-# Directory containing bash scripts
-master_script="$parent_dir/create_logik_projekt.sh"
-
-# Use sed -i to replace the line that begins '# Version'
-sed -i "s/^# Version:.*/# Version:          $full/" "$master_script"
-
-# Use sed -i to replace the line that begins '# Modified'
-sed -i "s/^# Modified:.*/# Modified:         $(date +%F)/" "$master_script"
-
-# Append the comment to the shell script
-echo -e "$separator_hash" >> "$master_script"
-echo -e "# version:               $full" >> "$master_script"
-echo -e "# modified:              $(date +%F) - $(date +%H:%M:%S)" >> "$master_script"
-echo -e "# comments:              $change_comments" >> "$master_script"
 
 # ========================================================================== #
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #

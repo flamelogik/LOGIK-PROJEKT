@@ -1,42 +1,44 @@
-# logik_projekt_dated_objects.py
+# filename: create_dated_objects.py
 
 # -------------------------------------------------------------------------- #
 
-# Program Name:     logik_projekt_dated_objects.py
-# Version:          1.0
+# Program Name:     create_dated_objects.py
+# Version:          0.0.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
-# Toolset:          MAN_MADE_MATERIAL
+# Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-04-20
+# Modified:         2024-05-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
-# Changelist:       Code relabeled for LOGIK.tv distribution
-
-# -------------------------------------------------------------------------- #
-
-# Description:      This script creates dated objects.
+# Description:      This script creates dated logik projekt flame objects.
 
 # Installation:     Copy the 'LOGIK-PROJEKT' directory to:
 #                   '/opt/Autodesk/shared/python/'
 
+# Changelist:       The full changelist is at the end of this document.
+
 # -------------------------------------------------------------------------- #
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# This section imports the necessary modules.
 # ========================================================================== #
 
 import flame
 import datetime
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines some variables based on the date.
+# ========================================================================== #
 
 # Get today's date and time
 today_date = datetime.date.today().strftime("%Y-%m-%d")
 today_time = datetime.datetime.now().strftime("%H-%M-%S")
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines color variables.
+# ========================================================================== #
 
 # Define object colors
 object_colors = {
@@ -77,7 +79,9 @@ object_colors = {
     "Grey13": (0.083, 0.083, 0.083)           # Grey13
 }
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create or validate flame objects.
+# ========================================================================== #
 
 # Function to create or validate folders, reel groups, or reel objects.
 def create_or_validate_object(
@@ -200,7 +204,9 @@ def create_or_validate_object(
 
     return new_object
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create or validate flame libraries.
+# ========================================================================== #
 
 # Function to create or validate library objects.
 def create_or_validate_library(
@@ -239,10 +245,12 @@ def create_or_validate_library(
 
     return new_library
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create a dated flame desktop.
+# ========================================================================== #
 
 # Rename current desktop with today's date
-def create_logik_projekt_dated_desktop(*args):
+def create_dated_desktop(*args):
 
     # If Flame passes any arguments, you can handle them here
     if args:
@@ -326,10 +334,12 @@ def create_logik_projekt_dated_desktop(*args):
 
     # ---------------------------------------------------------------------- #
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create a dated reference folder.
+# ========================================================================== #
 
 # Create new dated folder in reference library
-def create_logik_projekt_dated_ref_folder(*args):
+def create_dated_ref_folder(*args):
 
     # If Flame passes any arguments, you can handle them here
     if args:
@@ -361,10 +371,12 @@ def create_logik_projekt_dated_ref_folder(*args):
 
     # ---------------------------------------------------------------------- #
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create a dated reel group.
+# ========================================================================== #
 
 # Create new dated reel group in editorial library
-def create_logik_projekt_dated_conforms_reel_group(*args):
+def create_dated_conforms_reel_group(*args):
 
     # If Flame passes any arguments, you can handle them here
     if args:
@@ -415,10 +427,12 @@ def create_logik_projekt_dated_conforms_reel_group(*args):
 
     # ---------------------------------------------------------------------- #
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create a dated postings reel.
+# ========================================================================== #
 
 # Create new dated postings reel
-def create_logik_projekt_dated_postings_reel(*args):
+def create_dated_postings_reel(*args):
 
     # If Flame passes any arguments, you can handle them here
     if args:
@@ -467,7 +481,9 @@ def create_logik_projekt_dated_postings_reel(*args):
 
     # ---------------------------------------------------------------------- #
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines custom flame menus.
+# ========================================================================== #
 
 # Add custom UI actions
 def get_main_menu_custom_ui_actions():
@@ -479,49 +495,49 @@ def get_main_menu_custom_ui_actions():
             'actions': []
         },
         {
-            'name': 'logik_projekt_layout',
+            'name': 'create',
+            'hierarchy': ['logik_projekt'],
+            'order': 2,
+            'actions': [
+                {
+                    'name': 'create dated desktop',
+                    'execute': create_dated_desktop,
+                    'minimumVersion': '2025'
+                }
+            ]
+        },
+        {
+            'name': 'create',
+            'hierarchy': ['logik_projekt'],
+            'order': 3,
+            'actions': [
+                {
+                    'name': 'create dated ref folder',
+                    'execute': create_dated_ref_folder,
+                    'minimumVersion': '2025'
+                }
+            ]
+        },
+        {
+            'name': 'create',
+            'hierarchy': ['logik_projekt'],
+            'order': 4,
+            'actions': [
+                {
+                    'name': 'create dated conforms reel group',
+                    'execute': create_dated_conforms_reel_group,
+                    'minimumVersion': '2025'
+                }
+            ]
+        },
+        {
+            'name': 'create',
             'hierarchy': ['logik_projekt'],
             'order': 5,
             'actions': [
                 {
-                    'name': 'create logik_projekt_dated_desktop',
-                    'execute': create_logik_projekt_dated_desktop,
-                    'minimumVersion': '2025'
-                }
-            ]
-        },
-        {
-            'name': 'logik_projekt_layout',
-            'hierarchy': ['logik_projekt'],
-            'order': 6,
-            'actions': [
-                {
-                    'name': 'create logik_projekt_dated_ref_folder',
-                    'execute': create_logik_projekt_dated_ref_folder,
-                    'minimumVersion': '2025'
-                }
-            ]
-        },
-        {
-            'name': 'logik_projekt_layout',
-            'hierarchy': ['logik_projekt'],
-            'order': 7,
-            'actions': [
-                {
-                    'name': 'create logik_projekt_dated_conforms_reel_group',
-                    'execute': create_logik_projekt_dated_conforms_reel_group,
-                    'minimumVersion': '2025'
-                }
-            ]
-        },
-        {
-            'name': 'logik_projekt_layout',
-            'hierarchy': ['logik_projekt'],
-            'order': 8,
-            'actions': [
-                {
-                    'name': 'create logik_projekt_dated_postings_reel',
-                    'execute': create_logik_projekt_dated_postings_reel,
+                    'name': 'create dated postings reel',
+                    'execute': create_dated_postings_reel,
                     'minimumVersion': '2025'
                 }
             ]
@@ -534,55 +550,55 @@ def get_main_menu_custom_ui_actions():
 
 #     return [
 #         {
-#             'name': 'logik_projekt_layout',
+#             'name': 'create',
+#             'hierarchy': ['logik_projekt'],
+#             'order': 2,
+#             'actions': [
+#                 {
+#                     'name': 'create dated desktop',
+#                     'execute': create_dated_desktop,
+#                     'minimumVersion': '2025'
+#                 }
+#             ]
+#         },
+#         {
+#             'name': 'create',
+#             'hierarchy': ['logik_projekt'],
+#             'order': 3,
+#             'actions': [
+#                 {
+#                     'name': 'create dated ref folder',
+#                     'order': 2,
+#                     'separator': 'below',
+#                     'execute': create_dated_ref_folder,
+#                     'minimumVersion': '2025'
+#                 }
+#             ]
+#         },
+#         {
+#             'name': 'create',
+#             'hierarchy': ['logik_projekt'],
+#             'order': 4,
+#             'actions': [
+#                 {
+#                     'name': 'create dated conforms reel group',
+#                     'order': 3,
+#                     'separator': 'below',
+#                     'execute': create_dated_conforms_reel_group,
+#                     'minimumVersion': '2025'
+#                 }
+#             ]
+#         },
+#         {
+#             'name': 'create',
 #             'hierarchy': ['logik_projekt'],
 #             'order': 5,
 #             'actions': [
 #                 {
-#                     'name': 'create logik_projekt_dated_desktop',
-#                     'execute': create_logik_projekt_dated_desktop,
-#                     'minimumVersion': '2025'
-#                 }
-#             ]
-#         },
-#         {
-#             'name': 'logik_projekt_layout',
-#             'hierarchy': ['logik_projekt'],
-#             'order': 6,
-#             'actions': [
-#                 {
-#                     'name': 'create logik_projekt_dated_ref_folder',
-#                     'order': 2,
-#                     'separator': 'below',
-#                     'execute': create_logik_projekt_dated_ref_folder,
-#                     'minimumVersion': '2025'
-#                 }
-#             ]
-#         },
-#         {
-#             'name': 'logik_projekt_layout',
-#             'hierarchy': ['logik_projekt'],
-#             'order': 7,
-#             'actions': [
-#                 {
-#                     'name': 'create logik_projekt_dated_conforms_reel_group',
-#                     'order': 3,
-#                     'separator': 'below',
-#                     'execute': create_logik_projekt_dated_conforms_reel_group,
-#                     'minimumVersion': '2025'
-#                 }
-#             ]
-#         },
-#         {
-#             'name': 'logik_projekt_layout',
-#             'hierarchy': ['logik_projekt'],
-#             'order': 8,
-#             'actions': [
-#                 {
-#                     'name': 'create logik_projekt_dated_postings_reel',
+#                     'name': 'create dated postings reel',
 #                     'order': 4,
 #                     'separator': 'below',
-#                     'execute': create_logik_projekt_dated_postings_reel,
+#                     'execute': create_dated_postings_reel,
 #                     'minimumVersion': '2025'
 #                 }
 #             ]
@@ -595,75 +611,85 @@ def get_media_panel_custom_ui_actions():
 
     return [
         {
-            'name': 'logik_projekt_layout',
+            'name': 'create',
+            'hierarchy': ['logik_projekt'],
+            'order': 2,
+            'actions': [
+                {
+                    'name': 'create dated desktop',
+                    'order': 2,
+                    'separator': 'below',
+                    'execute': create_dated_desktop,
+                    'minimumVersion': '2025'
+                }
+            ]
+        },
+        {
+            'name': 'create',
+            'hierarchy': ['logik_projekt'],
+            'order': 3,
+            'actions': [
+                {
+                    'name': 'create dated ref folder',
+                    'order': 3,
+                    'separator': 'below',
+                    'execute': create_dated_ref_folder,
+                    'minimumVersion': '2025'
+                }
+            ]
+        },
+        {
+            'name': 'create',
+            'hierarchy': ['logik_projekt'],
+            'order': 4,
+            'actions': [
+                {
+                    'name': 'create dated conforms reel group',
+                    'order': 4,
+                    'separator': 'below',
+                    'execute': create_dated_conforms_reel_group,
+                    'minimumVersion': '2025'
+                }
+            ]
+        },
+        {
+            'name': 'create',
             'hierarchy': ['logik_projekt'],
             'order': 5,
             'actions': [
                 {
-                    'name': 'create logik_projekt_dated_desktop',
+                    'name': 'create dated postings reel',
                     'order': 5,
                     'separator': 'below',
-                    'execute': create_logik_projekt_dated_desktop,
-                    'minimumVersion': '2025'
-                }
-            ]
-        },
-        {
-            'name': 'logik_projekt_layout',
-            'hierarchy': ['logik_projekt'],
-            'order': 6,
-            'actions': [
-                {
-                    'name': 'create logik_projekt_dated_ref_folder',
-                    'order': 6,
-                    'separator': 'below',
-                    'execute': create_logik_projekt_dated_ref_folder,
-                    'minimumVersion': '2025'
-                }
-            ]
-        },
-        {
-            'name': 'logik_projekt_layout',
-            'hierarchy': ['logik_projekt'],
-            'order': 7,
-            'actions': [
-                {
-                    'name': 'create logik_projekt_dated_conforms_reel_group',
-                    'order': 7,
-                    'separator': 'below',
-                    'execute': create_logik_projekt_dated_conforms_reel_group,
-                    'minimumVersion': '2025'
-                }
-            ]
-        },
-        {
-            'name': 'logik_projekt_layout',
-            'hierarchy': ['logik_projekt'],
-            'order': 8,
-            'actions': [
-                {
-                    'name': 'create logik_projekt_dated_postings_reel',
-                    'order': 8,
-                    'separator': 'below',
-                    'execute': create_logik_projekt_dated_postings_reel,
+                    'execute': create_dated_postings_reel,
                     'minimumVersion': '2025'
                 }
             ]
         }
     ]
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines how to handle the main script function.
+# ========================================================================== #
 
 # If this script is executed as main:
 # Call functions for immediate execution
 if __name__ == "__main__":
-    create_logik_projekt_dated_ref_folder()
-    create_logik_projekt_dated_desktop()
-    create_logik_projekt_dated_conforms_reel_group()
-    create_logik_projekt_dated_postings_reel()
-
-# -------------------------------------------------------------------------- #
+    create_dated_ref_folder()
+    create_dated_desktop()
+    create_dated_conforms_reel_group()
+    create_dated_postings_reel()
 
 # ========================================================================== #
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
 # ========================================================================== #
+
+# Changelist: 
+ # -------------------------------------------------------------------------- #
+# version:               0.0.1
+# modified:              2024-05-03 - 01:51:36
+# comments:              Basic functionality defined and tested
+# -------------------------------------------------------------------------- #
+# version:               0.0.2
+# modified:              2024-05-03 - 02:12:39
+# comments:              Fixed some formatting and flame menus

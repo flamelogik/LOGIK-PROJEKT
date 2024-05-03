@@ -1,42 +1,44 @@
-# logik_projekt_layout.py
+# filename: create_projekt_layout.py
 
 # -------------------------------------------------------------------------- #
 
-# Program Name:     logik_projekt_layout.py
-# Version:          1.0
+# Program Name:     create_projekt_layout.py
+# Version:          0.0.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
-# Toolset:          LOGIK-PROJEKT
+# Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-04-20
+# Modified:         2024-05-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
-# Changelist:       Code relabeled for LOGIK.tv distribution
-
-# -------------------------------------------------------------------------- #
-
-# Description:      This script creates flame project layouts.
+# Description:      This script creates logik projekt flame layouts.
 
 # Installation:     Copy the 'LOGIK-PROJEKT' directory to:
 #                   '/opt/Autodesk/shared/python/'
 
+# Changelist:       The full changelist is at the end of this document.
+
 # -------------------------------------------------------------------------- #
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# This section imports the necessary modules.
 # ========================================================================== #
 
 import flame
 import datetime
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines some variables based on the date.
+# ========================================================================== #
 
 # Get today's date and time
 today_date = datetime.date.today().strftime("%Y-%m-%d")
 today_time = datetime.datetime.now().strftime("%H-%M-%S")
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines color variables.
+# ========================================================================== #
 
 # Define object colors
 object_colors = {
@@ -77,7 +79,9 @@ object_colors = {
     "Grey13": (0.083, 0.083, 0.083)           # Grey13
 }
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create or validate flame objects.
+# ========================================================================== #
 
 # Function to create or validate folders, reel groups, or reel objects.
 def create_or_validate_object(
@@ -280,7 +284,9 @@ def create_or_validate_object(
 
     return new_object
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create or validate flame libraries.
+# ========================================================================== #
 
 # Function to create or validate library objects.
 def create_or_validate_library(
@@ -357,10 +363,12 @@ def change_default_library_name(workspace, new_name):
     print("Library 'Default Library' not found.")
     return False
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines a function to create a logik projekt layout.
+# ========================================================================== #
 
 # Create Project Layout by creating or validate folders, reels, & reel groups
-def create_logik_projekt_layout(*args):
+def create_layout(*args):
 
     # If Flame passes any arguments, you can handle them here
     if args:
@@ -747,20 +755,27 @@ def create_logik_projekt_layout(*args):
 
     print("Project layout setup completed.")
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines custom flame menus.
+# ========================================================================== #
 
 # Add custom UI actions
 def get_main_menu_custom_ui_actions():
 
     return [
         {
-            'name': 'logik_projekt_layout',
+            'name': 'logik-projekt',
+            'hierarchy': [],
+            'actions': []
+        },
+        {
+            'name': 'create',
             'hierarchy': ['logik_projekt'],
-            'order': 4,
+            'order': 1,
             'actions': [
                 {
-                    'name': 'create logik_projekt_layout',
-                    'execute': create_logik_projekt_layout,
+                    'name': 'create layout',
+                    'execute': create_layout,
                     'minimumVersion': '2025'
                 }
             ]
@@ -773,13 +788,13 @@ def get_main_menu_custom_ui_actions():
 
 #     return [
 #         {
-#             'name': 'logik_projekt_layout',
+#             'name': 'create',
 #             'hierarchy': ['logik_projekt'],
-#             'order': 4,
+#             'order': 1,
 #             'actions': [
 #                 {
-#                     'name': 'create logik_projekt_layout',
-#                     'execute': create_logik_projekt_layout,
+#                     'name': 'create layout',
+#                     'execute': create_layout,
 #                     'minimumVersion': '2025'
 #                 }
 #             ]
@@ -792,29 +807,39 @@ def get_media_panel_custom_ui_actions():
 
     return [
         {
-            'name': 'logik_projekt_layout',
+            'name': 'create',
             'hierarchy': ['logik_projekt'],
-            'order': 4,
+            'order': 1,
             'actions': [
                 {
-                    'name': 'create logik_projekt_layout',
+                    'name': 'create layout',
                     'order': 4,
                     'separator': 'below',
-                    'execute': create_logik_projekt_layout,
+                    'execute': create_layout,
                     'minimumVersion': '2025'
                 }
             ]
         }
     ]
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section defines how to handle the main script function.
+# ========================================================================== #
 
 # If this script is executed as main
 if __name__ == "__main__":
-    create_logik_projekt_layout()  # Call setup function for immediate execution
-
-# -------------------------------------------------------------------------- #
+    create_layout()  # Call setup function for immediate execution
 
 # ========================================================================== #
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
 # ========================================================================== #
+
+# Changelist:  
+# -------------------------------------------------------------------------- #
+# version:               0.0.1
+# modified:              2024-05-03 - 01:53:36
+# comments:              Basic functionality defined and tested
+# -------------------------------------------------------------------------- #
+# version:               0.0.2
+# modified:              2024-05-03 - 02:13:01
+# comments:              Fixed some formatting and flame menus
