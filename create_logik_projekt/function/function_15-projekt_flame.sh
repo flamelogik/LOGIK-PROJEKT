@@ -35,6 +35,10 @@ create_wiretap_projekt() {
 
     # ---------------------------------------------------------------------- #
 
+    # echo -e "$projekt_metadata_xml_file"
+
+    # ---------------------------------------------------------------------- #
+
     # Create the logik projekt flame projekt node using wiretap_create_node
 
     # -n <parent node ID>
