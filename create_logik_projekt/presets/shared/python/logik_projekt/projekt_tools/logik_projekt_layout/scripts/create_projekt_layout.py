@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
-# Version:          0.0.3
+# Version:          0.0.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -770,7 +770,7 @@ def get_main_menu_custom_ui_actions():
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 1,
             'actions': [
                 {
@@ -789,7 +789,7 @@ def get_main_menu_custom_ui_actions():
 #     return [
 #         {
 #             'name': 'create',
-#             'hierarchy': ['logik_projekt'],
+#             'hierarchy': ['logik-projekt'],
 #             'order': 1,
 #             'actions': [
 #                 {
@@ -808,7 +808,7 @@ def get_media_panel_custom_ui_actions():
     return [
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 1,
             'actions': [
                 {
@@ -847,3 +847,7 @@ if __name__ == "__main__":
 # version:               0.0.3
 # modified:              2024-05-03 - 11:26:02
 # comments:              Changed 'the_current_project' to 'the_current_projekt'
+# -------------------------------------------------------------------------- #
+# version:               0.0.4
+# modified:              2024-05-03 - 11:38:53
+# comments:              Standardizd 'logik-projekt' menu entries

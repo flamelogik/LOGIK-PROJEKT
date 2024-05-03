@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_script.py
-# Version:          0.0.3
+# Version:          0.0.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -383,3 +383,7 @@ if __name__ == "__main__":
 # version:               0.0.3
 # modified:              2024-05-03 - 11:25:42
 # comments:              Changed 'the_current_project' to 'the_current_projekt'
+# -------------------------------------------------------------------------- #
+# version:               0.0.4
+# modified:              2024-05-03 - 11:38:31
+# comments:              Standardizd 'logik-projekt' menu entries
