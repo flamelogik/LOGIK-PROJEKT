@@ -65,19 +65,19 @@ cd "$parent_dir" || exit
 
 # -------------------------------------------------------------------------- #
 
-# Define config_dir
-config_dir="$parent_dir/config"
+# Define version_dir
+version_dir="$parent_dir/version"
 
-echo $config_dir
+echo $version_dir
 
 # Check if the directory exists or create it
-if [ ! -d "$config_dir" ]; then
-    echo -e "  Directory '$config_dir' not found.\n"
+if [ ! -d "$version_dir" ]; then
+    echo -e "  Directory '$version_dir' not found.\n"
     read -p "  Do you want to create it? [y/n]: " create_dir
     echo -e "\n$separator\n"
     if [ "$create_dir" = "y" ]; then
-        mkdir -p "$config_dir" \
-        || { echo "Error: Unable to create directory '$config_dir'."; \
+        mkdir -p "$version_dir" \
+        || { echo "Error: Unable to create directory '$version_dir'."; \
         exit 1; }
         echo -e "\n$separator\n"
     else
@@ -88,7 +88,7 @@ if [ ! -d "$config_dir" ]; then
 fi
 
 # Define version_file
-version_file="$config_dir/version.json"
+version_file="$version_dir/version.json"
 
 # ========================================================================== #
 # This section reads the latest version from a JSON file.
