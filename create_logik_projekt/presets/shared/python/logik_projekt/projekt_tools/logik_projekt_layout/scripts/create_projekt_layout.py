@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
-# Version:          0.0.2
+# Version:          0.0.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -376,8 +376,8 @@ def create_layout(*args):
 
     # ---------------------------------------------------------------------- #
 
-    the_current_project = flame.projects.current_project
-    the_current_workspace = the_current_project.current_workspace
+    the_current_projekt = flame.projects.current_project
+    the_current_workspace = the_current_projekt.current_workspace
     the_current_desktop = the_current_workspace.desktop
 
     # ---------------------------------------------------------------------- #
@@ -843,3 +843,7 @@ if __name__ == "__main__":
 # version:               0.0.2
 # modified:              2024-05-03 - 02:13:01
 # comments:              Fixed some formatting and flame menus
+# -------------------------------------------------------------------------- #
+# version:               0.0.3
+# modified:              2024-05-03 - 11:26:02
+# comments:              Changed 'the_current_project' to 'the_current_projekt'

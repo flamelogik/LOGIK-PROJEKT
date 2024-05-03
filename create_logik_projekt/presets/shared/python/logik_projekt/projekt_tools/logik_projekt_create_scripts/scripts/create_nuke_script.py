@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_script.py
-# Version:          0.0.2
+# Version:          0.0.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -43,10 +43,10 @@ logging.basicConfig(level=logging.DEBUG, format='%(levelname)s: %(message)s')
 # ========================================================================== #
 
 # Get the current Flame project
-the_current_projekt = flame.projects.current_project()
+the_current_projekt = flame.projects.current_project
 
 # Get the project nickname
-the_current_nickname = the_current_projekt.nickname()
+the_current_nickname = the_current_projekt.nickname
 # the_current_nickname = "eric_parliament"
 
 # Define paths
@@ -379,3 +379,7 @@ if __name__ == "__main__":
 # version:               0.0.2
 # modified:              2024-05-03 - 02:12:19
 # comments:              Fixed some formatting and flame menus
+# -------------------------------------------------------------------------- #
+# version:               0.0.3
+# modified:              2024-05-03 - 11:25:42
+# comments:              Changed 'the_current_project' to 'the_current_projekt'
