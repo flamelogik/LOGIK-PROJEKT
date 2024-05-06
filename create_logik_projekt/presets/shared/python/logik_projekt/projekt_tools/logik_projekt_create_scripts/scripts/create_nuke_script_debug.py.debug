@@ -3,13 +3,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_scripts.py
-# Version:          0.0.6
+# Version:          1.0.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-03
+# Modified:         2024-05-06
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -28,6 +28,7 @@
 
 # import flame
 import os
+# import pdb; pdb.set_trace()
 import re
 import fileinput
 import logging
@@ -48,8 +49,10 @@ def setup_logging(*args, **kwargs):
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
 
-    log_filename = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}_{script_name_without_extension}_debug.log"
-    logging.basicConfig(filename=os.path.join(log_directory, log_filename), level=logging.DEBUG, *args, **kwargs)
+    log_filename = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}_{script_name}.debug.log"
+    log_filepath = os.path.join(log_directory, log_filename)
+    print("Log filepath:", log_filepath)  # Add this line for debugging
+    logging.basicConfig(filename=log_filepath, level=logging.DEBUG, *args, **kwargs)
 
 # ========================================================================== #
 # This section defines the logik projekt job structure.
@@ -594,15 +597,28 @@ def process_shot_info(job_structure, app_name, task_types_list, start_frame_min,
 # This section defines the main function.
 # ========================================================================== #
 
-def main():
+def create_openclips_and_scripts():
 
-    # os.umask(0)
+    # Set up debugging
+    # pdb.set_trace()
 
-    # Setup logging
-    setup_logging()
+    # Here are some common debugger commands:
 
-    # Define paths
-    jobs_dir = '/JOBS'
+    # n or next: Execute the current line and move to the next line.
+    # s or step: Execute the current line and step into any function calls on that line.
+    # c or continue: Continue execution until the next breakpoint or until the end of the script.
+    # p or print: Print the value of a variable.
+    # l or list: Show the current line and a few lines of code around it.
+
+    # You can find more information about using pdb in the
+    # Python documentation:
+    # https://docs.python.org/3/library/pdb.html
+
+    # Set umask
+    os.umask(0)
+
+    # # Define paths
+    # jobs_dir = '/JOBS'
 
     # # Get the current Flame project
     # the_current_projekt = flame.projects.current_project
@@ -610,11 +626,14 @@ def main():
     # # Get the project job_name
     # the_projekt_job_name = the_current_projekt.nickname
 
-    # Testing
-    the_projekt_job_name = "dry_run_01"
-
     # Define the job root directory
-    job_root = os.path.join(jobs_dir, the_projekt_job_name)
+    # job_root = os.path.join(jobs_dir, the_projekt_job_name)
+
+    # Testing
+    job_root = "/JOBS/dry_run_01"
+
+    # Setup logging
+    setup_logging()
 
     # Define job structure using the function
     job_structure = define_job_structure(job_root)
@@ -651,7 +670,7 @@ def main():
 # This section defines the flame menu entries.
 # ========================================================================== #
 
-# Add custom UI actions
+# # Add custom UI actions
 # def get_main_menu_custom_ui_actions():
 
 #     return [
@@ -667,33 +686,33 @@ def main():
 #             'actions': [
 #                 {
 #                     'name': 'nuke scripts',
-#                     'execute': main,
+#                     'execute': create_openclips_and_scripts,
 #                     'minimumVersion': '2025'
 #                 }
 #             ]
 #         }
 #     ]
 
-# -------------------------------------------------------------------------- #
+# # -------------------------------------------------------------------------- #
 
-# def get_mediahub_files_custom_ui_actions():
+# # def get_mediahub_files_custom_ui_actions():
 
-#     return [
-#         {
-#             'name': 'create',
-#             'hierarchy': ['logik-projekt'],
-#             'order': 5,
-#             'actions': [
-#                 {
-#                     'name': 'nuke scripts',
-#                     'execute': main,
-#                     'minimumVersion': '2025'
-#                 }
-#             ]
-#         }
-#     ]
+# #     return [
+# #         {
+# #             'name': 'create',
+# #             'hierarchy': ['logik-projekt'],
+# #             'order': 5,
+# #             'actions': [
+# #                 {
+# #                     'name': 'nuke scripts',
+# #                     'execute': create_openclips_and_scripts,
+# #                     'minimumVersion': '2025'
+# #                 }
+# #             ]
+# #         }
+# #     ]
 
-# -------------------------------------------------------------------------- #
+# # -------------------------------------------------------------------------- #
 
 # def get_media_panel_custom_ui_actions():
 
@@ -707,7 +726,7 @@ def main():
 #                     'name': 'nuke scripts',
 #                     'order': 5,
 #                     'separator': 'below',
-#                     'execute': main,
+#                     'execute': create_openclips_and_scripts,
 #                     'minimumVersion': '2025'
 #                 }
 #             ]
@@ -721,7 +740,7 @@ def main():
 # If this script is executed as main:
 # Call functions for immediate execution
 if __name__ == "__main__":
-    main()
+    create_openclips_and_scripts()
 
 # ========================================================================== #
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
@@ -752,3 +771,7 @@ if __name__ == "__main__":
 # version:               0.0.6
 # modified:              2024-05-03 - 13:37:01
 # comments:              Added validation for file existence
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-05-06 - 16:12:00
+# comments:              Minor reformatting

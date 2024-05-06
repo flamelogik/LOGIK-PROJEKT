@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_scripts.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -28,9 +28,10 @@
 
 import flame
 import os
-import re
+# import pdb; pdb.set_trace()
+# import re
 import fileinput
-import logging
+# import logging
 from datetime import datetime
 
 # ========================================================================== #
@@ -48,8 +49,10 @@ from datetime import datetime
 #     if not os.path.exists(log_directory):
 #         os.makedirs(log_directory)
 
-#     log_filename = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}_{script_name_without_extension}_debug.log"
-#     logging.basicConfig(filename=os.path.join(log_directory, log_filename), level=logging.DEBUG, *args, **kwargs)
+#     log_filename = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}_{script_name}.debug.log"
+#     log_filepath = os.path.join(log_directory, log_filename)
+#     print("Log filepath:", log_filepath)  # Add this line for debugging
+#     logging.basicConfig(filename=log_filepath, level=logging.DEBUG, *args, **kwargs)
 
 # ========================================================================== #
 # This section defines the logik projekt job structure.
@@ -276,7 +279,7 @@ def path_to_shot_source_openexr_sequences(directory, start_frame_min, end_frame_
     return shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame
 
 # ========================================================================== #
-# This section creates pattern-based openclip files.
+# This section defines functions to create pattern-based openclip files.
 # ========================================================================== #
 
 # Define function to create an openclip output clip
@@ -328,7 +331,7 @@ def create_openclip_segment_clip(shot_source_dir, app_name, task_type, shots_dir
     # logging.debug(f"segment clip created for:    {shot_source_dir}_{app_name}_{task_type}")
 
 # ========================================================================== #
-# This section creates nuke scripts.
+# This section defines functions to create nuke scripts.
 # ========================================================================== #
 
 # Define function to create a shot script
@@ -594,27 +597,43 @@ def process_shot_info(job_structure, app_name, task_types_list, start_frame_min,
 # This section defines the main function.
 # ========================================================================== #
 
-def main():
+def create_openclips_and_scripts():
 
+    # Set up debugging
+    # pdb.set_trace()
+
+    # Here are some common debugger commands:
+
+    # n or next: Execute the current line and move to the next line.
+    # s or step: Execute the current line and step into any function calls on that line.
+    # c or continue: Continue execution until the next breakpoint or until the end of the script.
+    # p or print: Print the value of a variable.
+    # l or list: Show the current line and a few lines of code around it.
+
+    # You can find more information about using pdb in the
+    # Python documentation:
+    # https://docs.python.org/3/library/pdb.html
+
+    # Set umask
     os.umask(0)
 
-    # Setup logging
-    # setup_logging()
+    # # Define paths
+    # jobs_dir = '/JOBS'
 
-    # Define paths
-    jobs_dir = '/JOBS'
+    # # Get the current Flame project
+    # the_current_projekt = flame.projects.current_project
 
-    # Get the current Flame project
-    the_current_projekt = flame.projects.current_project
-
-    # Get the project job_name
-    the_projekt_job_name = the_current_projekt.nickname
-
-    # Testing
-    # the_projekt_job_name = "dry_run_01"
+    # # Get the project job_name
+    # the_projekt_job_name = the_current_projekt.nickname
 
     # Define the job root directory
-    job_root = os.path.join(jobs_dir, the_projekt_job_name)
+    # job_root = os.path.join(jobs_dir, the_projekt_job_name)
+
+    # Testing
+    job_root = "/JOBS/dry_run_01"
+
+    # # Setup logging
+    # setup_logging()
 
     # Define job structure using the function
     job_structure = define_job_structure(job_root)
@@ -667,7 +686,7 @@ def get_main_menu_custom_ui_actions():
             'actions': [
                 {
                     'name': 'nuke scripts',
-                    'execute': main,
+                    'execute': create_openclips_and_scripts,
                     'minimumVersion': '2025'
                 }
             ]
@@ -686,7 +705,7 @@ def get_main_menu_custom_ui_actions():
 #             'actions': [
 #                 {
 #                     'name': 'nuke scripts',
-#                     'execute': main,
+#                     'execute': create_openclips_and_scripts,
 #                     'minimumVersion': '2025'
 #                 }
 #             ]
@@ -707,7 +726,7 @@ def get_media_panel_custom_ui_actions():
                     'name': 'nuke scripts',
                     'order': 5,
                     'separator': 'below',
-                    'execute': main,
+                    'execute': create_openclips_and_scripts,
                     'minimumVersion': '2025'
                 }
             ]
@@ -721,7 +740,7 @@ def get_media_panel_custom_ui_actions():
 # If this script is executed as main:
 # Call functions for immediate execution
 if __name__ == "__main__":
-    main()
+    create_openclips_and_scripts()
 
 # ========================================================================== #
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
@@ -756,3 +775,7 @@ if __name__ == "__main__":
 # version:               1.0.0
 # modified:              2024-05-06 - 14:35:57
 # comments:              Complete re-write - tested on Lucid Link
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-05-06 - 16:12:00
+# comments:              Minor reformatting
