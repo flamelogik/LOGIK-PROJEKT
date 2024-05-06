@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_scripts.py
-# Version:          1.0.1
+# Version:          1.0.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -305,7 +305,8 @@ def create_openclip_output_clip(shot_name, app_name, task_type, shots_dir, shot_
     </handler>
 </clip>""")
     # logging.debug(f"output clip created for:     {shot_name}_{app_name}_{task_type}")
-
+    print(f"Output clip created:         {shot_name}_{app_name}_{task_type}.clip\n")
+ 
 # Define function to create an openclip segment clip
 def create_openclip_segment_clip(shot_source_dir, app_name, task_type, shots_dir, shot_segment_clips_app_dir):
 
@@ -329,6 +330,7 @@ def create_openclip_segment_clip(shot_source_dir, app_name, task_type, shots_dir
     </handler>
 </clip>""")
     # logging.debug(f"segment clip created for:    {shot_source_dir}_{app_name}_{task_type}")
+    print(f"Segment clip created:        {shot_source_dir}_{app_name}_{task_type}.clip\n")
 
 # ========================================================================== #
 # This section defines functions to create nuke scripts.
@@ -393,6 +395,7 @@ Write {{
 }}""")
 
         # logging.debug(f"Nuke script created for:  {shot_name}_{app_name}_{task_type}_{version_name}")
+        print(f"Nuke Shot script created:    {shot_name}_{app_name}_{task_type}.nk\n")
 
 # Define function to create a source script
 def create_source_script(shot_name, shots_dir, shot_sources_dir, shot_source_dir, app_name, task_type, version_name, shot_scripts_dir, shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame):
@@ -470,6 +473,7 @@ Write {{
 }}""")
 
         # logging.debug(f"Nuke script created for:  {shot_source_dir}_{version_name}")
+        print(f"Nuke Source script created:  {shot_source_dir}_{version_name}.nk\n")
 
     # Define the directory for the specific app and task type
     shot_scripts_app_task_dir = os.path.join(shots_dir, shot_scripts_dir, app_name, 'shot', task_type)
@@ -532,6 +536,8 @@ Write {{
 }}""")
 
         # logging.debug(f"Nuke script appended for:  {shot_name}_{app_name}_{task_type}_{version_name}")
+        print(f"Read/Write nodes appended:   {shot_source_dir}_{app_name}_{task_type}\n")
+
 
 # ========================================================================== #
 # This section processes shot information to create files.
@@ -779,3 +785,7 @@ if __name__ == "__main__":
 # version:               1.0.1
 # modified:              2024-05-06 - 16:12:00
 # comments:              Minor reformatting
+# -------------------------------------------------------------------------- #
+# version:               1.0.2
+# modified:              2024-05-06 - 16:24:36
+# comments:              added printf statements at logging.debug points
