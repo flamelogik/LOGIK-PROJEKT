@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_scripts.py
-# Version:          1.0.2
+# Version:          1.0.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -602,7 +602,7 @@ def process_shot_info(job_structure, app_name, task_types_list, start_frame_min,
 # This section defines the main function.
 # ========================================================================== #
 
-def create_openclips_and_scripts():
+def create_openclips_and_scripts(*args, **kwargs):
 
     # Set up debugging
     # pdb.set_trace()
@@ -784,3 +784,7 @@ if __name__ == "__main__":
 # version:               1.0.2
 # modified:              2024-05-06 - 16:24:36
 # comments:              added printf statements at logging.debug points
+# -------------------------------------------------------------------------- #
+# version:               1.0.3
+# modified:              2024-05-06 - 17:02:53
+# comments:              Added (*args, **kwargs) to main function
