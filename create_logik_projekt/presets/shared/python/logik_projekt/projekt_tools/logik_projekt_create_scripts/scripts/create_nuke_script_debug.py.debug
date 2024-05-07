@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_scripts.py
-# Version:          1.0.4
+# Version:          1.0.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -564,7 +564,7 @@ Root {{
  floatLut "ACES - ACEScg"
 }}
 Write {{
- file "{shots_dir}/{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.%08d.exr"
+ file "{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.%08d.exr"
  file_type exr
  write_ACES_compliant_EXR true
  metadata "all metadata"
@@ -1090,3 +1090,7 @@ if __name__ == "__main__":
 # version:               1.0.4
 # modified:              2024-05-06 - 21:50:39
 # comments:              Updated docstrings, comments and formatting
+# -------------------------------------------------------------------------- #
+# version:               1.0.5
+# modified:              2024-05-06 - 22:14:47
+# comments:              Corrected Write node file path for Nuke Shot script.
