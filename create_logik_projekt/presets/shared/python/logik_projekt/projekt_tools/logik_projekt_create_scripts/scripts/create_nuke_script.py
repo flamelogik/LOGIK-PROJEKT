@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_scripts.py
-# Version:          1.0.3
+# Version:          1.0.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -60,7 +60,19 @@ from datetime import datetime
 
 # Define function to define job structure
 def define_job_structure(job_root):
+    """
+    Define the directory structure for a job.
+
+    Args:
+        job_root (str): The root directory for the job.
+
+    Returns:
+        dict: A dictionary containing the defined directory structure.
+    """
+
+    # # This section is for logging purposes
     # logging.info("Defining job structure...")
+
     # Define directories
     job_dir = job_root
 
@@ -102,7 +114,10 @@ def define_job_structure(job_root):
     editorial_xml_dir = f"{editorial_dir}/editorial_xml"
 
     shots_dir = f"{job_dir}/shots"
+
+    # # This section is for logging purposes
     # logging.info("Job structure defined.")
+
     return {
         "job_root": job_root,
         "job_dir": job_dir,
@@ -145,15 +160,55 @@ def define_job_structure(job_root):
 
 # Define function to list shot directories
 def list_shots_dir(shots_dir):
+    """List directories in shots_dir path and sort alphabetically.
+
+    Args:
+        shots_dir (str): The directory to list.
+
+    Returns:
+        shots_dir_list: A sorted list of directories in shots_dir.
+    """
+
+    # # This section is for logging purposes
     # logging.info(f"Listing shot directories in {shots_dir}:")
-    shots_dir_list = [d for d in os.listdir(shots_dir) if os.path.isdir(os.path.join(shots_dir, d))]
+
+    shots_dir_list = [
+        shots_dir_item for shots_dir_item in os.listdir(shots_dir) 
+        if os.path.isdir(os.path.join(shots_dir, shots_dir_item))
+    ]
+
+    # Sort the list alphabetically
+    shots_dir_list.sort()
+
+    # # This section is for logging purposes
     # for shot_dir in shots_dir_list:
     #     logging.info(f" - {shot_dir}")
+
     return shots_dir_list
 
+# -------------------------------------------------------------------------- #
+
 # Define function to define shot structure
-def define_shot_structure(shots_dir, shot_dir, app_name, task_type):
+def define_shot_structure(shots_dir, 
+                          shot_dir, 
+                          app_name, 
+                          task_type):
+    """
+    Define directory structure for a shot.
+
+    Parameters:
+    shots_dir (str): Directory path where shots are stored.
+    shot_dir (str): Name of the shot directory.
+    app_name (str): Name of the application.
+    task_type (str): Type of task.
+
+    Returns:
+    dict: Dictionary containing directory paths for the shot structure.
+    """
+
+    # # This section is for logging purposes
     # logging.info(f"Defining shot structure for {shot_dir}...")
+
     # Define directories
     shot_batch_setups_dir = f"{shots_dir}/{shot_dir}/batch_setups"
 
@@ -176,13 +231,13 @@ def define_shot_structure(shots_dir, shot_dir, app_name, task_type):
 
     # Create directories if they don't exist
     for directory in [
-        shot_batch_setups_dir,
-        shot_renders_dir,
+        shot_batch_setups_dir, 
+        shot_renders_dir, 
         shot_sources_dir,
-        shot_output_clips_dir,
+        shot_output_clips_dir, 
         shot_output_clips_app_dir,
         # shot_output_clips_app_task_dir,
-        shot_segment_clips_dir,
+        shot_segment_clips_dir, 
         shot_segment_clips_app_dir,
         # shot_segment_clips_app_task_dir,
         shot_scripts_dir,
@@ -193,7 +248,9 @@ def define_shot_structure(shots_dir, shot_dir, app_name, task_type):
 
         os.makedirs(directory, exist_ok=True)
 
+    # # This section is for logging purposes
     # logging.info(f"Shot structure defined for {shot_dir}.")
+
     return {
         "shot_batch_setups_dir": shot_batch_setups_dir,
         "shot_media_dir": shot_media_dir,
@@ -211,32 +268,85 @@ def define_shot_structure(shots_dir, shot_dir, app_name, task_type):
         "shot_scripts_app_task_dir": shot_scripts_app_task_dir
     }
 
-# Define function to list the contents of shot_sources_dir
+# -------------------------------------------------------------------------- #
+
 def list_shot_sources_dir(shot_sources_dir):
-    # logging.info(f"Listing directories directly inside {shot_sources_dir}:")
+    """List directories directly inside the given directory path.
+
+    Args:
+        shot_sources_dir (str): The directory to list.
+
+    Returns:
+        list:   A sorted list of subdirectories directly inside the
+                given directory path.
+    """
+
+    # # This section is for logging purposes
+    # logging.info(f"Listing directories of {shot_sources_dir}:")
+
     shot_sources_dir_list = os.listdir(shot_sources_dir)
+    shot_sources_dir_list.sort()  # Sort the directory list
+    
+    # # This section is for logging purposes
     # for shot_source_dir in shot_sources_dir_list:
     #     logging.info(f" - {shot_source_dir}")
+    
     return shot_sources_dir_list
+
+# -------------------------------------------------------------------------- #
 
 # Define function to list the contents of each shot_source_dir
 def list_shot_source_dir(shot_source_dir):
+    """List directories directly inside the given directory path.
+
+    Args:
+        shot_source_dir (str): The directory to list.
+
+    Returns:
+        list:   A sorted list of subdirectories directly inside the
+                given directory path.
+    """
+
+    # # This section is for logging purposes
     # logging.info(f"Listing contents of source directory {shot_source_dir}:")
+
     shot_source_dir_list = os.listdir(shot_source_dir)
+    shot_source_dir_list.sort()  # Sort the directory list
+
+    # # This section is for logging purposes
     # for shot_source_version_dir in shot_source_dir_list:
     #     logging.info(f" - {shot_source_version_dir}")
+
     return shot_source_dir_list
 
+# -------------------------------------------------------------------------- #
+
 # Define function to recursively search for OpenEXR image sequences
-def path_to_shot_source_openexr_sequences(directory, start_frame_min, end_frame_max):
+def path_to_shot_source_openexr_sequences(directory, 
+                                          start_frame_min, 
+                                          end_frame_max):
+    """
+    Recursively search for OpenEXR image sequences.
+
+    Parameters:
+    directory (str): The directory to search in.
+    start_frame_min (int): Minimum frame number of the sequence.
+    end_frame_max (int): Maximum frame number of the sequence.
+
+    Returns:
+    tuple: A tuple containing information about OpenEXR sequences found,
+           start frame number, and end frame number.
+    """
+
+    # # This section is for logging purposes
     # logging.info(f"Searching for OpenEXR image sequences in {directory}...")
+
     shot_source_version_openexr_sequences_info = []
     shot_source_version_start_frame = None
     shot_source_version_end_frame = None
-    # start_frame_min = float('inf')  # Initialize with positive infinity
-    # end_frame_max = float('-inf')   # Initialize with negative infinity
     shot_source_openexr_files_list = []
 
+    # Recursively search for OpenEXR files
     for root, dirs, files in os.walk(directory):
         for file in files:
             if file.lower().endswith('.exr'):
@@ -244,6 +354,7 @@ def path_to_shot_source_openexr_sequences(directory, start_frame_min, end_frame_
 
     shot_source_openexr_files_list.sort()
 
+    # Process each OpenEXR file
     for shot_source_version_openexr_file in shot_source_openexr_files_list:
         shot_source_version_openexr_path = shot_source_version_openexr_file
         shot_source_version_openexr_filename = os.path.basename(shot_source_version_openexr_file)
@@ -251,11 +362,12 @@ def path_to_shot_source_openexr_sequences(directory, start_frame_min, end_frame_
 
         # Extract prefix from the filename
         shot_source_version_openexr_filename_parts = shot_source_version_openexr_filename.split('.')
-        shot_source_version_filename_prefix = '.'.join(shot_source_version_openexr_filename_parts[:-2])  # Extract all parts except the last two
+        shot_source_version_filename_prefix = '.'.join(shot_source_version_openexr_filename_parts[:-2])
         shot_source_version_openexr_filename_suffix = shot_source_version_openexr_filename_parts[-1]
 
         shot_source_version_sequence_dir = os.path.dirname(shot_source_version_openexr_file)
 
+        # Update start and end frame numbers
         if shot_source_version_start_frame is None:
             shot_source_version_start_frame = shot_source_version_openexr_frame_number
             shot_source_version_end_frame = shot_source_version_openexr_frame_number
@@ -266,6 +378,7 @@ def path_to_shot_source_openexr_sequences(directory, start_frame_min, end_frame_
         start_frame_min = min(start_frame_min, shot_source_version_start_frame)
         end_frame_max = max(end_frame_max, shot_source_version_end_frame)
 
+        # Append information to the list
         shot_source_version_openexr_sequences_info.append({
             'shot_source_version_openexr_path': shot_source_version_openexr_path,
             'shot_source_version_sequence_dir': shot_source_version_sequence_dir,
@@ -274,24 +387,44 @@ def path_to_shot_source_openexr_sequences(directory, start_frame_min, end_frame_
             'shot_source_version_openexr_filename_suffix': shot_source_version_openexr_filename_suffix,
         })
 
-    # return shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame, start_frame_min, end_frame_max
-
     return shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame
 
 # ========================================================================== #
 # This section defines functions to create pattern-based openclip files.
 # ========================================================================== #
 
-# Define function to create an openclip output clip
-def create_openclip_output_clip(shot_name, app_name, task_type, shots_dir, shot_output_clips_app_dir):
+# Define function to create an openclip output clip for a nuke shot script
+def create_openclip_output_clip(shot_name, 
+                                app_name, 
+                                task_type, 
+                                shots_dir,
+                                shot_output_clips_app_dir):
+    """
+    Create an openclip output clip for a nuke shot script.
 
-    shot_output_clips_app_task_dir = os.path.join(shots_dir, shot_output_clips_app_dir, task_type)
+    Parameters:
+    shot_name (str): The name of the shot.
+    app_name (str): The name of the application.
+    task_type (str): The type of task.
+    shots_dir (str): The directory where shots are stored.
+    shot_output_clips_app_dir (str): The directory for output clips.
+
+    Returns:
+    None
+    """
+
+    shot_output_clips_app_task_dir = os.path.join(shots_dir,
+                                                  shot_output_clips_app_dir,
+                                                  task_type) # May be unnecessary.
 
     # Create the directory if it doesn't exist
-    os.makedirs(shot_output_clips_app_task_dir, exist_ok=True)
+    os.makedirs(shot_output_clips_app_task_dir, exist_ok=True) # May be unnecessary.
 
     shot_output_clips_app_task_file = f"{shot_name}_{app_name}_{task_type}.clip"
-    shot_output_clips_app_task_path = os.path.join(shots_dir, shot_output_clips_app_dir, task_type, shot_output_clips_app_task_file)
+    shot_output_clips_app_task_path = os.path.join(shots_dir,
+                                                   shot_output_clips_app_dir,
+                                                   task_type,
+                                                   shot_output_clips_app_task_file)
 
     with open(shot_output_clips_app_task_path, 'w') as output_clip_file:
         output_clip_file.write(f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -304,19 +437,46 @@ def create_openclip_output_clip(shot_name, app_name, task_type, shots_dir, shot_
         </options>
     </handler>
 </clip>""")
+
+    # # This section is for logging purposes
     # logging.debug(f"output clip created for:     {shot_name}_{app_name}_{task_type}")
+
     print(f"Output clip created:         {shot_name}_{app_name}_{task_type}.clip\n")
  
-# Define function to create an openclip segment clip
-def create_openclip_segment_clip(shot_source_dir, app_name, task_type, shots_dir, shot_segment_clips_app_dir):
+# -------------------------------------------------------------------------- #
 
-    shot_segment_clips_app_task_dir = os.path.join(shots_dir, shot_segment_clips_app_dir, task_type)
+# Define function to create an openclip segment clip for a nuke source script
+def create_openclip_segment_clip(shot_source_dir, 
+                                 app_name, 
+                                 task_type, 
+                                 shots_dir, 
+                                 shot_segment_clips_app_dir):
+    """
+    Create an openclip segment clip for a nuke segment script.
+
+    Parameters:
+    shot_name (str): The name of the shot.
+    app_name (str): The name of the application.
+    task_type (str): The type of task.
+    shots_dir (str): The directory where shots are stored.
+    shot_output_clips_app_dir (str): The directory for output clips.
+
+    Returns:
+    None
+    """
+
+    shot_segment_clips_app_task_dir = os.path.join(shots_dir, 
+                                                   shot_segment_clips_app_dir, 
+                                                   task_type) # May be unnecessary.
 
     # Create the directory if it doesn't exist
-    os.makedirs(shot_segment_clips_app_task_dir, exist_ok=True)
+    os.makedirs(shot_segment_clips_app_task_dir, exist_ok=True) # May be unnecessary.
 
     shot_segment_clips_app_task_file = f"{shot_source_dir}_{app_name}_{task_type}.clip"
-    shot_segment_clips_app_task_path = os.path.join(shots_dir, shot_segment_clips_app_dir, task_type, shot_segment_clips_app_task_file)
+    shot_segment_clips_app_task_path = os.path.join(shots_dir, 
+                                                    shot_segment_clips_app_dir, 
+                                                    task_type, 
+                                                    shot_segment_clips_app_task_file)
 
     with open(shot_segment_clips_app_task_path, 'w') as segment_clip_file:
         segment_clip_file.write(f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -329,24 +489,54 @@ def create_openclip_segment_clip(shot_source_dir, app_name, task_type, shots_dir
         </options>
     </handler>
 </clip>""")
+        
+    # # This section is for logging purposes
     # logging.debug(f"segment clip created for:    {shot_source_dir}_{app_name}_{task_type}")
+
     print(f"Segment clip created:        {shot_source_dir}_{app_name}_{task_type}.clip\n")
 
 # ========================================================================== #
 # This section defines functions to create nuke scripts.
 # ========================================================================== #
 
-# Define function to create a shot script
-def create_shot_script(shot_name, app_name, task_type, version_name, shots_dir, shot_renders_dir, shot_scripts_dir):
+# Define function to create a shot script for nuke based on task
+def create_shot_script(shot_name, 
+                       app_name, 
+                       task_type, 
+                       version_name,
+                       shots_dir, 
+                       shot_renders_dir, 
+                       shot_scripts_dir):
+    """
+    Create a shot script for nuke based on task.
+
+    Parameters:
+        shot_name        (str): The name of the shot.
+        app_name         (str): The name of the application.
+        task_type        (str): The type of task.
+        version_name     (str): The name of the version.
+        shots_dir        (str): The directory where shots are stored.
+        shot_renders_dir (str): The directory for shot renders.
+        shot_scripts_dir (str): The directory for shot scripts.
+
+    Returns:
+    None
+    """
+
     # Define the directory for the specific app and task type
-    shot_scripts_app_task_dir = os.path.join(shots_dir, shot_scripts_dir, app_name, 'shot', task_type)
+    shot_scripts_app_task_dir = os.path.join(shots_dir,
+                                             shot_scripts_dir,
+                                             app_name,
+                                             'shot',
+                                             task_type)
 
     # Create the directory if it doesn't exist
     os.makedirs(shot_scripts_app_task_dir, exist_ok=True)
 
     # Define the file path for the script
     shot_scripts_app_task_file = f"{shot_name}_{app_name}_{task_type}_{version_name}.nk"
-    shot_scripts_app_task_path = os.path.join(shot_scripts_app_task_dir, shot_scripts_app_task_file)
+    shot_scripts_app_task_path = os.path.join(shot_scripts_app_task_dir,
+                                              shot_scripts_app_task_file)
 
     # Write the Nuke script content to the file
     with open(shot_scripts_app_task_path, 'w') as nuke_shot_script_file:
@@ -390,24 +580,64 @@ Write {{
  name Write1
  label "{shot_name}_{app_name}_{task_type}"
  xpos 0
- ypos -384
+ ypos 240
  postage_stamp true
 }}""")
 
+        # # This section is for logging purposes
         # logging.debug(f"Nuke script created for:  {shot_name}_{app_name}_{task_type}_{version_name}")
+
         print(f"Nuke Shot script created:    {shot_name}_{app_name}_{task_type}.nk\n")
 
+# -------------------------------------------------------------------------- #
+
 # Define function to create a source script
-def create_source_script(shot_name, shots_dir, shot_sources_dir, shot_source_dir, app_name, task_type, version_name, shot_scripts_dir, shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame):
+def create_source_script(shot_name, 
+                         shots_dir, 
+                         shot_sources_dir, 
+                         shot_source_dir, 
+                         app_name, 
+                         task_type, 
+                         version_name, 
+                         shot_scripts_dir, 
+                         shot_source_version_openexr_sequences_info, 
+                         shot_source_version_start_frame, 
+                         shot_source_version_end_frame):
+
+    """
+    Create a source script for nuke based on layer and task.
+
+    Parameters:
+        shot_name (str): The name of the shot.
+        shots_dir (str): The directory where shots are stored.
+        shot_sources_dir (str): The directory for shot sources.
+        shot_source_dir (str): The directory for shot source.
+        app_name (str): The name of the application.
+        task_type (str): The type of task.
+        version_name (str): The name of the version.
+        shot_scripts_dir (str): The directory for shot scripts.
+        shot_source_version_openexr_sequences_info (list): Information about OpenEXR sequences.
+        shot_source_version_start_frame (int): Start frame number of the source version.
+        shot_source_version_end_frame (int): End frame number of the source version.
+
+    Returns:
+    None
+    """
+
     # Define the directory for the specific app and task type
-    source_scripts_app_task_dir = os.path.join(shots_dir, shot_scripts_dir, app_name, 'sources', task_type)
+    source_scripts_app_task_dir = os.path.join(shots_dir, 
+                                               shot_scripts_dir, 
+                                               app_name, 
+                                               'sources', 
+                                               task_type)
 
     # Create the directory if it doesn't exist
     os.makedirs(source_scripts_app_task_dir, exist_ok=True)
 
     # Define the file path for the script
     source_scripts_app_task_file = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.nk"
-    source_scripts_app_task_path = os.path.join(source_scripts_app_task_dir, source_scripts_app_task_file)
+    source_scripts_app_task_path = os.path.join(source_scripts_app_task_dir, 
+                                                source_scripts_app_task_file)
 
     # Append the Nuke script content to the file
     with open(source_scripts_app_task_path, 'a') as nuke_source_script_file:
@@ -447,6 +677,7 @@ Read {{
  origlast {shot_source_version_end_frame}
  origset true
  name Read1
+ label "{shot_source_dir}"
  xpos 0
  ypos 0
 }}
@@ -468,22 +699,29 @@ Write {{
  name Write1
  label "{shot_source_dir}_{app_name}_{task_type}"
  xpos 0
- ypos -192
+ ypos 192
  postage_stamp true
 }}""")
 
+        # # This section is for logging purposes
         # logging.debug(f"Nuke script created for:  {shot_source_dir}_{version_name}")
+
         print(f"Nuke Source script created:  {shot_source_dir}_{version_name}.nk\n")
 
     # Define the directory for the specific app and task type
-    shot_scripts_app_task_dir = os.path.join(shots_dir, shot_scripts_dir, app_name, 'shot', task_type)
+    shot_scripts_app_task_dir = os.path.join(shots_dir, 
+                                             shot_scripts_dir, 
+                                             app_name, 
+                                             'shot', 
+                                             task_type)
 
     # Create the directory if it doesn't exist
     os.makedirs(shot_scripts_app_task_dir, exist_ok=True)
 
     # Define the file path for the script
     shot_scripts_app_task_file = f"{shot_name}_{app_name}_{task_type}_{version_name}.nk"
-    shot_scripts_app_task_path = os.path.join(shot_scripts_app_task_dir, shot_scripts_app_task_file)
+    shot_scripts_app_task_path = os.path.join(shot_scripts_app_task_dir, 
+                                              shot_scripts_app_task_file)
 
     # Open the file for in-place editing
     with fileinput.FileInput(shot_scripts_app_task_path, inplace=True) as file:
@@ -510,6 +748,7 @@ Read {{
  origlast {shot_source_version_end_frame}
  origset true
  name Read1
+ label "{shot_source_dir}"
  xpos 0
  ypos 0
 }}
@@ -531,20 +770,38 @@ Write {{
  name Write1
  label "{shot_source_dir}_{app_name}_{task_type}"
  xpos 0
- ypos -192
+ ypos 192
  postage_stamp true
 }}""")
 
+        # # This section is for logging purposes
         # logging.debug(f"Nuke script appended for:  {shot_name}_{app_name}_{task_type}_{version_name}")
-        print(f"Read/Write nodes appended:   {shot_source_dir}_{app_name}_{task_type}\n")
 
+        print(f"Read/Write nodes appended:   {shot_source_dir}_{app_name}_{task_type}\n")
 
 # ========================================================================== #
 # This section processes shot information to create files.
 # ========================================================================== #
 
 # Define function to process shot information
-def process_shot_info(job_structure, app_name, task_types_list, start_frame_min, end_frame_max):
+def process_shot_info(job_structure, 
+                      app_name, 
+                      task_types_list, 
+                      start_frame_min, 
+                      end_frame_max):
+    """
+    Process shot information.
+
+    Parameters:
+    job_structure (dict): The structure of the job.
+    app_name (str): The name of the application.
+    task_types_list (list): List of task types.
+    start_frame_min (int): Minimum frame number.
+    end_frame_max (int): Maximum frame number.
+
+    Returns:
+    None
+    """
     # Access shots_dir from job_structure dictionary
     shots_dir = job_structure["shots_dir"]
 
@@ -562,45 +819,85 @@ def process_shot_info(job_structure, app_name, task_types_list, start_frame_min,
 
         # Iterate over task types list
         for task_type in task_types_list:
-            shot_structure = define_shot_structure(shots_dir, shot_dir, app_name, task_type)
+            shot_structure = define_shot_structure(shots_dir, 
+                                                   shot_dir, 
+                                                   app_name, 
+                                                   task_type)
+            
             # Log shot structure
             # logging.info(f"Shot structure for {shot_dir} ({task_type}): {shot_structure}")
 
             # Create openclip output clip
-            create_openclip_output_clip(shot_name, app_name, task_type, shots_dir, shot_structure["shot_output_clips_app_dir"])
+            create_openclip_output_clip(shot_name, 
+                                        app_name, 
+                                        task_type, 
+                                        shots_dir, 
+                                        shot_structure["shot_output_clips_app_dir"])
 
             # Create Nuke script for the shot
-            create_shot_script(shot_name, app_name, task_type, version_name, shots_dir, shot_structure["shot_renders_dir"], shot_structure["shot_scripts_dir"])
+            create_shot_script(shot_name, 
+                               app_name, 
+                               task_type, 
+                               version_name, 
+                               shots_dir, 
+                               shot_structure["shot_renders_dir"], 
+                               shot_structure["shot_scripts_dir"])
 
             # Construct the correct path for listing source directories
-            shot_sources_dir = os.path.join(shots_dir, shot_structure["shot_sources_dir"])
+            shot_sources_dir = os.path.join(shots_dir, 
+                                            shot_structure["shot_sources_dir"])
 
             # List source directories
             shot_sources_dir_list = list_shot_sources_dir(shot_sources_dir)
+
             # Log source directories
             # logging.info(f"Source directories for {shot_dir} ({task_type}): {shot_sources_dir_list}")
 
             # Call path_to_shot_source_openexr_sequences for each source directory
             for shot_source_dir in shot_sources_dir_list:
-                shot_source_dir_path = os.path.join(shot_sources_dir, shot_source_dir)
-                shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame = path_to_shot_source_openexr_sequences(shot_source_dir_path, start_frame_min, end_frame_max)
+                shot_source_dir_path = os.path.join(shot_sources_dir, 
+                                                    shot_source_dir)
+                shot_source_version_openexr_sequences_info, \
+                    shot_source_version_start_frame, \
+                        shot_source_version_end_frame = path_to_shot_source_openexr_sequences(
+                            shot_source_dir_path, 
+                            start_frame_min, 
+                            end_frame_max)
+                
                 if shot_source_version_openexr_sequences_info:
+
                     # logging.info(f"OpenEXR files found in {shot_source_dir_path} ({task_type}):")
                     # for exr_info in shot_source_version_openexr_sequences_info:
                         # logging.info(f" - {exr_info['shot_source_version_openexr_path']} | Prefix: {exr_info['shot_source_version_filename_prefix']}, Frame: {exr_info['shot_source_version_openexr_frame_number']}, Suffix: {exr_info['shot_source_version_openexr_filename_suffix']}, Sequence Dir: {exr_info['shot_source_version_sequence_dir']}")
                     # logging.info(f"Start Frame: {shot_source_version_start_frame}, End Frame: {shot_source_version_end_frame}")
 
                     # Create openclip segment clip
-                    create_openclip_segment_clip(shot_source_dir, app_name, task_type, shots_dir, shot_structure["shot_segment_clips_app_dir"])
+                    create_openclip_segment_clip(shot_source_dir, 
+                                                 app_name, 
+                                                 task_type, 
+                                                 shots_dir, 
+                                                 shot_structure["shot_segment_clips_app_dir"])
 
                     # Create Nuke script for the shot
-                    create_source_script(shot_name, shots_dir, shot_sources_dir, shot_source_dir, app_name, task_type, version_name, shot_structure["shot_scripts_dir"], shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame)
+                    create_source_script(shot_name, 
+                                         shots_dir, 
+                                         shot_sources_dir, 
+                                         shot_source_dir, 
+                                         app_name, 
+                                         task_type, 
+                                         version_name, 
+                                         shot_structure["shot_scripts_dir"], 
+                                         shot_source_version_openexr_sequences_info, 
+                                         shot_source_version_start_frame, 
+                                         shot_source_version_end_frame)
 
                 # else:
+
+                    # # This section is for logging purposes
                     # logging.info(f"No OpenEXR files found in {shot_source_dir_path} ({task_type})")
 
 # ========================================================================== #
-# This section defines the main function.
+# This section defines the main create_openclips_and_scripts function.
 # ========================================================================== #
 
 def create_openclips_and_scripts(*args, **kwargs):
@@ -670,7 +967,11 @@ def create_openclips_and_scripts(*args, **kwargs):
     # print_variables()
 
     # Process shot information
-    process_shot_info(job_structure, app_name, task_types_list, start_frame_min, end_frame_max)
+    process_shot_info(job_structure, 
+                      app_name, 
+                      task_types_list, 
+                      start_frame_min, 
+                      end_frame_max)
 
 # ========================================================================== #
 # This section defines the flame menu entries.
@@ -793,3 +1094,7 @@ if __name__ == "__main__":
 # version:               1.0.3
 # modified:              2024-05-06 - 17:02:53
 # comments:              Added (*args, **kwargs) to main function
+# -------------------------------------------------------------------------- #
+# version:               1.0.4
+# modified:              2024-05-06 - 21:50:39
+# comments:              Updated docstrings, comments and formatting
