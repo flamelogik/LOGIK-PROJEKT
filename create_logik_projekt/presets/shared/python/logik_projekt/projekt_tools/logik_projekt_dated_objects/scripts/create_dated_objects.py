@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_dated_objects.py
-# Version:          0.0.2
+# Version:          0.0.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -258,8 +258,8 @@ def create_dated_desktop(*args):
 
     # ---------------------------------------------------------------------- #
 
-    the_current_project = flame.projects.current_project
-    the_current_workspace = the_current_project.current_workspace
+    the_current_projekt = flame.projects.current_project
+    the_current_workspace = the_current_projekt.current_workspace
     the_current_desktop = the_current_workspace.desktop
 
     # ---------------------------------------------------------------------- #
@@ -347,8 +347,8 @@ def create_dated_ref_folder(*args):
 
     # ---------------------------------------------------------------------- #
 
-    the_current_project = flame.projects.current_project
-    the_current_workspace = the_current_project.current_workspace
+    the_current_projekt = flame.projects.current_project
+    the_current_workspace = the_current_projekt.current_workspace
     the_current_desktop = the_current_workspace.desktop
 
     # ---------------------------------------------------------------------- #
@@ -384,8 +384,8 @@ def create_dated_conforms_reel_group(*args):
 
     # ---------------------------------------------------------------------- #
 
-    the_current_project = flame.projects.current_project
-    the_current_workspace = the_current_project.current_workspace
+    the_current_projekt = flame.projects.current_project
+    the_current_workspace = the_current_projekt.current_workspace
     the_current_desktop = the_current_workspace.desktop
 
     # ---------------------------------------------------------------------- #
@@ -440,8 +440,8 @@ def create_dated_postings_reel(*args):
 
     # ---------------------------------------------------------------------- #
 
-    the_current_project = flame.projects.current_project
-    the_current_workspace = the_current_project.current_workspace
+    the_current_projekt = flame.projects.current_project
+    the_current_workspace = the_current_projekt.current_workspace
     the_current_desktop = the_current_workspace.desktop
 
     # ---------------------------------------------------------------------- #
@@ -490,13 +490,13 @@ def get_main_menu_custom_ui_actions():
 
     return [
         {
-            'name': 'logik_projekt',
+            'name': 'logik-projekt',
             'hierarchy': [],
             'actions': []
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 2,
             'actions': [
                 {
@@ -508,7 +508,7 @@ def get_main_menu_custom_ui_actions():
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 3,
             'actions': [
                 {
@@ -520,7 +520,7 @@ def get_main_menu_custom_ui_actions():
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 4,
             'actions': [
                 {
@@ -532,7 +532,7 @@ def get_main_menu_custom_ui_actions():
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 5,
             'actions': [
                 {
@@ -551,7 +551,7 @@ def get_main_menu_custom_ui_actions():
 #     return [
 #         {
 #             'name': 'create',
-#             'hierarchy': ['logik_projekt'],
+#             'hierarchy': ['logik-projekt'],
 #             'order': 2,
 #             'actions': [
 #                 {
@@ -563,7 +563,7 @@ def get_main_menu_custom_ui_actions():
 #         },
 #         {
 #             'name': 'create',
-#             'hierarchy': ['logik_projekt'],
+#             'hierarchy': ['logik-projekt'],
 #             'order': 3,
 #             'actions': [
 #                 {
@@ -577,7 +577,7 @@ def get_main_menu_custom_ui_actions():
 #         },
 #         {
 #             'name': 'create',
-#             'hierarchy': ['logik_projekt'],
+#             'hierarchy': ['logik-projekt'],
 #             'order': 4,
 #             'actions': [
 #                 {
@@ -591,7 +591,7 @@ def get_main_menu_custom_ui_actions():
 #         },
 #         {
 #             'name': 'create',
-#             'hierarchy': ['logik_projekt'],
+#             'hierarchy': ['logik-projekt'],
 #             'order': 5,
 #             'actions': [
 #                 {
@@ -612,7 +612,7 @@ def get_media_panel_custom_ui_actions():
     return [
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 2,
             'actions': [
                 {
@@ -626,7 +626,7 @@ def get_media_panel_custom_ui_actions():
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 3,
             'actions': [
                 {
@@ -640,7 +640,7 @@ def get_media_panel_custom_ui_actions():
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 4,
             'actions': [
                 {
@@ -654,7 +654,7 @@ def get_media_panel_custom_ui_actions():
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 5,
             'actions': [
                 {
@@ -693,3 +693,11 @@ if __name__ == "__main__":
 # version:               0.0.2
 # modified:              2024-05-03 - 02:12:39
 # comments:              Fixed some formatting and flame menus
+# -------------------------------------------------------------------------- #
+# version:               0.0.3
+# modified:              2024-05-03 - 11:25:52
+# comments:              Changed 'the_current_project' to 'the_current_projekt'
+# -------------------------------------------------------------------------- #
+# version:               0.0.4
+# modified:              2024-05-03 - 11:38:45
+# comments:              Standardizd 'logik-projekt' menu entries

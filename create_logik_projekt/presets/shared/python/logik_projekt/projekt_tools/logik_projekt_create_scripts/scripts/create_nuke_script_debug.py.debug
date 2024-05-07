@@ -1,4 +1,4 @@
-# filename: create_nuke_scripts.py
+# filename: create_nuke_scripts.py (DEBUG)
 
 # -------------------------------------------------------------------------- #
 
@@ -26,33 +26,33 @@
 # This section imports the necessary modules.
 # ========================================================================== #
 
-import flame
+# import flame
 import os
 # import pdb; pdb.set_trace()
-# import re
+import re
 import fileinput
-# import logging
+import logging
 from datetime import datetime
 
 # ========================================================================== #
 # This section enables debugging.
 # ========================================================================== #
 
-# # Initiate script logging for debugging
-# def setup_logging(*args, **kwargs):
-#     script_path = os.path.abspath(__file__)
-#     script_name = os.path.basename(script_path)
-#     script_name_without_extension = os.path.splitext(script_name)[0]
-#     script_directory = os.path.dirname(script_path)
-#     log_directory = os.path.join(script_directory, 'log')
+# Initiate script logging for debugging
+def setup_logging(*args, **kwargs):
+    script_path = os.path.abspath(__file__)
+    script_name = os.path.basename(script_path)
+    script_name_without_extension = os.path.splitext(script_name)[0]
+    script_directory = os.path.dirname(script_path)
+    log_directory = os.path.join(script_directory, 'log')
 
-#     if not os.path.exists(log_directory):
-#         os.makedirs(log_directory)
+    if not os.path.exists(log_directory):
+        os.makedirs(log_directory)
 
-#     log_filename = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}_{script_name}.debug.log"
-#     log_filepath = os.path.join(log_directory, log_filename)
-#     print("Log filepath:", log_filepath)  # Add this line for debugging
-#     logging.basicConfig(filename=log_filepath, level=logging.DEBUG, *args, **kwargs)
+    log_filename = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}_{script_name}.debug.log"
+    log_filepath = os.path.join(log_directory, log_filename)
+    print("Log filepath:", log_filepath)  # Add this line for debugging
+    logging.basicConfig(filename=log_filepath, level=logging.DEBUG, *args, **kwargs)
 
 # ========================================================================== #
 # This section defines the logik projekt job structure.
@@ -70,8 +70,8 @@ def define_job_structure(job_root):
         dict: A dictionary containing the defined directory structure.
     """
 
-    # # This section is for logging purposes
-    # logging.info("Defining job structure...")
+    # This section is for logging purposes
+    logging.info("Defining job structure...")
 
     # Define directories
     job_dir = job_root
@@ -115,8 +115,8 @@ def define_job_structure(job_root):
 
     shots_dir = f"{job_dir}/shots"
 
-    # # This section is for logging purposes
-    # logging.info("Job structure defined.")
+    # This section is for logging purposes
+    logging.info("Job structure defined.")
 
     return {
         "job_root": job_root,
@@ -169,8 +169,8 @@ def list_shots_dir(shots_dir):
         shots_dir_list: A sorted list of directories in shots_dir.
     """
 
-    # # This section is for logging purposes
-    # logging.info(f"Listing shot directories in {shots_dir}:")
+    # This section is for logging purposes
+    logging.info(f"Listing shot directories in {shots_dir}:")
 
     shots_dir_list = [
         shots_dir_item for shots_dir_item in os.listdir(shots_dir) 
@@ -180,9 +180,9 @@ def list_shots_dir(shots_dir):
     # Sort the list alphabetically
     shots_dir_list.sort()
 
-    # # This section is for logging purposes
-    # for shot_dir in shots_dir_list:
-    #     logging.info(f" - {shot_dir}")
+    # This section is for logging purposes
+    for shot_dir in shots_dir_list:
+        logging.info(f" - {shot_dir}")
 
     return shots_dir_list
 
@@ -206,8 +206,8 @@ def define_shot_structure(shots_dir,
     dict: Dictionary containing directory paths for the shot structure.
     """
 
-    # # This section is for logging purposes
-    # logging.info(f"Defining shot structure for {shot_dir}...")
+    # This section is for logging purposes
+    logging.info(f"Defining shot structure for {shot_dir}...")
 
     # Define directories
     shot_batch_setups_dir = f"{shots_dir}/{shot_dir}/batch_setups"
@@ -248,8 +248,8 @@ def define_shot_structure(shots_dir,
 
         os.makedirs(directory, exist_ok=True)
 
-    # # This section is for logging purposes
-    # logging.info(f"Shot structure defined for {shot_dir}.")
+    # This section is for logging purposes
+    logging.info(f"Shot structure defined for {shot_dir}.")
 
     return {
         "shot_batch_setups_dir": shot_batch_setups_dir,
@@ -281,15 +281,15 @@ def list_shot_sources_dir(shot_sources_dir):
                 given directory path.
     """
 
-    # # This section is for logging purposes
-    # logging.info(f"Listing directories of {shot_sources_dir}:")
+    # This section is for logging purposes
+    logging.info(f"Listing directories of {shot_sources_dir}:")
 
     shot_sources_dir_list = os.listdir(shot_sources_dir)
     shot_sources_dir_list.sort()  # Sort the directory list
     
-    # # This section is for logging purposes
-    # for shot_source_dir in shot_sources_dir_list:
-    #     logging.info(f" - {shot_source_dir}")
+    # This section is for logging purposes
+    for shot_source_dir in shot_sources_dir_list:
+        logging.info(f" - {shot_source_dir}")
     
     return shot_sources_dir_list
 
@@ -307,15 +307,15 @@ def list_shot_source_dir(shot_source_dir):
                 given directory path.
     """
 
-    # # This section is for logging purposes
-    # logging.info(f"Listing contents of source directory {shot_source_dir}:")
+    # This section is for logging purposes
+    logging.info(f"Listing contents of source directory {shot_source_dir}:")
 
     shot_source_dir_list = os.listdir(shot_source_dir)
     shot_source_dir_list.sort()  # Sort the directory list
 
-    # # This section is for logging purposes
-    # for shot_source_version_dir in shot_source_dir_list:
-    #     logging.info(f" - {shot_source_version_dir}")
+    # This section is for logging purposes
+    for shot_source_version_dir in shot_source_dir_list:
+        logging.info(f" - {shot_source_version_dir}")
 
     return shot_source_dir_list
 
@@ -338,8 +338,8 @@ def path_to_shot_source_openexr_sequences(directory,
            start frame number, and end frame number.
     """
 
-    # # This section is for logging purposes
-    # logging.info(f"Searching for OpenEXR image sequences in {directory}...")
+    # This section is for logging purposes
+    logging.info(f"Searching for OpenEXR image sequences in {directory}...")
 
     shot_source_version_openexr_sequences_info = []
     shot_source_version_start_frame = None
@@ -438,8 +438,8 @@ def create_openclip_output_clip(shot_name,
     </handler>
 </clip>""")
 
-    # # This section is for logging purposes
-    # logging.debug(f"output clip created for:     {shot_name}_{app_name}_{task_type}")
+    # This section is for logging purposes
+    logging.debug(f"output clip created for:     {shot_name}_{app_name}_{task_type}")
 
     print(f"Output clip created:         {shot_name}_{app_name}_{task_type}.clip\n")
  
@@ -490,8 +490,8 @@ def create_openclip_segment_clip(shot_source_dir,
     </handler>
 </clip>""")
         
-    # # This section is for logging purposes
-    # logging.debug(f"segment clip created for:    {shot_source_dir}_{app_name}_{task_type}")
+    # This section is for logging purposes
+    logging.debug(f"segment clip created for:    {shot_source_dir}_{app_name}_{task_type}")
 
     print(f"Segment clip created:        {shot_source_dir}_{app_name}_{task_type}.clip\n")
 
@@ -584,8 +584,8 @@ Write {{
  postage_stamp true
 }}""")
 
-        # # This section is for logging purposes
-        # logging.debug(f"Nuke script created for:  {shot_name}_{app_name}_{task_type}_{version_name}")
+        # This section is for logging purposes
+        logging.debug(f"Nuke script created for:  {shot_name}_{app_name}_{task_type}_{version_name}")
 
         print(f"Nuke Shot script created:    {shot_name}_{app_name}_{task_type}.nk\n")
 
@@ -703,8 +703,8 @@ Write {{
  postage_stamp true
 }}""")
 
-        # # This section is for logging purposes
-        # logging.debug(f"Nuke script created for:  {shot_source_dir}_{version_name}")
+        # This section is for logging purposes
+        logging.debug(f"Nuke script created for:  {shot_source_dir}_{version_name}")
 
         print(f"Nuke Source script created:  {shot_source_dir}_{version_name}.nk\n")
 
@@ -774,8 +774,8 @@ Write {{
  postage_stamp true
 }}""")
 
-        # # This section is for logging purposes
-        # logging.debug(f"Nuke script appended for:  {shot_name}_{app_name}_{task_type}_{version_name}")
+        # This section is for logging purposes
+        logging.debug(f"Nuke script appended for:  {shot_name}_{app_name}_{task_type}_{version_name}")
 
         print(f"Read/Write nodes appended:   {shot_source_dir}_{app_name}_{task_type}\n")
 
@@ -866,10 +866,10 @@ def process_shot_info(job_structure,
                 
                 if shot_source_version_openexr_sequences_info:
 
-                    # logging.info(f"OpenEXR files found in {shot_source_dir_path} ({task_type}):")
-                    # for exr_info in shot_source_version_openexr_sequences_info:
-                        # logging.info(f" - {exr_info['shot_source_version_openexr_path']} | Prefix: {exr_info['shot_source_version_filename_prefix']}, Frame: {exr_info['shot_source_version_openexr_frame_number']}, Suffix: {exr_info['shot_source_version_openexr_filename_suffix']}, Sequence Dir: {exr_info['shot_source_version_sequence_dir']}")
-                    # logging.info(f"Start Frame: {shot_source_version_start_frame}, End Frame: {shot_source_version_end_frame}")
+                    logging.info(f"OpenEXR files found in {shot_source_dir_path} ({task_type}):")
+                    for exr_info in shot_source_version_openexr_sequences_info:
+                        logging.info(f" - {exr_info['shot_source_version_openexr_path']} | Prefix: {exr_info['shot_source_version_filename_prefix']}, Frame: {exr_info['shot_source_version_openexr_frame_number']}, Suffix: {exr_info['shot_source_version_openexr_filename_suffix']}, Sequence Dir: {exr_info['shot_source_version_sequence_dir']}")
+                    logging.info(f"Start Frame: {shot_source_version_start_frame}, End Frame: {shot_source_version_end_frame}")
 
                     # Create openclip segment clip
                     create_openclip_segment_clip(shot_source_dir, 
@@ -891,10 +891,10 @@ def process_shot_info(job_structure,
                                          shot_source_version_start_frame, 
                                          shot_source_version_end_frame)
 
-                # else:
+                else:
 
-                    # # This section is for logging purposes
-                    # logging.info(f"No OpenEXR files found in {shot_source_dir_path} ({task_type})")
+                    # This section is for logging purposes
+                    logging.info(f"No OpenEXR files found in {shot_source_dir_path} ({task_type})")
 
 # ========================================================================== #
 # This section defines the main create_openclips_and_scripts function.
@@ -935,12 +935,12 @@ def create_openclips_and_scripts(*args, **kwargs):
     # Testing
     job_root = "/JOBS/dry_run_01"
 
-    # # Setup logging
-    # setup_logging()
+    # Setup logging
+    setup_logging()
 
     # Define job structure using the function
     job_structure = define_job_structure(job_root)
-    # logging.info("Job structure defined.")
+    logging.info("Job structure defined.")
 
     # Define app_name and task_types_list
     app_name = "nuke"
@@ -958,53 +958,30 @@ def create_openclips_and_scripts(*args, **kwargs):
     end_frame_max = float('-inf')
 
     # Define a function to print variables
-    # def print_variables():
-        # logging.info("Printing variables:")
-        # for key, value in job_structure.items():
-        #     logging.info(f"{key}: {value}")
+    def print_variables():
+        logging.info("Printing variables:")
+        for key, value in job_structure.items():
+            logging.info(f"{key}: {value}")
 
     # Call the function to print variables
-    # print_variables()
+    print_variables()
 
     # Process shot information
-    process_shot_info(job_structure, 
-                      app_name, 
-                      task_types_list, 
-                      start_frame_min, 
-                      end_frame_max)
+    process_shot_info(job_structure, app_name, task_types_list, start_frame_min, end_frame_max)
 
 # ========================================================================== #
 # This section defines the flame menu entries.
 # ========================================================================== #
 
-# Add custom UI actions
-def get_main_menu_custom_ui_actions():
-
-    return [
-        {
-            'name': 'logik-projekt',
-            'hierarchy': [],
-            'actions': []
-        },
-        {
-            'name': 'create',
-            'hierarchy': ['logik-projekt'],
-            'order': 5,
-            'actions': [
-                {
-                    'name': 'nuke scripts',
-                    'execute': create_openclips_and_scripts,
-                    'minimumVersion': '2025'
-                }
-            ]
-        }
-    ]
-
-# -------------------------------------------------------------------------- #
-
-# def get_mediahub_files_custom_ui_actions():
+# # Add custom UI actions
+# def get_main_menu_custom_ui_actions():
 
 #     return [
+#         {
+#             'name': 'logik-projekt',
+#             'hierarchy': [],
+#             'actions': []
+#         },
 #         {
 #             'name': 'create',
 #             'hierarchy': ['logik-projekt'],
@@ -1019,26 +996,45 @@ def get_main_menu_custom_ui_actions():
 #         }
 #     ]
 
-# -------------------------------------------------------------------------- #
+# # -------------------------------------------------------------------------- #
 
-def get_media_panel_custom_ui_actions():
+# # def get_mediahub_files_custom_ui_actions():
 
-    return [
-        {
-            'name': 'create',
-            'hierarchy': ['logik-projekt'],
-            'order': 5,
-            'actions': [
-                {
-                    'name': 'nuke scripts',
-                    'order': 5,
-                    'separator': 'below',
-                    'execute': create_openclips_and_scripts,
-                    'minimumVersion': '2025'
-                }
-            ]
-        }
-    ]
+# #     return [
+# #         {
+# #             'name': 'create',
+# #             'hierarchy': ['logik-projekt'],
+# #             'order': 5,
+# #             'actions': [
+# #                 {
+# #                     'name': 'nuke scripts',
+# #                     'execute': create_openclips_and_scripts,
+# #                     'minimumVersion': '2025'
+# #                 }
+# #             ]
+# #         }
+# #     ]
+
+# # -------------------------------------------------------------------------- #
+
+# def get_media_panel_custom_ui_actions():
+
+#     return [
+#         {
+#             'name': 'create',
+#             'hierarchy': ['logik-projekt'],
+#             'order': 5,
+#             'actions': [
+#                 {
+#                     'name': 'nuke scripts',
+#                     'order': 5,
+#                     'separator': 'below',
+#                     'execute': create_openclips_and_scripts,
+#                     'minimumVersion': '2025'
+#                 }
+#             ]
+#         }
+#     ]
 
 # ========================================================================== #
 # This section defines how to handle the main script function.
@@ -1078,10 +1074,6 @@ if __name__ == "__main__":
 # version:               0.0.6
 # modified:              2024-05-03 - 13:37:01
 # comments:              Added validation for file existence
-# -------------------------------------------------------------------------- #
-# version:               1.0.0
-# modified:              2024-05-06 - 14:35:57
-# comments:              Complete re-write - tested on Lucid Link
 # -------------------------------------------------------------------------- #
 # version:               1.0.1
 # modified:              2024-05-06 - 16:12:00
