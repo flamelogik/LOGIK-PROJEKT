@@ -31,6 +31,13 @@ create_backup_script() {
     # Copy the default job backup text to a new backup shell script
     cp "$src_rsync_script" "$tgt_rsync_script"
 
+    # Set the source and target files for copying
+    local src_rsync_exclusion_list="presets/templates/exclusion_list.txt"
+    local tgt_rsync_exclusion_list="$tgt_rsync_dir/exclusion_list.txt"
+    
+    # Copy the default job backup text to a new backup shell script
+    cp "$src_rsync_exclusion_list" "$tgt_rsync_exclusion_list"
+
     # Add execution permissions to new backup shell script
     chmod +x "$tgt_rsync_script"
 
