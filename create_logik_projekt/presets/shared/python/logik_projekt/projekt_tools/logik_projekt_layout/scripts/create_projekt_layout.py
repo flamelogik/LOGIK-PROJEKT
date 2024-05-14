@@ -29,6 +29,7 @@ import flame
 import datetime
 import json
 import os
+import sys
 
 # ========================================================================== #
 # This section defines some variables based on the date.
@@ -91,54 +92,68 @@ separator_hash = (
 # This section creates decorative separators for titles and banners.
 # ========================================================================== #
 
-from modules.functions.separators import (
-    repeat_char,
-    make_line_79_chars,
-    generate_title_line,
-    generate_end_title_line)
+# from modules.functions.separators import (
+#     repeat_char,
+#     make_line_79_chars,
+#     generate_title_line,
+#     generate_end_title_line
+# )
 
 # ========================================================================== #
 # This section defines color variables.
 # ========================================================================== #
 
-# Define object colors
-object_colors = {
+# # Define object colors (from JSON)
 
-    # Autodesk Colors
-    "Red": (0.376, 0.047, 0.047),             # Red
-    "Green": (0.114, 0.263, 0.176),           # Green
-    "Bright Green": (0.102, 0.502, 0.208),    # Bright Green
-    "Blue": (0.188, 0.263, 0.400),            # Blue
-    "Light Blue": (0.263, 0.408, 0.502),      # Light Blue
-    "Purple": (0.388, 0.318, 0.541),          # Purple
-    "Orange": (0.600, 0.345, 0.165),          # Orange
-    "Gold": (0.478, 0.478, 0.271),            # Gold
-    "Yellow": (0.784, 0.784, 0.196),          # Yellow
-    "Light Grey": (0.706, 0.706, 0.706),      # Light Grey
-    "Black": (0.000, 0.000, 0.000),           # Black
+# # Open the JSON file and read the data
+# with open('colors.json', 'r') as file:
+#     data = json.load(file)
 
-    # Custom Colors
-    "Dark Red": (0.188, 0.023, 0.023),        # Dark Red
-    "Dark Green": (0.057, 0.131, 0.088),      # Dark Green
-    "Dark Blue": (0.094, 0.131, 0.200),       # Dark Blue
-    "Dark Purple": (0.194, 0.159, 0.270),     # Dark Purple
-    "Dark Orange": (0.300, 0.172, 0.082),     # Dark Orange
-    "Dark Gold": (0.239, 0.239, 0.135),       # Dark Gold
+# # Extract the object_colors dictionary from the loaded data
+# object_colors = data['object_colors']
 
-    # Grey Scale
-    "Grey02": (0.928, 0.928, 0.928),          # Grey02
-    "Grey03": (0.857, 0.857, 0.857),          # Grey03
-    "Grey04": (0.786, 0.786, 0.786),          # Grey04
-    "Grey05": (0.714, 0.714, 0.714),          # Grey05
-    "Grey06": (0.643, 0.643, 0.643),          # Grey06
-    "Grey07": (0.571, 0.571, 0.571),          # Grey07
-    "Grey08": (0.500, 0.500, 0.500),          # Grey08
-    "Grey09": (0.417, 0.417, 0.417),          # Grey09
-    "Grey10": (0.333, 0.333, 0.333),          # Grey10
-    "Grey11": (0.250, 0.250, 0.250),          # Grey11
-    "Grey12": (0.167, 0.167, 0.167),          # Grey12
-    "Grey13": (0.083, 0.083, 0.083)           # Grey13
-}
+# Define object colors (from python function)
+from modules.functions.colors import (
+    object_colors
+)
+
+# object_colors = {
+
+#     # Autodesk Colors
+#     "Red": (0.376, 0.047, 0.047),             # Red
+#     "Green": (0.114, 0.263, 0.176),           # Green
+#     "Bright Green": (0.102, 0.502, 0.208),    # Bright Green
+#     "Blue": (0.188, 0.263, 0.400),            # Blue
+#     "Light Blue": (0.263, 0.408, 0.502),      # Light Blue
+#     "Purple": (0.388, 0.318, 0.541),          # Purple
+#     "Orange": (0.600, 0.345, 0.165),          # Orange
+#     "Gold": (0.478, 0.478, 0.271),            # Gold
+#     "Yellow": (0.784, 0.784, 0.196),          # Yellow
+#     "Light Grey": (0.706, 0.706, 0.706),      # Light Grey
+#     "Black": (0.000, 0.000, 0.000),           # Black
+
+#     # Custom Colors
+#     "Dark Red": (0.188, 0.023, 0.023),        # Dark Red
+#     "Dark Green": (0.057, 0.131, 0.088),      # Dark Green
+#     "Dark Blue": (0.094, 0.131, 0.200),       # Dark Blue
+#     "Dark Purple": (0.194, 0.159, 0.270),     # Dark Purple
+#     "Dark Orange": (0.300, 0.172, 0.082),     # Dark Orange
+#     "Dark Gold": (0.239, 0.239, 0.135),       # Dark Gold
+
+#     # Grey Scale
+#     "Grey02": (0.928, 0.928, 0.928),          # Grey02
+#     "Grey03": (0.857, 0.857, 0.857),          # Grey03
+#     "Grey04": (0.786, 0.786, 0.786),          # Grey04
+#     "Grey05": (0.714, 0.714, 0.714),          # Grey05
+#     "Grey06": (0.643, 0.643, 0.643),          # Grey06
+#     "Grey07": (0.571, 0.571, 0.571),          # Grey07
+#     "Grey08": (0.500, 0.500, 0.500),          # Grey08
+#     "Grey09": (0.417, 0.417, 0.417),          # Grey09
+#     "Grey10": (0.333, 0.333, 0.333),          # Grey10
+#     "Grey11": (0.250, 0.250, 0.250),          # Grey11
+#     "Grey12": (0.167, 0.167, 0.167),          # Grey12
+#     "Grey13": (0.083, 0.083, 0.083)           # Grey13
+# }
 
 # ========================================================================== #
 # This section defines a function to create or validate flame objects.
