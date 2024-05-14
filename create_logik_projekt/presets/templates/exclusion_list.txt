@@ -1,0 +1,61 @@
+# ========================================================================== #
+# This section defines an exclusion list to stop files from being backed up.
+# (Uncomment directory names to exclude them from the backup)
+# ========================================================================== #
+
+# "${logik_projekt_root_directory}/assets"
+
+# "${logik_projekt_root_directory}/assets/audio"
+
+# "${logik_projekt_root_directory}/assets/CGI"
+
+# "${logik_projekt_root_directory}/assets/footage_graded"
+# "${logik_projekt_root_directory}/assets/footage_raw"
+
+# "${logik_projekt_root_directory}/assets/geometry"
+# "${logik_projekt_root_directory}/assets/geometry/3ds"
+# "${logik_projekt_root_directory}/assets/geometry/alembic"
+# "${logik_projekt_root_directory}/assets/geometry/cache"
+# "${logik_projekt_root_directory}/assets/geometry/dxf"
+# "${logik_projekt_root_directory}/assets/geometry/fbx"
+# "${logik_projekt_root_directory}/assets/geometry/obj"
+# "${logik_projekt_root_directory}/assets/geometry/usd"
+
+# "${logik_projekt_root_directory}/assets/graphics"
+
+# "${logik_projekt_root_directory}/assets/matchmoving"
+
+# "${logik_projekt_root_directory}/assets/miscellaneous"
+
+# "${logik_projekt_root_directory}/assets/roto"
+
+# "${logik_projekt_root_directory}/assets/slates"
+
+# "${logik_projekt_root_directory}/assets/subtitles"
+
+# "${logik_projekt_root_directory}/assets/tracking"
+
+# "${logik_projekt_root_directory}/assets/video"
+
+# "${logik_projekt_root_directory}/backup_scripts"
+
+# "${logik_projekt_root_directory}/configs"
+
+# "${logik_projekt_root_directory}/deliverables"
+# "${logik_projekt_root_directory}/deliverables/finals"
+
+# "${logik_projekt_root_directory}/editorial"
+# "${logik_projekt_root_directory}/editorial/aaf"
+# "${logik_projekt_root_directory}/editorial/edl"
+# "${logik_projekt_root_directory}/editorial/xml"
+
+# "${logik_projekt_root_directory}/flame"
+# "${logik_projekt_root_directory}/flame/archives"
+# "${logik_projekt_root_directory}/flame/setups"
+
+# "${logik_projekt_root_directory}/reference"
+
+# "${logik_projekt_root_directory}/shots"
+
+# "${logik_projekt_root_directory}/work_in_progress"
+# "${logik_projekt_root_directory}/work_in_progress/postings"
