@@ -70,3 +70,7 @@ print("Version directory:  ", os.path.basename(version_dir))
 # version:               0.0.6
 # modified:              2024-05-12 - 18:16:05
 # comments:              Added a 'separators' function and tested in flame 2025.
+# -------------------------------------------------------------------------- #
+# version:               1.0.6
+# modified:              2024-05-14 - 15:30:58
+# comments:              Defined 'object_colors' in a separate function.
