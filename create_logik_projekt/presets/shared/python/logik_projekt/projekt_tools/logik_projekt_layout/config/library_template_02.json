@@ -1,0 +1,20 @@
+{
+    "item_00": {
+        "object_name": "reference_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'reference'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Orange\")",
+        "children": {
+            "item_01": {
+                "object_name": "todays_reference_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "reference_library",
+                "display_name": "today_date + '-reference'",
+                "object_type": "folder",
+                "object_color": ""
+            }
+        }
+    }
+}

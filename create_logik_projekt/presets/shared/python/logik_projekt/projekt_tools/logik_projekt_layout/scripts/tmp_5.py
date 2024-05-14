@@ -70,34 +70,6 @@ def get_absolute_info():
     )
 
 # ========================================================================== #
-# This section creates a decorative separator for blocks of text.
-# ========================================================================== #
-
-# Define a variable called 'separator'
-separator = (
-    f"+ {'-' * 75} +"
-)
-
-# ========================================================================== #
-# This section creates a decorative separator for blocks of code.
-# ========================================================================== #
-
-# Define a variable called 'separator_hash'
-separator_hash = (
-    f"# {'#' * 75} #"
-)
-
-# ========================================================================== #
-# This section creates decorative separators for titles and banners.
-# ========================================================================== #
-
-from modules.functions.separators import (
-    repeat_char,
-    make_line_79_chars,
-    generate_title_line,
-    generate_end_title_line)
-
-# ========================================================================== #
 # This section defines color variables.
 # ========================================================================== #
 
@@ -185,7 +157,7 @@ def create_or_validate_object(
                 new_group.colour = object_color
 
             print(
-                f"  New batch group '{object_name}' created successfully in library "
+                f"New batch group '{object_name}' created successfully in library "
                 f"'{library.name}'."
             )
             return new_group
@@ -216,7 +188,7 @@ def create_or_validate_object(
             new_group.colour = object_color
 
         print(
-            f"  New reel group '{object_name}' created successfully in library "
+            f"New reel group '{object_name}' created successfully in library "
             f"'{library.name}'.")
         return new_group
 
@@ -250,8 +222,8 @@ def create_or_validate_object(
     #     new_object.colour = object_color
 
     # print(
-    #     f"  New {object_type} '{object_name}' created successfully in library "
-    #     f"  '{library.name}'."
+    #     f"New {object_type} '{object_name}' created successfully in library "
+    #     f"'{library.name}'."
     #     )
 
     # return new_object
@@ -301,8 +273,8 @@ def create_or_validate_object(
     #     new_object.colour = object_color
 
     # print(
-    #     f"  New {object_type} '{object_name}' created successfully in library "
-    #     f"  '{library.name}'."
+    #     f"New {object_type} '{object_name}' created successfully in library "
+    #     f"'{library.name}'."
     #     )
 
     # # Add the new object to the library list
@@ -332,14 +304,14 @@ def create_or_validate_object(
     if object_type == 'reel':
         if object_reel_type:
             new_object.attributes['Type'] = object_reel_type
-            print(f"  New reel '{object_name}' created successfully in library "
+            print(f"New reel '{object_name}' created successfully in library "
                 f"'{library.name}' with Type '{object_reel_type}'.")
         else:
-            print(f"  New reel '{object_name}' created successfully in library "
+            print(f"New reel '{object_name}' created successfully in library "
                 f"'{library.name}'.")
     else:
         print(
-            f"  New {object_type} '{object_name}' created successfully in library "
+            f"New {object_type} '{object_name}' created successfully in library "
             f"'{library.name}'."
             )
 
@@ -380,7 +352,7 @@ def create_or_validate_library(
     if object_color:
         new_library.colour = object_color
     print(
-        f"  New library '{library_name}' created successfully in workspace "
+        f"New library '{library_name}' created successfully in workspace "
         f"'{workspace.name}'."
         )
 
@@ -400,8 +372,7 @@ def create_and_validate_from_template(json_file, the_current_workspace):
     # the_current_desktop = the_current_workspace.desktop
 
     # print(f"Processing file: {json_file}")
-    print(f"\n{separator}\n")
-    print(f"  Processing file: {os.path.basename(json_file)}")
+    print(f"Processing file: {os.path.basename(json_file)}\n")
 
     # Load the JSON file
     with open(json_file) as file:
@@ -422,7 +393,7 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                 f"{object_name} = \\",
                 f"\t{process_type}(",
                 f"\t\t{parent_object},",  # Ensure proper string quotation
-                f"\t\t{display_name},",   # Ensure proper string quotation
+                f"\t\t'{display_name}',",   # Ensure proper string quotation
                 # f"\t\t{object_type},",    # Not sure if object_type should be included
                 f"\t\t{object_color}"     # Ensure proper string quotation
             ]
@@ -432,18 +403,17 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                 f"{object_name} = \\",
                 f"\t{process_type}(",
                 f"\t\t{parent_object},",  # Ensure proper string quotation
-                f"\t\t{display_name}"     # Ensure proper string quotation
+                f"\t\t'{display_name}'"     # Ensure proper string quotation
                 # f"\t\t{object_type}"      # Not sure if object_type should be included
             ]
 
-        print(f"\n{separator}\n")
-        print(f"  Creating: {object_type}: {display_name}\n")
+        print(f"Creating: {object_type}: {display_name}")
         parent_command = "\n".join(command_parts) + "\n\t)"
         print(parent_command)
         try:
             exec(parent_command)
         except Exception as e:
-            print(f"  An error occurred while executing the command: {e}\n")
+            print(f"An error occurred while executing the command: {e}")
 
         # Check if there are children objects
         if "children" in item_data:
@@ -463,7 +433,7 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                         f"{child_object_name} = \\",
                         f"\t{child_process_type}(",
                         f"\t\t{child_parent_object},",  # Ensure proper string quotation
-                        f"\t\t{child_display_name},",   # Ensure proper string quotation
+                        f"\t\t'{child_display_name}',",   # Ensure proper string quotation
                         f"\t\t'{child_object_type}',",    # Ensure proper string quotation
                         f"\t\t{child_object_color}"     # Ensure proper string quotation
                     ]
@@ -473,20 +443,20 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                         f"{child_object_name} = \\",
                         f"\t{child_process_type}(",
                         f"\t\t{child_parent_object},",  # Ensure proper string quotation
-                        f"\t\t{child_display_name},",   # Ensure proper string quotation
+                        f"\t\t'{child_display_name}',",   # Ensure proper string quotation
                         f"\t\t'{child_object_type}'"       # Ensure proper string quotation
                     ]
                 
-                print(f"\n{separator}\n")
-                print(f"  Creating: {child_object_type}: {child_display_name}\n")
+                print(f"Creating: {child_object_type}: {child_display_name}")
                 child_command = "\n".join(child_command_parts) + "\n\t)\n"
                 print(child_command)
                 try:
                     exec(child_command)
                 except Exception as e:
-                    print(f"  An error occurred while executing the command: {e}\n")
+                    print(f"An error occurred while executing the command: {e}")
 
-        print(f"\n{separator}\n")
+        print("\n# ================= #\n")
+
 
 # -------------------------------------------------------------------------- #
 
@@ -1008,7 +978,7 @@ def get_media_panel_custom_ui_actions():
             'actions': [
                 {
                     'name': 'create layout',
-                    'order': 1,
+                    'order': 4,
                     'separator': 'below',
                     'execute': create_layout,
                     'minimumVersion': '2025'

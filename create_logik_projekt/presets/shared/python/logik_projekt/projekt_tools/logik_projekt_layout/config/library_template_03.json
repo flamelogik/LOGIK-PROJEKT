@@ -1,0 +1,36 @@
+{
+    "item_00": {
+        "object_name": "editorial_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'editorial'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Gold\")",
+        "children": {
+            "item_01": {
+                "object_name": "conforms_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "editorial_library",
+                "display_name": "'conforms'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_02": {
+                "object_name": "work_in_progress_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "editorial_library",
+                "display_name": "'work_in_progress'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_03": {
+                "object_name": "postings_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "work_in_progress_folder",
+                "display_name": "'postings'",
+                "object_type": "folder",
+                "object_color": ""
+            }
+        }
+    }
+}
