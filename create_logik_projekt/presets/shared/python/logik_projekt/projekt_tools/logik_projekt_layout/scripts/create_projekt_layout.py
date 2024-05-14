@@ -113,7 +113,7 @@ separator_hash = (
 # object_colors = data['object_colors']
 
 # Define object colors (from python function)
-from modules.functions.colors import (
+from modules.functions.object_colors import (
     object_colors
 )
 
