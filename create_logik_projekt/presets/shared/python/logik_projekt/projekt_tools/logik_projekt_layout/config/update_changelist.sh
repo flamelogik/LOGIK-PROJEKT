@@ -2,7 +2,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        update_logik_projekt_create_nuke_script.sh
+# File Name:        update_changelist.sh
 # Version:          1.0.0
 # Language:         bash script
 # Flame Version:    2025.x
