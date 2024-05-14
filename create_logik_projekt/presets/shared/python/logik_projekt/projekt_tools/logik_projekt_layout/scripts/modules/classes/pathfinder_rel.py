@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_rel.py
-# Version:          1.0.6
+# Version:          0.0.9
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -17,8 +17,7 @@
 #                   running script and related directories.
 #                   
 #                   This script defines 2 classes which locate the running 
-#                   script and related directories, using absolute or 
-#                   relative paths.
+#                   script and related directories, using relative paths.
 #                   
 #                   It provides methods to create necessary directories
 #                   and print out the paths.
@@ -187,7 +186,16 @@ if __name__ == "__main__":
 # version:               0.0.6
 # modified:              2024-05-12 - 18:16:05
 # comments:              Added a 'separators' function and tested in flame 2025.
+
 # -------------------------------------------------------------------------- #
-# version:               1.0.6
-# modified:              2024-05-14 - 15:30:58
-# comments:              Defined 'object_colors' in a separate function.
+# version:               0.0.7
+# modified:              2024-05-14 - 16:30:58
+# comments:              Minor reformatting.
+# -------------------------------------------------------------------------- #
+# version:               0.0.8
+# modified:              2024-05-14 - 16:31:23
+# comments:              Changed object_colors from python to JSON.
+# -------------------------------------------------------------------------- #
+# version:               0.0.9
+# modified:              2024-05-14 - 16:31:47
+# comments:              Tested in flame 2025.

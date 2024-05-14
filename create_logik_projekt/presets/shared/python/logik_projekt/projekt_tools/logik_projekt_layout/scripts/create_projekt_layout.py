@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
-# Version:          1.0.6
+# Version:          0.0.9
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -70,6 +70,20 @@ def get_absolute_info():
         abs_version_dir
     )
 
+# Get absolute path information
+(
+    abs_script_name, 
+    abs_path_to_this_script, 
+    abs_script_dir, 
+    abs_parent_dir,
+    abs_config_dir, 
+    abs_scripts_dir, 
+    abs_classes_and_functions_dir,
+    abs_classes_dir, 
+    abs_functions_dir, 
+    abs_version_dir
+) = get_absolute_info()
+
 # ========================================================================== #
 # This section creates a decorative separator for blocks of text.
 # ========================================================================== #
@@ -103,14 +117,15 @@ separator_hash = (
 # This section defines color variables.
 # ========================================================================== #
 
-# # Define object colors (from JSON)
+# Define object colors (from JSON)
+object_colors_json_path = os.path.join(abs_config_dir, 'object_colors.json')
 
-# # Open the JSON file and read the data
-# with open('colors.json', 'r') as file:
-#     data = json.load(file)
+# Open the JSON file and read the data
+with open(object_colors_json_path, 'r') as file:
+    data = json.load(file)
 
-# # Extract the object_colors dictionary from the loaded data
-# object_colors = data['object_colors']
+# Extract the object_colors dictionary from the loaded data
+object_colors = data['object_colors']
 
 # Define object colors (from python function)
 from modules.functions.object_colors import (
@@ -556,18 +571,18 @@ def create_layout(*args):
     if args:
         print("Received arguments from Flame:", args)
 
-    (
-        abs_script_name, 
-        abs_path_to_this_script, 
-        abs_script_dir, 
-        abs_parent_dir,
-        abs_config_dir, 
-        abs_scripts_dir, 
-        abs_classes_and_functions_dir,
-        abs_classes_dir, 
-        abs_functions_dir, 
-        abs_version_dir
-    ) = get_absolute_info()
+    # (
+    #     abs_script_name, 
+    #     abs_path_to_this_script, 
+    #     abs_script_dir, 
+    #     abs_parent_dir,
+    #     abs_config_dir, 
+    #     abs_scripts_dir, 
+    #     abs_classes_and_functions_dir,
+    #     abs_classes_dir, 
+    #     abs_functions_dir, 
+    #     abs_version_dir
+    # ) = get_absolute_info()
 
     # object_colors = get_object_colors(abs_config_dir)
 
@@ -602,10 +617,10 @@ def create_layout(*args):
     for file_name in sorted(os.listdir(abs_config_dir)):
         if file_name.startswith("library_template") and file_name.endswith(".json"):
             # Define the path to the JSON file
-            json_file_path = os.path.join(abs_config_dir, file_name)
+            object_colors_json_path = os.path.join(abs_config_dir, file_name)
 
             # Call create_and_validate_from_template function with the path to the JSON file
-            create_and_validate_from_template(json_file_path, the_current_workspace)
+            create_and_validate_from_template(object_colors_json_path, the_current_workspace)
 
     # # Validate or create 'desktops' library
     # desktops_library = \
@@ -1069,7 +1084,16 @@ if __name__ == "__main__":
 # version:               0.0.6
 # modified:              2024-05-12 - 18:16:05
 # comments:              Added a 'separators' function and tested in flame 2025.
+
 # -------------------------------------------------------------------------- #
-# version:               1.0.6
-# modified:              2024-05-14 - 15:30:58
-# comments:              Defined 'object_colors' in a separate function.
+# version:               0.0.7
+# modified:              2024-05-14 - 16:30:58
+# comments:              Minor reformatting.
+# -------------------------------------------------------------------------- #
+# version:               0.0.8
+# modified:              2024-05-14 - 16:31:23
+# comments:              Changed object_colors from python to JSON.
+# -------------------------------------------------------------------------- #
+# version:               0.0.9
+# modified:              2024-05-14 - 16:31:47
+# comments:              Tested in flame 2025.

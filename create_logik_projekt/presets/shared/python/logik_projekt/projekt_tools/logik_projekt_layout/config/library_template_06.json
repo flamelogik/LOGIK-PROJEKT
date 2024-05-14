@@ -13,7 +13,7 @@
                 "parent_object": "shots_library",
                 "display_name": "'batch_groups'",
                 "object_type": "folder",
-                "object_color": ""
+                "object_color": "object_colors.get(\"Purple\")"
             }
         }
     }
