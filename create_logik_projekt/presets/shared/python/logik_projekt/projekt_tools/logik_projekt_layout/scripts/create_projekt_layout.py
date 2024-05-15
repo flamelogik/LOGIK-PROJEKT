@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
-# Version:          0.0.9
+# Version:          0.2.0
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -127,11 +127,12 @@ with open(object_colors_json_path, 'r') as file:
 # Extract the object_colors dictionary from the loaded data
 object_colors = data['object_colors']
 
-# Define object colors (from python function)
-from modules.functions.object_colors import (
-    object_colors
-)
+# # Define object colors (from python function)
+# from modules.functions.object_colors import (
+#     object_colors
+# )
 
+'''
 # object_colors = {
 
 #     # Autodesk Colors
@@ -169,6 +170,7 @@ from modules.functions.object_colors import (
 #     "Grey12": (0.167, 0.167, 0.167),          # Grey12
 #     "Grey13": (0.083, 0.083, 0.083)           # Grey13
 # }
+'''
 
 # ========================================================================== #
 # This section defines a function to create or validate flame objects.
@@ -493,9 +495,9 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                         f"{child_object_name} = \\",
                         f"\t{child_process_type}(",
                         f"\t\t{child_parent_object},",  # Ensure proper string quotation
-                        f"\t\t{child_display_name},",   # Ensure proper string quotation
-                        f"\t\t'{child_object_type}',",    # Ensure proper string quotation
-                        f"\t\t{child_object_color}"     # Ensure proper string quotation
+                        f"\t\t{child_display_name},",  # Ensure proper string quotation
+                        f"\t\t'{child_object_type}',",  # Ensure proper string quotation
+                        f"\t\t{child_object_color}"  # Ensure proper string quotation
                     ]
                 else:
                     # Construct the command without child_object_color
@@ -503,8 +505,8 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                         f"{child_object_name} = \\",
                         f"\t{child_process_type}(",
                         f"\t\t{child_parent_object},",  # Ensure proper string quotation
-                        f"\t\t{child_display_name},",   # Ensure proper string quotation
-                        f"\t\t'{child_object_type}'"       # Ensure proper string quotation
+                        f"\t\t{child_display_name},",  # Ensure proper string quotation
+                        f"\t\t'{child_object_type}'"  # Ensure proper string quotation
                     ]
                 
                 print(f"\n{separator}\n")
@@ -571,24 +573,18 @@ def create_layout(*args):
     if args:
         print("Received arguments from Flame:", args)
 
-    # (
-    #     abs_script_name, 
-    #     abs_path_to_this_script, 
-    #     abs_script_dir, 
-    #     abs_parent_dir,
-    #     abs_config_dir, 
-    #     abs_scripts_dir, 
-    #     abs_classes_and_functions_dir,
-    #     abs_classes_dir, 
-    #     abs_functions_dir, 
-    #     abs_version_dir
-    # ) = get_absolute_info()
-
-    # object_colors = get_object_colors(abs_config_dir)
-
-    # print("Object Colors:")
-    # for color, value in object_colors.items():
-    #     print(f"{color}: {value}\n")
+    (
+        abs_script_name, 
+        abs_path_to_this_script, 
+        abs_script_dir, 
+        abs_parent_dir,
+        abs_config_dir, 
+        abs_scripts_dir, 
+        abs_classes_and_functions_dir,
+        abs_classes_dir, 
+        abs_functions_dir, 
+        abs_version_dir
+    ) = get_absolute_info()
 
     # ---------------------------------------------------------------------- #
 
@@ -621,6 +617,8 @@ def create_layout(*args):
 
             # Call create_and_validate_from_template function with the path to the JSON file
             create_and_validate_from_template(object_colors_json_path, the_current_workspace)
+
+    ''' this section is now controlled by the json-based objekt creation
 
     # # Validate or create 'desktops' library
     # desktops_library = \
@@ -830,7 +828,7 @@ def create_layout(*args):
     #         'video',
     #         'folder'
     #         )
-
+    
     # ---------------------------------------------------------------------- #
 
     # # Validate or create 'masters' library
@@ -913,7 +911,8 @@ def create_layout(*args):
     #         'batch_groups',
     #         'folder'
     #         )
-
+    '''
+    
     # ---------------------------------------------------------------------- #
 
     # Change the current desktop name
@@ -1009,22 +1008,24 @@ def get_main_menu_custom_ui_actions():
 
 # -------------------------------------------------------------------------- #
 
+'''
 # def get_mediahub_files_custom_ui_actions():
 
-#     return [
-#         {
-#             'name': 'create',
-#             'hierarchy': ['logik-projekt'],
-#             'order': 1,
-#             'actions': [
-#                 {
-#                     'name': 'create layout',
-#                     'execute': create_layout,
-#                     'minimumVersion': '2025'
-#                 }
-#             ]
-#         }
-#     ]
+    return [
+        {
+            'name': 'create',
+            'hierarchy': ['logik-projekt'],
+            'order': 1,
+            'actions': [
+                {
+                    'name': 'create layout',
+                    'execute': create_layout,
+                    'minimumVersion': '2025'
+                }
+            ]
+        }
+    ]
+'''
 
 # -------------------------------------------------------------------------- #
 
@@ -1084,7 +1085,6 @@ if __name__ == "__main__":
 # version:               0.0.6
 # modified:              2024-05-12 - 18:16:05
 # comments:              Added a 'separators' function and tested in flame 2025.
-
 # -------------------------------------------------------------------------- #
 # version:               0.0.7
 # modified:              2024-05-14 - 16:30:58
@@ -1097,3 +1097,11 @@ if __name__ == "__main__":
 # version:               0.0.9
 # modified:              2024-05-14 - 16:31:47
 # comments:              Tested in flame 2025.
+# -------------------------------------------------------------------------- #
+# version:               0.1.0
+# modified:              2024-05-14 - 16:46:55
+# comments:              Production tested in flame 2025.
+# -------------------------------------------------------------------------- #
+# version:               0.2.0
+# modified:              2024-05-14 - 18:05:26
+# comments:              Prepped for obsolete code removal. Tested in flame 2025

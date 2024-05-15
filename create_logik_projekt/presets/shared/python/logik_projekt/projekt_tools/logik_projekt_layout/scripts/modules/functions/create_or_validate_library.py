@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_or_validate_library.py
-# Version:          0.0.9
+# Version:          0.2.0
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -107,7 +107,6 @@ def create_or_validate_library(
 # version:               0.0.6
 # modified:              2024-05-12 - 18:16:05
 # comments:              Added a 'separators' function and tested in flame 2025.
-
 # -------------------------------------------------------------------------- #
 # version:               0.0.7
 # modified:              2024-05-14 - 16:30:58
@@ -120,3 +119,11 @@ def create_or_validate_library(
 # version:               0.0.9
 # modified:              2024-05-14 - 16:31:47
 # comments:              Tested in flame 2025.
+# -------------------------------------------------------------------------- #
+# version:               0.1.0
+# modified:              2024-05-14 - 16:46:55
+# comments:              Production tested in flame 2025.
+# -------------------------------------------------------------------------- #
+# version:               0.2.0
+# modified:              2024-05-14 - 18:05:26
+# comments:              Prepped for obsolete code removal. Tested in flame 2025
