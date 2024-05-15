@@ -2,7 +2,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        update_logik_projekt_python_script.sh
+# File Name:        update_changelist_info.sh
 # Version:          1.0.0
 # Language:         bash script
 # Flame Version:    2025.x

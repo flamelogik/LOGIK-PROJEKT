@@ -1,0 +1,52 @@
+{
+    "item_00": {
+        "object_name": "masters_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'masters'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Blue\")",
+        "children": {
+            "item_01": {
+                "object_name": "final_masters_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "masters_library",
+                "display_name": "'final_masters'",
+                "object_type": "folder",
+                "object_color": "object_colors.get(\"Dark Red\")"
+            },
+            "item_02": {
+                "object_name": "final_masters_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "final_masters_folder",
+                "display_name": "'final_masters'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Red\")"
+            },
+            "item_03": {
+                "object_name": "versions_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "final_masters_folder",
+                "display_name": "'versions'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Green\")"
+            },
+            "item_04": {
+                "object_name": "slates_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "final_masters_folder",
+                "display_name": "'slates'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Blue\")"
+            },
+            "item_05": {
+                "object_name": "slated_masters_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "final_masters_folder",
+                "display_name": "'slated_masters'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Dark Gold\")"
+            }
+        }
+    }
+}

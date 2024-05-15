@@ -2,7 +2,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        function_30-create_backup_script.sh
+# File Name:        function_02-date.sh
 # Version:          2.0.4
 # Language:         bash script
 # Flame Version:    2025.x
@@ -21,70 +21,73 @@
 
 # -------------------------------------------------------------------------- #
 
-# Function to create backup script
-create_backup_script() {
-
-    # Set the source and target files for copying
-    local src_rsync_script="presets/templates/backup_template"
-    local tgt_rsync_script="$tgt_rsync_dir/backup_$name.sh"
-    
-    # Copy the default job backup text to a new backup shell script
-    cp "$src_rsync_script" "$tgt_rsync_script"
-
-    # Set the source and target files for copying
-    local src_rsync_exclusion_list="presets/templates/exclusion_list.txt"
-    local tgt_rsync_exclusion_list="$tgt_rsync_dir/exclusion_list.txt"
-    
-    # Copy the default job backup text to a new backup shell script
-    cp "$src_rsync_exclusion_list" "$tgt_rsync_exclusion_list"
-
-    # Add execution permissions to new backup shell script
-    chmod +x "$tgt_rsync_script"
-
-    # Set the search and replace strings
-    local search_replace=(
-        "BackupScriptName:backup_$name.sh"
-        "BackupScriptProjekt:$nickname"
-        "ScriptCreationDate:$NOW"
-        "LogikProjektClient:$client"
-        "LogikProjektCampaign:$campaign"
-        "LogikProjektName:$nickname"
-        "FlameSoftwareVersion:$max_sanitized_sw_ver"
-        "FlameWorkstationName:$workstation_name"
-    )
-
-    # Use sed to replace the strings in the backup script
-    if [ "$operating_system" == "Linux" ]; then
-        # sed_command='sed -i'
-        for pair in "${search_replace[@]}"; do
-            IFS=':' read -r search replace <<< "$pair"
-            sed -i "s|$search|$replace|g" "$tgt_rsync_script"
-        done
-    elif [ "$operating_system" == "macOS" ]; then
-        # sed_command='sed -i '''
-        for pair in "${search_replace[@]}"; do
-            IFS=':' read -r search replace <<< "$pair"
-            sed -i '' "s|$search|$replace|g" "$tgt_rsync_script"
-        done
-    else
-        echo "Unsupported operating system."
-        return 1
-    fi
-
-    echo -e "  logik projekt backup script created:\n"
-    echo -e "  $(basename "$tgt_rsync_script")"
-    echo -e "\n$separator\n"
-    
-}
-
 # ========================================================================== #
-# This section defines how to handle the main script function.
+# This section defines variables based on the date.
 # ========================================================================== #
 
-# Check if the script is being sourced or executed
-if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
-    create_backup_script "$src_rsync_script" "$tgt_rsync_script"
-fi
+# Current Date & Time Options
+current_datetime=$(date "+%Y-%m-%d %H:%M:%S")
+today=$(date "+%Y-%m-%d")
+yesterday=$(date -v -1d "+%Y-%m-%d" 2>/dev/null \
+    || date -d "yesterday" "+%Y-%m-%d")
+tomorrow=$(date -v +1d "+%Y-%m-%d" 2>/dev/null \
+    || date -d "tomorrow" "+%Y-%m-%d")
+
+# -------------------------------------------------------------------------- #
+
+# Current Date and Time Options
+now_h_m_s=$(date "+%H:%M:%S")
+now_h_m=$(date "+%H-%M")
+today_now=$(date "+%F_%H-%M")
+TODAY="$today"
+NOW="$now_h_m_s"
+
+# NOW_DATE=$(date "+%F")
+# NOW_TIME=$(date "+%H-%M")
+# NOW_NOW="$NOW_DATE-$NOW_TIME"
+
+# -------------------------------------------------------------------------- #
+
+# Year Options
+year_with_century=$(date "+%Y")
+year_without_century=$(date "+%y")
+YYYY=$year_with_century
+
+# -------------------------------------------------------------------------- #
+
+# Month Options
+month=$(date "+%m")
+month_full=$(date "+%B")
+month_abbrev=$(date "+%b")
+MM=$month
+
+# -------------------------------------------------------------------------- #
+
+# Day Options
+day=$(date "+%d")
+day_of_year=$(date "+%j")
+day_of_week=$(date "+%w")
+DD=$day
+
+# -------------------------------------------------------------------------- #
+
+# Time Options
+hour_24=$(date "+%H")
+hour_12=$(date "+%I")
+minute=$(date "+%M")
+second=$(date "+%S")
+
+# -------------------------------------------------------------------------- #
+
+# Other Options
+weekday_full=$(date "+%A")
+weekday_abbrev=$(date "+%a")
+week_number_sunday=$(date "+%U")
+week_number_monday=$(date "+%W")
+timezone_name=$(date "+%Z")
+timezone_offset=$(date "+%z")
+unix_timestamp=$(date "+%s")
+nanoseconds=$(date "+%N")
 
 # -------------------------------------------------------------------------- #
 
@@ -111,7 +114,7 @@ fi
 # comments:              added 'umask 0' statements for rsync commands
 # -------------------------------------------------------------------------- #
 # version:               2.0.3
-# modified:              2024-05-03 - 10:16:10
+# modified:              2024-05-03 - 10:16:09
 # comments:              Restored CamelCase keys for projekt_metadata_xml_file
 # -------------------------------------------------------------------------- #
 # version:               2.0.4

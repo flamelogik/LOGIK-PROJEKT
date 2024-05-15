@@ -1,0 +1,10 @@
+# Installation:
+# Windows: C:\Users\YourUsername\.nuke\menu.py
+# macOS: /Users/YourUsername/.nuke/menu.py
+# Linux: /home/YourUsername/.nuke/menu.py
+
+import os.path
+import nuke
+import nukescripts
+import re
+from PySide2 import QtWidgets, QtGui, QtCore
