@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
-# Version:          0.2.0
+# Version:          0.3.0
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -117,20 +117,20 @@ separator_hash = (
 # This section defines color variables.
 # ========================================================================== #
 
-# Define object colors (from JSON)
-object_colors_json_path = os.path.join(abs_config_dir, 'object_colors.json')
+# # Define object colors (from JSON)
+# object_colors_json_path = os.path.join(abs_config_dir, 'object_colors.json')
 
-# Open the JSON file and read the data
-with open(object_colors_json_path, 'r') as file:
-    data = json.load(file)
+# # Open the JSON file and read the data
+# with open(object_colors_json_path, 'r') as file:
+#     data = json.load(file)
 
-# Extract the object_colors dictionary from the loaded data
-object_colors = data['object_colors']
+# # Extract the object_colors dictionary from the loaded data
+# object_colors = data['object_colors']
 
-# # Define object colors (from python function)
-# from modules.functions.object_colors import (
-#     object_colors
-# )
+# Define object colors (from python function)
+from modules.functions.object_colors import (
+    object_colors
+)
 
 '''
 # object_colors = {
@@ -618,7 +618,6 @@ def create_layout(*args):
             # Call create_and_validate_from_template function with the path to the JSON file
             create_and_validate_from_template(object_colors_json_path, the_current_workspace)
 
-    ''' this section is now controlled by the json-based objekt creation
 
     # # Validate or create 'desktops' library
     # desktops_library = \
@@ -636,6 +635,8 @@ def create_layout(*args):
     #         )
 
     # ---------------------------------------------------------------------- #
+
+    ''' this section is now controlled by the json-based objekt creation
 
     # # Validate or create 'reference' library
     # reference_library = \
@@ -1105,3 +1106,7 @@ if __name__ == "__main__":
 # version:               0.2.0
 # modified:              2024-05-14 - 18:05:26
 # comments:              Prepped for obsolete code removal. Tested in flame 2025
+# -------------------------------------------------------------------------- #
+# version:               0.3.0
+# modified:              2024-05-14 - 19:27:33
+# comments:              Restored 'object_colors' from python function.

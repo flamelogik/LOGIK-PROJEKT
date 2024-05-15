@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_abs.py
-# Version:          0.2.0
+# Version:          0.3.0
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -225,3 +225,7 @@ if __name__ == "__main__":
 # version:               0.2.0
 # modified:              2024-05-14 - 18:05:26
 # comments:              Prepped for obsolete code removal. Tested in flame 2025
+# -------------------------------------------------------------------------- #
+# version:               0.3.0
+# modified:              2024-05-14 - 19:27:33
+# comments:              Restored 'object_colors' from python function.
