@@ -3,13 +3,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_or_validate_object.py
-# Version:          0.3.0
+# Version:          0.3.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script is part of a program that creates 
@@ -295,3 +295,7 @@ def create_or_validate_object(
 # version:               0.3.0
 # modified:              2024-05-14 - 19:27:33
 # comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.

@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_rel.py
-# Version:          0.3.0
+# Version:          0.3.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script gathers information about the current
@@ -64,7 +64,7 @@ class rel_path_info:
 
             rel_scripts_dir (str): The relative directory where other scripts are stored.
 
-            rel_classes_and_functions_dir (str): The relative directory where classes and functions are stored.
+            rel_modules_dir (str): The relative directory where classes and functions are stored.
 
             rel_classes_dir (str): The relative directory where classes are stored.
 
@@ -105,20 +105,20 @@ class rel_path_info:
                          os.getcwd()
         )
 
-        self.rel_classes_and_functions_dir = os.path.relpath(
+        self.rel_modules_dir = os.path.relpath(
             os.path.join(self.rel_scripts_dir, 
-                         "classes_and_functions"), 
+                         "modules"), 
                          os.getcwd()
         )
 
         self.rel_classes_dir = os.path.relpath(
-            os.path.join(self.rel_classes_and_functions_dir, 
+            os.path.join(self.rel_modules_dir, 
                          "classes"), 
                          os.getcwd()
         )
 
         self.rel_functions_dir = os.path.relpath(
-            os.path.join(self.rel_classes_and_functions_dir, 
+            os.path.join(self.rel_modules_dir, 
                          "functions"), 
                          os.getcwd()
         )
@@ -210,3 +210,7 @@ if __name__ == "__main__":
 # version:               0.3.0
 # modified:              2024-05-14 - 19:27:33
 # comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.

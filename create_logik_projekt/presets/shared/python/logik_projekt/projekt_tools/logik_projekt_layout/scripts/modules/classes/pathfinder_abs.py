@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_abs.py
-# Version:          0.3.0
+# Version:          0.3.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script gathers information about the current
@@ -63,7 +63,7 @@ class abs_path_info:
 
             abs_scripts_dir (str): The absolute directory where other scripts are stored.
 
-            abs_classes_and_functions_dir (str): The absolute directory where classes and functions are stored.
+            abs_modules_dir (str): The absolute directory where classes and functions are stored.
 
             abs_classes_dir (str): The absolute directory where classes are stored.
 
@@ -102,18 +102,18 @@ class abs_path_info:
             "scripts"
         )
 
-        self.abs_classes_and_functions_dir = os.path.join(
+        self.abs_modules_dir = os.path.join(
             self.abs_scripts_dir, 
-            "classes_and_functions"
+            "modules"
         )
 
         self.abs_classes_dir = os.path.join(
-            self.abs_classes_and_functions_dir, 
+            self.abs_modules_dir, 
             "classes"
         )
 
         self.abs_functions_dir = os.path.join(
-            self.abs_classes_and_functions_dir, 
+            self.abs_modules_dir, 
             "functions"
         )
 
@@ -131,7 +131,7 @@ class abs_path_info:
                 
         print("Creating necessary directories...")
         os.makedirs(
-            self.abs_classes_and_functions_dir, 
+            self.abs_modules_dir, 
             exist_ok=True
         )
 
@@ -229,3 +229,7 @@ if __name__ == "__main__":
 # version:               0.3.0
 # modified:              2024-05-14 - 19:27:33
 # comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.

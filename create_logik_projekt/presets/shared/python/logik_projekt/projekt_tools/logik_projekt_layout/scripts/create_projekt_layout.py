@@ -3,13 +3,13 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
-# Version:          0.3.0
+# Version:          0.3.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This script creates logik projekt flame layouts.
@@ -50,7 +50,7 @@ def get_absolute_info():
     abs_parent_dir = abs_info.abs_parent_dir
     abs_config_dir = abs_info.abs_config_dir
     abs_scripts_dir = abs_info.abs_scripts_dir
-    abs_classes_and_functions_dir = abs_info.abs_classes_and_functions_dir
+    abs_modules_dir = abs_info.abs_modules_dir
     abs_classes_dir = abs_info.abs_classes_dir
     abs_functions_dir = abs_info.abs_functions_dir
     abs_version_dir = abs_info.abs_version_dir
@@ -64,7 +64,7 @@ def get_absolute_info():
         abs_parent_dir,
         abs_config_dir, 
         abs_scripts_dir, 
-        abs_classes_and_functions_dir,
+        abs_modules_dir,
         abs_classes_dir, 
         abs_functions_dir, 
         abs_version_dir
@@ -78,7 +78,7 @@ def get_absolute_info():
     abs_parent_dir,
     abs_config_dir, 
     abs_scripts_dir, 
-    abs_classes_and_functions_dir,
+    abs_modules_dir,
     abs_classes_dir, 
     abs_functions_dir, 
     abs_version_dir
@@ -270,7 +270,8 @@ def create_or_validate_object(
             return obj
 
     # ---------------------------------------------------------------------- #
-
+    
+    '''
     # # If the object doesn't exist, create it
     # new_object = getattr(
     #     library,
@@ -348,6 +349,7 @@ def create_or_validate_object(
     #     raise ValueError(f"Created object '{object_name}' is not of type '{object_type.capitalize()}'")
 
     # return new_object
+    '''
 
     # ---------------------------------------------------------------------- #
 
@@ -424,12 +426,6 @@ def create_or_validate_library(
 
 # Function to create or validate objects from template JSON files.
 def create_and_validate_from_template(json_file, the_current_workspace):
-
-    # import flame
-
-    # the_current_projekt = flame.projects.current_project
-    # the_current_workspace = the_current_projekt.current_workspace
-    # the_current_desktop = the_current_workspace.desktop
 
     # print(f"Processing file: {json_file}")
     print(f"\n{separator}\n")
@@ -580,7 +576,7 @@ def create_layout(*args):
         abs_parent_dir,
         abs_config_dir, 
         abs_scripts_dir, 
-        abs_classes_and_functions_dir,
+        abs_modules_dir,
         abs_classes_dir, 
         abs_functions_dir, 
         abs_version_dir
@@ -1110,3 +1106,7 @@ if __name__ == "__main__":
 # version:               0.3.0
 # modified:              2024-05-14 - 19:27:33
 # comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.

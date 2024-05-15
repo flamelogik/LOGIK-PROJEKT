@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        separators.py
-# Version:          0.3.0
+# Version:          0.3.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -126,3 +126,7 @@ if __name__ == "__main__":
 # version:               0.3.0
 # modified:              2024-05-14 - 19:27:33
 # comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.

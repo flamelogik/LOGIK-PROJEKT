@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_information.py
-# Version:          0.3.0
+# Version:          0.3.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script gathers information about the current
@@ -194,7 +194,7 @@ class pathfinder_information:
 
             scripts_dir (str): The directory where other scripts are stored.
 
-            classes_and_functions_dir (str): The directory where classes 
+            modules_dir (str): The directory where classes 
                                              and functions are stored.
 
             classes_dir (str): The directory where classes are stored.
@@ -235,18 +235,18 @@ class pathfinder_information:
             "scripts"
         )
 
-        self.classes_and_functions_dir = os.path.join(
+        self.modules_dir = os.path.join(
             self.scripts_dir, 
-            "classes_and_functions"
+            "modules"
         )
 
         self.classes_dir = os.path.join(
-            self.classes_and_functions_dir, 
+            self.modules_dir, 
             "classes"
         )
 
         self.functions_dir = os.path.join(
-            self.classes_and_functions_dir, 
+            self.modules_dir, 
             "functions"
         )
 
@@ -264,7 +264,7 @@ class pathfinder_information:
                 
         print("Creating necessary directories...")
         os.makedirs(
-            self.classes_and_functions_dir, 
+            self.modules_dir, 
             exist_ok=True
         )
 
@@ -362,3 +362,7 @@ if __name__ == "__main__":
 # version:               0.3.0
 # modified:              2024-05-14 - 19:27:33
 # comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.
