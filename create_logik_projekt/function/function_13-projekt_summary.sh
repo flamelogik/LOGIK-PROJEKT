@@ -162,11 +162,11 @@ write_projekt_metadata() {
     declare -a ProjektParameters=(
         "Name:$name"
         "Nickname:$nickname"
-        "Description:$description"
+        # "Description:$description"
         "ShotgunProjectName:$shotgun_name"
         "SetupDir:$setup_dir"
         "Partition:$partition"
-        "Version:$version"
+        # "Version:$version"
         "FrameWidth:$frame_width"
         "FrameHeight:$frame_height"
         "FrameDepth:$frame_depth"

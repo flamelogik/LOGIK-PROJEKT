@@ -3,13 +3,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        list_shot_sources_dir.py
-# Version:          2.0.2
+# Version:          2.1.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -70,11 +70,11 @@ import os
 # from create_openclip_segment_clip import (
 #     create_openclip_segment_clip as create_openclip_segment_clip 
 # )
-# from create_shot_script import (
-#     create_shot_script as create_shot_script 
+# from create_nuke_shot_script import (
+#     create_nuke_shot_script as create_nuke_shot_script 
 # )
-# from create_source_script import (
-#     create_source_script as create_source_script 
+# from create_nuke_source_script import (
+#     create_nuke_source_script as create_nuke_source_script 
 # )
 # from process_shot_info import (
 #     process_shot_info as process_shot_info
@@ -177,3 +177,7 @@ def list_shot_sources_dir(shot_sources_dir):
 # version:               2.0.2
 # modified:              2024-05-14 - 12:53:36
 # comments:              Renamed 'classes_and_functions' directory to 'modules'.
+# -------------------------------------------------------------------------- #
+# version:               2.1.2
+# modified:              2024-05-15 - 12:35:57
+# comments:              Renamed nuke script functions and started blender tools.

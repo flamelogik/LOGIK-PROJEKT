@@ -564,11 +564,11 @@ from modules.functions.create_openclip_segment_clip import (
 # ========================================================================== #
 
 # Define function to create a shot script for nuke based on task
-from modules.functions.create_nuke_shot_script import (
-    create_nuke_shot_script as create_nuke_shot_script 
+from modules.functions.create_blender_shot_script import (
+    create_blender_shot_script as create_blender_shot_script 
 )
 
-'''def create_nuke_shot_script(shot_name, 
+'''def create_blender_shot_script(shot_name, 
                        app_name, 
                        task_type, 
                        version_name,
@@ -661,11 +661,11 @@ Write {{
 # -------------------------------------------------------------------------- #
 
 # Define function to create a source script
-from modules.functions.create_nuke_source_script import (
-    create_nuke_source_script as create_nuke_source_script 
+from modules.functions.create_blender_source_script import (
+    create_blender_source_script as create_blender_source_script 
 )
 
-'''def create_nuke_source_script(shot_name, 
+'''def create_blender_source_script(shot_name, 
                          shots_dir, 
                          shot_sources_dir, 
                          shot_source_dir, 
@@ -913,7 +913,7 @@ from modules.functions.process_shot_info import (
                                         shot_structure["shot_output_clips_app_dir"])
 
             # Create Nuke script for the shot
-            create_nuke_shot_script(shot_name, 
+            create_blender_shot_script(shot_name, 
                                app_name, 
                                task_type, 
                                version_name, 
@@ -957,7 +957,7 @@ from modules.functions.process_shot_info import (
                                                  shot_structure["shot_segment_clips_app_dir"])
 
                     # Create Nuke script for the shot
-                    create_nuke_source_script(shot_name, 
+                    create_blender_source_script(shot_name, 
                                          shots_dir, 
                                          shot_sources_dir, 
                                          shot_source_dir, 
@@ -1022,13 +1022,14 @@ def create_openclips_and_scripts(*args, **kwargs):
     # logging.info("Job structure defined.")
 
     # Define app_name and task_types_list
-    app_name = "nuke"
+    app_name = "blender"
     task_types_list = (
-        "color",
-        "comp",
-        "paint",
-        "precomp",
-        "roto"
+        "anim",
+        "light",
+        "rig",
+        "sim",
+        "texture"
+        "track"
     )
 
     # Initialize start_frame_min with positive infinity

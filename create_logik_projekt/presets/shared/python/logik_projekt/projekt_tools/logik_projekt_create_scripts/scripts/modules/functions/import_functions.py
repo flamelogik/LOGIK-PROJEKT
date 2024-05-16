@@ -1,15 +1,15 @@
-# filename: create_shot_script.py
+# filename: import_functions.py
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        create_shot_script.py
-# Version:          2.0.2
+# File Name:        import_functions.py
+# Version:          2.1.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-15
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -30,7 +30,7 @@
 import os
 # import pdb; pdb.set_trace()
 # import re
-# import fileinput
+import fileinput
 # import logging
 # from datetime import datetime
 
@@ -70,109 +70,21 @@ import os
 # from create_openclip_segment_clip import (
 #     create_openclip_segment_clip as create_openclip_segment_clip 
 # )
-# from create_shot_script import (
-#     create_shot_script as create_shot_script 
+# from create_blender_shot_script import (
+#     create_blender_shot_script as create_blender_shot_script 
 # )
-# from create_source_script import (
-#     create_source_script as create_source_script 
+# from create_blender_source_script import (
+#     create_blender_source_script as create_blender_source_script 
+# )
+# from create_nuke_shot_script import (
+#     create_nuke_shot_script as create_nuke_shot_script 
+# )
+# from create_nuke_source_script import (
+#     create_nuke_source_script as create_nuke_source_script 
 # )
 # from process_shot_info import (
 #     process_shot_info as process_shot_info
 # )
-
-# ========================================================================== #
-# This section defines functions to create nuke scripts.
-# ========================================================================== #
-
-# Define function to create a shot script for nuke based on task
-def create_shot_script(shot_name, 
-                       app_name, 
-                       task_type, 
-                       version_name,
-                       shots_dir, 
-                       shot_renders_dir, 
-                       shot_scripts_dir):
-    """
-    Create a shot script for nuke based on task.
-
-    Parameters:
-        shot_name        (str): The name of the shot.
-        app_name         (str): The name of the application.
-        task_type        (str): The type of task.
-        version_name     (str): The name of the version.
-        shots_dir        (str): The directory where shots are stored.
-        shot_renders_dir (str): The directory for shot renders.
-        shot_scripts_dir (str): The directory for shot scripts.
-
-    Returns:
-    None
-    """
-
-    # Define the directory for the specific app and task type
-    shot_scripts_app_task_dir = os.path.join(shots_dir,
-                                             shot_scripts_dir,
-                                             app_name,
-                                             'shot',
-                                             task_type)
-
-    # Create the directory if it doesn't exist
-    os.makedirs(shot_scripts_app_task_dir, exist_ok=True)
-
-    # Define the file path for the script
-    shot_scripts_app_task_file = f"{shot_name}_{app_name}_{task_type}_{version_name}.nk"
-    shot_scripts_app_task_path = os.path.join(shot_scripts_app_task_dir,
-                                              shot_scripts_app_task_file)
-
-    # Write the Nuke script content to the file
-    with open(shot_scripts_app_task_path, 'w') as nuke_shot_script_file:
-        nuke_shot_script_file.write(f"""# LOGIK-PROJEKT Nuke Shot Script
-# Task Name: {shot_name}_{app_name}_{task_type}
-Root {{
- inputs 0
- name "{shot_name}_{app_name}_{task_type}_{version_name}.nk"
- frame NUKE_START_FRAME
- first_frame NUKE_START_FRAME
- last_frame NUKE_END_FRAME
- lock_range true
- format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
- proxy_type scale
- proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
- colorManagement OCIO
- OCIO_config aces_1.2
- defaultViewerLUT "OCIO LUTs"
- workingSpaceLUT "ACES - ACEScg"
- monitorLut "Rec.709 (ACES)"
- monitorOutLUT "Rec.709 (ACES)"
- int8Lut matte_paint
- int16Lut "ACES - ACEScct"
- logLut "ACES - ACEScct"
- floatLut "ACES - ACEScg"
-}}
-Write {{
- file "{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.%08d.exr"
- file_type exr
- write_ACES_compliant_EXR true
- metadata "all metadata"
- first_part rgba
- create_directories true
- first "NUKE_START_FRAME"
- last "NUKE_END_FRAME"
- use_limit true
- version 0
- ocioColorspace "ACES - ACEScg"
- display ACES
- view sRGB
- name Write1
- label "{shot_name}_{app_name}_{task_type}"
- xpos 0
- ypos 240
- postage_stamp true
-}}""")
-
-        # # This section is for logging purposes
-        # logging.debug(f"Nuke script created for:  {shot_name}_{app_name}_{task_type}_{version_name}")
-
-        print(f"Nuke Shot script created:    {shot_name}_{app_name}_{task_type}.nk\n")
 
 # ========================================================================== #
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
@@ -243,3 +155,7 @@ Write {{
 # version:               2.0.2
 # modified:              2024-05-14 - 12:53:36
 # comments:              Renamed 'classes_and_functions' directory to 'modules'.
+# -------------------------------------------------------------------------- #
+# version:               2.1.2
+# modified:              2024-05-15 - 12:35:57
+# comments:              Renamed nuke script functions and started blender tools.
