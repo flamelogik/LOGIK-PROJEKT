@@ -27,7 +27,7 @@
 # ========================================================================== #
 
 # # EXAMPLE
-# from classes_and_functions.functions.example import (
+# from modules.functions.example import (
 #     example_function as new_function_name
 # )
 

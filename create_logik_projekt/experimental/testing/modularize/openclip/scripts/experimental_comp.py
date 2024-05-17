@@ -167,38 +167,38 @@ sys.path.append(parent_dir)
 # ========================================================================== #
 
 # # EXAMPLE:
-# from classes_and_functions.functions.example import (
+# from modules.functions.example import (
 #     example_function as new_function_name
 # )
 
-from classes_and_functions.functions.pyflame_get_shot_name import (
+from modules.functions.pyflame_get_shot_name import (
     pyflame_get_shot_name as pyflame_get_shot_name
 )
-from classes_and_functions.functions.pyflame_print import (
+from modules.functions.pyflame_print import (
     pyflame_print as pyflame_print
 )
-from classes_and_functions.functions.pyflame_get_flame_version import (
+from modules.functions.pyflame_get_flame_version import (
     pyflame_get_flame_version as pyflame_get_flame_version
 )
-from classes_and_functions.functions.pyflame_file_browser import (
+from modules.functions.pyflame_file_browser import (
     pyflame_file_browser as pyflame_file_browser
 )
-from classes_and_functions.functions.pyflame_resolve_shot_name import (
+from modules.functions.pyflame_resolve_shot_name import (
     pyflame_resolve_shot_name as pyflame_resolve_shot_name
 )
-from classes_and_functions.functions.pyflame_resolve_path_tokens import (
+from modules.functions.pyflame_resolve_path_tokens import (
     pyflame_resolve_path_tokens as pyflame_resolve_path_tokens
 )
-from classes_and_functions.functions.pyflame_refresh_hooks import (
+from modules.functions.pyflame_refresh_hooks import (
     pyflame_refresh_hooks as pyflame_refresh_hooks
 )
-from classes_and_functions.functions.pyflame_open_in_finder import (
+from modules.functions.pyflame_open_in_finder import (
     pyflame_open_in_finder as pyflame_open_in_finder
 )
-from classes_and_functions.functions.pyflame_load_config import (
+from modules.functions.pyflame_load_config import (
     pyflame_load_config as pyflame_load_config
 )
-from classes_and_functions.functions.pyflame_save_config import (
+from modules.functions.pyflame_save_config import (
     pyflame_save_config as pyflame_save_config
 )
 
@@ -207,59 +207,59 @@ from classes_and_functions.functions.pyflame_save_config import (
 # ========================================================================== #
 
 # # EXAMPLE:
-# from classes_and_functions.classes.example import (
+# from modules.classes.example import (
 #     example_function as new_function_name
 # )
 
-from classes_and_functions.classes.FlameButton import (
+from modules.classes.FlameButton import (
     FlameButton as FlameButton
 )
-from classes_and_functions.classes.FlameClickableLineEdit import (
+from modules.classes.FlameClickableLineEdit import (
     FlameClickableLineEdit as FlameClickableLineEdit
 )
-from classes_and_functions.classes.FlameLabel import (
+from modules.classes.FlameLabel import (
     FlameLabel as FlameLabel
 )
-from classes_and_functions.classes.FlameLineEdit import (
+from modules.classes.FlameLineEdit import (
     FlameLineEdit as FlameLineEdit
 )
-from classes_and_functions.classes.FlameListWidget import (
+from modules.classes.FlameListWidget import (
     FlameListWidget as FlameListWidget
 )
-from classes_and_functions.classes.FlameMessageWindow import (
+from modules.classes.FlameMessageWindow import (
     FlameMessageWindow as FlameMessageWindow
 )
-from classes_and_functions.classes.FlamePasswordWindow import (
+from modules.classes.FlamePasswordWindow import (
     FlamePasswordWindow as FlamePasswordWindow
 )
-from classes_and_functions.classes.FlamePresetWindow import (
+from modules.classes.FlamePresetWindow import (
     FlamePresetWindow as FlamePresetWindow
 )
-from classes_and_functions.classes.FlameProgressWindow import (
+from modules.classes.FlameProgressWindow import (
     FlameProgressWindow as FlameProgressWindow
 )
-from classes_and_functions.classes.FlamePushButton import (
+from modules.classes.FlamePushButton import (
     FlamePushButton as FlamePushButton
 )
-from classes_and_functions.classes.FlamePushButtonMenu import (
+from modules.classes.FlamePushButtonMenu import (
     FlamePushButtonMenu as FlamePushButtonMenu
 )
-from classes_and_functions.classes.FlameQDialog import (
+from modules.classes.FlameQDialog import (
     FlameQDialog as FlameQDialog
 )
-from classes_and_functions.classes.FlameSlider import (
+from modules.classes.FlameSlider import (
     FlameSlider as FlameSlider
 )
-from classes_and_functions.classes.FlameTextEdit import (
+from modules.classes.FlameTextEdit import (
     FlameTextEdit as FlameTextEdit
 )
-from classes_and_functions.classes.FlameTokenPushButton import (
+from modules.classes.FlameTokenPushButton import (
     FlameTokenPushButton as FlameTokenPushButton
 )
-from classes_and_functions.classes.FlameTreeWidget import (
+from modules.classes.FlameTreeWidget import (
     FlameTreeWidget as FlameTreeWidget
 )
-from classes_and_functions.classes.FlameWindow import (
+from modules.classes.FlameWindow import (
     FlameWindow as FlameWindow
 )
 
