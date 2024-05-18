@@ -31,55 +31,55 @@
 #     example_function as new_function_name
 # )
 
-from FlameButton import (
+from modules.classes.FlameButton import (
     FlameButton as FlameButton
 )
-from FlameClickableLineEdit import (
+from modules.classes.FlameClickableLineEdit import (
     FlameClickableLineEdit as FlameClickableLineEdit
 )
-from FlameLabel import (
+from modules.classes.FlameLabel import (
     FlameLabel as FlameLabel
 )
-from FlameLineEdit import (
+from modules.classes.FlameLineEdit import (
     FlameLineEdit as FlameLineEdit
 )
-from FlameListWidget import (
+from modules.classes.FlameListWidget import (
     FlameListWidget as FlameListWidget
 )
-from FlameMessageWindow import (
+from modules.classes.FlameMessageWindow import (
     FlameMessageWindow as FlameMessageWindow
 )
-from FlamePasswordWindow import (
+from modules.classes.FlamePasswordWindow import (
     FlamePasswordWindow as FlamePasswordWindow
 )
-from FlamePresetWindow import (
+from modules.classes.FlamePresetWindow import (
     FlamePresetWindow as FlamePresetWindow
 )
-from FlameProgressWindow import (
+from modules.classes.FlameProgressWindow import (
     FlameProgressWindow as FlameProgressWindow
 )
-from FlamePushButton import (
+from modules.classes.FlamePushButton import (
     FlamePushButton as FlamePushButton
 )
-from FlamePushButtonMenu import (
+from modules.classes.FlamePushButtonMenu import (
     FlamePushButtonMenu as FlamePushButtonMenu
 )
-from FlameQDialog import (
+from modules.classes.FlameQDialog import (
     FlameQDialog as FlameQDialog
 )
-from FlameSlider import (
+from modules.classes.FlameSlider import (
     FlameSlider as FlameSlider
 )
-from FlameTextEdit import (
+from modules.classes.FlameTextEdit import (
     FlameTextEdit as FlameTextEdit
 )
-from FlameTokenPushButton import (
+from modules.classes.FlameTokenPushButton import (
     FlameTokenPushButton as FlameTokenPushButton
 )
-from FlameTreeWidget import (
+from modules.classes.FlameTreeWidget import (
     FlameTreeWidget as FlameTreeWidget
 )
-from FlameWindow import (
+from modules.classes.FlameWindow import (
     FlameWindow as FlameWindow
 )
 

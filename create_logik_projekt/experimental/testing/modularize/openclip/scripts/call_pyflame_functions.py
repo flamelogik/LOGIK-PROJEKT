@@ -31,34 +31,34 @@
 #     example_function as new_function_name
 # )
 
-from pyflame_get_shot_name import (
+from modules.functions.pyflame_get_shot_name import (
     pyflame_get_shot_name as pyflame_get_shot_name
 )
-from pyflame_print import (
+from modules.functions.pyflame_print import (
     pyflame_print as pyflame_print
 )
-from pyflame_get_flame_version import (
+from modules.functions.pyflame_get_flame_version import (
     pyflame_get_flame_version as pyflame_get_flame_version
 )
-from pyflame_file_browser import (
+from modules.functions.pyflame_file_browser import (
     pyflame_file_browser as pyflame_file_browser
 )
-from pyflame_resolve_shot_name import (
+from modules.functions.pyflame_resolve_shot_name import (
     pyflame_resolve_shot_name as pyflame_resolve_shot_name
 )
-from pyflame_resolve_path_tokens import (
+from modules.functions.pyflame_resolve_path_tokens import (
     pyflame_resolve_path_tokens as pyflame_resolve_path_tokens
 )
-from pyflame_refresh_hooks import (
+from modules.functions.pyflame_refresh_hooks import (
     pyflame_refresh_hooks as pyflame_refresh_hooks
 )
-from pyflame_open_in_finder import (
+from modules.functions.pyflame_open_in_finder import (
     pyflame_open_in_finder as pyflame_open_in_finder
 )
-from pyflame_load_config import (
+from modules.functions.pyflame_load_config import (
     pyflame_load_config as pyflame_load_config
 )
-from pyflame_save_config import (
+from modules.functions.pyflame_save_config import (
     pyflame_save_config as pyflame_save_config
 )
 

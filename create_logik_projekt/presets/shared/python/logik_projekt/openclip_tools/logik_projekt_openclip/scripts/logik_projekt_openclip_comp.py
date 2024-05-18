@@ -1,93 +1,16 @@
-'''
-Script Name: mmm_comp
-Script Version: 1.1
-Script Family: MAN_MADE_MATERIAL
-Modified by: Phil MAN phil_man@mac.com
-Modification Date: 2023-12-05
-Based on original python by: Michael Vaglienty
-Creation Date: 2023-04-05
-Flame Version: 2025
-
-Custom Action Type: Batch
-
-Description:
-
-    Add MUX/Render/Write nodes to selected clips in batch or select multiple clips in the media panel to build a new
-    batch group with MUX/Render/Write nodes for all selected clips.
-
-    Based on Michael Vaglienty's wonderful Neat Freak tool.
-
-    Render/Write node outputs are set to match each clip(name, duration, timecode, fps).
-
-    Write node options can be set in Config.
-
-Menus:
-
-    Config:
-
-        Flame 2023.2+:
-
-            Flame Main Menu -> logik_projekt -> create -> configure mmm_comp
-
-    Batch:
-
-        Flame 2023.2+:
-
-            Right-click on any clip in batch -> projekt_comp selected clips
-
-    Media Panel:
-
-        Flame 2023.2+:
-
-            Right-click on any clip in media panel -> projekt_comp selected clips
-
-To install:
-
-    Copy script into /opt/Autodesk/shared/python/man_made_material/openclip_workflow/mmm_comp
-
-Updates:
-
-    v1.1 2023-12-05
-
-        Updated script to use PySide6 for compatibility with flame 2025.
-
-    v1.0 2023-04-05
-
-        Changed write file parameters to conform to Legacy Method VFX Pipeline constraints.
-
-        Render/Write nodes now take start frame into account when setting render range.
-
-        Colour Management in render node now gets set to 16-bit float, Colour Management node is no longer needed/added.
-
-        Moved menus for Flame 2023.2+:
-
-            Config:
-
-                Flame Main Menu -> logik_projekt -> create -> configure mmm_comp
-
-            Batch:
-
-                Right-click on any clip in batch -> projekt_comp selected clips
-
-            Media Panel:
-
-                Right-click on any clip in media panel -> projekt_comp selected clips
-
-        Updated config file loading/saving.
-
-'''
+# filename: logik_projekt_openclip_comp.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        experimental_comp.py
-# Version:          0.0.4
+# File Name:        logik_projekt_openclip_comp.py
+# Version:          0.3.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-09
+# Modified:         2024-05-17
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -140,26 +63,26 @@ current_script_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.abspath(os.path.join(current_script_dir, ".."))
 sys.path.append(parent_dir)
 
-# from projekt_lib_mmm_comp import (
-#     FlameMessageWindow,
-#     FlameWindow,
-#     FlameButton,
-#     FlameLabel,
-#     FlameLineEdit,
-#     FlameSlider,
-#     FlameTokenPushButton,
-#     FlamePushButton,
-#     FlamePushButtonMenu,
-#     pyflame_file_browser,
-#     pyflame_get_flame_version,
-#     pyflame_get_shot_name,
-#     pyflame_load_config,
-#     pyflame_open_in_finder,
-#     pyflame_print,
-#     pyflame_refresh_hooks,
-#     pyflame_resolve_path_tokens,
-#     pyflame_resolve_shot_name,
-#     pyflame_save_config
+# from create_logik_projekt.experimental.testing.testing_2.scripts.flame_libraries import (
+#     pyside6_qt_message_window,
+#     pyside6_qt_window,
+#     pyside6_qt_button,
+#     pyside6_qt_label,
+#     pyside6_qt_line_edit,
+#     pyside6_qt_slider,
+#     pyside6_qt_token_push_button,
+#     pyside6_qt_push_button,
+#     pyside6_qt_push_button_menu,
+#     pyside6_qt_file_browser,
+#     pyside6_qt_get_flame_version,
+#     pyside6_qt_get_shot_name,
+#     pyside6_qt_load_config,
+#     pyside6_qt_open_in_finder,
+#     pyside6_qt_print,
+#     pyside6_qt_refresh_hooks,
+#     pyside6_qt_resolve_path_tokens,
+#     pyside6_qt_resolve_shot_name,
+#     pyside6_qt_save_config
 # )
 
 # ========================================================================== #
@@ -171,35 +94,35 @@ sys.path.append(parent_dir)
 #     example_function as new_function_name
 # )
 
-from modules.functions.pyflame_get_shot_name import (
-    pyflame_get_shot_name as pyflame_get_shot_name
+from modules.functions.pyside6_qt_get_shot_name import (
+    pyside6_qt_get_shot_name
 )
-from modules.functions.pyflame_print import (
-    pyflame_print as pyflame_print
+from modules.functions.pyside6_qt_print import (
+    pyside6_qt_print
 )
-from modules.functions.pyflame_get_flame_version import (
-    pyflame_get_flame_version as pyflame_get_flame_version
+from modules.functions.pyside6_qt_get_flame_version import (
+    pyside6_qt_get_flame_version
 )
-from modules.functions.pyflame_file_browser import (
-    pyflame_file_browser as pyflame_file_browser
+from modules.functions.pyside6_qt_file_browser import (
+    pyside6_qt_file_browser
 )
-from modules.functions.pyflame_resolve_shot_name import (
-    pyflame_resolve_shot_name as pyflame_resolve_shot_name
+from modules.functions.pyside6_qt_resolve_shot_name import (
+    pyside6_qt_resolve_shot_name
 )
-from modules.functions.pyflame_resolve_path_tokens import (
-    pyflame_resolve_path_tokens as pyflame_resolve_path_tokens
+from modules.functions.pyside6_qt_resolve_path_tokens import (
+    pyside6_qt_resolve_path_tokens
 )
-from modules.functions.pyflame_refresh_hooks import (
-    pyflame_refresh_hooks as pyflame_refresh_hooks
+from modules.functions.pyside6_qt_refresh_hooks import (
+    pyside6_qt_refresh_hooks
 )
-from modules.functions.pyflame_open_in_finder import (
-    pyflame_open_in_finder as pyflame_open_in_finder
+from modules.functions.pyside6_qt_open_in_finder import (
+    pyside6_qt_open_in_finder
 )
-from modules.functions.pyflame_load_config import (
-    pyflame_load_config as pyflame_load_config
+from modules.functions.pyside6_qt_load_config import (
+    pyside6_qt_load_config
 )
-from modules.functions.pyflame_save_config import (
-    pyflame_save_config as pyflame_save_config
+from modules.functions.pyside6_qt_save_config import (
+    pyside6_qt_save_config
 )
 
 # ========================================================================== #
@@ -211,66 +134,66 @@ from modules.functions.pyflame_save_config import (
 #     example_function as new_function_name
 # )
 
-from modules.classes.FlameButton import (
-    FlameButton as FlameButton
+from modules.classes.pyside6_qt_button import (
+    pyside6_qt_button
 )
-from modules.classes.FlameClickableLineEdit import (
-    FlameClickableLineEdit as FlameClickableLineEdit
+from modules.classes.pyside6_qt_clickable_line_edit import (
+    pyside6_qt_clickable_line_edit
 )
-from modules.classes.FlameLabel import (
-    FlameLabel as FlameLabel
+from modules.classes.pyside6_qt_label import (
+    pyside6_qt_label
 )
-from modules.classes.FlameLineEdit import (
-    FlameLineEdit as FlameLineEdit
+from modules.classes.pyside6_qt_line_edit import (
+    pyside6_qt_line_edit
 )
-from modules.classes.FlameListWidget import (
-    FlameListWidget as FlameListWidget
+from modules.classes.pyside6_qt_list_widget import (
+    pyside6_qt_list_widget
 )
-from modules.classes.FlameMessageWindow import (
-    FlameMessageWindow as FlameMessageWindow
+from modules.classes.pyside6_qt_message_window import (
+    pyside6_qt_message_window
 )
-from modules.classes.FlamePasswordWindow import (
-    FlamePasswordWindow as FlamePasswordWindow
+from modules.classes.pyside6_qt_password_window import (
+    pyside6_qt_password_window
 )
-from modules.classes.FlamePresetWindow import (
-    FlamePresetWindow as FlamePresetWindow
+from modules.classes.pyside6_qt_preset_window import (
+    pyside6_qt_preset_window
 )
-from modules.classes.FlameProgressWindow import (
-    FlameProgressWindow as FlameProgressWindow
+from modules.classes.pyside6_qt_progress_window import (
+    pyside6_qt_progress_window
 )
-from modules.classes.FlamePushButton import (
-    FlamePushButton as FlamePushButton
+from modules.classes.pyside6_qt_push_button import (
+    pyside6_qt_push_button
 )
-from modules.classes.FlamePushButtonMenu import (
-    FlamePushButtonMenu as FlamePushButtonMenu
+from modules.classes.pyside6_qt_push_button_menu import (
+    pyside6_qt_push_button_menu
 )
-from modules.classes.FlameQDialog import (
-    FlameQDialog as FlameQDialog
+from modules.classes.pyside6_qt_qdialog import (
+    pyside6_qt_qdialog
 )
-from modules.classes.FlameSlider import (
-    FlameSlider as FlameSlider
+from modules.classes.pyside6_qt_slider import (
+    pyside6_qt_slider
 )
-from modules.classes.FlameTextEdit import (
-    FlameTextEdit as FlameTextEdit
+from modules.classes.pyside6_qt_text_edit import (
+    pyside6_qt_text_edit
 )
-from modules.classes.FlameTokenPushButton import (
-    FlameTokenPushButton as FlameTokenPushButton
+from modules.classes.pyside6_qt_token_push_button import (
+    pyside6_qt_token_push_button
 )
-from modules.classes.FlameTreeWidget import (
-    FlameTreeWidget as FlameTreeWidget
+from modules.classes.pyside6_qt_tree_widget import (
+    pyside6_qt_tree_widget
 )
-from modules.classes.FlameWindow import (
-    FlameWindow as FlameWindow
+from modules.classes.pyside6_qt_window import (
+    pyside6_qt_window
 )
 
 # ---------------------------------------- #
 
 # Main Script
 
-SCRIPT_NAME = 'experimental_comp'
-SCRIPT_PATH = f'/opt/Autodesk/shared/python/modularize/openclip/scripts/{SCRIPT_NAME}'
-VERSION = 'v1.1'
-class class_mmm_comp():
+SCRIPT_NAME = 'logik_projekt_openclip_comp'
+SCRIPT_PATH = f'/opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/{SCRIPT_NAME}'
+VERSION = 'v1.0'
+class class_projekt_openclip_comp():
 
     def __init__(self, selection):
 
@@ -281,7 +204,7 @@ class class_mmm_comp():
 
         # Load config file
 
-        self.settings = pyflame_load_config(SCRIPT_NAME, SCRIPT_PATH, {
+        self.settings = pyside6_qt_load_config(SCRIPT_NAME, SCRIPT_PATH, {
             'render_node_type': 'Write File Node',
             'write_file_media_path': '/JOBS/',
             'write_file_pattern': '<project nickname>/shots/<shot name>/openclip/renders/<name>_<version name>/<name>_<version name><frame><ext>',
@@ -304,7 +227,7 @@ class class_mmm_comp():
 
     # ---------------------------------------- #
 
-    def batch_mmm_comp_clips(self):
+    def batch_projekt_comp_clips(self):
         import flame
 
         # Get current batch
@@ -339,13 +262,13 @@ class class_mmm_comp():
 
         print('Done.\n')
 
-    def media_panel_mmm_comp_clips(self):
+    def media_panel_projekt_comp_clips(self):
         import flame
 
         flame.go_to('Batch')
 
         # Create batch group
-        batch_group = flame.batch.create_batch_group('mmm_comp', reels=['sources','reference','CGI','mattes','neat_video','precomp','roto','comp'])
+        batch_group = flame.batch.create_batch_group('projekt_comp', reels=['sources','reference','CGI','mattes','neat_video','precomp','roto','comp'])
 
         # Add source clip(s) to 'sources_reel'
         sources_reel = batch_group.reels[0]
@@ -375,7 +298,7 @@ class class_mmm_comp():
                 batch_group.duration = int(str(clip.duration))
 
         # Run batch comp clips on all clips in batch
-        self.batch_mmm_comp_clips()
+        self.batch_projekt_comp_clips()
 
         batch_group.frame_all()
 
@@ -396,7 +319,7 @@ class class_mmm_comp():
         self.clip_timecode = clip.clip.start_time
         #print('clip_timecode:', self.clip_timecode)
 
-        self.clip_shot_name = pyflame_get_shot_name(clip)
+        self.clip_shot_name = pyside6_qt_get_shot_name(clip)
 
     def create_batch_nodes(self, clip):
         import flame
@@ -433,7 +356,7 @@ class class_mmm_comp():
                 self.render_node.shot_name = self.clip_shot_name
 
             # add version note
-            self.render_node.note = "This node was configured by mmm_comp."
+            self.render_node.note = "This node was configured by projekt_comp."
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
@@ -488,7 +411,7 @@ class class_mmm_comp():
             self.render_node.shot_name = self.clip_shot_name
 
             # add version note
-            self.render_node.note = "This node was configured by mmm_comp."
+            self.render_node.note = "This node was configured by projekt_comp."
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
@@ -534,7 +457,7 @@ class class_mmm_comp():
 
         self.y_position = self.y_position - 192
 
-        pyflame_print(SCRIPT_NAME, f'Added MUX nodes added for: {self.clip_name}')
+        pyside6_qt_print(SCRIPT_NAME, f'Added MUX nodes added for: {self.clip_name}')
 
     # ---------------------------------------- #
 
@@ -543,17 +466,17 @@ class class_mmm_comp():
         def save_config():
 
             if not self.write_file_media_path_lineedit.text():
-                FlameMessageWindow('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Media Path.')
+                pyside6_qt_message_window('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Media Path.')
             elif not self.write_file_pattern_lineedit.text():
-                FlameMessageWindow('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Pattern for image files.')
+                pyside6_qt_message_window('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Pattern for image files.')
             elif not self.write_file_create_open_clip_lineedit.text():
-                FlameMessageWindow('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Create Open Clip Naming.')
+                pyside6_qt_message_window('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Create Open Clip Naming.')
             elif not self.write_file_include_setup_lineedit.text():
-                FlameMessageWindow('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Include Setup Naming.')
+                pyside6_qt_message_window('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Include Setup Naming.')
             elif not self.write_file_version_name_lineedit.text():
-                FlameMessageWindow('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Version Naming.')
+                pyside6_qt_message_window('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Version Naming.')
             else:
-                pyflame_save_config(SCRIPT_NAME, SCRIPT_PATH, {
+                pyside6_qt_save_config(SCRIPT_NAME, SCRIPT_PATH, {
                     'render_node_type': self.write_file_render_node_type_push_btn.text(),
                     'write_file_media_path': self.write_file_media_path_lineedit.text(),
                     'write_file_pattern': self.write_file_pattern_lineedit.text(),
@@ -645,38 +568,38 @@ class class_mmm_comp():
 
         def media_path_browse():
 
-            file_path = pyflame_file_browser('Select Directory', [''], self.write_file_media_path_lineedit.text(), select_directory=True, window_to_hide=[self.setup_window])
+            file_path = pyside6_qt_file_browser('Select Directory', [''], self.write_file_media_path_lineedit.text(), select_directory=True, window_to_hide=[self.setup_window])
 
             if file_path:
                 self.write_file_media_path_lineedit.setText(file_path)
 
         gridbox = QtWidgets.QGridLayout()
-        self.setup_window = FlameWindow(f'{SCRIPT_NAME}: Render/Write Node Setup <small>{VERSION}', gridbox, 1000, 570)
+        self.setup_window = pyside6_qt_window(f'{SCRIPT_NAME}: Render/Write Node Setup <small>{VERSION}', gridbox, 1000, 570)
 
         # Labels
 
-        self.write_file_render_node_type_label = FlameLabel('Render Node Type')
-        self.write_file_setup_label = FlameLabel('Write File Node Setup', label_type='underline')
-        self.write_file_media_path_label = FlameLabel('Media Path')
-        self.write_file_pattern_label = FlameLabel('Pattern')
-        self.write_file_type_label = FlameLabel('File Type')
-        self.write_file_frame_index_label = FlameLabel('Frame Index')
-        self.write_file_padding_label = FlameLabel('Padding')
-        self.write_file_compression_label = FlameLabel('Compression')
-        self.write_file_settings_label = FlameLabel('Settings', label_type='underline')
-        self.write_file_version_name_label = FlameLabel('Version Name')
+        self.write_file_render_node_type_label = pyside6_qt_label('Render Node Type')
+        self.write_file_setup_label = pyside6_qt_label('Write File Node Setup', label_type='underline')
+        self.write_file_media_path_label = pyside6_qt_label('Media Path')
+        self.write_file_pattern_label = pyside6_qt_label('Pattern')
+        self.write_file_type_label = pyside6_qt_label('File Type')
+        self.write_file_frame_index_label = pyside6_qt_label('Frame Index')
+        self.write_file_padding_label = pyside6_qt_label('Padding')
+        self.write_file_compression_label = pyside6_qt_label('Compression')
+        self.write_file_settings_label = pyside6_qt_label('Settings', label_type='underline')
+        self.write_file_version_name_label = pyside6_qt_label('Version Name')
 
         # LineEdits
 
-        self.write_file_media_path_lineedit = FlameLineEdit(self.settings.write_file_media_path)
-        self.write_file_pattern_lineedit = FlameLineEdit(self.settings.write_file_pattern)
-        self.write_file_create_open_clip_lineedit = FlameLineEdit(self.settings.write_file_create_open_clip_value)
-        self.write_file_include_setup_lineedit = FlameLineEdit(self.settings.write_file_include_setup_value)
-        self.write_file_version_name_lineedit = FlameLineEdit(self.settings.write_file_version_name, max_width=150)
+        self.write_file_media_path_lineedit = pyside6_qt_line_edit(self.settings.write_file_media_path)
+        self.write_file_pattern_lineedit = pyside6_qt_line_edit(self.settings.write_file_pattern)
+        self.write_file_create_open_clip_lineedit = pyside6_qt_line_edit(self.settings.write_file_create_open_clip_value)
+        self.write_file_include_setup_lineedit = pyside6_qt_line_edit(self.settings.write_file_include_setup_value)
+        self.write_file_version_name_lineedit = pyside6_qt_line_edit(self.settings.write_file_version_name, max_width=150)
 
         # Sliders
 
-        self.write_file_padding_slider = FlameSlider(int(self.settings.write_file_padding), 1, 20, value_is_float=False, slider_width=150)
+        self.write_file_padding_slider = pyside6_qt_slider(int(self.settings.write_file_padding), 1, 20, value_is_float=False, slider_width=150)
 
         # Image format pushbutton
 
@@ -777,12 +700,12 @@ class class_mmm_comp():
         # Render Type Pushbutton Menu
 
         render_node_options = ['Render Node', 'Write File Node']
-        self.write_file_render_node_type_push_btn = FlamePushButtonMenu(self.settings.render_node_type, render_node_options, menu_action=render_node_type_toggle)
+        self.write_file_render_node_type_push_btn = pyside6_qt_push_button_menu(self.settings.render_node_type, render_node_options, menu_action=render_node_type_toggle)
 
         # Frame Index Pushbutton Menu
 
         frame_index = ['Use Start Frame', 'Use Timecode']
-        self.write_file_frame_index_push_btn = FlamePushButtonMenu(self.settings.write_file_frame_index, frame_index)
+        self.write_file_frame_index_push_btn = pyside6_qt_push_button_menu(self.settings.write_file_frame_index, frame_index)
 
         # Token Push Buttons
 
@@ -790,25 +713,25 @@ class class_mmm_comp():
                                 'Project': '<project>', 'Project Nickname': '<project nickname>', 'Shot Name': '<shot name>', 'Clip Height': '<height>',
                                 'Clip Width': '<width>', 'Clip Name': '<name>', }
 
-        self.write_file_pattern_token_btn = FlameTokenPushButton('Add Token', write_file_token_dict, self.write_file_pattern_lineedit)
-        self.write_file_open_clip_token_btn = FlameTokenPushButton('Add Token', write_file_token_dict, self.write_file_create_open_clip_lineedit)
-        self.write_file_include_setup_token_btn = FlameTokenPushButton('Add Token', write_file_token_dict, self.write_file_include_setup_lineedit)
+        self.write_file_pattern_token_btn = pyside6_qt_token_push_button('Add Token', write_file_token_dict, self.write_file_pattern_lineedit)
+        self.write_file_open_clip_token_btn = pyside6_qt_token_push_button('Add Token', write_file_token_dict, self.write_file_create_open_clip_lineedit)
+        self.write_file_include_setup_token_btn = pyside6_qt_token_push_button('Add Token', write_file_token_dict, self.write_file_include_setup_lineedit)
 
         # Pushbuttons
 
-        self.write_file_create_open_clip_btn = FlamePushButton('Create Open Clip', self.settings.write_file_create_open_clip)
+        self.write_file_create_open_clip_btn = pyside6_qt_push_button('Create Open Clip', self.settings.write_file_create_open_clip)
         self.write_file_create_open_clip_btn.clicked.connect(write_file_create_open_clip_btn_check)
         write_file_create_open_clip_btn_check()
 
-        self.write_file_include_setup_btn = FlamePushButton('Include Setup', self.settings.write_file_include_setup)
+        self.write_file_include_setup_btn = pyside6_qt_push_button('Include Setup', self.settings.write_file_include_setup)
         self.write_file_include_setup_btn.clicked.connect(write_file_include_setup_btn_check)
         write_file_include_setup_btn_check()
 
         # Buttons
 
-        self.write_file_browse_btn = FlameButton('Browse', media_path_browse)
-        self.write_file_save_btn = FlameButton('Save', save_config)
-        self.write_file_cancel_btn = FlameButton('Cancel', self.setup_window.close)
+        self.write_file_browse_btn = pyside6_qt_button('Browse', media_path_browse)
+        self.write_file_save_btn = pyside6_qt_button('Save', save_config)
+        self.write_file_cancel_btn = pyside6_qt_button('Cancel', self.setup_window.close)
 
         # ------------------------------------------------------------- #
 
@@ -875,17 +798,17 @@ class class_mmm_comp():
 
 def projekt_comp_media_panel_clips(selection):
 
-    script = class_mmm_comp(selection)
-    script.media_panel_mmm_comp_clips()
+    script = class_projekt_openclip_comp(selection)
+    script.media_panel_projekt_comp_clips()
 
 def projekt_comp_batch_clips(selection):
 
-    script = class_mmm_comp(selection)
-    script.batch_mmm_comp_clips()
+    script = class_projekt_openclip_comp(selection)
+    script.batch_projekt_comp_clips()
 
 def setup(selection):
 
-    script = class_mmm_comp(selection)
+    script = class_projekt_openclip_comp(selection)
     script.write_node_setup()
 
 # ---------------------------------------- #
@@ -938,13 +861,13 @@ def get_batch_custom_ui_actions():
 
     return [
         {
-            'name': 'logik_projekt',
+            'name': 'logik-projekt',
             'hierarchy': [],
             'actions': []
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 0,
             'actions': [
                 {
@@ -963,17 +886,17 @@ def get_main_menu_custom_ui_actions():
 
     return [
         {
-            'name': 'logik_projekt',
+            'name': 'logik-projekt',
             'hierarchy': [],
             'actions': []
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
+            'hierarchy': ['logik-projekt'],
             'order': 0,
             'actions': [
                 {
-                    'name': 'configure mmm_comp',
+                    'name': 'configure projekt_comp',
                     'execute': setup,
                     'minimumVersion': '2025'
                 }
@@ -985,18 +908,18 @@ def get_media_panel_custom_ui_actions():
 
     return [
         {
-            'name': 'logik_projekt',
+            'name': 'logik-projekt',
             'hierarchy': [],
             'actions': []
         },
         {
             'name': 'create',
-            'hierarchy': ['logik_projekt'],
-            'order': 0,
+            'hierarchy': ['logik-projekt'],
+            'order': 7,
             'actions': [
                 {
                     'name': 'projekt_comp selected clips',
-                    'order': 0,
+                    'order': 7,
                     'separator': 'below',
                     'isVisible': scope_clip,
                     'execute': projekt_comp_media_panel_clips,
@@ -1010,13 +933,13 @@ def get_media_panel_custom_ui_actions():
 
 #     return [
 #         {
-#             'name': 'logik_projekt',
+#             'name': 'logik-projekt',
 #             'hierarchy': [],
 #             'actions': []
 #         },
 #         {
 #             'name': 'create',
-#             'hierarchy': ['logik_projekt'],
+#             'hierarchy': ['logik-projekt'],
 #             'order': 0,
 #             'actions': [
 #                 {
@@ -1061,3 +984,119 @@ def get_media_panel_custom_ui_actions():
 # version:               0.0.4
 # modified:              2024-05-09 - 13:18:47
 # comments:              Refactored code works in flame 2025. Time to tidy up.
+# -------------------------------------------------------------------------- #
+# version:               0.0.5
+# modified:              2024-05-17 - 13:36:42
+# comments:              Replaced FlameButton with pyside6_qt_button
+# -------------------------------------------------------------------------- #
+# version:               0.0.6
+# modified:              2024-05-17 - 13:37:49
+# comments:              Replaced FlameClickableLineEdit with pyside6_qt_clickable_line_edit
+# -------------------------------------------------------------------------- #
+# version:               0.0.7
+# modified:              2024-05-17 - 13:38:19
+# comments:              Replaced FlameLabel with pyside6_qt_label
+# -------------------------------------------------------------------------- #
+# version:               0.0.8
+# modified:              2024-05-17 - 13:38:29
+# comments:              Replaced FlameLineEdit with pyside6_qt_line_edit
+# -------------------------------------------------------------------------- #
+# version:               0.0.9
+# modified:              2024-05-17 - 13:39:27
+# comments:              Replaced FlameListWidget with pyside6_qt_list_widget
+# -------------------------------------------------------------------------- #
+# version:               0.1.0
+# modified:              2024-05-17 - 13:39:47
+# comments:              Replaced FlameMessageWindow with pyside6_qt_message_window
+# -------------------------------------------------------------------------- #
+# version:               0.1.1
+# modified:              2024-05-17 - 13:40:01
+# comments:              Replaced FlamePasswordWindow with pyside6_qt_password_window
+# -------------------------------------------------------------------------- #
+# version:               0.1.2
+# modified:              2024-05-17 - 13:40:28
+# comments:              Replaced FlamePresetWindow with pyside6_qt_preset_window
+# -------------------------------------------------------------------------- #
+# version:               0.1.3
+# modified:              2024-05-17 - 13:40:37
+# comments:              Replaced FlameProgressWindow with pyside6_qt_progress_window
+# -------------------------------------------------------------------------- #
+# version:               0.1.4
+# modified:              2024-05-17 - 13:41:39
+# comments:              Replaced FlamePushButton with pyside6_qt_push_button
+# -------------------------------------------------------------------------- #
+# version:               0.1.5
+# modified:              2024-05-17 - 13:41:49
+# comments:              Replaced FlamePushButtonMenu with pyside6_qt_push_button_menu
+# -------------------------------------------------------------------------- #
+# version:               0.1.6
+# modified:              2024-05-17 - 13:42:30
+# comments:              Replaced FlameQDialog with pyside6_qt_qdialog
+# -------------------------------------------------------------------------- #
+# version:               0.1.7
+# modified:              2024-05-17 - 13:44:20
+# comments:              Replaced FlameSlider with pyside6_qt_slider
+# -------------------------------------------------------------------------- #
+# version:               0.1.8
+# modified:              2024-05-17 - 13:44:30
+# comments:              Replaced FlameTextEdit with pyside6_qt_text_edit
+# -------------------------------------------------------------------------- #
+# version:               0.1.9
+# modified:              2024-05-17 - 13:44:39
+# comments:              Replaced FlameTokenPushButton with pyside6_qt_token_push_button
+# -------------------------------------------------------------------------- #
+# version:               0.2.0
+# modified:              2024-05-17 - 13:45:12
+# comments:              Replaced FlameTreeWidget with pyside6_qt_tree_widget
+# -------------------------------------------------------------------------- #
+# version:               0.2.1
+# modified:              2024-05-17 - 13:45:29
+# comments:              Replaced FlameWindow with pyside6_qt_window
+# -------------------------------------------------------------------------- #
+# version:               0.2.2
+# modified:              2024-05-17 - 13:45:42
+# comments:              Replaced pyflame_file_browser with pyside6_qt_file_browser
+# -------------------------------------------------------------------------- #
+# version:               0.2.3
+# modified:              2024-05-17 - 13:47:07
+# comments:              Replaced pyflame_get_flame_version with pyside6_qt_get_flame_version
+# -------------------------------------------------------------------------- #
+# version:               0.2.4
+# modified:              2024-05-17 - 13:47:43
+# comments:              Replaced pyflame_get_shot_name with pyside6_qt_get_shot_name
+# -------------------------------------------------------------------------- #
+# version:               0.2.5
+# modified:              2024-05-17 - 13:47:56
+# comments:              Replaced pyflame_load_config with pyside6_qt_load_config
+# -------------------------------------------------------------------------- #
+# version:               0.2.6
+# modified:              2024-05-17 - 13:49:42
+# comments:              Replaced pyflame_open_in_finder with pyside6_qt_open_in_finder
+# -------------------------------------------------------------------------- #
+# version:               0.2.7
+# modified:              2024-05-17 - 13:49:51
+# comments:              Replaced pyflame_print with pyside6_qt_print
+# -------------------------------------------------------------------------- #
+# version:               0.2.8
+# modified:              2024-05-17 - 13:49:59
+# comments:              Replaced pyflame_refresh_hooks with pyside6_qt_refresh_hooks
+# -------------------------------------------------------------------------- #
+# version:               0.2.9
+# modified:              2024-05-17 - 13:50:10
+# comments:              Replaced pyflame_resolve_path_tokens with pyside6_qt_resolve_path_tokens
+# -------------------------------------------------------------------------- #
+# version:               0.3.0
+# modified:              2024-05-17 - 13:50:21
+# comments:              Replaced pyflame_resolve_shot_name with pyside6_qt_resolve_shot_name
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-17 - 13:50:32
+# comments:              Replaced pyflame_save_config with pyside6_qt_save_config
+# -------------------------------------------------------------------------- #
+# version:               0.3.2
+# modified:              2024-05-17 - 15:16:41
+# comments:              Replaced pyside6_qt_textedit with pyside6_qt_text_edit
+# -------------------------------------------------------------------------- #
+# version:               0.3.3
+# modified:              2024-05-17 - 15:48:00
+# comments:              Replaced pyside6_qt_push_buttonMenu with pyside6_qt_push_button_menu
