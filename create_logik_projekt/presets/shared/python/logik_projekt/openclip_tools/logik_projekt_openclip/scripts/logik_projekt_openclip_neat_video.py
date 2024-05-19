@@ -1,9 +1,9 @@
-# filename: logik_projekt_openclip_comp.py
+# filename: logik_projekt_openclip_neat_video.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        logik_projekt_openclip_comp.py
+# File Name:        logik_projekt_openclip_neat_video.py
 # Version:          0.4.4
 # Language:         python script
 # Flame Version:    2025.x
@@ -190,10 +190,10 @@ from modules.classes.pyside6_qt_window import (
 
 # Main Script
 
-SCRIPT_NAME = 'logik_projekt_openclip_comp'
+SCRIPT_NAME = 'logik_projekt_openclip_neat_video'
 SCRIPT_PATH = f'/opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/{SCRIPT_NAME}'
 VERSION = 'v1.0'
-class class_projekt_openclip_comp():
+class class_projekt_openclip_neat_video():
 
     def __init__(self, selection):
 
@@ -227,7 +227,7 @@ class class_projekt_openclip_comp():
 
     # ---------------------------------------- #
 
-    def batch_projekt_comp_clips(self):
+    def batch_projekt_neat_video_clips(self):
         import flame
 
         # Get current batch
@@ -262,13 +262,13 @@ class class_projekt_openclip_comp():
 
         print('Done.\n')
 
-    def media_panel_projekt_comp_clips(self):
+    def media_panel_projekt_neat_video_clips(self):
         import flame
 
         flame.go_to('Batch')
 
         # Create batch group
-        batch_group = flame.batch.create_batch_group('projekt_comp', reels=['sources','reference','CGI','mattes','neat_video','precomp','roto','comp'])
+        batch_group = flame.batch.create_batch_group('projekt_neat_video', reels=['sources','reference','CGI','mattes','neat_video','precomp','roto','comp'])
 
         # Add source clip(s) to 'sources_reel'
         sources_reel = batch_group.reels[0]
@@ -297,8 +297,8 @@ class class_projekt_openclip_comp():
             if int(str(clip.duration)) > int(str(batch_group.duration)):
                 batch_group.duration = int(str(clip.duration))
 
-        # Run batch comp clips on all clips in batch
-        self.batch_projekt_comp_clips()
+        # Run batch neat video clips on all clips in batch
+        self.batch_projekt_neat_video_clips()
 
         batch_group.frame_all()
 
@@ -338,9 +338,9 @@ class class_projekt_openclip_comp():
             self.render_node.source_timecode = self.clip_timecode
             self.render_node.record_timecode = self.clip_timecode
 
-            self.render_node.name = self.clip_shot_name + '_comp'
+            # self.render_node.name = self.clip_shot_name + '_comp'
             # self.render_node.name = self.clip_name + '_mattes'
-            # self.render_node.name = self.clip_name + '_neat_video'
+            self.render_node.name = self.clip_name + '_neat_video'
             # self.render_node.name = self.clip_name + '_precomp'
 
             # self.render_node.destination = ('Batch Reels', 'comp')
@@ -356,7 +356,7 @@ class class_projekt_openclip_comp():
                 self.render_node.shot_name = self.clip_shot_name
 
             # add version note
-            self.render_node.note = "This node was configured by projekt_comp."
+            self.render_node.note = "This node was configured by projekt_neat_video."
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
@@ -374,14 +374,14 @@ class class_projekt_openclip_comp():
             self.render_node.source_timecode = self.clip_timecode
             self.render_node.record_timecode = self.clip_timecode
 
-            self.render_node.name = self.clip_shot_name + '_comp'
+            # self.render_node.name = self.clip_shot_name + '_comp'
             # self.render_node.name = self.clip_name + '_mattes'
-            # self.render_node.name = self.clip_name + '_neat_video'
+            self.render_node.name = self.clip_name + '_neat_video'
             # self.render_node.name = self.clip_name + '_precomp'
 
-            self.render_node.destination = ('Batch Reels', 'comp')
+            # self.render_node.destination = ('Batch Reels', 'comp')
             # self.render_node.destination = ('Batch Reels', 'mattes')
-            # self.render_node.destination = ('Batch Reels', 'neat_video')
+            self.render_node.destination = ('Batch Reels', 'neat_video')
             # self.render_node.destination = ('Batch Reels', 'precomp')
 
             # self.render_node.destination = ('Libraries')
@@ -411,32 +411,32 @@ class class_projekt_openclip_comp():
             self.render_node.shot_name = self.clip_shot_name
 
             # add version note
-            self.render_node.note = "This node was configured by projekt_comp."
+            self.render_node.note = "This node was configured by projekt_neat_video."
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
             if self.settings.write_file_create_open_clip:
-                self.render_node.version_mode = 'Follow Iteration' # Enable for final comps.
-                # self.render_node.version_mode = 'Custom Version' # Enable for intermediate renders.
+                # self.render_node.version_mode = 'Follow Iteration' # Enable for final comps.
+                self.render_node.version_mode = 'Custom Version' # Enable for intermediate renders.
                 self.render_node.version_name = self.settings.write_file_version_name
 
                 # add version number
-                # self.render_node.version_number = 1 # Enable if using 'Custom Version'
+                self.render_node.version_number = 1 # Enable if using 'Custom Version'
                 # add version padding
-                # self.render_node.version_padding = 4 # Enable if using 'Custom Version'
+                self.render_node.version_padding = 4 # Enable if using 'Custom Version'
 
         # Add MUX node
 
-        mux_node = self.batch_group.create_node('MUX')
-        mux_node.pos_x = self.x_position + 288
-        mux_node.pos_y = self.y_position - 24
+        # mux_node = self.batch_group.create_node('MUX')
+        # mux_node.pos_x = self.x_position + 288
+        # mux_node.pos_y = self.y_position - 24
 
         # Add neat video node
 
-        # neat_video_node = self.batch_group.create_node('OpenFX')
-        # neat_video_node.change_plugin('Reduce Noise v5')
-        # neat_video_node.pos_x = self.x_position + 288
-        # neat_video_node.pos_y = self.y_position - 24
+        neat_video_node = self.batch_group.create_node('OpenFX')
+        neat_video_node.change_plugin('Reduce Noise v5')
+        neat_video_node.pos_x = self.x_position + 288
+        neat_video_node.pos_y = self.y_position - 24
 
         # Add Render Node or Write File Node
 
@@ -445,15 +445,15 @@ class class_projekt_openclip_comp():
         else:
             add_write_node()
 
-        self.render_node.pos_x = mux_node.pos_x + 288
-        self.render_node.pos_y = mux_node.pos_y - 0
+        self.render_node.pos_x = neat_video_node.pos_x + 288
+        self.render_node.pos_y = neat_video_node.pos_y - 0
 
         # Connect nodes
 
-        flame.batch.connect_nodes(clip, 'Default', mux_node, 'Default')
-        flame.batch.connect_nodes(mux_node, 'Default', self.render_node, 'Default')
-        # flame.batch.connect_nodes(clip, 'Default', neat_video_node, 'Default')
-        # flame.batch.connect_nodes(neat_video_node, 'Default', self.render_node, 'Default')
+        # flame.batch.connect_nodes(clip, 'Default', mux_node, 'Default')
+        # flame.batch.connect_nodes(mux_node, 'Default', self.render_node, 'Default')
+        flame.batch.connect_nodes(clip, 'Default', neat_video_node, 'Default')
+        flame.batch.connect_nodes(neat_video_node, 'Default', self.render_node, 'Default')
 
         self.y_position = self.y_position - 192
 
@@ -796,19 +796,19 @@ class class_projekt_openclip_comp():
 
 # ---------------------------------------- #
 
-def projekt_comp_media_panel_clips(selection):
+def projekt_neat_video_media_panel_clips(selection):
 
-    script = class_projekt_openclip_comp(selection)
-    script.media_panel_projekt_comp_clips()
+    script = class_projekt_openclip_neat_video(selection)
+    script.media_panel_projekt_neat_video_clips()
 
-def projekt_comp_batch_clips(selection):
+def projekt_neat_video_batch_clips(selection):
 
-    script = class_projekt_openclip_comp(selection)
-    script.batch_projekt_comp_clips()
+    script = class_projekt_openclip_neat_video(selection)
+    script.batch_projekt_neat_video_clips()
 
 def setup(selection):
 
-    script = class_projekt_openclip_comp(selection)
+    script = class_projekt_openclip_neat_video(selection)
     script.write_node_setup()
 
 # ---------------------------------------- #
@@ -868,14 +868,14 @@ def get_batch_custom_ui_actions():
         {
             'name': 'create-openclip',
             'hierarchy': ['logik-projekt'],
-            'order': 0,
+            'order': 3,
             'actions': [
                 {
-                    'name': 'projekt_comp selected clips',
-                    'order': 0,
+                    'name': 'projekt_neat_video selected clips',
+                    'order': 3,
                     'separator': 'below',
                     'isVisible': scope_clip,
-                    'execute': projekt_comp_batch_clips,
+                    'execute': projekt_neat_video_batch_clips,
                     'minimumVersion': '2025'
                 }
             ]
@@ -893,10 +893,10 @@ def get_main_menu_custom_ui_actions():
         {
             'name': 'create-openclip',
             'hierarchy': ['logik-projekt'],
-            'order': 0,
+            'order': 3,
             'actions': [
                 {
-                    'name': 'configure projekt_comp',
+                    'name': 'configure projekt_neat_video',
                     'execute': setup,
                     'minimumVersion': '2025'
                 }
@@ -915,14 +915,14 @@ def get_media_panel_custom_ui_actions():
         {
             'name': 'create-openclip',
             'hierarchy': ['logik-projekt'],
-            'order': 0,
+            'order': 3,
             'actions': [
                 {
-                    'name': 'projekt_comp selected clips',
-                    'order': 0,
+                    'name': 'projekt_neat_video selected clips',
+                    'order': 3,
                     'separator': 'below',
                     'isVisible': scope_clip,
-                    'execute': projekt_comp_media_panel_clips,
+                    'execute': projekt_neat_video_media_panel_clips,
                     'minimumVersion': '2025'
                 }
             ]
@@ -940,14 +940,14 @@ def get_media_panel_custom_ui_actions():
 #         {
 #             'name': 'create-openclip',
 #             'hierarchy': ['logik-projekt'],
-#             'order': 0,
+#             'order': 3,
 #             'actions': [
 #                 {
-#                     'name': 'projekt_comp selected clips',
-#                     'order': 0,
+#                     'name': 'projekt_neat_video selected clips',
+#                     'order': 3,
 #                     'separator': 'below',
 #                     "isVisible": scope_segment,
-#                     'execute': projekt_comp_media_panel_clips,
+#                     'execute': projekt_neat_video_media_panel_clips,
 #                     'minimumVersion': '2025'
 #                 }
 #             ]
