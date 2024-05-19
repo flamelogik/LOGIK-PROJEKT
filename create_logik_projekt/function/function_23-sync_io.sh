@@ -30,7 +30,7 @@ sync_io_presets() {
     # Set the source and target export presets directories
     src_shared_export_presets_dir="presets/shared/export/presets"
     tgt_shared_export_presets_dir="/opt/Autodesk/shared/export/presets"
-    tgt_project_export_presets_dir="$flame_proj_dir/export/presets"
+    tgt_project_export_presets_dir="$flame_proj_dir/export/presets/flame"
 
     echo -e "  synchronizing project export presets directories.\n"
 
