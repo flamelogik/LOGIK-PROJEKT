@@ -1,5 +1,6 @@
 # filename: create_openclip_segment_clip.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_openclip_segment_clip.py
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

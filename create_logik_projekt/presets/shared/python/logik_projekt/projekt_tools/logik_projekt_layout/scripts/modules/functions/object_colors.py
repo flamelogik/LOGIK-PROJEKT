@@ -1,5 +1,6 @@
 # File Name:        object_colors.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        object_colors.py
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section defines color variables.

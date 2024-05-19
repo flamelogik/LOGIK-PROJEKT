@@ -1,5 +1,6 @@
 # filename: pyside6_qt_push_button_menu.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_push_button_menu.py
@@ -24,6 +25,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -34,7 +36,9 @@ from PySide6 import (
     QtCore,
     QtGui
 )
+
 import xml.etree.ElementTree as ET
+
 from typing import (
     Union,
     List,
@@ -42,6 +46,7 @@ from typing import (
     Optional,
     Callable
 )
+
 import os
 import re
 import datetime

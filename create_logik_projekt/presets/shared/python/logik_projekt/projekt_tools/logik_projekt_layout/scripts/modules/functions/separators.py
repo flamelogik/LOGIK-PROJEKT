@@ -1,5 +1,6 @@
 # File Name:        separators.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        separators.py
@@ -20,6 +21,11 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
+
+# ========================================================================== #
+# This section creates decorative separators for titles and banners.
+# ========================================================================== #
 
 # Function to repeat a character n times
 def repeat_char(char, count):
@@ -56,10 +62,6 @@ def generate_end_title_line(end_title):
 
 # Main function
 def main():
-
-    # ====================================================================== #
-    # This section creates decorative separators for titles and banners.
-    # ====================================================================== #
 
     title = "My Title"
     end_title = "End Title"

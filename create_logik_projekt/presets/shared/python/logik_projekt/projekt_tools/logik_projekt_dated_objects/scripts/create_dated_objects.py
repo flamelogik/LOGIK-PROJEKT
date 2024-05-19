@@ -1,5 +1,6 @@
 # filename: create_dated_objects.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_dated_objects.py
@@ -20,6 +21,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

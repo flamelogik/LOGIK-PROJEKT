@@ -1,5 +1,6 @@
 # filename: define_job_structure.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        define_job_structure.py
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

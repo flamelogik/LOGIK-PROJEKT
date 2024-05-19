@@ -31,9 +31,6 @@
 # This section imports the necessary modules.
 # ========================================================================== #
 
-# ---------------------------------------- #
-# Imports
-
 from functools import partial
 
 from PySide6 import (
@@ -42,6 +39,7 @@ from PySide6 import (
     QtGui
 )
 import xml.etree.ElementTree as ET
+
 from typing import (
     Union,
     List,
@@ -49,6 +47,7 @@ from typing import (
     Optional,
     Callable
 )
+
 import os
 import re
 import datetime

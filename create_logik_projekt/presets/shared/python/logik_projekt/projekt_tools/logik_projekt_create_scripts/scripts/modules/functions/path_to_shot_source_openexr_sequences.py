@@ -1,5 +1,6 @@
 # filename: path_to_shot_source_openexr_sequences.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        path_to_shot_source_openexr_sequences.py
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

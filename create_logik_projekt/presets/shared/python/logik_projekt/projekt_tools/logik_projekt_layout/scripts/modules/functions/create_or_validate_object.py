@@ -1,5 +1,6 @@
 # File Name:        create_or_validate_object.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_or_validate_object.py
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

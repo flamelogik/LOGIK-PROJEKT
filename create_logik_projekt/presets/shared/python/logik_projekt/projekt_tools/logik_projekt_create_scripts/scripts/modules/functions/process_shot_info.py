@@ -1,5 +1,6 @@
 # filename: process_shot_info.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        process_shot_info.py
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

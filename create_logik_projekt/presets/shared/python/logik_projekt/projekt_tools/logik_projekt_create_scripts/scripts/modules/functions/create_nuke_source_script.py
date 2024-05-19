@@ -1,5 +1,6 @@
 # filename: create_nuke_source_script.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_source_script.py
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

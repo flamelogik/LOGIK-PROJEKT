@@ -1,5 +1,6 @@
 # filename: create_projekt_layout.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
@@ -20,6 +21,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.

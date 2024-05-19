@@ -1,5 +1,6 @@
 # filename: pyside6_qt_text_edit
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_text_edit.py
@@ -24,15 +25,33 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.
 # ========================================================================== #
 
-from PySide6 import QtWidgets, QtCore, QtGui
+from PySide6 import (
+    QtWidgets,
+    QtCore,
+    QtGui
+)
+
 import xml.etree.ElementTree as ET
-from typing import Union, List, Dict, Optional, Callable
-import os, re, datetime, shutil, ast
+
+from typing import (
+    Union,
+    List,
+    Dict,
+    Optional,
+    Callable
+)
+
+import os
+import re
+import datetime
+import shutil
+import ast
 
 class pyside6_qt_text_edit(QtWidgets.QPlainTextEdit): # Fix for flame 2025
     '''
