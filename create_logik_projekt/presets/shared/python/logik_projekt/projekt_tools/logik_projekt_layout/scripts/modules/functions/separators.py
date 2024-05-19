@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        separators.py
-# Version:          0.3.1
+# Version:          0.4.1
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-05-15
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -77,7 +77,29 @@ if __name__ == "__main__":
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
 # ========================================================================== #
 
-# Changelist:  
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
+# Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:53:36
@@ -130,3 +152,7 @@ if __name__ == "__main__":
 # version:               0.3.1
 # modified:              2024-05-15 - 07:55:47
 # comments:              Renamed 'classes_and_functions' dir to 'modules'.
+# -------------------------------------------------------------------------- #
+# version:               0.4.1
+# modified:              2024-05-18 - 18:01:29
+# comments:              Added GNU GPLv3 Disclaimer.

@@ -3,12 +3,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_21-sync_overlays.sh
-# Version:          2.0.4
+# Version:          2.1.4
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-05-03
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -64,9 +64,31 @@ fi
 # -------------------------------------------------------------------------- #
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
 
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
 # Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               1.0.0
@@ -92,3 +114,7 @@ fi
 # version:               2.0.4
 # modified:              2024-05-03 - 10:56:34
 # comments:              Restore 'jobs_dir' to /JOBS
+# -------------------------------------------------------------------------- #
+# version:               2.1.4
+# modified:              2024-05-18 - 18:00:11
+# comments:              Added GNU GPLv3 Disclaimer.

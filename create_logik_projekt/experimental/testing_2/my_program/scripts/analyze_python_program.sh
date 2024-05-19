@@ -128,7 +128,7 @@ cd "$parent_dir" || exit
 # -------------------------------------------------------------------------- #
 
 # Define the target script to analyze
-target_script="create_projekt_layout.py"
+target_script="logik_projekt_openclip_comp.py"
 
 # -------------------------------------------------------------------------- #
 

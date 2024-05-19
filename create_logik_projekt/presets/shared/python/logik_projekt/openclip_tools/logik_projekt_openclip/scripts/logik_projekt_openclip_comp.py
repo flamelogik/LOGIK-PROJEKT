@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        logik_projekt_openclip_comp.py
-# Version:          0.3.3
+# Version:          0.4.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-17
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -967,7 +967,29 @@ def get_media_panel_custom_ui_actions():
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
 # ========================================================================== #
 
-# Changelist:
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
+# Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-07 - 21:48:20
@@ -1100,3 +1122,7 @@ def get_media_panel_custom_ui_actions():
 # version:               0.3.3
 # modified:              2024-05-17 - 15:48:00
 # comments:              Replaced pyside6_qt_push_buttonMenu with pyside6_qt_push_button_menu
+# -------------------------------------------------------------------------- #
+# version:               0.4.3
+# modified:              2024-05-18 - 18:00:39
+# comments:              Added GNU GPLv3 Disclaimer.

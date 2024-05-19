@@ -3,13 +3,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        list_shot_sources_dir.py
-# Version:          2.1.2
+# Version:          2.2.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-15
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -112,7 +112,29 @@ def list_shot_sources_dir(shot_sources_dir):
 # C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
 # ========================================================================== #
 
-# Changelist:
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
+# Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:50:36
@@ -181,3 +203,7 @@ def list_shot_sources_dir(shot_sources_dir):
 # version:               2.1.2
 # modified:              2024-05-15 - 12:35:57
 # comments:              Renamed nuke script functions and started blender tools.
+# -------------------------------------------------------------------------- #
+# version:               2.2.2
+# modified:              2024-05-18 - 18:00:56
+# comments:              Added GNU GPLv3 Disclaimer.
