@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        import_classes.py
-# Version:          0.4.3
+# Version:          0.4.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -258,3 +258,7 @@ from modules.classes.pyside6_qt_window import (
 # version:               0.4.3
 # modified:              2024-05-18 - 18:00:39
 # comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.4
+# modified:              2024-05-18 - 18:46:09
+# comments:              Minor modification to Disclaimer.

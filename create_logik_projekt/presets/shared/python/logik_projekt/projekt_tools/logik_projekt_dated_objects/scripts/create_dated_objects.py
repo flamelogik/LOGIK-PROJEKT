@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_dated_objects.py
-# Version:          0.1.4
+# Version:          0.1.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -728,3 +728,7 @@ if __name__ == "__main__":
 # version:               0.1.4
 # modified:              2024-05-18 - 18:01:17
 # comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.1.5
+# modified:              2024-05-18 - 18:46:39
+# comments:              Minor modification to Disclaimer.

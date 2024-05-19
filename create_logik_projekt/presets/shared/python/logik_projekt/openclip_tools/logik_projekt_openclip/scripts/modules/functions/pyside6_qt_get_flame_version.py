@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_get_flame_version.py
-# Version:          0.4.3
+# Version:          0.4.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -301,3 +301,7 @@ def pyside6_qt_get_flame_version() -> float:
 # version:               0.4.3
 # modified:              2024-05-18 - 18:00:39
 # comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.4
+# modified:              2024-05-18 - 18:46:09
+# comments:              Minor modification to Disclaimer.

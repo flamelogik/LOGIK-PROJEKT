@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_14-rsync_options.sh
-# Version:          2.1.4
+# Version:          2.1.5
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -95,3 +95,7 @@ sync_opts=(-av --no-group --no-perms --no-times --size-only --ignore-existing)
 # version:               2.1.4
 # modified:              2024-05-18 - 18:00:11
 # comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               2.1.5
+# modified:              2024-05-18 - 18:45:00
+# comments:              Minor modification to Disclaimer.

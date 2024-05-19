@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_scripts.py
-# Version:          2.2.2
+# Version:          2.2.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -1228,3 +1228,7 @@ if __name__ == "__main__":
 # version:               2.2.2
 # modified:              2024-05-18 - 18:00:56
 # comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               2.2.3
+# modified:              2024-05-18 - 18:46:27
+# comments:              Minor modification to Disclaimer.

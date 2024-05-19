@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        object_colors.py
-# Version:          0.4.1
+# Version:          0.4.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -151,3 +151,7 @@ object_colors = {
 # version:               0.4.1
 # modified:              2024-05-18 - 18:01:29
 # comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.2
+# modified:              2024-05-18 - 18:46:51
+# comments:              Minor modification to Disclaimer.

@@ -3,7 +3,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        function_30-create_backup_script.sh
-# Version:          2.1.4
+# Version:          2.1.5
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -144,3 +144,7 @@ fi
 # version:               2.1.4
 # modified:              2024-05-18 - 18:00:11
 # comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               2.1.5
+# modified:              2024-05-18 - 18:45:01
+# comments:              Minor modification to Disclaimer.
