@@ -69,7 +69,8 @@ end_banner_04=$(generate_end_title_line "$end_title_04")
 
 # -------------------------------------------------------------------------- #
 
-# Disclaimer:       This program is free software.
+# Disclaimer:       This program is part of LOGIK-PROJEKT.
+#                   LOGIK-PROJEKT is free software.
 
 #                   You can redistribute it and/or modify it under the terms
 #                   of the GNU General Public License as published by the

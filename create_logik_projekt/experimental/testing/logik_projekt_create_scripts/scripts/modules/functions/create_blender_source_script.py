@@ -316,7 +316,7 @@ resolution = (1920, 1080)
 create_blender_source_script(job_root, shot_dir, seq_dir, seq_name, frame_rate, start_frame, end_frame, resolution)
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
 
 # Changelist:
