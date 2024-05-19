@@ -1,15 +1,16 @@
 # filename: create_projekt_layout.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_projekt_layout.py
-# Version:          0.2.0
+# Version:          0.4.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This script creates logik projekt flame layouts.
@@ -20,6 +21,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -50,7 +52,7 @@ def get_absolute_info():
     abs_parent_dir = abs_info.abs_parent_dir
     abs_config_dir = abs_info.abs_config_dir
     abs_scripts_dir = abs_info.abs_scripts_dir
-    abs_classes_and_functions_dir = abs_info.abs_classes_and_functions_dir
+    abs_modules_dir = abs_info.abs_modules_dir
     abs_classes_dir = abs_info.abs_classes_dir
     abs_functions_dir = abs_info.abs_functions_dir
     abs_version_dir = abs_info.abs_version_dir
@@ -64,7 +66,7 @@ def get_absolute_info():
         abs_parent_dir,
         abs_config_dir, 
         abs_scripts_dir, 
-        abs_classes_and_functions_dir,
+        abs_modules_dir,
         abs_classes_dir, 
         abs_functions_dir, 
         abs_version_dir
@@ -78,7 +80,7 @@ def get_absolute_info():
     abs_parent_dir,
     abs_config_dir, 
     abs_scripts_dir, 
-    abs_classes_and_functions_dir,
+    abs_modules_dir,
     abs_classes_dir, 
     abs_functions_dir, 
     abs_version_dir
@@ -117,20 +119,20 @@ separator_hash = (
 # This section defines color variables.
 # ========================================================================== #
 
-# Define object colors (from JSON)
-object_colors_json_path = os.path.join(abs_config_dir, 'object_colors.json')
+# # Define object colors (from JSON)
+# object_colors_json_path = os.path.join(abs_config_dir, 'object_colors.json')
 
-# Open the JSON file and read the data
-with open(object_colors_json_path, 'r') as file:
-    data = json.load(file)
+# # Open the JSON file and read the data
+# with open(object_colors_json_path, 'r') as file:
+#     data = json.load(file)
 
-# Extract the object_colors dictionary from the loaded data
-object_colors = data['object_colors']
+# # Extract the object_colors dictionary from the loaded data
+# object_colors = data['object_colors']
 
-# # Define object colors (from python function)
-# from modules.functions.object_colors import (
-#     object_colors
-# )
+# Define object colors (from python function)
+from modules.functions.object_colors import (
+    object_colors
+)
 
 '''
 # object_colors = {
@@ -270,7 +272,8 @@ def create_or_validate_object(
             return obj
 
     # ---------------------------------------------------------------------- #
-
+    
+    '''
     # # If the object doesn't exist, create it
     # new_object = getattr(
     #     library,
@@ -348,6 +351,7 @@ def create_or_validate_object(
     #     raise ValueError(f"Created object '{object_name}' is not of type '{object_type.capitalize()}'")
 
     # return new_object
+    '''
 
     # ---------------------------------------------------------------------- #
 
@@ -424,12 +428,6 @@ def create_or_validate_library(
 
 # Function to create or validate objects from template JSON files.
 def create_and_validate_from_template(json_file, the_current_workspace):
-
-    # import flame
-
-    # the_current_projekt = flame.projects.current_project
-    # the_current_workspace = the_current_projekt.current_workspace
-    # the_current_desktop = the_current_workspace.desktop
 
     # print(f"Processing file: {json_file}")
     print(f"\n{separator}\n")
@@ -580,7 +578,7 @@ def create_layout(*args):
         abs_parent_dir,
         abs_config_dir, 
         abs_scripts_dir, 
-        abs_classes_and_functions_dir,
+        abs_modules_dir,
         abs_classes_dir, 
         abs_functions_dir, 
         abs_version_dir
@@ -618,7 +616,6 @@ def create_layout(*args):
             # Call create_and_validate_from_template function with the path to the JSON file
             create_and_validate_from_template(object_colors_json_path, the_current_workspace)
 
-    ''' this section is now controlled by the json-based objekt creation
 
     # # Validate or create 'desktops' library
     # desktops_library = \
@@ -636,6 +633,8 @@ def create_layout(*args):
     #         )
 
     # ---------------------------------------------------------------------- #
+
+    ''' this section is now controlled by the json-based objekt creation
 
     # # Validate or create 'reference' library
     # reference_library = \
@@ -1057,10 +1056,33 @@ if __name__ == "__main__":
     create_layout()  # Call setup function for immediate execution
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
 
-# Changelist:  
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is part of LOGIK-PROJEKT.
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
+# Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:53:36
@@ -1105,3 +1127,19 @@ if __name__ == "__main__":
 # version:               0.2.0
 # modified:              2024-05-14 - 18:05:26
 # comments:              Prepped for obsolete code removal. Tested in flame 2025
+# -------------------------------------------------------------------------- #
+# version:               0.3.0
+# modified:              2024-05-14 - 19:27:33
+# comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.
+# -------------------------------------------------------------------------- #
+# version:               0.4.1
+# modified:              2024-05-18 - 18:01:29
+# comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.2
+# modified:              2024-05-18 - 18:46:51
+# comments:              Minor modification to Disclaimer.

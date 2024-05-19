@@ -1,15 +1,16 @@
 # filename: path_to_shot_source_openexr_sequences.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # File Name:        path_to_shot_source_openexr_sequences.py
-# Version:          2.0.2
+# Version:          2.2.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -21,6 +22,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -70,11 +72,11 @@ import os
 # from create_openclip_segment_clip import (
 #     create_openclip_segment_clip as create_openclip_segment_clip 
 # )
-# from create_shot_script import (
-#     create_shot_script as create_shot_script 
+# from create_nuke_shot_script import (
+#     create_nuke_shot_script as create_nuke_shot_script 
 # )
-# from create_source_script import (
-#     create_source_script as create_source_script 
+# from create_nuke_source_script import (
+#     create_nuke_source_script as create_nuke_source_script 
 # )
 # from process_shot_info import (
 #     process_shot_info as process_shot_info
@@ -153,10 +155,33 @@ def path_to_shot_source_openexr_sequences(directory,
     return shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
 
-# Changelist:
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is part of LOGIK-PROJEKT.
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
+# Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:50:36
@@ -221,3 +246,15 @@ def path_to_shot_source_openexr_sequences(directory,
 # version:               2.0.2
 # modified:              2024-05-14 - 12:53:36
 # comments:              Renamed 'classes_and_functions' directory to 'modules'.
+# -------------------------------------------------------------------------- #
+# version:               2.1.2
+# modified:              2024-05-15 - 12:35:57
+# comments:              Renamed nuke script functions and started blender tools.
+# -------------------------------------------------------------------------- #
+# version:               2.2.2
+# modified:              2024-05-18 - 18:00:56
+# comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               2.2.3
+# modified:              2024-05-18 - 18:46:27
+# comments:              Minor modification to Disclaimer.

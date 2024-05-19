@@ -135,9 +135,9 @@ target_script="create_projekt_layout.py"
 # Define other directories and subdirectories
 config_dir="$parent_dir/config"
 scripts_dir="$parent_dir/scripts"
-classes_and_functions_dir="$scripts_dir/classes_and_functions"
-classes_dir="$classes_and_functions_dir/classes"
-functions_dir="$classes_and_functions_dir/functions"
+modules_dir="$scripts_dir/modules"
+classes_dir="$modules_dir/classes"
+functions_dir="$modules_dir/functions"
 version_dir="$parent_dir/version"
 python_script="$scripts_dir/$target_script"
 class_list_file="$classes_dir/class_list.txt"
@@ -149,7 +149,7 @@ import_commands_txt="$scripts_dir/import_commands.txt"
 # Function to create directories if they don't exist
 create_directories() {
     echo "Creating necessary directories..."
-    mkdir -p "$classes_and_functions_dir"
+    mkdir -p "$modules_dir"
     mkdir -p "$classes_dir"
     mkdir -p "$functions_dir"
 }
@@ -163,7 +163,7 @@ echo "Path to this script: $(basename "$path_to_this_script")"
 echo "Parent directory:    $(basename "$parent_dir")"
 echo "Config directory:    $(basename "$config_dir")"
 echo "Scripts directory:   $(basename "$scripts_dir")"
-# echo "Classes and functions directory: $(basename "$classes_and_functions_dir")"
+# echo "Classes and functions directory: $(basename "$modules_dir")"
 echo "Classes directory:   $(basename "$classes_dir")"
 echo "Functions directory: $(basename "$functions_dir")"
 echo "Version directory:   $(basename "$version_dir")"
@@ -214,7 +214,7 @@ create_import_commands() {
     echo "# Import commands for classes" >> "$import_commands_txt"
     while IFS= read -r class_file; do
         class_name=$(basename "$class_file" .py)
-        echo "from classes_and_functions.classes.${class_name} import ${class_name}" >> "$import_commands_txt"
+        echo "from modules.classes.${class_name} import ${class_name}" >> "$import_commands_txt"
     done < <(find "$classes_dir" -name '*.py')
     echo "" >> "$import_commands_txt"
 
@@ -222,7 +222,7 @@ create_import_commands() {
     echo "# Import commands for functions" >> "$import_commands_txt"
     while IFS= read -r function_file; do
         function_name=$(basename "$function_file" .py)
-        echo "from classes_and_functions.functions.${function_name} import ${function_name}" >> "$import_commands_txt"
+        echo "from modules.functions.${function_name} import ${function_name}" >> "$import_commands_txt"
     done < <(find "$functions_dir" -name '*.py')
 }
 
@@ -240,7 +240,31 @@ analyze_python_file
 create_import_commands
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
 
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is part of LOGIK-PROJEKT.
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
 # Changelist:       
+# -------------------------------------------------------------------------- #

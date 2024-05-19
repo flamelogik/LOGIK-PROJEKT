@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_abs.py
-# Version:          0.2.0
+# Version:          0.4.2
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-14
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script gathers information about the current
@@ -63,7 +63,7 @@ class abs_path_info:
 
             abs_scripts_dir (str): The absolute directory where other scripts are stored.
 
-            abs_classes_and_functions_dir (str): The absolute directory where classes and functions are stored.
+            abs_modules_dir (str): The absolute directory where classes and functions are stored.
 
             abs_classes_dir (str): The absolute directory where classes are stored.
 
@@ -102,18 +102,18 @@ class abs_path_info:
             "scripts"
         )
 
-        self.abs_classes_and_functions_dir = os.path.join(
+        self.abs_modules_dir = os.path.join(
             self.abs_scripts_dir, 
-            "classes_and_functions"
+            "modules"
         )
 
         self.abs_classes_dir = os.path.join(
-            self.abs_classes_and_functions_dir, 
+            self.abs_modules_dir, 
             "classes"
         )
 
         self.abs_functions_dir = os.path.join(
-            self.abs_classes_and_functions_dir, 
+            self.abs_modules_dir, 
             "functions"
         )
 
@@ -131,7 +131,7 @@ class abs_path_info:
                 
         print("Creating necessary directories...")
         os.makedirs(
-            self.abs_classes_and_functions_dir, 
+            self.abs_modules_dir, 
             exist_ok=True
         )
 
@@ -193,10 +193,33 @@ if __name__ == "__main__":
     abs_script_directories.print_paths()
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
 
-# Changelist:  
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is part of LOGIK-PROJEKT.
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
+# Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               0.0.5
 # modified:              2024-05-12 - 15:37:50
@@ -225,3 +248,19 @@ if __name__ == "__main__":
 # version:               0.2.0
 # modified:              2024-05-14 - 18:05:26
 # comments:              Prepped for obsolete code removal. Tested in flame 2025
+# -------------------------------------------------------------------------- #
+# version:               0.3.0
+# modified:              2024-05-14 - 19:27:33
+# comments:              Restored 'object_colors' from python function.
+# -------------------------------------------------------------------------- #
+# version:               0.3.1
+# modified:              2024-05-15 - 07:55:47
+# comments:              Renamed 'classes_and_functions' dir to 'modules'.
+# -------------------------------------------------------------------------- #
+# version:               0.4.1
+# modified:              2024-05-18 - 18:01:29
+# comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.2
+# modified:              2024-05-18 - 18:46:51
+# comments:              Minor modification to Disclaimer.

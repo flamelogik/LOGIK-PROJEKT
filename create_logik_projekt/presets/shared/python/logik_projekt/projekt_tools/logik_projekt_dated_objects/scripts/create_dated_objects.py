@@ -1,15 +1,16 @@
 # filename: create_dated_objects.py
 
+'''
 # -------------------------------------------------------------------------- #
 
 # Program Name:     create_dated_objects.py
-# Version:          0.0.4
+# Version:          0.1.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-03
+# Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This script creates dated logik projekt flame objects.
@@ -20,6 +21,7 @@
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
+'''
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -681,11 +683,34 @@ if __name__ == "__main__":
     create_dated_postings_reel()
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
 
-# Changelist: 
- # -------------------------------------------------------------------------- #
+# -------------------------------------------------------------------------- #
+
+# Disclaimer:       This program is part of LOGIK-PROJEKT.
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+
+# -------------------------------------------------------------------------- #
+# Changelist:       
+# -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:51:36
 # comments:              Basic functionality defined and tested
@@ -701,3 +726,11 @@ if __name__ == "__main__":
 # version:               0.0.4
 # modified:              2024-05-03 - 11:38:45
 # comments:              Standardizd 'logik-projekt' menu entries
+# -------------------------------------------------------------------------- #
+# version:               0.1.4
+# modified:              2024-05-18 - 18:01:17
+# comments:              Added GNU GPLv3 Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.1.5
+# modified:              2024-05-18 - 18:46:39
+# comments:              Minor modification to Disclaimer.
