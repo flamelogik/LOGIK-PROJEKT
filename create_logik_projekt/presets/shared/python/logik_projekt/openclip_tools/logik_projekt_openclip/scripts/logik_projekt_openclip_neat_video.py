@@ -20,7 +20,7 @@
 #                   e.g. '/home/$USER/workspace/GitHub'
 
 # Attribution:      This script is derived from work originally authored by
-#                   Michael Vaglienty: 'pyflame_lib_script_template.py'
+#                   Michael Vaglienty: 'neat_freak.py'
 
 # Changelist:       The full changelist is at the end of this document.
 
@@ -185,10 +185,10 @@ from modules.classes.pyside6_qt_window import (
     pyside6_qt_window
 )
 
-# ---------------------------------------- #
-
-# Main Script
-
+# ========================================================================== #
+# This section defines the openclip class.
+# ========================================================================== #
+CONFIG_PATH = '/opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip'
 SCRIPT_NAME = 'logik_projekt_openclip_neat_video'
 SCRIPT_PATH = f'/opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/{SCRIPT_NAME}'
 VERSION = 'v1.0'
@@ -203,13 +203,13 @@ class class_projekt_openclip_neat_video():
 
         # Load config file
 
-        self.settings = pyside6_qt_load_config(SCRIPT_NAME, SCRIPT_PATH, {
+        self.settings = pyside6_qt_load_config(SCRIPT_NAME, CONFIG_PATH, {
             'render_node_type': 'Write File Node',
             'write_file_media_path': '/JOBS/',
             'write_file_pattern': '<project nickname>/shots/<shot name>/openclip/renders/<name>_<version name>/<name>_<version name><frame><ext>',
             'write_file_create_open_clip': 'True',
             'write_file_include_setup': 'True',
-            'write_file_create_open_clip_value': '<project nickname>/shots/<shot name>/openclip/output_clips/<name><ext>',
+            'write_file_create_open_clip_value': '<project nickname>/shots/<shot name>/openclip/output_clips/flame/<name><ext>',
             'write_file_include_setup_value': '<project nickname>/shots/<shot name>/openclip/batch_setups/<name>_<version name>_<workstation>_<user nickname><ext>',
             'write_file_image_format': 'OpenEXR 16-bit fp',
             'write_file_compression': 'PIZ',
@@ -475,7 +475,7 @@ class class_projekt_openclip_neat_video():
             elif not self.write_file_version_name_lineedit.text():
                 pyside6_qt_message_window('error', f'{SCRIPT_NAME}: Error', 'Write Node Setup: Enter Version Naming.')
             else:
-                pyside6_qt_save_config(SCRIPT_NAME, SCRIPT_PATH, {
+                pyside6_qt_save_config(SCRIPT_NAME, CONFIG_PATH, {
                     'render_node_type': self.write_file_render_node_type_push_btn.text(),
                     'write_file_media_path': self.write_file_media_path_lineedit.text(),
                     'write_file_pattern': self.write_file_pattern_lineedit.text(),

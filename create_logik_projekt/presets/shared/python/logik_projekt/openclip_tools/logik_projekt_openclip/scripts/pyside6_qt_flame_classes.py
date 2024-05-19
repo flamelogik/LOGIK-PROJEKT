@@ -1,9 +1,9 @@
-# filename: import_functions.py
+# filename: pyside6_qt_flame_classes.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        import_functions.py
+# File Name:        pyside6_qt_flame_classes.py
 # Version:          0.4.4
 # Language:         python script
 # Flame Version:    2025.x
@@ -19,49 +19,73 @@
 # Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
 #                   e.g. '/home/$USER/workspace/GitHub'
 
+# Attribution:      This script is derived from work originally authored by
+#                   Michael Vaglienty: 'pyflame_lib_script_template.py'
+
 # Changelist:       The full changelist is at the end of this document.
 
 # -------------------------------------------------------------------------- #
 '''
 
 # ========================================================================== #
-# This section imports the pyflame functions.
+# This section imports the Qt UI classes.
 # ========================================================================== #
 
 # # EXAMPLE
-# from modules.functions.example import (
+# from modules.classes.example import (
 #     example_function as new_function_name
 # )
 
-from modules.functions.pyside6_qt_get_shot_name import (
-    pyside6_qt_get_shot_name as pyside6_qt_get_shot_name
+from modules.classes.pyside6_qt_button import (
+    pyside6_qt_button as pyside6_qt_button
 )
-from modules.functions.pyside6_qt_print import (
-    pyside6_qt_print as pyside6_qt_print
+from modules.classes.pyside6_qt_clickable_line_edit import (
+    pyside6_qt_clickable_line_edit as pyside6_qt_clickable_line_edit
 )
-from modules.functions.pyside6_qt_get_flame_version import (
-    pyside6_qt_get_flame_version as pyside6_qt_get_flame_version
+from modules.classes.pyside6_qt_label import (
+    pyside6_qt_label as pyside6_qt_label
 )
-from modules.functions.pyside6_qt_file_browser import (
-    pyside6_qt_file_browser as pyside6_qt_file_browser
+from modules.classes.pyside6_qt_line_edit import (
+    pyside6_qt_line_edit as pyside6_qt_line_edit
 )
-from modules.functions.pyside6_qt_resolve_shot_name import (
-    pyside6_qt_resolve_shot_name as pyside6_qt_resolve_shot_name
+from modules.classes.pyside6_qt_list_widget import (
+    pyside6_qt_list_widget as pyside6_qt_list_widget
 )
-from modules.functions.pyside6_qt_resolve_path_tokens import (
-    pyside6_qt_resolve_path_tokens as pyside6_qt_resolve_path_tokens
+from modules.classes.pyside6_qt_message_window import (
+    pyside6_qt_message_window as pyside6_qt_message_window
 )
-from modules.functions.pyside6_qt_refresh_hooks import (
-    pyside6_qt_refresh_hooks as pyside6_qt_refresh_hooks
+from modules.classes.pyside6_qt_password_window import (
+    pyside6_qt_password_window as pyside6_qt_password_window
 )
-from modules.functions.pyside6_qt_open_in_finder import (
-    pyside6_qt_open_in_finder as pyside6_qt_open_in_finder
+from modules.classes.pyside6_qt_preset_window import (
+    pyside6_qt_preset_window as pyside6_qt_preset_window
 )
-from modules.functions.pyside6_qt_load_config import (
-    pyside6_qt_load_config as pyside6_qt_load_config
+from modules.classes.pyside6_qt_progress_window import (
+    pyside6_qt_progress_window as pyside6_qt_progress_window
 )
-from modules.functions.pyside6_qt_save_config import (
-    pyside6_qt_save_config as pyside6_qt_save_config
+from modules.classes.pyside6_qt_push_button import (
+    pyside6_qt_push_button as pyside6_qt_push_button
+)
+from modules.classes.pyside6_qt_push_button_menu import (
+    pyside6_qt_push_button_menu as pyside6_qt_push_button_menu
+)
+from modules.classes.pyside6_qt_qdialog import (
+    pyside6_qt_qdialog as pyside6_qt_qdialog
+)
+from modules.classes.pyside6_qt_slider import (
+    pyside6_qt_slider as pyside6_qt_slider
+)
+from modules.classes.pyside6_qt_text_edit import (
+    pyside6_qt_text_edit as pyside6_qt_text_edit
+)
+from modules.classes.pyside6_qt_token_push_button import (
+    pyside6_qt_token_push_button as pyside6_qt_token_push_button
+)
+from modules.classes.pyside6_qt_tree_widget import (
+    pyside6_qt_tree_widget as pyside6_qt_tree_widget
+)
+from modules.classes.pyside6_qt_window import (
+    pyside6_qt_window as pyside6_qt_window
 )
 
 # ========================================================================== #
@@ -116,6 +140,7 @@ from modules.functions.pyside6_qt_save_config import (
 # version:               0.0.4
 # modified:              2024-05-09 - 13:18:47
 # comments:              Refactored code works in flame 2025. Time to tidy up.
+# -------------------------------------------------------------------------- #
 # -------------------------------------------------------------------------- #
 # version:               0.0.5
 # modified:              2024-05-17 - 13:36:42
