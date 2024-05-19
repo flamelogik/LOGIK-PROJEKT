@@ -173,7 +173,7 @@
             </div>
         </div>
         <div class="button-container">
-            <button onclick="generateTextFile()">Generate Text File</button>
+            <button onclick="generateProjektTemplate()">Generate LOGIK-PROJEKT Template</button>
         </div>
         <div class="summary-container">
             <h2>Summary</h2>
@@ -251,7 +251,7 @@
             document.getElementById('summary').textContent = summaryContent;
         }
 
-        function generateTextFile() {
+        function generateProjektTemplate() {
             updateSummary();
             const pairs = [
                 { id: 'client_name', label: 'client name' },
