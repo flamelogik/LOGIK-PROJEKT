@@ -1,7 +1,7 @@
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        flame_libraries.py
+# File Name:        pyside6_qt_flame_modules.py
 # Version:          0.4.4
 # Language:         python script
 # Flame Version:    2025.x
@@ -16,6 +16,9 @@
 
 # Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
 #                   e.g. '/home/$USER/workspace/GitHub'
+
+# Attribution:      This script is derived from work originally authored by
+#                   Michael Vaglienty: 'pyflame_lib_script_template.py'
 
 # Changelist:       The full changelist is at the end of this document.
 
@@ -48,7 +51,7 @@ import datetime
 import shutil
 import ast
 
-from reusable_pyside6_qt_classes import (
+from pyside6_qt_flame_classes import (
     pyside6_qt_button,
     pyside6_qt_clickable_line_edit,
     pyside6_qt_label,
@@ -68,7 +71,7 @@ from reusable_pyside6_qt_classes import (
     pyside6_qt_window
 )
 
-from reusable_pyside6_qt_functions import (
+from pyside6_qt_flame_functions import (
     pyside6_qt_get_shot_name,
     pyside6_qt_print,
     pyside6_qt_get_flame_version,
