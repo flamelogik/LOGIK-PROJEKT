@@ -418,13 +418,6 @@ echo -e "\n$separator\n"
 
 # -------------------------------------------------------------------------- #
 
-backup_creation_log
-backup_projekt_xml
-backup_projekt_setup_file
-backup_projekt_setup_template
-
-# -------------------------------------------------------------------------- #
-
 create_archive_script
 
 # -------------------------------------------------------------------------- #
@@ -432,6 +425,10 @@ create_archive_script
 create_backup_script
 
 # -------------------------------------------------------------------------- #
+
+backup_projekt_xml
+backup_projekt_setup_file
+backup_projekt_setup_template
 
 # ========================================================================== #
 # This section echoes end_banner03.
@@ -445,38 +442,9 @@ echo -e "\n\n$separator\n$separator\n$separator\n\n"
 
 # -------------------------------------------------------------------------- #
 
-# # ========================================================================== #
-# # This section starts flame with the new project and a new workspace.
-# # ========================================================================== #
+backup_creation_log
 
-# # -------------------------------------------------------------------------- #
-
-# # Construct the flame launch command.
-# launch_opt_1="/opt/Autodesk/$max_dir_name/bin/startFlame"
-# launch_opt_2="-J $name"
-# launch_opt_3="--start-workspace=$workstation_name --create-workspace"
-# launch_cmd="$launch_opt_1 $launch_opt_2 $launch_opt_3"
-
-# # Echo the commands to the shell
-# echo -e "  Press 'Enter' to launch flame with the following options:"
-# echo -e "\n$separator\n"
-# echo -e "  $launch_opt_1"
-# echo -e "   $launch_opt_2"
-# echo -e "   $launch_opt_3"
-# echo -e "\n$separator\n"
-# # Prompt the user for confirmation.
-# read -rsn1 -p "  Or press 'Esc' to cancel" key
-# if [ "$key" == $'\x1b' ]; then
-#     echo "Operation cancelled."
-# elif [ "$key" == $'\0a' ]; then
-#     "$launch_cmd"
-# else
-#     echo "Invalid key pressed. Operation cancelled."
-# fi
-
-# echo -e "\n\n$separator\n$separator\n$separator\n\n"
-
-# # -------------------------------------------------------------------------- #
+# -------------------------------------------------------------------------- #
 
 # ========================================================================== #
 # This section starts flame with the new project and a new workspace.
