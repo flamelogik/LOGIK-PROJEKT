@@ -450,11 +450,18 @@ backup_creation_log
 # This section starts flame with the new project and a new workspace.
 # ========================================================================== #
 
+# Define the flame_log
+flame_log_dir="$tgt_configs_workstation_dir"
+flame_log_name="$NOW_NOW-flame_first_run_$workstation_name.log"
+flame_log="$flame_log_dir/$flame_log_name"
+
+# Redirect stdout and stderr to the log file
+exec > >(tee -a "$flame_log") 2>&1
+
 # Function to execute the command
 execute_command() {
     eval "$1"
 }
-
 # -------------------------------------------------------------------------- #
 
 # Construct the flame launch command.
@@ -472,19 +479,19 @@ launch_cmd="$launch_opt_1 $launch_opt_2 $launch_opt_3 $launch_opt_4"
 # -------------------------------------------------------------------------- #
 
 # Echo the commands to the shell
-echo -e "  Press 'Enter' to launch flame with the following options:"
+echo -e "  Flame can now be launched with the following options:"
 echo -e "\n$separator\n"
 echo -e "  $launch_opt_1"
 echo -e "   $launch_opt_2"
 echo -e "   $launch_opt_3"
-echo -e "   $launch_opt_4"
+echo -e "   $launch_script"
 # echo -e "   $launch_opt_5"
 echo -e "\n$separator\n"
 
 # -------------------------------------------------------------------------- #
 
 # Prompt the user for confirmation.
-read -rsn1 -p "  Or press 'Esc' to cancel" key
+read -rsn1 -p "  Press 'Enter' to LAUNCH FLAME | Press 'Esc' to CANCEL" key
 if [ "$key" == $'\x1b' ]; then
     echo "Operation cancelled."
 elif [ "$key" == $'\0a' ]; then
