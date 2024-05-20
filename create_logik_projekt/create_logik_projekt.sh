@@ -445,6 +445,90 @@ echo -e "\n\n$separator\n$separator\n$separator\n\n"
 
 # -------------------------------------------------------------------------- #
 
+# # ========================================================================== #
+# # This section starts flame with the new project and a new workspace.
+# # ========================================================================== #
+
+# # -------------------------------------------------------------------------- #
+
+# # Construct the flame launch command.
+# launch_opt_1="/opt/Autodesk/$max_dir_name/bin/startFlame"
+# launch_opt_2="-J $name"
+# launch_opt_3="--start-workspace=$workstation_name --create-workspace"
+# launch_cmd="$launch_opt_1 $launch_opt_2 $launch_opt_3"
+
+# # Echo the commands to the shell
+# echo -e "  Press 'Enter' to launch flame with the following options:"
+# echo -e "\n$separator\n"
+# echo -e "  $launch_opt_1"
+# echo -e "   $launch_opt_2"
+# echo -e "   $launch_opt_3"
+# echo -e "\n$separator\n"
+# # Prompt the user for confirmation.
+# read -rsn1 -p "  Or press 'Esc' to cancel" key
+# if [ "$key" == $'\x1b' ]; then
+#     echo "Operation cancelled."
+# elif [ "$key" == $'\0a' ]; then
+#     "$launch_cmd"
+# else
+#     echo "Invalid key pressed. Operation cancelled."
+# fi
+
+# echo -e "\n\n$separator\n$separator\n$separator\n\n"
+
+# # -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# This section starts flame with the new project and a new workspace.
+# ========================================================================== #
+
+# Function to execute the command
+execute_command() {
+    eval "$1"
+}
+
+# -------------------------------------------------------------------------- #
+
+# Construct the flame launch command.
+launch_opt_1="/opt/Autodesk/$max_dir_name/bin/startFlame"
+launch_opt_2="-J $name"
+launch_opt_3="--start-workspace=$workstation_name --create-workspace"
+logik_projekt_python_dir="/opt/Autodesk/shared/python/logik_projekt"
+projekt_tool_dir="projekt_tools/logik_projekt_layout/scripts"
+projekt_tool_path="$logik_projekt_python_dir/$projekt_tool_dir"
+launch_script="create_projekt_layout.py"
+launch_opt_4="--execute-python-script=$projekt_tool_path/$launch_script"
+launch_opt_5="--debug"
+launch_cmd="$launch_opt_1 $launch_opt_2 $launch_opt_3 $launch_opt_4"
+
+# -------------------------------------------------------------------------- #
+
+# Echo the commands to the shell
+echo -e "  Press 'Enter' to launch flame with the following options:"
+echo -e "\n$separator\n"
+echo -e "  $launch_opt_1"
+echo -e "   $launch_opt_2"
+echo -e "   $launch_opt_3"
+echo -e "   $launch_opt_4"
+# echo -e "   $launch_opt_5"
+echo -e "\n$separator\n"
+
+# -------------------------------------------------------------------------- #
+
+# Prompt the user for confirmation.
+read -rsn1 -p "  Or press 'Esc' to cancel" key
+if [ "$key" == $'\x1b' ]; then
+    echo "Operation cancelled."
+elif [ "$key" == $'\0a' ]; then
+    execute_command "$launch_cmd"
+else
+    echo "Invalid key pressed. Operation cancelled."
+fi
+
+echo -e "\n\n$separator\n$separator\n$separator\n\n"
+
+# -------------------------------------------------------------------------- #
+
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
