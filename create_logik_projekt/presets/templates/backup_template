@@ -8,7 +8,7 @@
 path_to_here=$(cd $(dirname "$0") && pwd)
 
 # change directory to path_to_here
-# cd $path_to_here
+cd $path_to_here
 
 # ========================================================================== #
 # This section echoes stderr to the shell or quits on error.
@@ -78,37 +78,16 @@ choose_directory() {
 # ========================================================================== #
 
 # set the path for the logik_projekt_root_directory
-logik_projekt_root_directory=\
-"/JOBS"
-
-# echo ${logik_projekt_root_directory} to the shell
-# echo -e "logik_projekt_root_directory:"
-# echo -e "  ${logik_projekt_root_directory}"
-
-# -------------------------------------------------------------------------- #
+logik_projekt_root_directory="/JOBS"
 
 # set the path for the logik_projekt_job_directory
-logik_projekt_job_directory=\
-"${logik_projekt_root_directory}/${logik_projekt_name}"
-
-# echo ${logik_projekt_job_directory} to the shell
-# echo -e "logik_projekt_job_directory:"
-# echo -e "  ${logik_projekt_job_directory}"
-
-# -------------------------------------------------------------------------- #
+logik_projekt_job_directory="${logik_projekt_root_directory}/${logik_projekt_name}"
 
 # set the path for the logik_projekt_job_rsync_directory
-logik_projekt_job_rsync_directory=\
-"${logik_projekt_job_directory}/backup_scripts"
-
-# echo ${logik_projekt_job_rsync_directory} to the shell
-# echo -e "logik_projekt_job_rsync_directory:"
-# echo -e "  ${logik_projekt_job_rsync_directory}"
+logik_projekt_job_rsync_directory="${logik_projekt_job_directory}/backup_scripts"
 
 # Make ${logik_projekt_job_rsync_directory} if it doesn't exist
 mkdir -p -m 777 "${logik_projekt_job_rsync_directory}"
-
-# -------------------------------------------------------------------------- #
 
 echo -e "\n$separator\n"
 echo -e "  Date:             ${today}"
@@ -120,8 +99,7 @@ echo -e "\n$separator\n"
 # ========================================================================== #
 
 # set the path for the logik_projekt_job_rsync_exclusion_list
-logik_projekt_job_rsync_exclusion_list=\
-"${logik_projekt_job_rsync_directory}/exclusion_list.txt"
+logik_projekt_job_rsync_exclusion_list="${logik_projekt_job_rsync_directory}/exclusion_list.txt"
 
 # ========================================================================== #
 # This section sets the source directory to be backed up.
@@ -135,16 +113,6 @@ echo -e "\n$separator\n"
 # ========================================================================== #
 # This section prompts the user to choose a target directory.
 # ========================================================================== #
-
-# # Prompt user to choose destination path
-# echo -e "\n$separator\n"
-# echo -e "  Choose the Backup Directory:"
-# choose_directory
-# tgt_rsync_dir="${directory_path%/}"
-# tgt_dir_name=$(basename "$tgt_rsync_dir")
-# echo -e "\n$separator\n"
-# echo -e "  Backup Directory: ${tgt_rsync_dir}"
-# echo -e "\n$separator\n"
 
 # Set the path for the backup_prefs file
 backup_prefs_file="${path_to_here}/backup_prefs"
@@ -191,29 +159,23 @@ echo -e "\n$separator\n"
 # This section creates a variable to store rsync options.
 # ========================================================================== #
 
-# The following command is too long:
-# 'rsync -av --no-group --no-perms --no-times --size-only --ignore-existing '
-
 # Wrap the rsync options as an array into the variable 'sync_opts_1'
-# sync_opts_1=(-av --no-group --no-perms --no-times --size-only --ignore-existing)
 sync_opts_1=(-av)
 
 # Wrap more rsync options as an array into the variable 'sync_opts_2'
 sync_opts_2=(--copy-links --exclude='.DS_Store' --log-file=$log_file)
-
-# To use the variable in your rsync command
-# rsync "${sync_opts_1[@]}" "${sync_opts_2[@]}" src_rsync_dir/ tgt_rsync_dir/
 
 # ========================================================================== #
 # This section backs up the source to the target directory.
 # ========================================================================== #
 
 rsync "${sync_opts_1[@]}" \
-        "${sync_opts_2[@]}" \
-        "${src_rsync_dir}" \
-        # --exclude-from="${logik_projekt_job_rsync_exclusion_list}" \
-        "${tgt_rsync_dir}" \
-        | sed 's/^/  /'
+      "${sync_opts_2[@]}" \
+      "${src_rsync_dir}" \
+      "${tgt_rsync_dir}/" \
+      --exclude-from="${logik_projekt_job_rsync_exclusion_list}" \
+      | sed 's/^/  /'
+
 echo -e "  Backup of ${src_rsync_dir} completed."
 echo -e "\n$separator\n"
 
