@@ -115,7 +115,7 @@ echo -e "\n$separator\n"
 # ========================================================================== #
 
 # Set the path for the backup_prefs file
-backup_prefs_file="${path_to_here}/backup_prefs"
+backup_prefs_file="${path_to_here}/backup_prefs_FlameWorkstationName"
 echo -e "  Backup Prefs:     ${backup_prefs_file}"
 echo -e "\n$separator\n"
 
