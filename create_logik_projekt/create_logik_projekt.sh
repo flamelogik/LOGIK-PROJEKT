@@ -28,8 +28,15 @@
 # Get the base name of the script
 script_name=$(basename "$0")
 
-# Get the full path to the script using realpath
-script_path=$(dirname "$(realpath "$0")")
+# # Get the full path to the script using realpath
+# script_path=$(dirname "$(realpath "$0")")
+
+# Get the full path to the script using realpath or grealpath
+if command -v realpath >/dev/null 2>&1; then
+    script_path=$(dirname "$(realpath "$0")")
+elif command -v grealpath >/dev/null 2>&1; then
+    script_path=$(dirname "$(grealpath "$0")")
+fi
 
 # Change directory to $script_path
 cd $script_path
