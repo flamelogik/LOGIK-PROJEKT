@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+# Automatically generated import commands for classes and functions
+
+import os
+
+# Import commands for classes
+from modules.classes.class_projekt_openclip_comp import class_projekt_openclip_comp
+
+# Import commands for functions
+from modules.functions.    __init__ import     __init__
+from modules.functions.    batch_projekt_comp_clips import     batch_projekt_comp_clips
+from modules.functions.    media_panel_projekt_comp_clips import     media_panel_projekt_comp_clips
+from modules.functions.    get_clip_info import     get_clip_info
+from modules.functions.    create_batch_nodes import     create_batch_nodes
+from modules.functions.        add_render_node import         add_render_node
+from modules.functions.        add_write_node import         add_write_node
+from modules.functions.    write_node_setup import     write_node_setup
+from modules.functions.        save_config import         save_config
+from modules.functions.        write_file_create_open_clip_btn_check import         write_file_create_open_clip_btn_check
+from modules.functions.        write_file_include_setup_btn_check import         write_file_include_setup_btn_check
+from modules.functions.        render_node_type_toggle import         render_node_type_toggle
+from modules.functions.        media_path_browse import         media_path_browse
+from modules.functions.        compression import         compression
+from modules.functions.            create_menu import             create_menu
+from modules.functions.projekt_comp_media_panel_clips import projekt_comp_media_panel_clips
+from modules.functions.projekt_comp_batch_clips import projekt_comp_batch_clips
+from modules.functions.setup import setup
+from modules.functions.scope_clip import scope_clip
+from modules.functions.scope_folder import scope_folder
+from modules.functions.scope_library import scope_library
+from modules.functions.scope_segment import scope_segment
+from modules.functions.scope_seq import scope_seq
+from modules.functions.get_batch_custom_ui_actions import get_batch_custom_ui_actions
+from modules.functions.get_main_menu_custom_ui_actions import get_main_menu_custom_ui_actions
+from modules.functions.get_media_panel_custom_ui_actions import get_media_panel_custom_ui_actions

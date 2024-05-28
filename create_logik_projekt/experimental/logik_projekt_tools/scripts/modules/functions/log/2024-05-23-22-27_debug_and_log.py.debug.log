@@ -1,0 +1,16 @@
+INFO:root:Operating system is Linux.
+INFO:root:Operating System: Linux
+INFO:root:Created directory: /var/tmp/test_projekt
+INFO:root:Created directory: /var/tmp/test_projekt/build
+INFO:root:Created directory: /var/tmp/test_projekt/config
+INFO:root:Created directory: /var/tmp/test_projekt/doc
+INFO:root:Created directory: /var/tmp/test_projekt/experimental
+INFO:root:Created directory: /var/tmp/test_projekt/log
+INFO:root:Created directory: /var/tmp/test_projekt/pref
+INFO:root:Created directory: /var/tmp/test_projekt/script
+INFO:root:Created directory: /var/tmp/test_projekt/temp
+INFO:root:Created directory: /var/tmp/test_projekt/www
+INFO:root:Created directory: /var/tmp/test_projekt/version
+INFO:root:Created README.md: /var/tmp/test_projekt/README.md
+INFO:root:Created .gitignore: /var/tmp/test_projekt/.gitignore
+INFO:root:Project structure created successfully.

@@ -1,0 +1,16 @@
+INFO:root:Operating system is Linux.
+INFO:root:Operating System: Linux
+INFO:root:Created directory: /JOBS/z_python_test
+INFO:root:Created directory: /JOBS/z_python_test/build
+INFO:root:Created directory: /JOBS/z_python_test/config
+INFO:root:Created directory: /JOBS/z_python_test/doc
+INFO:root:Created directory: /JOBS/z_python_test/experimental
+INFO:root:Created directory: /JOBS/z_python_test/log
+INFO:root:Created directory: /JOBS/z_python_test/pref
+INFO:root:Created directory: /JOBS/z_python_test/script
+INFO:root:Created directory: /JOBS/z_python_test/temp
+INFO:root:Created directory: /JOBS/z_python_test/www
+INFO:root:Created directory: /JOBS/z_python_test/version
+INFO:root:Created README.md: /JOBS/z_python_test/README.md
+INFO:root:Created .gitignore: /JOBS/z_python_test/.gitignore
+INFO:root:Project structure created successfully.
