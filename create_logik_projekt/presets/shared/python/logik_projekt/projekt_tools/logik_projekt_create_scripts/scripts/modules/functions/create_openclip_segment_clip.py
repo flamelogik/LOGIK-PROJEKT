@@ -126,7 +126,7 @@ def create_openclip_segment_clip(shot_source_dir,
     <handler>
         <name>MIO Clip</name>
         <options>
-            <ScanPattern type="string">{shots_dir}/media/sources/{shot_source_dir}_{app_name}_{task_type}_v{{version}}/{shot_source_dir}_{app_name}_{task_type}_v{{version}}.{{frame}}.exr</ScanPattern>
+            <ScanPattern type="string">{shots_dir}/{shot_name}/media/sources/{shot_source_dir}_{app_name}_{task_type}_v{{version}}/{shot_source_dir}_{app_name}_{task_type}_v{{version}}.{{frame}}.exr</ScanPattern>
         </options>
     </handler>
 </clip>""")
