@@ -1,0 +1,114 @@
+Certainly! Setting up S3 archiving from your TrueNAS Scale server involves configuring the S3 service. Here are the steps you can follow:
+
+1. **Access the TrueNAS Web Interface:**
+   - Open a web browser and navigate to the TrueNAS web interface using the IP address or hostname of your TrueNAS server.
+
+2. **Navigate to Services > S3:**
+   - In the TrueNAS web interface, go to **Services** and find **S3** in the list.
+   - Click the pencil icon to edit the S3 service configuration.
+
+3. **Configure the S3 Service:**
+   - Set up the following options:
+     - **IP Address**: You can choose either `0.0.0.0` to allow the service to listen on any IP address or specify a specific IP address.
+     - **Port**: The default port is `9000`, but you can change it if needed.
+     - **Access Key** and **Secret Key**: Set these keys for authentication.
+     - **Start Automatically**: Enable this option to start the service when TrueNAS boots.
+
+4. **Test MinIO Browser Access:**
+   - If you enable the MinIO browser, test the access by opening a web browser and typing the TrueNAS IP address followed by the configured TCP port (e.g., `https://192.168.0.3:9000`).
+   - Ensure that the port is allowed through your network firewall to permit creating buckets and uploading files.
+
+5. **Additional Connection Methods:**
+   - You can also use command-line tools like `s3cmd` (for Linux/macOS) or S3Express (for Windows) to interact with the S3 service.
+   - Configure the tool with the specified access key, secret key, and the TrueNAS IP address with the TCP port.
+
+Remember to adjust the settings according to your environment and requirements. Once configured, your TrueNAS Scale server will be ready for S3 archiving! 🚀
+
+For more detailed information, you can refer to the [TrueNAS documentation](https://www.truenas.com/docs/scale/22.12/scaletutorials/systemsettings/services/s3servicescale/).¹ Additionally, you might find this [YouTube video](https://forums.lawrencesystems.com/t/how-to-setup-minio-s3-object-storage-on-truenas-scale-youtube-release/20829) helpful for setting up Minio S3 Object Storage on TrueNAS Scale.³
+
+Let me know if you need further assistance! 😊
+
+Source: Conversation with Copilot, 5/23/2024
+(1) Configuring S3 Service | TrueNAS Documentation Hub. https://www.truenas.com/docs/scale/22.12/scaletutorials/systemsettings/services/s3servicescale/.
+(2) How to Setup Minio S3 Object Storage on TrueNAS Scale [YouTube Release .... https://forums.lawrencesystems.com/t/how-to-setup-minio-s3-object-storage-on-truenas-scale-youtube-release/20829.
+(3) TrueNAS Scale Setup: First 5 Steps - Virtualization Howto. https://www.virtualizationhowto.com/2023/09/truenas-scale-setup-first-5-steps/.
+(4) Set Up an S3 Service and Local Connection on FreeNAS TrueNAS. https://static.ixsystems.co/uploads/2019/04/TN-S3service-QS_PDF_03262019.pdf.
+(5) Configuring S3 | TrueNAS Documentation Hub. https://www.truenas.com/docs/core/coretutorials/services/configurings3/.
+(6) undefined. https://192.168.0.3:9000.
+
+Certainly! To configure S3 archiving and migrate your data to Amazon Glacier storage, follow these steps:
+
+1. **Create an S3 Bucket:**
+   - Log in to the AWS Management Console.
+   - Navigate to the S3 service.
+   - Click "Create bucket" and provide a unique name for your bucket.
+   - Choose the region where you want to create the bucket.
+
+2. **Configure Lifecycle Policies:**
+   - In the bucket settings, go to the "Lifecycle" tab.
+   - Create a new lifecycle rule.
+   - Define the transition actions:
+     - Transition objects to the "Glacier" storage class after a specified number of days (e.g., 30 days).
+     - Optionally, set a delay before transitioning to Glacier (e.g., 7 days).
+   - Save the lifecycle rule.
+
+3. **Set Up Glacier Vault:**
+   - Go to the AWS Glacier service.
+   - Create a new vault (similar to a bucket).
+   - Note down the vault name and region.
+
+4. **Configure S3 Object Archiving:**
+   - In your TrueNAS Scale server, edit the S3 service configuration (as mentioned in my previous response).
+   - Set the following options:
+     - **Bucket Name**: Use the S3 bucket you created.
+     - **Access Key** and **Secret Key**: Use the credentials you set up.
+     - **Endpoint URL**: Set it to the Glacier endpoint for your region (e.g., `https://glacier.us-west-2.amazonaws.com`).
+     - **Storage Class**: Choose "GLACIER" or "DEEP_ARCHIVE" (for long-term archival).
+     - **Start Automatically**: Enable this option.
+
+5. **Test Archiving:**
+   - Upload a test file to your S3 bucket.
+   - Verify that it transitions to Glacier storage after the specified time.
+
+6. **Retrieve Data from Glacier:**
+   - To retrieve archived data, initiate a restore job from the AWS Management Console or using the AWS CLI.
+   - Restored data will be available in the S3 bucket temporarily (for a few hours or days).
+
+Remember to adjust the settings according to your requirements. Amazon Glacier is cost-effective for long-term storage, but retrieval times are slower than standard S3 storage. Make sure to plan accordingly! 🌟
+
+If you need further assistance or have any specific questions, feel free to ask! 😊
+
+Certainly! Let's calculate the cost for **10 TB** of data storage in **Amazon S3 Glacier** based on the pricing in the **US East (Ohio)** region:
+
+1. **Storage Cost**:
+   - The storage cost for **S3 Glacier** is **$0.0036 per GB per month**¹.
+   - To calculate the monthly storage cost for **10 TB**:
+     $$ \text{Storage Cost} = 10,000 \, \text{GB} \times 0.0036 \, \text{USD/GB/month} = 36 \, \text{USD/month} $$
+
+2. **Retrieval Cost**:
+   - Retrieval costs depend on the retrieval time:
+     - **Expedited Retrieval**: **$0.03 per GB**
+     - **Standard Retrieval**: **$0.01 per GB**
+     - **Bulk Retrieval**: No cost (ideal for infrequent access)
+   - Since you mentioned retrieval time may not be critical, let's consider the **Standard Retrieval** cost:
+     $$ \text{Retrieval Cost} = 10,000 \, \text{GB} \times 0.01 \, \text{USD/GB} = 100 \, \text{USD} $$
+
+3. **Request Cost**:
+   - Upload requests cost **$0.03 per 1,000 requests**.
+   - Other requests (such as LISTVAULTS, GETJOBOUTPUT, and DELETE) are free.
+
+4. **Data Transfer Cost**:
+   - Data transfer into Amazon S3 Glacier is free.
+   - Data transfer out from Amazon S3 Glacier to the internet is also free.
+
+Adding up the costs:
+$$ \text{Total Cost} = \text{Storage Cost} + \text{Retrieval Cost} + \text{Request Cost} = 36 + 100 + 0 = 136 \, \text{USD/month} $$
+
+Keep in mind that this is an estimate, and actual costs may vary based on your usage patterns. Be sure to review the detailed pricing information on the [Amazon S3 Glacier pricing page](https://aws.amazon.com/s3/glacier/pricing/) for any additional considerations. 😊¹
+
+Source: Conversation with Copilot, 5/23/2024
+(1) Amazon S3 Glacier API Pricing | Amazon Web Services. https://aws.amazon.com/s3/glacier/pricing/.
+(2) Easy Amazon S3 Pricing Calculator - learnaws.io. https://learnaws.io/aws-calculator/s3.
+(3) Amazon S3 Pricing | Amazon Web Services Object storage | Amazon Web .... https://www.amazonaws.cn/en/s3/pricing/.
+(4) AWS Pricing Calculator. https://calculator.aws/.
+(5) Amazon S3 Simple Storage Service Pricing - Amazon Web Services. https://aws.amazon.com/s3/pricing/.
