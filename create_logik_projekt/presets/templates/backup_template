@@ -211,8 +211,8 @@ sync_opts_2=(--copy-links --exclude='.DS_Store' --log-file=$log_file)
 rsync "${sync_opts_1[@]}" \
         "${sync_opts_2[@]}" \
         "${src_rsync_dir}" \
-        # --exclude-from="${logik_projekt_job_rsync_exclusion_list}" \
         "${tgt_rsync_dir}" \
+        --exclude-from="${logik_projekt_job_rsync_exclusion_list}" \
         | sed 's/^/  /'
 echo -e "  Backup of ${src_rsync_dir} completed."
 echo -e "\n$separator\n"

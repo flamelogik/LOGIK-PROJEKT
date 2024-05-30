@@ -619,6 +619,7 @@ Root {{
  first_frame NUKE_START_FRAME
  last_frame NUKE_END_FRAME
  lock_range true
+ ## lets find a way here to set the correct ROOT format based on source input FINN J 
  format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
  proxy_type scale
  proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
@@ -634,9 +635,9 @@ Root {{
  floatLut "ACES - ACEScg"
 }}
 Write {{
- file "{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.%08d.exr"
+ file "{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.%04d.exr"
+ channels rgba
  file_type exr
- write_ACES_compliant_EXR true
  metadata "all metadata"
  first_part rgba
  create_directories true
@@ -651,7 +652,6 @@ Write {{
  label "{shot_name}_{app_name}_{task_type}"
  xpos 0
  ypos 240
- postage_stamp true
 }}""")
 
         # # This section is for logging purposes
