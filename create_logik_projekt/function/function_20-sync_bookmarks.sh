@@ -79,6 +79,8 @@ sync_archive_prefs() {
     # Set the source and target files for copying
     src_project_archive_prefs="presets/status/ArchiveCurrent.json"
     tgt_project_archive_prefs="$flame_proj_dir/status/ArchiveCurrent.json"
+    src_project_archive_cache_prefs="presets/status/project.json"
+    tgt_project_archive_cache_prefs="$flame_proj_dir/status/project.json"
     local tgt_job_dir="/JOBS/$nickname"
 
     echo -e "  creating archive preferences.\n"
@@ -94,8 +96,17 @@ sync_archive_prefs() {
         mv "$tgt_project_archive_prefs" "$tgt_project_archive_prefs.bak"
     fi
 
-    # Copy bookmarks
+    # Check if tgt_project_archive_cache_prefs exists and rename if it does
+    if [ -e "$tgt_project_archive_cache_prefs" ]; then
+        echo -e "  * $tgt_project_archive_cache_prefs exists\n"
+        echo -e "  * Backing up older archive prefs:\n"
+        echo -e "  *   $tgt_project_archive_cache_prefs.bak"
+        mv "$tgt_project_archive_cache_prefs" "$tgt_project_archive_cache_prefs.bak"
+    fi
+
+    # Copy archive_prefs
     cp "$src_project_archive_prefs" "$tgt_project_archive_prefs"
+    cp "$src_project_archive_cache_prefs" "$tgt_project_archive_cache_prefs"
 
     # ---------------------------------------------------------------------- #
 
