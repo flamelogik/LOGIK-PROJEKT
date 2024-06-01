@@ -396,6 +396,8 @@ sync_mediaImport_rules
 
 sync_bookmarks
 
+sync_archive_prefs
+
 sync_overlays
 
 sync_python_scripts

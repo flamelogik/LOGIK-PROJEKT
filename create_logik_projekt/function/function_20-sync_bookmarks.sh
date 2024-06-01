@@ -72,6 +72,31 @@ sync_bookmarks() {
         return 1
     fi
 
+# ---------------------------------------------------------------------- #
+
+# Function to create archive defaults for 'Convert to Local Path'
+sync_archive_prefs() {
+    # Set the source and target files for copying
+    src_project_archive_prefs="presets/status/ArchiveCurrent.json"
+    tgt_project_archive_prefs="$flame_proj_dir/status/ArchiveCurrent.json"
+    local tgt_job_dir="/JOBS/$nickname"
+
+    echo -e "  creating archive preferences.\n"
+
+    # Set the umask to 0
+    umask 0
+
+    # Check if tgt_project_archive_prefs exists and rename if it does
+    if [ -e "$tgt_project_archive_prefs" ]; then
+        echo -e "  * $tgt_project_archive_prefs exists\n"
+        echo -e "  * Backing up older archive prefs:\n"
+        echo -e "  *   $tgt_project_archive_prefs.bak"
+        mv "$tgt_project_archive_prefs" "$tgt_project_archive_prefs.bak"
+    fi
+
+    # Copy bookmarks
+    cp "$src_project_archive_prefs" "$tgt_project_archive_prefs"
+
     # ---------------------------------------------------------------------- #
 
     # # Set the search and replace strings
