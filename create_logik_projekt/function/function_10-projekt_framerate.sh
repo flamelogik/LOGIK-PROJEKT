@@ -34,10 +34,10 @@ proj_fcm=""
 # Function to validate user input
 validate_framerate_choice() {
     local choice=$1
-    if [[ $choice =~ ^[1-8]$ ]]; then
+    if [[ $choice =~ ^[1-9]$|^10$ ]]; then
         return 0  # Valid choice
     else
-        echo -e "Invalid input. Please enter a number between 1 and 7."
+        echo -e "Invalid input. Please enter a number between 1 and 10."
         echo -e "\n$separator\n"
         return 1  # Invalid choice
     fi
@@ -68,15 +68,17 @@ gather_projekt_framerate() {
             echo -e "  1. 23.976 fps"
             echo -e "  2. 24 fps"
             echo -e "  3. 25 fps"
-            echo -e "  4. 29.97 fps"
-            echo -e "  5. 30 fps"
-            echo -e "  6. 50 fps"
-            echo -e "  7. 59.94 fps"
-            echo -e "  8. 60 fps\n"
+            echo -e "  4. 29.97 fps DF"
+            echo -e "  5. 29.97 fps NDF"
+            echo -e "  6. 30 fps"
+            echo -e "  7. 50 fps"
+            echo -e "  8. 59.94 fps DF"
+            echo -e "  9. 59.94 fps NDF"
+            echo -e " 10. 60 fps\n"
             echo -e "$separator\n"
 
             # Read user's choice
-            read -p "  enter your choice (1 to 8): " choice
+            read -p "  enter your choice (1 to 10): " choice
             echo -e "\n$separator\n"
 
             # Validate user's choice
@@ -99,18 +101,24 @@ gather_projekt_framerate() {
                 proj_fcm="25 fps"
                 ;;
             4)
-                proj_fcm="29.97 fps"
+                proj_fcm="29.97 fps DF"
                 ;;
             5)
-                proj_fcm="30 fps"
+                proj_fcm="29.97 fps NDF"
                 ;;
             6)
-                proj_fcm="50 fps"
+                proj_fcm="30 fps"
                 ;;
             7)
-                proj_fcm="59.94 fps"
+                proj_fcm="50 fps"
                 ;;
             8)
+                proj_fcm="59.94 fps DF"
+                ;;
+            9)
+                proj_fcm="59.94 fps NDF"
+                ;;
+            10)
                 proj_fcm="60 fps"
                 ;;
         esac

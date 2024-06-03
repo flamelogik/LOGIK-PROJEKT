@@ -135,25 +135,6 @@ gather_projekt_name() {
         if [ -f "$projekt_setup_template" ]; then
             client=$(sed -n '1p' "$projekt_setup_template" | cut -d ' ' -f3-)
             campaign=$(sed -n '2p' "$projekt_setup_template" | cut -d ' ' -f3-)
-
-            # -------------------------------------------------------------- #
-
-            # Write the information into the projekt_setup_file
-            echo "client name: $client" > "$projekt_setup_file"
-
-            # Write the information into the projekt_setup_template
-            echo "client name: $client" > "$projekt_setup_template"
-
-            # -------------------------------------------------------------- #
-
-            # Write the information into the projekt_setup_file
-            echo "campaign name: $campaign" >> "$projekt_setup_file"
-
-            # Write the information into the projekt_setup_template
-            echo "campaign name: $campaign" >> "$projekt_setup_template"
-
-            # -------------------------------------------------------------- #
-
         else
             echo "Error: $projekt_setup_template not found."
             return 1

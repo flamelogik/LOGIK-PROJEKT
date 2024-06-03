@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_information.py
-# Version:          0.4.2
+# Version:          0.4.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-18
+# Modified:         2024-06-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script gathers information about the current
@@ -397,3 +397,7 @@ if __name__ == "__main__":
 # version:               0.4.2
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               1.4.2
+# modified:              2024-06-03 - 10:32:22
+# comments:              Moved import flame statement to each function
