@@ -15,10 +15,10 @@
 
 # Description:      This python script gathers information about the current
 #                   running script and related directories.
-#                   
-#                   This script defines 2 classes which locate the running 
+#
+#                   This script defines 2 classes which locate the running
 #                   script and related directories, using relative paths.
-#                   
+#
 #                   It provides methods to create necessary directories
 #                   and print out the paths.
 
@@ -45,7 +45,7 @@ class rel_path_info:
 
     def __init__(self, script_name):
         """
-        Initializes the rel_path_info object with the path to 
+        Initializes the rel_path_info object with the path to
         the running script which defines related directories.
 
         Args:
@@ -80,7 +80,7 @@ class rel_path_info:
                 script_name
             )
         )
-        
+
         self.script_name = script_name
 
         self.rel_path_to_this_script = caller_dir
@@ -94,72 +94,70 @@ class rel_path_info:
         )
 
         self.rel_config_dir = os.path.relpath(
-            os.path.join(self.rel_parent_dir, 
-                         "config"), 
+            os.path.join(self.rel_parent_dir,
+                         "config"),
                          os.getcwd()
         )
 
         self.rel_scripts_dir = os.path.relpath(
-            os.path.join(self.rel_parent_dir, 
-                         "scripts"), 
+            os.path.join(self.rel_parent_dir,
+                         "scripts"),
                          os.getcwd()
         )
 
         self.rel_modules_dir = os.path.relpath(
-            os.path.join(self.rel_scripts_dir, 
-                         "modules"), 
+            os.path.join(self.rel_scripts_dir,
+                         "modules"),
                          os.getcwd()
         )
 
         self.rel_classes_dir = os.path.relpath(
-            os.path.join(self.rel_modules_dir, 
-                         "classes"), 
+            os.path.join(self.rel_modules_dir,
+                         "classes"),
                          os.getcwd()
         )
 
         self.rel_functions_dir = os.path.relpath(
-            os.path.join(self.rel_modules_dir, 
-                         "functions"), 
+            os.path.join(self.rel_modules_dir,
+                         "functions"),
                          os.getcwd()
         )
 
         self.rel_version_dir = os.path.relpath(
-            os.path.join(self.rel_parent_dir, 
-                         "version"), 
+            os.path.join(self.rel_parent_dir,
+                         "version"),
                          os.getcwd()
         )
+
+    # ---------------------------------------------------------------------- #
 
     def print_relative_paths(self):
         """
         Prints out the relative paths of the running script and related directories.
         """
 
-
-
-
-
-        print("Relative path to this script:", 
+        print("Relative path to this script:",
               os.path.basename(self.rel_path_to_this_script)
         )
-        print("Relative script directory:   ", 
+        print("Relative script directory:   ",
               os.path.basename(self.rel_script_dir)
         )
-        print("Relative parent directory:   ", 
+        print("Relative parent directory:   ",
               os.path.basename(self.rel_parent_dir)
         )
-        print("Relative config directory:   ", 
+        print("Relative config directory:   ",
               os.path.basename(self.rel_config_dir)
         )
-        print("Relative scripts directory:  ", 
+        print("Relative scripts directory:  ",
               os.path.basename(self.rel_scripts_dir)
         )
-        print("Relative classes directory:  ", 
+        print("Relative classes directory:  ",
               os.path.basename(self.rel_classes_dir)
         )
-        print("Relative functions directory:", 
+        print("Relative functions directory:",
               os.path.basename(self.rel_functions_dir)
         )
-        print("Relative version directory:  ", 
+        print("Relative version directory:  ",
               os.path.basename(self.rel_version_dir)
         )
 
@@ -200,7 +198,7 @@ if __name__ == "__main__":
 #                   If not, see <https://www.gnu.org/licenses/>.
 
 # -------------------------------------------------------------------------- #
-# Changelist:       
+# Changelist:
 # -------------------------------------------------------------------------- #
 # version:               0.0.5
 # modified:              2024-05-12 - 15:37:50
@@ -246,6 +244,6 @@ if __name__ == "__main__":
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
 # -------------------------------------------------------------------------- #
-# version:               1.4.2
+# version:               0.4.3
 # modified:              2024-06-03 - 10:32:22
 # comments:              Moved import flame statement to each function

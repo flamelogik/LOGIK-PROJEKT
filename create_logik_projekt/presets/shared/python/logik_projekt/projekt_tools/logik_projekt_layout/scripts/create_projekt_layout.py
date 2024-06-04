@@ -27,6 +27,7 @@
 # This section imports the necessary modules.
 # ========================================================================== #
 
+# import flame
 import datetime
 import json
 import os
@@ -59,29 +60,29 @@ def get_absolute_info():
     # abs_info.print_absolute_paths()
 
     return (
-        abs_script_name, 
-        abs_path_to_this_script, 
-        abs_script_dir, 
+        abs_script_name,
+        abs_path_to_this_script,
+        abs_script_dir,
         abs_parent_dir,
-        abs_config_dir, 
-        abs_scripts_dir, 
+        abs_config_dir,
+        abs_scripts_dir,
         abs_modules_dir,
-        abs_classes_dir, 
-        abs_functions_dir, 
+        abs_classes_dir,
+        abs_functions_dir,
         abs_version_dir
     )
 
 # Get absolute path information
 (
-    abs_script_name, 
-    abs_path_to_this_script, 
-    abs_script_dir, 
+    abs_script_name,
+    abs_path_to_this_script,
+    abs_script_dir,
     abs_parent_dir,
-    abs_config_dir, 
-    abs_scripts_dir, 
+    abs_config_dir,
+    abs_scripts_dir,
     abs_modules_dir,
-    abs_classes_dir, 
-    abs_functions_dir, 
+    abs_classes_dir,
+    abs_functions_dir,
     abs_version_dir
 ) = get_absolute_info()
 
@@ -128,7 +129,7 @@ def create_or_validate_object(
         ):
 
     # ---------------------------------------------------------------------- #
-    
+
     import flame
 
     # ---------------------------------------------------------------------- #
@@ -253,9 +254,9 @@ def create_or_validate_library(
         ):
 
     # ---------------------------------------------------------------------- #
-    
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     # Check if the library exists in the workspace
@@ -292,9 +293,11 @@ def create_or_validate_library(
 
 # Function to create or validate objects from template JSON files.
 def create_and_validate_from_template(json_file, the_current_workspace):
-    
+
+    # ---------------------------------------------------------------------- #
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     # print(f"Processing file: {json_file}")
@@ -312,7 +315,7 @@ def create_and_validate_from_template(json_file, the_current_workspace):
         display_name = item_data["display_name"]
         object_type = item_data["object_type"]
         object_color = item_data.get("object_color", "")  # Get object_color or default to empty string
-        
+
         # Include object_color if it's not empty
         if object_color:
             # Construct the command
@@ -353,7 +356,7 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                 child_display_name = child_data["display_name"]
                 child_object_type = child_data["object_type"]
                 child_object_color = child_data.get("object_color", "")  # Get object_color or default to empty string
-                
+
                 # Include child_object_color if it's not empty
                 if child_object_color:
                     # Construct the command
@@ -374,7 +377,7 @@ def create_and_validate_from_template(json_file, the_current_workspace):
                         f"\t\t{child_display_name},",  # Ensure proper string quotation
                         f"\t\t'{child_object_type}'"  # Ensure proper string quotation
                     ]
-                
+
                 print(f"\n{separator}\n")
                 print(f"  Creating: {child_object_type}: {child_display_name}\n")
                 child_command = "\n".join(child_command_parts) + "\n\t)\n"
@@ -394,9 +397,11 @@ def create_and_validate_from_template(json_file, the_current_workspace):
 
 # Function to change the color of the 'Default Library' to 'Dark Red'.
 def change_default_library_color(workspace):
-    
+
+    # ---------------------------------------------------------------------- #
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     # Find the 'Default Library' in the workspace
@@ -417,9 +422,11 @@ def change_default_library_color(workspace):
 
 # Function to change the name of the 'Default Library' to 'desktops'.
 def change_default_library_name(workspace, new_name):
-    
+
+    # ---------------------------------------------------------------------- #
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     # Find the 'Default Library' in the workspace
@@ -442,9 +449,11 @@ def change_default_library_name(workspace, new_name):
 
 # Create Project Layout by creating or validate folders, reels, & reel groups
 def create_layout(*args):
-    
+
+    # ---------------------------------------------------------------------- #
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     # If Flame passes any arguments, you can handle them here
@@ -452,15 +461,15 @@ def create_layout(*args):
         print("Received arguments from Flame:", args)
 
     (
-        abs_script_name, 
-        abs_path_to_this_script, 
-        abs_script_dir, 
+        abs_script_name,
+        abs_path_to_this_script,
+        abs_script_dir,
         abs_parent_dir,
-        abs_config_dir, 
-        abs_scripts_dir, 
+        abs_config_dir,
+        abs_scripts_dir,
         abs_modules_dir,
-        abs_classes_dir, 
-        abs_functions_dir, 
+        abs_classes_dir,
+        abs_functions_dir,
         abs_version_dir
     ) = get_absolute_info()
 
@@ -558,9 +567,11 @@ def create_layout(*args):
 
 # Add custom UI actions
 def get_main_menu_custom_ui_actions():
-    
+
+    # ---------------------------------------------------------------------- #
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     return [
@@ -587,9 +598,11 @@ def get_main_menu_custom_ui_actions():
 
 '''
 # def get_mediahub_files_custom_ui_actions():
-    
+
+    # ---------------------------------------------------------------------- #
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     return [
@@ -611,9 +624,11 @@ def get_main_menu_custom_ui_actions():
 # -------------------------------------------------------------------------- #
 
 def get_media_panel_custom_ui_actions():
-    
+
+    # ---------------------------------------------------------------------- #
+
     import flame
-    
+
     # ---------------------------------------------------------------------- #
 
     return [
@@ -668,7 +683,7 @@ if __name__ == "__main__":
 #                   If not, see <https://www.gnu.org/licenses/>.
 
 # -------------------------------------------------------------------------- #
-# Changelist:       
+# Changelist:
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:53:36
@@ -730,6 +745,6 @@ if __name__ == "__main__":
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
 # -------------------------------------------------------------------------- #
-# version:               1.4.2
+# version:               0.4.3
 # modified:              2024-06-03 - 10:32:22
 # comments:              Moved import flame statement to each function

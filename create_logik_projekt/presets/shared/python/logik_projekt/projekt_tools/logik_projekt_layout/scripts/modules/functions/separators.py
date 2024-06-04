@@ -102,7 +102,7 @@ if __name__ == "__main__":
 #                   If not, see <https://www.gnu.org/licenses/>.
 
 # -------------------------------------------------------------------------- #
-# Changelist:       
+# Changelist:
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:53:36
@@ -164,6 +164,6 @@ if __name__ == "__main__":
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
 # -------------------------------------------------------------------------- #
-# version:               1.4.2
+# version:               0.4.3
 # modified:              2024-06-03 - 10:32:22
 # comments:              Moved import flame statement to each function

@@ -13,7 +13,7 @@
 # Modified:         2024-06-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
-# Description:      This python script is part of a program that creates 
+# Description:      This python script is part of a program that creates
 #                   logik projekt flame layouts.
 
 # Installation:     Copy the 'LOGIK-PROJEKT' directory to:
@@ -28,7 +28,7 @@
 # This section imports the necessary modules.
 # ========================================================================== #
 
-import flame
+# import flame
 import datetime
 
 # ========================================================================== #
@@ -53,6 +53,10 @@ def create_or_validate_object(
         batch_group=False,
         reel_type='reel'  # Default to standard reel type
         ):
+
+    # ---------------------------------------------------------------------- #
+
+    import flame
 
     # ---------------------------------------------------------------------- #
 
@@ -138,86 +142,6 @@ def create_or_validate_object(
 
     # ---------------------------------------------------------------------- #
 
-    # # If the object doesn't exist, create it
-    # new_object = getattr(
-    #     library,
-    #     f"create_{object_type}"
-    #     )(name=object_name)
-
-    # if object_color:
-
-    #     new_object.colour = object_color
-
-    # print(
-    #     f"New {object_type} '{object_name}' created successfully in library "
-    #     f"'{library.name}'."
-    #     )
-
-    # return new_object
-
-    # ---------------------------------------------------------------------- #
-
-    # # If the object doesn't exist, create it
-    # if object_type == 'folder':
-
-    #     new_object = library.create_folder(
-    #         name=object_name
-    #         )
-
-    # elif object_type == 'reel':
-
-    #     new_object = library.create_reel(
-    #         name=object_name
-    #         )
-
-    # elif object_type == 'schematic':
-
-    #     new_object = library.create_schematic_reel(
-    #         name=object_name
-    #         )
-
-    # elif object_type == 'sequences':
-
-    #     new_object = library.create_sequences_reel(
-    #         name=object_name
-    #         )
-
-    # elif object_type == 'shelf':
-
-    #     new_object = library.create_shelf_reel(
-    #         name=object_name
-    #         )
-
-    # else:
-
-    #     new_object = getattr(
-    #         library,
-    #         f"create_{object_type}"
-    #         )(name=object_name)
-
-    # if object_color:
-
-    #     new_object.colour = object_color
-
-    # print(
-    #     f"New {object_type} '{object_name}' created successfully in library "
-    #     f"'{library.name}'."
-    #     )
-
-    # # Add the new object to the library list
-    # getattr(library, f"{object_type}s").append(new_object)
-
-    # # Check the type of the created object
-    # if new_object.type != object_type.capitalize():
-    #     # Delete the incorrect type
-    #     getattr(library, f"{object_type}s").remove(new_object)
-    #     # Raise an exception
-    #     raise ValueError(f"Created object '{object_name}' is not of type '{object_type.capitalize()}'")
-
-    # return new_object
-
-    # ---------------------------------------------------------------------- #
-
     # If the object doesn't exist, create it
     new_object = getattr(
         library,
@@ -271,7 +195,7 @@ def create_or_validate_object(
 #                   If not, see <https://www.gnu.org/licenses/>.
 
 # -------------------------------------------------------------------------- #
-# Changelist:       
+# Changelist:
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:53:36
@@ -333,6 +257,6 @@ def create_or_validate_object(
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
 # -------------------------------------------------------------------------- #
-# version:               1.4.2
+# version:               0.4.3
 # modified:              2024-06-03 - 10:32:22
 # comments:              Moved import flame statement to each function
