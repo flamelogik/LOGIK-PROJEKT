@@ -78,6 +78,12 @@ sync_bookmarks() {
     echo -e "\n$separator\n"
 }
 
+    echo -e "\n  $tgt_project_bookmarks\n"
+
+    echo -e "\n  project bookmarks created."
+    echo -e "\n$separator\n"
+}
+
 # ---------------------------------------------------------------------- #
 
 # Function to create archive defaults for 'Convert to Local Path'
@@ -116,41 +122,7 @@ sync_archive_prefs() {
 
     # ---------------------------------------------------------------------- #
 
-    # # Set the search and replace strings
-    # local search_string_01="/JOBS/PROJECT_NAME"
-    # local replace_string_01="$tgt_job_dir"
-    # local search_string_02="PROJECT_NAME_BOOKMARK"
-    # local replace_string_02="$name"
-    # local search_string_03="PROJECT_PATH_BOOKMARK"
-    # local replace_string_03="$name"
-    # local search_string_04="PROJECT_PRIVATEDATA_BOOKMARK"
-    # local replace_string_04="$name"
-
-    # # Use sed to replace the strings in the JSON file
-    # if [ "$operating_system" == "Linux" ]; then
-    #     sed -i "s|$search_string_01|$replace_string_01|g" \
-    #         "$tgt_project_bookmarks"
-    #     sed -i "s|$search_string_02|$replace_string_02|g" \
-    #         "$tgt_project_bookmarks"
-    #     sed -i "s|$search_string_03|$replace_string_03|g" \
-    #         "$tgt_project_bookmarks"
-    #     sed -i "s|$search_string_04|$replace_string_04|g" \
-    #         "$tgt_project_bookmarks"
-    # elif [ "$operating_system" == "macOS" ]; then
-    #     sed -i '' "s|$search_string_01|$replace_string_01|g" \
-    #         "$tgt_project_bookmarks"
-    #     sed -i '' "s|$search_string_02|$replace_string_02|g" \
-    #         "$tgt_project_bookmarks"
-    #     sed -i '' "s|$search_string_03|$replace_string_03|g" \
-    #         "$tgt_project_bookmarks"
-    #     sed -i '' "s|$search_string_04|$replace_string_04|g" \
-    #         "$tgt_project_bookmarks"
-    # else
-    #     echo "Unsupported operating system."
-    #     return 1
-    # fi
-
-    echo -e "\n  $tgt_projectgt_project_archive_prefst_bookmarks\n"
+    echo -e "\n  $tgt_project_archive_prefs\n"
 
     echo -e "\n  project archive prefs created."
     echo -e "\n$separator\n"

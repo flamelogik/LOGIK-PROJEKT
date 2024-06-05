@@ -4,21 +4,21 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_information.py
-# Version:          0.4.2
+# Version:          0.4.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-18
+# Modified:         2024-06-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script gathers information about the current
 #                   running script and related directories.
-#                   
-#                   This script defines a class `pathfinder_information` 
+#
+#                   This script defines a class `pathfinder_information`
 #                   which locates the running script and related directories.
-#                   
+#
 #                   It provides methods to create necessary directories
 #                   and print out the paths.
 
@@ -45,7 +45,7 @@ class rel_path_info:
 
     def __init__(self, script_name):
         """
-        Initializes the rel_path_info object with the path to 
+        Initializes the rel_path_info object with the path to
         the running script which defines related directories.
 
         Args:
@@ -80,7 +80,7 @@ class rel_path_info:
                 script_name
             )
         )
-        
+
         self.script_name = script_name
 
         self.rel_path_to_this_script = caller_dir
@@ -94,38 +94,38 @@ class rel_path_info:
         )
 
         self.rel_config_dir = os.path.relpath(
-            os.path.join(self.rel_parent_dir, 
-                         "config"), 
+            os.path.join(self.rel_parent_dir,
+                         "config"),
                          os.getcwd()
         )
 
         self.rel_scripts_dir = os.path.relpath(
-            os.path.join(self.rel_parent_dir, 
-                         "scripts"), 
+            os.path.join(self.rel_parent_dir,
+                         "scripts"),
                          os.getcwd()
         )
 
         self.rel_classes_and_functions_dir = os.path.relpath(
-            os.path.join(self.rel_scripts_dir, 
-                         "classes_and_functions"), 
+            os.path.join(self.rel_scripts_dir,
+                         "classes_and_functions"),
                          os.getcwd()
         )
 
         self.rel_classes_dir = os.path.relpath(
-            os.path.join(self.rel_classes_and_functions_dir, 
-                         "classes"), 
+            os.path.join(self.rel_classes_and_functions_dir,
+                         "classes"),
                          os.getcwd()
         )
 
         self.rel_functions_dir = os.path.relpath(
-            os.path.join(self.rel_classes_and_functions_dir, 
-                         "functions"), 
+            os.path.join(self.rel_classes_and_functions_dir,
+                         "functions"),
                          os.getcwd()
         )
 
         self.rel_version_dir = os.path.relpath(
-            os.path.join(self.rel_parent_dir, 
-                         "version"), 
+            os.path.join(self.rel_parent_dir,
+                         "version"),
                          os.getcwd()
         )
 
@@ -134,32 +134,30 @@ class rel_path_info:
         Prints out the relative paths of the running script and related directories.
         """
 
+    # ---------------------------------------------------------------------- #
 
-
-
-
-        print("Relative path to this script:", 
+        print("Relative path to this script:",
               os.path.basename(self.rel_path_to_this_script)
         )
-        print("Relative script directory:   ", 
+        print("Relative script directory:   ",
               os.path.basename(self.rel_script_dir)
         )
-        print("Relative parent directory:   ", 
+        print("Relative parent directory:   ",
               os.path.basename(self.rel_parent_dir)
         )
-        print("Relative config directory:   ", 
+        print("Relative config directory:   ",
               os.path.basename(self.rel_config_dir)
         )
-        print("Relative scripts directory:  ", 
+        print("Relative scripts directory:  ",
               os.path.basename(self.rel_scripts_dir)
         )
-        print("Relative classes directory:  ", 
+        print("Relative classes directory:  ",
               os.path.basename(self.rel_classes_dir)
         )
-        print("Relative functions directory:", 
+        print("Relative functions directory:",
               os.path.basename(self.rel_functions_dir)
         )
-        print("Relative version directory:  ", 
+        print("Relative version directory:  ",
               os.path.basename(self.rel_version_dir)
         )
 
@@ -170,10 +168,10 @@ if __name__ == "__main__":
     rel_script_directories.print_relative_paths()
 
 class pathfinder_information:
-    
+
     def __init__(self, script_name):
         """
-        Initializes the pathfinder_information object with the path to 
+        Initializes the pathfinder_information object with the path to
         the running script which defines related directories.
 
         Args:
@@ -182,26 +180,26 @@ class pathfinder_information:
         Attributes:
             script_name (str): The name of the running script.
 
-            path_to_this_script (str): The absolute path to the directory 
+            path_to_this_script (str): The absolute path to the directory
                                        of the running script.
 
             script_dir (str): The directory of the running script.
 
             parent_dir (str): The parent directory of the running script.
 
-            config_dir (str): The directory where configuration files 
+            config_dir (str): The directory where configuration files
                               are stored.
 
             scripts_dir (str): The directory where other scripts are stored.
 
-            modules_dir (str): The directory where classes 
+            modules_dir (str): The directory where classes
                                              and functions are stored.
 
             classes_dir (str): The directory where classes are stored.
 
             functions_dir (str): The directory where functions are stored.
 
-            version_dir (str): The directory where version information 
+            version_dir (str): The directory where version information
                                is stored.
 
         """
@@ -212,7 +210,7 @@ class pathfinder_information:
                 script_name
             )
         )
-        
+
         self.script_name = script_name
 
         self.path_to_this_script = caller_dir
@@ -226,32 +224,32 @@ class pathfinder_information:
         )
 
         self.config_dir = os.path.join(
-            self.parent_dir, 
+            self.parent_dir,
             "config"
         )
 
         self.scripts_dir = os.path.join(
-            self.parent_dir, 
+            self.parent_dir,
             "scripts"
         )
 
         self.modules_dir = os.path.join(
-            self.scripts_dir, 
+            self.scripts_dir,
             "modules"
         )
 
         self.classes_dir = os.path.join(
-            self.modules_dir, 
+            self.modules_dir,
             "classes"
         )
 
         self.functions_dir = os.path.join(
-            self.modules_dir, 
+            self.modules_dir,
             "functions"
         )
 
         self.version_dir = os.path.join(
-            self.parent_dir, 
+            self.parent_dir,
             "version"
         )
 
@@ -261,20 +259,20 @@ class pathfinder_information:
         """
         Creates necessary directories if they do not exist.
         """
-                
+
         print("Creating necessary directories...")
         os.makedirs(
-            self.modules_dir, 
+            self.modules_dir,
             exist_ok=True
         )
 
         os.makedirs(
-            self.classes_dir, 
+            self.classes_dir,
             exist_ok=True
         )
 
         os.makedirs(
-            self.functions_dir, 
+            self.functions_dir,
             exist_ok=True
         )
 
@@ -285,32 +283,32 @@ class pathfinder_information:
         Prints out the paths of the running script and related directories.
         """
 
-        print("This script:        ", 
+        print("This script:        ",
               os.path.basename(self.script_name)
         )
-        
-        print("Path to this script:", 
+
+        print("Path to this script:",
               os.path.basename(self.path_to_this_script)
         )
-        print("Script directory:   ", 
+        print("Script directory:   ",
               os.path.basename(self.script_dir)
         )
-        print("Parent directory:   ", 
+        print("Parent directory:   ",
               os.path.basename(self.parent_dir)
         )
-        print("Config directory:   ", 
+        print("Config directory:   ",
               os.path.basename(self.config_dir)
         )
-        print("Scripts directory:  ", 
+        print("Scripts directory:  ",
               os.path.basename(self.scripts_dir)
         )
-        print("Classes directory:  ", 
+        print("Classes directory:  ",
               os.path.basename(self.classes_dir)
         )
-        print("Functions directory:", 
+        print("Functions directory:",
               os.path.basename(self.functions_dir)
         )
-        print("Version directory:  ", 
+        print("Version directory:  ",
               os.path.basename(self.version_dir)
         )
 
@@ -352,7 +350,7 @@ if __name__ == "__main__":
 #                   If not, see <https://www.gnu.org/licenses/>.
 
 # -------------------------------------------------------------------------- #
-# Changelist:       
+# Changelist:
 # -------------------------------------------------------------------------- #
 # version:               0.0.5
 # modified:              2024-05-12 - 15:37:50
@@ -397,3 +395,7 @@ if __name__ == "__main__":
 # version:               0.4.2
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.3
+# modified:              2024-06-03 - 10:32:22
+# comments:              Moved import flame statement to each function

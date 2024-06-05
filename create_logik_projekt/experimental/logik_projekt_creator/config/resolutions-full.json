@@ -1,0 +1,3809 @@
+{
+    "name": "default",
+    "items": [{
+    "name": "Broadcast Resolution",
+    "priority": 100,
+    "items": [
+        {
+            "name": "NTSC DV 4:3 (720 x 480)",
+            "width": 720,
+            "height": 480,
+            "aspectRatio": 1.363636
+        },
+        {
+            "name": "NTSC 4:3 (720 x 486)",
+            "width": 720,
+            "height": 486,
+            "aspectRatio": 1.333333
+        },
+        {
+            "name": "NTSC 16:9 (720 x 486)",
+            "width": 720,
+            "height": 486,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "PAL 4:3 (720 x 576)",
+            "width": 720,
+            "height": 576,
+            "aspectRatio": 1.333333
+        },
+        {
+            "name": "PAL 16:9 (720 x 576)",
+            "width": 720,
+            "height": 576,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "HD 720 16:9 (1280 x 720)",
+            "width": 1280,
+            "height": 720,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "HD 1080 16:9 (1920 x 1080)",
+            "width": 1920,
+            "height": 1080,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "UHDTV 4K 16:9 (3840 x 2160)",
+            "width": 3840,
+            "height": 2160,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "UHDTV 8K 16:9 (7680 x 4320)",
+            "width": 7680,
+            "height": 4320,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "UHDTV 16K 16:9 (15360 x 8640)",
+	    "width": 15360,
+	    "height": 8640,
+            "aspectRatio": 1.777778
+        }
+    ]
+},
+{
+    "name": "Film Resolutions",
+    "priority": 200,
+    "items": [
+        {
+            "name": "Film 2K Academy (1828 x 1332)",
+            "width": 1828,
+             "height": 1332,
+            "aspectRatio": 1.372372
+        },
+        {
+            "name": "Film 2K Scope 2.35 (1828 x 1556)",
+            "width": 1828,
+            "height": 1556,
+            "aspectRatio": 2.349614
+        },
+        {
+            "name": "Film 2K 16:9 (2048 x 1152)",
+            "width": 2048,
+            "height": 1152,
+            "aspectRatio": 1.77777
+        },
+        {
+            "name": "Film 2K 4:3 (2048 x 1536)",
+            "width": 2048,
+            "height": 1536,
+            "aspectRatio": 1.33333
+        },
+        {
+            "name": "Film Super35 2K (2048 x 1556)",
+            "width": 2048,
+            "height": 1556,
+            "aspectRatio": 1.316
+        },
+        {
+            "name": "Film VistaVision (3072 x 858)",
+            "width": 3072,
+            "height": 858,
+            "aspectRatio": 1.5
+        },
+        {
+            "name": "Film VistaVision (3072 x 2048)",
+            "width": 3072,
+            "height": 2048,
+            "aspectRatio": 1.5
+        },
+        {
+            "name": "Film 4K Academy (3656 x 2664)",
+            "width": 3656,
+            "height": 2664,
+            "aspectRatio": 1.372372
+        },
+        {
+            "name": "Film 4K Scope 2.35 (3656 x 3112)",
+            "width": 3656,
+            "height": 3112,
+            "aspectRatio": 1.372372
+        },
+        {
+            "name": "Film 4K 16:9 (4096 x 2304)",
+            "width": 4096,
+            "height": 2304,
+            "aspectRatio": 1.77777
+        },
+        {
+            "name": "Film 4K 4:3 (4096 x 3072)",
+            "width": 4096,
+            "height": 3072,
+            "aspectRatio": 1.33333
+        },
+        {
+            "name": "Film 35MM 4K Super35 (4096 x 1708)",
+            "width": 4096,
+            "height": 1708,
+            "aspectRatio": 2.39813
+        },
+        {
+            "name": "Film 65MM 4K 5perf (4096 x 1796)",
+            "width": 4096,
+            "height": 1796,
+            "aspectRatio": 2.28062
+        },
+        {
+            "name": "Film 35MM 4K Academy 1.85 (4096 x 2212)",
+            "width": 4096,
+            "height": 2212,
+            "aspectRatio": 1.85172
+        },
+        {
+            "name": "Film 4K 1.85 (4096 x 2214)",
+            "width": 4096,
+            "height": 2214,
+            "aspectRatio": 1.85
+        },
+        {
+            "name": "Film 35MM 4K Academy 1.78 (4096 x 2300)",
+            "width": 4096,
+            "height": 2300,
+            "aspectRatio": 1.78087
+        },
+        {
+            "name": "Film 35MM 4K Academy 1.66 (4096 x 2464)",
+            "width": 4096,
+            "height": 2464,
+            "aspectRatio": 1.66234
+        },
+        {
+            "name": "Film 35MM 4K VistaVision (4096 x 2732)",
+            "width": 4096,
+            "height": 2732,
+            "aspectRatio": 1.49927
+        },
+        {
+            "name": "Film 65MM 4K 8perf (4096 x 2936)",
+            "width": 4096,
+            "height": 2936,
+            "aspectRatio": 1.3951
+        },
+        {
+            "name": "Film 4K Full (4096 x 2988)",
+            "width": 4096,
+            "height": 2988,
+            "aspectRatio": 1.371
+        },
+        {
+            "name": "Film 65MM 4K 15perf (4096 x 3060)",
+            "width": 4096,
+            "height": 3060,
+            "aspectRatio": 1.33856
+        },
+        {
+            "name": "Film Super35 4K (4096 x 3112)",
+            "width": 4096,
+            "height": 3112,
+            "aspectRatio": 1.316
+        },
+        {
+            "name": "Film 4K Full (4096 x 3112)",
+            "width": 4096,
+            "height": 3112,
+            "aspectRatio": 1.316
+        },
+        {
+            "name": "Film 35MM 4K Academy CinemaScope (4096 x 3472)",
+            "width": 4096,
+            "height": 3472,
+            "aspectRatio": 2.35944
+        },
+        {
+            "name": "Film 4K VistaVision (4096 x 6144)",
+            "width": 4096,
+            "height": 3112,
+            "aspectRatio": 1.316195
+        },
+        {
+            "name": "Film 8K 17:9 (8192 x 4320)",
+	    "width": 8192,
+	    "height": 4320,
+            "aspectRatio": 1.8963
+        },
+        {
+            "name": "Film 16K 17:9 (16384 x 8640)",
+	    "width": 16384,
+	    "height": 8640,
+            "aspectRatio": 1.8963
+        }
+    ]
+},
+{
+    "name": "DCP Resolutions",
+    "priority": 300,
+    "items": [
+        {
+            "name": "DCP 2K Flat 1.85 (1998 x 1080)",
+            "width": 1998,
+             "height": 1080,
+            "aspectRatio": 1.85
+        },
+        {
+            "name": "DCP 2K Scope 2.39 (2048 x 858)",
+            "width": 2048,
+            "height": 858,
+            "aspectRatio": 2.386946
+        },
+        {
+            "name": "DCP 2K Full 1.90 (2048 x 1080)",
+            "width": 2048,
+            "height": 1080,
+            "aspectRatio": 1.896
+        },
+        {
+            "name": "DCP 4K Flat 1.85 (3996 x 2160)",
+            "width": 3996,
+            "height": 2160,
+            "aspectRatio": 1.85
+        },
+        {
+            "name": "DCP 4K Scope 2.39 (4096 x 1716)",
+            "width": 4096,
+            "height": 1716,
+            "aspectRatio": 2.386946
+        },
+        {
+            "name": "DCP 4K Full 1.90 (4096 x 2160)",
+            "width": 4096,
+            "height": 2160,
+            "aspectRatio": 1.896
+        }
+    ]
+},
+{
+    "name": "AJA Cameras",
+    "priority": 400,
+    "items": [
+        {
+            "name": "AJA HD 16:9 (1920 x 1080)",
+            "width": 1920,
+             "height": 1080,
+            "aspectRatio": 1.77777
+        },
+        {
+            "name": "AJA 2K 17:9 (2048 x 1080)",
+            "width": 2048,
+             "height": 1080,
+            "aspectRatio": 1.8963
+        },
+        {
+            "name": "AJA UHDTV 16:9 (3840 x 2160)",
+            "width": 3840,
+             "height": 2160,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "AJA 4K 17:9 (4096 x 2160)",
+            "width": 4096,
+             "height": 2160,
+            "aspectRatio": 1.8963
+        }
+    ]
+},
+{
+    "name": "ARRI Cameras",
+    "priority": 600,
+    "items": [
+        {
+            "name": "ARRI HD WS 16:9 ProRes (1920 x 2160)",
+            "width": 1920,
+            "height": 2160,
+            "PAR": 2.0
+        },
+        {
+            "name": "ARRI 2K WS 2.39 ProRes (2048 x 858)",
+            "width": 2048,
+            "height": 858
+        },
+        {
+            "name": "ARRI 2K 16:9 ProRes (2048 x 1152)",
+            "width": 2048,
+            "height": 1152
+        },
+        {
+            "name": "ARRI 2K 4:3 (2048 x 1536)",
+            "width": 2048,
+            "height": 1536
+        },
+        {
+            "name": "ARRI 2K Ana 2.0x (2048 x 1536)",
+            "width": 2048,
+            "height": 1536,
+            "PAR": 2.0
+        },
+        {
+            "name": "ARRI 2.6K WS 2.39 (2560 x 2145)",
+            "width": 2560,
+            "height": 2145,
+            "PAR": 2.0
+        },
+        {
+            "name": "ARRI 2.6K 6:5 (2578 x 2160)",
+            "width": 2578,
+            "height": 2160
+        },
+        {
+            "name": "ARRI 2.6K WS 2.39 (2578 x 2160)",
+            "width": 2578,
+            "height": 2160,
+            "PAR": 2.0
+        },
+        {
+            "name": "ARRI 2.8K 16:9 (2880 x 1620)",
+            "width": 2880,
+            "height": 1620
+        },
+        {
+            "name": "ARRI 2.8K 4:3 Full (2880 x 2160)",
+            "width": 2880,
+            "height": 2160
+        },
+        {
+            "name": "ARRI 2.8K Ana 2.0x (2880 x 2160)",
+            "width": 2880,
+            "height": 2160,
+            "PAR": 2.0
+        },
+        {
+            "name": "ARRI 2.8K LF 2:1 (2880 x 2880)",
+            "width": 2880,
+            "height": 2880,
+            "PAR": 2.0
+        },
+        {
+            "name": "ARRI 3K 1:1 (3072 x 3072)",
+            "width": 3072,
+            "height": 3072
+        },
+        {
+            "name": "ARRI 3.2K 16:9 ProRes (3164 x 1778)",
+            "width": 3164,
+            "height": 1778
+        },
+        {
+            "name": "ARRI 3.2K 16:9 (3168 x 1782)",
+            "width": 3168,
+            "height": 1782
+        },
+        {
+            "name": "ARRI 3.2K 16:9 ProRes (3200 x 1800)",
+            "width": 3200,
+            "height": 1800
+        },
+        {
+            "name": "ARRI 3.3K 6:5 (3328 x 2790)",
+            "width": 3328,
+            "height": 2790
+        },
+        {
+            "name": "ARRI 3.4K Open Gate (3414 x 2198)",
+            "width": 3414,
+            "height": 2198
+        },
+        {
+            "name": "ARRI 3.4K Open Gate ProRes (3424 x 2202)",
+            "width": 3424,
+            "height": 2202
+        },
+        {
+            "name": "ARRI UHD 2:1 ProRes (3840 x 1920)",
+            "width": 3840,
+            "height": 1920
+        },
+        {
+            "name": "ARRI UHD 16:9 ProRes (3840 x 2160)",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "name": "ARRI UHD Ana 2.0x (3840 x 2160)",
+            "width": 3840,
+            "height": 2160,
+            "PAR": 2.0
+        },
+        {
+            "name": "ARRI 4K WS 2.39 ProRes (4096 x 1716)",
+            "width": 4096,
+            "height": 1716
+        },
+        {
+            "name": "ARRI 4K 2:1 (4096 x 2048)",
+            "width": 4096,
+            "height": 2048
+        },
+        {
+            "name": "ARRI 4K 16:9 (4096 x 2304)",
+            "width": 4096,
+            "height": 2304
+        },
+        {
+            "name": "ARRI 4K Cine Open Gate ProRes (4096 x 2636)",
+            "width": 4096,
+            "height": 2636
+        },
+        {
+            "name": "ARRI 4.3K 3:2 (4320 x 2880)",
+            "width": 4320,
+            "height": 2880
+        },
+        {
+            "name": "ARRI 4.5K WS 2.39 ProRes (4448 x 1856)",
+            "width": 4448,
+            "height": 1856
+        },
+        {
+            "name": "ARRI 4.5K LF Open Gate ProRes (4448 x 3096)",
+            "width": 4448,
+            "height": 3096
+        },
+        {
+            "name": "ARRI 4.6K 16:9 (4608 x 2592)",
+            "width": 4608,
+            "height": 2592
+        },
+        {
+            "name": "ARRI 4.6K 3:2 Open Gate (4608 x 3164)",
+            "width": 4608,
+            "height": 3164
+        },
+        {
+            "name": "ARRI 5K 16:9 (5120 x 2880)",
+            "width": 5120,
+            "height": 2880
+        },
+        {
+            "name": "ARRI 6.5K Open Gate (6560 x 3100)",
+            "width": 6560,
+            "height": 3100
+        }
+    ]
+},
+{
+    "name": "Blackmagic Design Cameras",
+    "priority": 700,
+    "items": [
+        {
+            "name": "BMD HDTV 16:9 (1920 x 1080)",
+            "width": 1920,
+            "height": 1080,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "BMD 2.5K (2400 x 1340)",
+            "width": 2400,
+            "height": 1340,
+            "aspectRatio": 1.791
+        },
+        {
+            "name": "BMD 2K 17:9 (2048 x 1080)",
+            "width": 2048,
+            "height": 1080,
+            "aspectRatio": 1.896
+        },
+        {
+            "name": "BMD 2.K 16:9 (2048 x 1152)",
+            "width": 2048,
+            "height": 1152,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "BMD 4K 4:3 Ana 1.3x (2560 x 2136)",
+            "width": 2560,
+            "height": 2136,
+            "PAR": 1.3
+        },
+        {
+            "name": "BMD 4K 4:3 Ana 2.0x (2560 x 2136)",
+            "width": 2560,
+            "height": 2136,
+            "PAR": 2.0
+        },
+        {
+            "name": "BMD 3K 4:3 (3072 x 2560)",
+            "width": 3072,
+            "height": 2560,
+            "aspectRatio": 1.33333
+        },
+        {
+            "name": "BMD 3K 4:3 Ana 1.3x (3072 x 2560)",
+            "width": 3072,
+            "height": 2560,
+            "PAR": 1.3
+        },
+        {
+            "name": "BMD 3K 4:3 Ana 2.0x (3072 x 2560)",
+            "width": 3072,
+            "height": 2560,
+            "PAR": 2.0
+        },
+        {
+            "name": "BMD UHDTV 16:9 (3840 x 2160)",
+            "width": 3840,
+             "height": 2160,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "BMD 4K 16:9 (4000 x 2160)",
+            "width": 4000,
+            "height": 2160,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "BMD 4K 2.4 (4096 x 1704)",
+            "width": 4096,
+            "height": 1704
+        },
+        {
+            "name": "BMD 4K 17:9 (4096 x 2160)",
+            "width": 4096,
+             "height": 2160,
+            "aspectRatio": 1.8963
+        },
+        {
+            "name": "BMD 4K 16:9 (4096 x 2304)",
+            "width": 4096,
+            "height": 2304,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "BMD 4.6K 2.4 (4608 x 1920)",
+            "width": 4608,
+            "height": 1920,
+            "aspectRatio": 2.4
+        },
+        {
+            "name": "BMD 4.6K 16:9 (4608 x 2592)",
+            "width": 4608,
+            "height": 2592,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "BMD 4.6K 16:9 (4656 x 2624)",
+            "width": 4656,
+            "height": 2624,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "BMD 6K 17:9 (6144 x 3240)",
+            "width": 6144,
+            "height": 3240
+        },
+        {
+            "name": "BMD 8K 4:3 Ana 1.3x (5120 x 4272)",
+            "width": 5120,
+            "height": 4272,
+            "PAR": 1.3
+        },
+        {
+            "name": "BMD 8K 4:3 Ana 2.0x (5120 x 4272)",
+            "width": 5120,
+            "height": 4272,
+            "PAR": 2.0
+        },
+        {
+            "name": "BMD 8K 16:9 (7680 x 4320)",
+            "width": 7680,
+            "height": 4320
+        },
+        {
+            "name": "BMD 8K 2.4 (8192 x 3408)",
+            "width": 8192,
+            "height": 3408
+        },
+        {
+            "name": "BMD 8K 17:9 (8192 x 4320)",
+            "width": 8192,
+            "height": 4320
+        },
+        {
+            "name": "BMD 12K 4:3 Ana 1.3x (7620 x 6408)",
+            "width": 7620,
+            "height": 6408,
+            "PAR": 1.3
+        },
+        {
+            "name": "BMD 12K 4:3 Ana 2.0x (7620 x 6408)",
+            "width": 7620,
+            "height": 6408,
+            "PAR": 2.0
+        },
+        {
+            "name": "BMD 12K 16:9 (11520 x 6480)",
+            "width": 11520,
+            "height": 6480
+        },
+        {
+            "name": "BMD 12K 2.4 (12288 x 5112)",
+            "width": 12288,
+            "height": 5112
+        },
+        {
+            "name": "BMD 12K 17:9 (12288 x 6480)",
+            "width": 12288,
+            "height": 6480
+        }
+    ]
+},
+{
+    "name": "Canon Cameras",
+    "priority": 800,
+    "items": [
+        {
+            "name": "Canon HD 4:3 (1440 x 1080)",
+            "width": 1440,
+            "height": 1080,
+            "aspectRatio": 1.333333
+        },
+        {
+            "name": "Canon HDTV 16:9 (1280 x 720)",
+            "width": 1280,
+            "height": 720,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "Canon HDTV 16:9 (1920 x 1080)",
+            "width": 1920,
+            "height": 1080,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "Canon 2K 17:9 (2048 x 1080)",
+            "width": 2048,
+            "height": 1080,
+            "aspectRatio": 1.8963
+        },
+        {
+            "name": "Canon 4K 3.5 (3840 x 1080)",
+            "width": 3840,
+            "height": 1080,
+            "aspectRatio": 3.55556
+        },
+        {
+            "name": "Canon UHDTV 16:9 (3840 x 2160)",
+            "width": 3840,
+            "height": 2160,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "Canon 4K 17:9 (4096 x 2160)",
+            "width": 4096,
+            "height": 2160,
+            "aspectRatio": 1.8963
+        },
+        {
+            "name": "Canon 4.5K 17:9 (4512 x 2376)",
+            "width": 4512,
+            "height": 2376,
+            "aspectRatio": 1.8963
+        },
+        {
+            "name": "Canon 5.4K 17:9 (5472 x 2886)",
+            "width": 5472,
+            "height": 2886
+        },
+        {
+            "name": "Canon 5.9K 2.35 (5952 x 2532)",
+            "width": 5952,
+            "height": 2532,
+            "aspectRatio": 2.351
+        },
+        {
+            "name": "Canon 5.9K 17:9 (5952 x 3140)",
+            "width": 5952,
+            "height": 3140
+        },
+        {
+            "name": "Canon 5.9K 2.35 (5968 x 2548)",
+            "width": 5968,
+            "height": 2548,
+            "aspectRatio": 2.34223
+        },
+        {
+            "name": "Canon 5.9K 17:9 (5968 x 3156)",
+            "width": 5968,
+            "height": 3156,
+            "aspectRatio": 1.8910
+        },
+        {
+            "name": "Canon 5.9K 2.35 (5970 x 2548)",
+            "width": 5970,
+            "height": 2548,
+            "aspectRatio": 2.34301
+        },
+        {
+            "name": "Canon 5.9K 17:9 (5970 x 3156)",
+            "width": 5970,
+            "height": 3156,
+            "aspectRatio": 1.8916
+        },
+        {
+            "name": "Canon 8K 17:9 (8192 x 4320)",
+            "width": 8192,
+            "height": 4320
+        }
+    ]
+},
+{
+    "name": "Panasonic Cameras",
+    "priority": 1200,
+    "items": [
+        {
+            "name": "Panasonic HDTV 16:9 (1280 x 720)",
+            "width": 1280,
+             "height": 720,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "Panasonic HD 4:3 (1440 x 1080)",
+            "width": 1440,
+            "height": 1080,
+            "aspectRatio": 1.333333
+        },
+        {
+            "name": "Panasonic HDTV 16:9 (1920 x 1080)",
+            "width": 1920,
+             "height": 1080,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "Panasonic 2K 17:9 (2048 x 1080)",
+            "width": 2048,
+             "height": 1080,
+            "aspectRatio": 1.8963
+        },
+        {
+            "name": "Panasonic UHDTV 16:9 (3840 x 2160)",
+            "width": 3840,
+             "height": 2160,
+            "aspectRatio": 1.77778
+        },
+        {
+            "name": "Panasonic 4K 17:9 (4096 x 2160)",
+            "width": 4096,
+             "height": 2160,
+            "aspectRatio": 1.8963
+        }
+    ]
+},
+{
+    "name": "RED Cameras",
+    "priority": 1400,
+    "items": [
+        {
+            "name": "RED 1K Spherical",
+            "items": [
+                {
+                    "name": "  RED 1K 2.66 WS (1280 x 480)",
+                    "width": 1296,
+                    "height": 480,
+                    "aspectRatio": 2.66667
+                },
+                {
+                    "name": "  RED 1K 16:9 (1280 x 720)",
+                    "width": 1296,
+                    "height": 720,
+                    "aspectRatio": 1.77777
+                }
+            ]
+        },
+        {
+            "name": "RED 2K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 2K 6:5 Ana 1.3x (1296 x 1080)",
+                    "width": 1296,
+                    "height": 1080,
+                    "aspectRatio": 1.56
+                },
+                {
+                    "name": "  RED 2K Ana 1.3x (1408 x 1152)",
+                    "width": 1408,
+                    "height": 1152,
+                    "aspectRatio": 1.588886
+                },
+                {
+                    "name": "  RED HD 16:9 Ana 1.3x (1920 x 1080)",
+                    "width": 1920,
+                    "height": 1080,
+                    "aspectRatio": 2.31101
+                },
+                {
+                    "name": "  RED 2K 3:2 Ana 1.3x (1920 x 1280)",
+                    "width": 1920,
+                    "height": 1280,
+                    "aspectRatio": 1.95
+                },
+                {
+                   "name": "RED 2K 4:3 Ana 1.3x (1920 x 1440)",
+                   "width": 1920,
+                   "height": 1440,
+                   "aspectRatio": 1.733329
+                },
+                {
+                   "name": "RED 2K 5:4 Ana 1.3x (1920 x 1536)",
+                   "width": 1920,
+                   "height": 1536,
+                   "aspectRatio": 1.625
+                },
+                {
+                   "name": "RED 2K 8:1 Ana 1.3x (2048 x 256)",
+                   "width": 2048,
+                   "height": 256,
+                   "aspectRatio": 10.4
+                },
+                {
+                   "name": "RED 2K 4:1 Ana 1.3x (2048 x 512)",
+                   "width": 2048,
+                   "height": 512,
+                   "aspectRatio": 5.2
+                },
+                {
+                   "name": "RED 2K 2.39 WS Ana 1.3x (2048 x 854)",
+                   "width": 2048,
+                   "height": 854,
+                   "aspectRatio": 3.117569
+                },
+                {
+                   "name": "RED 2K 2.37 WS Ana 1.3x (2048 x 864)",
+                   "width": 2048,
+                   "height": 864,
+                   "aspectRatio": 3.081
+                },
+                {
+                   "name": "RED 2K 2:1 Ana 1.3x (2048 x 1024)",
+                   "width": 2048,
+                   "height": 1024,
+                   "aspectRatio": 2.6
+                },
+                {
+                   "name": "RED 2K Full Ana 1.3x (2048 x 1080)",
+                   "width": 2048,
+                   "height": 1080,
+                   "aspectRatio": 2.46519
+                },
+                {
+                   "name": "RED 2K 16:9 Ana 1.3x (2048 x 1152)",
+                   "width": 2048,
+                   "height": 1152,
+                   "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 2K 6:5 Ana 2.0x (1296 x 1080)",
+                    "width": 1296,
+                    "height": 1080,
+                    "aspectRatio": 2.4
+                },
+                {
+                   "name": "RED 2K Ana 2.0x (1408 x 1152)",
+                   "width": 1408,
+                   "height": 1152,
+                   "aspectRatio": 2.44444
+                },
+                {
+                    "name": "  RED HD 16:9 Ana 2.0x (1920 x 1080)",
+                    "width": 1920,
+                    "height": 1080,
+                    "aspectRatio": 3.5554
+                },
+                {
+                    "name": "  RED 2K 3:2 Ana 2.0x (1920 x 1280)",
+                    "width": 1920,
+                    "height": 1280,
+                    "aspectRatio": 3
+                },
+                {
+                   "name": "RED 2K 4:3 Ana 2.0x (1920 x 1440)",
+                   "width": 1920,
+                   "height": 1440,
+                   "aspectRatio": 2.66666
+                },
+                {
+                   "name": "RED 2K 5:4 Ana 2.0x (1920 x 1536)",
+                   "width": 1920,
+                   "height": 1536,
+                   "aspectRatio": 2.5
+                },
+                {
+                   "name": "RED 2K 8:1 Ana 2.0x (2048 x 256)",
+                   "width": 2048,
+                   "height": 256,
+                   "aspectRatio": 16
+                },
+                {
+                   "name": "RED 2K 4:1 Ana 2.0x (2048 x 512)",
+                   "width": 2048,
+                   "height": 512,
+                   "aspectRatio": 8
+                },
+                {
+                   "name": "RED 2K 2.39 WS Ana 2.0x (2048 x 854)",
+                   "width": 2048,
+                   "height": 854,
+                   "aspectRatio": 4.79626
+                },
+                {
+                   "name": "RED 2K 2.37 WS Ana 2.0x (2048 x 864)",
+                   "width": 2048,
+                   "height": 864,
+                   "aspectRatio": 4.74
+                },
+                {
+                   "name": "RED 2K 2:1 Ana 2.0x (2048 x 1024)",
+                   "width": 2048,
+                   "height": 1024,
+                   "aspectRatio": 4
+                },
+                {
+                   "name": "RED 2K Full Ana 2.0x (2048 x 1080)",
+                   "width": 2048,
+                   "height": 1080,
+                   "aspectRatio": 3.7926
+                },
+                {
+                   "name": "RED 2K 16:9 Ana 2.0x (2048 x 1152)",
+                   "width": 2048,
+                   "height": 1152,
+                   "aspectRatio": 3.5554
+                }
+            ]
+        },
+        {
+            "name": "RED 2K Spherical",
+            "items": [
+                {
+                    "name": "  RED 2K 6:5 (1296 x 1080)",
+                    "width": 1296,
+                    "height": 1080,
+                    "aspectRatio": 1.2
+                },
+                {
+                    "name": "  RED HD 16:9 (1920 x 1080)",
+                    "width": 1920,
+                    "height": 1080,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 2K 3:2 (1920 x 1280)",
+                    "width": 1920,
+                    "height": 1280,
+                    "aspectRatio": 1.5
+                },
+                {
+                   "name": "RED 2K 4:3 (1920 x 1440)",
+                   "width": 1920,
+                   "height": 1440,
+                   "aspectRatio": 1.33333
+                },
+                {
+                   "name": "RED 2K 5:4 (1920 x 1536)",
+                   "width": 1920,
+                   "height": 1536,
+                   "aspectRatio": 1.25
+                },
+                {
+                   "name": "RED 2K 8:1 (2048 x 256)",
+                   "width": 2048,
+                   "height": 256,
+                   "aspectRatio": 8
+                },
+                {
+                   "name": "RED 2K 4:1 (2048 x 512)",
+                   "width": 2048,
+                   "height": 512,
+                   "aspectRatio": 4
+                },
+                {
+                   "name": "RED 2K 2.39 WS (2048 x 854)",
+                   "width": 2048,
+                   "height": 854,
+                   "aspectRatio": 2.39813
+                },
+                {
+                   "name": "RED 2K 2.37 WS (2048 x 864)",
+                   "width": 2048,
+                   "height": 864,
+                   "aspectRatio": 2.37
+                },
+                {
+                   "name": "RED 2K 2:1 (2048 x 1024)",
+                   "width": 2048,
+                   "height": 1024,
+                   "aspectRatio": 2
+                },
+                {
+                   "name": "RED 2K Full 17:9 (2048 x 1080)",
+                   "width": 2048,
+                   "height": 1080,
+                   "aspectRatio": 1.8963
+                },
+                {
+                   "name": "RED 2K 16:9 (2048 x 1152)",
+                   "width": 2048,
+                   "height": 1152,
+                   "aspectRatio": 1.77778
+                }
+            ]
+        },
+        {
+            "name": "RED 2.5K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 2.5K 16:9 Ana 1.3x (2304 x 1296)",
+                    "width": 2304,
+                    "height": 1296,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 2.5K 3:2 Ana 1.3x (2400 x 1600)",
+                    "width": 2400,
+                    "height": 1600,
+                    "aspectRatio": 1.95
+                },
+                {
+                    "name": "  RED 2.5K 4:3 Ana 1.3x (2400 x 1800)",
+                    "width": 2400,
+                    "height": 1800,
+                    "aspectRatio": 1.73329
+                },
+                {
+                    "name": "  RED 2.5K 5:4 Ana 1.3x (2400 x 1920)",
+                    "width": 2400,
+                    "height": 1920,
+                    "aspectRatio": 1.625
+                },
+                {
+                    "name": "  RED 2.5K 8:1 Ana 1.3x (2560 x 320)",
+                    "width": 2560,
+                    "height": 320,
+                    "aspectRatio": 10.3
+                },
+                {
+                    "name": "  RED 2.5K 4:1 Ana 1.3x (2560 x 640)",
+                    "width": 2560,
+                    "height": 640,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 2.5K 2.37 WS Ana 1.3x (2560 x 1080)",
+                    "width": 2560,
+                    "height": 1080,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 2.5K 2:1 Ana 1.3x (2560 x 1280)",
+                    "width": 2560,
+                    "height": 1280,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 2.5K Full Ana 1.3x (2560 x 1340)",
+                    "width": 2560,
+                    "height": 1340,
+                    "aspectRatio": 2.483585
+                },
+                {
+                    "name": "  RED 2.5K 16:9 Ana 2.0x (2304 x 1296)",
+                    "width": 2304,
+                    "height": 1296,
+                    "aspectRatio": 3.5554
+                },
+                {
+                    "name": "  RED 2.5K 3:2 Ana 2.0x (2400 x 1600)",
+                    "width": 2400,
+                    "height": 1600,
+                    "aspectRatio": 3
+                },
+                {
+                    "name": "  RED 2.5K 4:3 Ana 2.0x (2400 x 1800)",
+                    "width": 2400,
+                    "height": 1800,
+                    "aspectRatio": 2.66666
+                },
+                {
+                    "name": "  RED 2.5K 5:4 Ana 2.0x (2400 x 1920)",
+                    "width": 2400,
+                    "height": 1920,
+                    "aspectRatio": 2.5
+                },
+                {
+                    "name": "  RED 2.5K 8:1 Ana 2.0x (2560 x 320)",
+                    "width": 2560,
+                    "height": 320,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 2.5K 4:1 Ana 2.0x (2560 x 640)",
+                    "width": 2560,
+                    "height": 640,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 2.5K 2.37 WS Ana 2.0x (2560 x 1080)",
+                    "width": 2560,
+                    "height": 1080,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 2.5K 2:1 Ana 2.0x (2560 x 1280)",
+                    "width": 2560,
+                    "height": 1280,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 2.5K Full Ana 2.0x (2560 x 1340)",
+                    "width": 2560,
+                    "height": 1340,
+                    "aspectRatio": 3.8209
+                }
+            ]
+        },
+        {
+            "name": "RED 2.5K Spherical",
+            "items": [
+                {
+                    "name": "  RED 2.5K 16:9 (2304 x 1296)",
+                    "width": 2304,
+                    "height": 1296,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 2.5K 3:2 (2400 x 1600)",
+                    "width": 2400,
+                    "height": 1600,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 2.5K 4:3 (2400 x 1800)",
+                    "width": 2400,
+                    "height": 1800,
+                    "aspectRatio": 1.33333
+                },
+                {
+                    "name": "  RED 2.5K 5:4 (2400 x 1920)",
+                    "width": 2400,
+                    "height": 1920,
+                    "aspectRatio": 1.25
+                },
+                {
+                    "name": "  RED 2.5K 8:1 (2560 x 320)",
+                    "width": 2560,
+                    "height": 320,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 2.5K 4:1 (2560 x 640)",
+                    "width": 2560,
+                    "height": 640,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 2.5K 2.37 WS (2560 x 1080)",
+                    "width": 2560,
+                    "height": 1080,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 2.5K 2:1 (2560 x 1280)",
+                    "width": 2560,
+                    "height": 1280,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 2.5K Full (2560 x 1340)",
+                    "width": 2560,
+                    "height": 1340,
+                    "aspectRatio": 1.91045
+                }
+            ]
+        },
+        {
+            "name": "RED 3K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 3K Ana 1.3x (2112 x 1728)",
+                    "width": 2112,
+                    "height": 1728,
+                    "aspectRatio": 1.588886
+                },
+                {
+                    "name": "  RED 3K 6:5 Ana 1.3x (1944 x 1620)",
+                    "width": 1944,
+                    "height": 1620,
+                    "aspectRatio": 1.56
+                },
+                {
+                    "name": "  RED 3K 16:9 Ana 1.3x (2880 x 1620)",
+                    "width": 2880,
+                    "height": 1620,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 3K 3:2 Ana 1.3x (2880 x 1920)",
+                    "width": 2880,
+                    "height": 1920,
+                    "aspectRatio": 1.95
+                },
+                {
+                    "name": "  RED 3K 4:3 Ana 1.3x (2880 x 2160)",
+                    "width": 2880,
+                    "height": 2160,
+                    "aspectRatio": 1.733329
+                },
+                {
+                    "name": "  RED 3K 5:4 Ana 1.3x (2880 x 2304)",
+                    "width": 2880,
+                    "height": 2304,
+                    "aspectRatio": 1.625
+                },
+                {
+                    "name": "  RED 3K 8:1 Ana 1.3x (3072 x 384)",
+                    "width": 3072,
+                    "height": 384,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 3K 4:1 Ana 1.3x (3072 x 768)",
+                    "width": 3072,
+                    "height": 768,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 3K 2.39 WS Ana 1.3x (3072 x 1284)",
+                    "width": 3072,
+                    "height": 1284,
+                    "aspectRatio": 3.11025
+                },
+                {
+                    "name": "  RED 3K 2.37 WS Ana 1.3x (3072 x 1296)",
+                    "width": 3072,
+                    "height": 1296,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 3K 2:1 Ana 1.3x (3072 x 1536)",
+                    "width": 3072,
+                    "height": 1536,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 3K Full Ana 1.3x (3072 x 1620)",
+                    "width": 3072,
+                    "height": 1620,
+                    "aspectRatio": 2.46519
+                },
+                {
+                    "name": "  RED 3K Ana 2.0x (2112 x 1728)",
+                    "width": 2112,
+                    "height": 1728,
+                    "aspectRatio": 2.44444
+                },
+                {
+                    "name": "  RED 3K 6:5 Ana 2.0x (1944 x 1620)",
+                    "width": 1944,
+                    "height": 1620,
+                    "aspectRatio": 2.4
+                },
+                {
+                    "name": "  RED 3K 16:9 Ana 2.0x (2880 x 1620)",
+                    "width": 2880,
+                    "height": 1620,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 3K 3:2 Ana 2.0x (2880 x 1920)",
+                    "width": 2880,
+                    "height": 1920,
+                    "aspectRatio": 3
+                },
+                {
+                    "name": "  RED 3K 4:3 Ana 2.0x (2880 x 2160)",
+                    "width": 2880,
+                    "height": 2160,
+                    "aspectRatio": 2.66666
+                },
+                {
+                    "name": "  RED 3K 5:4 Ana 2.0x (2880 x 2304)",
+                    "width": 2880,
+                    "height": 2304,
+                    "aspectRatio": 2.5
+                },
+                {
+                    "name": "  RED 3K 8:1 Ana 2.0x (3072 x 384)",
+                    "width": 3072,
+                    "height": 384,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 3K 4:1 Ana 2.0x (3072 x 768)",
+                    "width": 3072,
+                    "height": 768,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 3K 2.39 WS Ana 2.0x (3072 x 1284)",
+                    "width": 3072,
+                    "height": 1284,
+                    "aspectRatio": 4.78504
+                },
+                {
+                    "name": "  RED 3K 2.37 WS Ana 2.0x (3072 x 1296)",
+                    "width": 3072,
+                    "height": 1296,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 3K 2:1 Ana 2.0x (3072 x 1536)",
+                    "width": 3072,
+                    "height": 1536,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 3K Full Ana 2.0x (3072 x 1620)",
+                    "width": 3072,
+                    "height": 1620,
+                    "aspectRatio": 3.7926
+                }
+            ]
+        },
+        {
+            "name": "RED 3K Spherical",
+            "items": [
+                {
+                    "name": "  RED 3K 6:5 (1944 x 1620)",
+                    "width": 1944,
+                    "height": 1620,
+                    "aspectRatio": 1.2
+                },
+                {
+                    "name": "  RED 3K 16:9 (2880 x 1620)",
+                    "width": 2880,
+                    "height": 1620,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 3K 3:2 (2880 x 1920)",
+                    "width": 2880,
+                    "height": 1920,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 3K 4:3 (2880 x 2160)",
+                    "width": 2880,
+                    "height": 2160,
+                    "aspectRatio": 1.33333
+                },
+                {
+                    "name": "  RED 3K 5:4 (2880 x 2304)",
+                    "width": 2880,
+                    "height": 2304,
+                    "aspectRatio": 1.25
+                },
+                {
+                    "name": "  RED 3K 8:1 (3072 x 384)",
+                    "width": 3072,
+                    "height": 384,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 3K 4:1 (3072 x 768)",
+                    "width": 3072,
+                    "height": 768,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 3K 2.39 WS (3072 x 1284)",
+                    "width": 3072,
+                    "height": 1284,
+                    "aspectRatio": 2.39252
+                },
+                {
+                    "name": "  RED 3K 2.37 WS (3072 x 1296)",
+                    "width": 3072,
+                    "height": 1296,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 3K 2:1 (3072 x 1536)",
+                    "width": 3072,
+                    "height": 1536,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 3K Full 17:9 (3072 x 1620)",
+                    "width": 3072,
+                    "height": 1620,
+                    "aspectRatio": 1.8963
+                }
+            ]
+        },
+        {
+            "name": "RED 3.5K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 3K Ana 2x (2112 x 1728)",
+                    "width": 2112,
+                    "height": 1728,
+                    "aspectRatio": 2.44444
+                },
+                {
+                    "name": "  RED 3.5K 3:2 (3360 x 2240)",
+                    "width": 3360,
+                    "height": 2240,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 3.5K 4:3 (3360 x 2520)",
+                    "width": 3360,
+                    "height": 2520,
+                    "aspectRatio": 1.33333
+                },
+                {
+                    "name": "  RED 3.5K 5:4 (3360 x 2688)",
+                    "width": 3360,
+                    "height": 2688,
+                    "aspectRatio": 1.25
+                },
+                {
+                    "name": "  RED 3.5K 16:9 (3456 x 1944)",
+                    "width": 3456,
+                    "height": 1944,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 3.5K 8:1 (3584 x 448)",
+                    "width": 3584,
+                    "height": 448,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 3.5K 4:1 (3584 x 896)",
+                    "width": 3584,
+                    "height": 896,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 3.5K 2.37 WS (3584 x 1512)",
+                    "width": 3584,
+                    "height": 1512,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 3.5K 2:1 (3584 x 1792)",
+                    "width": 3584,
+                    "height": 1792,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 3.5K Full (3584 x 1876)",
+                    "width": 3584,
+                    "height": 1876,
+                    "aspectRatio": 1.91045
+                },
+                {
+                    "name": "  RED 3K Ana 2.0x (2112 x 1728)",
+                    "width": 2112,
+                    "height": 1728,
+                    "aspectRatio": 2.44444
+                }
+            ]
+        },
+        {
+            "name": "RED 3.5K Spherical",
+            "items": [
+                {
+                    "name": "  RED 3.5K 3:2 (3360 x 2240)",
+                    "width": 3360,
+                    "height": 2240,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 3.5K 4:3 (3360 x 2520)",
+                    "width": 3360,
+                    "height": 2520,
+                    "aspectRatio": 1.33333
+                },
+                {
+                    "name": "  RED 3.5K 5:4 (3360 x 2688)",
+                    "width": 3360,
+                    "height": 2688,
+                    "aspectRatio": 1.25
+                },
+                {
+                    "name": "  RED 3.5K 16:9 (3456 x 1944)",
+                    "width": 3456,
+                    "height": 1944,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 3.5K 8:1 (3584 x 448)",
+                    "width": 3584,
+                    "height": 448,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 3.5K 4:1 (3584 x 896)",
+                    "width": 3584,
+                    "height": 896,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 3.5K 2.37 WS (3584 x 1512)",
+                    "width": 3584,
+                    "height": 1512,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 3.5K 2:1 (3584 x 1792)",
+                    "width": 3584,
+                    "height": 1792,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 3.5K Full (3584 x 1876)",
+                    "width": 3584,
+                    "height": 1876,
+                    "aspectRatio": 1.91045
+                }
+            ]
+        },
+        {
+            "name": "RED 4K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 4K Ana 1.3x (2816 x 2304)",
+                    "width": 2816,
+                    "height": 2304,
+                    "aspectRatio": 1.58886
+                },
+                {
+                    "name": "  RED 4K 6:5 Ana 1.3x (2592 x 2160)",
+                    "width": 2592,
+                    "height": 2160,
+                    "aspectRatio": 1.56
+                },
+                {
+                    "name": "  RED 4K 16:9 Ana 1.3x (3840 x 2160)",
+                    "width": 3840,
+                    "height": 2160,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 4K 3:2 Ana 1.3x (3840 x 2560)",
+                    "width": 3840,
+                    "height": 2560,
+                    "aspectRatio": 1.95
+                },
+                {
+                    "name": "  RED 4K 4:3 Ana 1.3x (3840 x 2880)",
+                    "width": 3840,
+                    "height": 2880,
+                    "aspectRatio": 1.733329
+                },
+                {
+                    "name": "  RED 4K 5:4 Ana 1.3x (3840 x 3072)",
+                    "width": 3840,
+                    "height": 3072,
+                    "aspectRatio": 1.625
+                },
+                {
+                    "name": "  RED 4K 8:1 Ana 1.3x (4096 x 512)",
+                    "width": 4096,
+                    "height": 512,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 4K 4:1 Ana 1.3x (4096 x 1024)",
+                    "width": 4096,
+                    "height": 1024,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 4K 2.39 WS Ana 1.3x (4096 x 1708)",
+                    "width": 4096,
+                    "height": 1708,
+                    "aspectRatio": 3.117569
+                },
+                {
+                    "name": "  RED 4K 2.37 WS Ana 1.3x (4096 x 1728)",
+                    "width": 4096,
+                    "height": 1728,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 4K 2:1 Ana 1.3x (4096 x 2048)",
+                    "width": 4096,
+                    "height": 2048,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 4K Full Ana 1.3x (4096 x 2160)",
+                    "width": 4096,
+                    "height": 2048,
+                    "aspectRatio": 2.46519
+                },
+                {
+                    "name": "  RED 4K 16:9 Ana 1.3x (4096 x 2304)",
+                    "width": 4096,
+                    "height": 2304,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 4K Full Ana 1.3x (4096 x 2160)",
+                    "width": 4096,
+                    "height": 2160,
+                    "aspectRatio": 2.46519
+                },
+                {
+                    "name": "  RED 4K 16:9 Ana 1.3x (4096 x 2304)",
+                    "width": 4096,
+                    "height": 2304,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 4K 1:1 Ana 1.3x (4320 x 4320)",
+                    "width": 4320,
+                    "height": 4320,
+                    "aspectRatio": 1.3
+                },
+                {
+                    "name": "  RED 4K Ana 2.0x (2816 x 2304)",
+                    "width": 2816,
+                    "height": 2304,
+                    "aspectRatio": 2.44444
+                },
+                {
+                    "name": "  RED 4K 6:5 Ana 2.0x (2592 x 2160)",
+                    "width": 2592,
+                    "height": 2160,
+                    "aspectRatio": 2.4
+                },
+                {
+                    "name": "  RED 4K 16:9 Ana 2.0x (3840 x 2160)",
+                    "width": 3840,
+                    "height": 2160,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 4K 3:2 Ana 2.0x (3840 x 2560)",
+                    "width": 3840,
+                    "height": 2560,
+                    "aspectRatio": 3.0
+                },
+                {
+                    "name": "  RED 4K 4:3 Ana 2.0x (3840 x 2880)",
+                    "width": 3840,
+                    "height": 2880,
+                    "aspectRatio": 2.66666
+                },
+                {
+                    "name": "  RED 4K 5:4 Ana 2.0x (3840 x 3072)",
+                    "width": 3840,
+                    "height": 3072,
+                    "aspectRatio": 2.5
+                },
+                {
+                    "name": "  RED 4K 8:1 Ana 2.0x (4096 x 512)",
+                    "width": 4096,
+                    "height": 512,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 4K 4:1 Ana 2.0x (4096 x 1024)",
+                    "width": 4096,
+                    "height": 1024,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 4K 2.39 WS Ana 2.0x (4096 x 1708)",
+                    "width": 4096,
+                    "height": 1708,
+                    "aspectRatio": 4.79626
+                },
+                {
+                    "name": "  RED 4K 2.37 WS Ana 2.0x (4096 x 1728)",
+                    "width": 4096,
+                    "height": 1728,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 4K 2:1 Ana 2.0x (4096 x 2048)",
+                    "width": 4096,
+                    "height": 2048,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 4K Full Ana 2.0x (4096 x 2160)",
+                    "width": 4096,
+                    "height": 2048,
+                    "aspectRatio": 3.7926
+                },
+                {
+                    "name": "  RED 4K 16:9 Ana 2.0x (4096 x 2304)",
+                    "width": 4096,
+                    "height": 2304,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 4K Full Ana 2.0x (4096 x 2160)",
+                    "width": 4096,
+                    "height": 2160,
+                    "aspectRatio": 3.7926
+                },
+                {
+                    "name": "  RED 4K 16:9 Ana 2.0x (4096 x 2304)",
+                    "width": 4096,
+                    "height": 2304,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 4K 1:1 Ana 2.0x (4320 x 4320)",
+                    "width": 4320,
+                    "height": 4320,
+                    "aspectRatio": 2
+                }
+            ]
+        },
+        {
+            "name": "RED 4K Spherical",
+            "items": [
+                {
+                    "name": "  RED 4K 6:5 (2592 x 2160)",
+                    "width": 2592,
+                    "height": 2160,
+                    "aspectRatio": 1.2
+                },
+                {
+                    "name": "  RED 4K 16:9 (3840 x 2160)",
+                    "width": 3840,
+                    "height": 2160,
+                    "aspectRatio": 1.77778
+                },
+                {
+                    "name": "  RED 4K 3:2 (3840 x 2560)",
+                    "width": 3840,
+                    "height": 2560,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 4K 4:3 (3840 x 2880)",
+                    "width": 3840,
+                    "height": 2880,
+                    "aspectRatio": 1.33333
+                },
+                {
+                    "name": "  RED 4K 5:4 (3840 x 3072)",
+                    "width": 3840,
+                    "height": 3072,
+                    "aspectRatio": 1.25
+                },
+                {
+                    "name": "  RED 4K 8:1 (4096 x 512)",
+                    "width": 4096,
+                    "height": 512,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 4K 4:1 (4096 x 1024)",
+                    "width": 4096,
+                    "height": 1024,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 4K 2.39 WS (4096 x 1708)",
+                    "width": 4096,
+                    "height": 1708,
+                    "aspectRatio": 2.39813
+                },
+                {
+                    "name": "  RED 4K 2.37 WS (4096 x 1728)",
+                    "width": 4096,
+                    "height": 1728,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 4K 2:1 (4096 x 2048)",
+                    "width": 4096,
+                    "height": 2048,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 4K Full 17:9 (4096 x 2160)",
+                    "width": 4096,
+                    "height": 2160,
+                    "aspectRatio": 1.8963
+                },
+                {
+                    "name": "  RED 4K 16:9 (4096 x 2304)",
+                    "width": 4096,
+                    "height": 2304,
+                    "aspectRatio": 1.77778
+                }
+            ]
+        },
+        {
+            "name": "RED 4.5K Anamorphic",
+            "items": [
+       
+                {
+                    "name": "  RED 4.5K 16:9 Ana 1.3x (4224 x 2376)",
+                    "width": 4224,
+                    "height": 2376,
+                    "aspectRatio": 2.31101
+                },
+                {
+                    "name": "  RED 4.5K HD Ana 1.3x (4320 x 2376)",
+                    "width": 4320,
+                    "height": 2376,
+                    "aspectRatio": 2.36634
+                },
+                {
+                    "name": "  RED 4.5K 3:2 Ana 1.3x (4320 x 2880)",
+                    "width": 4320,
+                    "height": 2880,
+                    "aspectRatio": 1.95
+                },
+                {
+                    "name": "  RED 4.5K 4:5 Ana 1.3x (4320 x 3240)",
+                    "width": 4320,
+                    "height": 3240,
+                    "aspectRatio": 1.733329
+                },
+                {
+                    "name": "  RED 4.5K 5:4 Ana 1.3x (4320 x 3456)",
+                    "width": 4320,
+                    "height": 3456,
+                    "aspectRatio": 1.625
+                },
+                {
+                    "name": "  RED 4.5K 2.33 WS Ana 1.3x (4480 x 1920)",
+                    "width": 4480,
+                    "height": 1920,
+                    "aspectRatio": 3.033329
+                },
+                {
+                    "name": "  RED 4.5K 8:1 Ana 1.3x (4608 x 576)",
+                    "width": 4608,
+                    "height": 576,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 4.5K 4:1 Ana 1.3x (4608 x 1152)",
+                    "width": 4608,
+                    "height": 1152,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 4.5K 2.37 WS Ana 1.3x (4608 x 1944)",
+                    "width": 4608,
+                    "height": 1944,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 4.5K 2:1 Ana 1.3x (4608 x 2304)",
+                    "width": 4608,
+                    "height": 2304,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 4.5K Full Ana 1.3x (4608 x 2412)",
+                    "width": 4608,
+                    "height": 2412,
+                    "aspectRatio": 2.483585
+                },
+                {
+                    "name": "  RED 4.5K Full Ana 1.3x (4608 x 2432)",
+                    "width": 4608,
+                    "height": 2432,
+                    "aspectRatio": 2.27388
+                },
+                {
+                    "name": "  RED 4.5K 16:9 Ana 2.0x (4224 x 2376)",
+                    "width": 4224,
+                    "height": 2376,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 4.5K HD Ana 2.0x (4320 x 2376)",
+                    "width": 4320,
+                    "height": 2376,
+                    "aspectRatio": 3.63636
+                },
+                {
+                    "name": "  RED 4.5K 3:2 Ana 2.0x (4320 x 2880)",
+                    "width": 4320,
+                    "height": 2880,
+                    "aspectRatio": 3
+                },
+                {
+                    "name": "  RED 4.5K 4:5 Ana 2.0x (4320 x 3240)",
+                    "width": 4320,
+                    "height": 3240,
+                    "aspectRatio": 2.66666
+                },
+                {
+                    "name": "  RED 4.5K 5:4 Ana 2.0x (4320 x 3456)",
+                    "width": 4320,
+                    "height": 3456,
+                    "aspectRatio": 2.5
+                },
+                {
+                    "name": "  RED 4.5K 2.33 WS Ana 2.0x (4480 x 1920)",
+                    "width": 4480,
+                    "height": 1920,
+                    "aspectRatio": 4.66666
+                },
+                {
+                    "name": "  RED 4.5K 8:1 Ana 2.0x (4608 x 576)",
+                    "width": 4608,
+                    "height": 576,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 4.5K 4:1 Ana 2.0x (4608 x 1152)",
+                    "width": 4608,
+                    "height": 1152,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 4.5K 2.37 WS Ana 2.0x (4608 x 1944)",
+                    "width": 4608,
+                    "height": 1944,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 4.5K 2:1 Ana 2.0x (4608 x 2304)",
+                    "width": 4608,
+                    "height": 2304,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 4.5K Full Ana 2.0x (4608 x 2412)",
+                    "width": 4608,
+                    "height": 2412,
+                    "aspectRatio": 3.8209
+                },
+                {
+                    "name": "  RED 4.5K Full Ana 2.0x (4608 x 2432)",
+                    "width": 4608,
+                    "height": 2432,
+                    "aspectRatio": 3.78948
+                }
+            ]
+        },
+        {
+            "name": "RED 4.5K Spherical",
+            "items": [
+                {
+                    "name": "  RED 4.5K 16:9 (4224 x 2376)",
+                    "width": 4224,
+                    "height": 2376,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 4.5K HD (4320 x 2376)",
+                    "width": 4320,
+                    "height": 2376,
+                    "aspectRatio": 1.81818
+                },
+                {
+                    "name": "  RED 4.5K 3:2 (4320 x 2880)",
+                    "width": 4320,
+                    "height": 2880,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 4.5K 4:5 (4320 x 3240)",
+                    "width": 4320,
+                    "height": 3240,
+                    "aspectRatio": 1.33333
+                },
+                {
+                    "name": "  RED 4.5K 5:4 (4320 x 3456)",
+                    "width": 4320,
+                    "height": 3456,
+                    "aspectRatio": 1.25
+                },
+                {
+                    "name": "  RED 4K 1:1 (4320 x 4320)",
+                    "width": 4320,
+                    "height": 4320,
+                    "aspectRatio": 1
+                },
+                {
+                    "name": "  RED 4.5K 2.33 WS (4480 x 1920)",
+                    "width": 4480,
+                    "height": 1920,
+                    "aspectRatio": 2.33333
+                },
+                {
+                    "name": "  RED 4.5K 8:1 (4608 x 576)",
+                    "width": 4608,
+                    "height": 576,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 4.5K 4:1 (4608 x 1152)",
+                    "width": 4608,
+                    "height": 1152,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 4.5K 2.37 WS (4608 x 1944)",
+                    "width": 4608,
+                    "height": 1944,
+                    "aspectRatio": 2.37027
+                },
+                {
+                    "name": "  RED 4.5K 2:1 (4608 x 2304)",
+                    "width": 4608,
+                    "height": 2304,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 4.5K Full (4608 x 2412)",
+                    "width": 4608,
+                    "height": 2412,
+                    "aspectRatio": 1.91045
+                },
+                {
+                    "name": "  RED 4.5K Full (4608 x 2432)",
+                    "width": 4608,
+                    "height": 2432,
+                    "aspectRatio": 1.89474
+                }
+            ]
+        },
+        {
+            "name": "RED 5K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 5K 6:5 Ana 1.3x (3240 x 2700)",
+                    "width": 3240,
+                    "height": 2700,
+                    "aspectRatio": 1.56
+                },
+                {
+                    "name": "  RED 5K 1.2 Ana 1.3x (3300 x 2700)",
+                    "width": 3300,
+                    "height": 2700,
+                    "aspectRatio": 1.58886
+                },
+                {
+                    "name": "  RED 5K 16:9 Ana 1.3x (4800 x 2700)",
+                    "width": 4800,
+                    "height": 2700,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 5K 8:1 Ana 1.3x (5120 x 640)",
+                    "width": 5120,
+                    "height": 640,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 5K 4:1 Ana 1.3x (5120 x 1280)",
+                    "width": 5120,
+                    "height": 1280,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 5K 2.37 WS Ana 1.3x (5120 x 2160)",
+                    "width": 5120,
+                    "height": 2160,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 5K 2:1 Ana 1.3x (5120 x 2560)",
+                    "width": 5120,
+                    "height": 2560,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 5K Full Ana 1.3x (5120 x 2700)",
+                    "width": 5120,
+                    "height": 2700,
+                    "aspectRatio": 2.46519
+                },
+                {
+                    "name": "  RED 5K 6:5 Ana 2.0x (3240 x 2700)",
+                    "width": 3240,
+                    "height": 2700,
+                    "aspectRatio": 2.4
+                },
+                {
+                    "name": "  RED 5K 1.2 Ana 2.0x (3300 x 2700)",
+                    "width": 3300,
+                    "height": 2700,
+                    "aspectRatio": 2.4444
+                },
+                {
+                    "name": "  RED 5K 16:9 Ana 2.0x (4800 x 2700)",
+                    "width": 4800,
+                    "height": 2700,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 5K 8:1 Ana 2.0x (5120 x 640)",
+                    "width": 5120,
+                    "height": 640,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 5K 4:1 Ana 2.0x (5120 x 1280)",
+                    "width": 5120,
+                    "height": 1280,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 5K 2.37 WS Ana 2.0x (5120 x 2160)",
+                    "width": 5120,
+                    "height": 2160,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 5K 2:1 Ana 2.0x (5120 x 2560)",
+                    "width": 5120,
+                    "height": 2560,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 5K Full Ana 2.0x (5120 x 2700)",
+                    "width": 5120,
+                    "height": 2700,
+                    "aspectRatio": 3.7924
+                }
+            ]
+        },
+        {
+            "name": "RED 5K Spherical",
+            "items": [
+                {
+                    "name": "  RED 5K 6:5 (3240 x 2700)",
+                    "width": 3240,
+                    "height": 2700,
+                    "aspectRatio": 1.2
+                },
+                {
+                    "name": "  RED 5K 1.2 (3300 x 2700)",
+                    "width": 3300,
+                    "height": 2700,
+                    "aspectRatio": 1.2222
+                },
+                {
+                    "name": "  RED 5K 16:9 (4800 x 2700)",
+                    "width": 4800,
+                    "height": 2700,
+                    "aspectRatio": 1.77778
+                },
+                {
+                    "name": "  RED 5K 8:1 (5120 x 640)",
+                    "width": 5120,
+                    "height": 640,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 5K 4:1 (5120 x 1280)",
+                    "width": 5120,
+                    "height": 1280,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 5K 2.37 WS (5120 x 2160)",
+                    "width": 5120,
+                    "height": 2160,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 5K 2:1 (5120 x 2560)",
+                    "width": 5120,
+                    "height": 2560,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 5K Full 17:9 (5120 x 2700)",
+                    "width": 5120,
+                    "height": 2700,
+                    "aspectRatio": 1.8963
+                }
+            ]
+        },
+        {
+            "name": "RED 5.5K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 5K Ana 1.3x (3296 x 2700)",
+                    "width": 3296,
+                    "height": 2700,
+                    "aspectRatio": 1.586962
+                },
+                {
+                    "name": "  RED 5.5K 16:9 Ana 1.3x (5376 x 3024)",
+                    "width": 5376,
+                    "height": 3024,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 5.5K 8:1 Ana 1.3x (5632 x 704)",
+                    "width": 5632,
+                    "height": 704,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 5.5K 4:1 Ana 1.3x (5632 x 1408)",
+                    "width": 5632,
+                    "height": 1408,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 5.5K 2.37 WS Ana 1.3x (5632 x 2376)",
+                    "width": 5632,
+                    "height": 2376,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 5.5K 2:1 Ana 1.3x (5632 x 2816)",
+                    "width": 5632,
+                    "height": 2816,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 5.5K Full Ana 1.3x (5632 x 2948)",
+                    "width": 5632,
+                    "height": 2948,
+                    "aspectRatio": 2.483585
+                },
+                {
+                    "name": "  RED 5K Ana 2.0x (3296 x 2700)",
+                    "width": 3296,
+                    "height": 2700,
+                    "aspectRatio": 2.44148
+                },
+                {
+                    "name": "  RED 5.5K 16:9 Ana 2.0x (5376 x 3024)",
+                    "width": 5376,
+                    "height": 3024,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 5.5K 8:1 Ana 2.0x (5632 x 704)",
+                    "width": 5632,
+                    "height": 704,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 5.5K 4:1 Ana 2.0x (5632 x 1408)",
+                    "width": 5632,
+                    "height": 1408,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 5.5K 2.37 WS Ana 2.0x (5632 x 2376)",
+                    "width": 5632,
+                    "height": 2376,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 5.5K 2:1 Ana 2.0x (5632 x 2816)",
+                    "width": 5632,
+                    "height": 2816,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 5.5K Full Ana 2.0x (5632 x 2948)",
+                    "width": 5632,
+                    "height": 2948,
+                    "aspectRatio": 3.8209
+                }
+            ]
+        },
+        {
+            "name": "RED 5.5K Spherical",
+            "items": [
+                {
+                    "name": "  RED 5.5K 16:9 (5376 x 3024)",
+                    "width": 5376,
+                    "height": 3024,
+                    "aspectRatio": 1.77778
+                },
+                {
+                    "name": "  RED 5.5K 8:1 (5632 x 704)",
+                    "width": 5632,
+                    "height": 704,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 5.5K 4:1 (5632 x 1408)",
+                    "width": 5632,
+                    "height": 1408,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 5.5K 2.37 WS (5632 x 2376)",
+                    "width": 5632,
+                    "height": 2376,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 5.5K 2:1 (5632 x 2816)",
+                    "width": 5632,
+                    "height": 2816,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 5.5K Full (5632 x 2948)",
+                    "width": 5632,
+                    "height": 2948,
+                    "aspectRatio": 1.91045
+                }
+            ]
+        },
+        {
+            "name": "RED 6K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 6K 6:5 Ana 1.3x (3792 x 3160)",
+                    "width": 3792,
+                    "height": 3160,
+                    "aspectRatio": 1.56
+                },
+                {
+                    "name": "  RED 6K 6:5 Ana 1.3x (3888 x 3240)",
+                    "width": 3888,
+                    "height": 3240,
+                    "aspectRatio": 1.56
+                },
+                {
+                    "name": "  RED 6K 3:2 Ana 1.3x (4752 x 3160)",
+                    "width": 4752,
+                    "height": 3160,
+                    "aspectRatio": 1.95
+                },
+                {
+                    "name": "  RED 6K 16:9 Ana 1.3x (5568 x 3132)",
+                    "width": 5568,
+                    "height": 3132,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 6K 16:9 Ana 1.3x (5760 x 3240)",
+                    "width": 5760,
+                    "height": 3240,
+                    "aspectRatio": 2.31101
+                },
+                {
+                    "name": "  RED 6K 3:2 Ana 1.3x (5760 x 3840)",
+                    "width": 5760,
+                    "height": 3840,
+                    "aspectRatio": 1.95
+                },
+                {
+                    "name": "  RED 6K 4:3 Ana 1.3x (5760 x 4320)",
+                    "width": 5760,
+                    "height": 4320,
+                    "aspectRatio": 1.733329
+                },
+                {
+                    "name": "  RED 6K 8:1 Ana 1.3x (6144 x 768)",
+                    "width": 6144,
+                    "height": 768,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 6K 4:1 Ana 1.3x (6144 x 1536)",
+                    "width": 6144,
+                    "height": 1536,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 6K 2.37 WS Ana 1.3x (6144 x 2592)",
+                    "width": 6144,
+                    "height": 2592,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 6K 2:1 Ana 1.3x (6144 x 3072)",
+                    "width": 6144,
+                    "height": 3072,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 6K Full Ana 1.3x (6144 x 3160)",
+                    "width": 6144,
+                    "height": 3160,
+                    "aspectRatio": 2.59259
+                },
+                {
+                    "name": "  RED 6K Full Ana 1.3x (6144 x 3240)",
+                    "width": 6144,
+                    "height": 3240,
+                    "aspectRatio": 2.46519
+                },
+                {
+                    "name": "  RED 6K 6:5 Ana 2.0x (3792 x 3160)",
+                    "width": 3792,
+                    "height": 3160,
+                    "aspectRatio": 2.4
+                },
+                {
+                    "name": "  RED 6K 6:5 Ana 2.0x (3888 x 3240)",
+                    "width": 3888,
+                    "height": 3240,
+                    "aspectRatio": 2.4
+                },
+                {
+                    "name": "  RED 6K 3:2 Ana 2.0x (4752 x 3160)",
+                    "width": 4752,
+                    "height": 3160,
+                    "aspectRatio": 3.0
+                },
+                {
+                    "name": "  RED 6K 16:9 Ana 2.0x (5568 x 3132)",
+                    "width": 5568,
+                    "height": 3132,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 6K 16:9 Ana 2.0x (5760 x 3240)",
+                    "width": 5760,
+                    "height": 3240,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 6K 3:2 Ana 2.0x (5760 x 3840)",
+                    "width": 5760,
+                    "height": 3840,
+                    "aspectRatio": 3
+                },
+                {
+                    "name": "  RED 6K 4:3 Ana 2.0x (5760 x 4320)",
+                    "width": 5760,
+                    "height": 4320,
+                    "aspectRatio": 2.6666
+                },
+                {
+                    "name": "  RED 6K 8:1 Ana 2.0x (6144 x 768)",
+                    "width": 6144,
+                    "height": 768,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 6K 4:1 Ana 2.0x (6144 x 1536)",
+                    "width": 6144,
+                    "height": 1536,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 6K 2.37 WS Ana 2.0x (6144 x 2592)",
+                    "width": 6144,
+                    "height": 2592,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 6K 2:1 Ana 2.0x (6144 x 3072)",
+                    "width": 6144,
+                    "height": 3072,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 6K Full Ana 2.0x (6144 x 3160)",
+                    "width": 6144,
+                    "height": 3160,
+                    "aspectRatio": 3.8886
+                },
+                {
+                    "name": "  RED 6K Full Ana 2.0x (6144 x 3240)",
+                    "width": 6144,
+                    "height": 3240,
+                    "aspectRatio": 3.7926
+                }
+            ]
+        },
+        {
+            "name": "RED 6K Spherical",
+            "items": [
+                {
+                    "name": "  RED 6K 6:5 (3792 x 3160)",
+                    "width": 3792,
+                    "height": 3160,
+                    "aspectRatio": 1.2
+                },
+                {
+                    "name": "  RED 6K 6:5 (3888 x 3240)",
+                    "width": 3888,
+                    "height": 3240,
+                    "aspectRatio": 1.2
+                },
+                {
+                    "name": "  RED 6K 3:2 (4752 x 3160)",
+                    "width": 4752,
+                    "height": 3160,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 6K 16:9 (5568 x 3132)",
+                    "width": 5568,
+                    "height": 3132,
+                    "aspectRatio": 1.77778
+                },
+                {
+                    "name": "  RED 6K 16:9 (5760 x 3240)",
+                    "width": 5760,
+                    "height": 3240,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 6K 3:2 (5760 x 3840)",
+                    "width": 5760,
+                    "height": 3840,
+                    "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 6K 4:3 (5760 x 4320)",
+                    "width": 5760,
+                    "height": 4320,
+                    "aspectRatio": 1.33333
+                },
+                {
+                    "name": "  RED 6K 8:1 (6144 x 768)",
+                    "width": 6144,
+                    "height": 768,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 6K 4:1 (6144 x 1536)",
+                    "width": 6144,
+                    "height": 1536,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 6K 2.37 WS (6144 x 2592)",
+                    "width": 6144,
+                    "height": 2592,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 6K 2:1 (6144 x 3072)",
+                    "width": 6144,
+                    "height": 3072,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 6K Full (6144 x 3160)",
+                    "width": 6144,
+                    "height": 3160,
+                    "aspectRatio": 1.9443
+                },
+                {
+                    "name": "  RED 6K Full 17:9 (6144 x 3240)",
+                    "width": 6144,
+                    "height": 3240,
+                    "aspectRatio": 1.8963
+                }
+            ]
+        },
+        {
+            "name": "RED 6.5K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 6.5K 16:9 Ana 1.3x (6144 x 3456)",
+                    "width": 6144,
+                    "height": 3456,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 6.5K 8:1 Ana 1.3x (6656 x 832)",
+                    "width": 6656,
+                    "height": 832,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 6.5K 4:1 Ana 1.3x (6656 x 1664)",
+                    "width": 6656,
+                    "height": 1664,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 6.5K 2.37 WS Ana 1.3x (6656 x 2808)",
+                    "width": 6656,
+                    "height": 2808,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 6.5K 2:1 Ana 1.3x (6656 x 3328)",
+                    "width": 6656,
+                    "height": 3328,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 6.5K Full Ana 1.3x (6656 x 3536)",
+                    "width": 6656,
+                    "height": 3536,
+                    "aspectRatio": 2.447055
+                },
+                {
+                    "name": "  RED 6.5K 16:9 Ana 2.0x (6144 x 3456)",
+                    "width": 6144,
+                    "height": 3456,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 6.5K 8:1 Ana 2.0x (6656 x 832)",
+                    "width": 6656,
+                    "height": 832,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 6.5K 4:1 Ana 2.0x (6656 x 1664)",
+                    "width": 6656,
+                    "height": 1664,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 6.5K 2.37 WS Ana 2.0x (6656 x 2808)",
+                    "width": 6656,
+                    "height": 2808,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 6.5K 2:1 Ana 2.0x (6656 x 3328)",
+                    "width": 6656,
+                    "height": 3328,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 6.5K Full Ana 2.0x (6656 x 3536)",
+                    "width": 6656,
+                    "height": 3536,
+                    "aspectRatio": 3.7647
+                }
+            ]
+        },
+        {
+            "name": "RED 6.5K Spherical",
+            "items": [
+                {
+                    "name": "  RED 6.5K 16:9 (6144 x 3456)",
+                    "width": 6144,
+                    "height": 3456,
+                    "aspectRatio": 1.7777
+                },
+                {
+                    "name": "  RED 6.5K 8:1 (6656 x 832)",
+                    "width": 6656,
+                    "height": 832,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 6.5K 4:1 (6656 x 1664)",
+                    "width": 6656,
+                    "height": 1664,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 6.5K 2.37 WS (6656 x 2808)",
+                    "width": 6656,
+                    "height": 2808,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 6.5K 2:1 (6656 x 3328)",
+                    "width": 6656,
+                    "height": 3328,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 6.5K Full (6656 x 3536)",
+                    "width": 6656,
+                    "height": 3536,
+                    "aspectRatio": 1.88235
+                }
+            ]
+        },
+        {
+            "name": "RED 7K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 7K 6:5 Ana 1.3x (4536 x 3780)",
+                    "width": 4536,
+                    "height": 3780,
+                    "aspectRatio": 1.56
+                },
+                {
+                    "name": "  RED 7K 16:9 Ana 1.3x (6720 x 3780)",
+                    "width": 6720,
+                    "height": 3780,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 7K 8:1 Ana 1.3x (7168 x 896)",
+                    "width": 7168,
+                    "height": 896,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 7K 4:1 Ana 1.3x (7168 x 1792)",
+                    "width": 7168,
+                    "height": 1792,
+                    "aspectRatio": 5.2
+                },
+                {
+                    "name": "  RED 7K 2:1 Ana 1.3x (7168 x 3024)",
+                    "width": 7168,
+                    "height": 3024,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 7K 2.37 WS Ana 1.3x (7168 x 3584)",
+                    "width": 7168,
+                    "height": 3584,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 7K Full Ana 1.3x (7168 x 3780)",
+                    "width": 7168,
+                    "height": 3780,
+                    "aspectRatio": 2.46519
+                },
+                {
+                    "name": "  RED 7K 6:5 Ana 2.0x (4536 x 3780)",
+                    "width": 4536,
+                    "height": 3780,
+                    "aspectRatio": 2.4
+                },
+                {
+                    "name": "  RED 7K 16:9 Ana 2.0x (6720 x 3780)",
+                    "width": 6720,
+                    "height": 3780,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 7K 8:1 Ana 2.0x (7168 x 896)",
+                    "width": 7168,
+                    "height": 896,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 7K 4:1 Ana 2.0x (7168 x 1792)",
+                    "width": 7168,
+                    "height": 1792,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 7K 2:1 Ana 2.0x (7168 x 3024)",
+                    "width": 7168,
+                    "height": 3024,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 7K 2.37 WS Ana 2.0x (7168 x 3584)",
+                    "width": 7168,
+                    "height": 3584,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 7K Full Ana 2.0x (7168 x 3780)",
+                    "width": 7168,
+                    "height": 3780,
+                    "aspectRatio": 3.7926
+                }
+            ]
+        },
+        {
+            "name": "RED 7K Spherical",
+            "items": [
+                {
+                    "name": "  RED 7K 6:5 (4536 x 3780)",
+                    "width": 4536,
+                    "height": 3780,
+                    "aspectRatio": 1.2
+                },
+                {
+                    "name": "  RED 7K 16:9 (6720 x 3780)",
+                    "width": 6720,
+                    "height": 3780,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 7K 8:1 (7168 x 896)",
+                    "width": 7168,
+                    "height": 896,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 7K 4:1 (7168 x 1792)",
+                    "width": 7168,
+                    "height": 1792,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 7K 2:1 (7168 x 3024)",
+                    "width": 7168,
+                    "height": 3024,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 7K 2.37 WS (7168 x 3584)",
+                    "width": 7168,
+                    "height": 3584,
+                    "aspectRatio": 2.37027
+                },
+                {
+                    "name": "  RED 7K Full 17:9 (7168 x 3780)",
+                    "width": 7168,
+                    "height": 3780,
+                    "aspectRatio": 1.8963
+                }
+            ]
+        },
+        {
+            "name": "RED 7.5K Anamorphic",
+            "items": [
+                {
+                    "name": "  RED 7.5K 16:9 Ana 1.3x (7296 x 4104)",
+                    "width": 7296,
+                    "height": 4104,
+                    "aspectRatio": 2.311101
+                },
+                {
+                    "name": "  RED 7.5K 8:1 Ana 1.3x (7680 x 960)",
+                    "width": 7680,
+                    "height": 960,
+                    "aspectRatio": 10.4
+                },
+                {
+                    "name": "  RED 7.5K 4:1 Ana 1.3x (7680 x 1920)",
+                    "width": 7680,
+                    "height": 1920,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 7.5K 2.37 WS Ana 1.3x (7680 x 3240)",
+                    "width": 7680,
+                    "height": 3240,
+                    "aspectRatio": 3.081481
+                },
+                {
+                    "name": "  RED 7.5K 2:1 Ana 1.3x (7680 x 3840)",
+                    "width": 7680,
+                    "height": 3840,
+                    "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 7.5K Full Ana 1.3x (7680 x 4080)",
+                    "width": 7680,
+                    "height": 4080,
+                    "aspectRatio": 2.447055
+                },
+                {
+                    "name": "  RED 7.5K 16:9 Ana 2.0x (7296 x 4104)",
+                    "width": 7296,
+                    "height": 4104,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 7.5K 8:1 Ana 2.0x (7680 x 960)",
+                    "width": 7680,
+                    "height": 960,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 7.5K 4:1 Ana 2.0x (7680 x 1920)",
+                    "width": 7680,
+                    "height": 1920,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 7.5K 2.37 WS Ana 2.0x (7680 x 3240)",
+                    "width": 7680,
+                    "height": 3240,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 7.5K 2:1 Ana 2.0x (7680 x 3840)",
+                    "width": 7680,
+                    "height": 3840,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 7.5K Full Ana 2.0x (7680 x 4080)",
+                    "width": 7680,
+                    "height": 4080,
+                    "aspectRatio": 3.7647
+                }
+            ]
+        },
+        {
+            "name": "RED 7.5K Spherical",
+            "items": [
+                {
+                    "name": "  RED 7.5K 16:9 (7296 x 4104)",
+                    "width": 7296,
+                    "height": 4104,
+                    "aspectRatio": 1.77777
+                },
+                {
+                    "name": "  RED 7.5K 8:1 (7680 x 960)",
+                    "width": 7680,
+                    "height": 960,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 7.5K 4:1 (7680 x 1920)",
+                    "width": 7680,
+                    "height": 1920,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 7.5K 2.37 WS (7680 x 3240)",
+                    "width": 7680,
+                    "height": 3240,
+                    "aspectRatio": 2.37037
+                },
+                {
+                    "name": "  RED 7.5K 2:1 (7680 x 3840)",
+                    "width": 7680,
+                    "height": 3840,
+                    "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 7.5K Full (7680 x 4080)",
+                    "width": 7680,
+                    "height": 4080,
+                    "aspectRatio": 1.88235
+                }
+            ]
+        },
+        {
+            "name": "RED 8K Anamorphic",
+            "items": [
+                {
+                     "name": "  RED 8K 8:9 Ana 1.3x (3840 x 4320)",
+                     "width": 3840,
+                     "height": 4320,
+                     "aspectRatio": 1.1555557
+                },
+                {
+                     "name": "  RED 8K 6:5 Ana 1.3x (5184 x 4320)",
+                     "width": 5184,
+                     "height": 4320,
+                     "aspectRatio": 1.56
+                },
+                {
+                     "name": "  RED 8K 3:2 Ana 1.3x (6480 x 4320)",
+                     "width": 6480,
+                     "height": 4320,
+                     "aspectRatio": 1.95
+                },
+                {
+                    "name": "  RED 8K 14:9 Ana 1.3x (6720 x 4320)",
+                    "width": 6720,
+                    "height": 4320,
+                    "aspectRatio": 2.022228
+                },
+                {
+                     "name": "  RED 8K 16:9 Ana 1.3x (7680 x 4320)",
+                     "width": 7680,
+                     "height": 4320,
+                     "aspectRatio": 2.311101
+                },
+                {
+                     "name": "  RED 8K 8:1 Ana 1.3x (8192 x 1024)",
+                     "width": 8192,
+                     "height": 1024,
+                     "aspectRatio": 10.4
+                },
+                {
+                     "name": "  RED 8K 4:1 Ana 1.3x (8192 x 2048)",
+                     "width": 8192,
+                     "height": 2048,
+                     "aspectRatio": 5.2
+                },
+                {
+                     "name": "  RED 8K 2.37 WS Ana 1.3x (8192 x 3456)",
+                     "width": 8192,
+                     "height": 3456,
+                     "aspectRatio": 3.081481
+                },
+                {
+                     "name": "  RED 8K 2:1 Ana 1.3x (8192 x 4096)",
+                     "width": 8192,
+                     "height": 4096,
+                     "aspectRatio": 2.6
+                },
+                {
+                    "name": "  RED 8K Full Ana 1.3x (8192 x 4320)",
+                    "width": 8192,
+                    "height": 4320,
+                    "aspectRatio": 2.46519
+                },
+                {
+                    "name": "  RED 8K 8:9 Ana 2x (3840 x 4320)",
+                    "width": 3840,
+                    "height": 4320,
+                    "aspectRatio": 1.77778
+                },
+                {
+                    "name": "  RED 8K 6:5 Ana 2.0x (5184 x 4320)",
+                    "width": 5184,
+                    "height": 4320,
+                    "aspectRatio": 2.4
+                },
+                {
+                    "name": "  RED 8K 3:2 Ana 2.0x (6480 x 4320)",
+                    "width": 6480,
+                    "height": 4320,
+                    "aspectRatio": 3
+                },
+                {
+                    "name": "  RED 8K 14:9 Ana 2.0x (6720 x 4320)",
+                    "width": 6720,
+                    "height": 4320,
+                    "aspectRatio": 3.11112
+                },
+                {
+                    "name": "  RED 8K 16:9 Ana 2.0x (7680 x 4320)",
+                    "width": 7680,
+                    "height": 4320,
+                    "aspectRatio": 3.55554
+                },
+                {
+                    "name": "  RED 8K 8:1 Ana 2.0x (8192 x 1024)",
+                    "width": 8192,
+                    "height": 1024,
+                    "aspectRatio": 16
+                },
+                {
+                    "name": "  RED 8K 4:1 Ana 2.0x (8192 x 2048)",
+                    "width": 8192,
+                    "height": 2048,
+                    "aspectRatio": 8
+                },
+                {
+                    "name": "  RED 8K 2.37 WS Ana 2.0x (8192 x 3456)",
+                    "width": 8192,
+                    "height": 3456,
+                    "aspectRatio": 4.74074
+                },
+                {
+                    "name": "  RED 8K 2:1 Ana 2.0x (8192 x 4096)",
+                    "width": 8192,
+                    "height": 4096,
+                    "aspectRatio": 4
+                },
+                {
+                    "name": "  RED 8K Full Ana 2.0x (8192 x 4320)",
+                    "width": 8192,
+                    "height": 4320,
+                    "aspectRatio": 3.7926
+                }
+            ]
+        },
+        {
+            "name": "RED 8K Spherical",
+            "items": [
+                {
+                     "name": "  RED 8K 8:9 (3840 x 4320)",
+                     "width": 3840,
+                     "height": 4320,
+                     "aspectRatio": 0.888889
+                },
+                {
+                     "name": "  RED 8K 6:5 (5184 x 4320)",
+                     "width": 5184,
+                     "height": 4320,
+                     "aspectRatio": 1.2
+                },
+                {
+                     "name": "  RED 8K 3:2 (6480 x 4320)",
+                     "width": 6480,
+                     "height": 4320,
+                     "aspectRatio": 1.5
+                },
+                {
+                    "name": "  RED 8K 14:9 (6720 x 4320)",
+                    "width": 6720,
+                    "height": 4320,
+                    "aspectRatio": 1.55556
+                },
+                {
+                     "name": "  RED 8K 16:9 (7680 x 4320)",
+                     "width": 7680,
+                     "height": 4320,
+                     "aspectRatio": 1.77777
+                },
+                {
+                     "name": "  RED 8K 8:1 (8192 x 1024)",
+                     "width": 8192,
+                     "height": 1024,
+                     "aspectRatio": 8
+                },
+                {
+                     "name": "  RED 8K 4:1 (8192 x 2048)",
+                     "width": 8192,
+                     "height": 2048,
+                     "aspectRatio": 4
+                },
+                {
+                     "name": "  RED 8K 2.37 WS (8192 x 3456)",
+                     "width": 8192,
+                     "height": 3456,
+                     "aspectRatio": 2.37037
+                },
+                {
+                     "name": "  RED 8K 2:1 (8192 x 4096)",
+                     "width": 8192,
+                     "height": 4096,
+                     "aspectRatio": 2
+                },
+                {
+                    "name": "  RED 8K Full 17:9 (8192 x 4320)",
+                    "width": 8192,
+                    "height": 4320,
+                    "aspectRatio": 1.8963
+                }
+            ]
+        }
+    ]
+},
+{
+    "name": "Sony Cameras",
+    "priority": 1600,
+    "items": [
+        {
+            "name": "Sony 2K 17:9 (2048 x 1080)",
+            "width": 2048,
+            "height": 1080
+        },
+        {
+            "name": "Sony 3.8K 16:9 (3840 x 2160)",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "name": "Sony 4K Super35 2.39 (4096 x 1716)",
+            "width": 4096,
+            "height": 1716
+        },
+        {
+            "name": "Sony 4K 17:9 (4096 x 2160)",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "name": "Sony 4K 17:9 Ana 1.25x (4096 x 2160)",
+            "width": 4096,
+            "height": 2160,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 4K 17:9 Ana 1.3x (4096 x 2160)",
+            "width": 4096,
+            "height": 2160,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 4K 17:9 Ana 2.0x (4096 x 2160)",
+            "width": 4096,
+            "height": 2160,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 4K 4:3 (4096 x 3024)",
+            "width": 4096,
+            "height": 3024
+        },
+        {
+            "name": "Sony 4K 4:3 Ana 1.3x (4096 x 3024)",
+            "width": 4096,
+            "height": 3024,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 4K 4:3 Ana 2.0x (4096 x 3024)",
+            "width": 4096,
+            "height": 3024,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 4K 6:5 (4096 x 3432)",
+            "width": 4096,
+            "height": 3432
+        },
+        {
+            "name": "Sony 4K 6:5 Ana 2.0x (4096 x 3432)",
+            "width": 4096,
+            "height": 3432,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 5.4K 16:9 (5434 x 3056)",
+            "width": 5434,
+            "height": 3056
+        },
+        {
+            "name": "Sony 5.4K 16:9 Ana 1.25x (5434 x 3056)",
+            "width": 5434,
+            "height": 3056,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 5.4K 16:9 Ana 1.3x (5434 x 3056)",
+            "width": 5434,
+            "height": 3056,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 5.4K 16:9 Ana 2.0x (5434 x 3056)",
+            "width": 5434,
+            "height": 3056,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 5.4K 2.39:1 (5480 x 2296)",
+            "width": 5480,
+            "height": 2296
+        },
+        {
+            "name": "Sony 5.7K 16:9 (5670 x 3190)",
+            "width": 5670,
+            "height": 3190
+        },
+        {
+            "name": "Sony 5.7K 16:9 (5672 x 3190)",
+            "width": 5672,
+            "height": 3190
+        },
+        {
+            "name": "Sony 5.7K 16:9 (5674 x 3192)",
+            "width": 5674,
+            "height": 3192
+        },
+        {
+            "name": "Sony 5.8K 17:9 (5760 x 3036)",
+            "width": 5760,
+            "height": 3036
+        },
+        {
+            "name": "Sony 5.8K 17:9 Ana 1.25x (5760 x 3036)",
+            "width": 5760,
+            "height": 3036,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 5.8K 17:9 Ana 1.3x (5760 x 3036)",
+            "width": 5760,
+            "height": 3036,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 5.8K 17:9 Ana 2.0x (5760 x 3036)",
+            "width": 5760,
+            "height": 3036,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 5.8K 16:9 (5760 x 3240)",
+            "width": 5760,
+            "height": 3240
+        },
+        {
+            "name": "Sony 5.8K 16:9 Ana 1.25x (5760 x 3240)",
+            "width": 5760,
+            "height": 3240,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 5.8K 16:9 Ana 1.3x (5760 x 3240)",
+            "width": 5760,
+            "height": 3240,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 5.8K 16:9 Ana 2.0x (5760 x 3240)",
+            "width": 5760,
+            "height": 3240,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 5.8K 17:9 (5792 x 3056)",
+            "width": 5792,
+            "height": 3056
+        },
+        {
+            "name": "Sony 5.8K 4:3 (5792 x 4276)",
+            "width": 5792,
+            "height": 4276
+        },
+        {
+            "name": "Sony 5.8K 6:5 (5792 x 4854)",
+            "width": 5792,
+            "height": 4854
+        },
+        {
+            "name": "Sony 5.8K 6:5 Ana 1.25x (5792 x 4854)",
+            "width": 5792,
+            "height": 4854,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 5.8K 6:5 Ana 1.3x (5792 x 4854)",
+            "width": 5792,
+            "height": 4854,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 5.8K 6:5 Ana 2.0x (5792 x 4854)",
+            "width": 5792,
+            "height": 4854,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 6K 2.39 (6048 x 2534)",
+            "width": 6048,
+            "height": 2534
+        },
+        {
+            "name": "Sony 6K 17:9 (6048 x 3190)",
+            "width": 6048,
+            "height": 3190
+        },
+        {
+            "name": "Sony 6K 17:9 Ana 1.25x (6048 x 3190)",
+            "width": 6048,
+            "height": 3190,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 6K 17:9 Ana 1.3x (6048 x 3190)",
+            "width": 6048,
+            "height": 3190,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 6K 17:9 Ana 2.0x (6048 x 3190)",
+            "width": 6048,
+            "height": 3190,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 6K 1.85 (6048 x 3270)",
+            "width": 6048,
+            "height": 3270
+        },
+        {
+            "name": "Sony 6K 3:2 (6048 x 4032)",
+            "width": 6048,
+            "height": 4032
+        },
+        {
+            "name": "Sony 6K 3:2 Ana 1.25x (6048 x 4032)",
+            "width": 6048,
+            "height": 4032,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 6K 3:2 Ana 1.3x (6048 x 4032)",
+            "width": 6048,
+            "height": 4032,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 6K 3:2 Ana 1.5x (6048 x 4032)",
+            "width": 6048,
+            "height": 4032,
+            "PAR": 1.5
+        },
+        {
+            "name": "Sony 6K 3:2 Ana 1.8x (6048 x 4032)",
+            "width": 6048,
+            "height": 4032,
+            "PAR": 1.8
+        },
+        {
+            "name": "Sony 6K 3:2 Ana 2.0x (6048 x 4032)",
+            "width": 6048,
+            "height": 4032,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 6K 17:9 (6052 x 3192)",
+            "width": 6052,
+            "height": 3192
+        },
+        {
+            "name": "Sony 6K 17:9 Ana 1.25x (6052 x 3192)",
+            "width": 6052,
+            "height": 3192,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 6K 17:9 Ana 1.3x (6052 x 3192)",
+            "width": 6052,
+            "height": 3192,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 6K 17:9 Ana 2.0x (6052 x 3192)",
+            "width": 6052,
+            "height": 3192,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 6K 16:9 (6052 x 3404)",
+            "width": 6052,
+            "height": 3404
+        },
+        {
+            "name": "Sony 6K 16:9 Ana 1.25x (6052 x 3404)",
+            "width": 6052,
+            "height": 3404,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 6K 16:9 Ana 1.3x (6052 x 3404)",
+            "width": 6052,
+            "height": 3404,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 6K 16:9 Ana 2.0x (6052 x 3404)",
+            "width": 6052,
+            "height": 3404,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 6K 17:9 (6054 x 3192)",
+            "width": 6054,
+            "height": 3192
+        },
+        {
+            "name": "Sony 6K 1.85 (6054 x 3272)",
+            "width": 6054,
+            "height": 3272
+        },
+        {
+            "name": "Sony 7.6K 16:9 (7680 x 4320)",
+            "width": 7680,
+            "height": 4320
+        },
+        {
+            "name": "Sony 8.1K 16:9 (8100 x 4556)",
+            "width": 8100,
+            "height": 4556
+        },
+        {
+            "name": "Sony 8.2K 3.78 (8182 x 2160)",
+            "width": 8182,
+            "height": 2160
+        },
+        {
+            "name": "Sony 8.2K 2.39 (8192 x 3432)",
+            "width": 8192,
+            "height": 3432
+        },
+        {
+            "name": "Sony 8.2K 17:9 (8192 x 4320)",
+            "width": 8192,
+            "height": 4320
+        },
+        {
+            "name": "Sony 8.2K 17:9 Ana 1.25x (8192 x 4320)",
+            "width": 8192,
+            "height": 4320,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 8.2K 17:9 Ana 1.3x (8192 x 4320)",
+            "width": 8192,
+            "height": 4320,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 8.2K 17:9 Ana 2.0x (8192 x 4320)",
+            "width": 8192,
+            "height": 4320,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 8.6K 17:9 (8632 x 4552)",
+            "width": 8632,
+            "height": 4552
+        },
+        {
+            "name": "Sony 8.6K 17:9 Ana 1.25x (8632 x 4552)",
+            "width": 8632,
+            "height": 4552,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 8.6K 17:9 Ana 1.3x (8632 x 4552)",
+            "width": 8632,
+            "height": 4552,
+            "PAR": 1.30
+        },
+        {
+            "name": "Sony 8.6K 17:9 Ana 2.0x (8632 x 4552)",
+            "width": 8632,
+            "height": 4552,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 8.6K 16:9 (8632 x 4856)",
+            "width": 8632,
+            "height": 4856
+        },
+        {
+            "name": "Sony 8.6K 16:9 Ana 1.25x (8632 x 4856)",
+            "width": 8632,
+            "height": 4856,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 8.6K 16:9 Ana 1.3x (8632 x 4856)",
+            "width": 8632,
+            "height": 4856,
+            "PAR": 1.30
+        },
+        {
+            "name": "Sony 8.6K 16:9 Ana 2.0x (8632 x 4856)",
+            "width": 8632,
+            "height": 4856,
+            "PAR": 2.0
+        },
+        {
+            "name": "Sony 8.6K 17:9 (8640 x 4556)",
+            "width": 8640,
+            "height": 4556
+        },
+        {
+            "name": "Sony 8.6K 3:2 (8640 x 5760)",
+            "width": 8640,
+            "height": 5760
+        },
+        {
+            "name": "Sony 8.6K 3:2 Ana 1.25x (8640 x 5760)",
+            "width": 8640,
+            "height": 5760,
+            "PAR": 1.25
+        },
+        {
+            "name": "Sony 8.6K 3:2 Ana 1.3x (8640 x 5760)",
+            "width": 8640,
+            "height": 5760,
+            "PAR": 1.3
+        },
+        {
+            "name": "Sony 8.6K 3:2 Ana 1.5x (8640 x 5760)",
+            "width": 8640,
+            "height": 5760,
+            "PAR": 1.5
+        },
+        {
+            "name": "Sony 8.6K 3:2 Ana 1.8x (8640 x 5760)",
+            "width": 8640,
+            "height": 5760,
+            "PAR": 1.8
+        },
+        {
+            "name": "Sony 8.6K 3:2 Ana 2.0x (8640 x 5760)",
+            "width": 8640,
+            "height": 5760,
+            "PAR": 2.0
+        }
+    ]
+},
+{
+    "name": "Z CAM Cameras",
+    "priority": 1700,
+    "items": [
+        {
+            "name": "Z CAM 480p (840 x 480)",
+            "width": 840,
+            "height": 480
+        },
+        {
+            "name": "Z CAM 720p 16:9 (1280 x 720)",
+            "width": 1280,
+            "height": 720
+        },
+        {
+            "name": "Z CAM 1080p 16:9 (1920 x 1080)",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "name": "Z CAM 1440p 4:3 (1920 x 1440)",
+            "width": 1920,
+            "height": 1440
+        },
+        {
+            "name": "Z CAM 1920p 1:1 (1920 x 1920)",
+            "width": 1920,
+            "height": 1920
+        },
+        {
+            "name": "Z CAM 2.7K (2704 x 1600)",
+            "width": 2704,
+            "height": 1600
+        },
+        {
+            "name": "Z CAM 2.8K 4:3 (2880 x 2160)",
+            "width": 2880,
+            "height": 2160
+        },
+        {
+            "name": "Z CAM 2.8K 1:1 (2880 x 2880)",
+            "width": 2880,
+            "height": 2880
+        },
+        {
+            "name": "Z CAM 3.3K 6:5 (3312 x 2760)",
+            "width": 3312,
+            "height": 2760
+        },
+        {
+            "name": "Z CAM 3.6K 4:3 (3696 x 2772)",
+            "width": 3696,
+            "height": 2772
+        },
+        {
+            "name": "Z CAM 4K 2.4:1 (3840 x 1620)",
+            "width": 3840,
+            "height": 1620
+        },
+        {
+            "name": "Z CAM 4K UHD (3840 x 2160)",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "name": "Z CAM 4K 2.4:1 (4096 x 1728)",
+            "width": 4096,
+            "height": 1728
+        },
+        {
+            "name": "Z CAM 4K DCI (4096 x 2160)",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "name": "Z CAM 5K 6:5 (4848 x 4040)",
+            "width": 4848,
+            "height": 4040
+        },
+        {
+            "name": "Z CAM 5K 6:5 (4992 x 4160)",
+            "width": 4992,
+            "height": 4160
+        },
+        {
+            "name": "Z CAM 5K 4:3 (5376 x 4032)",
+            "width": 5376,
+            "height": 4032
+        },
+        {
+            "name": "Z CAM 5K 4:3 (5552 x 4164)",
+            "width": 5552,
+            "height": 4164
+        },
+        {
+            "name": "Z CAM 6K UHD (5760 x 3240)",
+            "width": 5760,
+            "height": 3240
+        },
+        {
+            "name": "Z CAM 6K 2.4:1 (6064 x 2560)",
+            "width": 6064,
+            "height": 2560
+        },
+        {
+            "name": "Z CAM 6K DCI (6064 x 3196)",
+            "width": 6064,
+            "height": 3196
+        },
+        {
+            "name": "Z CAM Open Gate (6064 x 4040)",
+            "width": 6064,
+            "height": 4040
+        },
+        {
+            "name": "Z CAM 6K 2.4:1 (6144 x 2592)",
+            "width": 6144,
+            "height": 2592
+        },
+        {
+            "name": "Z CAM 6K DCI (6144 x 3240)",
+            "width": 6144,
+            "height": 3240
+        },
+        {
+            "name": "Z CAM Open Gate (6144 x 4096)",
+            "width": 6144,
+            "height": 4096
+        },
+        {
+            "name": "Z CAM Open Gate (6244 x 4168)",
+            "width": 6244,
+            "height": 4168
+        },
+        {
+            "name": "Z CAM 8K UHD (7680 x 4320)",
+            "width": 7680,
+            "height": 4320
+        },
+        {
+            "name": "Z CAM 8K 2.4:1 (8192 x 3456)",
+            "width": 8192,
+            "height": 3456
+        }
+    ]
+},
+{
+    "name": "Miscellaneous",
+    "priority": 1800,
+    "items": [
+        {
+            "name": "VGA 4:3 (640 x 480)",
+            "width": 640,
+            "height": 480,
+            "aspectRatio": 1.333333
+        },
+        {
+            "name": "HDV 720 16:9 (960 x 720)",
+            "width": 960,
+            "height": 720,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "DVCPro HD 1080 (1280 x 1080)",
+            "width": 1280,
+            "height": 1080,
+            "aspectRatio": 1.777778
+        },
+        {
+            "name": "HDV 1080 4:3 (1440 x 1080)",
+            "width": 1440,
+            "height": 1080,
+            "aspectRatio": 1.333333
+        },
+        {
+            "name": "HD 1035i 1.85 (1920 x 1036)",
+            "width": 1920,
+            "height": 1036
+        },
+        {
+            "name": "HD 1080 16:9 (1440 x 1080)",
+            "width": 1440,
+            "height": 1080,
+            "aspectRatio": 1.777778
+        }
+    ]
+}
+]
+}

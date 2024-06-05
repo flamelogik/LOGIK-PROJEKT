@@ -4,21 +4,21 @@
 # -------------------------------------------------------------------------- #
 
 # Program Name:     pathfinder_abs.py
-# Version:          0.4.2
+# Version:          0.4.3
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-18
+# Modified:         2024-06-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script gathers information about the current
 #                   running script and related directories.
-#                   
-#                   This script defines 2 classes which locate the running 
+#
+#                   This script defines 2 classes which locate the running
 #                   script and related directories, using absolute paths.
-#                   
+#
 #                   It provides methods to create necessary directories
 #                   and print out the paths.
 
@@ -44,7 +44,7 @@ import sys
 class abs_path_info:
     def __init__(self, script_name):
         """
-        Initializes the abs_path_info object with the path to 
+        Initializes the abs_path_info object with the path to
         the running script which defines related directories.
 
         Args:
@@ -79,7 +79,7 @@ class abs_path_info:
                 script_name
             )
         )
-        
+
         self.script_name = script_name
 
         self.abs_path_to_this_script = caller_dir
@@ -93,32 +93,32 @@ class abs_path_info:
         )
 
         self.abs_config_dir = os.path.join(
-            self.abs_parent_dir, 
+            self.abs_parent_dir,
             "config"
         )
 
         self.abs_scripts_dir = os.path.join(
-            self.abs_parent_dir, 
+            self.abs_parent_dir,
             "scripts"
         )
 
         self.abs_modules_dir = os.path.join(
-            self.abs_scripts_dir, 
+            self.abs_scripts_dir,
             "modules"
         )
 
         self.abs_classes_dir = os.path.join(
-            self.abs_modules_dir, 
+            self.abs_modules_dir,
             "classes"
         )
 
         self.abs_functions_dir = os.path.join(
-            self.abs_modules_dir, 
+            self.abs_modules_dir,
             "functions"
         )
 
         self.abs_version_dir = os.path.join(
-            self.abs_parent_dir, 
+            self.abs_parent_dir,
             "version"
         )
 
@@ -128,20 +128,20 @@ class abs_path_info:
         """
         Creates necessary directories if they do not exist.
         """
-                
+
         print("Creating necessary directories...")
         os.makedirs(
-            self.abs_modules_dir, 
+            self.abs_modules_dir,
             exist_ok=True
         )
 
         os.makedirs(
-            self.abs_classes_dir, 
+            self.abs_classes_dir,
             exist_ok=True
         )
 
         os.makedirs(
-            self.abs_functions_dir, 
+            self.abs_functions_dir,
             exist_ok=True
         )
 
@@ -152,32 +152,32 @@ class abs_path_info:
         Prints out the paths of the running script and related directories.
         """
 
-        print("This script:        ", 
+        print("This script:        ",
               os.path.basename(self.script_name)
         )
-        
-        print("Path to this script:", 
+
+        print("Path to this script:",
               os.path.basename(self.abs_path_to_this_script)
         )
-        print("Script directory:   ", 
+        print("Script directory:   ",
               os.path.basename(self.abs_script_dir)
         )
-        print("Parent directory:   ", 
+        print("Parent directory:   ",
               os.path.basename(self.abs_parent_dir)
         )
-        print("Config directory:   ", 
+        print("Config directory:   ",
               os.path.basename(self.abs_config_dir)
         )
-        print("Scripts directory:  ", 
+        print("Scripts directory:  ",
               os.path.basename(self.abs_scripts_dir)
         )
-        print("Classes directory:  ", 
+        print("Classes directory:  ",
               os.path.basename(self.abs_classes_dir)
         )
-        print("Functions directory:", 
+        print("Functions directory:",
               os.path.basename(self.abs_functions_dir)
         )
-        print("Version directory:  ", 
+        print("Version directory:  ",
               os.path.basename(self.abs_version_dir)
         )
 
@@ -219,7 +219,7 @@ if __name__ == "__main__":
 #                   If not, see <https://www.gnu.org/licenses/>.
 
 # -------------------------------------------------------------------------- #
-# Changelist:       
+# Changelist:
 # -------------------------------------------------------------------------- #
 # version:               0.0.5
 # modified:              2024-05-12 - 15:37:50
@@ -264,3 +264,7 @@ if __name__ == "__main__":
 # version:               0.4.2
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.3
+# modified:              2024-06-03 - 10:32:22
+# comments:              Moved import flame statement to each function

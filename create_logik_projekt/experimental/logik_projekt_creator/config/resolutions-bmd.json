@@ -1,0 +1,191 @@
+{
+    "group": "Blackmagic Design Camera Definitions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ --------------------- BMD Cameras ---------------------------------- +",
+            "items": [
+                {
+                    "name": "  1920 x 1080 | BMD HDTV 16:9",
+                    "width": 1920,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  2400 x 1340 | BMD 2.5K",
+                    "width": 2400,
+                    "height": 1340,
+                    "display_aspect_ratio": 1.791,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  2048 x 1080 | BMD 2K 17:9",
+                    "width": 2048,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.896,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  2048 x 1152 | BMD 2.K 16:9",
+                    "width": 2048,
+                    "height": 1152,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  2560 x 2136 | BMD 4K 4:3 Ana 1.3x",
+                    "width": 2560,
+                    "height": 2136,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  2560 x 2136 | BMD 4K 4:3 Ana 2.0x",
+                    "width": 2560,
+                    "height": 2136,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  3072 x 2560 | BMD 3K 4:3",
+                    "width": 3072,
+                    "height": 2560,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  3072 x 2560 | BMD 3K 4:3 Ana 1.3x",
+                    "width": 3072,
+                    "height": 2560,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  3072 x 2560 | BMD 3K 4:3 Ana 2.0x",
+                    "width": 3072,
+                    "height": 2560,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  3840 x 2160 | BMD UHDTV 16:9",
+                    "width": 3840,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  4000 x 2160 | BMD 4K 16:9",
+                    "width": 4000,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  4096 x 1704 | BMD 4K 2.4",
+                    "width": 4096,
+                    "height": 1704,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  4096 x 2160 | BMD 4K 17:9",
+                    "width": 4096,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  4096 x 2304 | BMD 4K 16:9",
+                    "width": 4096,
+                    "height": 2304,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  4608 x 1920 | BMD 4.6K 2.4",
+                    "width": 4608,
+                    "height": 1920,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  4608 x 2592 | BMD 4.6K 16:9",
+                    "width": 4608,
+                    "height": 2592,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  4656 x 2624 | BMD 4.6K 16:9",
+                    "width": 4656,
+                    "height": 2624,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  6144 x 3240 | BMD 6K 17:9",
+                    "width": 6144,
+                    "height": 3240,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  5120 x 4272 | BMD 8K 4:3 Ana 1.3x",
+                    "width": 5120,
+                    "height": 4272,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  5120 x 4272 | BMD 8K 4:3 Ana 2.0x",
+                    "width": 5120,
+                    "height": 4272,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  7680 x 4320 | BMD 8K 16:9",
+                    "width": 7680,
+                    "height": 4320,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  8192 x 3408 | BMD 8K 2.4",
+                    "width": 8192,
+                    "height": 3408,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  8192 x 4320 | BMD 8K 17:9",
+                    "width": 8192,
+                    "height": 4320,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  7620 x 6408 | BMD 12K 4:3 Ana 1.3x",
+                    "width": 7620,
+                    "height": 6408,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  7620 x 6408 | BMD 12K 4:3 Ana 2.0x",
+                    "width": 7620,
+                    "height": 6408,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  11520 x 6480 | BMD 12K 16:9",
+                    "width": 11520,
+                    "height": 6480,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  12288 x 5112 | BMD 12K 2.4",
+                    "width": 12288,
+                    "height": 5112,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  12288 x 6480 | BMD 12K 17:9",
+                    "width": 12288,
+                    "height": 6480,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

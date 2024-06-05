@@ -1,0 +1,87 @@
+{
+    "group": "Broadcast Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "----- Standard Definition -----",
+            "items": [
+                {
+                    "name": "NTSC DV 4:3 (720 x 480)",
+                    "width": 720,
+                    "height": 480,
+                    "aspectRatio": 1.363636,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "NTSC 4:3 (720 x 486)",
+                    "width": 720,
+                    "height": 486,
+                    "aspectRatio": 1.333333,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "NTSC 16:9 (720 x 486)",
+                    "width": 720,
+                    "height": 486,
+                    "aspectRatio": 1.777778,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "PAL 4:3 (720 x 576)",
+                    "width": 720,
+                    "height": 576,
+                    "aspectRatio": 1.333333,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "PAL 16:9 (720 x 576)",
+                    "width": 720,
+                    "height": 576,
+                    "aspectRatio": 1.777778,
+                    "PAR": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "----- High Definition -----",
+            "items": [
+                {
+                    "name": "HD 720 16:9 (1280 x 720)",
+                    "width": 1280,
+                    "height": 720,
+                    "aspectRatio": 1.777778,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "HD 1080 16:9 (1920 x 1080)",
+                    "width": 1920,
+                    "height": 1080,
+                    "aspectRatio": 1.777778,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "UHDTV 4K 16:9 (3840 x 2160)",
+                    "width": 3840,
+                    "height": 2160,
+                    "aspectRatio": 1.777778,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "UHDTV 8K 16:9 (7680 x 4320)",
+                    "width": 7680,
+                    "height": 4320,
+                    "aspectRatio": 1.777778,
+                    "PAR": 1.0
+                },
+                {
+                    "name": "UHDTV 16K 16:9 (15360 x 8640)",
+                    "width": 15360,
+                    "height": 8640,
+                    "aspectRatio": 1.777778,
+                    "PAR": 1.0
+                }
+            ]
+        }
+    ]
+}

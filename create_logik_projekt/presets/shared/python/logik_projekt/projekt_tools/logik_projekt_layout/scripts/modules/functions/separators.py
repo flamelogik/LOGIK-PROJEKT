@@ -4,12 +4,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        separators.py
-# Version:          0.4.2
+# Version:          0.4.3
 # Language:         bash script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Modified:         2024-05-18
+# Modified:         2024-06-03
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program contains function(s) that are used to
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 #                   If not, see <https://www.gnu.org/licenses/>.
 
 # -------------------------------------------------------------------------- #
-# Changelist:       
+# Changelist:
 # -------------------------------------------------------------------------- #
 # version:               0.0.1
 # modified:              2024-05-03 - 01:53:36
@@ -163,3 +163,7 @@ if __name__ == "__main__":
 # version:               0.4.2
 # modified:              2024-05-18 - 18:46:51
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.3
+# modified:              2024-06-03 - 10:32:22
+# comments:              Moved import flame statement to each function

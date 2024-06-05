@@ -1,0 +1,53 @@
+{
+    "group": "Miscellaneous Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ --------------------- Miscellaneous -------------------------------- +",
+            "items": [
+                {
+                    "name": "  640 x 480 | VGA 4:3",
+                    "width": 640,
+                    "height": 480,
+                    "display_aspect_ratio": 1.333333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  960 x 720 | HDV 720 16:9",
+                    "width": 960,
+                    "height": 720,
+                    "display_aspect_ratio": 1.777778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  1280 x 1080 | DVCPro HD 1080",
+                    "width": 1280,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.777778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  1440 x 1080 | HDV 1080 4:3",
+                    "width": 1440,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.333333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  1920 x 1036 | HD 1035i 1.85",
+                    "width": 1920,
+                    "height": 1036,
+                    "display_aspect_ratio": 1.853282,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "  1440 x 1080 | HD 1080 16:9",
+                    "width": 1440,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.777778,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}
