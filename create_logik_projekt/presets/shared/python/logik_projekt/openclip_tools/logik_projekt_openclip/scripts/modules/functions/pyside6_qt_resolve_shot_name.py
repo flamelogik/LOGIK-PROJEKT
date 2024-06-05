@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_resolve_shot_name.py
-# Version:          0.4.4
+# Version:          0.4.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-18
+# Modified:         2024-06-04
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -315,3 +315,7 @@ def pyside6_qt_resolve_shot_name(name: str) -> str:
 # version:               0.4.4
 # modified:              2024-05-18 - 18:46:09
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.5
+# modified:              2024-06-04 - 17:38:53
+# comments:              Added 'Smart Replace' option for render and write nodes

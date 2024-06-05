@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        logik_projekt_openclip_precomp.py
-# Version:          0.4.4
+# Version:          0.4.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-18
+# Modified:         2024-06-04
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -233,13 +233,31 @@ class class_projekt_openclip_precomp():
         self.batch_group = flame.batch
 
         # Define reel names
-        reel_names = ["sources", "reference", "CGI", "mattes", "neat_video", "precomp", "roto", "comp"]
+        reel_names = ["sources", "reference", "CGI", "mattes", "motion", "neat_video", "precomp", "roto", "comp"]
 
         # Rename 'Schematic Reel' or 'Schematic Reel 1' to 'sources' if it exists
         for reel in flame.batch.reels:
             if reel.name == 'Schematic Reel' or reel.name == 'Schematic Reel 1':
                 reel.name = 'sources'
                 print(f"Renamed '{reel.name}' to 'sources'.")
+
+        # Rename 'Schematic Reel' or 'Schematic Reel 2' to 'reference' if it exists
+        for reel in flame.batch.reels:
+            if reel.name == 'Schematic Reel' or reel.name == 'Schematic Reel 2':
+                reel.name = 'reference'
+                print(f"Renamed '{reel.name}' to 'reference'.")
+
+        # Rename 'Schematic Reel' or 'Schematic Reel 3' to 'CGI' if it exists
+        for reel in flame.batch.reels:
+            if reel.name == 'Schematic Reel' or reel.name == 'Schematic Reel 3':
+                reel.name = 'CGI'
+                print(f"Renamed '{reel.name}' to 'CGI'.")
+
+        # Rename 'Schematic Reel' or 'Schematic Reel 4' to 'mattes' if it exists
+        for reel in flame.batch.reels:
+            if reel.name == 'Schematic Reel' or reel.name == 'Schematic Reel 4':
+                reel.name = 'mattes'
+                print(f"Renamed '{reel.name}' to 'mattes'.")
 
         # Create reels that don't exist
         for reel_name in reel_names:
@@ -267,7 +285,7 @@ class class_projekt_openclip_precomp():
         flame.go_to('Batch')
 
         # Create batch group
-        batch_group = flame.batch.create_batch_group('projekt_precomp', reels=['sources','reference','CGI','mattes','neat_video','precomp','roto','comp'])
+        batch_group = flame.batch.create_batch_group('projekt_precomp', reels=['sources','reference','CGI','mattes','motion','neat_video','precomp','roto','comp'])
 
         # Add source clip(s) to 'sources_reel'
         sources_reel = batch_group.reels[0]
@@ -346,7 +364,13 @@ class class_projekt_openclip_precomp():
             # self.render_node.destination = ('Batch Reels', 'mattes')
             # self.render_node.destination = ('Batch Reels', 'neat_video')
             # self.render_node.destination = ('Batch Reels', 'precomp')
-            self.render_node.destination = ('Libraries')
+            self.render_node.destination = ('Libraries', 'Batch Renders')
+
+            # Enable the 'Add to Workspace' option
+            self.render_node.add_to_workspace = True
+
+            # Enable the 'Smart Replace' option
+            self.render_node.smart_replace = False
 
             # self.render_node.bit_depth = '10-bit'
             self.render_node.bit_depth = '16-bit fp'
@@ -383,7 +407,13 @@ class class_projekt_openclip_precomp():
             # self.render_node.destination = ('Batch Reels', 'neat_video')
             self.render_node.destination = ('Batch Reels', 'precomp')
 
-            # self.render_node.destination = ('Libraries')
+            # self.render_node.destination = ('Libraries', 'Batch Renders')
+
+            # Enable the 'Add to Workspace' option
+            self.render_node.add_to_workspace = True
+
+            # Enable the 'Smart Replace' option
+            self.render_node.smart_replace = False
 
             image_format = self.settings.write_file_image_format.split(' ', 1)[0]
             bit_depth = self.settings.write_file_image_format.split(' ', 1)[1]
@@ -1130,3 +1160,7 @@ def get_media_panel_custom_ui_actions():
 # version:               0.4.4
 # modified:              2024-05-18 - 18:46:09
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               0.4.5
+# modified:              2024-06-04 - 17:38:52
+# comments:              Added 'Smart Replace' option for render and write nodes
