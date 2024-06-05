@@ -78,12 +78,6 @@ sync_bookmarks() {
     echo -e "\n$separator\n"
 }
 
-    echo -e "\n  $tgt_project_bookmarks\n"
-
-    echo -e "\n  project bookmarks created."
-    echo -e "\n$separator\n"
-}
-
 # ---------------------------------------------------------------------- #
 
 # Function to create archive defaults for 'Convert to Local Path'
@@ -123,8 +117,10 @@ sync_archive_prefs() {
     # ---------------------------------------------------------------------- #
 
     echo -e "\n  $tgt_project_archive_prefs\n"
+    echo -e "\n  $tgt_project_archive_cache_prefs\n"
 
     echo -e "\n  project archive prefs created."
+    echo -e "\n  project archive cache prefs created."
     echo -e "\n$separator\n"
 }
 
