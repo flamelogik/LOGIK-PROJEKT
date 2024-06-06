@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        logik_projekt_openclip_multichannel.py
-# Version:          0.4.6
+# Version:          0.4.7
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -407,7 +407,7 @@ class class_projekt_openclip_multichannel():
             # self.render_node.name = self.clip_name + '_mattes'
             self.render_node.name = self.clip_name + '_multichannel'
             # self.render_node.name = self.clip_name + '_neat_video'
-            self.render_node.name = self.clip_name + '_precomp'
+            # self.render_node.name = self.clip_name + '_precomp'
 
             # self.render_node.destination = ('Batch Reels', 'comp')
             # self.render_node.destination = ('Batch Reels', 'mattes')
@@ -424,11 +424,11 @@ class class_projekt_openclip_multichannel():
             self.render_node.smart_replace = False
 
             image_format = self.settings.write_file_image_format.split(' ', 1)[0]
-            bit_depth = self.settings.write_file_image_format.split(' ', 1)[1]
+            # bit_depth = self.settings.write_file_image_format.split(' ', 1)[1]
+            bit_depth = '32-bit fp'
 
             self.render_node.file_type = image_format
-            # self.render_node.bit_depth = bit_depth
-            self.render_node.bit_depth = '32-bit fp'
+            self.render_node.bit_depth = bit_depth
 
             self.render_node.media_path = self.settings.write_file_media_path
             self.render_node.media_path_pattern = self.settings.write_file_pattern
@@ -452,7 +452,8 @@ class class_projekt_openclip_multichannel():
             # self.render_node.format = "RGB-A"
 
             # add version note
-            self.render_node.note = "This node was configured by projekt_multichannel."
+            self.render_node.note = "multichannel openclip for: " + str(self.render_node.shot_name) + " configured by logik-projekt."
+
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
@@ -680,8 +681,8 @@ class class_projekt_openclip_multichannel():
                 self.write_file_compression_push_btn.setEnabled(False)
 
             elif 'OpenEXR' in file_format:
-                self.write_file_compression_push_btn.setText('Uncompressed')
-                # self.write_file_compression_push_btn.setText('PIZ')
+                # self.write_file_compression_push_btn.setText('Uncompressed')
+                self.write_file_compression_push_btn.setText('PIZ')
                 compression_list = ['Uncompressed', 'Scanline', 'Multi_Scanline', 'RLE', 'PXR24', 'PIZ', 'DWAB', 'DWAA', 'B44A', 'B44']
                 self.write_file_compression_push_btn.setEnabled(True)
 
@@ -1180,3 +1181,7 @@ def get_media_panel_custom_ui_actions():
 # version:               0.4.6
 # modified:              2024-06-05 - 19:30:33
 # comments:              Added a new script to create openclip multichannel
+# -------------------------------------------------------------------------- #
+# version:               0.4.7
+# modified:              2024-06-05 - 21:08:34
+# comments:              Modified note strings

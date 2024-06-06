@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        logik_projekt_openclip_mattes.py
-# Version:          0.4.6
+# Version:          0.4.7
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -425,10 +425,10 @@ class class_projekt_openclip_mattes():
 
             image_format = self.settings.write_file_image_format.split(' ', 1)[0]
             bit_depth = self.settings.write_file_image_format.split(' ', 1)[1]
+            # bit_depth = '32-bit fp'
 
             self.render_node.file_type = image_format
             self.render_node.bit_depth = bit_depth
-            # self.render_node.bit_depth = '32-bit fp'
 
             self.render_node.media_path = self.settings.write_file_media_path
             self.render_node.media_path_pattern = self.settings.write_file_pattern
@@ -452,7 +452,8 @@ class class_projekt_openclip_mattes():
             # self.render_node.format = "RGB-A"
 
             # add version note
-            self.render_node.note = "This node was configured by projekt_mattes."
+            self.render_node.note = "mattes openclip for: " + str(self.render_node.shot_name) + " configured by logik-projekt."
+
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
@@ -1180,3 +1181,7 @@ def get_media_panel_custom_ui_actions():
 # version:               0.4.6
 # modified:              2024-06-05 - 19:30:33
 # comments:              Added a new script to create openclip multichannel
+# -------------------------------------------------------------------------- #
+# version:               0.4.7
+# modified:              2024-06-05 - 21:08:34
+# comments:              Modified note strings

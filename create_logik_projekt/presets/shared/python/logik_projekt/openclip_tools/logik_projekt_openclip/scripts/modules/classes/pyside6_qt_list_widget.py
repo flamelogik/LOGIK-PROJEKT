@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_list_widget.py
-# Version:          0.4.6
+# Version:          0.4.7
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -285,3 +285,7 @@ class pyside6_qt_list_widget(QtWidgets.QListWidget):
 # version:               0.4.6
 # modified:              2024-06-05 - 19:30:33
 # comments:              Added a new script to create openclip multichannel
+# -------------------------------------------------------------------------- #
+# version:               0.4.7
+# modified:              2024-06-05 - 21:08:34
+# comments:              Modified note strings

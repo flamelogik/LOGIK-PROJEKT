@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_get_shot_name.py
-# Version:          0.4.6
+# Version:          0.4.7
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -338,3 +338,7 @@ def pyside6_qt_get_shot_name(shot_name_source) -> str:
 # version:               0.4.6
 # modified:              2024-06-05 - 19:30:33
 # comments:              Added a new script to create openclip multichannel
+# -------------------------------------------------------------------------- #
+# version:               0.4.7
+# modified:              2024-06-05 - 21:08:34
+# comments:              Modified note strings
