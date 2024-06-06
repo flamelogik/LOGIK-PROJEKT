@@ -1,9 +1,9 @@
-# filename: logik_projekt_openclip_neat_video.py
+# filename: logik_projekt_openclip_multichannel.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        logik_projekt_openclip_neat_video.py
+# File Name:        logik_projekt_openclip_multichannel.py
 # Version:          0.4.6
 # Language:         python script
 # Flame Version:    2025.x
@@ -189,10 +189,10 @@ from modules.classes.pyside6_qt_window import (
 # This section defines the openclip class.
 # ========================================================================== #
 CONFIG_PATH = '/opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip'
-SCRIPT_NAME = 'logik_projekt_openclip_neat_video'
+SCRIPT_NAME = 'logik_projekt_openclip_multichannel'
 SCRIPT_PATH = f'/opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/{SCRIPT_NAME}'
 VERSION = 'v1.0'
-class class_projekt_openclip_neat_video():
+class class_projekt_openclip_multichannel():
 
     def __init__(self, selection):
 
@@ -226,7 +226,7 @@ class class_projekt_openclip_neat_video():
 
     # ---------------------------------------- #
 
-    def batch_projekt_neat_video_clips(self):
+    def batch_projekt_multichannel_clips(self):
         import flame
 
         # Get current batch
@@ -279,13 +279,13 @@ class class_projekt_openclip_neat_video():
 
         print('Done.\n')
 
-    def media_panel_projekt_neat_video_clips(self):
+    def media_panel_projekt_multichannel_clips(self):
         import flame
 
         flame.go_to('Batch')
 
         # Create batch group
-        batch_group = flame.batch.create_batch_group('projekt_neat_video', reels=['sources','reference','CGI','mattes','motion','multichannel','neat_video','precomp','roto','comp'])
+        batch_group = flame.batch.create_batch_group('projekt_multichannel', reels=['sources','reference','CGI','mattes','motion','multichannel','neat_video','precomp','roto','comp'])
 
         # Add source clip(s) to 'sources_reel'
         sources_reel = batch_group.reels[0]
@@ -314,8 +314,8 @@ class class_projekt_openclip_neat_video():
             if int(str(clip.duration)) > int(str(batch_group.duration)):
                 batch_group.duration = int(str(clip.duration))
 
-        # Run batch neat video clips on all clips in batch
-        self.batch_projekt_neat_video_clips()
+        # Run batch multichannel clips on all clips in batch
+        self.batch_projekt_multichannel_clips()
 
         batch_group.frame_all()
 
@@ -357,8 +357,8 @@ class class_projekt_openclip_neat_video():
 
             # self.render_node.name = self.clip_shot_name + '_comp'
             # self.render_node.name = self.clip_name + '_mattes'
-            # self.render_node.name = self.clip_name + '_multichannel'
-            self.render_node.name = self.clip_name + '_neat_video'
+            self.render_node.name = self.clip_name + '_multichannel'
+            # self.render_node.name = self.clip_name + '_neat_video'
             # self.render_node.name = self.clip_name + '_precomp'
 
             # self.render_node.destination = ('Batch Reels', 'comp')
@@ -375,17 +375,17 @@ class class_projekt_openclip_neat_video():
             self.render_node.smart_replace = False
 
             # self.render_node.bit_depth = '10-bit'
-            self.render_node.bit_depth = '16-bit fp'
-            # self.render_node.bit_depth = '32-bit fp'
+            # self.render_node.bit_depth = '16-bit fp'
+            self.render_node.bit_depth = '32-bit fp'
 
             if self.clip_shot_name:
                 self.render_node.shot_name = self.clip_shot_name
 
-            # self.render_node.format = "Multi-Channel"
+            self.render_node.format = "Multi-Channel"
             # self.render_node.format = "RGB-A"
 
             # add version note
-            self.render_node.note = "This node was configured by projekt_neat_video."
+            self.render_node.note = "This node was configured by projekt_multichannel."
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
@@ -405,14 +405,14 @@ class class_projekt_openclip_neat_video():
 
             # self.render_node.name = self.clip_shot_name + '_comp'
             # self.render_node.name = self.clip_name + '_mattes'
-            # self.render_node.name = self.clip_name + '_multichannel'
-            self.render_node.name = self.clip_name + '_neat_video'
-            # self.render_node.name = self.clip_name + '_precomp'
+            self.render_node.name = self.clip_name + '_multichannel'
+            # self.render_node.name = self.clip_name + '_neat_video'
+            self.render_node.name = self.clip_name + '_precomp'
 
             # self.render_node.destination = ('Batch Reels', 'comp')
             # self.render_node.destination = ('Batch Reels', 'mattes')
-            # self.render_node.destination = ('Batch Reels', 'multichannel')
-            self.render_node.destination = ('Batch Reels', 'neat_video')
+            self.render_node.destination = ('Batch Reels', 'multichannel')
+            # self.render_node.destination = ('Batch Reels', 'neat_video')
             # self.render_node.destination = ('Batch Reels', 'precomp')
 
             # self.render_node.destination = ('Libraries', 'Batch Renders')
@@ -427,8 +427,8 @@ class class_projekt_openclip_neat_video():
             bit_depth = self.settings.write_file_image_format.split(' ', 1)[1]
 
             self.render_node.file_type = image_format
-            self.render_node.bit_depth = bit_depth
-            # self.render_node.bit_depth = '32-bit fp'
+            # self.render_node.bit_depth = bit_depth
+            self.render_node.bit_depth = '32-bit fp'
 
             self.render_node.media_path = self.settings.write_file_media_path
             self.render_node.media_path_pattern = self.settings.write_file_pattern
@@ -448,11 +448,11 @@ class class_projekt_openclip_neat_video():
 
             self.render_node.shot_name = self.clip_shot_name
 
-            # self.render_node.format = "Multi-Channel"
+            self.render_node.format = "Multi-Channel"
             # self.render_node.format = "RGB-A"
 
             # add version note
-            self.render_node.note = "This node was configured by projekt_neat_video."
+            self.render_node.note = "This node was configured by projekt_multichannel."
             # add version note collapsed state
             self.render_node.note_collapsed = True
 
@@ -468,16 +468,16 @@ class class_projekt_openclip_neat_video():
 
         # Add MUX node
 
-        # mux_node = self.batch_group.create_node('MUX')
-        # mux_node.pos_x = self.x_position + 288
-        # mux_node.pos_y = self.y_position - 24
+        mux_node = self.batch_group.create_node('MUX')
+        mux_node.pos_x = self.x_position + 288
+        mux_node.pos_y = self.y_position - 24
 
         # Add neat video node
 
-        neat_video_node = self.batch_group.create_node('OpenFX')
-        neat_video_node.change_plugin('Reduce Noise v5')
-        neat_video_node.pos_x = self.x_position + 288
-        neat_video_node.pos_y = self.y_position - 24
+        # neat_video_node = self.batch_group.create_node('OpenFX')
+        # neat_video_node.change_plugin('Reduce Noise v5')
+        # neat_video_node.pos_x = self.x_position + 288
+        # neat_video_node.pos_y = self.y_position - 24
 
         # Add Render Node or Write File Node
 
@@ -486,15 +486,15 @@ class class_projekt_openclip_neat_video():
         else:
             add_write_node()
 
-        self.render_node.pos_x = neat_video_node.pos_x + 288
-        self.render_node.pos_y = neat_video_node.pos_y - 0
+        self.render_node.pos_x = mux_node.pos_x + 288
+        self.render_node.pos_y = mux_node.pos_y - 0
 
         # Connect nodes
 
-        # flame.batch.connect_nodes(clip, 'Default', mux_node, 'Default')
-        # flame.batch.connect_nodes(mux_node, 'Default', self.render_node, 'Default')
-        flame.batch.connect_nodes(clip, 'Default', neat_video_node, 'Default')
-        flame.batch.connect_nodes(neat_video_node, 'Default', self.render_node, 'Default')
+        flame.batch.connect_nodes(clip, 'Default', mux_node, 'Default')
+        flame.batch.connect_nodes(mux_node, 'Default', self.render_node, 'Default')
+        # flame.batch.connect_nodes(clip, 'Default', neat_video_node, 'Default')
+        # flame.batch.connect_nodes(neat_video_node, 'Default', self.render_node, 'Default')
 
         self.y_position = self.y_position - 192
 
@@ -680,8 +680,8 @@ class class_projekt_openclip_neat_video():
                 self.write_file_compression_push_btn.setEnabled(False)
 
             elif 'OpenEXR' in file_format:
-                # self.write_file_compression_push_btn.setText('Uncompressed')
-                self.write_file_compression_push_btn.setText('PIZ')
+                self.write_file_compression_push_btn.setText('Uncompressed')
+                # self.write_file_compression_push_btn.setText('PIZ')
                 compression_list = ['Uncompressed', 'Scanline', 'Multi_Scanline', 'RLE', 'PXR24', 'PIZ', 'DWAB', 'DWAA', 'B44A', 'B44']
                 self.write_file_compression_push_btn.setEnabled(True)
 
@@ -837,19 +837,19 @@ class class_projekt_openclip_neat_video():
 
 # ---------------------------------------- #
 
-def projekt_neat_video_media_panel_clips(selection):
+def projekt_multichannel_media_panel_clips(selection):
 
-    script = class_projekt_openclip_neat_video(selection)
-    script.media_panel_projekt_neat_video_clips()
+    script = class_projekt_openclip_multichannel(selection)
+    script.media_panel_projekt_multichannel_clips()
 
-def projekt_neat_video_batch_clips(selection):
+def projekt_multichannel_batch_clips(selection):
 
-    script = class_projekt_openclip_neat_video(selection)
-    script.batch_projekt_neat_video_clips()
+    script = class_projekt_openclip_multichannel(selection)
+    script.batch_projekt_multichannel_clips()
 
 def setup(selection):
 
-    script = class_projekt_openclip_neat_video(selection)
+    script = class_projekt_openclip_multichannel(selection)
     script.write_node_setup()
 
 # ---------------------------------------- #
@@ -909,14 +909,14 @@ def get_batch_custom_ui_actions():
         {
             'name': 'create-openclip',
             'hierarchy': ['logik-projekt'],
-            'order': 3,
+            'order': 1,
             'actions': [
                 {
-                    'name': 'projekt_neat_video selected clips',
-                    'order': 3,
+                    'name': 'projekt_multichannel selected clips',
+                    'order': 1,
                     'separator': 'below',
                     'isVisible': scope_clip,
-                    'execute': projekt_neat_video_batch_clips,
+                    'execute': projekt_multichannel_batch_clips,
                     'minimumVersion': '2025'
                 }
             ]
@@ -934,10 +934,10 @@ def get_main_menu_custom_ui_actions():
         {
             'name': 'create-openclip',
             'hierarchy': ['logik-projekt'],
-            'order': 3,
+            'order': 1,
             'actions': [
                 {
-                    'name': 'configure projekt_neat_video',
+                    'name': 'configure projekt_multichannel',
                     'execute': setup,
                     'minimumVersion': '2025'
                 }
@@ -956,14 +956,14 @@ def get_media_panel_custom_ui_actions():
         {
             'name': 'create-openclip',
             'hierarchy': ['logik-projekt'],
-            'order': 3,
+            'order': 1,
             'actions': [
                 {
-                    'name': 'projekt_neat_video selected clips',
-                    'order': 3,
+                    'name': 'projekt_multichannel selected clips',
+                    'order': 1,
                     'separator': 'below',
                     'isVisible': scope_clip,
-                    'execute': projekt_neat_video_media_panel_clips,
+                    'execute': projekt_multichannel_media_panel_clips,
                     'minimumVersion': '2025'
                 }
             ]
@@ -981,14 +981,14 @@ def get_media_panel_custom_ui_actions():
 #         {
 #             'name': 'create-openclip',
 #             'hierarchy': ['logik-projekt'],
-#             'order': 3,
+#             'order': 1,
 #             'actions': [
 #                 {
-#                     'name': 'projekt_neat_video selected clips',
-#                     'order': 3,
+#                     'name': 'projekt_multichannel selected clips',
+#                     'order': 1,
 #                     'separator': 'below',
 #                     "isVisible": scope_segment,
-#                     'execute': projekt_neat_video_media_panel_clips,
+#                     'execute': projekt_multichannel_media_panel_clips,
 #                     'minimumVersion': '2025'
 #                 }
 #             ]

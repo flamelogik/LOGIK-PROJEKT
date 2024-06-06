@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_button.py
-# Version:          0.4.5
+# Version:          0.4.6
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-04
+# Modified:         2024-06-05
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -291,3 +291,7 @@ class pyside6_qt_button(QtWidgets.QPushButton):
 # version:               0.4.5
 # modified:              2024-06-04 - 17:38:52
 # comments:              Added 'Smart Replace' option for render and write nodes
+# -------------------------------------------------------------------------- #
+# version:               0.4.6
+# modified:              2024-06-05 - 19:30:33
+# comments:              Added a new script to create openclip multichannel

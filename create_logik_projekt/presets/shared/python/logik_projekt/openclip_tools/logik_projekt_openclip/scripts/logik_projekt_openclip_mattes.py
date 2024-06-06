@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        logik_projekt_openclip_mattes.py
-# Version:          0.4.5
+# Version:          0.4.6
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-04
+# Modified:         2024-06-05
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -233,7 +233,7 @@ class class_projekt_openclip_mattes():
         self.batch_group = flame.batch
 
         # Define reel names
-        reel_names = ["sources", "reference", "CGI", "mattes", "motion", "neat_video", "precomp", "roto", "comp"]
+        reel_names = ["sources", "reference", "CGI", "mattes", "motion", "multichannel", "neat_video", "precomp", "roto", "comp"]
 
         # Rename 'Schematic Reel' or 'Schematic Reel 1' to 'sources' if it exists
         for reel in flame.batch.reels:
@@ -285,7 +285,7 @@ class class_projekt_openclip_mattes():
         flame.go_to('Batch')
 
         # Create batch group
-        batch_group = flame.batch.create_batch_group('projekt_mattes', reels=['sources','reference','CGI','mattes','motion','neat_video','precomp','roto','comp'])
+        batch_group = flame.batch.create_batch_group('projekt_mattes', reels=['sources','reference','CGI','mattes','motion','multichannel','neat_video','precomp','roto','comp'])
 
         # Add source clip(s) to 'sources_reel'
         sources_reel = batch_group.reels[0]
@@ -357,11 +357,13 @@ class class_projekt_openclip_mattes():
 
             # self.render_node.name = self.clip_shot_name + '_comp'
             self.render_node.name = self.clip_name + '_mattes'
+            # self.render_node.name = self.clip_name + '_multichannel'
             # self.render_node.name = self.clip_name + '_neat_video'
             # self.render_node.name = self.clip_name + '_precomp'
 
             # self.render_node.destination = ('Batch Reels', 'comp')
             # self.render_node.destination = ('Batch Reels', 'mattes')
+            # self.render_node.destination = ('Batch Reels', 'multichannel')
             # self.render_node.destination = ('Batch Reels', 'neat_video')
             # self.render_node.destination = ('Batch Reels', 'precomp')
             self.render_node.destination = ('Libraries', 'Batch Renders')
@@ -374,9 +376,13 @@ class class_projekt_openclip_mattes():
 
             # self.render_node.bit_depth = '10-bit'
             self.render_node.bit_depth = '16-bit fp'
+            # self.render_node.bit_depth = '32-bit fp'
 
             if self.clip_shot_name:
                 self.render_node.shot_name = self.clip_shot_name
+
+            # self.render_node.format = "Multi-Channel"
+            # self.render_node.format = "RGB-A"
 
             # add version note
             self.render_node.note = "This node was configured by projekt_mattes."
@@ -399,11 +405,13 @@ class class_projekt_openclip_mattes():
 
             # self.render_node.name = self.clip_shot_name + '_comp'
             self.render_node.name = self.clip_name + '_mattes'
+            # self.render_node.name = self.clip_name + '_multichannel'
             # self.render_node.name = self.clip_name + '_neat_video'
             # self.render_node.name = self.clip_name + '_precomp'
 
             # self.render_node.destination = ('Batch Reels', 'comp')
             self.render_node.destination = ('Batch Reels', 'mattes')
+            # self.render_node.destination = ('Batch Reels', 'multichannel')
             # self.render_node.destination = ('Batch Reels', 'neat_video')
             # self.render_node.destination = ('Batch Reels', 'precomp')
 
@@ -420,6 +428,7 @@ class class_projekt_openclip_mattes():
 
             self.render_node.file_type = image_format
             self.render_node.bit_depth = bit_depth
+            # self.render_node.bit_depth = '32-bit fp'
 
             self.render_node.media_path = self.settings.write_file_media_path
             self.render_node.media_path_pattern = self.settings.write_file_pattern
@@ -438,6 +447,9 @@ class class_projekt_openclip_mattes():
             self.render_node.frame_padding = int(self.settings.write_file_padding)
 
             self.render_node.shot_name = self.clip_shot_name
+
+            # self.render_node.format = "Multi-Channel"
+            # self.render_node.format = "RGB-A"
 
             # add version note
             self.render_node.note = "This node was configured by projekt_mattes."
@@ -1164,3 +1176,7 @@ def get_media_panel_custom_ui_actions():
 # version:               0.4.5
 # modified:              2024-06-04 - 17:38:52
 # comments:              Added 'Smart Replace' option for render and write nodes
+# -------------------------------------------------------------------------- #
+# version:               0.4.6
+# modified:              2024-06-05 - 19:30:33
+# comments:              Added a new script to create openclip multichannel
