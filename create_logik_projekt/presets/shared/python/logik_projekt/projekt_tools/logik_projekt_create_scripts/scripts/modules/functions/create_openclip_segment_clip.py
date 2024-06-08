@@ -45,6 +45,7 @@ def create_openclip_segment_clip(shot_source_dir,
                                  app_name, 
                                  task_type, 
                                  shots_dir, 
+                                 shot_dir,
                                  shot_segment_clips_app_dir):
     """
     Create an openclip segment clip for a nuke segment script.
@@ -80,7 +81,7 @@ def create_openclip_segment_clip(shot_source_dir,
     <handler>
         <name>MIO Clip</name>
         <options>
-            <ScanPattern type="string">{shots_dir}/{shot_name}/media/sources/{shot_source_dir}_{app_name}_{task_type}_v{{version}}/{shot_source_dir}_{app_name}_{task_type}_v{{version}}.{{frame}}.exr</ScanPattern>
+            <ScanPattern type="string">{shots_dir}/{shot_dir}/media/sources/{shot_source_dir}_{app_name}_{task_type}_v{{version}}/{shot_source_dir}_{app_name}_{task_type}_v{{version}}.{{frame}}.exr</ScanPattern>
         </options>
     </handler>
 </clip>""")
