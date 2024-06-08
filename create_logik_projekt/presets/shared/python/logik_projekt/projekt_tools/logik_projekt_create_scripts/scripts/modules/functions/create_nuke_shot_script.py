@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_shot_script.py
-# Version:          2.2.3
+# Version:          2.2.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-05-18
+# Modified:         2024-06-08
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -35,52 +35,6 @@ import os
 # import fileinput
 # import logging
 # from datetime import datetime
-
-# ========================================================================== #
-# This section imports the external functions.
-# ========================================================================== #
-
-# # EXAMPLE:
-# from modules.functions.example import (
-#     example_function as new_function_name
-# )
-
-# from debugging_and_logging import (
-#     debugging_and_logging as debugging_and_logging 
-# )
-# from define_job_structure import (
-#     define_job_structure as define_job_structure 
-# )
-# from list_shots_dir import (
-#     list_shots_dir as list_shots_dir 
-# )
-# from define_shot_structure import (
-#     define_shot_structure as define_shot_structure 
-# )
-# from list_shot_sources_dir import (
-#     list_shot_sources_dir as list_shot_sources_dir 
-# )
-# from list_shot_source_dir import (
-#     list_shot_source_dir as list_shot_source_dir 
-# )
-# from path_to_shot_source_openexr_sequences import (
-#     path_to_shot_source_openexr_sequences as path_to_shot_source_openexr_sequences 
-# )
-# from create_openclip_output_clip import (
-#     create_openclip_output_clip as create_openclip_output_clip 
-# )
-# from create_openclip_segment_clip import (
-#     create_openclip_segment_clip as create_openclip_segment_clip 
-# )
-# from create_nuke_shot_script import (
-#     create_nuke_shot_script as create_nuke_shot_script 
-# )
-# from create_nuke_source_script import (
-#     create_nuke_source_script as create_nuke_source_script 
-# )
-# from process_shot_info import (
-#     process_shot_info as process_shot_info
-# )
 
 # ========================================================================== #
 # This section defines functions to create nuke scripts.
@@ -280,3 +234,7 @@ Write {{
 # version:               2.2.3
 # modified:              2024-05-18 - 18:46:27
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               2.2.4
+# modified:              2024-06-08 - 08:47:53
+# comments:              Removed unused code and prep for after effects scripts.

@@ -1,0 +1,15 @@
+{
+    "Projekt Root": "/JOBS/",
+    "File Path": "<project nickname>/shots/<shot name>/media/renders/<name>_<version name>/<name>_<version name><frame><ext>",
+    "Openclip Path": "<project nickname>/shots/<shot name>/openclip/output_clips/flame/<name><ext>",
+    "Batch Group Path": "<project nickname>/shots/<shot name>/batch_setups/<name>_<version name>_<workstation>_<user nickname><ext>",
+    "Create Openclip": "True",
+    "Create Batch Setup": "True",
+    "Node Type": "Write File",
+    "File Format": "OpenEXR",
+    "Bit Depth": "16-bit fp",
+    "Compression": "PIZ",
+    "Zero Padding": "8",
+    "Start Frame": "Follow Iteration",
+    "Version Prefix": "v"
+}
