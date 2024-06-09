@@ -144,7 +144,7 @@ from modules.functions.create_after_effects_source_script import (
 # ========================================================================== #
 
 # Define function to process shot information
-from modules.functions.process_shot_info import (
+from modules.functions.process_shot_info_after_effects import (
     process_shot_info as process_shot_info
 )
 

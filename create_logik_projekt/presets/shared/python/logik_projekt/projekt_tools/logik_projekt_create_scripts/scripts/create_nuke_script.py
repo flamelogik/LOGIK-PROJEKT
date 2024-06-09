@@ -162,7 +162,7 @@ from modules.functions.create_nuke_source_script import (
 # ========================================================================== #
 
 # Define function to process shot information
-from modules.functions.process_shot_info import (
+from modules.functions.process_shot_info_nuke import (
     process_shot_info as process_shot_info
 )
 

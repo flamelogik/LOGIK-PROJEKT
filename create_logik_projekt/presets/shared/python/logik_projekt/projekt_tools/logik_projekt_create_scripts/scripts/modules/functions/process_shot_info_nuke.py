@@ -1,9 +1,9 @@
-# filename: process_shot_info.py
+# filename: process_shot_info_nuke.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        process_shot_info.py
+# File Name:        process_shot_info_nuke.py
 # Version:          2.2.4
 # Language:         python script
 # Flame Version:    2025.x
@@ -57,7 +57,7 @@ import os
 # from debugging_and_logging import (
 #     debugging_and_logging as debugging_and_logging 
 # )
-from modules.functions.define_job_structure import (
+from define_job_structure import (
     define_job_structure as define_job_structure 
 )
 from list_shots_dir import (
@@ -188,6 +188,7 @@ def process_shot_info(job_structure,
                                                  app_name, 
                                                  task_type, 
                                                  shots_dir, 
+                                                 shot_dir,
                                                  shot_structure["shot_segment_clips_app_dir"])
 
                     # Create Nuke script for the shot

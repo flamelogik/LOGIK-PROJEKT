@@ -13,8 +13,8 @@
 # Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
-# Description:      This program scans the logik projekt shots directory
-#                   and creates nuke scripts and pattern based openclips.
+# Description:      This program scans the logik projekt shots directory and
+#                   creates after effects scripts and pattern based openclips.
 
 # Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
 #                   e.g. '/home/$USER/workspace/GitHub'
@@ -31,59 +31,13 @@
 # import flame
 import os
 # import pdb; pdb.set_trace()
-# import re
+import re
 import fileinput
 # import logging
 # from datetime import datetime
 
 # ========================================================================== #
-# This section imports the external functions.
-# ========================================================================== #
-
-# # EXAMPLE:
-# from modules.functions.example import (
-#     example_function as new_function_name
-# )
-
-# from debugging_and_logging import (
-#     debugging_and_logging as debugging_and_logging 
-# )
-# from define_job_structure import (
-#     define_job_structure as define_job_structure 
-# )
-# from list_shots_dir import (
-#     list_shots_dir as list_shots_dir 
-# )
-# from define_shot_structure import (
-#     define_shot_structure as define_shot_structure 
-# )
-# from list_shot_sources_dir import (
-#     list_shot_sources_dir as list_shot_sources_dir 
-# )
-# from list_shot_source_dir import (
-#     list_shot_source_dir as list_shot_source_dir 
-# )
-# from path_to_shot_source_openexr_sequences import (
-#     path_to_shot_source_openexr_sequences as path_to_shot_source_openexr_sequences 
-# )
-# from create_openclip_output_clip import (
-#     create_openclip_output_clip as create_openclip_output_clip 
-# )
-# from create_openclip_segment_clip import (
-#     create_openclip_segment_clip as create_openclip_segment_clip 
-# )
-# from create_after_effects_shot_script import (
-#     create_after_effects_shot_script as create_after_effects_shot_script 
-# )
-# from create_after_effects_source_script import (
-#     create_after_effects_source_script as create_after_effects_source_script 
-# )
-# from process_shot_info import (
-#     process_shot_info as process_shot_info
-# )
-
-# ========================================================================== #
-# This section defines functions to create nuke scripts.
+# This section defines functions to create after effects scripts.
 # ========================================================================== #
 
 # Define function to create a source script
@@ -100,7 +54,7 @@ def create_after_effects_source_script(shot_name,
                          shot_source_version_end_frame):
 
     """
-    Create a source script for nuke based on layer and task.
+    Create a source script for after effects  based on layer and task.
 
     Parameters:
         shot_name (str): The name of the shot.
@@ -130,187 +84,35 @@ def create_after_effects_source_script(shot_name,
     os.makedirs(source_scripts_app_task_dir, exist_ok=True)
 
     # Define the file path for the script
-    source_scripts_app_task_file = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.jsx"
-    source_scripts_app_task_path = os.path.join(source_scripts_app_task_dir, 
+    source_scripts_app_task_file = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.aep"
+    source_scripts_app_task_file_path = os.path.join(source_scripts_app_task_dir, 
                                                 source_scripts_app_task_file)
+    source_scripts_app_task_script = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.jsx"
+    source_scripts_app_task_script_path = os.path.join(source_scripts_app_task_dir, 
+                                                source_scripts_app_task_script)
 
-#     # Append the After Effects script content to the file
-#     with open(source_scripts_app_task_path, 'a') as after_effects_source_script_file:
-#         after_effects_source_script_file.write(f"""{
-#     // {source_scripts_app_task_file}.jsx
+    # # Append the After Effects script content to the file
+    # with open(source_scripts_app_task_file_path, 'a') as after_effects_source_script_file:
+    #     after_effects_source_script_file.write(f"""
 
-#     function SmartImport() {
-#         var scriptName = "{source_scripts_app_task_file}.jsx";
+    # Append the After Effects script content to the file
+    with open(source_scripts_app_task_script_path, 'a') as after_effects_source_script_script:
+        after_effects_source_script_script.write(f"""{{
+    // {source_scripts_app_task_script}
 
-#         // Define the source folder
-#         var source_folder = "{shot_sources_dir}/{shot_source_dir}";
-
-#         // If no project open, create a new project to import the files into.
-#         if (!app.project) {
-#             app.newProject();
-#         }
-
-#         function processFile(theFile) {
-#             try {
-#                 // Create a variable containing ImportOptions.
-#                 var importOptions = new ImportOptions(theFile);
-#                 var importedFootage = app.project.importFile(importOptions);
-
-#                 // Create a new composition
-#                 var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
-#                 var compWidth = importedFootage.width;
-#                 var compHeight = importedFootage.height;
-#                 var compFrameRate = importedFootage.frameRate;
-#                 var compDuration = importedFootage.duration;
-#                 var compStartFrame = "{shot_source_version_start_frame}";
-#                 var newComp = app.project.items.addComp(compName, compWidth, compHeight, 1, compDuration, compFrameRate);
-#                 newComp.displayStartFrame = compStartFrame;
-
-#                 // Add the imported footage to the composition
-#                 var footageLayer = newComp.layers.add(importedFootage);
-
-#                 // Add the composition to the render queue
-#                 var renderQueueItem = app.project.renderQueue.items.add(newComp);
-
-#                 // Set render output settings
-#                 renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
-#                 renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
-
-#                 // Save the After Effects project
-#                 app.project.save(new File("{source_scripts_app_task_path}.aep"));
-#             } catch (error) {
-#                 alert(error.toString(), scriptName);
-#             }
-#         }
-
-#         function testForSequence(files) {
-#             var searcher = new RegExp("[0-9]+");
-#             var movieFileSearcher = new RegExp("(mov|avi|mpg)$", "i");
-#             var parseResults = new Array;
-
-#             // Test that we have a sequence. Stop parsing after 10 files.
-#             for (x = 0; (x < files.length) & x < 10; x++) {
-#                 var movieFileResult = movieFileSearcher.exec(files[x].name);
-#                 if (!movieFileResult) {
-#                     var currentResult = searcher.exec(files[x].name);
-#                     // Regular expressions return null if no match was found.
-#                     // Otherwise, they return an array with the following information:
-#                     // array[0] = the matched string.
-#                     // array[1..n] = the matched capturing parentheses.
-
-#                     if (currentResult) { // We have a match -- the string contains numbers.
-#                         // The match of those numbers is stored in the array[1].
-#                         // Take that number and save it into parseResults.
-#                         parseResults[parseResults.length] = currentResult[0];
-#                     } else {
-#                         parseResults[parseResults.length] = null;
-#                     }
-#                 } else {
-#                     parseResults[parseResults.length] = null;
-#                 }
-#             }
-
-#             // If all the files we just went through have a number in their file names,
-#             // assume they are part of a sequence and return the first file.
-
-#             var result = null;
-#             for (i = 0; i < parseResults.length; ++i) {
-#                 if (parseResults[i]) {
-#                     if (!result) {
-#                         result = files[i];
-#                     }
-#                 } else {
-#                     // In this case, a file name did not contain a number.
-#                     result = null;
-#                     break;
-#                 }
-#             }
-
-#             return result;
-#         }
-
-#         function processFolder(theFolder) {
-#             // Get an array of files in the target folder.
-#             var files = theFolder.getFiles();
-
-#             // Test whether theFolder contains a sequence.
-#             var sequenceStartFile = testForSequence(files);
-
-#             // If it does contain a sequence, import the sequence,
-#             if (sequenceStartFile) {
-#                 try {
-#                     // Create a variable containing ImportOptions.
-#                     var importOptions = new ImportOptions(sequenceStartFile);
-
-#                     importOptions.sequence = true;
-#                     // importOptions.forceAlphabetical = true;        // Un-comment this if you want to force alpha order by default.
-#                     var importedFootage = app.project.importFile(importOptions);
-
-#                     // Create a new composition
-#                     var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
-#                     var compWidth = importedFootage.width;
-#                     var compHeight = importedFootage.height;
-#                     var compFrameRate = importedFootage.frameRate;
-#                     var compDuration = importedFootage.duration;
-#                     var compStartFrame = "{shot_source_version_start_frame}";
-#                     var newComp = app.project.items.addComp(compName, compWidth, compHeight, 1, compDuration, compFrameRate);
-#                     newComp.displayStartFrame = compStartFrame;
-
-#                     // Add the imported footage to the composition
-#                     var footageLayer = newComp.layers.add(importedFootage);
-
-#                     // Add the composition to the render queue
-#                     var renderQueueItem = app.project.renderQueue.items.add(newComp);
-
-#                     // Set render output settings
-#                     renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
-#                     renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
-
-#                     // Save the After Effects project
-#                     app.project.save(new File("{source_scripts_app_task_path}.aep"));
-#                 } catch (error) {
-#                 }
-#             }
-
-#             // Otherwise, import the files and recurse.
-
-#             for (index in files) { // Go through the array and set each element to singleFile, then run the following.
-#                 if (files[index] instanceof File) {
-#                     if (!sequenceStartFile) { // If file is already part of a sequence, don't import it individually.
-#                         processFile(files[index]); // Calls the processFile function above.
-#                     }
-#                 }
-#                 if (files[index] instanceof Folder) {
-#                     processFolder(files[index]); // recursion
-#                 }
-#             }
-#         }
-
-#         // Recursively examine the source folder.
-#         processFolder(new Folder(source_folder));
-#     }
-
-#     SmartImport();
-# }""")
-
-        # Append the After Effects script content to the file
-        with open(source_scripts_app_task_path, 'a') as after_effects_source_script_file:
-        after_effects_source_script_file.write(f"""{{
-        // {source_scripts_app_task_file}.jsx
-
-        function SmartImport() {{
-        var scriptName = "{source_scripts_app_task_file}.jsx";
+    function SmartImport() {{
+        var scriptName = "{source_scripts_app_task_script}";
 
         // Define the source folder
         var source_folder = "{shot_sources_dir}/{shot_source_dir}";
 
         // If no project open, create a new project to import the files into.
         if (!app.project) {{
-                app.newProject();
+            app.newProject();
         }}
 
         function processFile(theFile) {{
-                try {{
+            try {{
                 // Create a variable containing ImportOptions.
                 var importOptions = new ImportOptions(theFile);
                 var importedFootage = app.project.importFile(importOptions);
@@ -328,6 +130,14 @@ def create_after_effects_source_script(shot_name,
                 // Add the imported footage to the composition
                 var footageLayer = newComp.layers.add(importedFootage);
 
+                // Set the target directory for the render output (including the subfolder)
+                var targetDirectory = new Folder("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}");
+
+                // Check if the target directory exists, and create it if it doesn't
+                if (!targetDirectory.exists) {{
+                    targetDirectory.create();
+                }}
+
                 // Add the composition to the render queue
                 var renderQueueItem = app.project.renderQueue.items.add(newComp);
 
@@ -336,98 +146,136 @@ def create_after_effects_source_script(shot_name,
                 renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
 
                 // Save the After Effects project
-                app.project.save(new File("{source_scripts_app_task_path}.aep"));
-                }} catch (error) {{
+                app.project.save(new File("{source_scripts_app_task_file_path}"));
+            }} catch (error) {{
                 alert(error.toString(), scriptName);
-                }}
+            }}
         }}
 
         function testForSequence(files) {{
-                var searcher = new RegExp("[0-9]+");
-                var movieFileSearcher = new RegExp("(mov|avi|mpg)$", "i");
-                var parseResults = new Array;
+            var searcher = new RegExp("[0-9]+");
+            var movieFileSearcher = new RegExp("(mov|avi|mpg)$", "i");
+            var parseResults = new Array;
 
-                // Test that we have a sequence. Stop parsing after 10 files.
-                for (var x = 0; (x < files.length) & (x < 10); x++) {{
+            // Test that we have a sequence. Stop parsing after 10 files.
+            for (x = 0; (x < files.length) & x < 10; x++) {{
                 var movieFileResult = movieFileSearcher.exec(files[x].name);
                 if (!movieFileResult) {{
-                        var currentResult = searcher.exec(files[x].name);
-                        if (currentResult) {{ // We have a match -- the string contains numbers.
+                    var currentResult = searcher.exec(files[x].name);
+                    // Regular expressions return null if no match was found.
+                    // Otherwise, they return an array with the following information:
+                    // array[0] = the matched string.
+                    // array[1..n] = the matched capturing parentheses.
+
+                    if (currentResult) {{ // We have a match -- the string contains numbers.
+                        // The match of those numbers is stored in the array[1].
+                        // Take that number and save it into parseResults.
                         parseResults[parseResults.length] = currentResult[0];
-                        }} else {{
+                    }} else {{
                         parseResults[parseResults.length] = null;
-                        }}
+                    }}
                 }} else {{
-                        parseResults[parseResults.length] = null;
+                    parseResults[parseResults.length] = null;
                 }}
-                }}
+            }}
 
-                var result = null;
-                for (var i = 0; i < parseResults.length; ++i) {{
+            // If all the files we just went through have a number in their file names,
+            // assume they are part of a sequence and return the first file.
+
+            var result = null;
+            for (i = 0; i < parseResults.length; ++i) {{
                 if (parseResults[i]) {{
-                        if (!result) {{
+                    if (!result) {{
                         result = files[i];
-                        }}
+                    }}
                 }} else {{
-                        result = null;
-                        break;
+                    // In this case, a file name did not contain a number.
+                    result = null;
+                    break;
                 }}
-                }}
+            }}
 
-                return result;
+            return result;
         }}
 
         function processFolder(theFolder) {{
-                var files = theFolder.getFiles();
-                var sequenceStartFile = testForSequence(files);
+            // Get an array of files in the target folder, excluding .DS_Store files.
+            var files = theFolder.getFiles(function(file) {{
+                return !file.name.match(/^\..*$/); // Exclude files starting with a dot (hidden files)
+            }});
 
-                if (sequenceStartFile) {{
+            // Test whether theFolder contains a sequence.
+            var sequenceStartFile = testForSequence(files);
+
+            // If it does contain a sequence, import the sequence,
+            if (sequenceStartFile) {{
                 try {{
-                        var importOptions = new ImportOptions(sequenceStartFile);
-                        importOptions.sequence = true;
-                        var importedFootage = app.project.importFile(importOptions);
+                    // Create a variable containing ImportOptions.
+                    var importOptions = new ImportOptions(sequenceStartFile);
 
-                        var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
-                        var compWidth = importedFootage.width;
-                        var compHeight = importedFootage.height;
-                        var compFrameRate = importedFootage.frameRate;
-                        var compDuration = importedFootage.duration;
-                        var compStartFrame = {shot_source_version_start_frame};
-                        var newComp = app.project.items.addComp(compName, compWidth, compHeight, 1, compDuration, compFrameRate);
-                        newComp.displayStartFrame = compStartFrame;
+                    importOptions.sequence = true;
+                    // importOptions.forceAlphabetical = true;        // Un-comment this if you want to force alpha order by default.
+                    var importedFootage = app.project.importFile(importOptions);
 
-                        var footageLayer = newComp.layers.add(importedFootage);
-                        var renderQueueItem = app.project.renderQueue.items.add(newComp);
+                    // Create a new composition
+                    var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
+                    var compWidth = importedFootage.width;
+                    var compHeight = importedFootage.height;
+                    var compFrameRate = importedFootage.frameRate;
+                    var compDuration = importedFootage.duration;
+                    var compStartFrame = "{shot_source_version_start_frame}";
+                    var newComp = app.project.items.addComp(compName, compWidth, compHeight, 1, compDuration, compFrameRate);
+                    newComp.displayStartFrame = compStartFrame;
 
-                        renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
-                        renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
+                    // Set the target directory for the render output (including the subfolder)
+                    var targetDirectory = new Folder("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}");
 
-                        app.project.save(new File("{source_scripts_app_task_path}.aep"));
-                }} catch (error) {{}}
+                    // Check if the target directory exists, and create it if it doesn't
+                    if (!targetDirectory.exists) {{
+                        targetDirectory.create();
+                    }}
+
+                    // Add the imported footage to the composition
+                    var footageLayer = newComp.layers.add(importedFootage);
+
+                    // Add the composition to the render queue
+                    var renderQueueItem = app.project.renderQueue.items.add(newComp);
+
+                    // Set render output settings
+                    renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
+                    renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
+
+                    // Save the After Effects project
+                    app.project.save(new File("{source_scripts_app_task_file_path}"));
+                }} catch (error) {{
                 }}
+            }}
 
-                for (var index in files) {{
+            // Otherwise, import the files and recurse.
+
+            for (index in files) {{ // Go through the array and set each element to singleFile, then run the following.
                 if (files[index] instanceof File) {{
-                        if (!sequenceStartFile) {{
-                        processFile(files[index]);
-                        }}
+                    if (!sequenceStartFile) {{ // If file is already part of a sequence, don't import it individually.
+                        processFile(files[index]); // Calls the processFile function above.
+                    }}
                 }}
                 if (files[index] instanceof Folder) {{
-                        processFolder(files[index]);
+                    processFolder(files[index]); // recursion
                 }}
-                }}
+            }}
         }}
 
+        // Recursively examine the source folder.
         processFolder(new Folder(source_folder));
-        }}
+    }}
 
-        SmartImport();
-        }}""")
+    SmartImport();
+}}""")
 
         # # This section is for logging purposes
         # logging.debug(f"After Effects script created for:  {shot_source_dir}_{version_name}")
 
-        print(f"After Effects Source script created:  {shot_source_dir}_{app_name}_{task_type}_{version_name}.jsx\n")
+        print(f"After Effects Source script created:  {source_scripts_app_task_script}\n")
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #

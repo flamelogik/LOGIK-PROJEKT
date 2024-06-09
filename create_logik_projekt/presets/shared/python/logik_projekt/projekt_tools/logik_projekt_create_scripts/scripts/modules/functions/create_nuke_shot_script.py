@@ -31,8 +31,8 @@
 # import flame
 import os
 # import pdb; pdb.set_trace()
-# import re
-# import fileinput
+import re
+import fileinput
 # import logging
 # from datetime import datetime
 
@@ -76,11 +76,11 @@ def create_nuke_shot_script(shot_name,
 
     # Define the file path for the script
     shot_scripts_app_task_file = f"{shot_name}_{app_name}_{task_type}_{version_name}.nk"
-    shot_scripts_app_task_path = os.path.join(shot_scripts_app_task_dir,
+    shot_scripts_app_task_file_path = os.path.join(shot_scripts_app_task_dir,
                                               shot_scripts_app_task_file)
 
     # Write the Nuke script content to the file
-    with open(shot_scripts_app_task_path, 'w') as nuke_shot_script_file:
+    with open(shot_scripts_app_task_file_path, 'w') as nuke_shot_script_file:
         nuke_shot_script_file.write(f"""# LOGIK-PROJEKT Nuke Shot Script
 # Task Name: {shot_name}_{app_name}_{task_type}
 Root {{
@@ -128,7 +128,7 @@ Write {{
         # # This section is for logging purposes
         # logging.debug(f"Nuke script created for:  {shot_name}_{app_name}_{task_type}_{version_name}")
 
-        print(f"Nuke Shot script created:    {shot_name}_{app_name}_{task_type}.nk\n")
+        print(f"Nuke Shot script created:    {shot_scripts_app_task_file}\n")
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #

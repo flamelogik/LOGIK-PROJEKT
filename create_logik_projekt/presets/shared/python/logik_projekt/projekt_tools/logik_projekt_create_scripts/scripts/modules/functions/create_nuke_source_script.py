@@ -31,7 +31,7 @@
 # import flame
 import os
 # import pdb; pdb.set_trace()
-# import re
+import re
 import fileinput
 # import logging
 # from datetime import datetime
@@ -155,7 +155,7 @@ Write {{
         # # This section is for logging purposes
         # logging.debug(f"Nuke script created for:  {shot_source_dir}_{version_name}")
 
-        print(f"Nuke Source script created:  {shot_source_dir}_{app_name}_{task_type}_{version_name}.nk\n")
+        print(f"Nuke Source script created:  {source_scripts_app_task_file}\n")
 
     # Define the directory for the specific app and task type
     shot_scripts_app_task_dir = os.path.join(shots_dir, 

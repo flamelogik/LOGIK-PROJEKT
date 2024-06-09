@@ -1,9 +1,9 @@
-# filename: process_shot_info.py
+# filename: process_shot_info_after_effects.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        process_shot_info.py
+# File Name:        process_shot_info_after_effects.py
 # Version:          2.2.4
 # Language:         python script
 # Flame Version:    2025.x
@@ -57,7 +57,7 @@ import os
 # from debugging_and_logging import (
 #     debugging_and_logging as debugging_and_logging 
 # )
-from define_job_structure import (
+from modules.functions.define_job_structure import (
     define_job_structure as define_job_structure 
 )
 from list_shots_dir import (
@@ -81,11 +81,11 @@ from create_openclip_output_clip import (
 from create_openclip_segment_clip import (
     create_openclip_segment_clip as create_openclip_segment_clip 
 )
-from create_nuke_shot_script import (
-    create_nuke_shot_script as create_nuke_shot_script 
+from create_after_effects_shot_script import (
+    create_after_effects_shot_script as create_after_effects_shot_script 
 )
-from create_nuke_source_script import (
-    create_nuke_source_script as create_nuke_source_script 
+from create_after_effects_source_script import (
+    create_after_effects_source_script as create_after_effects_source_script 
 )
 # from process_shot_info import (
 #     process_shot_info as process_shot_info
@@ -139,21 +139,21 @@ def process_shot_info(job_structure,
             # Log shot structure
             # logging.info(f"Shot structure for {shot_dir} ({task_type}): {shot_structure}")
 
-            # Create openclip output clip
-            create_openclip_output_clip(shot_name, 
-                                        app_name, 
-                                        task_type, 
-                                        shots_dir, 
-                                        shot_structure["shot_output_clips_app_dir"])
+            # # Create openclip output clip
+            # create_openclip_output_clip(shot_name, 
+            #                             app_name, 
+            #                             task_type, 
+            #                             shots_dir, 
+            #                             shot_structure["shot_output_clips_app_dir"])
 
-            # Create Nuke script for the shot
-            create_nuke_shot_script(shot_name, 
-                               app_name, 
-                               task_type, 
-                               version_name, 
-                               shots_dir, 
-                               shot_structure["shot_renders_dir"], 
-                               shot_structure["shot_scripts_dir"])
+            # # Create Nuke script for the shot
+            # create_after_effects_shot_script(shot_name, 
+            #                    app_name, 
+            #                    task_type, 
+            #                    version_name, 
+            #                    shots_dir, 
+            #                    shot_structure["shot_renders_dir"], 
+            #                    shot_structure["shot_scripts_dir"])
 
             # Construct the correct path for listing source directories
             shot_sources_dir = os.path.join(shots_dir, 
@@ -192,7 +192,7 @@ def process_shot_info(job_structure,
                                                  shot_structure["shot_segment_clips_app_dir"])
 
                     # Create Nuke script for the shot
-                    create_nuke_source_script(shot_name, 
+                    create_after_effects_source_script(shot_name, 
                                          shots_dir, 
                                          shot_sources_dir, 
                                          shot_source_dir, 

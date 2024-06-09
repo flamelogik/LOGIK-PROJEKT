@@ -1,11 +1,11 @@
 {
-    // {source_scripts_app_task_file}
+    // ANIMALS_0010_layer_01_after_effects_roto_v0000.jsx
 
     function SmartImport() {
-        var scriptName = "{source_scripts_app_task_file}";
+        var scriptName = "ANIMALS_0010_layer_01_after_effects_roto_v0000.jsx";
 
         // Define the source folder
-        var source_folder = "{shot_sources_dir}/{shot_source_dir}";
+        var source_folder = "/Users/shared/JOBS/alpha_bravo_charlie/shots/ANIMALS_0010/media/sources/v0000";
 
         // If no project open, create a new project to import the files into.
         if (!app.project) {
@@ -19,27 +19,35 @@
                 var importedFootage = app.project.importFile(importOptions);
 
                 // Create a new composition
-                var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
+                var compName = "ANIMALS_0010_layer_01_after_effects_roto_v0000";
                 var compWidth = importedFootage.width;
                 var compHeight = importedFootage.height;
                 var compFrameRate = importedFootage.frameRate;
                 var compDuration = importedFootage.duration;
-                var compStartFrame = "{shot_source_version_start_frame}";
+                var compStartFrame = 1001;
                 var newComp = app.project.items.addComp(compName, compWidth, compHeight, 1, compDuration, compFrameRate);
                 newComp.displayStartFrame = compStartFrame;
 
                 // Add the imported footage to the composition
                 var footageLayer = newComp.layers.add(importedFootage);
 
+                // Set the target directory for the render output (including the subfolder)
+                var targetDirectory = new Folder("/Users/shared/JOBS/alpha_bravo_charlie/shots/ANIMALS_0010/media/sources/ANIMALS_0010_layer_01_after_effects_roto_v0000");
+
+                // Check if the target directory exists, and create it if it doesn't
+                if (!targetDirectory.exists) {
+                    targetDirectory.create();
+                }
+
                 // Add the composition to the render queue
                 var renderQueueItem = app.project.renderQueue.items.add(newComp);
 
                 // Set render output settings
-                renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
+                renderQueueItem.outputModule(1).file = new File("/Users/shared/JOBS/alpha_bravo_charlie/shots/ANIMALS_0010/media/sources/ANIMALS_0010_layer_01_after_effects_roto_v0000.[########].exr");
                 renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
 
                 // Save the After Effects project
-                app.project.save(new File("{source_scripts_app_task_path}.aep"));
+                app.project.save(new File("/Users/shared/JOBS/alpha_bravo_charlie/shots/ANIMALS_0010/scripts/after_effects/sources/roto/ANIMALS_0010_layer_01_after_effects_roto_v0000.aep"));
             } catch (error) {
                 alert(error.toString(), scriptName);
             }
@@ -92,8 +100,10 @@
         }
 
         function processFolder(theFolder) {
-            // Get an array of files in the target folder.
-            var files = theFolder.getFiles();
+            // Get an array of files in the target folder, excluding .DS_Store files.
+            var files = theFolder.getFiles(function(file) {
+                return !file.name.match(/^\..*$/); // Exclude files starting with a dot (hidden files)
+            });
 
             // Test whether theFolder contains a sequence.
             var sequenceStartFile = testForSequence(files);
@@ -109,27 +119,36 @@
                     var importedFootage = app.project.importFile(importOptions);
 
                     // Create a new composition
-                    var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
+                    var compName = "ANIMALS_0010_layer_01_after_effects_roto_v0000";
                     var compWidth = importedFootage.width;
                     var compHeight = importedFootage.height;
                     var compFrameRate = importedFootage.frameRate;
                     var compDuration = importedFootage.duration;
-                    var compStartFrame = "{shot_source_version_start_frame}";
+                    var compStartFrame = 1001;
                     var newComp = app.project.items.addComp(compName, compWidth, compHeight, 1, compDuration, compFrameRate);
                     newComp.displayStartFrame = compStartFrame;
 
                     // Add the imported footage to the composition
                     var footageLayer = newComp.layers.add(importedFootage);
 
+
+                    // Set the target directory for the render output (including the subfolder)
+                    var targetDirectory = new Folder("/Users/shared/JOBS/alpha_bravo_charlie/shots/ANIMALS_0010/media/sources/ANIMALS_0010_layer_01_after_effects_roto_v0000");
+
+                    // Check if the target directory exists, and create it if it doesn't
+                    if (!targetDirectory.exists) {
+                        targetDirectory.create();
+                    }
+
                     // Add the composition to the render queue
                     var renderQueueItem = app.project.renderQueue.items.add(newComp);
 
                     // Set render output settings
-                    renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
+                    renderQueueItem.outputModule(1).file = new File("/Users/shared/JOBS/alpha_bravo_charlie/shots/ANIMALS_0010/media/sources/ANIMALS_0010_layer_01_after_effects_roto_v0000.[########].exr");
                     renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
 
                     // Save the After Effects project
-                    app.project.save(new File("{source_scripts_app_task_path}.aep"));
+                    app.project.save(new File("/Users/shared/JOBS/alpha_bravo_charlie/shots/ANIMALS_0010/scripts/after_effects/sources/roto/ANIMALS_0010_layer_01_after_effects_roto_v0000.aep"));
                 } catch (error) {
                 }
             }
