@@ -1,20 +1,20 @@
-# filename: create_nuke_scripts.py
+# filename: create_after_effects_scripts.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        create_nuke_script.py
+# File Name:        create_after_effects_scripts.py
 # Version:          2.2.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Created:          2024-04-20
+# Created:          2024-06-07
 # Modified:         2024-06-09
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
-#                   and creates nuke scripts and pattern based openclips.
+#                   and creates after effects scripts and pattern based openclips.
 
 # Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
 #                   e.g. '/home/$USER/workspace/GitHub'
@@ -35,24 +35,6 @@ import os
 import fileinput
 # import logging
 from datetime import datetime
-
-# ========================================================================== #
-# This section imports the external classes.
-# ========================================================================== #
-
-# # EXAMPLE:
-# from modules.classes.example import (
-#     example_function as new_function_name
-# )
-
-# ========================================================================== #
-# This EXAMPLE demonstrates how to imports the external functions.
-# ========================================================================== #
-
-# # EXAMPLE:
-# from modules.functions.example import (
-#     example_function as new_function_name
-# )
 
 # ========================================================================== #
 # This section enables debugging.
@@ -129,32 +111,32 @@ from modules.functions.path_to_shot_source_openexr_sequences import (
 # This section defines functions to create pattern-based openclip files.
 # ========================================================================== #
 
-# Define function to create an openclip output clip for a nuke shot script
+# Define function to create an openclip output clip for a after effects shot script
 from modules.functions.create_openclip_output_clip import (
     create_openclip_output_clip as create_openclip_output_clip 
 )
 
 # -------------------------------------------------------------------------- #
 
-# Define function to create an openclip segment clip for a nuke source script
+# Define function to create an openclip segment clip for a after effects source script
 from modules.functions.create_openclip_segment_clip import (
     create_openclip_segment_clip as create_openclip_segment_clip 
 )
 
 # ========================================================================== #
-# This section defines functions to create nuke scripts.
+# This section defines functions to create after effects scripts.
 # ========================================================================== #
 
-# Define function to create a shot script for nuke based on task
-from modules.functions.create_nuke_shot_script import (
-    create_nuke_shot_script as create_nuke_shot_script 
+# Define function to create a shot script for after effects based on task
+from modules.functions.create_after_effects_shot_script import (
+    create_after_effects_shot_script as create_after_effects_shot_script 
 )
 
 # -------------------------------------------------------------------------- #
 
 # Define function to create a source script
-from modules.functions.create_nuke_source_script import (
-    create_nuke_source_script as create_nuke_source_script 
+from modules.functions.create_after_effects_source_script import (
+    create_after_effects_source_script as create_after_effects_source_script 
 )
 
 # ========================================================================== #
@@ -162,7 +144,7 @@ from modules.functions.create_nuke_source_script import (
 # ========================================================================== #
 
 # Define function to process shot information
-from modules.functions.process_shot_info_nuke import (
+from modules.functions.process_shot_info_after_effects import (
     process_shot_info as process_shot_info
 )
 
@@ -193,8 +175,6 @@ def create_openclips_and_scripts(*args, **kwargs):
     # Define paths
     jobs_dir = '/JOBS'
 
-    import flame
-
     # Get the current Flame project
     the_current_projekt = flame.projects.current_project
 
@@ -215,7 +195,7 @@ def create_openclips_and_scripts(*args, **kwargs):
     # logging.info("Job structure defined.")
 
     # Define app_name and task_types_list
-    app_name = "nuke"
+    app_name = "after_effects"
     task_types_list = (
         "color",
         "comp",
@@ -261,10 +241,10 @@ def get_main_menu_custom_ui_actions():
         {
             'name': 'create',
             'hierarchy': ['logik-projekt'],
-            'order': 6,
+            'order': 7,
             'actions': [
                 {
-                    'name': 'nuke scripts',
+                    'name': 'after effects scripts',
                     'execute': create_openclips_and_scripts,
                     'minimumVersion': '2025'
                 }
@@ -283,7 +263,7 @@ def get_main_menu_custom_ui_actions():
 #             'order': 5,
 #             'actions': [
 #                 {
-#                     'name': 'nuke scripts',
+#                     'name': 'after effects scripts',
 #                     'execute': create_openclips_and_scripts,
 #                     'minimumVersion': '2025'
 #                 }
@@ -302,8 +282,8 @@ def get_media_panel_custom_ui_actions():
             'order': 6,
             'actions': [
                 {
-                    'name': 'nuke scripts',
-                    'order': 6,
+                    'name': 'after effects scripts',
+                    'order': 7,
                     'separator': 'below',
                     'execute': create_openclips_and_scripts,
                     'minimumVersion': '2025'
@@ -425,10 +405,6 @@ if __name__ == "__main__":
 # version:               2.2.3
 # modified:              2024-05-18 - 18:46:27
 # comments:              Minor modification to Disclaimer.
-# -------------------------------------------------------------------------- #
-# version:               2.2.4
-# modified:              2024-06-08 - 08:47:53
-# comments:              Removed unused code and prep for after effects scripts.
 # -------------------------------------------------------------------------- #
 # version:               2.2.5
 # modified:              2024-06-09 - 11:27:00

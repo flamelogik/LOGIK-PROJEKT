@@ -1,15 +1,15 @@
-# filename: create_nuke_scripts.py
+# filename: process_shot_info_after_effects.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        create_nuke_script.py
+# File Name:        process_shot_info_after_effects.py
 # Version:          2.2.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Created:          2024-04-20
+# Created:          2024-06-07
 # Modified:         2024-06-09
 # Modifier:         Phil MAN - phil_man@mac.com
 
@@ -28,13 +28,13 @@
 # This section imports the necessary modules.
 # ========================================================================== #
 
-import flame
+# import flame
 import os
-# import pdb; pdb.set_trace() 
+# import pdb; pdb.set_trace()
 # import re
-import fileinput
+# import fileinput
 # import logging
-from datetime import datetime
+# from datetime import datetime
 
 # ========================================================================== #
 # This section imports the external classes.
@@ -46,7 +46,7 @@ from datetime import datetime
 # )
 
 # ========================================================================== #
-# This EXAMPLE demonstrates how to imports the external functions.
+# This section imports the external functions.
 # ========================================================================== #
 
 # # EXAMPLE:
@@ -54,272 +54,160 @@ from datetime import datetime
 #     example_function as new_function_name
 # )
 
-# ========================================================================== #
-# This section enables debugging.
-# ========================================================================== #
-
-# # Initiate script logging for debugging
-# from modules.functions.debugging_and_logging import (
+# from debugging_and_logging import (
 #     debugging_and_logging as debugging_and_logging 
 # )
-
-'''def setup_logging(*args, **kwargs):
-    script_path = os.path.abspath(__file__)
-    script_name = os.path.basename(script_path)
-    script_name_without_extension = os.path.splitext(script_name)[0]
-    script_directory = os.path.dirname(script_path)
-    log_directory = os.path.join(script_directory, 'log')
-
-    if not os.path.exists(log_directory):
-        os.makedirs(log_directory)
-
-    log_filename = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}_{script_name}.debug.log"
-    log_filepath = os.path.join(log_directory, log_filename)
-    print("Log filepath:", log_filepath)  # Add this line for debugging
-    logging.basicConfig(filename=log_filepath, level=logging.DEBUG, *args, **kwargs)
-'''
-
-# ========================================================================== #
-# This section defines the logik projekt job structure.
-# ========================================================================== #
-
-# Define function to define job structure
 from modules.functions.define_job_structure import (
     define_job_structure as define_job_structure 
 )
-
-# ========================================================================== #
-# This section gathers information about logik projekt shots.
-# ========================================================================== #
-
-# Define function to list shot directories
-from modules.functions.list_shots_dir import (
+from list_shots_dir import (
     list_shots_dir as list_shots_dir 
 )
-
-# -------------------------------------------------------------------------- #
-
-# Define function to define shot structure
-from modules.functions.define_shot_structure import (
+from define_shot_structure import (
     define_shot_structure as define_shot_structure 
 )
-
-# -------------------------------------------------------------------------- #
-
-# Define function to list shot sources directory
-from modules.functions.list_shot_sources_dir import (
+from list_shot_sources_dir import (
     list_shot_sources_dir as list_shot_sources_dir 
 )
-
-# -------------------------------------------------------------------------- #
-
-# Define function to list the contents of each shot_source_dir
-from modules.functions.list_shot_source_dir import (
+from list_shot_source_dir import (
     list_shot_source_dir as list_shot_source_dir 
 )
-
-# -------------------------------------------------------------------------- #
-
-# Define function to recursively search for OpenEXR image sequences
-from modules.functions.path_to_shot_source_openexr_sequences import (
+from path_to_shot_source_openexr_sequences import (
     path_to_shot_source_openexr_sequences as path_to_shot_source_openexr_sequences 
 )
-
-# ========================================================================== #
-# This section defines functions to create pattern-based openclip files.
-# ========================================================================== #
-
-# Define function to create an openclip output clip for a nuke shot script
-from modules.functions.create_openclip_output_clip import (
+from create_openclip_output_clip import (
     create_openclip_output_clip as create_openclip_output_clip 
 )
-
-# -------------------------------------------------------------------------- #
-
-# Define function to create an openclip segment clip for a nuke source script
-from modules.functions.create_openclip_segment_clip import (
+from create_openclip_segment_clip import (
     create_openclip_segment_clip as create_openclip_segment_clip 
 )
-
-# ========================================================================== #
-# This section defines functions to create nuke scripts.
-# ========================================================================== #
-
-# Define function to create a shot script for nuke based on task
-from modules.functions.create_nuke_shot_script import (
-    create_nuke_shot_script as create_nuke_shot_script 
+from create_after_effects_shot_script import (
+    create_after_effects_shot_script as create_after_effects_shot_script 
 )
-
-# -------------------------------------------------------------------------- #
-
-# Define function to create a source script
-from modules.functions.create_nuke_source_script import (
-    create_nuke_source_script as create_nuke_source_script 
+from create_after_effects_source_script import (
+    create_after_effects_source_script as create_after_effects_source_script 
 )
+# from process_shot_info import (
+#     process_shot_info as process_shot_info
+# )
 
 # ========================================================================== #
 # This section processes shot information to create files.
 # ========================================================================== #
 
 # Define function to process shot information
-from modules.functions.process_shot_info_nuke import (
-    process_shot_info as process_shot_info
-)
-
-# ========================================================================== #
-# This section defines the main create_openclips_and_scripts function.
-# ========================================================================== #
-
-def create_openclips_and_scripts(*args, **kwargs):
-
-    # Set up debugging
-    # pdb.set_trace()
-
-    # Here are some common debugger commands:
-
-    # n or next: Execute the current line and move to the next line.
-    # s or step: Execute the current line and step into any function calls on that line.
-    # c or continue: Continue execution until the next breakpoint or until the end of the script.
-    # p or print: Print the value of a variable.
-    # l or list: Show the current line and a few lines of code around it.
-
-    # You can find more information about using pdb in the
-    # Python documentation:
-    # https://docs.python.org/3/library/pdb.html
-
-    # Set umask
-    os.umask(0)
-
-    # Define paths
-    jobs_dir = '/JOBS'
-
-    import flame
-
-    # Get the current Flame project
-    the_current_projekt = flame.projects.current_project
-
-    # Get the project job_name
-    the_projekt_job_name = the_current_projekt.nickname
-
-    # Define the job root directory
-    job_root = os.path.join(jobs_dir, the_projekt_job_name)
-
-    # # Testing
-    # job_root = "/JOBS/dry_run_01"
-
-    # # Setup logging
-    # setup_logging()
-
-    # Define job structure using the function
-    job_structure = define_job_structure(job_root)
-    # logging.info("Job structure defined.")
-
-    # Define app_name and task_types_list
-    app_name = "nuke"
-    task_types_list = (
-        "color",
-        "comp",
-        "paint",
-        "precomp",
-        "roto"
-    )
-
-    # Initialize start_frame_min with positive infinity
-    # and end_frame_max with negative infinity
-    start_frame_min = float('inf')
-    end_frame_max = float('-inf')
-
-    # Define a function to print variables
-    # def print_variables():
-        # logging.info("Printing variables:")
-        # for key, value in job_structure.items():
-        #     logging.info(f"{key}: {value}")
-
-    # Call the function to print variables
-    # print_variables()
-
-    # Process shot information
-    process_shot_info(job_structure, 
+def process_shot_info(job_structure, 
                       app_name, 
                       task_types_list, 
                       start_frame_min, 
-                      end_frame_max)
+                      end_frame_max):
+    """
+    Process shot information.
 
-# ========================================================================== #
-# This section defines the flame menu entries.
-# ========================================================================== #
+    Parameters:
+    job_structure (dict): The structure of the job.
+    app_name (str): The name of the application.
+    task_types_list (list): List of task types.
+    start_frame_min (int): Minimum frame number.
+    end_frame_max (int): Maximum frame number.
 
-# Add custom UI actions
-def get_main_menu_custom_ui_actions():
+    Returns:
+    None
+    """
+    # Access shots_dir from job_structure dictionary
+    shots_dir = job_structure["shots_dir"]
 
-    return [
-        {
-            'name': 'logik-projekt',
-            'hierarchy': [],
-            'actions': []
-        },
-        {
-            'name': 'create',
-            'hierarchy': ['logik-projekt'],
-            'order': 6,
-            'actions': [
-                {
-                    'name': 'nuke scripts',
-                    'execute': create_openclips_and_scripts,
-                    'minimumVersion': '2025'
-                }
-            ]
-        }
-    ]
+    # List shot directories and store them in a variable
+    shots_dir_list = list_shots_dir(shots_dir)
 
-# -------------------------------------------------------------------------- #
+    # Define shot structures and list sources directories for each shot
+    for shot_dir in shots_dir_list:
 
-# def get_mediahub_files_custom_ui_actions():
+        # Define shot_name
+        shot_name = shot_dir
 
-#     return [
-#         {
-#             'name': 'create',
-#             'hierarchy': ['logik-projekt'],
-#             'order': 5,
-#             'actions': [
-#                 {
-#                     'name': 'nuke scripts',
-#                     'execute': create_openclips_and_scripts,
-#                     'minimumVersion': '2025'
-#                 }
-#             ]
-#         }
-#     ]
+        # Define version_name
+        version_name = "v0000"
 
-# -------------------------------------------------------------------------- #
+        # Iterate over task types list
+        for task_type in task_types_list:
+            shot_structure = define_shot_structure(shots_dir, 
+                                                   shot_dir, 
+                                                   app_name, 
+                                                   task_type)
+            
+            # Log shot structure
+            # logging.info(f"Shot structure for {shot_dir} ({task_type}): {shot_structure}")
 
-def get_media_panel_custom_ui_actions():
+            # # Create openclip output clip
+            # create_openclip_output_clip(shot_name, 
+            #                             app_name, 
+            #                             task_type, 
+            #                             shots_dir, 
+            #                             shot_structure["shot_output_clips_app_dir"])
 
-    return [
-        {
-            'name': 'create',
-            'hierarchy': ['logik-projekt'],
-            'order': 6,
-            'actions': [
-                {
-                    'name': 'nuke scripts',
-                    'order': 6,
-                    'separator': 'below',
-                    'execute': create_openclips_and_scripts,
-                    'minimumVersion': '2025'
-                }
-            ]
-        }
-    ]
+            # # Create Nuke script for the shot
+            # create_after_effects_shot_script(shot_name, 
+            #                    app_name, 
+            #                    task_type, 
+            #                    version_name, 
+            #                    shots_dir, 
+            #                    shot_structure["shot_renders_dir"], 
+            #                    shot_structure["shot_scripts_dir"])
 
-# ========================================================================== #
-# This section defines how to handle the main script function.
-# ========================================================================== #
+            # Construct the correct path for listing source directories
+            shot_sources_dir = os.path.join(shots_dir, 
+                                            shot_structure["shot_sources_dir"])
 
-# If this script is executed as main:
-# Call functions for immediate execution
-if __name__ == "__main__":
-    create_openclips_and_scripts()
+            # List source directories
+            shot_sources_dir_list = list_shot_sources_dir(shot_sources_dir)
+
+            # Log source directories
+            # logging.info(f"Source directories for {shot_dir} ({task_type}): {shot_sources_dir_list}")
+
+            # Call path_to_shot_source_openexr_sequences for each source directory
+            for shot_source_dir in shot_sources_dir_list:
+                shot_source_dir_path = os.path.join(shot_sources_dir, 
+                                                    shot_source_dir)
+                shot_source_version_openexr_sequences_info, \
+                    shot_source_version_start_frame, \
+                        shot_source_version_end_frame = path_to_shot_source_openexr_sequences(
+                            shot_source_dir_path, 
+                            start_frame_min, 
+                            end_frame_max)
+                
+                if shot_source_version_openexr_sequences_info:
+
+                    # logging.info(f"OpenEXR files found in {shot_source_dir_path} ({task_type}):")
+                    # for exr_info in shot_source_version_openexr_sequences_info:
+                        # logging.info(f" - {exr_info['shot_source_version_openexr_path']} | Prefix: {exr_info['shot_source_version_filename_prefix']}, Frame: {exr_info['shot_source_version_openexr_frame_number']}, Suffix: {exr_info['shot_source_version_openexr_filename_suffix']}, Sequence Dir: {exr_info['shot_source_version_sequence_dir']}")
+                    # logging.info(f"Start Frame: {shot_source_version_start_frame}, End Frame: {shot_source_version_end_frame}")
+
+                    # Create openclip segment clip
+                    create_openclip_segment_clip(shot_source_dir, 
+                                                 app_name, 
+                                                 task_type, 
+                                                 shots_dir, 
+                                                 shot_dir,
+                                                 shot_structure["shot_segment_clips_app_dir"])
+
+                    # Create Nuke script for the shot
+                    create_after_effects_source_script(shot_name, 
+                                         shots_dir, 
+                                         shot_sources_dir, 
+                                         shot_source_dir, 
+                                         app_name, 
+                                         task_type, 
+                                         version_name, 
+                                         shot_structure["shot_scripts_dir"], 
+                                         shot_source_version_openexr_sequences_info, 
+                                         shot_source_version_start_frame, 
+                                         shot_source_version_end_frame)
+
+                # else:
+
+                    # # This section is for logging purposes
+                    # logging.info(f"No OpenEXR files found in {shot_source_dir_path} ({task_type})")
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #

@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_after_effects_shot_script.py
-# Version:          2.2.3
+# Version:          2.2.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-06-07
-# Modified:         2024-05-18
+# Modified:         2024-06-09
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -374,3 +374,7 @@ def create_after_effects_shot_script(shot_name,
 # version:               2.2.3
 # modified:              2024-05-18 - 18:46:27
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               2.2.5
+# modified:              2024-06-09 - 11:27:00
+# comments:              Added After Effects script/openclip generators

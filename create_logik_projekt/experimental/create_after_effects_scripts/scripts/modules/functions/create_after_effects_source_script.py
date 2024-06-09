@@ -9,7 +9,7 @@
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
-# Created:          2024-04-20
+# Created:          2024-06-07
 # Modified:         2024-05-18
 # Modifier:         Phil MAN - phil_man@mac.com
 
@@ -87,13 +87,11 @@ def create_after_effects_source_script(shot_name,
     source_scripts_app_task_file = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.aep"
     source_scripts_app_task_file_path = os.path.join(source_scripts_app_task_dir, 
                                                 source_scripts_app_task_file)
+    
+    # Define the script path for the script
     source_scripts_app_task_script = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.jsx"
     source_scripts_app_task_script_path = os.path.join(source_scripts_app_task_dir, 
                                                 source_scripts_app_task_script)
-
-    # # Append the After Effects script content to the file
-    # with open(source_scripts_app_task_file_path, 'a') as after_effects_source_script_file:
-    #     after_effects_source_script_file.write(f"""
 
     # Append the After Effects script content to the file
     with open(source_scripts_app_task_script_path, 'a') as after_effects_source_script_script:

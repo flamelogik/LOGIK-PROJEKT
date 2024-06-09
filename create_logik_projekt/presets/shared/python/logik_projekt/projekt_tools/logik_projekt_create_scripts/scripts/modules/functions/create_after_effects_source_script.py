@@ -1,20 +1,20 @@
-# filename: create_after_effects_shot_script.py
+# filename: create_after_effects_source_script.py
 
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        create_after_effects_shot_script.py
-# Version:          2.2.3
+# File Name:        create_after_effects_source_script.py
+# Version:          2.2.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-06-07
-# Modified:         2024-05-18
+# Modified:         2024-06-09
 # Modifier:         Phil MAN - phil_man@mac.com
 
-# Description:      This program scans the logik projekt shots directory
-#                   and creates after effects scripts and pattern based openclips.
+# Description:      This program scans the logik projekt shots directory and
+#                   creates after effects scripts and pattern based openclips.
 
 # Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
 #                   e.g. '/home/$USER/workspace/GitHub'
@@ -40,16 +40,21 @@ import fileinput
 # This section defines functions to create after effects scripts.
 # ========================================================================== #
 
-# Define function to create a shot script for after effects based on task
-def create_after_effects_shot_script(shot_name, 
-                       app_name, 
-                       task_type, 
-                       version_name,
-                       shots_dir, 
-                       shot_renders_dir, 
-                       shot_scripts_dir):
+# Define function to create a source script
+def create_after_effects_source_script(shot_name, 
+                         shots_dir, 
+                         shot_sources_dir, 
+                         shot_source_dir, 
+                         app_name, 
+                         task_type, 
+                         version_name, 
+                         shot_scripts_dir, 
+                         shot_source_version_openexr_sequences_info, 
+                         shot_source_version_start_frame, 
+                         shot_source_version_end_frame):
+
     """
-    Create a shot script for after effects based on task.
+    Create a source script for after effects  based on layer and task.
 
     Parameters:
         shot_name (str): The name of the shot.
@@ -69,32 +74,32 @@ def create_after_effects_shot_script(shot_name,
     """
 
     # Define the directory for the specific app and task type
-    shot_scripts_app_task_dir = os.path.join(shots_dir,
-                                             shot_scripts_dir,
-                                             app_name,
-                                             'shot',
-                                             task_type)
+    source_scripts_app_task_dir = os.path.join(shots_dir, 
+                                               shot_scripts_dir, 
+                                               app_name, 
+                                               'sources', 
+                                               task_type)
 
     # Create the directory if it doesn't exist
-    os.makedirs(shot_scripts_app_task_dir, exist_ok=True)
+    os.makedirs(source_scripts_app_task_dir, exist_ok=True)
 
     # Define the file path for the script
-    shot_scripts_app_task_file = f"{shot_name}_{app_name}_{task_type}_{version_name}.aep"
-    shot_scripts_app_task_file_path = os.path.join(shot_scripts_app_task_dir,
-                                              shot_scripts_app_task_file)
+    source_scripts_app_task_file = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.aep"
+    source_scripts_app_task_file_path = os.path.join(source_scripts_app_task_dir, 
+                                                source_scripts_app_task_file)
     
     # Define the script path for the script
-    shot_scripts_app_task_script = f"{shot_name}_{app_name}_{task_type}_{version_name}.jsx"
-    shot_scripts_app_task_script_path = os.path.join(shot_scripts_app_task_dir,
-                                              shot_scripts_app_task_script)
+    source_scripts_app_task_script = f"{shot_source_dir}_{app_name}_{task_type}_{version_name}.jsx"
+    source_scripts_app_task_script_path = os.path.join(source_scripts_app_task_dir, 
+                                                source_scripts_app_task_script)
 
-    # Write the After Effects script content to the file
-    with open(shot_scripts_app_task_script_path, 'w') as shot_scripts_app_task_script:
-        shot_scripts_app_task_script.write(f"""{{
-    // {shot_scripts_app_task_script}
+    # Append the After Effects script content to the file
+    with open(source_scripts_app_task_script_path, 'a') as after_effects_source_script_script:
+        after_effects_source_script_script.write(f"""{{
+    // {source_scripts_app_task_script}
 
     function SmartImport() {{
-        var scriptName = "{shot_scripts_app_task_script}";
+        var scriptName = "{source_scripts_app_task_script}";
 
         // Define the source folder
         var source_folder = "{shot_sources_dir}/{shot_source_dir}";
@@ -111,7 +116,7 @@ def create_after_effects_shot_script(shot_name,
                 var importedFootage = app.project.importFile(importOptions);
 
                 // Create a new composition
-                var compName = "{shot_name}_{app_name}_{task_type}_{version_name}";
+                var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
                 var compWidth = importedFootage.width;
                 var compHeight = importedFootage.height;
                 var compFrameRate = importedFootage.frameRate;
@@ -124,7 +129,7 @@ def create_after_effects_shot_script(shot_name,
                 var footageLayer = newComp.layers.add(importedFootage);
 
                 // Set the target directory for the render output (including the subfolder)
-                var targetDirectory = new Folder("{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}");
+                var targetDirectory = new Folder("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}");
 
                 // Check if the target directory exists, and create it if it doesn't
                 if (!targetDirectory.exists) {{
@@ -135,11 +140,11 @@ def create_after_effects_shot_script(shot_name,
                 var renderQueueItem = app.project.renderQueue.items.add(newComp);
 
                 // Set render output settings
-                renderQueueItem.outputModule(1).file = new File("{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.[########].exr");
+                renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
                 renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
 
                 // Save the After Effects project
-                app.project.save(new File("{shot_scripts_app_task_file_path}"));
+                app.project.save(new File("{source_scripts_app_task_file_path}"));
             }} catch (error) {{
                 alert(error.toString(), scriptName);
             }}
@@ -211,7 +216,7 @@ def create_after_effects_shot_script(shot_name,
                     var importedFootage = app.project.importFile(importOptions);
 
                     // Create a new composition
-                    var compName = "{shot_name}_{app_name}_{task_type}_{version_name}";
+                    var compName = "{shot_source_dir}_{app_name}_{task_type}_{version_name}";
                     var compWidth = importedFootage.width;
                     var compHeight = importedFootage.height;
                     var compFrameRate = importedFootage.frameRate;
@@ -221,7 +226,7 @@ def create_after_effects_shot_script(shot_name,
                     newComp.displayStartFrame = compStartFrame;
 
                     // Set the target directory for the render output (including the subfolder)
-                    var targetDirectory = new Folder("{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}");
+                    var targetDirectory = new Folder("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}");
 
                     // Check if the target directory exists, and create it if it doesn't
                     if (!targetDirectory.exists) {{
@@ -235,11 +240,11 @@ def create_after_effects_shot_script(shot_name,
                     var renderQueueItem = app.project.renderQueue.items.add(newComp);
 
                     // Set render output settings
-                    renderQueueItem.outputModule(1).file = new File("{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.[########].exr");
+                    renderQueueItem.outputModule(1).file = new File("{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.[########].exr");
                     renderQueueItem.outputModule(1).applyTemplate("OpenEXR-PIZ");
 
                     // Save the After Effects project
-                    app.project.save(new File("{shot_scripts_app_task_file_path}"));
+                    app.project.save(new File("{source_scripts_app_task_file_path}"));
                 }} catch (error) {{
                 }}
             }}
@@ -266,9 +271,9 @@ def create_after_effects_shot_script(shot_name,
 }}""")
 
         # # This section is for logging purposes
-        # logging.debug(f"After Effects script created for:  {shot_name}_{app_name}_{task_type}_{version_name}")
+        # logging.debug(f"After Effects script created for:  {shot_source_dir}_{version_name}")
 
-        print(f"After Effects Shot script created:    {shot_scripts_app_task_script}\n")
+        print(f"After Effects Source script created:  {source_scripts_app_task_script}\n")
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
@@ -374,3 +379,7 @@ def create_after_effects_shot_script(shot_name,
 # version:               2.2.3
 # modified:              2024-05-18 - 18:46:27
 # comments:              Minor modification to Disclaimer.
+# -------------------------------------------------------------------------- #
+# version:               2.2.5
+# modified:              2024-06-09 - 11:27:00
+# comments:              Added After Effects script/openclip generators

@@ -4,17 +4,17 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_openclip_output_clip.py
-# Version:          2.2.4
+# Version:          2.2.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-08
+# Modified:         2024-06-09
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
-#                   and creates nuke scripts and pattern based openclips.
+#                   and creates pattern based openclips for shots.
 
 # Installation:     Copy the 'LOGIK-PROJEKT' repo to your GitHub directory,
 #                   e.g. '/home/$USER/workspace/GitHub'
@@ -40,7 +40,7 @@ import os
 # This section defines functions to create pattern-based openclip files.
 # ========================================================================== #
 
-# Define function to create an openclip output clip for a nuke shot script
+# Define function to create an openclip segment clip for a shot.
 def create_openclip_output_clip(shot_name, 
                                 app_name, 
                                 task_type, 
@@ -198,3 +198,7 @@ def create_openclip_output_clip(shot_name,
 # version:               2.2.4
 # modified:              2024-06-08 - 08:47:53
 # comments:              Removed unused code and prep for after effects scripts.
+# -------------------------------------------------------------------------- #
+# version:               2.2.5
+# modified:              2024-06-09 - 11:27:00
+# comments:              Added After Effects script/openclip generators

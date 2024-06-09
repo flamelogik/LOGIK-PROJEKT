@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        define_shot_structure.py
-# Version:          2.2.4
+# Version:          2.2.5
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-08
+# Modified:         2024-06-09
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -228,3 +228,7 @@ def define_shot_structure(shots_dir,
 # version:               2.2.4
 # modified:              2024-06-08 - 08:47:53
 # comments:              Removed unused code and prep for after effects scripts.
+# -------------------------------------------------------------------------- #
+# version:               2.2.5
+# modified:              2024-06-09 - 11:27:00
+# comments:              Added After Effects script/openclip generators
