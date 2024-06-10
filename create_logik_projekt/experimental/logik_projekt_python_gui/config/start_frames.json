@@ -1,0 +1,19 @@
+{
+    "group": "Projekt Start Frame",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ --------------------- Start Frame ---------------------------------- +",
+            "items": [
+                {
+                    "name": "  1001",
+                    "start_frame_nickname": "1001"
+                },
+                {
+                    "name": "  1",
+                    "start_frame_nickname": "1"
+                }
+            ]
+        }
+    ]
+}

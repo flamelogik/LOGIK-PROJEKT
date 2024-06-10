@@ -1,0 +1,59 @@
+{
+    "group": "Projekt Frame Rate",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ --------------------- Non Drop Frame ------------------------------- +",
+            "separator_name": "123456789012345678901234567890123456789012345678901234567890123456789012345678901234",
+            "separator_name": "+ -------------------------------- +",
+            "items": [
+                {
+                    "name": "  23.976 fps",
+                    "frame_rate_nickname": "23.976 fps"
+                },
+                {
+                    "name": "  24 fps",
+                    "frame_rate_nickname": "24 fps"
+                },
+                {
+                    "name": "  25 fps",
+                    "frame_rate_nickname": "25 fps"
+                },
+                {
+                    "name": "  29.97 fps",
+                    "frame_rate_nickname": "29.97 fps NDF"
+                },
+                {
+                    "name": "  30 fps",
+                    "frame_rate_nickname": "30 fps"
+                },
+                {
+                    "name": "  50 fps",
+                    "frame_rate_nickname": "50 fps"
+                },
+                {
+                    "name": "  59.94 fps",
+                    "frame_rate_nickname": "59.94 fps NDF"
+                },
+                {
+                    "name": "  60 fps",
+                    "frame_rate_nickname": "60 fps"
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ --------------------- Drop Frame ----------------------------------- +",
+            "items": [
+                {
+                    "name": "  29.97 fps",
+                    "frame_rate_nickname": "29.97 fps DF"
+                },
+                {
+                    "name": "  59.94 fps",
+                    "frame_rate_nickname": "59.94 fps DF"
+                }
+            ]
+        }
+    ]
+}

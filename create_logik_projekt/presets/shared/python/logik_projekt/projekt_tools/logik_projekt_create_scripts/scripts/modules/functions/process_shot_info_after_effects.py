@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        process_shot_info_after_effects.py
-# Version:          2.2.5
+# Version:          2.2.6
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-06-07
-# Modified:         2024-06-09
+# Modified:         2024-06-10
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program scans the logik projekt shots directory
@@ -321,3 +321,7 @@ def process_shot_info(job_structure,
 # version:               2.2.5
 # modified:              2024-06-09 - 11:27:00
 # comments:              Added After Effects script/openclip generators
+# -------------------------------------------------------------------------- #
+# version:               2.2.6
+# modified:              2024-06-10 - 06:59:38
+# comments:              Removed some double quotes from After Effects templates
