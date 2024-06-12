@@ -1,7 +1,7 @@
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        debug_and_log.py
+# File Name:        projekt_qt_lineedits.py
 # Version:          1.0.0
 # Language:         python script
 # Flame Version:    2025.x
@@ -43,76 +43,22 @@ def create_lineedit():
     return lineedit
 '''
 
-def create_render_node_type_lineedit():
+def create_serial_id_lineedit():
     lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("Write File Node")
-    lineedit.setText("Write File Node")
+    lineedit.setPlaceholderText("Enter the Serial Number")
+    # lineedit.setText("Enter the Serial Number")
     return lineedit
 
-def create_write_node_projekt_root_path_lineedit():
+def create_client_name_lineedit():
     lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("/JOBS/")
-    lineedit.setText("/JOBS/")
+    lineedit.setPlaceholderText("Enter the name of the Client")
+    # lineedit.setText("Enter the name of the Client")
     return lineedit
 
-def create_write_node_file_path_lineedit():
+def create_campaign_name_lineedit():
     lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("<project nickname>/shots/<shot name>/media/renders/<name>_<version name>/<name>_<version name><frame><ext>")
-    lineedit.setText("<project nickname>/shots/<shot name>/media/renders/<name>_<version name>/<name>_<version name><frame><ext>")
-    return lineedit
-
-def create_write_node_openclip_path_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("<project nickname>/shots/<shot name>/openclip/output_clips/flame/<name><ext>")
-    lineedit.setText("<project nickname>/shots/<shot name>/openclip/output_clips/flame/<name><ext>")
-    return lineedit
-
-def create_write_node_setup_path_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("<project nickname>/shots/<shot name>/batch_setups/<name>_<version name>_<workstation>_<user nickname><ext>")
-    lineedit.setText("<project nickname>/shots/<shot name>/batch_setups/<name>_<version name>_<workstation>_<user nickname><ext>")
-    return lineedit
-
-def create_write_node_create_openclip_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("True")
-    lineedit.setText("True")
-    return lineedit
-
-def create_write_node_include_setup_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("True")
-    lineedit.setText("True")
-    return lineedit
-
-def create_write_node_image_format_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("OpenEXR 16-bit fp")
-    lineedit.setText("OpenEXR 16-bit fp")
-    return lineedit
-
-def create_write_node_compression_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("PIZ")
-    lineedit.setText("PIZ")
-    return lineedit
-
-def create_write_node_padding_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("8")
-    lineedit.setText("8")
-    return lineedit
-
-def create_write_node_frame_index_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("Use Start Frame")
-    lineedit.setText("Use Start Frame")
-    return lineedit
-
-def create_write_node_version_name_lineedit():
-    lineedit = QLineEdit()
-    # lineedit.setPlaceholderText("v<version>")
-    lineedit.setText("v<version>")
+    lineedit.setPlaceholderText("Enter the name of the Campaign")
+    # lineedit.setText("Enter the name of the Campaign")
     return lineedit
 
 # ========================================================================== #

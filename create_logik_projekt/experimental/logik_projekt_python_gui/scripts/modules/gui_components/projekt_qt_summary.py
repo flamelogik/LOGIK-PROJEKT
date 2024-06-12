@@ -1,7 +1,7 @@
 '''
 # -------------------------------------------------------------------------- #
 
-# File Name:        debug_and_log.py
+# File Name:        projekt_qt_summary.py
 # Version:          1.0.0
 # Language:         python script
 # Flame Version:    2025.x
@@ -27,86 +27,59 @@
 # This section defines the import staements.
 # ========================================================================== #
 
-from PySide6.QtWidgets import QComboBox
+# pyside6_summary.py
+from PySide6.QtWidgets import QTextEdit
 
 # ========================================================================== #
 # This section defines the main functions.
 # ========================================================================== #
 
-def create_openclip_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["True", "False"])
-    return dropdown
+local_stylesheet = """
+/* Summary box (QTextEdit) */
+QTextEdit {
+    background-color: #37414b;  /* Replace with your desired color */
+    color: #ffffff;  /* Text color */
+    font: 14px "Discreet";  /* Font */
+    border: 1px solid #007acc;  /* Border */
+    border-radius: 0px;  /* No rounded corners */
+}
+"""
 
-def create_setup_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["True", "False"])
-    return dropdown
+def create_summary_textbox():
+    textbox = QTextEdit()
+    textbox.setReadOnly(True)  # Make it read-only
+    textbox.setStyleSheet(local_stylesheet)  # Apply the local stylesheet
+    return textbox
 
-def create_node_type_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Render", "Write File"])
-    return dropdown
+# def update_summary_textbox(textbox, dropdowns):
+#     summary_text = ""
+#     for label, dropdown in dropdowns.items():
+#         summary_text += f"{label}: {dropdown.currentText()}\n"
+#     textbox.setPlainText(summary_text)
 
-def create_node_format_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["RGB-A", "Multi-Channel"])
-    return dropdown
+# def update_summary_textbox(textbox, lineedits, dropdowns):
+#     summary_text = ""
+#     for label, lineedit in lineedits.items():
+#         summary_text += f"{label}: {lineedit.text()}\n"
+#     for label, dropdown in dropdowns.items():
+#         summary_text += f"{label}: {dropdown.currentText()}\n"
+#     textbox.setPlainText(summary_text)
+# In modules/gui_components/projekt_qt_summary.py
 
-def create_render_resolution_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Working", "Full"])
-    return dropdown
-
-def create_frame_rate_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["23.976 fps", "24 fps", "25 fps", "29.97 fps DF", "29.97 fps NDF", "30 fps", "50 fps", "59.94 fps DF", "59.94 fps NDF", "60 fps"])
-    return dropdown
-
-def create_file_format_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Alias", "Cineon", "Dpx", "Jpeg", "Maya", "OpenEXR", "Pict", "Pixar", "Png", "Sgi", "SoftImage", "Targa", "Tiff", "Tx", "Wavefront"])
-    return dropdown
-
-def create_bit_depth_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["32-bit fp", "16-bit fp", "16-bit", "12-bit", "10-bit", "8-bit"])
-    return dropdown
-
-def create_compression_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Scanline", "Multi_Scanline", "RLE", "PXR24", "PIZ", "Pixspan", "Packed", "LZW", "DWAB", "DWAA", "B44A", "B44", "Uncompressed"])
-    return dropdown
-
-def create_media_path_tokens_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Date", "Time", "Year (YYYY)", "Year (YY)", "Month", "Day", "Hour", "Minute", "Second", "Workstation", "User Nickname", "User", "Project Nickname", "Project", "Batch Iteration", "Batch Name", "Iteration", "Tape/Reel/Source", "Shot Name", "Colour Space", "Clip Resolution", "Clip Height", "Clip Width", "Version", "Version Name", "Extension", "Polarity", "Frame Index", "Clip Name"])
-    return dropdown
-
-def create_workspace_tokens_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Batch Reels", "Reel Groups", "Libraries"])
-    return dropdown
-
-def create_version_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Follow Iteration", "Custom Version", "No Versioning"])
-    return dropdown
-
-def create_zero_padding_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["4", "5", "6", "7", "8"])
-    return dropdown
-
-def create_start_frame_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["Follow Iteration", "Custom Version", "No Versioning"])
-    return dropdown
-
-def create_version_prefix_dropdown():
-    dropdown = QComboBox()
-    dropdown.addItems(["v", "V"])
-    return dropdown
+def update_summary_textbox(summary_textbox, lineedits, cleaned_lineedits, dropdowns):
+    summary_text = ""
+    
+    # Iterate through original lineedits to maintain the labels and cleaned strings
+    for label, lineedit in lineedits.items():
+        cleaned_text = cleaned_lineedits[label]
+        summary_text += f"{label}: {cleaned_text}\n"
+    
+    # Iterate through dropdowns to add their values to the summary
+    for label, dropdown in dropdowns.items():
+        summary_text += f"{label}: {dropdown.currentText()}\n"
+    
+    # Set the summary text
+    summary_textbox.setPlainText(summary_text)
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #

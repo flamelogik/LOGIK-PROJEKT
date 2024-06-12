@@ -27,31 +27,86 @@
 # This section defines the import staements.
 # ========================================================================== #
 
-import sys
-from PySide6.QtWidgets import QApplication
-from openclip_prefs_gui import MyGUI
-from modules.gui_components.openclip_prefs_stylesheet import stylesheet
+from PySide6.QtWidgets import QComboBox
 
 # ========================================================================== #
 # This section defines the main functions.
 # ========================================================================== #
 
-def main():
-    app = QApplication(sys.argv)
-    
-    # Apply stylesheet
-    app.setStyleSheet(stylesheet)
-    
-    gui = MyGUI()
-    gui.show()
-    sys.exit(app.exec())
+def create_openclip_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["True", "False"])
+    return dropdown
 
-# ========================================================================== #
-# This section executes the main functions.
-# ========================================================================== #
+def create_setup_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["True", "False"])
+    return dropdown
 
-if __name__ == "__main__":
-    main()
+def create_node_type_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Render", "Write File"])
+    return dropdown
+
+def create_node_format_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["RGB-A", "Multi-Channel"])
+    return dropdown
+
+def create_render_resolution_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Working", "Full"])
+    return dropdown
+
+def create_frame_rate_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["23.976 fps", "24 fps", "25 fps", "29.97 fps DF", "29.97 fps NDF", "30 fps", "50 fps", "59.94 fps DF", "59.94 fps NDF", "60 fps"])
+    return dropdown
+
+def create_file_format_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Alias", "Cineon", "Dpx", "Jpeg", "Maya", "OpenEXR", "Pict", "Pixar", "Png", "Sgi", "SoftImage", "Targa", "Tiff", "Tx", "Wavefront"])
+    return dropdown
+
+def create_bit_depth_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["32-bit fp", "16-bit fp", "16-bit", "12-bit", "10-bit", "8-bit"])
+    return dropdown
+
+def create_compression_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Scanline", "Multi_Scanline", "RLE", "PXR24", "PIZ", "Pixspan", "Packed", "LZW", "DWAB", "DWAA", "B44A", "B44", "Uncompressed"])
+    return dropdown
+
+def create_media_path_tokens_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Date", "Time", "Year (YYYY)", "Year (YY)", "Month", "Day", "Hour", "Minute", "Second", "Workstation", "User Nickname", "User", "Project Nickname", "Project", "Batch Iteration", "Batch Name", "Iteration", "Tape/Reel/Source", "Shot Name", "Colour Space", "Clip Resolution", "Clip Height", "Clip Width", "Version", "Version Name", "Extension", "Polarity", "Frame Index", "Clip Name"])
+    return dropdown
+
+def create_workspace_tokens_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Batch Reels", "Reel Groups", "Libraries"])
+    return dropdown
+
+def create_version_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Follow Iteration", "Custom Version", "No Versioning"])
+    return dropdown
+
+def create_zero_padding_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["4", "5", "6", "7", "8"])
+    return dropdown
+
+def create_start_frame_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["Follow Iteration", "Custom Version", "No Versioning"])
+    return dropdown
+
+def create_version_prefix_dropdown():
+    dropdown = QComboBox()
+    dropdown.addItems(["v", "V"])
+    return dropdown
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #

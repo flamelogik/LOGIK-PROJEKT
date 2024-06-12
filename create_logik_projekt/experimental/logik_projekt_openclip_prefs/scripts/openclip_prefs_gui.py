@@ -2,13 +2,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        debug_and_log.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-07
+# Modified:         2024-06-11
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of LOGIK-PROJEKT.
@@ -42,9 +42,9 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QScreen
 
-from modules.gui_components.pyside6_buttons import create_button
+from modules.gui_components.openclip_prefs_buttons import create_button
 
-from modules.gui_components.pyside6_dropdowns import (
+from modules.gui_components.openclip_prefs_dropdowns import (
     create_openclip_dropdown,
     create_setup_dropdown,
     create_node_type_dropdown,
@@ -62,7 +62,7 @@ from modules.gui_components.pyside6_dropdowns import (
     create_version_prefix_dropdown
 )
 
-from modules.gui_components.pyside6_lineedits import (
+from modules.gui_components.openclip_prefs_lineedits import (
     create_render_node_type_lineedit,
     create_write_node_projekt_root_path_lineedit,
     create_write_node_file_path_lineedit,
@@ -77,13 +77,13 @@ from modules.gui_components.pyside6_lineedits import (
     create_write_node_version_name_lineedit
 )
 
-from modules.gui_components.pyside6_summary import create_summary_textbox, update_summary_textbox
+from modules.gui_components.openclip_prefs_summary import create_summary_textbox, update_summary_textbox
 
-from modules.gui_components.pyside6_stylesheet import stylesheet
+from modules.gui_components.openclip_prefs_stylesheet import stylesheet
 
-from modules.functions.prefs_saver import openclip_prefs_saver
+from modules.functions.openclip_prefs_saver import openclip_prefs_saver
 
-from modules.functions.prefs_loader import openclip_prefs_loader
+from modules.functions.openclip_prefs_loader import openclip_prefs_loader
 
 # ========================================================================== #
 # This section defines the main functions.
@@ -196,6 +196,7 @@ class MyGUI(QWidget):
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
+
 '''
 # -------------------------------------------------------------------------- #
 
@@ -207,22 +208,33 @@ class MyGUI(QWidget):
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
 
-#                   This program is distributed in the hope that it will be
-#                   useful, but WITHOUT ANY WARRANTY; without even the
-#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
-#                   PARTICULAR PURPOSE.
+#                   This program is distributed in the hope that it will
+#                   be useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or 
+#                   FITNESS FOR A PARTICULAR PURPOSE.
 
 #                   See the GNU General Public License for more details.
-
-#                   You should have received a copy of the GNU General
-#                   Public License along with this program.
+#                   You should have received a copy of the 
+#                   GNU General Public License along with this program. 
 
 #                   If not, see <https://www.gnu.org/licenses/>.
+
+#                   In no event shall the authors or copyright holders be 
+#                   liable for any claim, damages, or other liability, 
+#                   whether in an action of contract, tort, or otherwise, 
+#                   arising from, out of, or in connection with the software 
+#                   or the use or other dealings in the software.
+
 # -------------------------------------------------------------------------- #
 '''
+
 # -------------------------------------------------------------------------- #
 # Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               1.0.0
 # modified:              2024-06-07 - 16:22:45
 # comments:              Working program
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-06-11 - 07:36:09
+# comments:              Unique renaming of scripts and disclaimer update.

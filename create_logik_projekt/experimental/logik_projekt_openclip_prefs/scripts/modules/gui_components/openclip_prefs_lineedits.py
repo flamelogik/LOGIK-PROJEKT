@@ -27,31 +27,93 @@
 # This section defines the import staements.
 # ========================================================================== #
 
-import sys
-from PySide6.QtWidgets import QApplication
-from openclip_prefs_gui import MyGUI
-from modules.gui_components.openclip_prefs_stylesheet import stylesheet
+from PySide6.QtWidgets import QLineEdit
 
 # ========================================================================== #
 # This section defines the main functions.
 # ========================================================================== #
 
-def main():
-    app = QApplication(sys.argv)
-    
-    # Apply stylesheet
-    app.setStyleSheet(stylesheet)
-    
-    gui = MyGUI()
-    gui.show()
-    sys.exit(app.exec())
+'''
+def create_lineedit():
+    lineedit = QLineEdit()
+    # Set placeholder text if needed
+    # lineedit.setPlaceholderText("Enter text here")
+    # Set text if needed
+    # lineedit.setText("Enter text here")
+    return lineedit
+'''
 
-# ========================================================================== #
-# This section executes the main functions.
-# ========================================================================== #
+def create_render_node_type_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("Write File Node")
+    lineedit.setText("Write File Node")
+    return lineedit
 
-if __name__ == "__main__":
-    main()
+def create_write_node_projekt_root_path_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("/JOBS/")
+    lineedit.setText("/JOBS/")
+    return lineedit
+
+def create_write_node_file_path_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("<project nickname>/shots/<shot name>/media/renders/<name>_<version name>/<name>_<version name><frame><ext>")
+    lineedit.setText("<project nickname>/shots/<shot name>/media/renders/<name>_<version name>/<name>_<version name><frame><ext>")
+    return lineedit
+
+def create_write_node_openclip_path_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("<project nickname>/shots/<shot name>/openclip/output_clips/flame/<name><ext>")
+    lineedit.setText("<project nickname>/shots/<shot name>/openclip/output_clips/flame/<name><ext>")
+    return lineedit
+
+def create_write_node_setup_path_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("<project nickname>/shots/<shot name>/batch_setups/<name>_<version name>_<workstation>_<user nickname><ext>")
+    lineedit.setText("<project nickname>/shots/<shot name>/batch_setups/<name>_<version name>_<workstation>_<user nickname><ext>")
+    return lineedit
+
+def create_write_node_create_openclip_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("True")
+    lineedit.setText("True")
+    return lineedit
+
+def create_write_node_include_setup_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("True")
+    lineedit.setText("True")
+    return lineedit
+
+def create_write_node_image_format_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("OpenEXR 16-bit fp")
+    lineedit.setText("OpenEXR 16-bit fp")
+    return lineedit
+
+def create_write_node_compression_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("PIZ")
+    lineedit.setText("PIZ")
+    return lineedit
+
+def create_write_node_padding_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("8")
+    lineedit.setText("8")
+    return lineedit
+
+def create_write_node_frame_index_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("Use Start Frame")
+    lineedit.setText("Use Start Frame")
+    return lineedit
+
+def create_write_node_version_name_lineedit():
+    lineedit = QLineEdit()
+    # lineedit.setPlaceholderText("v<version>")
+    lineedit.setText("v<version>")
+    return lineedit
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #

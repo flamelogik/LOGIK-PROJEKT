@@ -34,6 +34,8 @@ from modules.functions.projekt_utilities_ui import (
     create_labeled_entry, create_dropdown_menu, create_button
 )
 
+from modules.gui_components.pyside6_stylesheet import stylesheet
+
 # -------------------------------------------------------------------------- #
 
 class logik_projekt_main_window(QMainWindow):
@@ -51,7 +53,7 @@ class logik_projekt_main_window(QMainWindow):
         self.setGeometry(0, 0, 640, 1280)
         self.center()
         
-        self.setStyleSheet("background-color: #333333;")
+        # self.setStyleSheet("background-color: #333333;")
         
         central_widget = QWidget()
         layout = QVBoxLayout()
@@ -76,72 +78,72 @@ class logik_projekt_main_window(QMainWindow):
         # ------------------------------------------------------------------ #
 
         self.projekt_resolution_label = QLabel('Projekt Resolution:')
-        self.projekt_resolution_label.setStyleSheet(self.get_label_stylesheet())
+        # self.projekt_resolution_label.setStyleSheet(self.get_label_stylesheet())
         layout.addWidget(self.projekt_resolution_label)
 
         self.projekt_resolution = QComboBox()
-        self.projekt_resolution.setStyleSheet(self.get_combobox_stylesheet())
+        # self.projekt_resolution.setStyleSheet(self.get_combobox_stylesheet())
         layout.addWidget(self.projekt_resolution)
         self.add_separator_line(layout)
 
         # ------------------------------------------------------------------ #
 
         self.projekt_bit_depth_label = QLabel('Projekt Bit Depth:')
-        self.projekt_bit_depth_label.setStyleSheet(self.get_label_stylesheet())
+        # self.projekt_bit_depth_label.setStyleSheet(self.get_label_stylesheet())
         layout.addWidget(self.projekt_bit_depth_label)
 
         self.projekt_bit_depth = QComboBox()
-        self.projekt_bit_depth.setStyleSheet(self.get_combobox_stylesheet())
+        # self.projekt_bit_depth.setStyleSheet(self.get_combobox_stylesheet())
         layout.addWidget(self.projekt_bit_depth)
         self.add_separator_line(layout)
 
         # ------------------------------------------------------------------ #
 
         self.projekt_frame_rate_label = QLabel('Projekt Frame Rate:')
-        self.projekt_frame_rate_label.setStyleSheet(self.get_label_stylesheet())
+        # self.projekt_frame_rate_label.setStyleSheet(self.get_label_stylesheet())
         layout.addWidget(self.projekt_frame_rate_label)
 
         self.projekt_frame_rate = QComboBox()
-        self.projekt_frame_rate.setStyleSheet(self.get_combobox_stylesheet())
+        # self.projekt_frame_rate.setStyleSheet(self.get_combobox_stylesheet())
         layout.addWidget(self.projekt_frame_rate)
         self.add_separator_line(layout)
 
         # ------------------------------------------------------------------ #
 
         self.projekt_color_science_label = QLabel('Projekt Color Science:')
-        self.projekt_color_science_label.setStyleSheet(self.get_label_stylesheet())
+        # self.projekt_color_science_label.setStyleSheet(self.get_label_stylesheet())
         layout.addWidget(self.projekt_color_science_label)
 
         self.projekt_color_science = QComboBox()
-        self.projekt_color_science.setStyleSheet(self.get_combobox_stylesheet())
+        # self.projekt_color_science.setStyleSheet(self.get_combobox_stylesheet())
         layout.addWidget(self.projekt_color_science)
         self.add_separator_line(layout)
 
         # ------------------------------------------------------------------ #
 
         self.projekt_start_frame_label = QLabel('Projekt Start Frame:')
-        self.projekt_start_frame_label.setStyleSheet(self.get_label_stylesheet())
+        # self.projekt_start_frame_label.setStyleSheet(self.get_label_stylesheet())
         layout.addWidget(self.projekt_start_frame_label)
 
         self.projekt_start_frame = QComboBox()
-        self.projekt_start_frame.setStyleSheet(self.get_combobox_stylesheet())
+        # self.projekt_start_frame.setStyleSheet(self.get_combobox_stylesheet())
         layout.addWidget(self.projekt_start_frame)
         self.add_separator_line(layout)
 
         # ------------------------------------------------------------------ #
 
         summary_label = QLabel("LOGIK-PROJEKT Summary")
-        summary_label.setStyleSheet(self.get_label_stylesheet())
+        # summary_label.setStyleSheet(self.get_label_stylesheet())
         layout.addWidget(summary_label)
 
         self.summary_text = QTextEdit()
         self.summary_text.setReadOnly(True)
-        self.summary_text.setStyleSheet("""
-            background-color: #111111;
-            color: white;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-        """)
+        # self.summary_text.setStyleSheet("""
+        #     background-color: #111111;
+        #     color: white;
+        #     font-family: 'Courier New', monospace;
+        #     font-weight: bold;
+        # """)
         layout.addWidget(self.summary_text)
 
         # ------------------------------------------------------------------ #
@@ -216,32 +218,32 @@ class logik_projekt_main_window(QMainWindow):
         # ------------------------------------------------------------------ #
 
         self.env_info_label = QLabel("Environment Info:")
-        self.env_info_label.setStyleSheet(self.get_label_stylesheet())
+        # self.env_info_label.setStyleSheet(self.get_label_stylesheet())
 
         self.environment_info = QTextEdit()
         self.environment_info.setReadOnly(True)
-        self.environment_info.setStyleSheet("""
-            background-color: #111111;
-            color: white;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-        """)
+        # self.environment_info.setStyleSheet("""
+        #     background-color: #111111;
+        #     color: white;
+        #     font-family: 'Courier New', monospace;
+        #     font-weight: bold;
+        # """)
         layout.addWidget(self.env_info_label)
         layout.addWidget(self.environment_info)
 
         # ------------------------------------------------------------------ #
 
         self.latest_flame_version_label = QLabel("Latest Flame Version:")
-        self.latest_flame_version_label.setStyleSheet(self.get_label_stylesheet())
+        # self.latest_flame_version_label.setStyleSheet(self.get_label_stylesheet())
 
         self.latest_flame_version_text = QTextEdit()
         self.latest_flame_version_text.setReadOnly(True)
-        self.latest_flame_version_text.setStyleSheet("""
-            background-color: #111111;
-            color: white;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-        """)
+        # self.latest_flame_version_text.setStyleSheet("""
+        #     background-color: #111111;
+        #     color: white;
+        #     font-family: 'Courier New', monospace;
+        #     font-weight: bold;
+        # """)
         layout.addWidget(self.latest_flame_version_label)
         layout.addWidget(self.latest_flame_version_text)
 
@@ -252,12 +254,12 @@ class logik_projekt_main_window(QMainWindow):
 
         self.latest_sanitized_flame_version_text = QTextEdit()
         self.latest_sanitized_flame_version_text.setReadOnly(True)
-        self.latest_sanitized_flame_version_text.setStyleSheet("""
-            background-color: #111111;
-            color: white;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-        """)
+        # self.latest_sanitized_flame_version_text.setStyleSheet("""
+        #     background-color: #111111;
+        #     color: white;
+        #     font-family: 'Courier New', monospace;
+        #     font-weight: bold;
+        # """)
         layout.addWidget(self.latest_sanitized_flame_version_label)
         layout.addWidget(self.latest_sanitized_flame_version_text)
 
@@ -299,45 +301,45 @@ class logik_projekt_main_window(QMainWindow):
 
     def create_labeled_entry(self, layout, label_text):
         label = QLabel(label_text)
-        label.setStyleSheet("color: white; font-family: 'Courier New', monospace;")
+        # label.setStyleSheet("color: white; font-family: 'Courier New', monospace;")
         layout.addWidget(label)
         
         entry = QLineEdit()
-        entry.setStyleSheet("""
-            background-color: #111111;
-            color: white;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-        """)
+        # entry.setStyleSheet("""
+        #     background-color: #111111;
+        #     color: white;
+        #     font-family: 'Courier New', monospace;
+        #     font-weight: bold;
+        # """)
         layout.addWidget(entry)
         return entry
 
     # ---------------------------------------------------------------------- #
 
-    def get_combobox_stylesheet(self):
-        return """
-            QComboBox {
-                background-color: #111111;
-                color: white;
-                font-family: 'Courier New';
-            }
-            QComboBox::drop-down {
-                border: 0px;
-            }
-            QComboBox QAbstractItemView {
-                background-color: #111111;
-                color: white;
-                selection-background-color: #333333;
-                selection-color: yellow;
-            }
-            QComboBox QAbstractItemView::item {
-                height: 30px;
-            }
-            QComboBox QAbstractItemView::item:hover {
-                background-color: #555555;
-                color: yellow;
-            }
-        """
+    # def get_combobox_stylesheet(self):
+    #     return """
+    #         QComboBox {
+    #             background-color: #111111;
+    #             color: white;
+    #             font-family: 'Courier New';
+    #         }
+    #         QComboBox::drop-down {
+    #             border: 0px;
+    #         }
+    #         QComboBox QAbstractItemView {
+    #             background-color: #111111;
+    #             color: white;
+    #             selection-background-color: #333333;
+    #             selection-color: yellow;
+    #         }
+    #         QComboBox QAbstractItemView::item {
+    #             height: 30px;
+    #         }
+    #         QComboBox QAbstractItemView::item:hover {
+    #             background-color: #555555;
+    #             color: yellow;
+    #         }
+    #     """
 
     # ---------------------------------------------------------------------- #
 
@@ -348,12 +350,12 @@ class logik_projekt_main_window(QMainWindow):
 
     def create_button(self, layout, text, color, function):
         button = QPushButton(text)
-        button.setStyleSheet(f"""
-            background-color: {color};
-            color: white;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-        """)
+        # button.setStyleSheet(f"""
+        #     background-color: {color};
+        #     color: white;
+        #     font-family: 'Courier New', monospace;
+        #     font-weight: bold;
+        # """)
         button.clicked.connect(function)
         layout.addWidget(button)
         return button

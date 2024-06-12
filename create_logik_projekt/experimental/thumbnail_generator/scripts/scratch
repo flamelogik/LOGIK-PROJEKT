@@ -1,0 +1,44 @@
+{
+    "item_00": {
+        "shot_name": "shot_0010",
+        "process_type": "comp",
+        "software": "flame",
+        "children": {
+            "item_00_01": {
+                "shot_name": "shot_0010",
+                "source_name": "shot_0010_layer_001",
+                "parent_object": "shot_0010",
+                "process_type": "roto",
+                "software": "silhouette"
+            },
+            "item_00_02": {
+                "shot_name": "shot_0010",
+                "source_name": "shot_0010_layer_002",
+                "parent_object": "shot_0010",
+                "process_type": "paint",
+                "software": "nuke"
+            },
+            "item_00_03": {
+                "shot_name": "shot_0010",
+                "source_name": "shot_0010_layer_003",
+                "parent_object": "shot_0010",
+                "process_type": "gfx",
+                "software": "after_effects"
+            },
+            "item_00_04": {
+                "shot_name": "shot_0010",
+                "source_name": "shot_0010_layer_004",
+                "parent_object": "shot_0010",
+                "process_type": "anim",
+                "software": "maya"
+            },
+            "item_00_05": {
+                "shot_name": "shot_0010",
+                "source_name": "shot_0010_layer_005",
+                "parent_object": "shot_0010",
+                "process_type": "sim",
+                "software": "houdini"
+            }
+        }
+    }
+}

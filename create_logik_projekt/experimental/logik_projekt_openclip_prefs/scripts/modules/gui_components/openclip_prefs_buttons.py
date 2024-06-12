@@ -27,31 +27,35 @@
 # This section defines the import staements.
 # ========================================================================== #
 
-import sys
-from PySide6.QtWidgets import QApplication
-from openclip_prefs_gui import MyGUI
-from modules.gui_components.openclip_prefs_stylesheet import stylesheet
+import os
+from PySide6.QtWidgets import QPushButton, QMessageBox
+from modules.functions.openclip_prefs_saver import openclip_prefs_saver
 
 # ========================================================================== #
 # This section defines the main functions.
 # ========================================================================== #
 
-def main():
-    app = QApplication(sys.argv)
-    
-    # Apply stylesheet
-    app.setStyleSheet(stylesheet)
-    
-    gui = MyGUI()
-    gui.show()
-    sys.exit(app.exec())
+def create_button(summary_textbox):
+    button = QPushButton("Update LOGIK-PROJEKT openclip preferences")
+    button.clicked.connect(lambda: save_preferences(summary_textbox))
+    return button
 
-# ========================================================================== #
-# This section executes the main functions.
-# ========================================================================== #
+def save_preferences(summary_textbox):
+    if not summary_textbox:
+        # Handle if the summary textbox is not provided
+        return
 
-if __name__ == "__main__":
-    main()
+    try:
+        openclip_prefs_saver(summary_textbox)
+    except Exception as e:
+        show_error_message(str(e))
+
+def show_error_message(error_message):
+    msg_box = QMessageBox()
+    msg_box.setWindowTitle("Error")
+    msg_box.setText(f"An error occurred: {error_message}")
+    msg_box.setIcon(QMessageBox.Critical)
+    msg_box.exec_()
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #

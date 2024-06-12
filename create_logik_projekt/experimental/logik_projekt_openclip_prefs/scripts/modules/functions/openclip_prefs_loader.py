@@ -2,13 +2,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        debug_and_log.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-07
+# Modified:         2024-06-11
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of LOGIK-PROJEKT.
@@ -27,47 +27,48 @@
 # This section defines the import staements.
 # ========================================================================== #
 
-# pyside6_summary.py
-from PySide6.QtWidgets import QTextEdit
+import os
+import json
 
 # ========================================================================== #
 # This section defines the main functions.
 # ========================================================================== #
 
-local_stylesheet = """
-/* Summary box (QTextEdit) */
-QTextEdit {
-    background-color: #37414b;  /* Replace with your desired color */
-    color: #ffffff;  /* Text color */
-    font: 14px "Discreet";  /* Font */
-    border: 1px solid #007acc;  /* Border */
-    border-radius: 0px;  /* No rounded corners */
-}
-"""
+def openclip_prefs_loader():
+    """
+    Load and parse the openclip_prefs.json file.
+    Returns:
+        dict: A dictionary containing the preferences data.
+    """
+    config_dir = os.path.join(os.path.dirname(__file__), '..', '..', '..', 'config')
+    prefs_file_path = os.path.join(config_dir, 'openclip_prefs.json')
 
-def create_summary_textbox():
-    textbox = QTextEdit()
-    textbox.setReadOnly(True)  # Make it read-only
-    textbox.setStyleSheet(local_stylesheet)  # Apply the local stylesheet
-    return textbox
+    # Check if the preferences file exists
+    if not os.path.exists(prefs_file_path):
+        raise FileNotFoundError(f"The preferences file '{prefs_file_path}' does not exist.")
 
-# def update_summary_textbox(textbox, dropdowns):
-#     summary_text = ""
-#     for label, dropdown in dropdowns.items():
-#         summary_text += f"{label}: {dropdown.currentText()}\n"
-#     textbox.setPlainText(summary_text)
+    # Read and parse the JSON file
+    with open(prefs_file_path, 'r') as prefs_file:
+        prefs_data = json.load(prefs_file)
 
-def update_summary_textbox(textbox, lineedits, dropdowns):
-    summary_text = ""
-    for label, lineedit in lineedits.items():
-        summary_text += f"{label}: {lineedit.text()}\n"
-    for label, dropdown in dropdowns.items():
-        summary_text += f"{label}: {dropdown.currentText()}\n"
-    textbox.setPlainText(summary_text)
+    return prefs_data
+
+# ========================================================================== #
+# This section executes the main functions.
+# ========================================================================== #
+
+# Example usage:
+if __name__ == "__main__":
+    try:
+        prefs = openclip_prefs_loader()
+        print(json.dumps(prefs, indent=4))
+    except FileNotFoundError as e:
+        print(e)
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
 # ========================================================================== #
+
 '''
 # -------------------------------------------------------------------------- #
 
@@ -79,22 +80,33 @@ def update_summary_textbox(textbox, lineedits, dropdowns):
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
 
-#                   This program is distributed in the hope that it will be
-#                   useful, but WITHOUT ANY WARRANTY; without even the
-#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
-#                   PARTICULAR PURPOSE.
+#                   This program is distributed in the hope that it will
+#                   be useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or 
+#                   FITNESS FOR A PARTICULAR PURPOSE.
 
 #                   See the GNU General Public License for more details.
-
-#                   You should have received a copy of the GNU General
-#                   Public License along with this program.
+#                   You should have received a copy of the 
+#                   GNU General Public License along with this program. 
 
 #                   If not, see <https://www.gnu.org/licenses/>.
+
+#                   In no event shall the authors or copyright holders be 
+#                   liable for any claim, damages, or other liability, 
+#                   whether in an action of contract, tort, or otherwise, 
+#                   arising from, out of, or in connection with the software 
+#                   or the use or other dealings in the software.
+
 # -------------------------------------------------------------------------- #
 '''
+
 # -------------------------------------------------------------------------- #
 # Changelist:       
 # -------------------------------------------------------------------------- #
 # version:               1.0.0
 # modified:              2024-06-07 - 16:22:45
 # comments:              Working program
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-06-11 - 07:36:09
+# comments:              Unique renaming of scripts and disclaimer update.
