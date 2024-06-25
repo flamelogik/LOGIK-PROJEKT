@@ -1,0 +1,37 @@
+{
+    "group": "Projekt Bit Depth",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- Floating Point --------------------- +",
+            "items": [
+                {
+                    "name": "16-bit fp",
+                    "value_data": "16-bit fp"
+                },
+                {
+                    "name": "32-bit fp",
+                    "value_data": "32-bit fp"
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- Integer ---------------------------- +",
+            "items": [
+                {
+                    "name": "12-bit",
+                    "value_data": "12-bit"
+                },
+                {
+                    "name": "10-bit",
+                    "value_data": "10-bit"
+                },
+                {
+                    "name": "8-bit",
+                    "value_data": "8-bit"
+                }
+            ]
+        }
+    ]
+}

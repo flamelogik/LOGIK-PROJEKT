@@ -1,0 +1,127 @@
+{
+    "group": "Broadcast Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- Standard Definition ---------------- +",
+            "items": [
+                {
+                    "name": "720 x 480 | NTSC DV 4:3",
+                    "value_data": {
+                        "name": "720 x 480 | NTSC DV 4:3",
+                        "width": 720,
+                        "height": 480,
+                        "storage_aspect_ratio": 1.5000000,
+                        "display_aspect_ratio": 1.3636363,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "720 x 486 | NTSC 4:3",
+                    "value_data": {
+                        "name": "720 x 486 | NTSC 4:3",
+                        "width": 720,
+                        "height": 486,
+                        "storage_aspect_ratio": 1.4814815,
+                        "display_aspect_ratio": 1.3333333,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "720 x 486 | NTSC 16:9",
+                    "value_data": {
+                        "name": "720 x 486 | NTSC 16:9",
+                        "width": 720,
+                        "height": 486,
+                        "storage_aspect_ratio": 1.4814815,
+                        "display_aspect_ratio": 1.7777778,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "720 x 576 | PAL 4:3",
+                    "value_data": {
+                        "name": "720 x 576 | PAL 4:3",
+                        "width": 720,
+                        "height": 576,
+                        "storage_aspect_ratio": 1.2500000,
+                        "display_aspect_ratio": 1.3333333,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "720 x 576 | PAL 16:9",
+                    "value_data": {
+                        "name": "720 x 576 | PAL 16:9",
+                        "width": 720,
+                        "height": 576,
+                        "storage_aspect_ratio": 1.2500000,
+                        "display_aspect_ratio": 1.7777778,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- High Definition -------------------- +",
+            "items": [
+                {
+                    "name": "1280 x 720 | HD 720 16:9",
+                    "value_data": {
+                        "name": "1280 x 720 | HD 720 16:9",
+                        "width": 1280,
+                        "height": 720,
+                        "storage_aspect_ratio": 1.7777778,
+                        "display_aspect_ratio": 1.7777778,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "1920 x 1080 | HD 1080 16:9",
+                    "value_data": {
+                        "name": "1920 x 1080 | HD 1080 16:9",
+                        "width": 1920,
+                        "height": 1080,
+                        "storage_aspect_ratio": 1.7777778,
+                        "display_aspect_ratio": 1.7777778,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "3840 x 2160 | UHDTV 4K 16:9",
+                    "value_data": {
+                        "name": "3840 x 2160 | UHDTV 4K 16:9",
+                        "width": 3840,
+                        "height": 2160,
+                        "storage_aspect_ratio": 1.7777778,
+                        "display_aspect_ratio": 1.7777778,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "7680 x 4320 | UHDTV 8K 16:9",
+                    "value_data": {
+                        "name": "7680 x 4320 | UHDTV 8K 16:9",
+                        "width": 7680,
+                        "height": 4320,
+                        "storage_aspect_ratio": 1.7777778,
+                        "display_aspect_ratio": 1.7777778,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                },
+                {
+                    "name": "15360 x 8640 | UHDTV 16K 16:9",
+                    "value_data": {
+                        "name": "15360 x 8640 | UHDTV 16K 16:9",
+                        "width": 15360,
+                        "height": 8640,
+                        "storage_aspect_ratio": 1.7777778,
+                        "display_aspect_ratio": 1.7777778,
+                        "pixel_aspect_ratio": 1.0
+                    }
+                }
+            ]
+        }
+    ]
+}

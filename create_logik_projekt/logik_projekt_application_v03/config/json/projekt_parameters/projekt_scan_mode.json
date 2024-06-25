@@ -1,0 +1,23 @@
+{
+    "group": "Projekt Scan Mode",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- Start Frame ------------------------ +",
+            "items": [
+                {
+                    "name": "Field 1",
+                    "value_data": "FIELD_1"
+                },
+                {
+                    "name": "Field 2",
+                    "value_data": "FIELD_2"
+                },
+                {
+                    "name": "Progressive",
+                    "value_data": "PROGRESSIVE"
+                }
+            ]
+        }
+    ]
+}

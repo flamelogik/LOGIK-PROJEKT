@@ -1,0 +1,67 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 7K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "4536 x 3780 | RED 7K 6:5",
+                    "width": 4536,
+                    "height": 3780,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 3780 | RED 7K 16:9",
+                    "width": 6720,
+                    "height": 3780,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 896 | RED 7K 8:1",
+                    "width": 7168,
+                    "height": 896,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 1792 | RED 7K 4:1",
+                    "width": 7168,
+                    "height": 1792,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3024 | RED 7K 2:1",
+                    "width": 7168,
+                    "height": 3024,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3584 | RED 7K 2.37 WS",
+                    "width": 7168,
+                    "height": 3584,
+                    "storage_aspect_ratio": 2.37027,
+                    "display_aspect_ratio": 2.37027,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3780 | RED 7K Full 17:9",
+                    "width": 7168,
+                    "height": 3780,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

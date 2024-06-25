@@ -1,0 +1,43 @@
+{
+    "group": "AJA Camera Definitions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- AJA Cameras ------------------------ +",
+            "items": [
+                {
+                    "name": "1920 x 1080 | AJA HD 16:9",
+                    "width": 1920,
+                    "height": 1080,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1080 | AJA 2K 17:9",
+                    "width": 2048,
+                    "height": 1080,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2160 | AJA UHDTV 16:9",
+                    "width": 3840,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2160 | AJA 4K 17:9",
+                    "width": 4096,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}
