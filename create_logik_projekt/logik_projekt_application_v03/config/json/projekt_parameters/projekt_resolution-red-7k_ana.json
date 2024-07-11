@@ -1,0 +1,123 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 7K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "4536 x 3780 | RED 7K 6:5 Ana 1.3x",
+                    "width": 4536,
+                    "height": 3780,
+                    "storage_aspect_ratio": 1.56,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 3780 | RED 7K 16:9 Ana 1.3x",
+                    "width": 6720,
+                    "height": 3780,
+                    "storage_aspect_ratio": 2.311101,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 896 | RED 7K 8:1 Ana 1.3x",
+                    "width": 7168,
+                    "height": 896,
+                    "storage_aspect_ratio": 10.4,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 1792 | RED 7K 4:1 Ana 1.3x",
+                    "width": 7168,
+                    "height": 1792,
+                    "storage_aspect_ratio": 5.2,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3024 | RED 7K 2:1 Ana 1.3x",
+                    "width": 7168,
+                    "height": 3024,
+                    "storage_aspect_ratio": 2.6,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3584 | RED 7K 2.37 WS Ana 1.3x",
+                    "width": 7168,
+                    "height": 3584,
+                    "storage_aspect_ratio": 3.081481,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3780 | RED 7K Full Ana 1.3x",
+                    "width": 7168,
+                    "height": 3780,
+                    "storage_aspect_ratio": 2.46519,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4536 x 3780 | RED 7K 6:5 Ana 2.0x",
+                    "width": 4536,
+                    "height": 3780,
+                    "storage_aspect_ratio": 2.4,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 3780 | RED 7K 16:9 Ana 2.0x",
+                    "width": 6720,
+                    "height": 3780,
+                    "storage_aspect_ratio": 3.55554,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 896 | RED 7K 8:1 Ana 2.0x",
+                    "width": 7168,
+                    "height": 896,
+                    "storage_aspect_ratio": 16,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 1792 | RED 7K 4:1 Ana 2.0x",
+                    "width": 7168,
+                    "height": 1792,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3024 | RED 7K 2:1 Ana 2.0x",
+                    "width": 7168,
+                    "height": 3024,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3584 | RED 7K 2.37 WS Ana 2.0x",
+                    "width": 7168,
+                    "height": 3584,
+                    "storage_aspect_ratio": 4.74074,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3780 | RED 7K Full Ana 2.0x",
+                    "width": 7168,
+                    "height": 3780,
+                    "storage_aspect_ratio": 3.7926,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,219 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 6K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "3792 x 3160 | RED 6K 6:5 Ana 1.3x",
+                    "width": 3792,
+                    "height": 3160,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3888 x 3240 | RED 6K 6:5 Ana 1.3x",
+                    "width": 3888,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4752 x 3160 | RED 6K 3:2 Ana 1.3x",
+                    "width": 4752,
+                    "height": 3160,
+                    "storage_aspect_ratio": 1.504,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5568 x 3132 | RED 6K 16:9 Ana 1.3x",
+                    "width": 5568,
+                    "height": 3132,
+                    "storage_aspect_ratio": 1.778,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3240 | RED 6K 16:9 Ana 1.3x",
+                    "width": 5760,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.778,
+                    "display_aspect_ratio": 2.31101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3840 | RED 6K 3:2 Ana 1.3x",
+                    "width": 5760,
+                    "height": 3840,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 4320 | RED 6K 4:3 Ana 1.3x",
+                    "width": 5760,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.333,
+                    "display_aspect_ratio": 1.733329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 768 | RED 6K 8:1 Ana 1.3x",
+                    "width": 6144,
+                    "height": 768,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 1536 | RED 6K 4:1 Ana 1.3x",
+                    "width": 6144,
+                    "height": 1536,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 2592 | RED 6K 2.37 WS Ana 1.3x",
+                    "width": 6144,
+                    "height": 2592,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3072 | RED 6K 2:1 Ana 1.3x",
+                    "width": 6144,
+                    "height": 3072,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3160 | RED 6K Full Ana 1.3x",
+                    "width": 6144,
+                    "height": 3160,
+                    "storage_aspect_ratio": 1.944,
+                    "display_aspect_ratio": 2.59259,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3240 | RED 6K Full Ana 1.3x",
+                    "width": 6144,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.888,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3792 x 3160 | RED 6K 6:5 Ana 2.0x",
+                    "width": 3792,
+                    "height": 3160,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3888 x 3240 | RED 6K 6:5 Ana 2.0x",
+                    "width": 3888,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4752 x 3160 | RED 6K 3:2 Ana 2.0x",
+                    "width": 4752,
+                    "height": 3160,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 3.0,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5568 x 3132 | RED 6K 16:9 Ana 2.0x",
+                    "width": 5568,
+                    "height": 3132,
+                    "storage_aspect_ratio": 1.778,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3240 | RED 6K 16:9 Ana 2.0x",
+                    "width": 5760,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.778,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3840 | RED 6K 3:2 Ana 2.0x",
+                    "width": 5760,
+                    "height": 3840,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 4320 | RED 6K 4:3 Ana 2.0x",
+                    "width": 5760,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.333,
+                    "display_aspect_ratio": 2.6666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 768 | RED 6K 8:1 Ana 2.0x",
+                    "width": 6144,
+                    "height": 768,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 1536 | RED 6K 4:1 Ana 2.0x",
+                    "width": 6144,
+                    "height": 1536,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 2592 | RED 6K 2.37 WS Ana 2.0x",
+                    "width": 6144,
+                    "height": 2592,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3072 | RED 6K 2:1 Ana 2.0x",
+                    "width": 6144,
+                    "height": 3072,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3160 | RED 6K Full Ana 2.0x",
+                    "width": 6144,
+                    "height": 3160,
+                    "storage_aspect_ratio": 1.9443038,
+                    "display_aspect_ratio": 3.8886,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3240 | RED 6K Full Ana 2.0x",
+                    "width": 6144,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 4K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "2592 x 2160 | RED 4K 6:5",
+                    "width": 2592,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2160 | RED 4K 16:9",
+                    "width": 3840,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.77778,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2560 | RED 4K 3:2",
+                    "width": 3840,
+                    "height": 2560,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2880 | RED 4K 4:3",
+                    "width": 3840,
+                    "height": 2880,
+                    "storage_aspect_ratio": 1.33333,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 3072 | RED 4K 5:4",
+                    "width": 3840,
+                    "height": 3072,
+                    "storage_aspect_ratio": 1.25,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 512 | RED 4K 8:1",
+                    "width": 4096,
+                    "height": 512,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1024 | RED 4K 4:1",
+                    "width": 4096,
+                    "height": 1024,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1708 | RED 4K 2.39 WS",
+                    "width": 4096,
+                    "height": 1708,
+                    "storage_aspect_ratio": 2.39813,
+                    "display_aspect_ratio": 2.39813,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1728 | RED 4K 2.37 WS",
+                    "width": 4096,
+                    "height": 1728,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2048 | RED 4K 2:1",
+                    "width": 4096,
+                    "height": 2048,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2160 | RED 4K Full 17:9",
+                    "width": 4096,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.8963,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2304 | RED 4K 16:9",
+                    "width": 4096,
+                    "height": 2304,
+                    "storage_aspect_ratio": 1.77778,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

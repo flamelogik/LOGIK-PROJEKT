@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_or_validate_object.py
-# Version:          0.4.3
+# Version:          0.4.4
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-03
+# Modified:         2024-06-12
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This python script is part of a program that creates
@@ -260,3 +260,7 @@ def create_or_validate_object(
 # version:               0.4.3
 # modified:              2024-06-03 - 10:32:22
 # comments:              Moved import flame statement to each function
+# -------------------------------------------------------------------------- #
+# version:               0.4.4
+# modified:              2024-06-12 - 12:21:22
+# comments:              Restored import flame statement to top of script.

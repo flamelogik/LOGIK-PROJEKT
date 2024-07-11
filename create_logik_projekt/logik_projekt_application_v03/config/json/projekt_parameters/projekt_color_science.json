@@ -1,0 +1,93 @@
+{
+    "group": "Projekt Color Science",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- ACES Color Policies ---------------- +",
+            "items": [
+                {
+                    "name": "Autodesk ACES 1.1",
+                    "value_data": "adsk_aces_11"
+                },
+                {
+                    "name": "Autodesk ACES 1.0",
+                    "value_data": "adsk_aces_1"
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- Apple Color Policies --------------- +",
+            "items": [
+                {
+                    "name": "Apple Log (ADSK ACES 1.1)",
+                    "value_data": "adsk_aces_11"
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- ARRI Color Policies ---------------- +",
+            "items": [
+                {
+                    "name": "ARRI Alexa LogC V3 (K1S1)",
+                    "value_data": "arri_logc_v3"
+                },
+                {
+                    "name": "ARRI Alexa LogC v4",
+                    "value_data": "arri_logc_v4"
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- Auodesk Color Policies ------------- +",
+            "items": [
+                {
+                    "name": "Autodesk Simple Linear Workflow",
+                    "value_data": "adsk_linear"
+                },
+                {
+                    "name": "Autodesk Legacy Workflow",
+                    "value_data": "adsk_legacy"
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- R3D Color Policies ----------------- +",
+            "items": [
+                {
+                    "name": "R3D Log3g10 Red Wide Gamut RGB (Do Not Use)",
+                    "value_data": "aces_11_sdr"
+                },
+                {
+                    "name": "R3D ACES 1.1",
+                    "value_data": "adsk_aces_11"
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- SONY Color Policies ---------------- +",
+            "items": [
+                {
+                    "name": "Sony Cine+ 709",
+                    "value_data": "sony_cine_709"
+                },
+                {
+                    "name": "Sony Low Contrast 709",
+                    "value_data": "sony_lc_709"
+                },
+                {
+                    "name": "Sony Low Contrast 709 Type A (Alexa Emulation)",
+                    "value_data": "sony_lca_709"
+                },
+                {
+                    "name": "Sony SLog2 709",
+                    "value_data": "sony_slog2_709"
+                }
+            ]
+        }
+    ]
+}

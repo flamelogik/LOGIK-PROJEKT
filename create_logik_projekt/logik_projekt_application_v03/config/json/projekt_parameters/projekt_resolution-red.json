@@ -1,0 +1,2778 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 1K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "1280 x 480 | RED 1K 2.66 WS",
+                    "width": 1296,
+                    "height": 480,
+                    "display_aspect_ratio": 2.66667,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1280 x 720 | RED 1K 16:9",
+                    "width": 1296,
+                    "height": 720,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 2K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "1296 x 1080 | RED 2K 6:5 Ana 1.3x",
+                    "width": 1296,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1408 x 1152 | RED 2K Ana 1.3x",
+                    "width": 1408,
+                    "height": 1152,
+                    "display_aspect_ratio": 1.588886,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1080 | RED HD 16:9 Ana 1.3x",
+                    "width": 1920,
+                    "height": 1080,
+                    "display_aspect_ratio": 2.31101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1280 | RED 2K 3:2 Ana 1.3x",
+                    "width": 1920,
+                    "height": 1280,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1440 | RED 2K 4:3 Ana 1.3x",
+                    "width": 1920,
+                    "height": 1440,
+                    "display_aspect_ratio": 1.733329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1536 | RED 2K 5:4 Ana 1.3x",
+                    "width": 1920,
+                    "height": 1536,
+                    "display_aspect_ratio": 1.625,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 256 | RED 2K 8:1 Ana 1.3x",
+                    "width": 2048,
+                    "height": 256,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 512 | RED 2K 4:1 Ana 1.3x",
+                    "width": 2048,
+                    "height": 512,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 854 | RED 2K 2.39 WS Ana 1.3x",
+                    "width": 2048,
+                    "height": 854,
+                    "display_aspect_ratio": 3.117569,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 864 | RED 2K 2.37 WS Ana 1.3x",
+                    "width": 2048,
+                    "height": 864,
+                    "display_aspect_ratio": 3.081,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1024 | RED 2K 2:1 Ana 1.3x",
+                    "width": 2048,
+                    "height": 1024,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1080 | RED 2K Full Ana 1.3x",
+                    "width": 2048,
+                    "height": 1080,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1152 | RED 2K 16:9 Ana 1.3x",
+                    "width": 2048,
+                    "height": 1152,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1296 x 1080 | RED 2K 6:5 Ana 2.0x",
+                    "width": 1296,
+                    "height": 1080,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1408 x 1152 | RED 2K Ana 2.0x",
+                    "width": 1408,
+                    "height": 1152,
+                    "display_aspect_ratio": 2.44444,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1080 | RED HD 16:9 Ana 2.0x",
+                    "width": 1920,
+                    "height": 1080,
+                    "display_aspect_ratio": 3.5554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1280 | RED 2K 3:2 Ana 2.0x",
+                    "width": 1920,
+                    "height": 1280,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1440 | RED 2K 4:3 Ana 2.0x",
+                    "width": 1920,
+                    "height": 1440,
+                    "display_aspect_ratio": 2.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1536 | RED 2K 5:4 Ana 2.0x",
+                    "width": 1920,
+                    "height": 1536,
+                    "display_aspect_ratio": 2.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 256 | RED 2K 8:1 Ana 2.0x",
+                    "width": 2048,
+                    "height": 256,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 512 | RED 2K 4:1 Ana 2.0x",
+                    "width": 2048,
+                    "height": 512,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 854 | RED 2K 2.39 WS Ana 2.0x",
+                    "width": 2048,
+                    "height": 854,
+                    "display_aspect_ratio": 4.79626,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 864 | RED 2K 2.37 WS Ana 2.0x",
+                    "width": 2048,
+                    "height": 864,
+                    "display_aspect_ratio": 4.74,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1024 | RED 2K 2:1 Ana 2.0x",
+                    "width": 2048,
+                    "height": 1024,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1080 | RED 2K Full Ana 2.0x",
+                    "width": 2048,
+                    "height": 1080,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1152 | RED 2K 16:9 Ana 2.0x",
+                    "width": 2048,
+                    "height": 1152,
+                    "display_aspect_ratio": 3.5554,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 2K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "1296 x 1080 | RED 2K 6:5",
+                    "width": 1296,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1080 | RED HD 16:9",
+                    "width": 1920,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1280 | RED 2K 3:2",
+                    "width": 1920,
+                    "height": 1280,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1440 | RED 2K 4:3",
+                    "width": 1920,
+                    "height": 1440,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1920 x 1536 | RED 2K 5:4",
+                    "width": 1920,
+                    "height": 1536,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 256 | RED 2K 8:1",
+                    "width": 2048,
+                    "height": 256,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 512 | RED 2K 4:1",
+                    "width": 2048,
+                    "height": 512,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 854 | RED 2K 2.39 WS",
+                    "width": 2048,
+                    "height": 854,
+                    "display_aspect_ratio": 2.39813,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 864 | RED 2K 2.37 WS",
+                    "width": 2048,
+                    "height": 864,
+                    "display_aspect_ratio": 2.37,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1024 | RED 2K 2:1",
+                    "width": 2048,
+                    "height": 1024,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1080 | RED 2K Full 17:9",
+                    "width": 2048,
+                    "height": 1080,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2048 x 1152 | RED 2K 16:9",
+                    "width": 2048,
+                    "height": 1152,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 2.5K - Anamorphic -------------- +",
+            "items": [
+                {
+                    "name": "2304 x 1296 | RED 2.5K 16:9 Ana 1.3x",
+                    "width": 2304,
+                    "height": 1296,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1600 | RED 2.5K 3:2 Ana 1.3x",
+                    "width": 2400,
+                    "height": 1600,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1800 | RED 2.5K 4:3 Ana 1.3x",
+                    "width": 2400,
+                    "height": 1800,
+                    "display_aspect_ratio": 1.73329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1920 | RED 2.5K 5:4 Ana 1.3x",
+                    "width": 2400,
+                    "height": 1920,
+                    "display_aspect_ratio": 1.625,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 320 | RED 2.5K 8:1 Ana 1.3x",
+                    "width": 2560,
+                    "height": 320,
+                    "display_aspect_ratio": 10.3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 640 | RED 2.5K 4:1 Ana 1.3x",
+                    "width": 2560,
+                    "height": 640,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1080 | RED 2.5K 2.37 WS Ana 1.3x",
+                    "width": 2560,
+                    "height": 1080,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1280 | RED 2.5K 2:1 Ana 1.3x",
+                    "width": 2560,
+                    "height": 1280,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1340 | RED 2.5K Full Ana 1.3x",
+                    "width": 2560,
+                    "height": 1340,
+                    "display_aspect_ratio": 2.483585,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2304 x 1296 | RED 2.5K 16:9 Ana 2.0x",
+                    "width": 2304,
+                    "height": 1296,
+                    "display_aspect_ratio": 3.5554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1600 | RED 2.5K 3:2 Ana 2.0x",
+                    "width": 2400,
+                    "height": 1600,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1800 | RED 2.5K 4:3 Ana 2.0x",
+                    "width": 2400,
+                    "height": 1800,
+                    "display_aspect_ratio": 2.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1920 | RED 2.5K 5:4 Ana 2.0x",
+                    "width": 2400,
+                    "height": 1920,
+                    "display_aspect_ratio": 2.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 320 | RED 2.5K 8:1 Ana 2.0x",
+                    "width": 2560,
+                    "height": 320,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 640 | RED 2.5K 4:1 Ana 2.0x",
+                    "width": 2560,
+                    "height": 640,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1080 | RED 2.5K 2.37 WS Ana 2.0x",
+                    "width": 2560,
+                    "height": 1080,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1280 | RED 2.5K 2:1 Ana 2.0x",
+                    "width": 2560,
+                    "height": 1280,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1340 | RED 2.5K Full Ana 2.0x",
+                    "width": 2560,
+                    "height": 1340,
+                    "display_aspect_ratio": 3.8209,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 2.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "name": "2304 x 1296 | RED 2.5K 16:9",
+                    "width": 2304,
+                    "height": 1296,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1600 | RED 2.5K 3:2",
+                    "width": 2400,
+                    "height": 1600,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1800 | RED 2.5K 4:3",
+                    "width": 2400,
+                    "height": 1800,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2400 x 1920 | RED 2.5K 5:4",
+                    "width": 2400,
+                    "height": 1920,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 320 | RED 2.5K 8:1",
+                    "width": 2560,
+                    "height": 320,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 640 | RED 2.5K 4:1",
+                    "width": 2560,
+                    "height": 640,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1080 | RED 2.5K 2.37 WS",
+                    "width": 2560,
+                    "height": 1080,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1280 | RED 2.5K 2:1",
+                    "width": 2560,
+                    "height": 1280,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2560 x 1340 | RED 2.5K Full",
+                    "width": 2560,
+                    "height": 1340,
+                    "display_aspect_ratio": 1.91045,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 3K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "2112 x 1728 | RED 3K Ana 1.3x",
+                    "width": 2112,
+                    "height": 1728,
+                    "display_aspect_ratio": 1.588886,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1944 x 1620 | RED 3K 6:5 Ana 1.3x",
+                    "width": 1944,
+                    "height": 1620,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 1620 | RED 3K 16:9 Ana 1.3x",
+                    "width": 2880,
+                    "height": 1620,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 1920 | RED 3K 3:2 Ana 1.3x",
+                    "width": 2880,
+                    "height": 1920,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 2160 | RED 3K 4:3 Ana 1.3x",
+                    "width": 2880,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.733329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 2304 | RED 3K 5:4 Ana 1.3x",
+                    "width": 2880,
+                    "height": 2304,
+                    "display_aspect_ratio": 1.625,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 384 | RED 3K 8:1 Ana 1.3x",
+                    "width": 3072,
+                    "height": 384,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 768 | RED 3K 4:1 Ana 1.3x",
+                    "width": 3072,
+                    "height": 768,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1284 | RED 3K 2.39 WS Ana 1.3x",
+                    "width": 3072,
+                    "height": 1284,
+                    "display_aspect_ratio": 3.11025,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1296 | RED 3K 2.37 WS Ana 1.3x",
+                    "width": 3072,
+                    "height": 1296,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1536 | RED 3K 2:1 Ana 1.3x",
+                    "width": 3072,
+                    "height": 1536,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1620 | RED 3K Full Ana 1.3x",
+                    "width": 3072,
+                    "height": 1620,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2112 x 1728 | RED 3K Ana 2.0x",
+                    "width": 2112,
+                    "height": 1728,
+                    "display_aspect_ratio": 2.44444,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "1944 x 1620 | RED 3K 6:5 Ana 2.0x",
+                    "width": 1944,
+                    "height": 1620,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 1620 | RED 3K 16:9 Ana 2.0x",
+                    "width": 2880,
+                    "height": 1620,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 1920 | RED 3K 3:2 Ana 2.0x",
+                    "width": 2880,
+                    "height": 1920,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 2160 | RED 3K 4:3 Ana 2.0x",
+                    "width": 2880,
+                    "height": 2160,
+                    "display_aspect_ratio": 2.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 2304 | RED 3K 5:4 Ana 2.0x",
+                    "width": 2880,
+                    "height": 2304,
+                    "display_aspect_ratio": 2.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 384 | RED 3K 8:1 Ana 2.0x",
+                    "width": 3072,
+                    "height": 384,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 768 | RED 3K 4:1 Ana 2.0x",
+                    "width": 3072,
+                    "height": 768,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1284 | RED 3K 2.39 WS Ana 2.0x",
+                    "width": 3072,
+                    "height": 1284,
+                    "display_aspect_ratio": 4.78504,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1296 | RED 3K 2.37 WS Ana 2.0x",
+                    "width": 3072,
+                    "height": 1296,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1536 | RED 3K 2:1 Ana 2.0x",
+                    "width": 3072,
+                    "height": 1536,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1620 | RED 3K Full Ana 2.0x",
+                    "width": 3072,
+                    "height": 1620,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 3K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "1944 x 1620 | RED 3K 6:5",
+                    "width": 1944,
+                    "height": 1620,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 1620 | RED 3K 16:9",
+                    "width": 2880,
+                    "height": 1620,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 1920 | RED 3K 3:2",
+                    "width": 2880,
+                    "height": 1920,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 2160 | RED 3K 4:3",
+                    "width": 2880,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2880 x 2304 | RED 3K 5:4",
+                    "width": 2880,
+                    "height": 2304,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 384 | RED 3K 8:1",
+                    "width": 3072,
+                    "height": 384,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 768 | RED 3K 4:1",
+                    "width": 3072,
+                    "height": 768,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1284 | RED 3K 2.39 WS",
+                    "width": 3072,
+                    "height": 1284,
+                    "display_aspect_ratio": 2.39252,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1296 | RED 3K 2.37 WS",
+                    "width": 3072,
+                    "height": 1296,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1536 | RED 3K 2:1",
+                    "width": 3072,
+                    "height": 1536,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3072 x 1620 | RED 3K Full 17:9",
+                    "width": 3072,
+                    "height": 1620,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 3.5K - Anamorphic -------------- +",
+            "items": [
+                {
+                    "name": "2112 x 1728 | RED 3K Ana 2x",
+                    "width": 2112,
+                    "height": 1728,
+                    "display_aspect_ratio": 2.44444,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3360 x 2240 | RED 3.5K 3:2",
+                    "width": 3360,
+                    "height": 2240,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3360 x 2520 | RED 3.5K 4:3",
+                    "width": 3360,
+                    "height": 2520,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3360 x 2688 | RED 3.5K 5:4",
+                    "width": 3360,
+                    "height": 2688,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3456 x 1944 | RED 3.5K 16:9",
+                    "width": 3456,
+                    "height": 1944,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 448 | RED 3.5K 8:1",
+                    "width": 3584,
+                    "height": 448,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 896 | RED 3.5K 4:1",
+                    "width": 3584,
+                    "height": 896,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 1512 | RED 3.5K 2.37 WS",
+                    "width": 3584,
+                    "height": 1512,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 1792 | RED 3.5K 2:1",
+                    "width": 3584,
+                    "height": 1792,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 1876 | RED 3.5K Full",
+                    "width": 3584,
+                    "height": 1876,
+                    "display_aspect_ratio": 1.91045,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2112 x 1728 | RED 3K Ana 2.0x",
+                    "width": 2112,
+                    "height": 1728,
+                    "display_aspect_ratio": 2.44444,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 3.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "name": "3360 x 2240 | RED 3.5K 3:2",
+                    "width": 3360,
+                    "height": 2240,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3360 x 2520 | RED 3.5K 4:3",
+                    "width": 3360,
+                    "height": 2520,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3360 x 2688 | RED 3.5K 5:4",
+                    "width": 3360,
+                    "height": 2688,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3456 x 1944 | RED 3.5K 16:9",
+                    "width": 3456,
+                    "height": 1944,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 448 | RED 3.5K 8:1",
+                    "width": 3584,
+                    "height": 448,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 896 | RED 3.5K 4:1",
+                    "width": 3584,
+                    "height": 896,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 1512 | RED 3.5K 2.37 WS",
+                    "width": 3584,
+                    "height": 1512,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 1792 | RED 3.5K 2:1",
+                    "width": 3584,
+                    "height": 1792,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3584 x 1876 | RED 3.5K Full",
+                    "width": 3584,
+                    "height": 1876,
+                    "display_aspect_ratio": 1.91045,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 4K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "2816 x 2304 | RED 4K Ana 1.3x",
+                    "width": 2816,
+                    "height": 2304,
+                    "display_aspect_ratio": 1.58886,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2592 x 2160 | RED 4K 6:5 Ana 1.3x",
+                    "width": 2592,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2160 | RED 4K 16:9 Ana 1.3x",
+                    "width": 3840,
+                    "height": 2160,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2560 | RED 4K 3:2 Ana 1.3x",
+                    "width": 3840,
+                    "height": 2560,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2880 | RED 4K 4:3 Ana 1.3x",
+                    "width": 3840,
+                    "height": 2880,
+                    "display_aspect_ratio": 1.733329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 3072 | RED 4K 5:4 Ana 1.3x",
+                    "width": 3840,
+                    "height": 3072,
+                    "display_aspect_ratio": 1.625,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 512 | RED 4K 8:1 Ana 1.3x",
+                    "width": 4096,
+                    "height": 512,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1024 | RED 4K 4:1 Ana 1.3x",
+                    "width": 4096,
+                    "height": 1024,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1708 | RED 4K 2.39 WS Ana 1.3x",
+                    "width": 4096,
+                    "height": 1708,
+                    "display_aspect_ratio": 3.117569,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1728 | RED 4K 2.37 WS Ana 1.3x",
+                    "width": 4096,
+                    "height": 1728,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2048 | RED 4K 2:1 Ana 1.3x",
+                    "width": 4096,
+                    "height": 2048,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2160 | RED 4K Full Ana 1.3x",
+                    "width": 4096,
+                    "height": 2048,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2304 | RED 4K 16:9 Ana 1.3x",
+                    "width": 4096,
+                    "height": 2304,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2160 | RED 4K Full Ana 1.3x",
+                    "width": 4096,
+                    "height": 2160,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2304 | RED 4K 16:9 Ana 1.3x",
+                    "width": 4096,
+                    "height": 2304,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 4320 | RED 4K 1:1 Ana 1.3x",
+                    "width": 4320,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2816 x 2304 | RED 4K Ana 2.0x",
+                    "width": 2816,
+                    "height": 2304,
+                    "display_aspect_ratio": 2.44444,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "2592 x 2160 | RED 4K 6:5 Ana 2.0x",
+                    "width": 2592,
+                    "height": 2160,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2160 | RED 4K 16:9 Ana 2.0x",
+                    "width": 3840,
+                    "height": 2160,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2560 | RED 4K 3:2 Ana 2.0x",
+                    "width": 3840,
+                    "height": 2560,
+                    "display_aspect_ratio": 3.0,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2880 | RED 4K 4:3 Ana 2.0x",
+                    "width": 3840,
+                    "height": 2880,
+                    "display_aspect_ratio": 2.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 3072 | RED 4K 5:4 Ana 2.0x",
+                    "width": 3840,
+                    "height": 3072,
+                    "display_aspect_ratio": 2.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 512 | RED 4K 8:1 Ana 2.0x",
+                    "width": 4096,
+                    "height": 512,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1024 | RED 4K 4:1 Ana 2.0x",
+                    "width": 4096,
+                    "height": 1024,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1708 | RED 4K 2.39 WS Ana 2.0x",
+                    "width": 4096,
+                    "height": 1708,
+                    "display_aspect_ratio": 4.79626,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1728 | RED 4K 2.37 WS Ana 2.0x",
+                    "width": 4096,
+                    "height": 1728,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2048 | RED 4K 2:1 Ana 2.0x",
+                    "width": 4096,
+                    "height": 2048,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2160 | RED 4K Full Ana 2.0x",
+                    "width": 4096,
+                    "height": 2048,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2304 | RED 4K 16:9 Ana 2.0x",
+                    "width": 4096,
+                    "height": 2304,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2160 | RED 4K Full Ana 2.0x",
+                    "width": 4096,
+                    "height": 2160,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2304 | RED 4K 16:9 Ana 2.0x",
+                    "width": 4096,
+                    "height": 2304,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 4320 | RED 4K 1:1 Ana 2.0x",
+                    "width": 4320,
+                    "height": 4320,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 4K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "2592 x 2160 | RED 4K 6:5",
+                    "width": 2592,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2160 | RED 4K 16:9",
+                    "width": 3840,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2560 | RED 4K 3:2",
+                    "width": 3840,
+                    "height": 2560,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 2880 | RED 4K 4:3",
+                    "width": 3840,
+                    "height": 2880,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 3072 | RED 4K 5:4",
+                    "width": 3840,
+                    "height": 3072,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 512 | RED 4K 8:1",
+                    "width": 4096,
+                    "height": 512,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1024 | RED 4K 4:1",
+                    "width": 4096,
+                    "height": 1024,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1708 | RED 4K 2.39 WS",
+                    "width": 4096,
+                    "height": 1708,
+                    "display_aspect_ratio": 2.39813,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 1728 | RED 4K 2.37 WS",
+                    "width": 4096,
+                    "height": 1728,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2048 | RED 4K 2:1",
+                    "width": 4096,
+                    "height": 2048,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2160 | RED 4K Full 17:9",
+                    "width": 4096,
+                    "height": 2160,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4096 x 2304 | RED 4K 16:9",
+                    "width": 4096,
+                    "height": 2304,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 4.5K - Anamorphic -------------- +",
+            "items": [
+                {
+                    "name": "4224 x 2376 | RED 4.5K 16:9 Ana 1.3x",
+                    "width": 4224,
+                    "height": 2376,
+                    "display_aspect_ratio": 2.31101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2376 | RED 4.5K HD Ana 1.3x",
+                    "width": 4320,
+                    "height": 2376,
+                    "display_aspect_ratio": 2.36634,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2880 | RED 4.5K 3:2 Ana 1.3x",
+                    "width": 4320,
+                    "height": 2880,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3240 | RED 4.5K 4:5 Ana 1.3x",
+                    "width": 4320,
+                    "height": 3240,
+                    "display_aspect_ratio": 1.733329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3456 | RED 4.5K 5:4 Ana 1.3x",
+                    "width": 4320,
+                    "height": 3456,
+                    "display_aspect_ratio": 1.625,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4480 x 1920 | RED 4.5K 2.33 WS Ana 1.3x",
+                    "width": 4480,
+                    "height": 1920,
+                    "display_aspect_ratio": 3.033329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 576 | RED 4.5K 8:1 Ana 1.3x",
+                    "width": 4608,
+                    "height": 576,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1152 | RED 4.5K 4:1 Ana 1.3x",
+                    "width": 4608,
+                    "height": 1152,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1944 | RED 4.5K 2.37 WS Ana 1.3x",
+                    "width": 4608,
+                    "height": 1944,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2304 | RED 4.5K 2:1 Ana 1.3x",
+                    "width": 4608,
+                    "height": 2304,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2412 | RED 4.5K Full Ana 1.3x",
+                    "width": 4608,
+                    "height": 2412,
+                    "display_aspect_ratio": 2.483585,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2432 | RED 4.5K Full Ana 1.3x",
+                    "width": 4608,
+                    "height": 2432,
+                    "display_aspect_ratio": 2.27388,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4224 x 2376 | RED 4.5K 16:9 Ana 2.0x",
+                    "width": 4224,
+                    "height": 2376,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2376 | RED 4.5K HD Ana 2.0x",
+                    "width": 4320,
+                    "height": 2376,
+                    "display_aspect_ratio": 3.63636,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2880 | RED 4.5K 3:2 Ana 2.0x",
+                    "width": 4320,
+                    "height": 2880,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3240 | RED 4.5K 4:5 Ana 2.0x",
+                    "width": 4320,
+                    "height": 3240,
+                    "display_aspect_ratio": 2.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3456 | RED 4.5K 5:4 Ana 2.0x",
+                    "width": 4320,
+                    "height": 3456,
+                    "display_aspect_ratio": 2.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4480 x 1920 | RED 4.5K 2.33 WS Ana 2.0x",
+                    "width": 4480,
+                    "height": 1920,
+                    "display_aspect_ratio": 4.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 576 | RED 4.5K 8:1 Ana 2.0x",
+                    "width": 4608,
+                    "height": 576,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1152 | RED 4.5K 4:1 Ana 2.0x",
+                    "width": 4608,
+                    "height": 1152,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1944 | RED 4.5K 2.37 WS Ana 2.0x",
+                    "width": 4608,
+                    "height": 1944,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2304 | RED 4.5K 2:1 Ana 2.0x",
+                    "width": 4608,
+                    "height": 2304,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2412 | RED 4.5K Full Ana 2.0x",
+                    "width": 4608,
+                    "height": 2412,
+                    "display_aspect_ratio": 3.8209,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2432 | RED 4.5K Full Ana 2.0x",
+                    "width": 4608,
+                    "height": 2432,
+                    "display_aspect_ratio": 3.78948,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 4.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "name": "4224 x 2376 | RED 4.5K 16:9",
+                    "width": 4224,
+                    "height": 2376,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2376 | RED 4.5K HD",
+                    "width": 4320,
+                    "height": 2376,
+                    "display_aspect_ratio": 1.81818,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2880 | RED 4.5K 3:2",
+                    "width": 4320,
+                    "height": 2880,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3240 | RED 4.5K 4:5",
+                    "width": 4320,
+                    "height": 3240,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3456 | RED 4.5K 5:4",
+                    "width": 4320,
+                    "height": 3456,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 4320 | RED 4K 1:1",
+                    "width": 4320,
+                    "height": 4320,
+                    "display_aspect_ratio": 1,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4480 x 1920 | RED 4.5K 2.33 WS",
+                    "width": 4480,
+                    "height": 1920,
+                    "display_aspect_ratio": 2.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 576 | RED 4.5K 8:1",
+                    "width": 4608,
+                    "height": 576,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1152 | RED 4.5K 4:1",
+                    "width": 4608,
+                    "height": 1152,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1944 | RED 4.5K 2.37 WS",
+                    "width": 4608,
+                    "height": 1944,
+                    "display_aspect_ratio": 2.37027,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2304 | RED 4.5K 2:1",
+                    "width": 4608,
+                    "height": 2304,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2412 | RED 4.5K Full",
+                    "width": 4608,
+                    "height": 2412,
+                    "display_aspect_ratio": 1.91045,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2432 | RED 4.5K Full",
+                    "width": 4608,
+                    "height": 2432,
+                    "display_aspect_ratio": 1.89474,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 5K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "3240 x 2700 | RED 5K 6:5 Ana 1.3x",
+                    "width": 3240,
+                    "height": 2700,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3300 x 2700 | RED 5K 1.2 Ana 1.3x",
+                    "width": 3300,
+                    "height": 2700,
+                    "display_aspect_ratio": 1.58886,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4800 x 2700 | RED 5K 16:9 Ana 1.3x",
+                    "width": 4800,
+                    "height": 2700,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 640 | RED 5K 8:1 Ana 1.3x",
+                    "width": 5120,
+                    "height": 640,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 1280 | RED 5K 4:1 Ana 1.3x",
+                    "width": 5120,
+                    "height": 1280,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2160 | RED 5K 2.37 WS Ana 1.3x",
+                    "width": 5120,
+                    "height": 2160,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2560 | RED 5K 2:1 Ana 1.3x",
+                    "width": 5120,
+                    "height": 2560,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2700 | RED 5K Full Ana 1.3x",
+                    "width": 5120,
+                    "height": 2700,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3240 x 2700 | RED 5K 6:5 Ana 2.0x",
+                    "width": 3240,
+                    "height": 2700,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3300 x 2700 | RED 5K 1.2 Ana 2.0x",
+                    "width": 3300,
+                    "height": 2700,
+                    "display_aspect_ratio": 2.4444,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4800 x 2700 | RED 5K 16:9 Ana 2.0x",
+                    "width": 4800,
+                    "height": 2700,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 640 | RED 5K 8:1 Ana 2.0x",
+                    "width": 5120,
+                    "height": 640,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 1280 | RED 5K 4:1 Ana 2.0x",
+                    "width": 5120,
+                    "height": 1280,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2160 | RED 5K 2.37 WS Ana 2.0x",
+                    "width": 5120,
+                    "height": 2160,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2560 | RED 5K 2:1 Ana 2.0x",
+                    "width": 5120,
+                    "height": 2560,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2700 | RED 5K Full Ana 2.0x",
+                    "width": 5120,
+                    "height": 2700,
+                    "display_aspect_ratio": 3.7924,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 5K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "3240 x 2700 | RED 5K 6:5",
+                    "width": 3240,
+                    "height": 2700,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3300 x 2700 | RED 5K 1.2",
+                    "width": 3300,
+                    "height": 2700,
+                    "display_aspect_ratio": 1.2222,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4800 x 2700 | RED 5K 16:9",
+                    "width": 4800,
+                    "height": 2700,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 640 | RED 5K 8:1",
+                    "width": 5120,
+                    "height": 640,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 1280 | RED 5K 4:1",
+                    "width": 5120,
+                    "height": 1280,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2160 | RED 5K 2.37 WS",
+                    "width": 5120,
+                    "height": 2160,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2560 | RED 5K 2:1",
+                    "width": 5120,
+                    "height": 2560,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2700 | RED 5K Full 17:9",
+                    "width": 5120,
+                    "height": 2700,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 5.5K - Anamorphic -------------- +",
+            "items": [
+                {
+                    "name": "3296 x 2700 | RED 5K Ana 1.3x",
+                    "width": 3296,
+                    "height": 2700,
+                    "display_aspect_ratio": 1.586962,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5376 x 3024 | RED 5.5K 16:9 Ana 1.3x",
+                    "width": 5376,
+                    "height": 3024,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 704 | RED 5.5K 8:1 Ana 1.3x",
+                    "width": 5632,
+                    "height": 704,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 1408 | RED 5.5K 4:1 Ana 1.3x",
+                    "width": 5632,
+                    "height": 1408,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2376 | RED 5.5K 2.37 WS Ana 1.3x",
+                    "width": 5632,
+                    "height": 2376,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2816 | RED 5.5K 2:1 Ana 1.3x",
+                    "width": 5632,
+                    "height": 2816,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2948 | RED 5.5K Full Ana 1.3x",
+                    "width": 5632,
+                    "height": 2948,
+                    "display_aspect_ratio": 2.483585,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3296 x 2700 | RED 5K Ana 2.0x",
+                    "width": 3296,
+                    "height": 2700,
+                    "display_aspect_ratio": 2.44148,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5376 x 3024 | RED 5.5K 16:9 Ana 2.0x",
+                    "width": 5376,
+                    "height": 3024,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 704 | RED 5.5K 8:1 Ana 2.0x",
+                    "width": 5632,
+                    "height": 704,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 1408 | RED 5.5K 4:1 Ana 2.0x",
+                    "width": 5632,
+                    "height": 1408,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2376 | RED 5.5K 2.37 WS Ana 2.0x",
+                    "width": 5632,
+                    "height": 2376,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2816 | RED 5.5K 2:1 Ana 2.0x",
+                    "width": 5632,
+                    "height": 2816,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2948 | RED 5.5K Full Ana 2.0x",
+                    "width": 5632,
+                    "height": 2948,
+                    "display_aspect_ratio": 3.8209,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 5.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "name": "5376 x 3024 | RED 5.5K 16:9",
+                    "width": 5376,
+                    "height": 3024,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 704 | RED 5.5K 8:1",
+                    "width": 5632,
+                    "height": 704,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 1408 | RED 5.5K 4:1",
+                    "width": 5632,
+                    "height": 1408,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2376 | RED 5.5K 2.37 WS",
+                    "width": 5632,
+                    "height": 2376,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2816 | RED 5.5K 2:1",
+                    "width": 5632,
+                    "height": 2816,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2948 | RED 5.5K Full",
+                    "width": 5632,
+                    "height": 2948,
+                    "display_aspect_ratio": 1.91045,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 6K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "3792 x 3160 | RED 6K 6:5 Ana 1.3x",
+                    "width": 3792,
+                    "height": 3160,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3888 x 3240 | RED 6K 6:5 Ana 1.3x",
+                    "width": 3888,
+                    "height": 3240,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4752 x 3160 | RED 6K 3:2 Ana 1.3x",
+                    "width": 4752,
+                    "height": 3160,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5568 x 3132 | RED 6K 16:9 Ana 1.3x",
+                    "width": 5568,
+                    "height": 3132,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3240 | RED 6K 16:9 Ana 1.3x",
+                    "width": 5760,
+                    "height": 3240,
+                    "display_aspect_ratio": 2.31101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3840 | RED 6K 3:2 Ana 1.3x",
+                    "width": 5760,
+                    "height": 3840,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 4320 | RED 6K 4:3 Ana 1.3x",
+                    "width": 5760,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.733329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 768 | RED 6K 8:1 Ana 1.3x",
+                    "width": 6144,
+                    "height": 768,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 1536 | RED 6K 4:1 Ana 1.3x",
+                    "width": 6144,
+                    "height": 1536,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 2592 | RED 6K 2.37 WS Ana 1.3x",
+                    "width": 6144,
+                    "height": 2592,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3072 | RED 6K 2:1 Ana 1.3x",
+                    "width": 6144,
+                    "height": 3072,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3160 | RED 6K Full Ana 1.3x",
+                    "width": 6144,
+                    "height": 3160,
+                    "display_aspect_ratio": 2.59259,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3240 | RED 6K Full Ana 1.3x",
+                    "width": 6144,
+                    "height": 3240,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3792 x 3160 | RED 6K 6:5 Ana 2.0x",
+                    "width": 3792,
+                    "height": 3160,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3888 x 3240 | RED 6K 6:5 Ana 2.0x",
+                    "width": 3888,
+                    "height": 3240,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4752 x 3160 | RED 6K 3:2 Ana 2.0x",
+                    "width": 4752,
+                    "height": 3160,
+                    "display_aspect_ratio": 3.0,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5568 x 3132 | RED 6K 16:9 Ana 2.0x",
+                    "width": 5568,
+                    "height": 3132,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3240 | RED 6K 16:9 Ana 2.0x",
+                    "width": 5760,
+                    "height": 3240,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3840 | RED 6K 3:2 Ana 2.0x",
+                    "width": 5760,
+                    "height": 3840,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 4320 | RED 6K 4:3 Ana 2.0x",
+                    "width": 5760,
+                    "height": 4320,
+                    "display_aspect_ratio": 2.6666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 768 | RED 6K 8:1 Ana 2.0x",
+                    "width": 6144,
+                    "height": 768,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 1536 | RED 6K 4:1 Ana 2.0x",
+                    "width": 6144,
+                    "height": 1536,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 2592 | RED 6K 2.37 WS Ana 2.0x",
+                    "width": 6144,
+                    "height": 2592,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3072 | RED 6K 2:1 Ana 2.0x",
+                    "width": 6144,
+                    "height": 3072,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3160 | RED 6K Full Ana 2.0x",
+                    "width": 6144,
+                    "height": 3160,
+                    "display_aspect_ratio": 3.8886,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3240 | RED 6K Full Ana 2.0x",
+                    "width": 6144,
+                    "height": 3240,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 6K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "3792 x 3160 | RED 6K 6:5",
+                    "width": 3792,
+                    "height": 3160,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3888 x 3240 | RED 6K 6:5",
+                    "width": 3888,
+                    "height": 3240,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4752 x 3160 | RED 6K 3:2",
+                    "width": 4752,
+                    "height": 3160,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5568 x 3132 | RED 6K 16:9",
+                    "width": 5568,
+                    "height": 3132,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3240 | RED 6K 16:9",
+                    "width": 5760,
+                    "height": 3240,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 3840 | RED 6K 3:2",
+                    "width": 5760,
+                    "height": 3840,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5760 x 4320 | RED 6K 4:3",
+                    "width": 5760,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.33333,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 768 | RED 6K 8:1",
+                    "width": 6144,
+                    "height": 768,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 1536 | RED 6K 4:1",
+                    "width": 6144,
+                    "height": 1536,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 2592 | RED 6K 2.37 WS",
+                    "width": 6144,
+                    "height": 2592,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3072 | RED 6K 2:1",
+                    "width": 6144,
+                    "height": 3072,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3160 | RED 6K Full",
+                    "width": 6144,
+                    "height": 3160,
+                    "display_aspect_ratio": 1.9443,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3240 | RED 6K Full 17:9",
+                    "width": 6144,
+                    "height": 3240,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 6.5K - Anamorphic -------------- +",
+            "items": [
+                {
+                    "name": "6144 x 3456 | RED 6.5K 16:9 Ana 1.3x",
+                    "width": 6144,
+                    "height": 3456,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 832 | RED 6.5K 8:1 Ana 1.3x",
+                    "width": 6656,
+                    "height": 832,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 1664 | RED 6.5K 4:1 Ana 1.3x",
+                    "width": 6656,
+                    "height": 1664,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 2808 | RED 6.5K 2.37 WS Ana 1.3x",
+                    "width": 6656,
+                    "height": 2808,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 3328 | RED 6.5K 2:1 Ana 1.3x",
+                    "width": 6656,
+                    "height": 3328,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 3536 | RED 6.5K Full Ana 1.3x",
+                    "width": 6656,
+                    "height": 3536,
+                    "display_aspect_ratio": 2.447055,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6144 x 3456 | RED 6.5K 16:9 Ana 2.0x",
+                    "width": 6144,
+                    "height": 3456,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 832 | RED 6.5K 8:1 Ana 2.0x",
+                    "width": 6656,
+                    "height": 832,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 1664 | RED 6.5K 4:1 Ana 2.0x",
+                    "width": 6656,
+                    "height": 1664,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 2808 | RED 6.5K 2.37 WS Ana 2.0x",
+                    "width": 6656,
+                    "height": 2808,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 3328 | RED 6.5K 2:1 Ana 2.0x",
+                    "width": 6656,
+                    "height": 3328,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 3536 | RED 6.5K Full Ana 2.0x",
+                    "width": 6656,
+                    "height": 3536,
+                    "display_aspect_ratio": 3.7647,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 6.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "name": "6144 x 3456 | RED 6.5K 16:9",
+                    "width": 6144,
+                    "height": 3456,
+                    "display_aspect_ratio": 1.7777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 832 | RED 6.5K 8:1",
+                    "width": 6656,
+                    "height": 832,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 1664 | RED 6.5K 4:1",
+                    "width": 6656,
+                    "height": 1664,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 2808 | RED 6.5K 2.37 WS",
+                    "width": 6656,
+                    "height": 2808,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 3328 | RED 6.5K 2:1",
+                    "width": 6656,
+                    "height": 3328,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6656 x 3536 | RED 6.5K Full",
+                    "width": 6656,
+                    "height": 3536,
+                    "display_aspect_ratio": 1.88235,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 7K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "4536 x 3780 | RED 7K 6:5 Ana 1.3x",
+                    "width": 4536,
+                    "height": 3780,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 3780 | RED 7K 16:9 Ana 1.3x",
+                    "width": 6720,
+                    "height": 3780,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 896 | RED 7K 8:1 Ana 1.3x",
+                    "width": 7168,
+                    "height": 896,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 1792 | RED 7K 4:1 Ana 1.3x",
+                    "width": 7168,
+                    "height": 1792,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3024 | RED 7K 2:1 Ana 1.3x",
+                    "width": 7168,
+                    "height": 3024,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3584 | RED 7K 2.37 WS Ana 1.3x",
+                    "width": 7168,
+                    "height": 3584,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3780 | RED 7K Full Ana 1.3x",
+                    "width": 7168,
+                    "height": 3780,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4536 x 3780 | RED 7K 6:5 Ana 2.0x",
+                    "width": 4536,
+                    "height": 3780,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 3780 | RED 7K 16:9 Ana 2.0x",
+                    "width": 6720,
+                    "height": 3780,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 896 | RED 7K 8:1 Ana 2.0x",
+                    "width": 7168,
+                    "height": 896,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 1792 | RED 7K 4:1 Ana 2.0x",
+                    "width": 7168,
+                    "height": 1792,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3024 | RED 7K 2:1 Ana 2.0x",
+                    "width": 7168,
+                    "height": 3024,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3584 | RED 7K 2.37 WS Ana 2.0x",
+                    "width": 7168,
+                    "height": 3584,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3780 | RED 7K Full Ana 2.0x",
+                    "width": 7168,
+                    "height": 3780,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 7K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "4536 x 3780 | RED 7K 6:5",
+                    "width": 4536,
+                    "height": 3780,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 3780 | RED 7K 16:9",
+                    "width": 6720,
+                    "height": 3780,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 896 | RED 7K 8:1",
+                    "width": 7168,
+                    "height": 896,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 1792 | RED 7K 4:1",
+                    "width": 7168,
+                    "height": 1792,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3024 | RED 7K 2:1",
+                    "width": 7168,
+                    "height": 3024,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3584 | RED 7K 2.37 WS",
+                    "width": 7168,
+                    "height": 3584,
+                    "display_aspect_ratio": 2.37027,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7168 x 3780 | RED 7K Full 17:9",
+                    "width": 7168,
+                    "height": 3780,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 7.5K - Anamorphic -------------- +",
+            "items": [
+                {
+                    "name": "7296 x 4104 | RED 7.5K 16:9 Ana 1.3x",
+                    "width": 7296,
+                    "height": 4104,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 960 | RED 7.5K 8:1 Ana 1.3x",
+                    "width": 7680,
+                    "height": 960,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 1920 | RED 7.5K 4:1 Ana 1.3x",
+                    "width": 7680,
+                    "height": 1920,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 3240 | RED 7.5K 2.37 WS Ana 1.3x",
+                    "width": 7680,
+                    "height": 3240,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 3840 | RED 7.5K 2:1 Ana 1.3x",
+                    "width": 7680,
+                    "height": 3840,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 4080 | RED 7.5K Full Ana 1.3x",
+                    "width": 7680,
+                    "height": 4080,
+                    "display_aspect_ratio": 2.447055,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7296 x 4104 | RED 7.5K 16:9 Ana 2.0x",
+                    "width": 7296,
+                    "height": 4104,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 960 | RED 7.5K 8:1 Ana 2.0x",
+                    "width": 7680,
+                    "height": 960,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 1920 | RED 7.5K 4:1 Ana 2.0x",
+                    "width": 7680,
+                    "height": 1920,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 3240 | RED 7.5K 2.37 WS Ana 2.0x",
+                    "width": 7680,
+                    "height": 3240,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 3840 | RED 7.5K 2:1 Ana 2.0x",
+                    "width": 7680,
+                    "height": 3840,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 4080 | RED 7.5K Full Ana 2.0x",
+                    "width": 7680,
+                    "height": 4080,
+                    "display_aspect_ratio": 3.7647,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 7.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "name": "7296 x 4104 | RED 7.5K 16:9",
+                    "width": 7296,
+                    "height": 4104,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 960 | RED 7.5K 8:1",
+                    "width": 7680,
+                    "height": 960,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 1920 | RED 7.5K 4:1",
+                    "width": 7680,
+                    "height": 1920,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 3240 | RED 7.5K 2.37 WS",
+                    "width": 7680,
+                    "height": 3240,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 3840 | RED 7.5K 2:1",
+                    "width": 7680,
+                    "height": 3840,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 4080 | RED 7.5K Full",
+                    "width": 7680,
+                    "height": 4080,
+                    "display_aspect_ratio": 1.88235,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 8K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "3840 x 4320 | RED 8K 8:9 Ana 1.3x",
+                    "width": 3840,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.1555557,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5184 x 4320 | RED 8K 6:5 Ana 1.3x",
+                    "width": 5184,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6480 x 4320 | RED 8K 3:2 Ana 1.3x",
+                    "width": 6480,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 4320 | RED 8K 14:9 Ana 1.3x",
+                    "width": 6720,
+                    "height": 4320,
+                    "display_aspect_ratio": 2.022228,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 4320 | RED 8K 16:9 Ana 1.3x",
+                    "width": 7680,
+                    "height": 4320,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 1024 | RED 8K 8:1 Ana 1.3x",
+                    "width": 8192,
+                    "height": 1024,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 2048 | RED 8K 4:1 Ana 1.3x",
+                    "width": 8192,
+                    "height": 2048,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 3456 | RED 8K 2.37 WS Ana 1.3x",
+                    "width": 8192,
+                    "height": 3456,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4096 | RED 8K 2:1 Ana 1.3x",
+                    "width": 8192,
+                    "height": 4096,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4320 | RED 8K Full Ana 1.3x",
+                    "width": 8192,
+                    "height": 4320,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3840 x 4320 | RED 8K 8:9 Ana 2x",
+                    "width": 3840,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5184 x 4320 | RED 8K 6:5 Ana 2.0x",
+                    "width": 5184,
+                    "height": 4320,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6480 x 4320 | RED 8K 3:2 Ana 2.0x",
+                    "width": 6480,
+                    "height": 4320,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 4320 | RED 8K 14:9 Ana 2.0x",
+                    "width": 6720,
+                    "height": 4320,
+                    "display_aspect_ratio": 3.11112,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 4320 | RED 8K 16:9 Ana 2.0x",
+                    "width": 7680,
+                    "height": 4320,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 1024 | RED 8K 8:1 Ana 2.0x",
+                    "width": 8192,
+                    "height": 1024,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 2048 | RED 8K 4:1 Ana 2.0x",
+                    "width": 8192,
+                    "height": 2048,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 3456 | RED 8K 2.37 WS Ana 2.0x",
+                    "width": 8192,
+                    "height": 3456,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4096 | RED 8K 2:1 Ana 2.0x",
+                    "width": 8192,
+                    "height": 4096,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4320 | RED 8K Full Ana 2.0x",
+                    "width": 8192,
+                    "height": 4320,
+                    "display_aspect_ratio": 3.7926,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        },
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 8K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "3840 x 4320 | RED 8K 8:9",
+                    "width": 3840,
+                    "height": 4320,
+                    "display_aspect_ratio": 0.888889,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5184 x 4320 | RED 8K 6:5",
+                    "width": 5184,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6480 x 4320 | RED 8K 3:2",
+                    "width": 6480,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 4320 | RED 8K 14:9",
+                    "width": 6720,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.55556,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 4320 | RED 8K 16:9",
+                    "width": 7680,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.77777,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 1024 | RED 8K 8:1",
+                    "width": 8192,
+                    "height": 1024,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 2048 | RED 8K 4:1",
+                    "width": 8192,
+                    "height": 2048,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 3456 | RED 8K 2.37 WS",
+                    "width": 8192,
+                    "height": 3456,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4096 | RED 8K 2:1",
+                    "width": 8192,
+                    "height": 4096,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4320 | RED 8K Full 17:9",
+                    "width": 8192,
+                    "height": 4320,
+                    "display_aspect_ratio": 1.8963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

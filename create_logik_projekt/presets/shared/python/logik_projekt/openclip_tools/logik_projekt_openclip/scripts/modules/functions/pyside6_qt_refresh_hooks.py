@@ -4,13 +4,13 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_refresh_hooks.py
-# Version:          0.4.7
+# Version:          0.4.8
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-05
+# Modified:         2024-06-26
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -319,3 +319,7 @@ def pyside6_qt_refresh_hooks(script_name: Optional[str]='') -> None:
 # version:               0.4.7
 # modified:              2024-06-05 - 21:08:34
 # comments:              Modified note strings
+# -------------------------------------------------------------------------- #
+# version:               0.4.8
+# modified:              2024-06-26 - 22:31:48
+# comments:              Fixed missing import statements for pyside6_qt_label

@@ -1,0 +1,91 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 8K - Spherical ----------------- +",
+            "items": [
+                {
+                    "name": "3840 x 4320 | RED 8K 8:9",
+                    "width": 3840,
+                    "height": 4320,
+                    "storage_aspect_ratio": 0.8888889,
+                    "display_aspect_ratio": 0.8888889,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5184 x 4320 | RED 8K 6:5",
+                    "width": 5184,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6480 x 4320 | RED 8K 3:2",
+                    "width": 6480,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "6720 x 4320 | RED 8K 14:9",
+                    "width": 6720,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.5555556,
+                    "display_aspect_ratio": 1.5555556,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "7680 x 4320 | RED 8K 16:9",
+                    "width": 7680,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 1024 | RED 8K 8:1",
+                    "width": 8192,
+                    "height": 1024,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 2048 | RED 8K 4:1",
+                    "width": 8192,
+                    "height": 2048,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 3456 | RED 8K 2.37 WS",
+                    "width": 8192,
+                    "height": 3456,
+                    "storage_aspect_ratio": 2.3703704,
+                    "display_aspect_ratio": 2.3703704,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4096 | RED 8K 2:1",
+                    "width": 8192,
+                    "height": 4096,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "8192 x 4320 | RED 8K Full 17:9",
+                    "width": 8192,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

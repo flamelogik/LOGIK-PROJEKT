@@ -1,0 +1,59 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 5.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "name": "5376 x 3024 | RED 5.5K 16:9",
+                    "width": 5376,
+                    "height": 3024,
+                    "storage_aspect_ratio": 1.777778,
+                    "display_aspect_ratio": 1.77778,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 704 | RED 5.5K 8:1",
+                    "width": 5632,
+                    "height": 704,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 1408 | RED 5.5K 4:1",
+                    "width": 5632,
+                    "height": 1408,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2376 | RED 5.5K 2.37 WS",
+                    "width": 5632,
+                    "height": 2376,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 2.37037,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2816 | RED 5.5K 2:1",
+                    "width": 5632,
+                    "height": 2816,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5632 x 2948 | RED 5.5K Full",
+                    "width": 5632,
+                    "height": 2948,
+                    "storage_aspect_ratio": 1.91045,
+                    "display_aspect_ratio": 1.91045,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

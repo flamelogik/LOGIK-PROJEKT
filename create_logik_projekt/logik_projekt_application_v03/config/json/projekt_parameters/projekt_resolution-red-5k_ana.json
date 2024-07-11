@@ -1,0 +1,139 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 5K - Anamorphic ---------------- +",
+            "items": [
+                {
+                    "name": "3240 x 2700 | RED 5K 6:5 Ana 1.3x",
+                    "width": 3240,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3300 x 2700 | RED 5K 1.2 Ana 1.3x",
+                    "width": 3300,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.22222,
+                    "display_aspect_ratio": 1.58886,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4800 x 2700 | RED 5K 16:9 Ana 1.3x",
+                    "width": 4800,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.77778,
+                    "display_aspect_ratio": 2.311101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 640 | RED 5K 8:1 Ana 1.3x",
+                    "width": 5120,
+                    "height": 640,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 1280 | RED 5K 4:1 Ana 1.3x",
+                    "width": 5120,
+                    "height": 1280,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2160 | RED 5K 2.37 WS Ana 1.3x",
+                    "width": 5120,
+                    "height": 2160,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2560 | RED 5K 2:1 Ana 1.3x",
+                    "width": 5120,
+                    "height": 2560,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2700 | RED 5K Full Ana 1.3x",
+                    "width": 5120,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.8963,
+                    "display_aspect_ratio": 2.46519,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3240 x 2700 | RED 5K 6:5 Ana 2.0x",
+                    "width": 3240,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "3300 x 2700 | RED 5K 1.2 Ana 2.0x",
+                    "width": 3300,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.22222,
+                    "display_aspect_ratio": 2.4444,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4800 x 2700 | RED 5K 16:9 Ana 2.0x",
+                    "width": 4800,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.77778,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 640 | RED 5K 8:1 Ana 2.0x",
+                    "width": 5120,
+                    "height": 640,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 1280 | RED 5K 4:1 Ana 2.0x",
+                    "width": 5120,
+                    "height": 1280,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2160 | RED 5K 2.37 WS Ana 2.0x",
+                    "width": 5120,
+                    "height": 2160,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2560 | RED 5K 2:1 Ana 2.0x",
+                    "width": 5120,
+                    "height": 2560,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "5120 x 2700 | RED 5K Full Ana 2.0x",
+                    "width": 5120,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.8963,
+                    "display_aspect_ratio": 3.7924,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,203 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 4.5K - Anamorphic -------------- +",
+            "items": [
+                {
+                    "name": "4224 x 2376 | RED 4.5K 16:9 Ana 1.3x",
+                    "width": 4224,
+                    "height": 2376,
+                    "storage_aspect_ratio": 1.77778,
+                    "display_aspect_ratio": 2.31101,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2376 | RED 4.5K HD Ana 1.3x",
+                    "width": 4320,
+                    "height": 2376,
+                    "storage_aspect_ratio": 1.81818,
+                    "display_aspect_ratio": 2.36634,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2880 | RED 4.5K 3:2 Ana 1.3x",
+                    "width": 4320,
+                    "height": 2880,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.95,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3240 | RED 4.5K 4:5 Ana 1.3x",
+                    "width": 4320,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.33333,
+                    "display_aspect_ratio": 1.733329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3456 | RED 4.5K 5:4 Ana 1.3x",
+                    "width": 4320,
+                    "height": 3456,
+                    "storage_aspect_ratio": 1.25,
+                    "display_aspect_ratio": 1.625,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4480 x 1920 | RED 4.5K 2.33 WS Ana 1.3x",
+                    "width": 4480,
+                    "height": 1920,
+                    "storage_aspect_ratio": 2.33333,
+                    "display_aspect_ratio": 3.033329,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 576 | RED 4.5K 8:1 Ana 1.3x",
+                    "width": 4608,
+                    "height": 576,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 10.4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1152 | RED 4.5K 4:1 Ana 1.3x",
+                    "width": 4608,
+                    "height": 1152,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 5.2,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1944 | RED 4.5K 2.37 WS Ana 1.3x",
+                    "width": 4608,
+                    "height": 1944,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 3.081481,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2304 | RED 4.5K 2:1 Ana 1.3x",
+                    "width": 4608,
+                    "height": 2304,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 2.6,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2412 | RED 4.5K Full Ana 1.3x",
+                    "width": 4608,
+                    "height": 2412,
+                    "storage_aspect_ratio": 1.90789,
+                    "display_aspect_ratio": 2.483585,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2432 | RED 4.5K Full Ana 1.3x",
+                    "width": 4608,
+                    "height": 2432,
+                    "storage_aspect_ratio": 1.89344,
+                    "display_aspect_ratio": 2.27388,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4224 x 2376 | RED 4.5K 16:9 Ana 2.0x",
+                    "width": 4224,
+                    "height": 2376,
+                    "storage_aspect_ratio": 1.77778,
+                    "display_aspect_ratio": 3.55554,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2376 | RED 4.5K HD Ana 2.0x",
+                    "width": 4320,
+                    "height": 2376,
+                    "storage_aspect_ratio": 1.81818,
+                    "display_aspect_ratio": 3.63636,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 2880 | RED 4.5K 3:2 Ana 2.0x",
+                    "width": 4320,
+                    "height": 2880,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 3,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3240 | RED 4.5K 4:5 Ana 2.0x",
+                    "width": 4320,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.33333,
+                    "display_aspect_ratio": 2.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4320 x 3456 | RED 4.5K 5:4 Ana 2.0x",
+                    "width": 4320,
+                    "height": 3456,
+                    "storage_aspect_ratio": 1.25,
+                    "display_aspect_ratio": 2.5,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4480 x 1920 | RED 4.5K 2.33 WS Ana 2.0x",
+                    "width": 4480,
+                    "height": 1920,
+                    "storage_aspect_ratio": 2.33333,
+                    "display_aspect_ratio": 4.66666,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 576 | RED 4.5K 8:1 Ana 2.0x",
+                    "width": 4608,
+                    "height": 576,
+                    "storage_aspect_ratio": 8,
+                    "display_aspect_ratio": 16,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1152 | RED 4.5K 4:1 Ana 2.0x",
+                    "width": 4608,
+                    "height": 1152,
+                    "storage_aspect_ratio": 4,
+                    "display_aspect_ratio": 8,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 1944 | RED 4.5K 2.37 WS Ana 2.0x",
+                    "width": 4608,
+                    "height": 1944,
+                    "storage_aspect_ratio": 2.37037,
+                    "display_aspect_ratio": 4.74074,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2304 | RED 4.5K 2:1 Ana 2.0x",
+                    "width": 4608,
+                    "height": 2304,
+                    "storage_aspect_ratio": 2,
+                    "display_aspect_ratio": 4,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2412 | RED 4.5K Full Ana 2.0x",
+                    "width": 4608,
+                    "height": 2412,
+                    "storage_aspect_ratio": 1.90789,
+                    "display_aspect_ratio": 3.8209,
+                    "pixel_aspect_ratio": 1.0
+                },
+                {
+                    "name": "4608 x 2432 | RED 4.5K Full Ana 2.0x",
+                    "width": 4608,
+                    "height": 2432,
+                    "storage_aspect_ratio": 1.8947368,
+                    "display_aspect_ratio": 3.78948,
+                    "pixel_aspect_ratio": 1.0
+                }
+            ]
+        }
+    ]
+}
