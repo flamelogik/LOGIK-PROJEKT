@@ -4,7 +4,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_tree_widget.py
-# Version:          0.4.8
+# Version:          0.4.9
 # Language:         python script
 # Flame Version:    2025.x
 # Author:           Phil MAN - phil_man@mac.com
@@ -305,3 +305,7 @@ class pyside6_qt_tree_widget(QtWidgets.QTreeWidget):
 # version:               0.4.8
 # modified:              2024-07-11 - 08:39:06
 # comments:              Added new schematic reels for batch groups
+# -------------------------------------------------------------------------- #
+# version:               0.4.9
+# modified:              2024-07-11 - 08:41:36
+# comments:              Fixed a version bug for the changelist updater script
