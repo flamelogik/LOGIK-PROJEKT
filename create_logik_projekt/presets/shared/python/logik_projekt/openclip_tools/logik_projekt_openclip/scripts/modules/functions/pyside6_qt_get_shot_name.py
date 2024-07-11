@@ -10,7 +10,7 @@
 # Author:           Phil MAN - phil_man@mac.com
 # Toolset:          MAN_MADE_MATERIAL: LOGIK-PROJEKT
 # Created:          2024-04-20
-# Modified:         2024-06-26
+# Modified:         2024-07-11
 # Modifier:         Phil MAN - phil_man@mac.com
 
 # Description:      This program is part of a library of custom functions
@@ -346,3 +346,7 @@ def pyside6_qt_get_shot_name(shot_name_source) -> str:
 # version:               0.4.8
 # modified:              2024-06-26 - 22:31:48
 # comments:              Fixed missing import statements for pyside6_qt_label
+# -------------------------------------------------------------------------- #
+# version:               0.4.8
+# modified:              2024-07-11 - 08:39:06
+# comments:              Added new schematic reels for batch groups
