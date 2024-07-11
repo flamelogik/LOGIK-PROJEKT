@@ -233,7 +233,7 @@ class class_projekt_openclip_comp():
         self.batch_group = flame.batch
 
         # Define reel names
-        reel_names = ["sources", "reference", "CGI", "mattes", "motion", "multichannel", "neat_video", "precomp", "roto", "comp"]
+        reel_names = ["sources", "reference", "CGI", "mattes", "depth", "motion", "multichannel", "neat_video", "paint", "precomp", "roto", "comp"]
 
         # Rename 'Schematic Reel' or 'Schematic Reel 1' to 'sources' if it exists
         for reel in flame.batch.reels:
@@ -285,7 +285,7 @@ class class_projekt_openclip_comp():
         flame.go_to('Batch')
 
         # Create batch group
-        batch_group = flame.batch.create_batch_group('projekt_comp', reels=['sources','reference','CGI','mattes','motion','multichannel','neat_video','precomp','roto','comp'])
+        batch_group = flame.batch.create_batch_group('projekt_comp', reels=['sources','reference','CGI','mattes','depth','motion','multichannel','neat_video','paint','precomp','roto','comp'])
 
         # Add source clip(s) to 'sources_reel'
         sources_reel = batch_group.reels[0]

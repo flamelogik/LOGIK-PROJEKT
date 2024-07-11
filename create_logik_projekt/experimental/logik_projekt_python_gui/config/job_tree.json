@@ -1,0 +1,292 @@
+{
+    "name": "jobs_dir",
+    "parent_path": "",
+    "path": "jobs_dir/",
+    "visibility": "global",
+    "children": [
+        {
+            "name": "job_dir",
+            "parent_path": "jobs_dir/",
+            "path": "jobs_dir/job_dir/",
+            "visibility": "global",
+            "children": [
+                {
+                    "name": "job_subdir_01",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_subdir_01/",
+                    "visibility": "global",
+                    "children": [
+                        {
+                            "name": "job_subdir_01_01",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_01/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_02",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_02/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_03",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_03/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_04",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_04/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_05",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                            "visibility": "global",
+                            "children": [
+                                {
+                                    "name": "job_subdir_01_05_01",
+                                    "parent_path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                                    "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/job_subdir_01_05_01/",
+                                    "visibility": "global"
+                                },
+                                {
+                                    "name": "job_subdir_01_05_02",
+                                    "parent_path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                                    "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/job_subdir_01_05_02/",
+                                    "visibility": "global"
+                                },
+                                {
+                                    "name": "job_subdir_01_05_03",
+                                    "parent_path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                                    "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/job_subdir_01_05_03/",
+                                    "visibility": "global"
+                                },
+                                {
+                                    "name": "job_subdir_01_05_04",
+                                    "parent_path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                                    "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/job_subdir_01_05_04/",
+                                    "visibility": "global"
+                                },
+                                {
+                                    "name": "job_subdir_01_05_05",
+                                    "parent_path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                                    "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/job_subdir_01_05_05/",
+                                    "visibility": "global"
+                                },
+                                {
+                                    "name": "job_subdir_01_05_06",
+                                    "parent_path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                                    "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/job_subdir_01_05_06/",
+                                    "visibility": "global"
+                                },
+                                {
+                                    "name": "job_subdir_01_05_07",
+                                    "parent_path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/",
+                                    "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_05/job_subdir_01_05_07/",
+                                    "visibility": "global"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "job_subdir_01_06",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_06/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_07",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_07/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_08",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_08/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_09",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_09/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_10",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_10/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_11",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_11/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_12",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_12/",
+                            "visibility": "global"
+                        },
+                        {
+                            "name": "job_subdir_01_13",
+                            "parent_path": "jobs_dir/job_dir/job_subdir_01/",
+                            "path": "jobs_dir/job_dir/job_subdir_01/job_subdir_01_13/",
+                            "visibility": "global"
+                        }
+                    ]
+                },
+                {
+                    "name": "job_dir_02",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_02/",
+                    "visibility": "global"
+                },
+                {
+                    "name": "job_dir_03",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_03/",
+                    "visibility": "global"
+                },
+                {
+                    "name": "job_dir_04",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_04/",
+                    "visibility": "global"
+                },
+                {
+                    "name": "job_dir_05",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_05/",
+                    "visibility": "global",
+                    "children": [
+                        {
+                            "name": "job_dir_05_01",
+                            "parent_path": "jobs_dir/job_dir/job_dir_05/",
+                            "path": "jobs_dir/job_dir/job_dir_12/job_dir_05_01/",
+                            "visibility": "global"
+                        }
+                    ]
+                },
+                {
+                    "name": "job_dir_06",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_06/",
+                    "visibility": "global",
+                    "children": [
+                        {
+                            "name": "job_dir_06_01",
+                            "parent_path": "jobs_dir/job_dir/job_dir_06/",
+                            "path": "jobs_dir/job_dir/job_dir_12/job_dir_06_01/",
+                            "visibility": "global"
+                        }
+                    ]
+                },
+                {
+                    "name": "job_dir_07",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_07/",
+                    "visibility": "global"
+                },
+                {
+                    "name": "job_dir_08",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_08/",
+                    "visibility": "global"
+                },
+                {
+                    "name": "job_dir_09",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_09/",
+                    "visibility": "global"
+                },
+                {
+                    "name": "job_dir_10",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_10/",
+                    "visibility": "global",
+                    "children": [
+                        {
+                            "name": "job_dir_10_01",
+                            "parent_path": "jobs_dir/job_dir/job_dir_10/",
+                            "path": "jobs_dir/job_dir/job_dir_12/job_dir_10_01/",
+                            "visibility": "global"
+                        }
+                    ]
+                },
+                {
+                    "name": "job_dir_11",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_11/",
+                    "visibility": "global"
+                },
+                {
+                    "name": "job_dir_12",
+                    "parent_path": "jobs_dir/job_dir/",
+                    "path": "jobs_dir/job_dir/job_dir_12/",
+                    "visibility": "global",
+                    "children": [
+                        {
+                            "name": "job_dir_12_01",
+                            "parent_path": "jobs_dir/job_dir/job_dir_12/",
+                            "path": "jobs_dir/job_dir/job_dir_12/job_dir_12_01/",
+                            "visibility": "global"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+jobs_dir/                        
+    job_dir/                     
+        job_subdir_01/              
+            job_subdir_01_01/       
+            job_subdir_01_02/       
+            job_subdir_01_03/       
+            job_subdir_01_04/       
+            job_subdir_01_05/       
+                job_subdir_01_05_01/
+                job_subdir_01_05_02/
+                job_subdir_01_05_03/
+                job_subdir_01_05_04/
+                job_subdir_01_05_05/
+                job_subdir_01_05_06/
+                job_subdir_01_05_07/
+            job_subdir_01_06/       
+            job_subdir_01_07/       
+            job_subdir_01_08/       
+            job_subdir_01_09/       
+            job_subdir_01_10/       
+            job_subdir_01_11/       
+            job_subdir_01_12/       
+            job_subdir_01_13/       
+        job_dir_02/              
+        job_dir_03/              
+        job_dir_04/              
+            job_dir_04_01/       
+        job_dir_05/              
+            job_dir_05_01/       
+            job_dir_05_02/       
+            job_dir_05_03/       
+        job_dir_06/              
+            job_dir_06_01/       
+            job_dir_06_02/       
+        job_dir_07/              
+        job_dir_08/              
+        job_dir_09/              
+        job_dir_10/              
+            job_dir_10_01/       
+        job_dir_11/              
+        job_dir_12/              
+            job_dir_12_01/       
