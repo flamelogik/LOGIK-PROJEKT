@@ -8,7 +8,7 @@ def create_drop_down_flame_software_qt6():
     combo_box = QComboBox()
 
     # Populate the combo box with flame family apps
-    flame_family_apps = flame_family_app_list("/home/pman/dummy_software_folders")  # Adjust the directory path
+    flame_family_apps = flame_family_app_list("/home/pman/testing")  # Adjust the directory path
     combo_box.addItems(flame_family_apps)
 
     return combo_box
