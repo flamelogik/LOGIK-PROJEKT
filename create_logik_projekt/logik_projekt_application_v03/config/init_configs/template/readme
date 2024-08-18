@@ -1,3 +1,0 @@
-The project management system looks for config file templates in this
-directory (cfg/template).  If you wish to create custom config file
-templates simply create new config files in this directory.

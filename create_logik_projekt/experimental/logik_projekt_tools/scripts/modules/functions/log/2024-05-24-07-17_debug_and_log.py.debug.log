@@ -1,3 +1,0 @@
-INFO:root:Operating system is Linux.
-INFO:root:Operating System: Linux
-ERROR:root:An error occurred: [Errno 13] Permission denied: '/opt/Autodesk/python/current/bin/python3 '
