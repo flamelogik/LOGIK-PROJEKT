@@ -1,9 +1,0 @@
-{
-    "MediaBrowserArchiveAction": {
-        "ArchiveUICacheVersion": 0,
-        "ArchiveUIGenerateProxies": false
-    },
-    "MModuleUI": {
-        "ModuleUINoMediaHandling": 1
-    }
-}
