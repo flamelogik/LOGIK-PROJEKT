@@ -34,7 +34,7 @@
 # resources/utilities/disable_debug_statements.py
 
 # ========================================================================== #
-# This section defines the import statements and diresctory paths.
+# This section defines the import statements and directory paths.
 # ========================================================================== #
 
 import os

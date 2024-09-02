@@ -121,7 +121,7 @@ def path_to_shot_source_openexr_sequences(directory,
     return shot_source_version_openexr_sequences_info, shot_source_version_start_frame, shot_source_version_end_frame
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
+# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
 
 # Changelist:

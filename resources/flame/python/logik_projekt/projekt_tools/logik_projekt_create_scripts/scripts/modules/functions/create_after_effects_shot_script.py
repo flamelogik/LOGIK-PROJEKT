@@ -283,7 +283,7 @@ def create_after_effects_shot_script(shot_name,
         print(f"After Effects Shot script created:    {shot_scripts_app_task_script}\n")
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 2D 4D 45 4B 41 4E 49 53 4D 5A #
+# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
 
 # Changelist:

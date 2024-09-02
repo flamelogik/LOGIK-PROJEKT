@@ -31,17 +31,13 @@
 
 # -------------------------------------------------------------------------- #
 
-# This script prepends a disclaimer to all Python files 
-# in a specified directory and its subdirectories.
-# It also logs the process to a file.
-
 # File Name:        prepend_disclaimer_to_python_files.sh
 # Version:          0.0.1
 # Created:          2024-01-19
 # Modified:         2024-08-31
 
 # ========================================================================== #
-# This section defines the import statements and diresctory paths.
+# This section defines the primary functions for the script.
 # ========================================================================== #
 
 # Get the directory of the running script

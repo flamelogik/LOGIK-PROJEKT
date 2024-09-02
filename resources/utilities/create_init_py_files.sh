@@ -34,7 +34,7 @@
 # resources/utilities/create_init_py_files.sh
 
 # ========================================================================== #
-# This section defines the import statements and diresctory paths.
+# This section defines the import statements and directory paths.
 # ========================================================================== #
 
 set -ex

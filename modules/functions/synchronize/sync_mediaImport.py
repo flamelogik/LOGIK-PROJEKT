@@ -37,7 +37,7 @@
 # Modified:         2024-08-31
 
 # ========================================================================== #
-# This section defines the import statements and diresctory paths.
+# This section defines the import statements and directory paths.
 # ========================================================================== #
 
 # Standard library imports

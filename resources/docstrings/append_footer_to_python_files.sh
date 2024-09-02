@@ -37,12 +37,8 @@
 # Modified:         2024-08-31
 
 # ========================================================================== #
-# This section defines the import statements and diresctory paths.
+# This section defines the primary functions for the script.
 # ========================================================================== #
-
-# This script appends a footer to all Python files 
-# in a specified directory and its subdirectories.
-# It also logs the process to a file.
 
 # Get the directory of the running script
 path_to_here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
