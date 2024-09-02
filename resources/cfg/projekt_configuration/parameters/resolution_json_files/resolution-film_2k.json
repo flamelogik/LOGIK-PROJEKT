@@ -1,0 +1,56 @@
+{
+    "group": "Film Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- 2K Film ---------------------------- +",
+            "items": [
+                {
+                    "resolution_name": "1828 x 1332 | Film 2K Academy",
+                    "width": 1828,
+                    "height": 1332,
+                    "storage_aspect_ratio": 1.3723724,
+                    "display_aspect_ratio": 1.3723724,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3723724
+                },
+                {
+                    "resolution_name": "1828 x 1556 | Film 2K Scope 2.35",
+                    "width": 1828,
+                    "height": 1556,
+                    "storage_aspect_ratio": 1.1748072,
+                    "display_aspect_ratio": 2.3496144,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.3496144
+                },
+                {
+                    "resolution_name": "2048 x 1152 | Film 2K 16:9",
+                    "width": 2048,
+                    "height": 1152,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "2048 x 1536 | Film 2K 4:3",
+                    "width": 2048,
+                    "height": 1536,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 1.3333333,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3333333
+                },
+                {
+                    "resolution_name": "2048 x 1556 | Film Super35 2K",
+                    "width": 2048,
+                    "height": 1556,
+                    "storage_aspect_ratio": 1.3161954,
+                    "display_aspect_ratio": 1.3161954,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3161954
+                }
+            ]
+        }
+    ]
+}

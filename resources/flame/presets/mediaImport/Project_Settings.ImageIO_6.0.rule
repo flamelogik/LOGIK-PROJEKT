@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule>
+	<header>
+		<version>1</version>
+		<name>Project_Settings</name>
+		<type>0</type>
+	</header>
+	<data>
+		<name>ImageIO</name>
+		<version>6</version>
+		<longName>Image Sequence</longName>
+		<options type="dict">
+			<ClipNameMode type="string">FileName</ClipNameMode>
+			<ClipNameValue type="string">Untitled</ClipNameValue>
+			<DropMode type="string">Header</DropMode>
+			<FileSequence type="bool">true</FileSequence>
+			<InputColourSpace type="string">Unknown</InputColourSpace>
+			<RateMode type="string">Header</RateMode>
+			<RateValue type="rate">
+				<numerator>24000</numerator>
+				<denominator>1001</denominator>
+			</RateValue>
+			<SourceNameDirLevelUp type="uint32">1</SourceNameDirLevelUp>
+			<SourceNameMode type="string">Auto</SourceNameMode>
+			<SourceNameValue type="string">IMPORT</SourceNameValue>
+			<TimecodeMode type="string" label="Timecode from Header">Header</TimecodeMode>
+			<TimecodeValue type="time" label="0">
+				<rate/>
+				<nbTicks>0</nbTicks>
+				<dropMode>NDF</dropMode>
+			</TimecodeValue>
+		</options>
+	</data>
+</rule>

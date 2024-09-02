@@ -1,0 +1,164 @@
+{
+    "item_00": {
+        "object_name": "assets_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'assets'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Green\")",
+        "children": {
+            "item_01": {
+                "object_name": "artwork_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'artwork'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_02": {
+                "object_name": "audio_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'audio'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_03": {
+                "object_name": "cgi_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'CGI'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_04": {
+                "object_name": "font_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'font'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_05": {
+                "object_name": "footage_graded_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'footage_graded'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_06": {
+                "object_name": "footage_raw_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'footage_raw'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_07": {
+                "object_name": "graphics_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'graphics'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_08": {
+                "object_name": "images_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'images'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_09": {
+                "object_name": "legal_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'legal'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_10": {
+                "object_name": "matchmoving_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'matchmoving'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_11": {
+                "object_name": "miscellaneous_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'miscellaneous'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_12": {
+                "object_name": "paint_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'paint'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_13": {
+                "object_name": "photoshop_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'photoshop'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_14": {
+                "object_name": "roto_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'roto'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_15": {
+                "object_name": "slates_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'slates'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_16": {
+                "object_name": "subtitles_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'subtitles'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_17": {
+                "object_name": "titles_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'titles'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_18": {
+                "object_name": "tracking_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'tracking'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_19": {
+                "object_name": "video_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'video'",
+                "object_type": "folder",
+                "object_color": ""
+            }
+        }
+    }
+}

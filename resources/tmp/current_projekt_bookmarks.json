@@ -1,0 +1,387 @@
+{
+    "DlBookmark": {
+        "Version": 1,
+        "Sections": [
+            {
+                "Section": "Project",
+                "Bookmarks": [
+                    {
+                        "Bookmark": "flame setups",
+                        "Path": "<project home>",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "PROJEKTS",
+                        "Path": "/PROJEKTS/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "projekt home",
+                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Folder": "projekt directories",
+                        "Bookmarks": [
+                            {
+                                "Folder": "assets",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "assets",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "artwork",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/artwork",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "audio",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/audio",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "cgi",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/cgi",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "font",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/font",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "footage_graded",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/footage_graded",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "footage_raw",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/footage_raw",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "graphics",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/graphics",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "images",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/images",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "legal",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/legal",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "matchmoving",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/matchmoving",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "miscellaneous",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/miscellaneous",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "paint",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/paint",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "photoshop",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/photoshop",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "roto",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/roto",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "slates",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/slates",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "subtitles",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/subtitles",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "titles",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/titles",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "tracking",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/tracking",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "video",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/assets/video",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "editorial",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "editorial",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/editorial",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "aaf",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/editorial/aaf",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "edl",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/editorial/edl",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "prep",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/editorial/prep",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "xml",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/editorial/xml",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "flame",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "flame",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/flame",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "archives",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/flame/archives",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "iterations",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/flame/iterations",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "setups",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/flame/setups",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "masters",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "masters",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/masters",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "master_edits",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/masters/master_edits",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "slated_masters",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/masters/slated_masters",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "versioned_masters",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/masters/versioned_masters",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "reference",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "reference",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/reference",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "reference_images",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/reference/reference_images",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "reference_movies",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/reference/reference_movies",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "reference_style_guide",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/reference/reference_style_guide",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "scenes",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "scenes",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "3ds",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/3ds",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "alembic",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/alembic",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "baselight",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/baselight",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "blender",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/blender",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "c4d",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/c4d",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "cut",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/cut",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "fbx",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/fbx",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "geometry",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/geometry",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "houdini",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/houdini",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "maya",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/maya",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "resolve",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/resolve",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "unity",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/unity",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "unreal_engine",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/unreal_engine",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "usd",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/scenes/usd",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "shots",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "shots",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/shots",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "tmp",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "tmp",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/tmp",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "utilities",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "utilities",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/utilities",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "flame_colortoolkit (linux)",
+                                        "Path": "/opt/Autodesk/Synergy/SynColor/Shared/transforms/flame_colortoolkit",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "flame_colortoolkit (macos)",
+                                        "Path": "/Applications/Autodesk/Synergy/SynColor/Shared/transforms/flame_colortoolkit",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "version",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "version",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/version",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "work_in_progress",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "work_in_progress",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/work_in_progress",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "postings",
+                                        "Path": "/PROJEKTS/12345_chadi_hecat_projekt_1/work_in_progress/postings",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

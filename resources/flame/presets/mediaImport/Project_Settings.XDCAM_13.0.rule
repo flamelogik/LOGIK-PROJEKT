@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule>
+	<header>
+		<version>1</version>
+		<name>Project_Settings</name>
+		<type>0</type>
+	</header>
+	<data>
+		<name>XDCAM</name>
+		<version>13</version>
+		<longName>Sony</longName>
+		<options type="dict">
+			<AspectRatioMode type="string">Header</AspectRatioMode>
+			<AspectRatioValue type="float">1</AspectRatioValue>
+			<ClampAudioLength type="bool">false</ClampAudioLength>
+			<CleanAperture type="bool">true</CleanAperture>
+			<ClipNameMode type="string" label="Clip Name from Essence">Essence</ClipNameMode>
+			<ClipNameValue type="string">Untitled</ClipNameValue>
+			<DropMode type="string">Header</DropMode>
+			<InputColourSpace type="string">Unknown</InputColourSpace>
+			<PreserveTimecode type="string">Native</PreserveTimecode>
+			<RateMode type="string">Header</RateMode>
+			<RateValue type="rate">
+				<numerator>24000</numerator>
+				<denominator>1001</denominator>
+			</RateValue>
+			<SourceNameDirLevelUp type="uint32">1</SourceNameDirLevelUp>
+			<SourceNameMode type="string">Essence</SourceNameMode>
+			<SourceNameValue type="string">IMPORT</SourceNameValue>
+			<TimecodeMode type="string">Header</TimecodeMode>
+			<TimecodeValue type="time" label="0">
+				<rate/>
+				<nbTicks>0</nbTicks>
+				<dropMode>NDF</dropMode>
+			</TimecodeValue>
+			<YUVColourSpace type="string">Auto</YUVColourSpace>
+			<YUVHeadroom type="bool">false</YUVHeadroom>
+		</options>
+	</data>
+</rule>

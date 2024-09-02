@@ -1,0 +1,40 @@
+{
+    "item_00": {
+        "object_name": "work_in_progress_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'work_in_progress'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Blue\")",
+        "link": "True",
+        "dir_name": "work_in_progress",
+        "filesystem_type": "folder",
+        "flame_type": "library",
+        "parent_dir": "/{projekts_dir}/{projekt_dir}",
+        "path": "/{projekts_dir}/{projekt_dir}/work_in_progress",
+        "bookmark_name": "work_in_progress",
+        "bookmark_type": "folder",
+        "bookmark_parent": "projekt directories",
+        "bookmark_visibility": "Global",
+        "children": {
+            "item_01": {
+                "object_name": "postings_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "work_in_progress_library",
+                "display_name": "'postings'",
+                "object_type": "folder",
+                "object_color": "",
+                "link": "True",
+                "dir_name": "postings",
+                "filesystem_type": "folder",
+                "flame_type": "folder",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/work_in_progress",
+                "path": "/{projekts_dir}/{projekt_dir}/work_in_progress/postings",
+                "bookmark_name": "postings",
+                "bookmark_type": "bookmark",
+                "bookmark_parent": "work_in_progress",
+                "bookmark_visibility": "Global"
+            }
+        }
+    }
+}

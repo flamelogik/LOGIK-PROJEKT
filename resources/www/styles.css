@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    background-color: #242424;
+    font-family: monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-color: #2c3644;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px; /* Adjust header text size as needed */
+}
+
+.content {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+label {
+    font-family: monospace, sans-serif;
+    color: #ccc;
+    margin-bottom: 4px;
+    font-size: 10pt; /* Set label text size to 12 points */
+}
+
+input[type="text"], select, textarea {
+    background-color: #2c3644;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 8px;
+    font-family: monospace, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #4D0000;
+    color: #fff;
+    margin-top: 8px;
+    padding: 8px;
+    font-family: monospace, sans-serif;
+    font-size: 18px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block; /* Ensures button behaves like a block element */
+    margin-left: auto; /* Centering with margin auto */
+    margin-right: auto; /* Centering with margin auto */
+}
+
+button:hover {
+    background-color: #600000;
+}
+
+pre {
+    margin-top: 16px;
+    background-color: #2c3644;
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #444;
+    font-family: monospace;
+    white-space: pre-wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    label {
+        width: 180px;
+        text-align: right;
+        margin-right: 8px;
+        margin-bottom: 0;
+    }
+
+    input[type="text"], select, textarea {
+        flex: 1;
+    }
+
+    button {
+        max-width: 300px;
+        text-align: center; /* Center text within button */
+    }
+}

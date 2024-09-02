@@ -1,0 +1,132 @@
+{
+    "NodeBin": [
+        {
+            "NodeLine": [
+                {
+                    "NodeType": "Custom",
+                    "Setup": "linux_color_toolkit"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_Apple_Log"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_ARRI_LogC3"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_ARRI_LogC4"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_BMD"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_Canon_D55"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_Canon_TUNG"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_Panasonic_VLog"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_Log3G10"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_S3_SGamut3"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_S3SGamut3_Cine"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_S3SGamut3_Venice"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_S3SGamut3_CineVenice"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_Scene_Linear"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP0_Rec709"
+                }
+            ]
+        },
+        {
+            "NodeLine": [
+                {
+                    "NodeType": "Custom",
+                    "Setup": "macOS_color_toolkit"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_Apple_Log"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_ARRI_LogC3"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_ARRI_LogC4"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_BMD"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_Canon_D55"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_Canon_TUNG"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_Panasonic_VLog"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_Log3G10"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_S3_SGamut3"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_S3SGamut3_Cine"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_S3SGamut3_Venice"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_S3SGamut3_CineVenice"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_Scene_Linear"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "AP1_Rec709"
+                }
+            ]
+        }
+    ]
+}

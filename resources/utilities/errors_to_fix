@@ -1,0 +1,160 @@
+Command Monitor initialized.
+Starting PROJEKT creation...
+Error executing modules/functions/shell/create_the_logik_projekt.py:
+Traceback (most recent call last):
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/create_the_logik_projekt.py", line 257, in <module>
+    main()
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/create_the_logik_projekt.py", line 177, in main
+    project_manager = ProjectManager()
+                      ^^^^^^^^^^^^^^^^
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/projekt_shell_log.py", line 179, in __init__
+    self.create_log_file()
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/projekt_shell_log.py", line 247, in create_log_file
+    timestamp_utility = TimestampUtility()
+                        ^^^^^^^^^^^^^^^^^^
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/projekt_shell_utilities.py", line 155, in __init__
+    now = datetime.now()
+          ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+
+PROJEKT creation completed.
+
+Command Monitor initialized.
+Starting PROJEKT creation...
+Error executing modules/functions/shell/create_the_logik_projekt.py:
+Traceback (most recent call last):
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/create_the_logik_projekt.py", line 257, in <module>
+    main()
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/create_the_logik_projekt.py", line 177, in main
+    project_manager = ProjectManager()
+                      ^^^^^^^^^^^^^^^^
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/projekt_shell_log.py", line 179, in __init__
+    self.create_log_file()
+  File "/home/pman/workspace/GitHub/projekt_app/modules/functions/shell/projekt_shell_log.py", line 249, in create_log_file
+    with open(self.the_active_creation_log, 'w') as log_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pman/workspace/GitHub/projekt_app/tmp/current_projekt_creation_log'
+
+PROJEKT creation completed.
+
+
+
+Command Monitor initialized.
+Starting PROJEKT creation...
+Executed modules/functions/shell/create_the_logik_projekt.py:
+  Debug: modules_dir is set to:    /home/pman/workspace/GitHub/projekt_app/modules
+  Debug: resources_dir is set to:  /home/pman/workspace/GitHub/projekt_app/resources
+  Debug: projekt_roots_config_path: /home/pman/workspace/GitHub/projekt_app/resources/cfg/projekt_configuration/roots/projekt_roots.json
+  Debug: the_projekts_dir:         /PROJEKTS
+  Debug: the_projekt_flame_dirs:   /opt/Autodesk/project
+  Debug: the_adsk_dir:             /opt/Autodesk
+  Debug: the_adsk_dir_linux:       /opt/Autodesk
+  Debug: the_adsk_dir_macos:       /Applications/Autodesk
+  Debug: modules_dir is set to:    /home/pman/workspace/GitHub/projekt_app/modules
+  Debug: resources_dir is set to:  /home/pman/workspace/GitHub/projekt_app/resources
+  Debug: projekt_roots_config_path: /home/pman/workspace/GitHub/projekt_app/resources/cfg/projekt_configuration/roots/projekt_roots.json
+  Debug: the_projekts_dir:         /PROJEKTS
+  Debug: the_projekt_flame_dirs:   /opt/Autodesk/project
+  Debug: the_adsk_dir:             /opt/Autodesk
+  Debug: the_adsk_dir_linux:       /opt/Autodesk
+  Debug: the_adsk_dir_macos:       /Applications/Autodesk
+  Debug: modules_dir is set to:    /home/pman/workspace/GitHub/projekt_app/modules
+  Debug: resources_dir is set to:  /home/pman/workspace/GitHub/projekt_app/resources
+  Debug: projekt_roots_config_path: /home/pman/workspace/GitHub/projekt_app/resources/cfg/projekt_configuration/roots/projekt_roots.json
+  Debug: the_projekts_dir:         /PROJEKTS
+  Debug: the_projekt_flame_dirs:   /opt/Autodesk/project
+  Debug: the_adsk_dir:             /opt/Autodesk
+  Debug: the_adsk_dir_linux:       /opt/Autodesk
+  Debug: the_adsk_dir_macos:       /Applications/Autodesk
+
+# --------------------------------------------------------------------------- #
+
+  The current script is:
+
+  projekt_shell_log.py
+
+# --------------------------------------------------------------------------- #
+
+  The current directory tree is:
+
+  /home/pman/workspace/GitHub/projekt_app
+
+  /home/pman/workspace/GitHub/projekt_app/build
+
+  /home/pman/workspace/GitHub/projekt_app/dist
+
+  /home/pman/workspace/GitHub/projekt_app/modules
+
+  /home/pman/workspace/GitHub/projekt_app/modules/functions
+
+  /home/pman/workspace/GitHub/projekt_app/resources
+
+  /home/pman/workspace/GitHub/projekt_app/resources/cfg
+
+  /home/pman/workspace/GitHub/projekt_app/resources/flame
+
+  /home/pman/workspace/GitHub/projekt_app/resources/flame/presets
+
+  /home/pman/workspace/GitHub/projekt_app/resources/flame/python
+
+  /home/pman/workspace/GitHub/projekt_app/resources/flame/syncolor
+
+  /home/pman/workspace/GitHub/projekt_app/resources/flame/templates
+
+  /home/pman/workspace/GitHub/projekt_app/resources/tmp
+
+  /home/pman/workspace/GitHub/projekt_app/resources/version
+
+  /home/pman/workspace/GitHub/projekt_app/resources/www
+
+# --------------------------------------------------------------------------- #
+
+
+# --------------------------------------------------------------------------- #
+
+  Full Timestamp:   2024_08_08-10_33_29
+
+# --------------------------------------------------------------------------- #
+
+
+# ============================ PROJEKT VARIABLES ============================ #
+  the_hostname: delta
+
+  the_projekt_name: 5678_abcd_mnop
+
+  the_projekt_flame_name: 5678_abcd_mnop_2025_1_delta
+
+  the_software_version: flame_2025.1.pr204
+
+  the_framestore: stonefs
+
+  the_projekt_width: 1920
+
+  the_projekt_height: 1080
+
+  the_projekt_aspect_ratio: 1.7777778
+
+  the_projekt_bit_depth: 16-bit fp
+
+  the_projekt_frame_rate: 23.976 fps
+
+  the_projekt_scan_mode: PROGRESSIVE
+
+  the_projekt_start_frame: 1001
+
+  the_projekt_init_config: 1920x1080@23976p.cfg
+
+
+# ============================ PROJEKT VARIABLES ============================ #
+Error creating XML file: [Errno 2] No such file or directory: 'tmp/current_projekt_parameters.xml'
+Error creating XML file: [Errno 2] No such file or directory: 'tmp/current_projekt_parameters.xml'
+
+
+# ============ EXECUTING COMMAND: ECHO "THIS IS A TEST COMMAND" ============= #
+
+This is a test command
+
+# ============ COMPLETED COMMAND: ECHO "THIS IS A TEST COMMAND" ============= #
+
+
+PROJEKT creation completed.

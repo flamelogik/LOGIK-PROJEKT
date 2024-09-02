@@ -1,0 +1,56 @@
+{
+    "Settings": [
+        {
+            "name": "MediaImportPatternEnabled",
+            "value": false
+        },
+        {
+            "name": "MediaImportMarkUnknownEffects",
+            "value": true
+        },
+        {
+            "name": "MediaImportAAFIncludeCDL",
+            "value": true
+        },
+        {
+            "name": "MediaImportEDLIncludeCDL",
+            "value": true
+        },
+        {
+            "name": "MediaImportGroupAsContainer",
+            "value": true
+        },
+        {
+            "name": "MediaCacheProxyAllVersions",
+            "value": 0
+        },
+        {
+            "name": "MediaImportMultiChannelClip",
+            "value": 142
+        },
+        {
+            "name": "MediaImportSequenceMode",
+            "value": true
+        },
+        {
+            "name": "MediaImportStoreLocalCopy",
+            "value": false
+        },
+        {
+            "name": "MediaImportGenerateProxies",
+            "value": false
+        },
+        {
+            "name": "MediaImportStillDuration",
+            "value": "1 23.976 fps"
+        },
+        {
+            "name": "MediaColourManagementSelection",
+            "value": 0
+        },
+        {
+            "name": "MediaImportPatternText",
+            "value": "/shots/{name}/openclip/output_clips/{name}"
+        }
+    ]
+}

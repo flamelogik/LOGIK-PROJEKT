@@ -1,0 +1,65 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 7.5K - Spherical --------------- +",
+            "items": [
+                {
+                    "resolution_name": "7296 x 4104 | RED 7.5K 16:9",
+                    "width": 7296,
+                    "height": 4104,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "7680 x 960 | RED 7.5K 8:1",
+                    "width": 7680,
+                    "height": 960,
+                    "storage_aspect_ratio": 8.0,
+                    "display_aspect_ratio": 8.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 8.0
+                },
+                {
+                    "resolution_name": "7680 x 1920 | RED 7.5K 4:1",
+                    "width": 7680,
+                    "height": 1920,
+                    "storage_aspect_ratio": 4.0,
+                    "display_aspect_ratio": 4.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 4.0
+                },
+                {
+                    "resolution_name": "7680 x 3240 | RED 7.5K 2.37 WS",
+                    "width": 7680,
+                    "height": 3240,
+                    "storage_aspect_ratio": 2.3703704,
+                    "display_aspect_ratio": 2.3703704,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3703704
+                },
+                {
+                    "resolution_name": "7680 x 3840 | RED 7.5K 2:1",
+                    "width": 7680,
+                    "height": 3840,
+                    "storage_aspect_ratio": 2.0,
+                    "display_aspect_ratio": 2.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.0
+                },
+                {
+                    "resolution_name": "7680 x 4080 | RED 7.5K Full",
+                    "width": 7680,
+                    "height": 4080,
+                    "storage_aspect_ratio": 1.8823529,
+                    "display_aspect_ratio": 1.8823529,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8823529
+                }
+            ]
+        }
+    ]
+}

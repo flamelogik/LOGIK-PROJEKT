@@ -1,0 +1,43 @@
+<ShaderNodePreset Name="Contacts" Description="Contacts - tile inputs into a grid for impressing clients, choosing versions or checking continuity.
+
+For more than 6 inputs, use multiple nodes to make multiple 2x2 grids, then tile those together with another node.
+
+lewis@lewissaunders.com" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="in1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Tile 1" Tooltip="" NoInput="Black" Index="0">
+      </Uniform>
+      <Uniform Name="in2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Tile 2" Tooltip="" NoInput="Black" Index="1">
+      </Uniform>
+      <Uniform Name="in3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Tile 3" Tooltip="" NoInput="Black" Index="2">
+      </Uniform>
+      <Uniform Name="in4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Tile 4" Tooltip="" NoInput="Black" Index="3">
+      </Uniform>
+      <Uniform Name="in5" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Tile 5" Tooltip="" NoInput="Black" Index="4">
+      </Uniform>
+      <Uniform Name="in6" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Tile 6" Tooltip="" NoInput="Black" Index="5">
+      </Uniform>
+      <Uniform Name="cols" Type="int" DisplayName="Columns" Page="0" Col="1" Row="0" Tooltip="" Inc="1" Default="3" Min="1" Max="4096">
+      </Uniform>
+      <Uniform Name="rows" Type="int" DisplayName="Rows" Page="0" Col="1" Row="1" Tooltip="" Inc="1" Default="2" Min="1" Max="4096">
+      </Uniform>
+      <Uniform Name="filltiles" Type="bool" DisplayName="Crop Edges" Tooltip="" Default="False" Page="0" Col="1" Row="2">
+      </Uniform>
+      <Uniform Name="scale" Type="float" DisplayName="Scale" Page="0" Col="1" Row="3" Tooltip="" Inc="0.1" Default="100.0" Min="0.01" Max="10000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="random" Type="bool" DisplayName="Random" Tooltip="" Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform Name="perframe" Type="bool" DisplayName="New pattern per frame" Tooltip="" Default="False" Page="0" Col="2" Row="1">
+      </Uniform>
+      <Uniform Name="seed" Type="int" DisplayName="Seed" Page="0" Col="2" Row="2" Tooltip="" Inc="1" Default="1" Min="1" Max="9999999">
+      </Uniform>
+      <Uniform Name="randomcount" Type="int" DisplayName="Use inputs up to" Page="0" Col="2" Row="3" Tooltip="" Inc="1" Default="6" Min="1" Max="6">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Contacts">
+      <Col Page="0" Col="1" Name="Layout">
+      </Col>
+      <Col Page="0" Col="2" Name="Random">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

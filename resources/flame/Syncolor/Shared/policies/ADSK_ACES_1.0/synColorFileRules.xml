@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules version="1.0">
+	<default colorSpace="Rec.709 video"/>
+	<FilePathRule name="OpenEXR" extension="[eE][xX][rR]" pattern="*" colorSpace="ACEScg" />
+	<FilePathRule name="DPX" extension="[dD][pP][xX]" pattern="*" colorSpace="Log-to-Lin (jzp) / ACEScg" />
+	<FilePathRule name="ADX10" extension="*" pattern="*[aA][dD][xX]10*" colorSpace="Log film scan (ADX)" />
+	<FilePathRule name="ACEScg" extension="*" pattern="*[aA][cC][eE][sS][cC][gG]*" colorSpace="ACEScg" />
+	<FilePathRule name="VLog" extension="*" pattern="*[vV][lL][oO][gG]*" colorSpace="Panasonic V-Log/V-Gamut" />
+	<FilePathRule name="SLog3" extension="*" pattern="*[sS][lL][oO][gG]3*" colorSpace="Sony SLog3" />
+	<FilePathRule name="LogC" extension="*" pattern="*[lL][oO][gG][cC]*" colorSpace="ARRI LogC" />
+	<FilePathRule name="sRGB" extension="*" pattern="*[sS][rR][gG][bB]*" colorSpace="sRGB" />
+	<FilePathRule name="Rec709 video" extension="*" pattern="*[rR][eE][cC]709*" colorSpace="Rec.709 video" />
+	<FilePathRule name="matte" extension="*" pattern="*matte*" colorSpace="Matte_201605" />
+	<FilePathRule name="alpha" extension="*" pattern="*alpha*" colorSpace="Matte_201605" />
+</rules>

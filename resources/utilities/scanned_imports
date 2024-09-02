@@ -1,0 +1,27 @@
+Standard library imports:
+- argparse
+- ast
+- base64
+- collections
+- datetime
+- getpass
+- grp
+- importlib
+- io
+- json
+- os
+- platform
+- re
+- shutil
+- socket
+- subprocess
+- sys
+- unittest
+- xml
+
+Third-party imports:
+- PyQt5
+- PySide6
+- functions
+- modules
+- widgets

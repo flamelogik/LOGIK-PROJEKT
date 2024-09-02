@@ -1,0 +1,29 @@
+{
+    "group": "Film Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- 8K & 16K Film ---------------------- +",
+            "items": [
+                {
+                    "resolution_name": "8192 x 4320 | Film 8K 17:9",
+                    "width": 8192,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                },
+                {
+                    "resolution_name": "16384 x 8640 | Film 16K 17:9",
+                    "width": 16384,
+                    "height": 8640,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                }
+            ]
+        }
+    ]
+}
