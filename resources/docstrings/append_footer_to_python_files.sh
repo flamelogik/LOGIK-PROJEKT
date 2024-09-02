@@ -31,17 +31,29 @@
 
 # -------------------------------------------------------------------------- #
 
-# resources/docstrings/append_footer_to_python_files.sh
+# File Name:        append_footer_to_python_files.sh
+# Version:          0.0.1
+# Created:          2024-01-19
+# Modified:         2024-08-31
+
+# ========================================================================== #
+# This section defines the import statements and diresctory paths.
+# ========================================================================== #
 
 # This script appends a footer to all Python files 
 # in a specified directory and its subdirectories.
 # It also logs the process to a file.
 
+# Get the directory of the running script
+path_to_here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Set paths
-parent_dir="/home/pman/workspace/GitHub/projekt_app"
-footer_file="$parent_dir/resources/docstrings/footer.txt"
-footer_log="$parent_dir/resources/docstrings/append_footer_log.txt"
-python_modules="$parent_dir/modules"
+parent_dir="$(dirname $(dirname "$path_to_here"))"
+resources_dir="$parent_dir/resources"
+docstrings_dir="$resources_dir/docstrings"
+footer_file="$docstrings_dir/footer.txt"
+footer_log="$docstrings_dir/append_footer_log.txt"
+modules_dir="$parent_dir/modules"
 
 # Ensure footer_log exists
 touch "$footer_log"
@@ -61,7 +73,7 @@ fi
 footer_text=$(cat "$footer_file")
 
 # Iterate through each Python file in the directory and its subdirectories
-find "$python_modules" -type f -name "*.py" | while read -r python_file; do
+find "$modules_dir" -type f -name "*.py" | while read -r python_file; do
     # Append footer to the Python file
     if echo "$footer_text" >> "$python_file"; then
         echo "Successfully updated: $python_file" | tee -a "$footer_log"
@@ -74,3 +86,15 @@ done
 echo "" >> "$footer_log"
 echo "---- Disclaimer append process completed ----" >> "$footer_log"
 echo "Timestamp: $(date)" >> "$footer_log"
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# ========================================================================== #
+
+# Changelist:       
+
+# -------------------------------------------------------------------------- #
+# version:          0.0.1
+# created:          2024-08-31 - 12:34:56
+# comments:         utilities to add text to python files.
+# -------------------------------------------------------------------------- #

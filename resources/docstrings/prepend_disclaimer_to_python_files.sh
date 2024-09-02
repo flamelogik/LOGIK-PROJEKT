@@ -1,14 +1,59 @@
 #!/bin/bash
 
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 man-made-mekanyzms
+                
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+ 
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+                
+#                   Contact: phil_man@mac.com
+
+# -------------------------------------------------------------------------- #
+
 # This script prepends a disclaimer to all Python files 
 # in a specified directory and its subdirectories.
 # It also logs the process to a file.
 
+# File Name:        prepend_disclaimer_to_python_files.sh
+# Version:          0.0.1
+# Created:          2024-01-19
+# Modified:         2024-08-31
+
+# ========================================================================== #
+# This section defines the import statements and diresctory paths.
+# ========================================================================== #
+
+# Get the directory of the running script
+path_to_here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Set paths
-parent_dir="/home/pman/workspace/GitHub/projekt_app"
-disclaimer_file="$parent_dir/resources/docstrings/disclaimer.txt"
-disclaimer_log="$parent_dir/resources/docstrings/prepend_disclaimer_log.txt"
-python_modules="$parent_dir/modules/widgets"
+parent_dir="$(dirname $(dirname "$path_to_here"))"
+resources_dir="$parent_dir/resources"
+docstrings_dir="$resources_dir/docstrings"
+disclaimer_file="$docstrings_dir/disclaimer.txt"
+disclaimer_log="$docstrings_dir/prepend_disclaimer_log.txt"
+modules_dir="$parent_dir/modules/widgets"
 
 # Ensure disclaimer_log exists
 touch "$disclaimer_log"
@@ -28,7 +73,7 @@ fi
 disclaimer_text=$(cat "$disclaimer_file")
 
 # Iterate through each Python file in the directory and its subdirectories
-find "$python_modules" -type f -name "*.py" | while read -r python_file; do
+find "$modules_dir" -type f -name "*.py" | while read -r python_file; do
     # Read the existing content of the Python file
     existing_content=$(cat "$python_file")
     
@@ -47,3 +92,15 @@ done
 echo "" >> "$disclaimer_log"
 echo "---- Disclaimer prepend process completed ----" >> "$disclaimer_log"
 echo "Timestamp: $(date)" >> "$disclaimer_log"
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# ========================================================================== #
+
+# Changelist:       
+
+# -------------------------------------------------------------------------- #
+# version:          0.0.1
+# created:          2024-08-31 - 12:34:56
+# comments:         utilities to add text to python files.
+# -------------------------------------------------------------------------- #
