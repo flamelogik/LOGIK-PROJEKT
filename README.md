@@ -52,13 +52,13 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 ### Workstation Preparation (Linux):
 
-    # Check the HostName (Static hostname, equivalent to macOS HostName)
+    # Check Static HostName (macOS HostName)
     hostnamectl status | grep "Static hostname"
 
-    # Check the Pretty HostName (equivalent to macOS ComputerName)
+    # Check Pretty HostName (macOS ComputerName)
     hostnamectl status | grep "Pretty hostname"
 
-    # Check the Transient HostName (equivalent to macOS LocalHostName)
+    # Check Transient HostName (macOS LocalHostName)
     hostnamectl status | grep "Transient hostname"
 
 -------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
     # Set the Static HostName (equivalent to macOS HostName)
     sudo hostnamectl set-hostname <new-static-hostname>
 
-    # Set the Pretty HostName (equivalent to macOS ComputerName)
+    # Set Pretty HostName (macOS ComputerName)
     sudo hostnamectl set-hostname "<new-pretty-hostname>" --pretty
 
     # Set the Transient HostName (equivalent to macOS LocalHostName)
@@ -91,13 +91,13 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 ### Workstation Preparation (macOS):
 
-    # Check the HostName (equivalent to Linux Static hostname)
+    # Check HostName (Linux Static hostname)
     scutil --get HostName
 
-    # Check the LocalHostName (equivalent to Linux Transient HostName)
+    # Check LocalHostName (Linux Transient HostName)
     scutil --get LocalHostName
 
-    # Check the ComputerName (equivalent to Linux Pretty HostName)
+    # Check ComputerName (Linux Pretty HostName)
     scutil --get ComputerName
 
 -------------------------------------------------------------------------------
@@ -105,10 +105,10 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
     # Set the HostName (equivalent to Linux Static hostname)
     sudo scutil --set HostName <new-hostname>
 
-    # Set the LocalHostName (equivalent to Linux Transient HostName)
+    # Set LocalHostName (Linux Transient HostName)
     sudo scutil --set LocalHostName <new-local-hostname>
 
-    # Set the ComputerName (equivalent to Linux Pretty HostName)
+    # Set ComputerName (Linux Pretty HostName)
     sudo scutil --set ComputerName <new-computer-name>
 
 -------------------------------------------------------------------------------
