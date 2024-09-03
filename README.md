@@ -74,17 +74,17 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
     
 -------------------------------------------------------------------------------
     
-    [Create a test directory for LOGIK-PROJEKTS:]
+    # Create a test directory for LOGIK-PROJEKTS:
     sudo mkdir -p -m 777 /home/shared/PROJEKTS
 
 -------------------------------------------------------------------------------
 
-    [Link /PROJEKTS to test PROJEKTS directory:]
+    # Link /PROJEKTS to test PROJEKTS directory:
     sudo ln -s /home/shared/PROJEKTS /PROJEKTS
 
 -------------------------------------------------------------------------------
 
-    [Reboot workstation:]
+    # Reboot workstation:
     sudo reboot
 
 -------------------------------------------------------------------------------
@@ -113,17 +113,17 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 -------------------------------------------------------------------------------
 
-    [Create a test directory for LOGIK-PROJEKTS:]
+    # Create a test directory for LOGIK-PROJEKTS:
     sudo mkdir -p -m 777 /Users/Shared/PROJEKTS
 
 -------------------------------------------------------------------------------
 
-    [Create /etc/synthetic.conf to link /PROJEKTS to test PROJEKTS directory:]
+    # Create /etc/synthetic.conf to link /PROJEKTS to test PROJEKTS directory:
     sudo cat "PROJEKTS   Users/Shared/PROJEKTS" > /etc/synthetic.conf
 
 -------------------------------------------------------------------------------
 
-    [Reboot workstation:]
+    # Reboot workstation:
     sudo reboot
 
 -------------------------------------------------------------------------------
