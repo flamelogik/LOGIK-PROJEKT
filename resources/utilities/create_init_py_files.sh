@@ -31,12 +31,17 @@
 
 # -------------------------------------------------------------------------- #
 
-# resources/utilities/create_init_py_files.sh
+# File Name:        create_init_py_files.sh
+# Version:          0.9.9
+# Created:          2024-01-19
+# Modified:         2024-08-31
 
 # ========================================================================== #
-# This section defines the import statements and directory paths.
+# This section defines paths for the script.
 # ========================================================================== #
 
+# Sets xtrace mode, which causes each command to be echoed before it is executed.
+# Exits the script with an error code of 1 if any command fails.
 set -ex
 
 # Set the target directory (modify this to your specific directory)
@@ -80,4 +85,8 @@ echo "Created __init__.py in every subdirectory of $target_directory."
 # version:          0.7.0
 # modified:         2024-06-21 - 18:21:03
 # comments:         started gui design with pyside6.
+# -------------------------------------------------------------------------- #
+# version:          0.9.9
+# modified:         2024-08-31 - 16:51:09
+# comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #

@@ -31,11 +31,18 @@
 
 # -------------------------------------------------------------------------- #
 
-# resources/utilities/validate_downloads.sh
+# File Name:        validate_downloads.sh
+# Version:          0.9.9
+# Created:          2024-01-19
+# Modified:         2024-08-31
 
 # ========================================================================== #
-# This section defines a variable for the path to the running program.
+# This section defines paths for the script.
 # ========================================================================== #
+
+# Sets xtrace mode, which causes each command to be echoed before it is executed.
+# Exits the script with an error code of 1 if any command fails.
+# set -ex
 
 # -------------------------------------------------------------------------- #
 
@@ -499,4 +506,8 @@ echo -e "\n\n$separator\n$separator\n$separator\n\n"
 # version:          0.7.0
 # modified:         2024-06-21 - 18:21:03
 # comments:         started gui design with pyside6.
+# -------------------------------------------------------------------------- #
+# version:          0.9.9
+# modified:         2024-08-31 - 16:51:09
+# comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
