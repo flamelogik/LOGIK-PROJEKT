@@ -1,38 +1,36 @@
-# LOGIK-PROJEKT
-Project Creation & Workflow Tools for Autodesk Flame.
+___
+# [LOGIK-PROJEKT](https://github.com/flamelogik/LOGIK-PROJEKT)
+Projekt Creation, Workflow & LifeCycle Management for Autodesk Flame.
+___
+LOGIK-PROJEKT was developed with Autodesk Flame 2025, Python 3.11, and PySide 6.
+___
+### Requirements:
+* [Autodesk Flame 2025](https://help.autodesk.com/view/FLAME/2025/ENU/)
+* /PROJEKTS - (root level symbolic link to storage)
+___
+### Useful Software:
+* [Microsoft VisualStudio Code](https://code.visualstudio.com/Download)
+* [GitHub Desktop](https://desktop.github.com/download/)
+___
+### Installation Checklist:
 
-These tools were developed with Autodesk Flame 2025.
-
-1. create_logik_projekt.sh
-2. logik-projekt python tools
-
-PROJEKT
-
-
-Requirements:
-* Flame 2025 +
-* VS Code software - to make sure the latest build of Projekt is up to date
-* Git Desktop - to connect to the Git repository of the Projekt software
-* /JOBS - root level directory or symlink to the projects directory - can be shared or remote
-* 
-
-
-Setting up the /JOBS directory:
+Setting up the /PROJEKTS directory:
 1. check flame installation
 2. check “stonefs” (Autodesk setup app) existence - the stone NEEDS to be called stonefs (for now)
-3. symlink ‘/JOBS’ to your storagepico (or vi or vim) /etc/synthetic.conf (as root) and reboot
-4. mkdir -p -m 777 /JOBS/test (this may not show up as drwxrwxrwx depending on underlying infrastructure)
+3. symlink ‘/PROJEKTS’ to your storagepico (or vi or vim) /etc/synthetic.conf (as root) and reboot
+4. mkdir -p -m 777 /PROJEKTS/test (this may not show up as drwxrwxrwx depending on underlying infrastructure)
 
 Mac OS Pre-Start checklist:
 Make sure the following are all enabled in the System Preferences/Privacy & Security/Full Disk Access/
-    - [ ] wiretapgateway 
-    - [ ] ifffsWiretapServer 
-    - [ ] Visual Code
-    - [ ] swdb
-    - [ ] sw_dbd
-    - [ ] sw_serverd
-    - [ ] DLmpd
-    - [ ] Flame
+
+- [ ] wiretapgateway 
+- [ ] ifffsWiretapServer 
+- [ ] Visual Code
+- [ ] swdb
+- [ ] sw_dbd
+- [ ] sw_serverd
+- [ ] DLmpd
+- [ ] Flame
 
 Set Flame Preferences:
 User Tokens tab
@@ -72,8 +70,8 @@ Creating a PROJEKT for the first time (no UI)
 14. it will create the library layout with the create_layout python script
 15. save flame
 16. quit flame
-17. create the first archive:/JOBS/test_test/flame/archives/test_test_2025_my_workstation.sh
-18. create the first rsync backup:/JOBS/test_test/backup_scripts/test_test_*.sh
+17. create the first archive:/PROJEKTS/test_test/flame/archives/test_test_2025_my_workstation.sh
+18. create the first rsync backup:/PROJEKTS/test_test/backup_scripts/test_test_*.sh
 19. you can exclude directories from the rsync by modifying the exclusion_list file
 20. When you are RESTORING ARCHIVEs make sure you’re using the “Convert to Local” Path
 
@@ -245,3 +243,35 @@ shared in the project
 
 
 
+#
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 man-made-mekanyzms
+                
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+ 
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+                
+#                   Contact: phil_man@mac.com
+
+# -------------------------------------------------------------------------- #
