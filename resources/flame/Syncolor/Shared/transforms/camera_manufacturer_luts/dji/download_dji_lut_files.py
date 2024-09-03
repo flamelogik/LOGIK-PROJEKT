@@ -72,7 +72,7 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Create a new folder
-    new_folder = os.path.join(script_dir, 'ARRI_Alexa_LUTs')
+    new_folder = os.path.join(script_dir, 'DJI_LUTs')
     os.makedirs(new_folder, exist_ok=True)
     print(f"Creating folder: {new_folder}\n")
     
