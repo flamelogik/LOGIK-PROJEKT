@@ -134,7 +134,18 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 ### Flame 2025 Installation:
 
-    # install DKU (Linux only)
+    # (Linux)
+
+    # upgrade operating system
+    # install DKU
+    # install flame 2025
+    # create a stone called 'stonefs'
+
+-------------------------------------------------------------------------------
+
+    # (macOS)
+
+    # upgrade operating system
     # install flame 2025
     # create a stone called 'stonefs'
 
