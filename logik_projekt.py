@@ -31,7 +31,10 @@
 
 # -------------------------------------------------------------------------- #
 
-# projekt.py
+# File Name:        logik_projekt.py
+# Version:          0.9.9
+# Created:          2024-01-19
+# Modified:         2024-09-02
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -224,4 +227,8 @@ if __name__ == "__main__":
 # version:          0.7.0
 # modified:         2024-06-21 - 18:21:03
 # comments:         started gui design with pyside6.
+# -------------------------------------------------------------------------- #
+# version:          0.9.9
+# modified:         2024-08-31 - 16:51:09
+# comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #

@@ -25,8 +25,8 @@ ListOfIconParameters = [
 ]
 
 # Specify the path to your original projekt-icon.png
-originalPicture = "resources/icons/projekt_icon.png"
-iconsetDir = "resources/icons/projekt_icon.iconset"
+originalPicture = "resources/icons/logik_projket_icon_01.png"
+iconsetDir = "resources/icons/logik_projekt_icon.iconset"
 
 # Check if the original picture exists
 if not os.path.exists(originalPicture):
