@@ -1,8 +1,8 @@
 ___
 # [LOGIK-PROJEKT](https://github.com/flamelogik/LOGIK-PROJEKT)
-    Projekt Creation, Workflow & LifeCycle Management for Autodesk Flame 2025.
+Projekt Creation, Workflow & LifeCycle Management for Autodesk Flame 2025.
 ___
-    LOGIK-PROJEKT was developed with Autodesk Flame 2025, Python 3.11, and PySide 6.
+LOGIK-PROJEKT was developed with Autodesk Flame 2025, Python 3.11, and PySide 6.
 ___
 ### Requirements:
 * [Autodesk Flame 2025](https://help.autodesk.com/view/FLAME/2025/ENU/)
@@ -14,24 +14,65 @@ ___
 ___
 ### Workstation Preparation Linux:
 
-* ```hostname``` (Check the HostName)
-* ```sudo hostnamectl set-hostname <workstation_name>``` (Set the HostName)
-* ```mkdir -p -m 777 /home/shared/PROJEKTS``` (Create a testing storage location)
-* ```sudo ln -s /home/shared/PROJEKTS /PROJEKTS``` (Create a symbolic link at /PROJEKTS)
+    # Check the HostName (Static hostname, equivalent to macOS HostName)
+    hostnamectl status | grep "Static hostname"
+
+    # Check the Pretty HostName (equivalent to macOS ComputerName)
+    hostnamectl status | grep "Pretty hostname"
+
+    # Check the Transient HostName (equivalent to macOS LocalHostName)
+    hostnamectl status | grep "Transient hostname"
+___
+    # Set the Static HostName (equivalent to macOS HostName)
+    sudo hostnamectl set-hostname <new-static-hostname>
+
+    # Set the Pretty HostName (equivalent to macOS ComputerName)
+    sudo hostnamectl set-hostname "<new-pretty-hostname>" --pretty
+
+    # Set the Transient HostName (equivalent to macOS LocalHostName)
+    sudo hostnamectl set-hostname <new-transient-hostname> --transient___
+    [Create a test PROJEKTS directory:]
+
+    sudo mkdir -p -m 777 /home/shared/PROJEKTS
+___
+    [Link /PROJEKTS to test PROJEKTS directory:]
+
+    sudo ln -s /home/shared/PROJEKTS /PROJEKTS
+
 
 ___
 ### Workstation Preparation macOS:
 
-* ```scutil --get HostName``` (Check the HostName)
-* ```scutil --get LocalHostName``` (Check the LocalHostName)
-* ```scutil --get ComputerName``` (Check the ComputerName)
-* ```scutil --set HostName <workstation_name>``` (Set the HostName)
-* ```scutil --set LocalHostName <workstation_name>``` (Set the LocalHostName)
-* ```scutil --set ComputerName <workstation_name>``` (Set the ComputerName)
-* ```sudo mkdir -p -m 777 /Users/Shared/PROJEKTS``` (Create a testing storage location)
-* ```sudo open -a TextEdit /etc/synthetic.conf``` (Create a synthetic.conf file)
-* ```PROJEKTS   Users/Shared/PROJEKTS``` (Copy this text into synthetic.conf and save)
-* Restart workstation
+    # Check the HostName (equivalent to Linux Static hostname)
+    scutil --get HostName
+
+    # Check the LocalHostName (equivalent to Linux Transient HostName)
+    scutil --get LocalHostName
+
+    # Check the ComputerName (equivalent to Linux Pretty HostName)
+    scutil --get ComputerName
+___
+    # Set the HostName (equivalent to Linux Static hostname)
+    sudo scutil --set HostName <new-hostname>
+
+    # Set the LocalHostName (equivalent to Linux Transient HostName)
+    sudo scutil --set LocalHostName <new-local-hostname>
+
+    # Set the ComputerName (equivalent to Linux Pretty HostName)
+    sudo scutil --set ComputerName <new-computer-name>
+___
+    [Create a test PROJEKTS directory:]
+
+    sudo mkdir -p -m 777 /Users/Shared/PROJEKTS
+___
+    [Create /etc/synthetic.conf to link /PROJEKTS to test PROJEKTS directory:]
+
+    sudo cat "PROJEKTS   Users/Shared/PROJEKTS" > /etc/synthetic.conf
+
+___
+    [Reboot workstation:]
+
+    sudo reboot
 
 ___
 ### Flame 2025 Installation:
