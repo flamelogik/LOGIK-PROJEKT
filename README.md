@@ -1,62 +1,97 @@
 ___
 # [LOGIK-PROJEKT](https://github.com/flamelogik/LOGIK-PROJEKT)
-Projekt Creation, Workflow & LifeCycle Management for Autodesk Flame.
+    Projekt Creation, Workflow & LifeCycle Management for Autodesk Flame 2025.
 ___
-LOGIK-PROJEKT was developed with Autodesk Flame 2025, Python 3.11, and PySide 6.
+    LOGIK-PROJEKT was developed with Autodesk Flame 2025, Python 3.11, and PySide 6.
 ___
 ### Requirements:
 * [Autodesk Flame 2025](https://help.autodesk.com/view/FLAME/2025/ENU/)
-* /PROJEKTS - (root level symbolic link to storage)
+* /PROJEKTS - (root level symbolic link for PROJEKT storage)
 ___
 ### Useful Software:
 * [Microsoft VisualStudio Code](https://code.visualstudio.com/Download)
 * [GitHub Desktop](https://desktop.github.com/download/)
 ___
-### Installation Checklist:
+### Workstation Preparation Linux:
+
+* ```hostname``` (Check the HostName)
+* ```sudo hostnamectl set-hostname <workstation_name>``` (Set the HostName)
+* ```mkdir -p -m 777 /home/shared/PROJEKTS``` (Create a testing storage location)
+* ```sudo ln -s /home/shared/PROJEKTS /PROJEKTS``` (Create a symbolic link at /PROJEKTS)
+
+___
+### Workstation Preparation macOS:
+
+* ```scutil --get HostName``` (Check the HostName)
+* ```scutil --get LocalHostName``` (Check the LocalHostName)
+* ```scutil --get ComputerName``` (Check the ComputerName)
+* ```scutil --set HostName <workstation_name>``` (Set the HostName)
+* ```scutil --set LocalHostName <workstation_name>``` (Set the LocalHostName)
+* ```scutil --set ComputerName <workstation_name>``` (Set the ComputerName)
+* ```sudo mkdir -p -m 777 /Users/Shared/PROJEKTS``` (Create a testing storage location)
+* ```sudo open -a TextEdit /etc/synthetic.conf``` (Create a synthetic.conf file)
+* ```PROJEKTS   Users/Shared/PROJEKTS``` (Copy this text into synthetic.conf and save)
+* Restart workstation
+
+___
+### Flame 2025 Installation:
+
+* install DKU (Linux only)
+* install flame 2025
+* if necessary create a new stone called 'stonefs'
+
+___
+### Post Flame 2025 Installation:
+
+#### (Linux)
+* start flame 
+* license the application
+* create a test project
+
+#### (macOS)
+* start flame 
+* license the application
+* create a test project
+
+Enable these applications in:
+System Preferences / Privacy & Security / Full Disk Access /
+
+* DLmpd
+* Flame
+* ifffsWiretapServer
+* Python3.11
+* swdb
+* sw_dbd
+* sw_serverd
+* Terminal
+* Visual StudioCode
+* wiretapgateway 
+
+___
+### Configure Flame Preferences:
+
+1. User Tokens tab
+* set User Name
+* set User Nickname
+2. Timeline tab
+* set Default Shot Name to:
+* ```<name>_<background segment###>0```
+3. Batch/BFX Tab
+* set Default batch iteration name to
+* ```<batch name>_v<iteration####>_<workstation>_<user nickname>```
+4. Media Panel Tab
+* set Batch shelf to 1
+* set Reel Group to 2
+* set Show Batch iterations (first column) 
+* set Desktop Column: Set to “Copy From/To Batch”
+
+___
+### LOGIK-PROJEKT Installation:
 
 Setting up the /PROJEKTS directory:
-1. check flame installation
-2. check “stonefs” (Autodesk setup app) existence - the stone NEEDS to be called stonefs (for now)
-3. symlink ‘/PROJEKTS’ to your storagepico (or vi or vim) /etc/synthetic.conf (as root) and reboot
-4. mkdir -p -m 777 /PROJEKTS/test (this may not show up as drwxrwxrwx depending on underlying infrastructure)
-
-Mac OS Pre-Start checklist:
-Make sure the following are all enabled in the System Preferences/Privacy & Security/Full Disk Access/
-
-- [ ] wiretapgateway 
-- [ ] ifffsWiretapServer 
-- [ ] Visual Code
-- [ ] swdb
-- [ ] sw_dbd
-- [ ] sw_serverd
-- [ ] DLmpd
-- [ ] Flame
-
-Set Flame Preferences:
-User Tokens tab
-Make sure the username and nickname are there
-
-Timeline tab
-Default Shot Name
-<name>_<background segment###>0
-
-Batch&BFX Tab
-Default batch iteration name
-<batch name>_v<iteration####>_<workstation>_<user nickname>
-
-Media Panel Tab
-Batch shelf 1
-Reel Group 2
-Show Batch iterations (first column) 
-Desktop Column: Set to “Copy From/To Batch”
-
-
-
-
-Creating a PROJEKT for the first time (no UI)
-1. download your repo form GitHub.
-2. check your repo in vscode or pycharm
-3. run /create_logik_projekt/create_logik_projekt.sh
+1. fork the repo from [GitHub](https://github.com/flamelogik/LOGIK-PROJEKT)
+2. run ```install/get_current_adsk_python.sh```
+3. run ```install/create_desktop_apps.sh```
 4. on first run answer ’N’ to say you don’t have a projekt template
 5. assign ‘test’ to client name
 6. assign ‘test’ to campaign name
@@ -74,6 +109,9 @@ Creating a PROJEKT for the first time (no UI)
 18. create the first rsync backup:/PROJEKTS/test_test/backup_scripts/test_test_*.sh
 19. you can exclude directories from the rsync by modifying the exclusion_list file
 20. When you are RESTORING ARCHIVEs make sure you’re using the “Convert to Local” Path
+
+
+
 
 
 
@@ -215,26 +253,6 @@ What should I ask for from Color?
 AP0 [ACES 2065-1] or ACEScg [AP1]
 OpenEXR 16bfp PIZ
 
-Why no access to the hooks from the keyboard shortcuts?
-
-Write File:
-Pattern:
-Original:
-                                   shots/<shot name>/media/renders/<shot name>_v<version>/<shot name>_v<version>.<frame><ext>
-Comp
-<project nickname>/shots/<shot name>/media/renders/<name>_<version name>/<name>_<version name><frame><ext>
-
-
-Open Clip:
-Original
-                                   shots/<shot name>/openclip/output_clips/flame/<shot name>_publish<ext>
-Comp:
-<project nickname>/shots/<shot name>/openclip/output_clips/flame/<name><ext>
-
-
-
-Guidance:
-shared in the project
 
 
 
@@ -243,35 +261,27 @@ shared in the project
 
 
 
-#
 
-# -------------------------------------------------------------------------- #
+___
+#### DISCLAIMER:
+                  This file is part of LOGIK-PROJEKT.
+                  Copyright © 2024 man-made-mekanyzms
 
-# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
-#                   LOGIK-PROJEKT creates directories, files, scripts & tools
-#                   for use with Autodesk Flame and other software.
-
-#                   LOGIK-PROJEKT is free software.
-
-#                   You can redistribute it and/or modify it under the terms
-#                   of the GNU General Public License as published by the
-#                   Free Software Foundation, either version 3 of the License,
-#                   or any later version.
- 
-#                   This program is distributed in the hope that it will be
-#                   useful, but WITHOUT ANY WARRANTY; without even the
-#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
-#                   PARTICULAR PURPOSE.
-
-#                   See the GNU General Public License for more details.
-
-#                   You should have received a copy of the GNU General
-#                   Public License along with this program.
-
-#                   If not, see <https://www.gnu.org/licenses/>.
-                
-#                   Contact: phil_man@mac.com
-
-# -------------------------------------------------------------------------- #
+                  LOGIK-PROJEKT creates directories, files, scripts & tools
+                  for use with Autodesk Flame and other software.
+                  LOGIK-PROJEKT is free software.
+                  You can redistribute it and/or modify it under the terms
+                  of the GNU General Public License as published by the
+                  Free Software Foundation, either version 3 of the License,
+                  or any later version.
+                  This program is distributed in the hope that it will be
+                  useful, but WITHOUT ANY WARRANTY; without even the
+                  implied warranty of MERCHANTABILITY or FITNESS FOR A
+                  PARTICULAR PURPOSE.
+                  See the GNU General Public License for more details.
+                  You should have received a copy of the GNU General
+                  Public License along with this program.
+                  If not, see <https://www.gnu.org/licenses/>.
+              
+                  Contact: phil_man@mac.com
+___
