@@ -62,8 +62,8 @@ separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
 cd "$parent_dir" || exit
 
 # Define the directory to analyze
-# adsk_python_dir="/opt/Autodesk/python"  # PRODUCTION
-adsk_python_dir="/home/pman/Documents/test_python_directory"  # TESTING
+adsk_python_dir="/opt/Autodesk/python"  # PRODUCTION
+# adsk_python_dir="/home/pman/Documents/test_python_directory"  # TESTING
 
 # # Function to log messages
 # log_message() {
