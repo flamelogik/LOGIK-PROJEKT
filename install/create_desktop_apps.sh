@@ -258,7 +258,7 @@ cat <<EOF > "$macos_app_name/Contents/Info.plist"
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleIconFile</key>
-    <string>projekt_icon</string>
+    <string>logik_projekt_icon</string>
 </dict>
 </plist>
 EOF
