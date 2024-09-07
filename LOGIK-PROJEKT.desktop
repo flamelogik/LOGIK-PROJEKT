@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=LOGIK-PROJEKT
-Comment=This application will create a brand new PROJEKT
-Version=1.0
-Exec=/Users/phil_man/workspace/GitHub/LOGIK-PROJEKT/run_logikprojekt_linux.sh
-Icon=/Users/phil_man/workspace/GitHub/LOGIK-PROJEKT/resources/icons/logik_projekt_icon_01.png
-Type=Application
-Terminal=True
