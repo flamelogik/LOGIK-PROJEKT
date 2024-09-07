@@ -17,193 +17,98 @@
                     },
                     {
                         "Bookmark": "projekt home",
-                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/",
+                        "Path": "/PROJEKTS/20240906_o2_projekt_01/",
                         "Visibility": "Global"
                     },
                     {
                         "Folder": "projekt directories",
                         "Bookmarks": [
                             {
-                                "Folder": "assets",
+                                "Folder": "scenes",
                                 "Bookmarks": [
                                     {
-                                        "Bookmark": "assets",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets",
+                                        "Bookmark": "scenes",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "artwork",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/artwork",
+                                        "Bookmark": "3ds",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/3ds",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "audio",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio",
+                                        "Bookmark": "alembic",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/alembic",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "cgi",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/cgi",
+                                        "Bookmark": "baselight",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/baselight",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "font",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/font",
+                                        "Bookmark": "blender",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/blender",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "footage_graded",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_graded",
+                                        "Bookmark": "c4d",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/c4d",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "footage_raw",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_raw",
+                                        "Bookmark": "cut",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/cut",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "graphics",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/graphics",
+                                        "Bookmark": "fbx",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/fbx",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "images",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/images",
+                                        "Bookmark": "geometry",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/geometry",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "legal",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/legal",
+                                        "Bookmark": "houdini",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/houdini",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "matchmoving",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/matchmoving",
+                                        "Bookmark": "maya",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/maya",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "miscellaneous",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/miscellaneous",
+                                        "Bookmark": "resolve",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/resolve",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "paint",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/paint",
+                                        "Bookmark": "unity",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/unity",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "photoshop",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/photoshop",
+                                        "Bookmark": "unreal_engine",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/unreal_engine",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "roto",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/roto",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "slates",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/slates",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "subtitles",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/subtitles",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "titles",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/titles",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "tracking",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/tracking",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "video",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/video",
+                                        "Bookmark": "usd",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/scenes/usd",
                                         "Visibility": "Global"
                                     }
                                 ]
                             },
                             {
-                                "Folder": "editorial",
+                                "Folder": "version",
                                 "Bookmarks": [
                                     {
-                                        "Bookmark": "editorial",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "aaf",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/aaf",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "edl",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/edl",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "prep",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/prep",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "xml",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/xml",
-                                        "Visibility": "Global"
-                                    }
-                                ]
-                            },
-                            {
-                                "Folder": "flame",
-                                "Bookmarks": [
-                                    {
-                                        "Bookmark": "flame",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "archives",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/archives",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "iterations",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/iterations",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "setups",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/setups",
-                                        "Visibility": "Global"
-                                    }
-                                ]
-                            },
-                            {
-                                "Folder": "masters",
-                                "Bookmarks": [
-                                    {
-                                        "Bookmark": "masters",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "master_edits",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/master_edits",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "slated_masters",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/slated_masters",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "versioned_masters",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/versioned_masters",
+                                        "Bookmark": "version",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/version",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -213,112 +118,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "reference",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/reference",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_images",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_images",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/reference/reference_images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_movies",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_movies",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/reference/reference_movies",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_style_guide",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_style_guide",
-                                        "Visibility": "Global"
-                                    }
-                                ]
-                            },
-                            {
-                                "Folder": "scenes",
-                                "Bookmarks": [
-                                    {
-                                        "Bookmark": "scenes",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "3ds",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/3ds",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "alembic",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/alembic",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "baselight",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/baselight",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "blender",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/blender",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "c4d",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/c4d",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "cut",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/cut",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "fbx",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/fbx",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "geometry",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/geometry",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "houdini",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/houdini",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "maya",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/maya",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "resolve",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/resolve",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "unity",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/unity",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "unreal_engine",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/unreal_engine",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "usd",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/usd",
-                                        "Visibility": "Global"
-                                    }
-                                ]
-                            },
-                            {
-                                "Folder": "shots",
-                                "Bookmarks": [
-                                    {
-                                        "Bookmark": "shots",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/shots",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/reference/reference_style_guide",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -328,7 +143,32 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "tmp",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/tmp",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/tmp",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "masters",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "masters",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/masters",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "master_edits",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/masters/master_edits",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "slated_masters",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/masters/slated_masters",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "versioned_masters",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/masters/versioned_masters",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -338,7 +178,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "utilities",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/utilities",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/utilities",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -354,11 +194,31 @@
                                 ]
                             },
                             {
-                                "Folder": "version",
+                                "Folder": "editorial",
                                 "Bookmarks": [
                                     {
-                                        "Bookmark": "version",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/version",
+                                        "Bookmark": "editorial",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/editorial",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "aaf",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/editorial/aaf",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "edl",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/editorial/edl",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "prep",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/editorial/prep",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "xml",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/editorial/xml",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -368,12 +228,152 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "work_in_progress",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/work_in_progress",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/work_in_progress",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "postings",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/work_in_progress/postings",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/work_in_progress/postings",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "flame",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "flame",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/flame",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "archives",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/flame/archives",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "iterations",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/flame/iterations",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "setups",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/flame/setups",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "assets",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "assets",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "artwork",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/artwork",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "audio",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/audio",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "cgi",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/cgi",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "font",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/font",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "footage_graded",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/footage_graded",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "footage_raw",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/footage_raw",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "graphics",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/graphics",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "images",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/images",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "legal",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/legal",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "matchmoving",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/matchmoving",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "miscellaneous",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/miscellaneous",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "paint",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/paint",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "photoshop",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/photoshop",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "roto",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/roto",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "slates",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/slates",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "subtitles",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/subtitles",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "titles",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/titles",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "tracking",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/tracking",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "video",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/assets/video",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "shots",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "shots",
+                                        "Path": "/PROJEKTS/20240906_o2_projekt_01/shots",
                                         "Visibility": "Global"
                                     }
                                 ]
