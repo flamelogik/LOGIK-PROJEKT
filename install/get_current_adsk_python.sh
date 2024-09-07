@@ -32,12 +32,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        get_adsk_python.sh
-# Version:          0.0.3
+# Version:          0.0.4
 # Created:          2024-01-19
-# Modified:         2024-09-01
+# Modified:         2024-09-07
 
 # ========================================================================== #
-# This section defines the primary functions for the script.
+# This section defines paths for the script.
 # ========================================================================== #
 
 # Get the directory of the running script
@@ -50,14 +50,6 @@ install_logs_dir="$install_dir/logs"
 resources_dir="$parent_dir/resources"
 modules_dir="$parent_dir/modules"
 
-# Define the log file with the current date prepended
-current_adsk_python_version_log="$install_logs_dir/$(date '+%Y-%m-%d')-current_adsk_python_version_log.txt"
-
-# Define a variable called 'separator'.
-separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
-
-# -------------------------------------------------------------------------- #
-
 # Change to the parent directory
 cd "$parent_dir" || exit
 
@@ -65,11 +57,15 @@ cd "$parent_dir" || exit
 adsk_python_dir="/opt/Autodesk/python"  # PRODUCTION
 # adsk_python_dir="/home/pman/Documents/test_python_directory"  # TESTING
 
-# # Function to log messages
-# log_message() {
-#     local message="$1"
-#     echo "$(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$current_adsk_python_version_log"
-# }
+# Define the log file with the current date prepended
+current_adsk_python_version_log="$install_logs_dir/$(date '+%Y-%m-%d')-current_adsk_python_version_log.txt"
+
+# ========================================================================== #
+# This section defines the primary functions for the script.
+# ========================================================================== #
+
+# Define a variable called 'separator'.
+separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
 
 # Function to log messages
 log_message() {
@@ -79,6 +75,10 @@ log_message() {
 
 # Redirect all output to the log file and the shell
 exec > >(tee -a "$current_adsk_python_version_log") 2>&1
+
+# ========================================================================== #
+# This section determines the most recent Autodesk python version.
+# ========================================================================== #
 
 # Custom sort function
 custom_sort() {
@@ -140,6 +140,7 @@ write_preference() {
     local current_pref_version=$(cat "$pref_file")
     
     if [ "$current_pref_version" != "$new_version_path" ]; then
+        echo "$new_version_path" > "$pref_file"
         log_message "Updated preference file with:"
         log_message "$new_version_path"
         log_message ""
@@ -156,6 +157,8 @@ write_preference() {
 
 # Manage the preferences
 manage_preferences
+
+# -------------------------------------------------------------------------- #
 
 # Check if the directory to analyze exists
 if [ ! -d "$adsk_python_dir" ]; then
@@ -189,6 +192,9 @@ else
     # You might want to add fallback logic here
 fi
 
+# Ensure current_adsk_python_version is set
+current_adsk_python_version=$(cat "$install_dir/current_adsk_python_version.pref")
+
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
@@ -206,5 +212,9 @@ fi
 # -------------------------------------------------------------------------- #
 # version:          0.0.3
 # created:          2024-09-01 - 11:00:00
-# comments:         Added logic to compare and update the preference file only if needed.
+# comments:         Added logic to compare and update the pref file if needed.
+# -------------------------------------------------------------------------- #
+# version:          0.0.4
+# created:          2024-09-07 - 10:38:56
+# comments:         Fixed the issue where the pref file does not get updated.
 # -------------------------------------------------------------------------- #

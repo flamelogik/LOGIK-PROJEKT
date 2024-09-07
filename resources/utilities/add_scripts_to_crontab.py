@@ -31,7 +31,10 @@
 
 # -------------------------------------------------------------------------- #
 
-# resources/utilities/add_scripts_to_crontab.py
+# File Name:        add_scripts_to_crontab.py
+# Version:          0.9.9
+# Created:          2024-01-19
+# Modified:         2024-09-07
 
 # ========================================================================== #
 # This section defines the import statements and path setup.
@@ -44,55 +47,56 @@ import sys
 
 # -------------------------------------------------------------------------- #
 
-from tkinter import Tk
-from tkinter.filedialog import askopenfilename
+from PySide6.QtWidgets import QApplication, QFileDialog, QVBoxLayout, QLineEdit, QLabel, QPushButton, QWidget
 
 # ========================================================================== #
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-def get_shell_script(script_name):
-    """Get the path to the shell script to be executed by cron.
+class CronJobApp(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
 
-    Args:
-        script_name (str): The name of the shell script.
+    def initUI(self):
+        self.setWindowTitle('Add Scripts to Crontab')
 
-    Returns:
-        str: The path to the shell script.
-    """
-    root = Tk()
-    root.withdraw()  # Hide the root window
-    script_path = askopenfilename(title=f"Select the {script_name} shell script")
-    root.destroy()
-    if not script_path:
-        print("No file selected. Exiting.")
-        sys.exit(0)
-    if not os.path.isfile(script_path):
-        print("Invalid file path. Please try again.")
-        return get_shell_script(script_name)
-    return script_path
+        layout = QVBoxLayout()
 
-# -------------------------------------------------------------------------- #
+        self.script_label = QLabel('Select the shell script:')
+        layout.addWidget(self.script_label)
 
-def get_cron_time(script_name):
-    """Gets the cron time to execute the given script from the user.
+        self.script_button = QPushButton('Browse...')
+        self.script_button.clicked.connect(self.select_script)
+        layout.addWidget(self.script_button)
 
-    Args:
-        script_name: The name of the script to be executed.
+        self.cron_label = QLabel('Enter the cron time (Minute Hour Day_of_Month Month Day_of_Week):')
+        layout.addWidget(self.cron_label)
 
-    Returns:
-        The cron time in the format: "Minute Hour Day of Month Month Day of Week".
-    """
-    print(f"Enter the time to execute the {script_name} script in the following format:")
-    print("Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), Day of Week (0-6, 0 is Sunday)")
-    minute = input("Minute: ")
-    hour = input("Hour: ")
-    day_of_month = input("Day of Month: ")
-    month = input("Month: ")
-    day_of_week = input("Day of Week: ")
-    return f"{minute} {hour} {day_of_month} {month} {day_of_week}"
+        self.cron_input = QLineEdit()
+        layout.addWidget(self.cron_input)
 
-# -------------------------------------------------------------------------- #
+        self.submit_button = QPushButton('Add to Crontab')
+        self.submit_button.clicked.connect(self.submit_cron_job)
+        layout.addWidget(self.submit_button)
+
+        self.setLayout(layout)
+
+    def select_script(self):
+        script_path, _ = QFileDialog.getOpenFileName(self, "Select the shell script")
+        if script_path:
+            self.script_label.setText(f'Selected script: {script_path}')
+            self.script_path = script_path
+
+    def submit_cron_job(self):
+        cron_time = self.cron_input.text()
+        if hasattr(self, 'script_path') and cron_time:
+            if sys.platform == "darwin":
+                create_launchd_entry(self.script_path, cron_time)
+            else:
+                create_crontab_entry(self.script_path, cron_time)
+        else:
+            print("Please select a script and enter a valid cron time.")
 
 def create_crontab_entry(script_path, cron_time):
     """Adds a crontab entry to run the specified script at the specified time.
@@ -117,69 +121,103 @@ def create_crontab_entry(script_path, cron_time):
     cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
     print(f"Crontab file location: {cron_file_location}")
 
+def create_launchd_entry(script_path, cron_time):
+    """Adds a launchd entry to run the specified script at the specified time.
+
+    Args:
+        script_path (str): The path to the script to be run.
+        cron_time (str): The cron time expression at which the script should be run.
+
+    Returns:
+        None
+    """
+    plist_file = os.path.expanduser(f"~/Library/LaunchAgents/com.example.{os.path.basename(script_path)}.plist")
+    start_interval = int(cron_time.split()[0]) * 60  # Assuming cron_time is in the format "*/N * * * *"
+    plist_content = f"""
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.{os.path.basename(script_path)}</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>{script_path}</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>{start_interval}</integer>
+    <key>StandardOutPath</key>
+    <string>{os.path.expanduser('~/Library/Logs/com.example.' + os.path.basename(script_path) + '.log')}</string>
+    <key>StandardErrorPath</key>
+    <string>{os.path.expanduser('~/Library/Logs/com.example.' + os.path.basename(script_path) + '.log')}</string>
+</dict>
+</plist>
+"""
+    with open(plist_file, "w") as f:
+        f.write(plist_content)
+    subprocess.run(["launchctl", "load", plist_file], check=True)
+    print(f"Launchd entry for {script_path} created successfully.")
+
+def add_editor_to_zshrc():
+    """Adds 'export EDITOR=pico' to ~/.zshrc if the operating system is Darwin (macOS)."""
+    if sys.platform == "darwin":
+        zshrc_path = os.path.expanduser("~/.zshrc")
+        with open(zshrc_path, "a") as zshrc_file:
+            zshrc_file.write("\nexport EDITOR=pico\n")
+        print("'export EDITOR=pico' added to ~/.zshrc")
+
+def create_removal_script(script_path, cron_time):
+    """Creates a Python script to remove the process from either cron or launchd.
+
+    Args:
+        script_path (str): The path to the script to be removed.
+        cron_time (str): The cron time expression at which the script is scheduled.
+
+    Returns:
+        None
+    """
+    removal_script_path = os.path.expanduser("~/remove_scheduled_task.py")
+    with open(removal_script_path, "w") as f:
+        f.write(f"""
+import os
+import subprocess
+import sys
+
+def remove_crontab_entry(script_path):
+    cron_command = f"{cron_time} {script_path}"
+    subprocess.run(f'(crontab -l | grep -v "{cron_command}") | crontab -', shell=True, check=True)
+    print(f"Crontab entry for {script_path} removed successfully.")
+
+def remove_launchd_entry(script_path):
+    plist_file = os.path.expanduser(f"~/Library/LaunchAgents/com.example.{os.path.basename(script_path)}.plist")
+    subprocess.run(["launchctl", "unload", plist_file], check=True)
+    os.remove(plist_file)
+    print(f"Launchd entry for {script_path} removed successfully.")
+
+if __name__ == "__main__":
+    if sys.platform == "darwin":
+        remove_launchd_entry("{script_path}")
+    else:
+        remove_crontab_entry("{script_path}")
+""")
+    print(f"Removal script created at {removal_script_path}")
+
 # ========================================================================== #
 # This section defines how to handle the main script function.
 # ========================================================================== #
 
 if __name__ == "__main__":
-    flame_archive_script = get_shell_script("flame_archive")
-    flame_archive_time = get_cron_time("flame_archive")
-    create_crontab_entry(flame_archive_script, flame_archive_time)
+    path_to_shell_script = "/path/to/script.sh"
+    process_frequency = "*/5 * * * *"
 
-    projekt_backup_script = get_shell_script("projekt_backup")
-    projekt_backup_time = get_cron_time("projekt_backup")
-    create_crontab_entry(projekt_backup_script, projekt_backup_time)
+    add_editor_to_zshrc()
+    app = QApplication(sys.argv)
+    cron_job_app = CronJobApp()
+    cron_job_app.show()
+    sys.exit(app.exec())
 
-
-'''
-import os
-import subprocess
-import sys
-from tkinter import Tk
-from tkinter.filedialog import askopenfilename
-
-def get_shell_script(script_name):
-    root = Tk()
-    root.withdraw()  # Hide the root window
-    script_path = askopenfilename(title=f"Select the {script_name} shell script")
-    root.destroy()
-    if not script_path:
-        print("No file selected. Exiting.")
-        sys.exit(0)
-    if not os.path.isfile(script_path):
-        print("Invalid file path. Please try again.")
-        return get_shell_script(script_name)
-    return script_path
-
-def get_cron_time(script_name):
-    print(f"Enter the time to execute the {script_name} script in the following format:")
-    print("Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), Day of Week (0-6, 0 is Sunday)")
-    minute = input("Minute: ")
-    hour = input("Hour: ")
-    day_of_month = input("Day of Month: ")
-    month = input("Month: ")
-    day_of_week = input("Day of Week: ")
-    return f"{minute} {hour} {day_of_month} {month} {day_of_week}"
-
-def create_crontab_entry(script_path, cron_time):
-    cron_command = f"{cron_time} {script_path}"
-    subprocess.run(f'(crontab -l; echo "{cron_command}") | crontab -', shell=True, check=True)
-    print(f"Crontab entry for {script_path} created successfully.")
-    user = os.getlogin()
-    cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
-    print(f"Crontab file location: {cron_file_location}")
-
-if __name__ == "__main__":
-    flame_archive_script = get_shell_script("flame_archive")
-    flame_archive_time = get_cron_time("flame_archive")
-    create_crontab_entry(flame_archive_script, flame_archive_time)
-
-    projekt_backup_script = get_shell_script("projekt_backup")
-    projekt_backup_time = get_cron_time("projekt_backup")
-    create_crontab_entry(projekt_backup_script, projekt_backup_time)
-
-'''
-
+    create_removal_script(path_to_shell_script, process_frequency)
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
@@ -207,4 +245,8 @@ if __name__ == "__main__":
 # version:          0.7.0
 # modified:         2024-06-21 - 18:21:03
 # comments:         started gui design with pyside6.
+# -------------------------------------------------------------------------- #
+# version:          0.9.9
+# created:          2024-09-07 - 10:38:56
+# comments:         added launchd option and removal script.
 # -------------------------------------------------------------------------- #
