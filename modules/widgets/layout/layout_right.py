@@ -31,7 +31,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        layout_main.py
+# File Name:        layout_right.py
 # Version:          0.9.9
 # Created:          2024-01-19
 # Modified:         2024-08-31
