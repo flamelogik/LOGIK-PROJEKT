@@ -55,7 +55,10 @@ from PySide6.QtWidgets import QApplication, QFileDialog, QVBoxLayout, QLineEdit,
 # ========================================================================== #
 
 # Hardcode the path to your shell script here
-archive_script_path = "/path/to/your/script.sh"
+archive_script_path = "/home/pman/workspace/GitHub/flamelogik/LOGIK-PROJEKT/resources/utilities/dummy_rsync.sh"
+
+# Define the path for the cron log file
+cron_log_path = "/home/pman/workspace/GitHub/flamelogik/LOGIK-PROJEKT/resources/utilities/cron_log.log"
 
 class CronJobApp(QWidget):
     def __init__(self):
@@ -67,9 +70,15 @@ class CronJobApp(QWidget):
 
         layout = QVBoxLayout()
 
-        self.script_label = QLabel(f"Shell script to be scheduled: {archive_script_path}")
+        self.script_label = QLabel(
+            'Shell script to be scheduled:\n\n'
+            f'{archive_script_path}\n\n')
         layout.addWidget(self.script_label)
 
+        self.log_label = QLabel(
+            'Cron activity will be logged to:\n\n'
+            f'{cron_log_path}\n\n')
+        layout.addWidget(self.log_label)
 
         self.cron_label = QLabel(
             '\n'
@@ -135,6 +144,7 @@ class CronJobApp(QWidget):
         layout.addWidget(self.cron_label)
 
         self.cron_input = QLineEdit()
+        self.cron_input.setText("0 * * * *")
         layout.addWidget(self.cron_input)
 
         self.submit_button = QPushButton('Schedule Job')
@@ -158,15 +168,39 @@ class CronJobApp(QWidget):
         else:
             print("Please enter a valid cron schedule.")
 
+# def create_crontab_entry(script_path, cron_time):
+#     """Adds a crontab entry to run the specified script at the specified time."""
+#     cron_command = f"{cron_time} {script_path}"
+#     subprocess.run(f'(crontab -l; echo "{cron_command}") | crontab -', shell=True, check=True)
+#     print(f"Crontab entry for {script_path} created successfully.")
+#     user = os.getlogin()
+#     cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
+#     print(f"Crontab file location: {cron_file_location}")
+
 def create_crontab_entry(script_path, cron_time):
-    """Adds a crontab entry to run the specified script at the specified time."""
-    cron_command = f"{cron_time} {script_path}"
-    subprocess.run(f'(crontab -l; echo "{cron_command}") | crontab -', shell=True, check=True)
+    """Adds a crontab entry to run the specified script at the specified time and log the activity."""
+    # Construct the command to run the script and append output to the log file
+    cron_command = f"{cron_time} {script_path} >> {cron_log_path} 2>&1"
+    
+    try:
+        # Get existing crontab
+        existing_crontab = subprocess.check_output("crontab -l", shell=True, universal_newlines=True)
+    except subprocess.CalledProcessError:
+        # If there's no existing crontab, start with an empty one
+        existing_crontab = ""
+
+    # Append the new command to the existing crontab
+    new_crontab = f"{existing_crontab.strip()}\n{cron_command}\n"
+
+    # Write the new crontab
+    subprocess.run("crontab -", input=new_crontab, shell=True, check=True, text=True)
+
     print(f"Crontab entry for {script_path} created successfully.")
+    print(f"Cron activity will be logged to: {cron_log_path}")
+    
     user = os.getlogin()
     cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
     print(f"Crontab file location: {cron_file_location}")
-
 
 # ========================================================================== #
 # This section defines the stylesheet.

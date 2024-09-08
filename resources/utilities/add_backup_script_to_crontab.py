@@ -323,7 +323,7 @@ from PySide6.QtWidgets import QApplication, QVBoxLayout, QLineEdit, QLabel, QPus
 SHELL_SCRIPT_PATH = "/path/to/your/script.sh"
 
 # Define the path for the cron log file
-CRON_LOG_PATH = "/path/to/your/cron_log.log"
+cron_log_path = "/path/to/your/cron_log.log"
 
 class CronJobApp(QWidget):
     def __init__(self):
@@ -338,7 +338,7 @@ class CronJobApp(QWidget):
         self.script_label = QLabel(f"Shell script to be scheduled: {SHELL_SCRIPT_PATH}")
         layout.addWidget(self.script_label)
 
-        self.log_label = QLabel(f"Cron activity will be logged to: {CRON_LOG_PATH}")
+        self.log_label = QLabel(f"Cron activity will be logged to: {cron_log_path}")
         layout.addWidget(self.log_label)
 
         self.cron_label = QLabel(
@@ -379,7 +379,7 @@ class CronJobApp(QWidget):
 def create_crontab_entry(script_path, cron_time):
     """Adds a crontab entry to run the specified script at the specified time and log the activity."""
     # Construct the command to run the script and append output to the log file
-    cron_command = f"{cron_time} {script_path} >> {CRON_LOG_PATH} 2>&1"
+    cron_command = f"{cron_time} {script_path} >> {cron_log_path} 2>&1"
     
     try:
         # Get existing crontab
@@ -395,7 +395,7 @@ def create_crontab_entry(script_path, cron_time):
     subprocess.run("crontab -", input=new_crontab, shell=True, check=True, text=True)
 
     print(f"Crontab entry for {script_path} created successfully.")
-    print(f"Cron activity will be logged to: {CRON_LOG_PATH}")
+    print(f"Cron activity will be logged to: {cron_log_path}")
     
     user = os.getlogin()
     cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
