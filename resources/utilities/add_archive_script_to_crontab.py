@@ -54,30 +54,22 @@ from PySide6.QtWidgets import QApplication, QFileDialog, QVBoxLayout, QLineEdit,
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
+# Hardcode the path to your shell script here
+archive_script_path = "/path/to/your/script.sh"
+
 class CronJobApp(QWidget):
     def __init__(self):
         super().__init__()
         self.initUI()
 
     def initUI(self):
-        self.setWindowTitle('Add Scripts to Crontab')
+        self.setWindowTitle('Schedule Cron Job')
 
         layout = QVBoxLayout()
 
-        self.script_label = QLabel(
-            '# ---------------------------------------------------------------- #\n\n'
-            '  Select a shell script to add to your crontab:\n\n'
-            '# ---------------------------------------------------------------- #\n'
-        )
+        self.script_label = QLabel(f"Shell script to be scheduled: {archive_script_path}")
         layout.addWidget(self.script_label)
 
-        self.script_button = QPushButton('Browse...')
-        self.script_button.clicked.connect(self.select_script)
-        layout.addWidget(self.script_button)
-
-        self.summary_text = QLineEdit()
-        self.summary_text.setReadOnly(True)
-        layout.addWidget(self.summary_text)
 
         self.cron_label = QLabel(
             '\n'
@@ -145,7 +137,7 @@ class CronJobApp(QWidget):
         self.cron_input = QLineEdit()
         layout.addWidget(self.cron_input)
 
-        self.submit_button = QPushButton('Add to Crontab')
+        self.submit_button = QPushButton('Schedule Job')
         self.submit_button.clicked.connect(self.submit_cron_job)
         layout.addWidget(self.submit_button)
 
@@ -159,42 +151,22 @@ class CronJobApp(QWidget):
         widget_geometry.moveCenter(screen_geometry.center())
         self.move(widget_geometry.topLeft())
 
-    def select_script(self):
-        script_path, _ = QFileDialog.getOpenFileName(self, "Select the shell script")
-        if script_path:
-            self.script_label.setText(f'Selected script: {script_path}')
-            self.script_path = script_path
-            self.summary_text.setText(script_path)
-
     def submit_cron_job(self):
         cron_time = self.cron_input.text()
-        if hasattr(self, 'script_path') and cron_time:
-            create_crontab_entry(self.script_path, cron_time)
+        if cron_time:
+            create_crontab_entry(archive_script_path, cron_time)
         else:
-            print("Please select a script and enter a valid cron time.")
+            print("Please enter a valid cron schedule.")
 
 def create_crontab_entry(script_path, cron_time):
-    """Adds a crontab entry to run the specified script at the specified time.
-
-    Args:
-        script_path (str): The path to the script to be run.
-        cron_time (str): The cron time expression at which the script should be run.
-
-    Returns:
-        None
-
-    Raises:
-        subprocess.CalledProcessError: If the crontab command fails.
-
-    Example:
-        create_crontab_entry("/path/to/script.sh", "0 0 * * *")
-    """
+    """Adds a crontab entry to run the specified script at the specified time."""
     cron_command = f"{cron_time} {script_path}"
     subprocess.run(f'(crontab -l; echo "{cron_command}") | crontab -', shell=True, check=True)
     print(f"Crontab entry for {script_path} created successfully.")
     user = os.getlogin()
     cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
     print(f"Crontab file location: {cron_file_location}")
+
 
 # ========================================================================== #
 # This section defines the stylesheet.
@@ -298,11 +270,8 @@ def apply_stylesheet(app, stylesheet):
     app.setStyleSheet(stylesheet)
 
 if __name__ == "__main__":
-    path_to_shell_script = "/path/to/script.sh"
-    process_frequency = "*/5 * * * *"
-
     app = QApplication(sys.argv)
-    apply_stylesheet(app, ProjektStyleSheet)
+    apply_stylesheet(app, ProjektStyleSheet)  # Assuming ProjektStyleSheet is defined
     cron_job_app = CronJobApp()
     cron_job_app.show()
     sys.exit(app.exec())
