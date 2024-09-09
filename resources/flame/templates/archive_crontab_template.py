@@ -31,7 +31,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        add_archive_script_to_crontab.py
+# File Name:        add_scripts_to_crontab.py
 # Version:          1.0.0
 # Created:          2024-01-19
 # Modified:         2024-09-07
