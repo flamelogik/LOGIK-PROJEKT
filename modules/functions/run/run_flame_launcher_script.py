@@ -270,7 +270,10 @@ def main():
         tmp_bookmarks_file = 'resources/tmp/tmp_bookmarks.json'
 
         the_projekt_dirs_json_dir = 'resources/cfg/projekt_configuration/tree/projekt'
-        the_projekt_dirs_json_files = [os.path.join(the_projekt_dirs_json_dir, file) for file in os.listdir(the_projekt_dirs_json_dir) if file.endswith('.json')]
+        # the_projekt_dirs_json_files = [os.path.join(the_projekt_dirs_json_dir, file) for file in os.listdir(the_projekt_dirs_json_dir) if file.endswith('.json')]
+        the_projekt_dirs_json_files = sorted(
+            [os.path.join(the_projekt_dirs_json_dir, file) for file in os.listdir(the_projekt_dirs_json_dir) if file.endswith('.json')]
+        )
 
         # Call the create_the_projekt_flame_directories function
         the_flame_dirs_json_file = 'resources/cfg/projekt_configuration/tree/flame/flame_setup_dirs.json'
