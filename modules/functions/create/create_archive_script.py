@@ -345,7 +345,7 @@ def create_projekt_flame_archive_script(
 
     shutil.copy(src_archive_crontab_template, tgt_projekt_archive_crontab)
 
-    print(f"  Successfully created PROJEKT flame archive template to:\n")
+    print(f"  Successfully created PROJEKT flame archive crontab script to:\n")
     print(f"  {os.path.basename(tgt_projekt_archive_crontab)}")
     print("\n" + separator + "\n")
 

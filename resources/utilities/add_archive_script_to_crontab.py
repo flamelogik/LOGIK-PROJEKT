@@ -182,15 +182,6 @@ class CronJobApp(QWidget):
         else:
             print("  Please enter a valid cron schedule.")
 
-# def create_crontab_entry(script_path, cron_time):
-#     """Adds a crontab entry to run the specified script at the specified time."""
-#     cron_command = f"{cron_time} {script_path}"
-#     subprocess.run(f'(crontab -l; echo "{cron_command}") | crontab -', shell=True, check=True)
-#     print(f"Crontab entry for {script_path} created successfully.")
-#     user = os.getlogin()
-#     cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
-#     print(f"Crontab file location: {cron_file_location}")
-
 def create_crontab_entry(script_path, cron_time):
     """Adds a crontab entry to run the specified script at the specified time and log the activity."""
     # Construct the command to run the script and append output to the log file

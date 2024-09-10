@@ -30,7 +30,7 @@
 #                   Contact: phil_man@mac.com
 
 # -------------------------------------------------------------------------- #
-# File Name:        archive_crontab_template.sh
+# File Name:        backup_crontab_template.sh
 # Version:          1.0.0
 # Created:          2024-01-19
 # Modified:         2024-09-09
@@ -42,13 +42,13 @@ the_projekt_flame_name="LogikProjektFlameName"
 flame_workstation_name="FlameWorkstationName"
 
 # Define paths
-archive_script_path="LogikProjektDirectories/LogikProjektDirectory/flame/archives/ArchiveScriptName"
-archive_script_cron_log_path="LogikProjektDirectories/LogikProjektDirectory/flame/archives/FlameWorkstationName/cron_log/LogikProjektName_cron_log.log"
+backup_script_path="LogikProjektDirectories/LogikProjektDirectory/backup/backup_scripts/FlameWorkstationName/BackupScriptName" 
+backup_script_cron_log_path="LogikProjektDirectories/LogikProjektDirectory/backup/backup_scripts/FlameWorkstationName/cron_log/LogikProjektName_cron_log.log"
 
 # Inform the user about the shell script and log path
-echo -e "\n  Shell script to be scheduled:\n\n  $archive_script_path\n\n"
+echo -e "\n  Shell script to be scheduled:\n\n  $backup_script_path\n\n"
 echo -e "# ---------------------------------------------------------------- #\n"
-echo -e "  Cron activity will be logged to:\n\n  $archive_script_cron_log_path\n"
+echo -e "  Cron activity will be logged to:\n\n  $backup_script_cron_log_path\n"
 echo -e "# ---------------------------------------------------------------- #\n"
 
 # Display the explanatory text about cron format
@@ -97,7 +97,7 @@ echo -e "# ---------------------------------------------------------------- #\n\
 echo -e "  Enter your values separated by spaces:\n"
 
 # Prompt the user for the cron schedule
-read -p "  Enter your cron schedule (e.g., 0 0 * * *): " cron_time
+read -p "  Enter your cron schedule (e.g., */5 * * * *): " cron_time
 
 # Function to create crontab entry
 create_crontab_entry() {
@@ -116,7 +116,7 @@ create_crontab_entry() {
 
 # Call the function to add the cron job if a valid input is provided
 if [[ -n "$cron_time" ]]; then
-    create_crontab_entry "$cron_time" "$archive_script_path" "$archive_script_cron_log_path"
+    create_crontab_entry "$cron_time" "$backup_script_path" "$backup_script_cron_log_path"
 else
     echo "Please enter a valid cron schedule."
 fi
