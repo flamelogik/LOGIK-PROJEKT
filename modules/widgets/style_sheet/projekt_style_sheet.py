@@ -40,6 +40,37 @@
 # This section defines the stylesheet for the main application.
 # ========================================================================== #
 
+def adjust_color_brightness(color, factor):
+    """
+    Adjust the brightness of a hex color.
+    
+    Args:
+        color (str): The hex color string (e.g., '#4D0000').
+        factor (float): The factor by which to adjust the brightness (e.g., 1.1 for 10% brighter, 0.8 for 20% darker).
+    
+    Returns:
+        str: The adjusted hex color string.
+    """
+    color = color.lstrip('#')
+    rgb = tuple(int(color[i:i+2], 16) for i in (0, 2, 4))
+    adjusted_rgb = tuple(min(255, max(0, int(c * factor))) for c in rgb)
+    return '#{:02x}{:02x}{:02x}'.format(*adjusted_rgb)
+
+# Define the base colors
+button_color_1 = "#4D0000"  # Red
+button_color_2 = "#7F3F00"  # Amber
+button_color_3 = "#2F5F00"  # Green
+
+# Calculate hover and pressed colors
+button_color_1_hover = adjust_color_brightness(button_color_1, 1.25)  # 25% brighter
+button_color_1_pressed = adjust_color_brightness(button_color_1, 0.6)  # 40% darker
+
+button_color_2_hover = adjust_color_brightness(button_color_2, 1.25)  # 25% brighter
+button_color_2_pressed = adjust_color_brightness(button_color_2, 0.6)  # 40% darker
+
+button_color_3_hover = adjust_color_brightness(button_color_3, 1.25)  # 25% brighter
+button_color_3_pressed = adjust_color_brightness(button_color_3, 0.6)  # 40% darker
+
 # Default stylesheet
 ProjektStyleSheet = """
 /* Set the background color */
@@ -158,30 +189,63 @@ QFileDialog QToolButton {
 }
 """
 
-# Stylesheet for Button Color 1
-ButtonColor1StyleSheet = """
-QPushButton {
-    background-color: #4D0000; /* Red */
-}
+# Stylesheet for Button Color 1 (Red)
+ButtonColor1StyleSheet = f"""
+QPushButton {{
+    background-color: {button_color_1}; /* Normal state */
+    color: #ffffff; /* Text color */
+    border: 1px solid #444444; /* Border */
+    padding: 5px; /* Padding */
+}}
+
+QPushButton:hover {{
+    background-color: {button_color_1_hover}; /* Hover state */
+}}
+
+QPushButton:pressed {{
+    background-color: {button_color_1_pressed}; /* Pressed state */
+}}
 """
 
-# Stylesheet for Button Color 2
-ButtonColor2StyleSheet = """
-QPushButton {
-    background-color: #6F2F00; /* Amber #7F3F00 */
-}
+# Stylesheet for Button Color 2 (Amber)
+ButtonColor2StyleSheet = f"""
+QPushButton {{
+    background-color: {button_color_2}; /* Normal state */
+    color: #ffffff; /* Text color */
+    border: 1px solid #444444; /* Border */
+    padding: 5px; /* Padding */
+}}
+
+QPushButton:hover {{
+    background-color: {button_color_2_hover}; /* Hover state */
+}}
+
+QPushButton:pressed {{
+    background-color: {button_color_2_pressed}; /* Pressed state */
+}}
 """
 
-# Stylesheet for Button Color 3
-ButtonColor3StyleSheet = """
-QPushButton {
-    background-color: #1F4F00; /* Green #2F5F00 */
-}
+# Stylesheet for Button Color 3 (Green)
+ButtonColor3StyleSheet = f"""
+QPushButton {{
+    background-color: {button_color_3}; /* Normal state */
+    color: #ffffff; /* Text color */
+    border: 1px solid #444444; /* Border */
+    padding: 5px; /* Padding */
+}}
+
+QPushButton:hover {{
+    background-color: {button_color_3_hover}; /* Hover state */
+}}
+
+QPushButton:pressed {{
+    background-color: {button_color_3_pressed}; /* Pressed state */
+}}
 """
 
 def apply_stylesheet(app, stylesheet):
     app.setStyleSheet(stylesheet)
-
+    
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #

@@ -31,7 +31,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        add_archive_script_to_crontab.py
+# File Name:        add_scripts_to_crontab.py
 # Version:          1.0.0
 # Created:          2024-01-19
 # Modified:         2024-09-07
@@ -181,6 +181,15 @@ class CronJobApp(QWidget):
             create_crontab_entry(archive_script_path, cron_time)
         else:
             print("  Please enter a valid cron schedule.")
+
+# def create_crontab_entry(script_path, cron_time):
+#     """Adds a crontab entry to run the specified script at the specified time."""
+#     cron_command = f"{cron_time} {script_path}"
+#     subprocess.run(f'(crontab -l; echo "{cron_command}") | crontab -', shell=True, check=True)
+#     print(f"Crontab entry for {script_path} created successfully.")
+#     user = os.getlogin()
+#     cron_file_location = f"/var/spool/cron/crontabs/{user}" if os.name != 'darwin' else f"/var/cron/tabs/{user}"
+#     print(f"Crontab file location: {cron_file_location}")
 
 def create_crontab_entry(script_path, cron_time):
     """Adds a crontab entry to run the specified script at the specified time and log the activity."""

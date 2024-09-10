@@ -199,15 +199,30 @@ def create_projekt_flame_archive_script(
         the_hostname,
         separator,
     ):
-    
+
+# -------------------------------------------------------------------------- #
+
     # Nested function to generate backup filename with current date
-    def generate_backup_filename(filepath):
+    def generate_projekt_archive_script_backup_filename(filepath):
         # Get the current date
         date_str = datetime.datetime.now().strftime("%Y_%m_%d")
         # Split the file path into name and extension
         base, ext = os.path.splitext(filepath)
         # Create the backup filename with the date suffix
         return f"{base}-{date_str}.bak"
+
+# -------------------------------------------------------------------------- #
+
+    # # Nested function to generate crontab backup filename with current date
+    # def generate_projekt_archive_crontab_backup_filename(filepath):
+    #     # Get the current date
+    #     date_str = datetime.datetime.now().strftime("%Y_%m_%d")
+    #     # Split the file path into name and extension
+    #     base, ext = os.path.splitext(filepath)
+    #     # Create the backup filename with the date suffix
+    #     return f"{base}-{date_str}.bak"
+
+# -------------------------------------------------------------------------- #
 
     # Function to modify the script file with search and replace
     def modify_script_file(filepath, search_replace_dict):
@@ -224,10 +239,12 @@ def create_projekt_flame_archive_script(
             with open(filepath, 'w') as file:
                 file.write(script_content)
 
-            print(f"  Successfully modified script: {os.path.basename(filepath)}")
+            print(f"  Successfully modified script: {os.path.basename(filepath)}\n")
 
         except Exception as e:
             print(f"  Error modifying script file: {e}")
+
+# -------------------------------------------------------------------------- #
 
     # Set the projekt_dir
     the_projekt_dir = f"{the_projekts_dir}/{the_projekt_name}"
@@ -235,10 +252,14 @@ def create_projekt_flame_archive_script(
     # Set the projekt_flame_dir
     the_projekt_flame_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+# -------------------------------------------------------------------------- #
+
     # Set the umask to 0
     os.umask(0)
 
-    # Set the tgt_flame_archives_dir preferences
+# -------------------------------------------------------------------------- #
+
+    # Set the tgt_flame_archives_dir path
     tgt_flame_archives_dir = os.path.join(
         the_projekt_dir,
         'flame',
@@ -251,8 +272,29 @@ def create_projekt_flame_archive_script(
         exist_ok=True
     )
 
+# -------------------------------------------------------------------------- #
+
+    # Set the tgt_workstation_flame_archives_dir path
+    tgt_workstation_flame_archives_dir = os.path.join(
+        the_projekt_dir,
+        'flame',
+        'archives',
+        the_hostname,
+    )
+
+    # Create the tgt_workstation_flame_archives_dir if it doesn't exist
+    os.makedirs(
+        tgt_workstation_flame_archives_dir,
+        exist_ok=True
+    )
+
+# -------------------------------------------------------------------------- #
+
     # Set the source and target cfg preferences
     src_archive_template = "resources/flame/templates/archive_template"
+    src_archive_crontab_template = "resources/flame/templates/archive_crontab_template.sh"
+
+# -------------------------------------------------------------------------- #
 
     # Construct the tgt_projekt_archive_script path
     tgt_projekt_archive_script = os.path.join(
@@ -260,29 +302,61 @@ def create_projekt_flame_archive_script(
         f"{the_projekt_name}-archive_script-{the_hostname}.sh"
     )
 
-    # Archive the PROJEKT template
+    # Construct the tgt_projekt_archive_crontab path
+    tgt_projekt_archive_crontab = os.path.join(
+        tgt_flame_archives_dir,
+        f"{the_projekt_name}-add_archive_script_to_crontab-{the_hostname}.sh"
+    )
+
+# -------------------------------------------------------------------------- #
+
+    # Creating the PROJEKT archive script
     print(f"  Creating PROJEKT archive script.\n")
 
-    backup_filename = generate_backup_filename(tgt_projekt_archive_script)
+    projekt_archive_script_backup_filename = generate_projekt_archive_script_backup_filename(tgt_projekt_archive_script)
 
     # Check if tgt_projekt_archive_script exists and rename if it does
     if os.path.exists(tgt_projekt_archive_script):
         print(f"  * {tgt_projekt_archive_script} exists\n")
         print(f"  * PROJEKT archive script:\n")
-        print(f"  *   {tgt_projekt_archive_script}.bak")
-        shutil.move(tgt_projekt_archive_script, backup_filename)
+        print(f"  *   {tgt_projekt_archive_script}.bak\n")
+        shutil.move(tgt_projekt_archive_script, projekt_archive_script_backup_filename)
 
     shutil.copy(src_archive_template, tgt_projekt_archive_script)
-    
-    print(f"  Successfully copied PROJEKT flame archive template to:\n")
-    print(f"  {os.path.basename(backup_filename)}")
+
+    print(f"  Successfully created PROJEKT flame archive template to:\n")
+    # print(f"  {os.path.basename(projekt_archive_script_backup_filename)}")
+    print(f"  {os.path.basename(tgt_projekt_archive_script)}")
     print("\n" + separator + "\n")
 
-    # Archive the PROJEKT template
-    print(f"  Modifying PROJEKT archive script.\n")
+# -------------------------------------------------------------------------- #
 
-    # Add execution permissions to the new archiving shell script
+    # Creating the PROJEKT archive crontab script
+    print(f"  Creating PROJEKT archive crontab script.\n")
+
+    # projekt_archive_crontab_backup_filename = generate_projekt_archive_crontab_backup_filename(tgt_projekt_archive_crontab)
+
+    # # Check if tgt_projekt_archive_crontab exists and rename if it does
+    # if os.path.exists(tgt_projekt_archive_crontab):
+    #     print(f"  * {tgt_projekt_archive_crontab} exists\n")
+    #     print(f"  * PROJEKT archive script:\n")
+    #     print(f"  *   {tgt_projekt_archive_crontab}.bak")
+    #     shutil.move(tgt_projekt_archive_crontab, projekt_archive_crontab_backup_filename)
+
+    shutil.copy(src_archive_crontab_template, tgt_projekt_archive_crontab)
+
+    print(f"  Successfully created PROJEKT flame archive crontab script to:\n")
+    print(f"  {os.path.basename(tgt_projekt_archive_crontab)}")
+    print("\n" + separator + "\n")
+
+# -------------------------------------------------------------------------- #
+
+    # Modifying the PROJEKT archive scripts
+    print(f"  Modifying PROJEKT archive scripts.\n")
+
+    # Add execution permissions to the new archiving and crontab scripts
     os.chmod(tgt_projekt_archive_script, 0o755)
+    os.chmod(tgt_projekt_archive_crontab, 0o755)
 
     the_timestamp = f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
 
@@ -298,12 +372,14 @@ def create_projekt_flame_archive_script(
         "FlameWorkstationName": f"{the_hostname}"
     }
 
-    # Modify the script file with the search and replace dictionary
+    # Modify the script files with the search and replace dictionary
     modify_script_file(tgt_projekt_archive_script, search_replace)
+    modify_script_file(tgt_projekt_archive_crontab, search_replace)
 
-    print(f"  Successfully modified PROJEKT flame archive:\n")
-    print(f"  {os.path.basename(tgt_projekt_archive_script)}")
-    # print("\n" + separator + "\n")
+    print("\n" + separator + "\n")
+    print(f"  Successfully modified PROJEKT flame archive scripts:\n")
+    print(f"  {os.path.basename(tgt_projekt_archive_script)}\n")
+    print(f"  {os.path.basename(tgt_projekt_archive_crontab)}\n")
 
 # ========================================================================== #
 # This section defines how to handle the main script function.

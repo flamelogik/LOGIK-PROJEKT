@@ -199,15 +199,19 @@ def create_projekt_backup_script(
         the_hostname,
         separator,
     ):
-    
+
+# -------------------------------------------------------------------------- #
+
     # Nested function to generate backup filename with current date
-    def generate_backup_filename(filepath):
+    def generate_projekt_backup_script_backup_filename(filepath):
         # Get the current date
         date_str = datetime.datetime.now().strftime("%Y_%m_%d")
         # Split the file path into name and extension
         base, ext = os.path.splitext(filepath)
         # Create the backup filename with the date suffix
         return f"{base}-{date_str}.bak"
+
+# -------------------------------------------------------------------------- #
 
     # Function to modify the script file with search and replace
     def modify_script_file(filepath, search_replace_dict):
@@ -229,14 +233,20 @@ def create_projekt_backup_script(
         except Exception as e:
             print(f"  Error modifying script file: {e}")
 
+# -------------------------------------------------------------------------- #
+
     # Set the projekt_dir
     the_projekt_dir = f"{the_projekts_dir}/{the_projekt_name}"
 
     # Set the projekt_flame_dir
     the_projekt_flame_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+# -------------------------------------------------------------------------- #
+
     # Set the umask to 0
     os.umask(0)
+
+# -------------------------------------------------------------------------- #
 
     # Set the tgt_projekt_backup_dir preferences
     tgt_projekt_backup_dir = os.path.join(
@@ -252,8 +262,29 @@ def create_projekt_backup_script(
         exist_ok=True
     )
 
+# -------------------------------------------------------------------------- #
+
+    # Set the tgt_workstation_projekt_backup_dir preferences
+    tgt_workstation_projekt_backup_dir = os.path.join(
+        the_projekt_dir,
+        'backup',
+        'backup_scripts',
+        f"{the_hostname}",
+    )
+
+    # Create the tgt_workstation_projekt_backup_dir if it doesn't exist
+    os.makedirs(
+        tgt_workstation_projekt_backup_dir,
+        exist_ok=True
+    )
+
+# -------------------------------------------------------------------------- #
+
     # Set the source and target cfg preferences
     src_backup_template = "resources/flame/templates/backup_template"
+    src_backup_crontab_template = "resources/flame/templates/backup_crontab_template.sh"
+
+# -------------------------------------------------------------------------- #
 
     # Construct the tgt_projekt_backup_script path
     tgt_projekt_backup_script = os.path.join(
@@ -261,29 +292,62 @@ def create_projekt_backup_script(
         f"{the_projekt_name}-backup_script-{the_hostname}.sh"
     )
 
-    # Archive the PROJEKT template
+    # Construct the tgt_projekt_backup_crontab path
+    tgt_projekt_backup_crontab = os.path.join(
+        tgt_projekt_backup_dir,
+        f"{the_projekt_name}-add_backup_script_to_crontab-{the_hostname}.sh"
+    )
+
+# -------------------------------------------------------------------------- #
+
+    # Creating the PROJEKT backup script
     print(f"  Creating PROJEKT rsync script.\n")
 
-    backup_filename = generate_backup_filename(tgt_projekt_backup_script)
+    projekt_backup_script_backup_filename = generate_projekt_backup_script_backup_filename(tgt_projekt_backup_script)
 
     # Check if tgt_projekt_backup_script exists and rename if it does
     if os.path.exists(tgt_projekt_backup_script):
         print(f"  * {tgt_projekt_backup_script} exists\n")
         print(f"  * PROJEKT rsync script:\n")
         print(f"  *   {tgt_projekt_backup_script}.bak")
-        shutil.move(tgt_projekt_backup_script, backup_filename)
+        shutil.move(tgt_projekt_backup_script, projekt_backup_script_backup_filename)
 
     shutil.copy(src_backup_template, tgt_projekt_backup_script)
     
     print(f"  Successfully copied PROJEKT flame rsync template to:\n")
-    print(f"  {os.path.basename(backup_filename)}")
+    # print(f"  {os.path.basename(projekt_backup_script_backup_filename)}")
+    print(f"  {os.path.basename(tgt_projekt_backup_script)}")
     print("\n" + separator + "\n")
+
+# -------------------------------------------------------------------------- #
+
+    # Creating the PROJEKT backup script
+    print(f"  Creating PROJEKT rsync script.\n")
+
+    # projekt_backup_script_backup_filename = generate_projekt_backup_script_backup_filename(tgt_projekt_backup_script)
+
+    # # Check if tgt_projekt_backup_script exists and rename if it does
+    # if os.path.exists(tgt_projekt_backup_script):
+    #     print(f"  * {tgt_projekt_backup_script} exists\n")
+    #     print(f"  * PROJEKT rsync script:\n")
+    #     print(f"  *   {tgt_projekt_backup_script}.bak")
+    #     shutil.move(tgt_projekt_backup_script, projekt_backup_script_backup_filename)
+
+    shutil.copy(src_backup_crontab_template, tgt_projekt_backup_crontab)
+    
+    print(f"  Successfully copied PROJEKT flame rsync crontab script to:\n")
+    # print(f"  {os.path.basename(projekt_backup_script_backup_filename)}")
+    print(f"  {os.path.basename(tgt_projekt_backup_crontab)}")
+    print("\n" + separator + "\n")
+
+# -------------------------------------------------------------------------- #
 
     # Archive the PROJEKT template
     print(f"  Modifying PROJEKT rsync script.\n")
 
     # Add execution permissions to the new archiving shell script
     os.chmod(tgt_projekt_backup_script, 0o755)
+    os.chmod(tgt_projekt_backup_crontab, 0o755)
 
     the_timestamp = f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
 
@@ -301,10 +365,14 @@ def create_projekt_backup_script(
 
     # Modify the script file with the search and replace dictionary
     modify_script_file(tgt_projekt_backup_script, search_replace)
+    modify_script_file(tgt_projekt_backup_crontab, search_replace)
 
+    print("\n" + separator + "\n")
     print(f"  Successfully modified PROJEKT flame archive:\n")
     print(f"  {os.path.basename(tgt_projekt_backup_script)}")
-    # print("\n" + separator + "\n")
+    print(f"  {os.path.basename(tgt_projekt_backup_crontab)}\n")
+
+# -------------------------------------------------------------------------- #
 
     # Set the source and target files for exclusion list
     src_projekt_backup_exclusion_list = "resources/flame/templates/exclusion_list.txt"
