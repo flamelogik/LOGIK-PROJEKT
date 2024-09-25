@@ -53,6 +53,9 @@ modules_dir="$parent_dir/modules"
 # Change to the parent directory
 cd "$parent_dir" || exit
 
+# Create the logs directory
+mkdir -p "$install_logs_dir" || exit
+
 # Define the directory to analyze
 adsk_python_dir="/opt/Autodesk/python"  # PRODUCTION
 # adsk_python_dir="/home/pman/Documents/test_python_directory"  # TESTING
