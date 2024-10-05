@@ -5,6 +5,7 @@
 - Introduction
 - System Requirements
   - Hardware Requirements
+  - Recommended Operating Systems
   - Software Requirements
   - Useful Software
 - Preparation
@@ -35,6 +36,10 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 ### Hardware Requirements
 * Linux or macOS workstation, capable of running Autodesk Flame 2025+
+
+### Recommended Operating Systems
+* [Rocky Linux 9.3](https://efulfillment.autodesk.com/pub1/os/Rocky-9.3-x86_64-dvd-ADSK_REV001.iso?authparam=1838129638_fa5cc47ff425e619342caacbb9b8181d&ext=.iso)
+* [Apple® macOS® Sonoma 14+](https://support.apple.com/mac)
 
 ### Software Requirements
 * [Autodesk Flame 2025](https://help.autodesk.com/view/FLAME/2025/ENU/)
@@ -255,3 +260,108 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
     Contact: phil_man@mac.com
 
 -------------------------------------------------------------------------------
+
+### Application Tree
+
+LOGIK-PROJEKT/
+│
+├── docs                                      # Documentation
+│                                             
+├── install                                   # Installation scripts
+│   │                                         
+│   └── logs                                  # Installation logs
+│                                             
+├── modules                                   # Python modules
+│   │                                         
+│   ├── functions                             # Python Functions
+│   │   │                                     
+│   │   ├── backup                            # Backup functions
+│   │   ├── create                            # Create functions
+│   │   ├── export                            # Export functions
+│   │   ├── get                               # Get functions
+│   │   ├── link                              # Link functions
+│   │   ├── run                               # Run functions
+│   │   ├── scratch                           # Scratch functions
+│   │   ├── shell                             # Shell functions
+│   │   ├── string                            # String functions
+│   │   ├── synchronize                       # Synchronize functions
+│   │   ├── update                            # Update functions
+│   │   └── wiretap                           # Wiretap functions
+│   │                                         
+│   ├── version                               # Scripts Version
+│   |                                         
+│   └── widgets                               # Widgets
+│       │                                     
+│       ├── combo_box                         # Combo box widgets
+│       ├── layout                            # Layout widgets
+│       ├── line_edit                         # Line edit widgets
+│       └── style_sheet                       # Style sheet widgets
+│                                             
+└── resources                                 # Resources
+    │                                         
+    ├── cfg                                   # Configuration files
+    │   │                                     
+    │   ├── nuke                              # Foundry Nuke configuration
+    │   │                                     
+    │   └── projekt_configuration             # Projekt configuration
+    │       │                                 
+    │       ├── bookmarks                     # Bookmarks
+    │       ├── parameters                    # Parameters
+    │       ├── roots                         # Roots
+    │       └── tree                          # Tree
+    │                                         
+    ├── docstrings                            # Docstrings
+    │                                         
+    ├── flame                                 # Flame Resources
+    │   │                                     
+    │   ├── opencolorio                       # OpenColorIO
+    │   |   │                                 
+    │   │   └── ocio_scripts                  # OCIO scripts
+    │   │                                     
+    │   ├── presets                           # Flame Presets
+    │   │   |                                 
+    │   │   ├── batch                         # Batch presets
+    │   │   ├── bookmarks                     # Bookmark presets
+    │   │   ├── burn_metadata                 # Burn metadata presets
+    │   │   ├── cfg                           # Configuration presets
+    │   │   ├── export                        # Export presets
+    │   │   ├── import                        # Import presets
+    │   │   ├── mediahub                      # Mediahub presets
+    │   │   ├── media_import                  # Media import presets
+    │   │   ├── mediaImport                   # MediaImport presets
+    │   │   ├── overlays                      # Overlays presets
+    │   │   └── status                        # Status presets
+    │   │                                     
+    │   ├── python                            # Flame Python
+    │   │   |                                 
+    │   │   └── logik_projekt                 # Logik Projekt Python
+    │   │       │                             
+    │   │       ├── openclip_tools            # OpenClip tools
+    │   │       │                             
+    │   │       └── projekt_tools             # Projekt tools
+    │   │                                     
+    │   ├── Syncolor                          # Syncolor Presets
+    │   │   |                                 
+    │   │   └── Shared                        # Shared presets
+    │   │       |                             
+    │   │       ├── policies                  # Syncolor policies
+    │   │       |                             
+    │   │       └── transforms                # Syncolor transforms
+    │   │           |                         
+    │   │           └── flame_colortoolkit    # Flame ColorToolkit
+    │   │                                     
+    │   └── templates                         # Flame Templates
+    │                                         
+    ├── icons                                 # Application icons
+    │                                         
+    ├── tmp                                   # Temporary files
+    │                                         
+    ├── utilities                             # Application utilities
+    │   │                                     
+    │   ├── flame_configs                     # Flame configurations
+    │   │   |                                 
+    │   │   └── init_config                   # Init configuration
+    │                                         
+    ├── version                               # Application version
+    │                                         
+    └── www                                   # HTML files
