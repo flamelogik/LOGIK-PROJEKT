@@ -43,6 +43,7 @@ flame_workstation_name="FlameWorkstationName"
 
 # Define paths
 archive_script_path="LogikProjektDirectories/LogikProjektDirectory/flame/archives/ArchiveScriptName"
+archive_script_cron_log_dir="LogikProjektDirectories/LogikProjektDirectory/flame/archives/FlameWorkstationName/cron_log/"
 archive_script_cron_log_path="LogikProjektDirectories/LogikProjektDirectory/flame/archives/FlameWorkstationName/cron_log/LogikProjektName_cron_log.log"
 
 # Inform the user about the shell script and log path
@@ -116,6 +117,7 @@ create_crontab_entry() {
 
 # Call the function to add the cron job if a valid input is provided
 if [[ -n "$cron_time" ]]; then
+    mkdir -p "$archive_script_cron_log_dir"
     create_crontab_entry "$cron_time" "$archive_script_path" "$archive_script_cron_log_path"
 else
     echo "Please enter a valid cron schedule."
