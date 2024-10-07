@@ -31,9 +31,9 @@
 
 # -------------------------------------------------------------------------- #
 # File Name:        backup_crontab_template.sh
-# Version:          1.0.0
+# Version:          1.0.2
 # Created:          2024-01-19
-# Modified:         2024-09-09
+# Modified:         2024-10-07
 # -------------------------------------------------------------------------- #
 
 # Archive Script Details
@@ -44,15 +44,22 @@ flame_workstation_name="FlameWorkstationName"
 # Define paths
 backup_script_path="LogikProjektDirectories/LogikProjektDirectory/backup/backup_scripts/FlameWorkstationName/BackupScriptName" 
 backup_script_cron_log_dir="LogikProjektDirectories/LogikProjektDirectory/backup/backup_scripts/FlameWorkstationName/cron_log"
-backup_script_cron_log_path="LogikProjektDirectories/LogikProjektDirectory/backup/backup_scripts/FlameWorkstationName/cron_log/LogikProjektName_cron_log.log"
 
 # Inform the user about the shell script and log path
 echo -e "\n  Shell script to be scheduled:\n\n  $backup_script_path\n\n"
 echo -e "# ---------------------------------------------------------------- #\n"
-echo -e "  Cron activity will be logged to:\n\n  $backup_script_cron_log_path\n"
+echo -e "  Cron activity will be logged to a new log file each time.\n"
 echo -e "# ---------------------------------------------------------------- #\n"
 
-# Display the explanatory text about cron format
+# Function to check if the script is already running
+check_if_running() {
+    if pgrep -f "$backup_script_path" > /dev/null; then
+        echo "Script $backup_script_path is already running. Exiting."
+        exit 1
+    fi
+}
+
+# Display explanatory text about cron format
 echo -e "  Cron is a utility that allows you to schedule tasks.\n"
 echo -e "  It is useful for automating repetitive tasks, such as backups,\n"
 echo -e "  maintenance, and other system tasks.\n\n"
@@ -104,21 +111,22 @@ read -p "  Enter your cron schedule (e.g., */5 * * * *): " cron_time
 create_crontab_entry() {
     local cron_time=$1
     local script_path=$2
-    local log_path=$3
+    local log_dir=$3
 
-    cron_command="$cron_time $script_path >> $log_path 2>&1"
+    # Generate a new log file name with the format: YYYY_MM_DD-HH_MM_LogikProjektName_cron_log.log
+    cron_command="$cron_time $script_path >> $log_dir/$(date +'%Y_%m_%d-%H_%M')_${the_projekt_name}_cron_log.log 2>&1"
     
     # Get existing crontab entries, append the new one, and apply it
     (crontab -l 2>/dev/null; echo "$cron_command") | crontab -
     
     echo -e "\nCrontab entry for $script_path created successfully."
-    echo -e "Cron activity will be logged to: $log_path"
+    echo -e "Each cron activity will be logged to a new file in: $log_dir"
 }
 
 # Call the function to add the cron job if a valid input is provided
 if [[ -n "$cron_time" ]]; then
     mkdir -p "$backup_script_cron_log_dir"
-    create_crontab_entry "$cron_time" "$backup_script_path" "$backup_script_cron_log_path"
+    create_crontab_entry "$cron_time" "$backup_script_path" "$backup_script_cron_log_dir"
 else
     echo "Please enter a valid cron schedule."
 fi
@@ -157,4 +165,12 @@ fi
 # version:          1.0.0
 # created:          2024-09-09 - 18:38:56
 # comments:         created GUI and reverted to cron.
+# -------------------------------------------------------------------------- #
+# version:          1.0.1
+# created:          2024-10-06 - 09:08:00
+# comments:         fixed bug to create_log_dir.
+# -------------------------------------------------------------------------- #
+# version:          1.0.2
+# created:          2024-10-07 - 10:26:00
+# comments:         changed log to a dated log to prevent file ballooning.
 # -------------------------------------------------------------------------- #
