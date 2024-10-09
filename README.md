@@ -16,6 +16,9 @@
   - Post Flame 2025 Installation
   - Configure Flame Preferences
   - LOGIK-PROJEKT Installation
+  - Running LOGIK-PROJEKT
+  - Troubleshooting Permissions and Python
+  - Application Tree
   - Disclaimer
 
 
@@ -57,26 +60,26 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 ### Workstation Preparation (Linux):
 
-    # Check Static HostName (macOS HostName)
+    # Check Static HostName (equivalent to macOS HostName)
     hostnamectl status | grep "Static hostname"
 
-    # Check Pretty HostName (macOS ComputerName)
-    hostnamectl status | grep "Pretty hostname"
-
-    # Check Transient HostName (macOS LocalHostName)
+    # Check Transient HostName (equivalent to macOS LocalHostName)
     hostnamectl status | grep "Transient hostname"
+
+    # Check Pretty HostName (equivalent to macOS ComputerName)
+    hostnamectl status | grep "Pretty hostname"
 
 -------------------------------------------------------------------------------
 
     # Set the Static HostName (equivalent to macOS HostName)
     sudo hostnamectl set-hostname <new-static-hostname>
 
-    # Set Pretty HostName (macOS ComputerName)
-    sudo hostnamectl set-hostname "<new-pretty-hostname>" --pretty
-
     # Set the Transient HostName (equivalent to macOS LocalHostName)
     sudo hostnamectl set-hostname <new-transient-hostname> --transient
-    
+
+    # Set Pretty HostName (equivalent to macOS ComputerName)
+    sudo hostnamectl set-hostname "<new-pretty-hostname>" --pretty
+
 -------------------------------------------------------------------------------
     
     # Create a test directory for LOGIK-PROJEKTS:
@@ -96,13 +99,13 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 ### Workstation Preparation (macOS):
 
-    # Check HostName (Linux Static hostname)
+    # Check HostName (equivalent to Linux Static hostname)
     scutil --get HostName
 
-    # Check LocalHostName (Linux Transient HostName)
+    # Check LocalHostName (equivalent to Linux Transient HostName)
     scutil --get LocalHostName
 
-    # Check ComputerName (Linux Pretty HostName)
+    # Check ComputerName (equivalent to Linux Pretty HostName)
     scutil --get ComputerName
 
 -------------------------------------------------------------------------------
@@ -110,10 +113,10 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
     # Set the HostName (equivalent to Linux Static hostname)
     sudo scutil --set HostName <new-hostname>
 
-    # Set LocalHostName (Linux Transient HostName)
+    # Set LocalHostName (equivalent to Linux Transient HostName)
     sudo scutil --set LocalHostName <new-local-hostname>
 
-    # Set ComputerName (Linux Pretty HostName)
+    # Set ComputerName (equivalent to Linux Pretty HostName)
     sudo scutil --set ComputerName <new-computer-name>
 
 -------------------------------------------------------------------------------
@@ -231,6 +234,166 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 -------------------------------------------------------------------------------
 
+### Running LOGIK-PROJEKT:
+
+    # On Linux, look in the Activities menu for LOGIK-PROJEKT.
+    # Add the desktop launcher to your favorites.
+    # Double click the desktop launcher to run LOGIK-PROJEKT.
+
+    # On macOS, look in the LOGIK-PROJEKT folder for the LOGIK-PROJEKT.app.
+    # Add the LOGIK-PROJEKT.app to your dock.
+    # Double click the LOGIK-PROJEKT.app to run LOGIK-PROJEKT.
+
+-------------------------------------------------------------------------------
+
+### Troubleshooting Permissions and Python:
+
+    # There may be permission errors on your PROJEKTS directory.
+    # Check that the permissions on your PROJEKTS directory are 777.
+
+    # Errors have been seen on Rocky Linux 8.7 and macOS 13 related to python:
+    # On Rocky Linux 8.7 errors have been seen related to python3.6.
+    # On macOS 13 errors have been seen related to python3.9.
+
+    # Possible Solutions:
+
+    1. Install the Desired Python Version:
+    - First, ensure you have the desired Python version installed.
+    - For example, to install Python 3.11:
+        ```bash
+        sudo dnf install python3.11
+        ```
+
+    2. Configure Alternatives:
+    - Add the new Python version to the alternatives system:
+        ```bash
+        sudo alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+        sudo alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
+        ```
+
+    3. Select the Default Python Version:
+    - Use the `alternatives` command to choose the default Python version:
+        ```bash
+        sudo alternatives --config python3
+        ```
+        You will see a list of installed Python versions.
+        Select the number corresponding to Python 3.11.
+
+    4. Verify the Change:
+    - Check the Python version to ensure the switch was successful:
+        ```bash
+        python3 --version
+        ```
+
+-------------------------------------------------------------------------------
+
+### Application Tree
+
+    LOGIK-PROJEKT/
+    │
+    ├── docs/                                      # Documentation
+    │                                              
+    ├── install/                                   # Installation scripts
+    │   │                                          
+    │   └── logs/                                  # Installation logs
+    │                                              
+    ├── modules/                                   # Python modules
+    │   │                                          
+    │   ├── functions/                             # Python Functions
+    │   │   │                                      
+    │   │   ├── backup/                            # Backup functions
+    │   │   ├── create/                            # Create functions
+    │   │   ├── export/                            # Export functions
+    │   │   ├── get/                               # Get functions
+    │   │   ├── link/                              # Link functions
+    │   │   ├── run/                               # Run functions
+    │   │   ├── scratch/                           # Scratch functions
+    │   │   ├── shell/                             # Shell functions
+    │   │   ├── string/                            # String functions
+    │   │   ├── synchronize/                       # Synchronize functions
+    │   │   ├── update/                            # Update functions
+    │   │   └── wiretap/                           # Wiretap functions
+    │   │                                          
+    │   ├── version/                               # Scripts Version
+    │   |                                          
+    │   └── widgets/                               # Widgets
+    │       │                                      
+    │       ├── combo_box/                         # Combo box widgets
+    │       ├── layout/                            # Layout widgets
+    │       ├── line_edit/                         # Line edit widgets
+    │       └── style_sheet/                       # Style sheet widgets
+    │                                              
+    └── resources/                                 # Resources
+        │                                          
+        ├── cfg/                                   # Configuration files
+        │   │                                      
+        │   ├── nuke/                              # Foundry Nuke configuration
+        │   │                                      
+        │   └── projekt_configuration/             # Projekt configuration
+        │       │                                  
+        │       ├── bookmarks/                     # Bookmarks
+        │       ├── parameters/                    # Parameters
+        │       ├── roots/                         # Roots
+        │       └── tree/                          # Tree
+        │                                          
+        ├── docstrings/                            # Docstrings
+        │                                          
+        ├── flame/                                 # Flame Resources
+        │   │                                      
+        │   ├── opencolorio/                       # OpenColorIO
+        │   |   │                                  
+        │   │   └── ocio_scripts/                  # OCIO scripts
+        │   │                                      
+        │   ├── presets/                           # Flame Presets
+        │   │   |                                  
+        │   │   ├── batch/                         # Batch presets
+        │   │   ├── bookmarks/                     # Bookmark presets
+        │   │   ├── burn_metadata/                 # Burn metadata presets
+        │   │   ├── cfg/                           # Configuration presets
+        │   │   ├── export/                        # Export presets
+        │   │   ├── import/                        # Import presets
+        │   │   ├── mediahub/                      # Mediahub presets
+        │   │   ├── media_import/                  # Media import presets
+        │   │   ├── mediaImport/                   # MediaImport presets
+        │   │   ├── overlays/                      # Overlays presets
+        │   │   └── status/                        # Status presets
+        │   │                                      
+        │   ├── python/                            # Flame Python
+        │   │   |                                  
+        │   │   └── logik_projekt/                 # Logik Projekt Python
+        │   │       │                              
+        │   │       ├── openclip_tools/            # OpenClip tools
+        │   │       │                              
+        │   │       └── projekt_tools/             # Projekt tools
+        │   │                                      
+        │   ├── Syncolor/                          # Syncolor Presets
+        │   │   |                                  
+        │   │   └── Shared/                        # Shared presets
+        │   │       |                              
+        │   │       ├── policies/                  # Syncolor policies
+        │   │       |                              
+        │   │       └── transforms/                # Syncolor transforms
+        │   │           |                          
+        │   │           └── flame_colortoolkit/    # Flame ColorToolkit
+        │   │                                      
+        │   └── templates/                         # Flame Templates
+        │                                          
+        ├── icons/                                 # Application icons
+        │                                          
+        ├── tmp/                                   # Temporary files
+        │                                          
+        ├── utilities/                             # Application utilities
+        │   │                                      
+        │   └── flame_configs/                     # Flame configurations
+        │       |                                  
+        │       └── init_config/                   # Init configuration
+        │                                          
+        ├── version/                               # Application version
+        │                                          
+        └── www/                                   # HTML files
+
+-------------------------------------------------------------------------------
+
 ### Disclaimer:
 
     This file is part of LOGIK-PROJEKT.
@@ -258,110 +421,3 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
     If not, see <https://www.gnu.org/licenses/>.
 
     Contact: phil_man@mac.com
-
--------------------------------------------------------------------------------
-
-### Application Tree
-
-    LOGIK-PROJEKT/
-    │
-    ├── docs                                      # Documentation
-    │                                             
-    ├── install                                   # Installation scripts
-    │   │                                         
-    │   └── logs                                  # Installation logs
-    │                                             
-    ├── modules                                   # Python modules
-    │   │                                         
-    │   ├── functions                             # Python Functions
-    │   │   │                                     
-    │   │   ├── backup                            # Backup functions
-    │   │   ├── create                            # Create functions
-    │   │   ├── export                            # Export functions
-    │   │   ├── get                               # Get functions
-    │   │   ├── link                              # Link functions
-    │   │   ├── run                               # Run functions
-    │   │   ├── scratch                           # Scratch functions
-    │   │   ├── shell                             # Shell functions
-    │   │   ├── string                            # String functions
-    │   │   ├── synchronize                       # Synchronize functions
-    │   │   ├── update                            # Update functions
-    │   │   └── wiretap                           # Wiretap functions
-    │   │                                         
-    │   ├── version                               # Scripts Version
-    │   |                                         
-    │   └── widgets                               # Widgets
-    │       │                                     
-    │       ├── combo_box                         # Combo box widgets
-    │       ├── layout                            # Layout widgets
-    │       ├── line_edit                         # Line edit widgets
-    │       └── style_sheet                       # Style sheet widgets
-    │                                             
-    └── resources                                 # Resources
-        │                                         
-        ├── cfg                                   # Configuration files
-        │   │                                     
-        │   ├── nuke                              # Foundry Nuke configuration
-        │   │                                     
-        │   └── projekt_configuration             # Projekt configuration
-        │       │                                 
-        │       ├── bookmarks                     # Bookmarks
-        │       ├── parameters                    # Parameters
-        │       ├── roots                         # Roots
-        │       └── tree                          # Tree
-        │                                         
-        ├── docstrings                            # Docstrings
-        │                                         
-        ├── flame                                 # Flame Resources
-        │   │                                     
-        │   ├── opencolorio                       # OpenColorIO
-        │   |   │                                 
-        │   │   └── ocio_scripts                  # OCIO scripts
-        │   │                                     
-        │   ├── presets                           # Flame Presets
-        │   │   |                                 
-        │   │   ├── batch                         # Batch presets
-        │   │   ├── bookmarks                     # Bookmark presets
-        │   │   ├── burn_metadata                 # Burn metadata presets
-        │   │   ├── cfg                           # Configuration presets
-        │   │   ├── export                        # Export presets
-        │   │   ├── import                        # Import presets
-        │   │   ├── mediahub                      # Mediahub presets
-        │   │   ├── media_import                  # Media import presets
-        │   │   ├── mediaImport                   # MediaImport presets
-        │   │   ├── overlays                      # Overlays presets
-        │   │   └── status                        # Status presets
-        │   │                                     
-        │   ├── python                            # Flame Python
-        │   │   |                                 
-        │   │   └── logik_projekt                 # Logik Projekt Python
-        │   │       │                             
-        │   │       ├── openclip_tools            # OpenClip tools
-        │   │       │                             
-        │   │       └── projekt_tools             # Projekt tools
-        │   │                                     
-        │   ├── Syncolor                          # Syncolor Presets
-        │   │   |                                 
-        │   │   └── Shared                        # Shared presets
-        │   │       |                             
-        │   │       ├── policies                  # Syncolor policies
-        │   │       |                             
-        │   │       └── transforms                # Syncolor transforms
-        │   │           |                         
-        │   │           └── flame_colortoolkit    # Flame ColorToolkit
-        │   │                                     
-        │   └── templates                         # Flame Templates
-        │                                         
-        ├── icons                                 # Application icons
-        │                                         
-        ├── tmp                                   # Temporary files
-        │                                         
-        ├── utilities                             # Application utilities
-        │   │                                     
-        │   ├── flame_configs                     # Flame configurations
-        │   │   |                                 
-        │   │   └── init_config                   # Init configuration
-        │                                         
-        ├── version                               # Application version
-        │                                         
-        └── www                                   # HTML files
