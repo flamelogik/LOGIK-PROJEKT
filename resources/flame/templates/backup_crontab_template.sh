@@ -4,7 +4,7 @@
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
 #                   Copyright © 2024 man-made-mekanyzms
-                
+
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
@@ -26,12 +26,12 @@
 #                   Public License along with this program.
 
 #                   If not, see <https://www.gnu.org/licenses/>.
-                
+
 #                   Contact: phil_man@mac.com
 
 # -------------------------------------------------------------------------- #
 # File Name:        backup_crontab_template.sh
-# Version:          1.0.2
+# Version:          1.0.3
 # Created:          2024-01-19
 # Modified:         2024-10-07
 # -------------------------------------------------------------------------- #
@@ -111,14 +111,14 @@ read -p "  Enter your cron schedule (e.g., */5 * * * *): " cron_time
 create_crontab_entry() {
     local cron_time=$1
     local script_path=$2
-    local log_dir=$3
+    local log_dir=$backup_script_cron_log_dir
 
     # Generate a new log file name with the format: YYYY_MM_DD-HH_MM_LogikProjektName_cron_log.log
-    cron_command="$cron_time $script_path >> $log_dir/$(date +'%Y_%m_%d-%H_%M')_${the_projekt_name}_cron_log.log 2>&1"
-    
+    cron_command="$cron_time $script_path >> $log_dir/\$(date +'\%Y_\%m_\%d-\%H_\%M')_cron.log 2>&1"
+
     # Get existing crontab entries, append the new one, and apply it
     (crontab -l 2>/dev/null; echo "$cron_command") | crontab -
-    
+
     echo -e "\nCrontab entry for $script_path created successfully."
     echo -e "Each cron activity will be logged to a new file in: $log_dir"
 }
@@ -173,4 +173,8 @@ fi
 # version:          1.0.2
 # created:          2024-10-07 - 10:26:00
 # comments:         changed log to a dated log to prevent file ballooning.
+# -------------------------------------------------------------------------- #
+# version:          1.0.3
+# created:          2024-10-07 - 20:02:00
+# comments:         fixed individual log file paths.
 # -------------------------------------------------------------------------- #
