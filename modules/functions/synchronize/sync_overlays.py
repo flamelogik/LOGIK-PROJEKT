@@ -216,7 +216,7 @@ def sync_overlays(
 
     # Set the source and target directories for copying
     src_burn_metadata_dir = "resources/flame/presets/burn_metadata"
-    # tgt_shared_burn_metadata_dir = "/opt/Autodesk/shared/burn_metadata"
+    tgt_shared_burn_metadata_dir = "/opt/Autodesk/shared/burn_metadata"
     tgt_project_burn_metadata_dir = os.path.join(the_projekt_flame_dir, "burn_metadata")
 
     print("  synchronizing burn_metadata overlays.\n")
@@ -227,18 +227,18 @@ def sync_overlays(
     # Set the rsync options
     sync_opts = ["-av"]
 
-    # # Use rsync to copy the shared burn_metadata overlays
-    # result = subprocess.run(
-    #     ["rsync"] + sync_opts + [f"{src_burn_metadata_dir}/", f"{tgt_shared_burn_metadata_dir}/"],
-    #     text=True,
-    #     capture_output=True
-    # )
+    # Use rsync to copy the shared burn_metadata overlays
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_burn_metadata_dir}/", f"{tgt_shared_burn_metadata_dir}/"],
+        text=True,
+        capture_output=True
+    )
 
-    # # Print rsync output
-    # print(result.stdout.replace('\n', '\n  '))
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
 
-    # print("\n  media import preferences & rules synchronized.")
-    # print("\n" + separator + "\n")
+    print("\n  media import preferences & rules synchronized.")
+    print("\n" + separator + "\n")
 
     # Use rsync to copy the project-specific burn_metadata overlays
     result = subprocess.run(
