@@ -224,8 +224,7 @@ def sync_python_scripts(
     os.umask(0)
 
     # Set the rsync options
-    sync_opts = ["-av"]
-
+    sync_opts = ["-av --ignore-existing"]
 
     # Use rsync to copy the python scripts
     result = subprocess.run(
@@ -252,7 +251,7 @@ def sync_python_scripts(
 
 def main():
     # Example values for the function arguments
-    sync_opts = ["-av"]  # Update with actual rsync options
+    sync_opts = ["-av --ignore-existing"]  # Update with actual rsync options
     separator = "-" * 80
 
     # Call the function to synchronize Python scripts

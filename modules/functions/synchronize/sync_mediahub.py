@@ -224,7 +224,7 @@ def sync_mediahub_rules(
     os.umask(0)
 
     # Set the rsync options
-    sync_opts = ["-av"]
+    sync_opts = ["-av --ignore-existing"]
 
     # Use rsync to copy the media import rules and files
     result = subprocess.run(

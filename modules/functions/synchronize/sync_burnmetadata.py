@@ -225,7 +225,7 @@ def sync_overlays(
     os.umask(0)
 
     # Set the rsync options
-    sync_opts = ["-av"]
+    sync_opts = ["-av --ignore-existing"]
 
     # # Use rsync to copy the shared burn_metadata overlays
     # result = subprocess.run(
