@@ -224,7 +224,7 @@ def sync_io_presets(
     os.umask(0)
 
     # Set the rsync options
-    sync_opts = ["-av --ignore-existing"]
+    sync_opts = ["-av"]
 
     # Use rsync to copy the export presets to the project directory
     result = subprocess.run(

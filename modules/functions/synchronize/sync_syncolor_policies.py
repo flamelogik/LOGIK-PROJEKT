@@ -247,7 +247,7 @@ def sync_color_policies(
     os.umask(0)
 
     # Set the rsync options
-    sync_opts = ["-av --ignore-existing"]
+    sync_opts = ["-av"]
 
     # Use rsync to copy the policies
     result = subprocess.run(
@@ -285,7 +285,7 @@ def sync_color_policies(
 def main():
     # Example values for the function arguments
     # the_projekt_os = "Linux"  # Update with actual value
-    # sync_opts = ["-av --ignore-existing"]  # Update with actual rsync options
+    # sync_opts = ["-av"]  # Update with actual rsync options
     separator = "-" * 80
 
     # Call the function to synchronize color management policies

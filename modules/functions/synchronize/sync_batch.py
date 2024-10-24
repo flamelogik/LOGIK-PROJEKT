@@ -224,7 +224,7 @@ def sync_batch_project_bins(
     os.umask(0)
 
     # Set the rsync options
-    sync_opts = ["-av --ignore-existing"]
+    sync_opts = ["-av"]
 
     # Use rsync to copy nodes to the batch Projects bin
     result = subprocess.run(
