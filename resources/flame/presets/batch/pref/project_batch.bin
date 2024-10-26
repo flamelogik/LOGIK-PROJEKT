@@ -61,6 +61,10 @@
                 {
                     "NodeType": "Custom",
                     "Setup": "AP0_Rec709"
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "Template"
                 }
             ]
         },
