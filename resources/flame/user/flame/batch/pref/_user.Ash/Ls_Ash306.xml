@@ -1,0 +1,45 @@
+<ShaderNodePreset TimelineUseBack="False" LimitInputsToTexture="1" Name="Ash" Description="Adaptive sharpening - sharpen without ringing edges, or sharpen edges without increasing texture
+
+lewis@lewissaunders.com" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="threshold" Type="float" DisplayName="Edge threshold" Page="0" Col="2" Row="1" Tooltip="Increase to sharpen more edges" Inc="0.01" Default="0.13" Min="0.001" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Front" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="sigma" Type="float" DisplayName="Size" Page="0" Col="1" Row="2" Tooltip="Size of biggest details to sharpen" Inc="0.1" Default="2.5" Min="0.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="sigma" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="strengthmap" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Selective" InputColor="80, 80, 20" DisplayName="Strength" Tooltip="" NoInput="White" Index="1">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="strength" Type="float" DisplayName="Strength" Page="0" Col="1" Row="1" Tooltip="Amount of sharpening" Inc="0.01" Default="1.0" Min="0.0" Max="5.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" NoInput="Error" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adaptive" Type="bool" DisplayName="Adaptive" Tooltip="Protect edges from ringing" Default="True" Page="0" Col="1" Row="3">
+      </Uniform>
+      <Uniform Name="onlyedges" Type="bool" DisplayName="Sharpen edges only" Tooltip="Sharpen just the edges, instead of trying to keep the sharpening away from them" Default="False" Page="0" Col="2" Row="4">
+      </Uniform>
+      <Uniform Name="showedges" Type="bool" DisplayName="Show edges" Tooltip="Output edge matte" Default="False" Page="0" Col="2" Row="2">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Ash">
+      <Col Page="0" Col="1" Name="Sharpening">
+      </Col>
+      <Col Page="0" Col="2" Name="Adaption">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

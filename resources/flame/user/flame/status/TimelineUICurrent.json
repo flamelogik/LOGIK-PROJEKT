@@ -1,0 +1,188 @@
+{
+    "Settings": [
+        {
+            "name": "TimelineUIVideoSegmentColor",
+            "value": {
+                "r": 0.2352941334247589,
+                "g": 0.25882354378700259,
+                "b": 0.2823529541492462,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIAudioSegmentColor",
+            "value": {
+                "r": 0.19215688109397889,
+                "g": 0.24313727021217347,
+                "b": 0.26274511218070986,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIVideoContainerColor",
+            "value": {
+                "r": 0.1725490242242813,
+                "g": 0.2039215862751007,
+                "b": 0.2666666805744171,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIAudioContainerColor",
+            "value": {
+                "r": 0.0941176563501358,
+                "g": 0.1411764770746231,
+                "b": 0.14509804546833039,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIUnlinkedVideoColor",
+            "value": {
+                "r": 0.2352941334247589,
+                "g": 0.25882354378700259,
+                "b": 0.2823529541492462,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIUnlinkedAudioColor",
+            "value": {
+                "r": 0.19215688109397889,
+                "g": 0.24313727021217347,
+                "b": 0.26274511218070986,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIMatteContainerColor",
+            "value": {
+                "r": 0.2392157018184662,
+                "g": 0.250980406999588,
+                "b": 0.3176470696926117,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIBatchFXColor",
+            "value": {
+                "r": 0.19215688109397889,
+                "g": 0.24313727021217347,
+                "b": 0.29411765933036806,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIGapBatchFXColor",
+            "value": {
+                "r": 0.1725490242242813,
+                "g": 0.1882353127002716,
+                "b": 0.20784315466880799,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIGapFXColor",
+            "value": {
+                "r": 0.1725490242242813,
+                "g": 0.1882353127002716,
+                "b": 0.20784315466880799,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIHdrGapColor",
+            "value": {
+                "r": 0.1725490242242813,
+                "g": 0.1882353127002716,
+                "b": 0.20784315466880799,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUISubtitleGapColor",
+            "value": {
+                "r": 0.2823529541492462,
+                "g": 0.2705882489681244,
+                "b": 0.23137256503105164,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TimelineUIShowHandles",
+            "value": 2
+        },
+        {
+            "name": "TimelineUIShowThumbnails",
+            "value": true
+        },
+        {
+            "name": "TimelineUIShowAllMetadata",
+            "value": true
+        },
+        {
+            "name": "TimelineUIFocusOnTrim",
+            "value": false
+        },
+        {
+            "name": "TimelineUIPositionerSubFrame",
+            "value": true
+        },
+        {
+            "name": "TimelineUIAutoScrollSpeed",
+            "value": 100.0
+        },
+        {
+            "name": "TimelineUIShowGainAnimation",
+            "value": true
+        },
+        {
+            "name": "TimelineUIEnableAudioMeters",
+            "value": true
+        },
+        {
+            "name": "TimelineUIRenderPostFx",
+            "value": true
+        },
+        {
+            "name": "TimelineUIShowWaveforms",
+            "value": true
+        },
+        {
+            "name": "TimelineUIAudioWaveformScale",
+            "value": 3.0
+        },
+        {
+            "name": "TimelineUIPlaybackScroll",
+            "value": false
+        },
+        {
+            "name": "TimelineChangeDefaultShotName",
+            "value": "NAMEOFSPOT_<background segment###>0"
+        },
+        {
+            "name": "TimelineChangeDefaultUntitledBfxName",
+            "value": ""
+        },
+        {
+            "name": "TimelineChangeDefaultMarkComment",
+            "value": "<user>_<time>"
+        },
+        {
+            "name": "TimelineChangeDefaultMarkName",
+            "value": ""
+        },
+        {
+            "name": "TimelineChangeDefaultSegMarkComment",
+            "value": "<user>_<time>"
+        },
+        {
+            "name": "TimelineChangeDefaultSegMarkName",
+            "value": ""
+        },
+        {
+            "name": "TimelineUISourceConformIDOptions",
+            "value": 1
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "Settings": [
+        {
+            "name": "UndoLevels",
+            "value": 50
+        },
+        {
+            "name": "SourceSnapToGrid",
+            "value": false
+        },
+        {
+            "name": "SourceGridSize",
+            "value": 10
+        },
+        {
+            "name": "EditdeskLoadPos",
+            "value": 0
+        },
+        {
+            "name": "EditdeskDisplayRecordViewer",
+            "value": true
+        },
+        {
+            "name": "BGIntensity",
+            "value": 11.5
+        },
+        {
+            "name": "UIBrightness",
+            "value": 0
+        },
+        {
+            "name": "UIContrast",
+            "value": 1.0
+        },
+        {
+            "name": "BoldFontEnabled",
+            "value": false
+        },
+        {
+            "name": "EditdeskScaleSetups",
+            "value": true
+        },
+        {
+            "name": "ShowUtilityPanelBatch",
+            "value": false
+        },
+        {
+            "name": "ShowUtilityPanelConform",
+            "value": false
+        },
+        {
+            "name": "ShowUtilityPanelFim",
+            "value": true
+        },
+        {
+            "name": "ShowUtilityPanelOther",
+            "value": false
+        },
+        {
+            "name": "ShowDirArea",
+            "value": true
+        },
+        {
+            "name": "DirViewFullHeight",
+            "value": true
+        },
+        {
+            "name": "DirViewDual",
+            "value": false
+        },
+        {
+            "name": "DirViewAltUIFullWidth",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelSideRequested",
+            "value": 0
+        },
+        {
+            "name": "FxClipsThumbnailTextEnabled",
+            "value": true
+        },
+        {
+            "name": "ExpandFolderOnFilterActivation",
+            "value": true
+        },
+        {
+            "name": "SourceAreaDirViewSide",
+            "value": 1
+        },
+        {
+            "name": "UtilityPanelAltUIRequested",
+            "value": false
+        },
+        {
+            "name": "SourceAreaDirViewAltUIRequested",
+            "value": true
+        },
+        {
+            "name": "AltUICenterAreaRequested",
+            "value": true
+        },
+        {
+            "name": "EditdeskRecordViewX",
+            "value": 500
+        },
+        {
+            "name": "EditdeskRecordViewY",
+            "value": 20
+        },
+        {
+            "name": "EditdeskRecordViewHeight",
+            "value": 150
+        },
+        {
+            "name": "EditdeskHasTimeline",
+            "value": false
+        },
+        {
+            "name": "EditdeskTimelineFocusOnRecord",
+            "value": false
+        },
+        {
+            "name": "EditdeskMultiSamples",
+            "value": 0
+        },
+        {
+            "name": "EditdeskGraphics32BitsBuffer",
+            "value": false
+        },
+        {
+            "name": "DropFrameBumpMode",
+            "value": 0
+        },
+        {
+            "name": "ClipHistoryKeepMode",
+            "value": 2
+        },
+        {
+            "name": "IgnoreScanFormat",
+            "value": false
+        },
+        {
+            "name": "TimeConvertFormat",
+            "value": 0
+        },
+        {
+            "name": "TimeConvertLongFormatOnly",
+            "value": true
+        },
+        {
+            "name": "TimeConvertShowSecInTimeConvert",
+            "value": false
+        },
+        {
+            "name": "TimeConvertCompactTokens",
+            "value": false
+        }
+    ]
+}

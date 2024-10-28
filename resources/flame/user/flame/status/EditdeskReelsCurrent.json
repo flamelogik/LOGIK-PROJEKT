@@ -1,0 +1,36 @@
+{
+    "Settings": [
+        {
+            "name": "SourceReelsOrientation",
+            "value": 0
+        },
+        {
+            "name": "SourceReelsDirection",
+            "value": false
+        },
+        {
+            "name": "EditdeskReelScrollDecay",
+            "value": 10.0
+        },
+        {
+            "name": "EditdeskReelClipSpacingPxl",
+            "value": 80
+        },
+        {
+            "name": "DefaultReelGroupReelsNumber",
+            "value": 2
+        },
+        {
+            "name": "DefaultBatchGroupReelsNumber",
+            "value": 1
+        },
+        {
+            "name": "DefaultBatchRenderGroupReelsNumber",
+            "value": 1
+        },
+        {
+            "name": "EditdeskReelHeight",
+            "value": 450
+        }
+    ]
+}

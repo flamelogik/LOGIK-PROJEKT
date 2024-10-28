@@ -1,0 +1,11 @@
+{
+    "Version": "2025.1",
+    "actionShortcuts": [
+        {
+            "Description": "GMask: Node Create",
+            "Category": "Action",
+            "FunctionName": "Action_HK_GMaskCreate",
+            "Key1": "KEY_N"
+        }
+    ]
+}

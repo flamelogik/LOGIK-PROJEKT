@@ -1,0 +1,35 @@
+{
+    "Version": "2025.1",
+    "generalShortcuts": [
+        {
+            "Description": "Flush Render",
+            "Category": "Clip Mgmt",
+            "FunctionName": "ED_FlushRender"
+        },
+        {
+            "Description": "Flush Maps and ML Media Cache",
+            "Category": "Clip Mgmt",
+            "FunctionName": "ED_FlushMapsCache",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_CTL",
+            "Key3": "KEY_COMMAND",
+            "Key4": "KEY_F"
+        },
+        {
+            "Description": "Select Next Version",
+            "Category": "Clip Mgmt",
+            "FunctionName": "ED_SelectNextVersion",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_CTL",
+            "Key3": "KEY_ARW_U"
+        },
+        {
+            "Description": "Select Previous Version",
+            "Category": "Clip Mgmt",
+            "FunctionName": "ED_SelectPreviousVersion",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_CTL",
+            "Key3": "KEY_ARW_D"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "Settings": [
+        {
+            "name": "HidePathIfNameSet",
+            "value": true
+        },
+        {
+            "name": "AutoNameWithDirectory",
+            "value": true
+        }
+    ]
+}

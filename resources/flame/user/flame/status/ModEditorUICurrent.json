@@ -1,0 +1,20 @@
+{
+    "Settings": [
+        {
+            "name": "ModEditorDefaultInterpType",
+            "value": 4
+        },
+        {
+            "name": "ModEditorDefaultAudioGainInterpType",
+            "value": 1
+        },
+        {
+            "name": "ModEditorDefaultExtrapType",
+            "value": 0
+        },
+        {
+            "name": "ModEditorDefaultTangentMode",
+            "value": 1
+        }
+    ]
+}

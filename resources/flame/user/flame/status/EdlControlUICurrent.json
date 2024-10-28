@@ -1,0 +1,124 @@
+{
+    "Settings": [
+        {
+            "name": "EdlPrefBeepAssem",
+            "value": true
+        },
+        {
+            "name": "EdlPrefAllowZero",
+            "value": false
+        },
+        {
+            "name": "EdlPrefKeepCursor",
+            "value": false
+        },
+        {
+            "name": "EdlPrefUseHotkey",
+            "value": true
+        },
+        {
+            "name": "EdlPrefDisableSlipReel",
+            "value": false
+        },
+        {
+            "name": "EdlPrefUseNameCapture",
+            "value": true
+        },
+        {
+            "name": "EdlPrefUseNameAssembly",
+            "value": true
+        },
+        {
+            "name": "EdlPrefUseEditSync",
+            "value": true
+        },
+        {
+            "name": "EdlPrefOverRidePrjRes",
+            "value": false
+        },
+        {
+            "name": "EdlPrefAutoSoftResize",
+            "value": false
+        },
+        {
+            "name": "EdlPrefIncrementName",
+            "value": true
+        },
+        {
+            "name": "EdlPrefCreateAssemblyUnlinkMedia",
+            "value": true
+        },
+        {
+            "name": "EdlPrefUsePrerollValue",
+            "value": true
+        },
+        {
+            "name": "EdlPrefCreateOneClipPerEvent",
+            "value": false
+        },
+        {
+            "name": "EdlPrefAutoSaveEachReel",
+            "value": false
+        },
+        {
+            "name": "EdlPrefCaptureUnlinkHighRes",
+            "value": false
+        },
+        {
+            "name": "EdlPrefUseReelName",
+            "value": true
+        },
+        {
+            "name": "EdlShowKK",
+            "value": 0
+        },
+        {
+            "name": "EdlViewMode",
+            "value": 0
+        },
+        {
+            "name": "EdlC23R_ShowFrameType",
+            "value": true
+        },
+        {
+            "name": "EdlC23R_ShowBlackFrames",
+            "value": true
+        },
+        {
+            "name": "EdlC23R_AutoFillBlackFrames",
+            "value": true
+        },
+        {
+            "name": "EdlC23R_TwFitBool",
+            "value": true
+        },
+        {
+            "name": "EdlC23R_TwFitMixValue",
+            "value": 3
+        },
+        {
+            "name": "EdlC23R_RecRefFrame",
+            "value": "0 29.97 fps NDF"
+        },
+        {
+            "name": "EdlC23R_RecRefFrameType",
+            "value": false
+        },
+        {
+            "name": "EdlC23R_DefaultRefFrameType",
+            "value": false
+        },
+        {
+            "name": "EdlCreateCopy",
+            "value": true
+        },
+        {
+            "name": "EdlAutoRender",
+            "value": false
+        },
+        {
+            "name": "EdlSourceSoftResize",
+            "value": false
+        }
+    ]
+}

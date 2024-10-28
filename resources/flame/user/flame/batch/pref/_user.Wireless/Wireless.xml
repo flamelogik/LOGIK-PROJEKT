@@ -1,0 +1,61 @@
+<ShaderNodePreset LimitInputsToTexture="True" Name="Wireless" Description="Wireless - removes wires, or other straight-ish things.  Be aware it doesn't behave in proxy mode!
+
+Demo: http://youtube.com/watch?v=vlzvr23rJkU
+
+John Geehreng made a nice setup which links this shader to axes and controls inside Action to make tracking faster - get it via the Logik Portal from https://www.pyflame.com
+
+lewis@lewissaunders.com" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform InputType="Front" Name="front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform IconType="None" Name="starttrack" Type="vec2" DisplayName="Start (paste tracker channels)" Page="0" Col="0" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform IconDefaultState="True" IconType="Axis" Name="startoffset" Type="vec2" DisplayName="Start manual" Page="0" Col="0" Row="2" Tooltip="" Inc="0.001">
+         <SubUniform Default="0.25" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.25" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform IconType="None" Name="endtrack" Type="vec2" DisplayName="End (paste tracker channels)" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform IconDefaultState="True" IconType="Axis" Name="endoffset" Type="vec2" DisplayName="End manual" Page="0" Col="1" Row="2" Tooltip="" Inc="0.001">
+         <SubUniform Default="0.75" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.75" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="curve" Type="float" DisplayName="Curve" Page="0" Col="2" Row="0" Tooltip="" Inc="0.01" Default="0.001" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="hook" Type="float" DisplayName="Hook" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="overlay" Type="bool" DisplayName="Draw workings" Tooltip="" Default="True" Page="0" Col="2" Row="2">
+      </Uniform>
+      <Uniform Name="radius" Type="float" DisplayName="Radius" Page="0" Col="2" Row="3" Tooltip="" Inc="0.01" Default="0.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="restoresize" Type="float" DisplayName="Restore size" Page="0" Col="3" Row="0" Tooltip="" Inc="0.01" Default="5.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="restoremix" Type="float" DisplayName="Restore mix" Page="0" Col="3" Row="1" Tooltip="" Inc="0.01" Default="0.5" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="angle" Type="float" DisplayName="Angle" Page="0" Col="3" Row="3" Tooltip="" Inc="0.1" Default="0.0" Min="-360.0" Max="360.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Wireless">
+      <Col Page="0" Col="0" Name="Start">
+      </Col>
+      <Col Page="0" Col="1" Name="End">
+      </Col>
+      <Col Page="0" Col="2" Name="Shape">
+      </Col>
+      <Col Page="0" Col="3" Name="Options">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

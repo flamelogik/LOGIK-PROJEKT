@@ -1,0 +1,32 @@
+{
+    "Settings": [
+        {
+            "name": "PreviewMode",
+            "value": 0
+        },
+        {
+            "name": "AlwaysSendGrabArea",
+            "value": false
+        },
+        {
+            "name": "ScaleClipToFitMonitor",
+            "value": true
+        },
+        {
+            "name": "ScreenGrabScaleClipToFitMonitor",
+            "value": true
+        },
+        {
+            "name": "OTBUseRatio",
+            "value": true
+        },
+        {
+            "name": "OTBViewportMonitoring",
+            "value": true
+        },
+        {
+            "name": "PreviewOverlayMode",
+            "value": 0
+        }
+    ]
+}

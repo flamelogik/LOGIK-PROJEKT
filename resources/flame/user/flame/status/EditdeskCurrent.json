@@ -1,0 +1,248 @@
+{
+    "Settings": [
+        {
+            "name": "EditdeskShowSourceTimelineTab",
+            "value": true
+        },
+        {
+            "name": "EditdeskRecAreaSortEnabled",
+            "value": true
+        },
+        {
+            "name": "EditdeskRecAreaUseLocalisedSort",
+            "value": true
+        },
+        {
+            "name": "EditdeskSourceTimelineTabMode",
+            "value": 1
+        },
+        {
+            "name": "EditdeskPlayerDisplayModeBackup",
+            "value": 8
+        },
+        {
+            "name": "EditdeskConformDisplayModeSingle",
+            "value": 0
+        },
+        {
+            "name": "EditdeskConformDisplayModeCompare",
+            "value": 3
+        },
+        {
+            "name": "EditdeskConformDisplayPlayer",
+            "value": false
+        },
+        {
+            "name": "EditdeskPlayerCompareLayerMode",
+            "value": 0
+        },
+        {
+            "name": "EditdeskPlayerGrabRefIndex",
+            "value": 0
+        },
+        {
+            "name": "EditdeskRefResizeOption",
+            "value": 0
+        },
+        {
+            "name": "EditdeskRefResizeQuality",
+            "value": 4
+        },
+        {
+            "name": "EditdeskRefResizeAspect",
+            "value": false
+        },
+        {
+            "name": "ConformUISaveSourcesMenu",
+            "value": true
+        },
+        {
+            "name": "ConformUIKeepClipName",
+            "value": false
+        },
+        {
+            "name": "ConformUIKeepShotName",
+            "value": false
+        },
+        {
+            "name": "ConformUIUpdateSequencesAutoLinkMode",
+            "value": 0
+        },
+        {
+            "name": "ConformUIClearUpdateSequenceMarks",
+            "value": true
+        },
+        {
+            "name": "ConformUICopyFxOnCreateShotsSequence",
+            "value": true
+        },
+        {
+            "name": "ConformUIAppendOnUpdateSourcesSequence",
+            "value": false
+        },
+        {
+            "name": "ConformUISourcesSequenceSortMode",
+            "value": true
+        },
+        {
+            "name": "ConformUICreateBGoRConvertFXs",
+            "value": false
+        },
+        {
+            "name": "ConformUIHideLinked",
+            "value": false
+        },
+        {
+            "name": "ConformUINumLimitHandles",
+            "value": 8
+        },
+        {
+            "name": "ConformUILoadType",
+            "value": 1
+        },
+        {
+            "name": "EditdeskDualDirViewSliderValue",
+            "value": 2560
+        },
+        {
+            "name": "EditdeskScopesSliderValue",
+            "value": 788
+        },
+        {
+            "name": "EditdeskConformPreviewerSliderValue",
+            "value": 984
+        },
+        {
+            "name": "EditdeskUtilityPanelSliderValue",
+            "value": 640
+        },
+        {
+            "name": "EditdeskDualConformViewSliderValue",
+            "value": 2240
+        },
+        {
+            "name": "EditdeskDualTimelineSliderValue",
+            "value": 230
+        },
+        {
+            "name": "ConformAutoLink",
+            "value": true
+        },
+        {
+            "name": "ConformFilterPotentialMatch",
+            "value": true
+        },
+        {
+            "name": "ConformAutoScrollTimelinePositioner",
+            "value": true
+        },
+        {
+            "name": "ConformFilterLockedTracks",
+            "value": false
+        },
+        {
+            "name": "ConformFilterHiddenSegments",
+            "value": false
+        },
+        {
+            "name": "ConformUseStartFrameOffset",
+            "value": true
+        },
+        {
+            "name": "EditdeskTimelineMasterFocus",
+            "value": true
+        },
+        {
+            "name": "ChangeTCStartingPoint",
+            "value": 1
+        },
+        {
+            "name": "ChangeFrameStartingPoint",
+            "value": 1
+        },
+        {
+            "name": "ChangeFrameUseCCW",
+            "value": true
+        },
+        {
+            "name": "ChangeFrameSelectionUseCCW",
+            "value": true
+        },
+        {
+            "name": "EditdeskShowSideMenu",
+            "value": false
+        },
+        {
+            "name": "EditdeskTopAreaLayout",
+            "value": 8
+        },
+        {
+            "name": "EditdeskHasSourceReels",
+            "value": 1
+        },
+        {
+            "name": "EditdeskEditMenuPos",
+            "value": 1039
+        },
+        {
+            "name": "MediaHubDirAreaWidth",
+            "value": 1590
+        },
+        {
+            "name": "ConformDirAreaWidth",
+            "value": 1136
+        },
+        {
+            "name": "FimDirAreaWidth",
+            "value": 640
+        },
+        {
+            "name": "BatchDirAreaWidth",
+            "value": 660
+        },
+        {
+            "name": "TimelineAndToolsDirAreaWidth",
+            "value": 1294
+        },
+        {
+            "name": "MediaHubWithPreviwerUtilityPanelWidth",
+            "value": 640
+        },
+        {
+            "name": "MediaHubNoPreviewerUtilityPanelWidth",
+            "value": 640
+        },
+        {
+            "name": "ComformUtilityPanelWidth",
+            "value": 640
+        },
+        {
+            "name": "FimUtilityPanelWidth",
+            "value": 640
+        },
+        {
+            "name": "BatchUtilityPanelWidth",
+            "value": 640
+        },
+        {
+            "name": "TimelineAndToolsUtilityPanelWidth",
+            "value": 640
+        },
+        {
+            "name": "EditdeskFSPlayerHasBlackBG",
+            "value": true
+        },
+        {
+            "name": "SavedReferenceDefaultNamePattern",
+            "value": "Reference "
+        },
+        {
+            "name": "DefaultMorphType",
+            "value": 3
+        },
+        {
+            "name": "MorphInteractiveModeTL",
+            "value": 3
+        }
+    ]
+}

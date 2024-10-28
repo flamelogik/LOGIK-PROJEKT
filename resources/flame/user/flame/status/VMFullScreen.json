@@ -1,0 +1,3511 @@
+{
+    "version": 16.0,
+    "UpdateMode": true,
+    "Widgets": true,
+    "WidgetsDrawRT": true,
+    "remapAllMode": 1,
+    "ForceHideFloatingViewPort": true,
+    "Layouts": [
+        {
+            "Name": "Player",
+            "CurViewport": 0,
+            "Viewports": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "posX1": 0.0,
+                    "posY1": 0.0,
+                    "posX2": 1.0,
+                    "posY2": 1.0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": true,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.49986979365348818,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.49976852536201479,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 9,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": true,
+                    "DynamicContrastSupp": true,
+                    "DynamicGammaSupp": true,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": false,
+                            "zoom": 2.103137731552124,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": false,
+                            "zoom": 1.0932528972625733,
+                            "xpan": -31.099849700927736,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": false,
+                            "zoom": 4.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": false,
+                            "zoom": 2.2841408252716066,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": false,
+                            "zoom": 0.3367578983306885,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": 0.8890448808670044,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "Zoom": 0.6012353897094727,
+                            "panX": 0,
+                            "panY": 0,
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "Zoom": 0.6012353897094727,
+                            "panX": 0,
+                            "panY": 0,
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": false,
+                    "IsMetadataOverlayOn": true,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.49986979365348818,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.49976852536201479,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": true,
+                    "StereoMode": 9,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": true,
+                    "DynamicContrastSupp": true,
+                    "DynamicGammaSupp": true,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": -1078.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": -1917.9998779296876,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": -1150.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": -1917.9998779296876,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -2158.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": -2698.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": -3837.999755859375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -3837.999755859375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": -4094.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": -4606.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": -4614.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "SrcRec",
+            "CurViewport": 0,
+            "Viewports": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "posX1": 0.0,
+                    "posY1": 0.0,
+                    "posX2": 0.5008790493011475,
+                    "posY2": 1.0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": true,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.5,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.5,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 0,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": false,
+                    "DynamicContrastSupp": false,
+                    "DynamicGammaSupp": false,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": 0.651685357093811,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 0.48401105403900149,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": 0.38294517993927,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": 0.18081331253051759,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": 0.1769353151321411,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "Zoom": 0.7416666746139526,
+                            "panX": 0,
+                            "panY": 0,
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "posX1": 0.5008790493011475,
+                    "posY1": 0.0,
+                    "posX2": 1.0,
+                    "posY2": 1.0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": false,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.5,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.5,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 0,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": false,
+                    "DynamicContrastSupp": false,
+                    "DynamicGammaSupp": false,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": 0.651685357093811,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 0.47860538959503176,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": 0.37717902660369875,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": 0.17432653903961183,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": 0.1718813180923462,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "Zoom": 0.7416666746139526,
+                            "panX": 0,
+                            "panY": 0,
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": false,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.5,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.5,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 0,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": false,
+                    "DynamicContrastSupp": false,
+                    "DynamicGammaSupp": false,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": -1078.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": -1917.9998779296876,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": -1150.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": -1917.9998779296876,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -2158.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": -2698.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": -3837.999755859375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -3837.999755859375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": -4094.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": -4606.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": -4614.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Triptych",
+            "CurViewport": 0,
+            "Viewports": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "posX1": 0.0,
+                    "posY1": 0.0,
+                    "posX2": 0.3350263833999634,
+                    "posY2": 1.0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": true,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.5,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.5,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 0,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": false,
+                    "DynamicContrastSupp": false,
+                    "DynamicGammaSupp": false,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 0.8598575592041016,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 0.7127532958984375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": 0.7135200500488281,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": 0.651685357093811,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -0.28299641609191897,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": -0.4351961612701416,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": -0.7428569793701172,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": -0.7508938312530518,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "Zoom": 0.7416666746139526,
+                            "panX": 0,
+                            "panY": 0,
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "posX1": 0.3350263833999634,
+                    "posY1": 0.0,
+                    "posX2": 0.6649736166000366,
+                    "posY2": 1.0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": false,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.5,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.5,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 0,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": false,
+                    "DynamicContrastSupp": false,
+                    "DynamicGammaSupp": false,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 0.8419783115386963,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 0.7065868377685547,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": 0.705035924911499,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": 0.651685357093811,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -0.3104691505432129,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": -0.46450066566467287,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": -0.7659063339233398,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": -0.7640719413757324,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "Zoom": 0.7416666746139526,
+                            "panX": 0,
+                            "panY": 0,
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "posX1": 0.6649736166000366,
+                    "posY1": 0.0,
+                    "posX2": 1.0,
+                    "posY2": 1.0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": false,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.5,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.5,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 0,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": false,
+                    "DynamicContrastSupp": false,
+                    "DynamicGammaSupp": false,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": 1.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": 0.8598575592041016,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": 0.7127532958984375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": 0.7135200500488281,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": 0.651685357093811,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -0.28299641609191897,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": -0.4351961612701416,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": -0.7428569793701172,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": -0.7508938312530518,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "Zoom": 0.7416666746139526,
+                            "panX": 0,
+                            "panY": 0,
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "rmask": true,
+                    "gmask": true,
+                    "bmask": true,
+                    "emask": false,
+                    "Navigator": false,
+                    "Toolbar": false,
+                    "NavPosX": 20.0,
+                    "NavPosY": 84.0,
+                    "Broadcast": false,
+                    "IsMetadataOverlayOn": false,
+                    "ViewingRuleInfoMap": [
+                        {
+                            "InputColourSpace": "ACEScg",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Rec.709 video",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "ACES 1.0 SDR-video",
+                                    "ViewName": "ACES10_SDR-video"
+                                },
+                                {
+                                    "RuleName": "",
+                                    "ViewName": ""
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "Unknown",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                },
+                                {
+                                    "RuleName": "Default",
+                                    "ViewName": "Raw"
+                                }
+                            ]
+                        },
+                        {
+                            "InputColourSpace": "sRGB",
+                            "ViewingDisplay": "Rec.709 video",
+                            "RuleInfo": [
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                },
+                                {
+                                    "RuleName": "Video (colorimetric)",
+                                    "ViewName": "colorimetric_view"
+                                }
+                            ]
+                        }
+                    ],
+                    "Splitbar": {
+                        "AngleSplitPivotX": 0.0,
+                        "AngleSplitPivotY": 0.0,
+                        "AngleSplitSlope": 1.0,
+                        "VerticalSplitPivotX": 0.5,
+                        "VerticalSplitPivotY": 0.5,
+                        "HorizontalSplitPivotX": 0.5,
+                        "HorizontalSplitPivotY": 0.5,
+                        "Orientation": true,
+                        "Visible": true,
+                        "CurrentReference": 0
+                    },
+                    "CompareMode": 100,
+                    "PrevCompareMode": 106,
+                    "Expo": 0.0,
+                    "Cnt": 1.0,
+                    "Gamma": 1.0,
+                    "RcBypass": false,
+                    "ExposureContrastGammaBypass": false,
+                    "StereoEnabled": false,
+                    "StereoMode": 0,
+                    "BlendFactor": 0.5,
+                    "GridSize": 50,
+                    "DiffYUV": false,
+                    "DiffClamp": true,
+                    "DiffMinClamp": 0.0,
+                    "DiffMaxClamp": 1.0,
+                    "DiffLift": 0.0,
+                    "DiffGain": 1.0,
+                    "ReferencePanX": 0,
+                    "ReferencePanY": 0,
+                    "ReferenceZoom": 1.0,
+                    "DynamicExposureSupp": false,
+                    "DynamicContrastSupp": false,
+                    "DynamicGammaSupp": false,
+                    "DynamicLookSupp": false,
+                    "3DEnabled": false,
+                    "ScopesEnabled": false,
+                    "ScopesPreset": "Default",
+                    "ScopesPresetCategory": "autodesk",
+                    "Viewers": [],
+                    "LatLongEnabled": false,
+                    "OrbitXValue": 0.0,
+                    "OrbitYValue": 0.0,
+                    "Filtering": true,
+                    "ZoomPanPref": [
+                        {
+                            "w": 1080,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": -1078.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1080,
+                            "h": 1920,
+                            "fit": true,
+                            "zoom": -1917.9998779296876,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1152,
+                            "h": 336,
+                            "fit": true,
+                            "zoom": -1150.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 1920,
+                            "h": 1080,
+                            "fit": true,
+                            "zoom": -1917.9998779296876,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -2158.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 2700,
+                            "fit": true,
+                            "zoom": -2698.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 2160,
+                            "h": 3840,
+                            "fit": true,
+                            "zoom": -3837.999755859375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 3840,
+                            "h": 2160,
+                            "fit": true,
+                            "zoom": -3837.999755859375,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4096,
+                            "h": 2304,
+                            "fit": true,
+                            "zoom": -4094.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4608,
+                            "h": 3164,
+                            "fit": true,
+                            "zoom": -4606.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        },
+                        {
+                            "w": 4616,
+                            "h": 2204,
+                            "fit": true,
+                            "zoom": -4614.0,
+                            "xpan": 0.0,
+                            "ypan": 0.0
+                        }
+                    ],
+                    "SideBySideZoomPanPref": [],
+                    "Viewers": [
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 1,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        },
+                        {
+                            "Cat0": "",
+                            "Cat1": "",
+                            "Cat2": "",
+                            "CatOffset": 0,
+                            "FitZoom": "",
+                            "DynamicLookEnabled": false,
+                            "ZoomedRefWidth": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "CurLayout": "Player",
+    "SharedVP": [
+        {
+            "SharedVPName": "BottomSchematic",
+            "Cat0": "",
+            "Cat1": "",
+            "Cat2": "",
+            "CatOffset": 0,
+            "posX1": 0.0,
+            "posY1": 0.0,
+            "posX2": 1.0,
+            "posY2": 1.0,
+            "rmask": true,
+            "gmask": true,
+            "bmask": true,
+            "emask": false,
+            "Navigator": false,
+            "Toolbar": true,
+            "NavPosX": 20.0,
+            "NavPosY": 84.0,
+            "Broadcast": false,
+            "IsMetadataOverlayOn": false,
+            "ViewingRuleInfoMap": [
+                {
+                    "InputColourSpace": "ACEScg",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Rec.709 video",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "",
+                            "ViewName": ""
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Unknown",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        },
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "sRGB",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                }
+            ],
+            "Splitbar": {
+                "AngleSplitPivotX": 0.0,
+                "AngleSplitPivotY": 0.0,
+                "AngleSplitSlope": 1.0,
+                "VerticalSplitPivotX": 0.5,
+                "VerticalSplitPivotY": 0.5,
+                "HorizontalSplitPivotX": 0.5,
+                "HorizontalSplitPivotY": 0.5,
+                "Orientation": true,
+                "Visible": true,
+                "CurrentReference": 0
+            },
+            "CompareMode": 100,
+            "PrevCompareMode": 106,
+            "Expo": 0.0,
+            "Cnt": 1.0,
+            "Gamma": 1.0,
+            "RcBypass": false,
+            "ExposureContrastGammaBypass": false,
+            "StereoEnabled": false,
+            "StereoMode": 0,
+            "BlendFactor": 0.5,
+            "GridSize": 50,
+            "DiffYUV": false,
+            "DiffClamp": true,
+            "DiffMinClamp": 0.0,
+            "DiffMaxClamp": 1.0,
+            "DiffLift": 0.0,
+            "DiffGain": 1.0,
+            "ReferencePanX": 0,
+            "ReferencePanY": 0,
+            "ReferenceZoom": 1.0,
+            "DynamicExposureSupp": false,
+            "DynamicContrastSupp": false,
+            "DynamicGammaSupp": false,
+            "DynamicLookSupp": false,
+            "3DEnabled": false,
+            "ScopesEnabled": false,
+            "ScopesPreset": "Default",
+            "ScopesPresetCategory": "autodesk",
+            "Viewers": [],
+            "LatLongEnabled": false,
+            "OrbitXValue": 0.0,
+            "OrbitYValue": 0.0,
+            "Filtering": true,
+            "ZoomPanPref": [
+                {
+                    "w": 1080,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -0.15568876266479493,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1080,
+                    "h": 1920,
+                    "fit": true,
+                    "zoom": -1.8323352336883546,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1152,
+                    "h": 336,
+                    "fit": true,
+                    "zoom": 0.4453442096710205,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1920,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -0.5910930633544922,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -2.31137752532959,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2700,
+                    "fit": true,
+                    "zoom": -3.38922119140625,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 3840,
+                    "fit": true,
+                    "zoom": -5.664670467376709,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 3840,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -3.1821861267089845,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4096,
+                    "h": 2304,
+                    "fit": true,
+                    "zoom": -3.527665138244629,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4608,
+                    "h": 3164,
+                    "fit": true,
+                    "zoom": -4.315369129180908,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4616,
+                    "h": 2204,
+                    "fit": true,
+                    "zoom": -4.229419708251953,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                }
+            ],
+            "SideBySideZoomPanPref": [],
+            "Viewers": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 1,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                }
+            ]
+        },
+        {
+            "SharedVPName": "FloatingPreview",
+            "Cat0": "",
+            "Cat1": "",
+            "Cat2": "",
+            "CatOffset": 0,
+            "posX1": 3920.0,
+            "posY1": 2760.0,
+            "posX2": 5119.0,
+            "posY2": 2879.0,
+            "rmask": true,
+            "gmask": true,
+            "bmask": true,
+            "emask": false,
+            "Navigator": false,
+            "Toolbar": false,
+            "NavPosX": 20.0,
+            "NavPosY": 84.0,
+            "Broadcast": false,
+            "IsMetadataOverlayOn": true,
+            "ViewingRuleInfoMap": [
+                {
+                    "InputColourSpace": "ACEScg",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Rec.709 video",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "",
+                            "ViewName": ""
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Unknown",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        },
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "sRGB",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                }
+            ],
+            "Splitbar": {
+                "AngleSplitPivotX": 0.0,
+                "AngleSplitPivotY": 0.0,
+                "AngleSplitSlope": 1.0,
+                "VerticalSplitPivotX": 0.5,
+                "VerticalSplitPivotY": 0.5,
+                "HorizontalSplitPivotX": 0.5,
+                "HorizontalSplitPivotY": 0.5,
+                "Orientation": true,
+                "Visible": true,
+                "CurrentReference": 0
+            },
+            "CompareMode": 100,
+            "PrevCompareMode": 106,
+            "Expo": 0.0,
+            "Cnt": 1.0,
+            "Gamma": 1.0,
+            "RcBypass": false,
+            "ExposureContrastGammaBypass": false,
+            "StereoEnabled": false,
+            "StereoMode": 9,
+            "BlendFactor": 0.5,
+            "GridSize": 50,
+            "DiffYUV": false,
+            "DiffClamp": true,
+            "DiffMinClamp": 0.0,
+            "DiffMaxClamp": 1.0,
+            "DiffLift": 0.0,
+            "DiffGain": 1.0,
+            "ReferencePanX": 0,
+            "ReferencePanY": 0,
+            "ReferenceZoom": 1.0,
+            "DynamicExposureSupp": false,
+            "DynamicContrastSupp": false,
+            "DynamicGammaSupp": false,
+            "DynamicLookSupp": false,
+            "3DEnabled": false,
+            "ScopesEnabled": false,
+            "ScopesPreset": "Default",
+            "ScopesPresetCategory": "autodesk",
+            "Viewers": [],
+            "LatLongEnabled": false,
+            "OrbitXValue": 0.0,
+            "OrbitYValue": 0.0,
+            "Filtering": true,
+            "ZoomPanPref": [
+                {
+                    "w": 1080,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -10.272727966308594,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1080,
+                    "h": 1920,
+                    "fit": true,
+                    "zoom": -19.81818199157715,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1152,
+                    "h": 336,
+                    "fit": true,
+                    "zoom": -1.8181815147399903,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1920,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -10.272727966308594,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -22.545455932617189,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2700,
+                    "fit": true,
+                    "zoom": -28.681819915771486,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 3840,
+                    "fit": true,
+                    "zoom": -41.6363639831543,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 3840,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -22.545455932617189,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4096,
+                    "h": 2304,
+                    "fit": true,
+                    "zoom": -24.18181800842285,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4608,
+                    "h": 3164,
+                    "fit": true,
+                    "zoom": -33.95454788208008,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4616,
+                    "h": 2204,
+                    "fit": true,
+                    "zoom": -23.045454025268556,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                }
+            ],
+            "SideBySideZoomPanPref": [],
+            "Viewers": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 1,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                }
+            ]
+        },
+        {
+            "SharedVPName": "AltUI",
+            "Cat0": "",
+            "Cat1": "",
+            "Cat2": "",
+            "CatOffset": 0,
+            "posX1": 0.0,
+            "posY1": 0.0,
+            "posX2": 1.0,
+            "posY2": 1.0,
+            "rmask": true,
+            "gmask": true,
+            "bmask": true,
+            "emask": false,
+            "Navigator": false,
+            "Toolbar": false,
+            "NavPosX": 20.0,
+            "NavPosY": 84.0,
+            "Broadcast": false,
+            "IsMetadataOverlayOn": false,
+            "ViewingRuleInfoMap": [
+                {
+                    "InputColourSpace": "ACEScg",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Rec.709 video",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "",
+                            "ViewName": ""
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Unknown",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        },
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "sRGB",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                }
+            ],
+            "Splitbar": {
+                "AngleSplitPivotX": 0.0,
+                "AngleSplitPivotY": 0.0,
+                "AngleSplitSlope": 1.0,
+                "VerticalSplitPivotX": 0.5,
+                "VerticalSplitPivotY": 0.5,
+                "HorizontalSplitPivotX": 0.5,
+                "HorizontalSplitPivotY": 0.5,
+                "Orientation": true,
+                "Visible": true,
+                "CurrentReference": 0
+            },
+            "CompareMode": 100,
+            "PrevCompareMode": 106,
+            "Expo": 0.0,
+            "Cnt": 1.0,
+            "Gamma": 1.0,
+            "RcBypass": false,
+            "ExposureContrastGammaBypass": false,
+            "StereoEnabled": false,
+            "StereoMode": 0,
+            "BlendFactor": 0.5,
+            "GridSize": 50,
+            "DiffYUV": false,
+            "DiffClamp": true,
+            "DiffMinClamp": 0.0,
+            "DiffMaxClamp": 1.0,
+            "DiffLift": 0.0,
+            "DiffGain": 1.0,
+            "ReferencePanX": 0,
+            "ReferencePanY": 0,
+            "ReferenceZoom": 1.0,
+            "DynamicExposureSupp": false,
+            "DynamicContrastSupp": false,
+            "DynamicGammaSupp": false,
+            "DynamicLookSupp": false,
+            "3DEnabled": false,
+            "ScopesEnabled": false,
+            "ScopesPreset": "Default",
+            "ScopesPresetCategory": "autodesk",
+            "Viewers": [],
+            "LatLongEnabled": false,
+            "OrbitXValue": 0.0,
+            "OrbitYValue": 0.0,
+            "Filtering": true,
+            "ZoomPanPref": [
+                {
+                    "w": 1080,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1080,
+                    "h": 1920,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1152,
+                    "h": 336,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1920,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2700,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 3840,
+                    "fit": true,
+                    "zoom": 0.651685357093811,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 3840,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4096,
+                    "h": 2304,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4608,
+                    "h": 3164,
+                    "fit": true,
+                    "zoom": 0.8890448808670044,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4616,
+                    "h": 2204,
+                    "fit": true,
+                    "zoom": 1.0,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                }
+            ],
+            "SideBySideZoomPanPref": [],
+            "Viewers": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 1,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                }
+            ]
+        },
+        {
+            "SharedVPName": "ColourSamplerShortcut",
+            "Cat0": "",
+            "Cat1": "",
+            "Cat2": "",
+            "CatOffset": 0,
+            "posX1": 0.0,
+            "posY1": 0.0,
+            "posX2": 0.0,
+            "posY2": 0.0,
+            "rmask": true,
+            "gmask": true,
+            "bmask": true,
+            "emask": false,
+            "Navigator": false,
+            "Toolbar": false,
+            "NavPosX": 20.0,
+            "NavPosY": 84.0,
+            "Broadcast": false,
+            "IsMetadataOverlayOn": false,
+            "ViewingRuleInfoMap": [
+                {
+                    "InputColourSpace": "ACEScg",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Rec.709 video",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "",
+                            "ViewName": ""
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Unknown",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        },
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "sRGB",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                }
+            ],
+            "Splitbar": {
+                "AngleSplitPivotX": 0.0,
+                "AngleSplitPivotY": 0.0,
+                "AngleSplitSlope": 1.0,
+                "VerticalSplitPivotX": 0.5,
+                "VerticalSplitPivotY": 0.5,
+                "HorizontalSplitPivotX": 0.5,
+                "HorizontalSplitPivotY": 0.5,
+                "Orientation": true,
+                "Visible": true,
+                "CurrentReference": 0
+            },
+            "CompareMode": 100,
+            "PrevCompareMode": 106,
+            "Expo": 0.0,
+            "Cnt": 1.0,
+            "Gamma": 1.0,
+            "RcBypass": false,
+            "ExposureContrastGammaBypass": false,
+            "StereoEnabled": false,
+            "StereoMode": 0,
+            "BlendFactor": 0.5,
+            "GridSize": 50,
+            "DiffYUV": false,
+            "DiffClamp": true,
+            "DiffMinClamp": 0.0,
+            "DiffMaxClamp": 1.0,
+            "DiffLift": 0.0,
+            "DiffGain": 1.0,
+            "ReferencePanX": 0,
+            "ReferencePanY": 0,
+            "ReferenceZoom": 1.0,
+            "DynamicExposureSupp": false,
+            "DynamicContrastSupp": false,
+            "DynamicGammaSupp": false,
+            "DynamicLookSupp": false,
+            "3DEnabled": false,
+            "ScopesEnabled": false,
+            "ScopesPreset": "Default",
+            "ScopesPresetCategory": "autodesk",
+            "Viewers": [],
+            "LatLongEnabled": false,
+            "OrbitXValue": 0.0,
+            "OrbitYValue": 0.0,
+            "Filtering": true,
+            "ZoomPanPref": [
+                {
+                    "w": 1080,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -0.028703704476356508,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1080,
+                    "h": 1920,
+                    "fit": true,
+                    "zoom": -0.028703704476356508,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1152,
+                    "h": 336,
+                    "fit": true,
+                    "zoom": -0.092261902987957,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1920,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -0.028703704476356508,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2700,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 3840,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 3840,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4096,
+                    "h": 2304,
+                    "fit": true,
+                    "zoom": -0.013454861007630825,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4608,
+                    "h": 3164,
+                    "fit": true,
+                    "zoom": -0.009797723963856697,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4616,
+                    "h": 2204,
+                    "fit": true,
+                    "zoom": -0.014065335504710675,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                }
+            ],
+            "SideBySideZoomPanPref": [],
+            "Viewers": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 1,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                }
+            ]
+        },
+        {
+            "SharedVPName": "ColourSamplerButton",
+            "Cat0": "",
+            "Cat1": "",
+            "Cat2": "",
+            "CatOffset": 0,
+            "posX1": 0.0,
+            "posY1": 0.0,
+            "posX2": 0.0,
+            "posY2": 0.0,
+            "rmask": true,
+            "gmask": true,
+            "bmask": true,
+            "emask": false,
+            "Navigator": false,
+            "Toolbar": false,
+            "NavPosX": 20.0,
+            "NavPosY": 84.0,
+            "Broadcast": false,
+            "IsMetadataOverlayOn": false,
+            "ViewingRuleInfoMap": [
+                {
+                    "InputColourSpace": "ACEScg",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Rec.709 video",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "SLog3 / SGamut3.Cine-Venice",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "ACES 1.0 SDR-video",
+                            "ViewName": "ACES10_SDR-video"
+                        },
+                        {
+                            "RuleName": "",
+                            "ViewName": ""
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "Unknown",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        },
+                        {
+                            "RuleName": "Default",
+                            "ViewName": "Raw"
+                        }
+                    ]
+                },
+                {
+                    "InputColourSpace": "sRGB",
+                    "ViewingDisplay": "Rec.709 video",
+                    "RuleInfo": [
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        },
+                        {
+                            "RuleName": "Video (colorimetric)",
+                            "ViewName": "colorimetric_view"
+                        }
+                    ]
+                }
+            ],
+            "Splitbar": {
+                "AngleSplitPivotX": 0.0,
+                "AngleSplitPivotY": 0.0,
+                "AngleSplitSlope": 1.0,
+                "VerticalSplitPivotX": 0.5,
+                "VerticalSplitPivotY": 0.5,
+                "HorizontalSplitPivotX": 0.5,
+                "HorizontalSplitPivotY": 0.5,
+                "Orientation": true,
+                "Visible": true,
+                "CurrentReference": 0
+            },
+            "CompareMode": 100,
+            "PrevCompareMode": 106,
+            "Expo": 0.0,
+            "Cnt": 1.0,
+            "Gamma": 1.0,
+            "RcBypass": false,
+            "ExposureContrastGammaBypass": false,
+            "StereoEnabled": false,
+            "StereoMode": 0,
+            "BlendFactor": 0.5,
+            "GridSize": 50,
+            "DiffYUV": false,
+            "DiffClamp": true,
+            "DiffMinClamp": 0.0,
+            "DiffMaxClamp": 1.0,
+            "DiffLift": 0.0,
+            "DiffGain": 1.0,
+            "ReferencePanX": 0,
+            "ReferencePanY": 0,
+            "ReferenceZoom": 1.0,
+            "DynamicExposureSupp": false,
+            "DynamicContrastSupp": false,
+            "DynamicGammaSupp": false,
+            "DynamicLookSupp": false,
+            "3DEnabled": false,
+            "ScopesEnabled": false,
+            "ScopesPreset": "Default",
+            "ScopesPresetCategory": "autodesk",
+            "Viewers": [],
+            "LatLongEnabled": false,
+            "OrbitXValue": 0.0,
+            "OrbitYValue": 0.0,
+            "Filtering": true,
+            "ZoomPanPref": [
+                {
+                    "w": 1080,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -0.028703704476356508,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1080,
+                    "h": 1920,
+                    "fit": true,
+                    "zoom": -0.028703704476356508,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1152,
+                    "h": 336,
+                    "fit": true,
+                    "zoom": -0.092261902987957,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 1920,
+                    "h": 1080,
+                    "fit": true,
+                    "zoom": -0.028703704476356508,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 2700,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 2160,
+                    "h": 3840,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 3840,
+                    "h": 2160,
+                    "fit": true,
+                    "zoom": -0.014351852238178254,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4096,
+                    "h": 2304,
+                    "fit": true,
+                    "zoom": -0.013454861007630825,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4608,
+                    "h": 3164,
+                    "fit": true,
+                    "zoom": -0.009797723963856697,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                },
+                {
+                    "w": 4616,
+                    "h": 2204,
+                    "fit": true,
+                    "zoom": -0.014065335504710675,
+                    "xpan": 0.0,
+                    "ypan": 0.0
+                }
+            ],
+            "SideBySideZoomPanPref": [],
+            "Viewers": [
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 1,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                },
+                {
+                    "Cat0": "",
+                    "Cat1": "",
+                    "Cat2": "",
+                    "CatOffset": 0,
+                    "FitZoom": "",
+                    "DynamicLookEnabled": false,
+                    "ZoomedRefWidth": 0
+                }
+            ]
+        }
+    ],
+    "Views": []
+}

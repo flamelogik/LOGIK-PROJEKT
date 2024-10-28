@@ -1,0 +1,270 @@
+{
+    "NodeBinTabs": [
+        {
+            "Title": "Objects",
+            "Index": 1,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "3DPath"
+                        },
+                        {
+                            "Token": "3DText"
+                        },
+                        {
+                            "Token": "Axis"
+                        },
+                        {
+                            "Token": "CameraAnalysis"
+                        },
+                        {
+                            "Token": "Deform"
+                        },
+                        {
+                            "Token": "GMaskEllipse"
+                        },
+                        {
+                            "Token": "Import"
+                        },
+                        {
+                            "Token": "Matchbox"
+                        },
+                        {
+                            "Token": "MonoAnalyzer"
+                        },
+                        {
+                            "Token": "ParticleBouncer"
+                        },
+                        {
+                            "Token": "PerspectiveGrid"
+                        },
+                        {
+                            "Token": "Projector"
+                        },
+                        {
+                            "Token": "Shader"
+                        },
+                        {
+                            "Token": "ShadowCast"
+                        },
+                        {
+                            "Token": "SourceMatte"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "3DShape"
+                        },
+                        {
+                            "Token": "Atomize"
+                        },
+                        {
+                            "Token": "Camera"
+                        },
+                        {
+                            "Token": "CameraFBX"
+                        },
+                        {
+                            "Token": "GMask"
+                        },
+                        {
+                            "Token": "GMaskRectangle"
+                        },
+                        {
+                            "Token": "Light"
+                        },
+                        {
+                            "Token": "Material"
+                        },
+                        {
+                            "Token": "ParticleAnimator"
+                        },
+                        {
+                            "Token": "ParticleGenerator"
+                        },
+                        {
+                            "Token": "Presets"
+                        },
+                        {
+                            "Token": "Replica"
+                        },
+                        {
+                            "Token": "Shadow"
+                        },
+                        {
+                            "Token": "SourceFront"
+                        },
+                        {
+                            "Token": "StereoAnalyzer"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Surface",
+            "Index": 2,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Bilinear"
+                        },
+                        {
+                            "Token": "Perspective"
+                        },
+                        {
+                            "Token": "Surface"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "ExtendedBicubic"
+                        },
+                        {
+                            "Token": "StereoObject"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Maps",
+            "Index": 3,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "DiffuseMap"
+                        },
+                        {
+                            "Token": "EmissiveMap"
+                        },
+                        {
+                            "Token": "MotionVectorsMap"
+                        },
+                        {
+                            "Token": "ObjectIdsMap"
+                        },
+                        {
+                            "Token": "PBSMap"
+                        },
+                        {
+                            "Token": "ReflectionMap"
+                        },
+                        {
+                            "Token": "SubstanceMaterializer"
+                        },
+                        {
+                            "Token": "SubstancePBR"
+                        },
+                        {
+                            "Token": "UVMap"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "DisplaceMap"
+                        },
+                        {
+                            "Token": "IBLMap"
+                        },
+                        {
+                            "Token": "NormalMap"
+                        },
+                        {
+                            "Token": "ParallaxMap"
+                        },
+                        {
+                            "Token": "PositionMap"
+                        },
+                        {
+                            "Token": "SpecularMap"
+                        },
+                        {
+                            "Token": "SubstanceMaterializerPBR"
+                        },
+                        {
+                            "Token": "SubstanceTexture"
+                        },
+                        {
+                            "Token": "Z-DepthMap"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "ReLighting",
+            "Index": 4,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Blooming"
+                        },
+                        {
+                            "Token": "DiffuseMap"
+                        },
+                        {
+                            "Token": "Glow"
+                        },
+                        {
+                            "Token": "Iris"
+                        },
+                        {
+                            "Token": "LensTexture"
+                        },
+                        {
+                            "Token": "Lightbox"
+                        },
+                        {
+                            "Token": "RaysObject"
+                        },
+                        {
+                            "Token": "Shader"
+                        },
+                        {
+                            "Token": "Streak"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "BorderFX"
+                        },
+                        {
+                            "Token": "Glint"
+                        },
+                        {
+                            "Token": "IBLMap"
+                        },
+                        {
+                            "Token": "LensFlareObject"
+                        },
+                        {
+                            "Token": "Light"
+                        },
+                        {
+                            "Token": "Presets"
+                        },
+                        {
+                            "Token": "Ring"
+                        },
+                        {
+                            "Token": "ShadowCast"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

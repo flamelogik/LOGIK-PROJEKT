@@ -1,0 +1,35 @@
+{
+ "Scopes": [
+  {
+   "Name": "Default",
+   "Category": "autodesk",
+   "Viewers": [
+    {
+     "XPan": -0.06817234307527542,
+     "YPan": -0.08326360583305359,
+     "Zoom": 0.8337629437446594
+    },
+    {
+     "XPan": -0.05086704343557358,
+     "YPan": 0.04476191848516464,
+     "Zoom": 0.3199175000190735
+    },
+    {
+     "XPan": 0.0,
+     "YPan": 0.0,
+     "Zoom": 1.0
+    },
+    {
+     "XPan": 0.0,
+     "YPan": 0.0,
+     "Zoom": 1.0
+    }
+   ]
+  },
+  {
+   "Name": "Default",
+   "Category": "autodesk",
+   "Viewers": []
+  }
+ ]
+}

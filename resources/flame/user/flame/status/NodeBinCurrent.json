@@ -1,0 +1,12 @@
+{
+    "Settings": [
+        {
+            "name": "NodeBinShowHidden",
+            "value": false
+        },
+        {
+            "name": "NodeBinShowLegacy",
+            "value": false
+        }
+    ]
+}

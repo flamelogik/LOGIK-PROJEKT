@@ -1,0 +1,16 @@
+{
+    "Settings": [
+        {
+            "name": "ReformatTimeKeyCode",
+            "value": 0
+        },
+        {
+            "name": "ReformatChangeTCStartingPoint",
+            "value": 1
+        },
+        {
+            "name": "ReformatChangeFrameStartingPoint",
+            "value": 1
+        }
+    ]
+}

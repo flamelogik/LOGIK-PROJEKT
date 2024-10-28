@@ -1,0 +1,24 @@
+{
+    "Settings": [
+        {
+            "name": "FileView",
+            "value": 0
+        },
+        {
+            "name": "LibraryCreateLayers",
+            "value": true
+        },
+        {
+            "name": "LibraryFlatMode",
+            "value": false
+        },
+        {
+            "name": "LibraryThumbnailSize",
+            "value": 16
+        },
+        {
+            "name": "LibraryPiconSize",
+            "value": 1
+        }
+    ]
+}

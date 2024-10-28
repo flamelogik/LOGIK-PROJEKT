@@ -1,0 +1,19 @@
+{
+    "Shortcuts": [
+        {
+            "Shortcut": 1,
+            "Name": "Animated",
+            "Category": "Autodesk"
+        },
+        {
+            "Shortcut": 2,
+            "Name": "Selected",
+            "Category": "Autodesk"
+        },
+        {
+            "Shortcut": 3,
+            "Name": "Animated_Selected",
+            "Category": "Autodesk"
+        }
+    ]
+}
