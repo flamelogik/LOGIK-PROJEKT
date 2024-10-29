@@ -1,0 +1,74 @@
+
++ --------------------------------------------------------------------------- +
+
+  2024-10-30 10:13:31 - Reading preference file:
+  2024-10-30 10:13:31 - /Users/Tradecraft_VFX/Documents/GitHub/LOGIK-PROJEKT-tradecraftvfx/install/current_adsk_python_version.pref
+  2024-10-30 10:13:31 - 
+  2024-10-30 10:13:31 - Preference file loaded:
+  2024-10-30 10:13:31 - 
+  2024-10-30 10:13:31 - 
+  2024-10-30 10:13:31 - Analyzing directory: /opt/Autodesk/python
+  2024-10-30 10:13:31 - Sorted contents of /opt/Autodesk/python:
+  2024-10-30 10:13:31 - 2025.2
+  2024-10-30 10:13:31 - 2025.1.1
+  2024-10-30 10:13:31 - 2025.1
+  2024-10-30 10:13:31 - 2025.1.pr201
+  2024-10-30 10:13:31 - 2025.0.1
+  2024-10-30 10:13:31 - 2025
+  2024-10-30 10:13:31 - 
+  2024-10-30 10:13:31 - The highest version is: 2025.2
+  2024-10-30 10:13:31 - 
+  2024-10-30 10:13:31 - Python version 2025.2 is available and executable
+  2024-10-30 10:13:31 - Updated preference file with:
+  2024-10-30 10:13:31 - /opt/Autodesk/python/2025.2/bin/python
+  2024-10-30 10:13:31 - 
+
++ --------------------------------------------------------------------------- +
+
+
++ --------------------------------------------------------------------------- +
+
+  2024-10-30 10:13:44 - Reading preference file:
+  2024-10-30 10:13:44 - /Users/Tradecraft_VFX/Documents/GitHub/LOGIK-PROJEKT-tradecraftvfx/install/current_adsk_python_version.pref
+  2024-10-30 10:13:44 - 
+  2024-10-30 10:13:44 - Preference file loaded:
+  2024-10-30 10:13:44 - /opt/Autodesk/python/2025.2/bin/python
+  2024-10-30 10:13:44 - 
+  2024-10-30 10:13:44 - Analyzing directory: /opt/Autodesk/python
+  2024-10-30 10:13:44 - Sorted contents of /opt/Autodesk/python:
+  2024-10-30 10:13:44 - 2025.2
+  2024-10-30 10:13:44 - 2025.1.1
+  2024-10-30 10:13:44 - 2025.1
+  2024-10-30 10:13:44 - 2025.1.pr201
+  2024-10-30 10:13:44 - 2025.0.1
+  2024-10-30 10:13:44 - 2025
+  2024-10-30 10:13:44 - 
+  2024-10-30 10:13:44 - The highest version is: 2025.2
+  2024-10-30 10:13:44 - 
+  2024-10-30 10:13:44 - Python version 2025.2 is available and executable
+  2024-10-30 10:13:44 - 
+  2024-10-30 10:13:44 - No update needed.
+  2024-10-30 10:13:44 - 
+  2024-10-30 10:13:44 - Preference file already contains the latest version:
+  2024-10-30 10:13:44 - /opt/Autodesk/python/2025.2/bin/python
+
++ --------------------------------------------------------------------------- +
+
+  2024-10-30 10:13:44 - Creating macOS application: LOGIK-PROJEKT.app
+  2024-10-30 10:13:44 - Creating the macOS application components
+
++ --------------------------------------------------------------------------- +
+
+  2024-10-30 10:13:44 - Creating LOGIK-PROJEKT shell script for linux: run_logikprojekt_linux.sh
+  2024-10-30 10:13:44 - Making the file executable: run_logikprojekt_linux.sh
+  2024-10-30 10:13:44 - Creating macOS application shell script: run_logikprojekt_macos
+
++ --------------------------------------------------------------------------- +
+
+  2024-10-30 10:13:44 - Creating desktop entry file: LOGIK-PROJEKT.desktop
+  2024-10-30 10:13:44 - Making the file executable: LOGIK-PROJEKT.desktop
+  2024-10-30 10:13:44 - This script is not configured to move files on macOS (Darwin).
+  2024-10-30 10:13:44 - File 'LOGIK-PROJEKT.desktop' has been created and made executable.
+
++ --------------------------------------------------------------------------- +
+

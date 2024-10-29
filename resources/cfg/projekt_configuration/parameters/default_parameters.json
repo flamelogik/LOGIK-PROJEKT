@@ -15,13 +15,13 @@
 
     "Bit Depth: ": "16-bit fp",
 
-    "Framerate: ": "23.976 fps",
+    "Framerate: ": "25 fps",
 
     "Scan Mode: ": "PROGRESSIVE",
 
     "Start Frame: ": "1001",
 
-    "Init Config: ": "1920x1080@23976p.cfg",
+    "Init Config: ": "1920x1080@25000p.cfg",
 
     "Color Science: ": "ADSK_ACES_1.1"
 }
