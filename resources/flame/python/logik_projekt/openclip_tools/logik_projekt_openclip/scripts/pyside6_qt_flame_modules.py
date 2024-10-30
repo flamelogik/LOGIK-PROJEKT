@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_flame_modules.py
-# Version:          0.5.0
+# Version:          1.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-10-30
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -97,7 +97,8 @@ from pyside6_qt_flame_functions import (
     pyside6_qt_refresh_hooks,
     pyside6_qt_open_in_finder,
     pyside6_qt_load_config,
-    pyside6_qt_save_config
+    pyside6_qt_save_config,
+    pyside6_qt_output_config_ui
 )
 
 # ========================================================================== #
@@ -282,4 +283,8 @@ from pyside6_qt_flame_functions import (
 # version:               0.5.0
 # modified:              2024-08-31 - 18:26:06
 # comments:              prep for release.
+# -------------------------------------------------------------------------- #
+# version:               1.0.0
+# modified:              2024-10-30 - 07:35:27
+# comments:              Refactored PySide6 Output Node Config UI.
 # -------------------------------------------------------------------------- #
