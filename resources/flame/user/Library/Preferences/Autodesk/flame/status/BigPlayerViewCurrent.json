@@ -1,0 +1,40 @@
+{
+    "Settings": [
+        {
+            "name": "EditdeskShowSubtitles",
+            "value": true
+        },
+        {
+            "name": "PlayerSidePanel",
+            "value": 0
+        },
+        {
+            "name": "EditdeskShowIcons",
+            "value": true
+        },
+        {
+            "name": "EditdeskShowIconsDuringPlayback",
+            "value": true
+        },
+        {
+            "name": "EditdesPlayerOptionsCacheOnPlayback",
+            "value": false
+        },
+        {
+            "name": "ToggleMetadataOverlay",
+            "value": false
+        },
+        {
+            "name": "AutoRamPlay",
+            "value": true
+        },
+        {
+            "name": "SavedOverlayName",
+            "value": "Frame"
+        },
+        {
+            "name": "SavedOverlayPath",
+            "value": "/opt/Autodesk/presets/2025/burn_metadata/overlay/Frame.burnmetadata_node"
+        }
+    ]
+}

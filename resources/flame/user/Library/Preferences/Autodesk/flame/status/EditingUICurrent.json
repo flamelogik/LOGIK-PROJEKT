@@ -1,0 +1,712 @@
+{
+    "Settings": [
+        {
+            "name": "SavedActionDefaultGeometryPath",
+            "value": "/opt/Autodesk/presets/2025.pr194/models"
+        },
+        {
+            "name": "EditdeskActiveMarkCustomColor",
+            "value": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "EditdeskLockContainerEffects",
+            "value": false
+        },
+        {
+            "name": "EditdeskLoadMissingClipOnEditdesk",
+            "value": true
+        },
+        {
+            "name": "CreateDesktopReelGroup",
+            "value": true
+        },
+        {
+            "name": "CreateReelGroupSequencesReel",
+            "value": true
+        },
+        {
+            "name": "CopyModeFromToBatch",
+            "value": 1
+        },
+        {
+            "name": "BatchOpenNamingDialog",
+            "value": true
+        },
+        {
+            "name": "EffectsPipelineActive",
+            "value": true
+        },
+        {
+            "name": "EffectsPipelineActiveConform",
+            "value": false
+        },
+        {
+            "name": "EditorialSavedMode",
+            "value": 0
+        },
+        {
+            "name": "ExclusiveMarkOut",
+            "value": 1
+        },
+        {
+            "name": "RippleOn",
+            "value": false
+        },
+        {
+            "name": "ChanLockOn",
+            "value": 1
+        },
+        {
+            "name": "SelectMode",
+            "value": 0
+        },
+        {
+            "name": "TimewarpUseLastSpeed",
+            "value": false
+        },
+        {
+            "name": "TimewarpDefaultSpeed",
+            "value": 100.0
+        },
+        {
+            "name": "AudioTimewarpDefaultSpeed",
+            "value": 100.0
+        },
+        {
+            "name": "TimewarpSpeedDisplay",
+            "value": false
+        },
+        {
+            "name": "DefaultRenderingMethod",
+            "value": 1
+        },
+        {
+            "name": "PremiumRendering",
+            "value": false
+        },
+        {
+            "name": "DefaultProcessHeadTail",
+            "value": false
+        },
+        {
+            "name": "VideoContainerFullRender",
+            "value": false
+        },
+        {
+            "name": "DefaultProcessHeadTailInfinityHandles",
+            "value": 10
+        },
+        {
+            "name": "DefaultTrxLength",
+            "value": 10.0
+        },
+        {
+            "name": "DefaultTrxAlignment",
+            "value": 1
+        },
+        {
+            "name": "DefaultTrxRenderMode2",
+            "value": 2
+        },
+        {
+            "name": "DefaultSoftEffectsRenderMode2",
+            "value": 2
+        },
+        {
+            "name": "DefaultTimewarpRenderMode2",
+            "value": 2
+        },
+        {
+            "name": "ContainSoftEditedSources",
+            "value": false
+        },
+        {
+            "name": "TimelineScrollPastFirstFrame",
+            "value": true
+        },
+        {
+            "name": "DefaultTWFieldInterpMode",
+            "value": 0
+        },
+        {
+            "name": "TimewarpDefaultSampling",
+            "value": 0
+        },
+        {
+            "name": "TWMLInteractiveModeTL",
+            "value": 3
+        },
+        {
+            "name": "DefaultSoftTextNumSamples",
+            "value": 0
+        },
+        {
+            "name": "PrimerUIPrefsToggleConsolidateStrokes",
+            "value": 1
+        },
+        {
+            "name": "SubtitleUIMaxCPS",
+            "value": 30
+        },
+        {
+            "name": "DefaultDissolveCurveType",
+            "value": 0
+        },
+        {
+            "name": "PrefSoftEffect",
+            "value": 0
+        },
+        {
+            "name": "DefaultResizeOption",
+            "value": 1
+        },
+        {
+            "name": "DefaultResizeQuality",
+            "value": 4
+        },
+        {
+            "name": "DefaultResizeKeepAspect",
+            "value": true
+        },
+        {
+            "name": "DefaultBatchResizeOption",
+            "value": 1
+        },
+        {
+            "name": "DefaultBatchResizeQuality",
+            "value": 4
+        },
+        {
+            "name": "DefaultBatchResizeKeepAspect",
+            "value": true
+        },
+        {
+            "name": "DefaultActionUseBack",
+            "value": false
+        },
+        {
+            "name": "EditSyncOn",
+            "value": true
+        },
+        {
+            "name": "FilterSelectInAllTracksStatus",
+            "value": true
+        },
+        {
+            "name": "DefaultTCStart",
+            "value": "864000 23.976 fps"
+        },
+        {
+            "name": "SourceHeight",
+            "value": 156
+        },
+        {
+            "name": "RenderThumbnailEffects",
+            "value": true
+        },
+        {
+            "name": "BroadcastShowsClipOnSelection",
+            "value": true
+        },
+        {
+            "name": "BroadcastShowsMetadataOverlay",
+            "value": true
+        },
+        {
+            "name": "TimelineUISnapMode",
+            "value": true
+        },
+        {
+            "name": "TimelineUISnapIncludeMarks",
+            "value": false
+        },
+        {
+            "name": "TimelineUISnapPositioner",
+            "value": false
+        },
+        {
+            "name": "TimelineUIAlwaysSelectGaps",
+            "value": false
+        },
+        {
+            "name": "TimelineUISelectLockedTracks",
+            "value": false
+        },
+        {
+            "name": "TimelineUIAddLayerAbovePositioner",
+            "value": true
+        },
+        {
+            "name": "TimelineUIUseConformIdForSegmentColour",
+            "value": true
+        },
+        {
+            "name": "TimelineUIUseConformIdForSegmentTags",
+            "value": true
+        },
+        {
+            "name": "TimelineUIUseConformIdForSegmentMute",
+            "value": true
+        },
+        {
+            "name": "TimelineUIUseConformIdForSegmentMarks",
+            "value": true
+        },
+        {
+            "name": "TimelineUILinkChannelToSegment",
+            "value": 0
+        },
+        {
+            "name": "ConformMergeInterval",
+            "value": 50
+        },
+        {
+            "name": "EditVideoOnlyOnReels",
+            "value": false
+        },
+        {
+            "name": "EditdeskAddExtraLayers",
+            "value": true
+        },
+        {
+            "name": "EditdeskAutoTimewarping",
+            "value": true
+        },
+        {
+            "name": "ReplayPostroll",
+            "value": 0
+        },
+        {
+            "name": "ReplayPreroll",
+            "value": 0
+        },
+        {
+            "name": "DisplayNameOnly",
+            "value": false
+        },
+        {
+            "name": "DisplayKeycodeInfo",
+            "value": false
+        },
+        {
+            "name": "DisplayColourSpaceInfo",
+            "value": true
+        },
+        {
+            "name": "DisplayResInfo",
+            "value": 3
+        },
+        {
+            "name": "DisplayPrimaryFrameMode",
+            "value": 1
+        },
+        {
+            "name": "DisplayPrimaryFrameModeConform",
+            "value": true
+        },
+        {
+            "name": "DisplayFrameSecondaryInfo",
+            "value": 2
+        },
+        {
+            "name": "DisplayTimecodeSecondaryInfo",
+            "value": 2
+        },
+        {
+            "name": "DisplayEquivalentTc",
+            "value": true
+        },
+        {
+            "name": "EquivalentTimecodeSelection",
+            "value": 0
+        },
+        {
+            "name": "EquivalentTcRef",
+            "value": "0 29.97 fps DF"
+        },
+        {
+            "name": "DisplayEquivalentTime",
+            "value": false
+        },
+        {
+            "name": "MediaLibraryGlobalLock",
+            "value": true
+        },
+        {
+            "name": "DuplicateNameCheckMode",
+            "value": 3
+        },
+        {
+            "name": "ThumbnailIconFrame",
+            "value": 10
+        },
+        {
+            "name": "PullDownInPlayer",
+            "value": false
+        },
+        {
+            "name": "EditdeskDisplayPhantomMarks",
+            "value": false
+        },
+        {
+            "name": "EditdeskKeepFocusAfterEditing",
+            "value": true
+        },
+        {
+            "name": "EditdeskMovePositionerOnPaste",
+            "value": true
+        },
+        {
+            "name": "EditdeskSmartReplaceSrc",
+            "value": true
+        },
+        {
+            "name": "EditdeskAutoTogglePlayer",
+            "value": false
+        },
+        {
+            "name": "EditdeskAddMarkDialogMode",
+            "value": 2
+        },
+        {
+            "name": "EditdeskMarkColor",
+            "value": {
+                "r": 0.1098039299249649,
+                "g": 0.1098039299249649,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "EditdeskActiveMarkColor",
+            "value": {
+                "r": 0.1098039299249649,
+                "g": 0.1098039299249649,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "EditdeskDefaultMarkCustomColor",
+            "value": {
+                "r": 0.1098039299249649,
+                "g": 0.1098039299249649,
+                "b": 1.0,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "EditdeskDefaultMarkCustomColorTag",
+            "value": ""
+        },
+        {
+            "name": "EditdeskCurMarkFullSegmentDefaultSv",
+            "value": false
+        },
+        {
+            "name": "EditdeskCurMarkTypeDefaultSv",
+            "value": 0
+        },
+        {
+            "name": "EditdeskFramerateConverterOn",
+            "value": true
+        },
+        {
+            "name": "EditdeskSourceTimeMode",
+            "value": 3
+        },
+        {
+            "name": "UntitledNamingScheme",
+            "value": 0
+        },
+        {
+            "name": "PrefixSuffixNaming",
+            "value": 1
+        },
+        {
+            "name": "StereoNamingLeftEye",
+            "value": "Left"
+        },
+        {
+            "name": "StereoNamingRightEye",
+            "value": "Right"
+        },
+        {
+            "name": "PushSegIDs",
+            "value": false
+        },
+        {
+            "name": "VideoSfxRenderMode",
+            "value": 0
+        },
+        {
+            "name": "ConsolidateMaxHandles",
+            "value": 10
+        },
+        {
+            "name": "FlattenType",
+            "value": 0
+        },
+        {
+            "name": "BatchCacheLifeSpan",
+            "value": 30
+        },
+        {
+            "name": "BfxCacheLifeSpan",
+            "value": 5
+        },
+        {
+            "name": "BatchSnapshotSaveSetup",
+            "value": true
+        },
+        {
+            "name": "BatchSnapshotAppendName",
+            "value": false
+        },
+        {
+            "name": "BatchDefaultOutputNodeOutputType",
+            "value": 4
+        },
+        {
+            "name": "BatchDefaultExportNodeOutputType",
+            "value": 4
+        },
+        {
+            "name": "BatchDefaultExportNodeOutputReImport",
+            "value": true
+        },
+        {
+            "name": "BatchDefaultExportNodeUseColourCodingOnClip",
+            "value": true
+        },
+        {
+            "name": "BatchReImportBurnDialogVisibility",
+            "value": true
+        },
+        {
+            "name": "BatchLegacyNodesWarningDialogVisibility",
+            "value": false
+        },
+        {
+            "name": "BatchLustreNodeWarningDialogVisibility",
+            "value": true
+        },
+        {
+            "name": "BatchVirtualPlaybackAudioChoice",
+            "value": 0
+        },
+        {
+            "name": "BatchVirtualPlaybackAudioVisibility",
+            "value": true
+        },
+        {
+            "name": "MetadataLayerChangeVisibility",
+            "value": true
+        },
+        {
+            "name": "ShowCollapseSectionWarning",
+            "value": true
+        },
+        {
+            "name": "ShowCollapseEditSyncInfo",
+            "value": true
+        },
+        {
+            "name": "ShowCollapseEditSyncWarning",
+            "value": true
+        },
+        {
+            "name": "ConformChangeFrameBehaviourMode",
+            "value": 0
+        },
+        {
+            "name": "BatchDefaultLayout",
+            "value": 0
+        },
+        {
+            "name": "BatchDefaultSchemVP",
+            "value": 0
+        },
+        {
+            "name": "BatchDefaultScopesVP",
+            "value": -2
+        },
+        {
+            "name": "BatchExitBFXAutoAddBlend",
+            "value": true
+        },
+        {
+            "name": "BatchRenderOnCreateBFX",
+            "value": true
+        },
+        {
+            "name": "BFXUseMediaStartFrame",
+            "value": true
+        },
+        {
+            "name": "BatchFxAutoCollapseWhenFullyRendered",
+            "value": true
+        },
+        {
+            "name": "BatchFxLightCopyMode",
+            "value": 3
+        },
+        {
+            "name": "BfxAutoSetupBackup",
+            "value": true
+        },
+        {
+            "name": "DragTransparency",
+            "value": 50.0
+        },
+        {
+            "name": "ShuttleMode",
+            "value": true
+        },
+        {
+            "name": "EditdeskAutoToggleTrimView",
+            "value": true
+        },
+        {
+            "name": "TimelineCompUIFgPrefPremState",
+            "value": 1
+        },
+        {
+            "name": "TimelineCompUIBgPrefPremState",
+            "value": 1
+        },
+        {
+            "name": "TimelineCompUIDstPrefPremState",
+            "value": 1
+        },
+        {
+            "name": "MatchPreserveHandles",
+            "value": false
+        },
+        {
+            "name": "MatchUseSequenceInfo",
+            "value": true
+        },
+        {
+            "name": "MatchIncludeNestedContent",
+            "value": false
+        },
+        {
+            "name": "MatchIncludeTimelineFX",
+            "value": false
+        },
+        {
+            "name": "BatchUseStartFrameInCreateBGoR",
+            "value": false
+        },
+        {
+            "name": "BatchDefaultStartFrameSource",
+            "value": 0
+        },
+        {
+            "name": "BatchCreateBGORSmartReplace",
+            "value": true
+        },
+        {
+            "name": "BatchCreateBGORDestinationSegment",
+            "value": true
+        },
+        {
+            "name": "SavedShowBatchIterations",
+            "value": true
+        },
+        {
+            "name": "SavedBatchDefaultName",
+            "value": "<batch name>_v<iteration###>"
+        },
+        {
+            "name": "SavedBatchDefaultRenderNodeName",
+            "value": "<batch name>_v<iteration###>"
+        },
+        {
+            "name": "SavedBatchDefaultWriteFileNodeName",
+            "value": "<batch name>_v<iteration###>"
+        },
+        {
+            "name": "SavedBatchDefaultGroupPath",
+            "value": "~/batch/flame"
+        },
+        {
+            "name": "SavedBatchDefaultIterationPath",
+            "value": "~/batch/flame/iterations"
+        },
+        {
+            "name": "FIMTabProxyDisplayMode",
+            "value": 2
+        },
+        {
+            "name": "FIMTabProxyNameVisible",
+            "value": true
+        },
+        {
+            "name": "FIMTabProxyFxVisible",
+            "value": true
+        },
+        {
+            "name": "FIMTabProxyGapVisible",
+            "value": true
+        },
+        {
+            "name": "FIMTabProxyRenderStatusVisible",
+            "value": true
+        },
+        {
+            "name": "FIMTabProxyAllFx",
+            "value": true
+        },
+        {
+            "name": "FIMChangeShotOnScrub",
+            "value": true
+        },
+        {
+            "name": "FIMChangeShotOnPlayEnd",
+            "value": true
+        },
+        {
+            "name": "FIMNoCacheInContexts",
+            "value": true
+        },
+        {
+            "name": "FIMGroupsUseCCW",
+            "value": true
+        },
+        {
+            "name": "FIMCenterReel",
+            "value": false
+        },
+        {
+            "name": "FIMDefaultTransientFXSv",
+            "value": -1
+        },
+        {
+            "name": "FIMGotoLockTime",
+            "value": true
+        },
+        {
+            "name": "FIMNavigationSkipAllowed",
+            "value": true
+        },
+        {
+            "name": "MasterGradeImageType",
+            "value": 3
+        },
+        {
+            "name": "MasterGradeRGBWidgetStyle",
+            "value": 0
+        },
+        {
+            "name": "MasterGradePrimTonePage",
+            "value": false
+        }
+    ]
+}

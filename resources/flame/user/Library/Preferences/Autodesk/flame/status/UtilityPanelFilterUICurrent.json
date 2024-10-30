@@ -1,0 +1,89 @@
+{
+    "Settings": [
+        {
+            "name": "UtilityPanelFilterExpanded",
+            "value": true
+        },
+        {
+            "name": "UtilityPanelFilterActiveButton",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterNameActive",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterSegNameActive",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterShotNameActive",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterColourActive",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterUserActive",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterTagActive",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterSegNameCurrent",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterShotNameCurrent",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterAnyAll",
+            "value": 1
+        },
+        {
+            "name": "UtilityPanelFilterFx",
+            "value": ""
+        },
+        {
+            "name": "UtilityPanelFilterBFx",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterSelective",
+            "value": false
+        },
+        {
+            "name": "UtilityPanelFilterNameText",
+            "value": ""
+        },
+        {
+            "name": "UtilityPanelFilterSegNameText",
+            "value": ""
+        },
+        {
+            "name": "UtilityPanelFilterShotNameText",
+            "value": ""
+        },
+        {
+            "name": "UtilityPanelFilterColour",
+            "value": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "UtilityPanelFilterTagText",
+            "value": ""
+        },
+        {
+            "name": "UtilityPanelFilterUser",
+            "value": "tradecraft_vfx"
+        }
+    ]
+}

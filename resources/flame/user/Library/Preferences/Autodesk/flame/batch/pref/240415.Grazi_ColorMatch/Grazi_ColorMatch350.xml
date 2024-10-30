@@ -1,0 +1,79 @@
+<ShaderNodePreset LimitInputsToTexture="True" Name="Pyramid Blur" Description="This shader matches the color of input1 to the texture of input2." SoftwareVersion="2016.0.0" ShaderType="Matchbox" TimelineUseBack="False" MatteProvider="False" SupportsTimeline="True" SupportsTransition="False" SupportsAction="True" SupportsAdaptiveDegradation="False">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="propBlur" Name="blurAmount" Type="vec2" IconType="None" DisplayName="Mix Amount" Page="0" Col="0" Row="1" Tooltip="" Inc="0.1">
+         <SubUniform Default="10.0" Min="0.0" Max="10000.0" ResDependent="Width">
+         </SubUniform>
+         <SubUniform Default="10.0" Min="0.0" Max="10000.0" ResDependent="Height">
+         </SubUniform>
+      </Uniform>
+      <Uniform InputType="Front" Name="frontTex" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="propBlur" Type="bool" DisplayName="Proportional" Tooltip="" Default="True" Page="0" Col="0" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="propBlur" Name="propBlurAmount" Type="float" DisplayName="Mix Amount" Page="0" Col="0" Row="1" Tooltip="" Inc="0.1" Default="10.0" Min="0.0" Max="10000.0" ResDependent="Width">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="blurAmount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="propBlur" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="propBlurAmount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="blurAmount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="propBlur" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="propBlurAmount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform InputType="Front" Name="colormatch" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" DisplayName="Front" Tooltip="" NoInput="Error" Index="1">
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="blurAmount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="propBlur" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="propBlurAmount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="colormatch" Type="sampler2D">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Pyramid Blur">
+      <Col Page="0" Col="0" Name="Color Match">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

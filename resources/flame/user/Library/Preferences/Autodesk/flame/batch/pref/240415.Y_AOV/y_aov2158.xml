@@ -1,0 +1,275 @@
+<ShaderNodePreset SupportsAdaptiveDegradation="0" LimitInputsToTexture="True" Version="1" Description="
+
+AOV
+
+Combine up to 6 matte passes with various useful operations. Passes can be monochrome or 3 Channel RGB
+
+milesnoesclavo.com" Name="AOV">
+   <Shader OutputBitDepth="Output" Index="1">
+      <Uniform Index="0" NoInput="Error" Tooltip="" DisplayName="ID1" InputColor="100, 60, 20" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="ID1">
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the red channel or the inverse of the red channel." Row="0" Col="0" Page="0" DisplayName="Red" Type="int" Name="id1_r" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Red" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the green channel or the inverse of the green channel." Row="1" Col="0" Page="0" DisplayName="Green" Type="int" Name="id1_g" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Green" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Green" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the blue channel or the inverse of the blue channel." Row="2" Col="0" Page="0" DisplayName="Blue" Type="int" Name="id1_b" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Blue" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Blue" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Row="4" Col="0" Page="0" Default="False" Tooltip="Negate the result of the overall process." DisplayName="Negate Result" Type="bool" Name="id1_neg">
+      </Uniform>
+      <Uniform Index="1" NoInput="Black" Tooltip="" DisplayName="ID2" InputColor="80, 80, 20" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="ID2">
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the red channel or the inverse of the red channel." Row="0" Col="1" Page="0" DisplayName="Red" Type="int" Name="id2_r" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Red" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the green channel or the inverse of the green channel." Row="1" Col="1" Page="0" DisplayName="Green" Type="int" Name="id2_g" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Green" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Green" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the blue channel or the inverse of the blue channel." Row="2" Col="1" Page="0" DisplayName="Blue" Type="int" Name="id2_b" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Blue" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Blue" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="00000" Default="1" Inc="1" Tooltip="Choose the operation used to combine the results ID1 and ID2." Row="3" Col="1" Page="0" DisplayName="Layer Operation" Type="int" Name="id2_layer_op" ValueType="Popup">
+         <PopupEntry Title="Add" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Screen" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="Multiply" Value="2">
+         </PopupEntry>
+         <PopupEntry Title="ID2 - ID1" Value="3">
+         </PopupEntry>
+         <PopupEntry Title="ID1 - ID2" Value="4">
+         </PopupEntry>
+         <PopupEntry Title="Max" Value="5">
+         </PopupEntry>
+         <PopupEntry Title="Min" Value="6">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Row="4" Col="1" Page="0" Default="False" Tooltip="Negate the result of the overall process." DisplayName="Negate Result" Type="bool" Name="id2_neg">
+      </Uniform>
+      <Uniform Index="2" NoInput="Black" Tooltip="" DisplayName="ID3" InputColor="100, 60, 20" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="ID3">
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the red channel or the inverse of the red channel." Row="0" Col="2" Page="0" DisplayName="Red" Type="int" Name="id3_r" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Red" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the green channel or the inverse of the green channel." Row="1" Col="2" Page="0" DisplayName="Green" Type="int" Name="id3_g" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Green" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Green" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the blue channel or the inverse of the blue channel." Row="2" Col="2" Page="0" DisplayName="Blue" Type="int" Name="id3_b" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Blue" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Blue" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="00000" Default="1" Inc="1" Tooltip="Choose the operation used to combine the results of ID2 and ID3." Row="3" Col="2" Page="0" DisplayName="Layer Operation" Type="int" Name="id3_layer_op" ValueType="Popup">
+         <PopupEntry Title="Add" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Screen" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="Multiply" Value="2">
+         </PopupEntry>
+         <PopupEntry Title="ID3 - ID2" Value="3">
+         </PopupEntry>
+         <PopupEntry Title="ID2 - ID3" Value="4">
+         </PopupEntry>
+         <PopupEntry Title="Max" Value="5">
+         </PopupEntry>
+         <PopupEntry Title="Min" Value="6">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Row="4" Col="2" Page="0" Default="False" Tooltip="Negate the result of the overall process." DisplayName="Negate Result" Type="bool" Name="id3_neg">
+      </Uniform>
+      <Uniform Index="3" NoInput="Black" Tooltip="" DisplayName="ID4" InputColor="80, 80, 20" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="ID4">
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the red channel or the inverse of the red channel." Row="0" Col="3" Page="0" DisplayName="Red" Type="int" Name="id4_r" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Red" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the green channel or the inverse of the green channel." Row="1" Col="3" Page="0" DisplayName="Green" Type="int" Name="id4_g" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Green" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Green" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the blue channel or the inverse of the blue channel." Row="2" Col="3" Page="0" DisplayName="Blue" Type="int" Name="id4_b" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Blue" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Blue" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="00000" Default="1" Inc="1" Tooltip="Choose the operation used to combine the results of ID3 and ID4." Row="3" Col="3" Page="0" DisplayName="Layer Operation" Type="int" Name="id4_layer_op" ValueType="Popup">
+         <PopupEntry Title="Add" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Screen" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="Multiply" Value="2">
+         </PopupEntry>
+         <PopupEntry Title="ID4 - ID3" Value="3">
+         </PopupEntry>
+         <PopupEntry Title="ID3 - ID4" Value="4">
+         </PopupEntry>
+         <PopupEntry Title="Max" Value="5">
+         </PopupEntry>
+         <PopupEntry Title="Min" Value="6">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Row="4" Col="3" Page="0" Default="False" Tooltip="Negate the result of the overall process." DisplayName="Negate Result" Type="bool" Name="id4_neg">
+      </Uniform>
+      <Uniform Index="4" NoInput="Black" Tooltip="" DisplayName="ID5" InputColor="100, 60, 20" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="ID5">
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the red channel or the inverse of the red channel." Row="0" Col="0" Page="1" DisplayName="Red" Type="int" Name="id5_r" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Red" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the green channel or the inverse of the green channel." Row="1" Col="0" Page="1" DisplayName="Green" Type="int" Name="id5_g" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Green" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Green" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the blue channel or the inverse of the blue channel." Row="2" Col="0" Page="1" DisplayName="Blue" Type="int" Name="id5_b" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Blue" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Blue" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="00000" Default="1" Inc="1" Tooltip="Choose the operation used to combine the results of ID4 and ID5." Row="3" Col="0" Page="1" DisplayName="Layer Operation" Type="int" Name="id5_layer_op" ValueType="Popup">
+         <PopupEntry Title="Add" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Screen" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="Multiply" Value="2">
+         </PopupEntry>
+         <PopupEntry Title="ID5 - ID4" Value="3">
+         </PopupEntry>
+         <PopupEntry Title="ID4 - ID5" Value="4">
+         </PopupEntry>
+         <PopupEntry Title="Max" Value="5">
+         </PopupEntry>
+         <PopupEntry Title="Min" Value="6">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Row="4" Col="0" Page="1" Default="False" Tooltip="Negate the result of the overall process." DisplayName="Negate Result" Type="bool" Name="id5_neg">
+      </Uniform>
+      <Uniform Index="5" NoInput="Black" Tooltip="" DisplayName="ID6" InputColor="80, 80, 20" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="ID6">
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the red channel or the inverse of the red channel." Row="0" Col="1" Page="1" DisplayName="Red" Type="int" Name="id6_r" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Red" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the green channel or the inverse of the green channel." Row="1" Col="1" Page="1" DisplayName="Green" Type="int" Name="id6_g" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Green" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Green" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="000000" Default="0" Inc="1" Tooltip="Choose to use the blue channel or the inverse of the blue channel." Row="2" Col="1" Page="1" DisplayName="Blue" Type="int" Name="id6_b" ValueType="Popup">
+         <PopupEntry Title="Off" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Blue" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="1 - Blue" Value="2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Max="1000000" Min="00000" Default="1" Inc="1" Tooltip="Choose the operation used to combine the results of ID5 and ID6." Row="3" Col="1" Page="1" DisplayName="Layer Operation" Type="int" Name="id6_layer_op" ValueType="Popup">
+         <PopupEntry Title="Add" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Screen" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="Multiply" Value="2">
+         </PopupEntry>
+         <PopupEntry Title="ID6 - ID5" Value="3">
+         </PopupEntry>
+         <PopupEntry Title="ID5 - ID6" Value="4">
+         </PopupEntry>
+         <PopupEntry Title="Max" Value="5">
+         </PopupEntry>
+         <PopupEntry Title="Min" Value="6">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Row="4" Col="1" Page="1" Default="False" Tooltip="Negate the result of the overall process." DisplayName="Negate Result" Type="bool" Name="id6_neg">
+      </Uniform>
+   </Shader>
+   <Page Name="ID 1 - 4" Page="0">
+      <Col Name="ID1" Col="0" Page="0">
+      </Col>
+      <Col Name="ID2" Col="1" Page="0">
+      </Col>
+      <Col Name="ID3" Col="2" Page="0">
+      </Col>
+      <Col Name="ID4" Col="3" Page="0">
+      </Col>
+   </Page>
+   <Page Name="ID 5 - 6" Page="1">
+      <Col Name="ID1" Col="0" Page="1">
+      </Col>
+      <Col Name="ID2" Col="1" Page="1">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

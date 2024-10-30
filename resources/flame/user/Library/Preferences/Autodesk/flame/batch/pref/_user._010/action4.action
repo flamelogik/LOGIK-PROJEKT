@@ -1,0 +1,3314 @@
+Module Action
+Program Flame
+Version 2025.1.1
+FileVersion 4.000000
+CreationDate Mon Sep  9 21:09:42 2024
+
+FrameWidth 4096
+FrameHeight 2304
+FramePixelFormat 157
+FrameAspectRatio 1.777777791
+FrameDominance 2
+FrameColourSpace "Rec.709 video"
+
+	MinFrame 1001
+	CurrentFrame 1001
+	MaxFrames 90
+	AnimRefFrame 1001
+	ShadingMode no
+	WireframeMode no
+	ZBufferMode yes
+	FilteringDefault Linear
+	PremultipliedDefault no
+	UntitledOutputs no
+	AppendTypeOutputs yes
+	LinetestMode no
+	DefaultHideCams no
+	HideCams no
+	CurrentCamera 30
+	GridMode 3
+	Grid3DColour 0.300000012 0.300000012 0.300000012
+	CameraPlaneType 0
+	PlayLockMode no
+	QuickResolution 12
+	AntiAliasingLevel 0
+	AntiAliasingSoftness 1
+	MotionBlurEditor
+		Channel 
+			Extrapolation constant
+			Value 1
+			Size 3
+			KeyVersion 2
+			Key 0
+				Frame 50
+				Value 1
+				RHandle_dX 16.666666
+				RHandle_dY 0
+				LHandle_dX -16.666666
+				LHandle_dY 0
+				FrameLock yes
+				DeleteLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 100
+				Value 1
+				RHandle_dX 16.666666
+				RHandle_dY 0
+				LHandle_dX -16.666666
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 2
+				Frame 150
+				Value 1
+				RHandle_dX 16.666666
+				RHandle_dY 0
+				LHandle_dX -16.666666
+				LHandle_dY 0
+				FrameLock yes
+				DeleteLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			End
+		ChannelEnd
+	TopLevelChannel
+		Channel action4
+			Uncollapsed
+			End
+	ResultCamChannel
+		Channel ResultCamera
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+MotionBlurTopChannel
+		Channel motion_blur
+			Uncollapsed
+			End
+		MotionBlurPhaseChannel
+		Channel phase
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+	SoftwareAA
+		Channel SoftwareAA
+			Uncollapsed
+			End
+		MotionBlurEnableChannel
+		Channel enable
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+	MotionBlurShutterChannel
+		Channel shutter
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		ChannelEnd
+	MotionBlurSamplesChannel
+		Channel samples
+			Extrapolation constant
+			Value 5
+			Uncollapsed
+			End
+		ChannelEnd
+	SoftwareAASamples
+		Channel samples_n
+			Extrapolation constant
+			Value 128
+			Uncollapsed
+			End
+		ChannelEnd
+		DofMode no
+		DofSoftness 1
+		FogMode Off
+		FogColour 0 0 0
+		FogStart 0
+		FogEnd 1
+		FogRange 1
+		ProjectorMotionPathMode no
+		CamMotionPathMode yes
+		AxisMotionPathMode no
+		LightMotionPathMode no
+		PropScalingMode yes
+		SPropScalingMode yes
+		YSnapMode no
+		YGridSize 1
+		UpdateMode yes
+		InteractiveMode 14680064
+		AutoParentMode yes
+		ForceProxyUpdate yes
+		SnapTo3DMode no
+		SnapToZMode yes
+		DrawIconsMode IconsOn
+		DrawSelectionMode Outline
+		WidgetOcclusion no
+		IconTransparency 0
+		GMaskWidget yes
+		SchematicTransparency 0
+		AxisIconScale 100
+		ClipInfo 0
+		SubMenu LAYERS_MENU
+		ColourClamping no
+		ClampDivide no
+		SceneLinear yes
+		MatteChannel MatteChnlBlue
+		NodeBinStereoMode no
+		OverscanMode 0
+		OverscanScale 100
+		ResolutionMode yes
+		ColourSpaceMode no
+		FrameOnlyWorkingCam yes
+		ManipulatorOrientation 0
+		AutoImage yes
+		AmbientLightingMode yes
+		AbmientLightingIntensity 100
+		AmbientLightingShading 0
+		GMaskTextureSize 9
+		LightOpShadeEnableDefault yes
+		MiniUITabId 46
+		MiniUIObjectListId 0
+		MiniUIChildrenListId -1
+		SelectiveHUDActive yes
+		SelectiveToggleOverlay 1
+		SelectveAOVColour 1 0 1
+		SelectiveTransparency 50
+		SelectiveShowGMask yes
+		ResSelectorMode 0
+		ResAdaptativeMode 0
+		ResScalingMode 1
+		ResScalingValue 50
+		ResUnscaledWidth 4096
+		ResUnscaledHeight 2304
+		ResSrcPixelRatio 1
+		End
+
+#
+# node database
+#
+ConcreteFileVersion 2
+CreationDate Mon Sep  9 21:09:42 2024
+
+
+WorldScale 1
+
+PHedronToExternFile ""
+
+Node Group
+	Name scene
+	Number 0
+	Child 1
+	Child 2
+	Child 3
+	Child 4
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 0
+	PosY 0
+	Flags SCHEMATIC_HIDDEN
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+	}
+End
+Node Camera
+	Name Default
+	Number 1
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -386
+	PosY 187
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 3165.093994141
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel distance
+			Extrapolation constant
+			Value 2967.27539
+			Uncollapsed
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			Uncollapsed
+			End
+		Channel near
+			Extrapolation constant
+			Value 1.06666672
+			Uncollapsed
+			End
+		Channel far
+			Extrapolation constant
+			Value 10666.667
+			Uncollapsed
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 3
+		CamLensFilter 1
+		CamLensMode 1
+		CamMotionPathMode no
+		IconVisible yes
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 0
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Camera
+	Name Perspective
+	Number 2
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -193
+	PosY 258
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 3165.093994141
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel distance
+			Extrapolation constant
+			Value 2967.27539
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			End
+		Channel near
+			Extrapolation constant
+			Value 1.06666672
+			End
+		Channel far
+			Extrapolation constant
+			Value 10666.667
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 3
+		CamLensFilter 1
+		CamLensMode 1
+		CamMotionPathMode no
+		IconVisible no
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 1000004
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Camera
+	Name Object
+	Number 3
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 0
+	PosY 258
+	Flags HIDDEN&SCHEMATIC_HIDDEN
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel distance
+			Extrapolation constant
+			Value 0
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			End
+		Channel near
+			Extrapolation constant
+			Value 1.06666672
+			End
+		Channel far
+			Extrapolation constant
+			Value 10666.667
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 3
+		CamLensFilter 1
+		CamLensMode 1
+		CamMotionPathMode no
+		IconVisible yes
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 1000007
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Axis
+	Name axis1
+	Number 4
+	Child 5
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 0
+	PosY 0
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0.000244140625
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel scaling/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel shearing/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceScale/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel offset
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		MBlur yes
+		Global no
+		Orientation 2
+		RigSelection 0
+		ReferenceIsTracking yes
+		AutoScale 0
+		Type 0
+		TrackingCamera -1
+		InvertMode no
+		Opts 0
+		PlaneColour 1 1 1
+		LookAt
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		Trackable
+		TrackingMode 0
+		MediaIdx 1
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 0
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3778
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		CoNodeFlags
+		Collapsed yes
+		CoNodeFlagsEnd
+	}
+End
+Node SurfaceSquare
+	Name surface1
+	Number 5
+	Child 6
+	MotionPath yes
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -2
+	PosY -127
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		ShadedObject
+		Version 1
+		Distortable
+			DistortableNbReferences 1
+			DistortableReference 1001
+			DistortableReferenceOpts 0
+			DistortableOpts 2
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		ShadedObjectEnd
+		Blending 0
+		Premultiplied yes
+		ShadingMode AMBIENT
+		FMType 0
+		FMCustom 1
+		DisplacementLayer -1
+		DisplacementMode DISPL_OFF
+		DisplacementDir DISPL_ZD
+		Layer 1
+		Filtering 1
+		MaxMeshWidth 4
+		MaxMeshHeight 4
+		Width 4
+		Height 4
+		ResWidth 4096
+		ResHeight 2304
+		ResAspect 1.77777779
+		StepSize 6
+		UseShapes yes
+		NumControlPoints 0
+		NumTrackControlPoints 0
+		NumUVControlPoints 0
+		NumUVTrackControlPoints 0
+		MBlur yes
+		AutoTangent no
+		Subdivisions 0
+		Sort no
+		AutoExpand no
+		BilinearAsPerspective no
+		BilinearCrop yes
+		Extrapolation EXTRAP_LINEAR
+		LockExpansion yes
+		DoubleSideShading no
+		LensDistState 0
+		LensDistAutomatic no
+		LensDistAnalyzerId -1
+		LensDistUniformFlag yes
+		PerspectiveVertexStabType 1
+		PerspectiveUVStabType 1
+		NonPerspectiveVertexStabType 0
+		NonPerspectiveUVStabType 0
+		BlendingCurves
+		BlendingCurvesMaxValue 1
+		BlendingCurvesType 0
+		BlendingCurvesCurrentEye 1
+		Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Current_Shape 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Shape_End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Current_Shape 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Shape_End
+			BlendingCurvesCurrentEye 0
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Current_Shape 1
+			Channel FrontBlendingCurve
+				Extrapolation constant
+				Value 1
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY 0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY -0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Shape_End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Frame_Number 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Current_Shape 1
+			Channel BackBlendingCurve
+				Extrapolation constant
+				Value 0
+				Size 2
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 1
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 1
+					Value 0
+					RHandle_dX 0.333333343
+					RHandle_dY -0.333333343
+					LHandle_dX -0.333333343
+					LHandle_dY 0.333333343
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Uncollapsed
+				End
+			Shape_End
+			BlendingCurvesEnd
+		Channel transparency
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shape
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel track_shape
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel uv_shape
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel uv_track_shape
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel vertices
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel track_vertices
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel uv_vertices
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel uv_track_vertices
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel material/shininess
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel material/specular/r
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel material/specular/g
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel material/specular/b
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel material/diffuse/r
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel material/diffuse/g
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel material/diffuse/b
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel material/ambient/r
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel material/ambient/g
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel material/ambient/b
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel material/flipN
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lensDistort/centreX
+			Extrapolation constant
+			Value 2048
+			Uncollapsed
+			End
+		Channel lensDistort/centreY
+			Extrapolation constant
+			Value 1152
+			Uncollapsed
+			End
+		Channel lensDistort/magnitude
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lensDistort/adjustment
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lensDistort/anamorph
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel offset/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel offset/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel displacement/softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel displacement/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel displacement/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel displacement/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel displacement/offset
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel expansion/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel expansion/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/smoothing
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/frames
+			Extrapolation constant
+			Value 1001
+			Size 1
+			KeyVersion 2
+			Key 0
+				Frame 1001
+				Value 1001
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				FrameLock yes
+				ValueLock yes
+				DeleteLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		ChannelEnd
+	}
+End
+Node Axis
+	Name axis2
+	Number 6
+	Child 7
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 4
+	PosY -223
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel scaling/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel shearing/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceScale/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel offset
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		MBlur yes
+		Global no
+		Orientation 2
+		RigSelection 0
+		ReferenceIsTracking yes
+		AutoScale 0
+		Type 0
+		TrackingCamera -1
+		InvertMode no
+		Opts 0
+		PlaneColour 1 1 1
+		LookAt
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		Trackable
+		TrackingMode 0
+		MediaIdx 0
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 0
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3778
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		CoNodeFlags
+		Collapsed yes
+		CoNodeFlagsEnd
+	}
+End
+Node UVMap
+	Name UV1
+	Number 7
+	MotionPath yes
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 2
+	PosY -350
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		UVMapAnalysis
+		MapWithAnalysisMapCommon
+			MapVersion 3
+			MapLayer 2
+			MapRepeat NMAP_REPEAT_OFF
+			MapResize NMAP_RESIZE_OFF
+			MapKeepAspect no
+			MapUseCroppedSize yes
+			MapFilteringMode MAP_FILTER_NEAREST
+			MapCamera -1
+			MapCameraType MONO
+			MapCoordType UV
+			MapProjectionRigSelection CENTER
+			MapTextureFileColorSpace 			"Unknown"
+			MapTextureFileWorkingColorSpace 			"UV_201605"
+			MapTextureFileColourSpaceMgt 0
+			MapUdimMaxU 1
+			MapUdimMaxV 1
+			MapUdimScalingOn no
+			MapCoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		MapEnd
+		MapWithAnalysisOptFlags 0
+		MapWithAnalysisResolution 1
+		MapWithAnalysisType 0
+		MapWithAnalysisID 0
+		MapWithAnalysisCache
+			AnalysisVersion 2021.15503
+			CacheNbRendered 0
+			Opts 10
+			MtAnalysisAHstId 18872959
+			MtAnalysisTvSec 1725850303
+			MtAnalysisTvUSec 179680
+			CacheVersion -1
+			CacheSize 1
+			CacheHstId 0
+			CacheTvSec 0
+			CacheTvUSec 0
+			CacheRangeType 1
+			CacheRangeFrameStart 1001
+			CacheRangeFrameStart 1090
+			CacheRangeSize 0
+			MultiChnClipHstId 0
+			MultiChnClipTvSec 0
+			MultiChnClipTvUSec 0
+			MultiChnClipSlip 0
+			MultiChnClipName 			"NoName"
+			TGAnalysisModelId 21
+			TGAnalysisTGUOpts 0
+			TGAnalysisOutBinding 0
+			
+		}
+		UVMapApplyType DiffuseOnly
+		UVMapUseObjectId no
+		UVMapObjectId 1
+		Channel softnessX
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel softnessY
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel effect
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel analysis/analysis_roi/x
+			Extrapolation constant
+			Value 0.5
+			Uncollapsed
+			End
+		Channel analysis/analysis_roi/y
+			Extrapolation constant
+			Value 0.5
+			Uncollapsed
+			End
+		Channel analysis/analysis_roi/w
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel analysis/analysis_roi/h
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel analysis/analysis_tgt/position/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel analysis/analysis_tgt/position/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+	}
+End
+ConcreteEnd
+CompassOrder
+	Count 0
+End
+
+#
+# outputs
+#
+CurrentOutputIdx 0
+NumberOfOutputs 1
+	OptFlags 2
+	OutputTypeNum 24
+	ChnOptFlags 3
+	ChnOptFlags 2
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	Index 0
+		Uuid 		"9435529e-634b-4e8b-ab2a-1bca4aa03a22"
+		Name 		"output1"
+		Active yes
+		CompleteScene yes
+		AllMXPost no
+		UseGMask yes
+		UseLFORAys yes
+		MotionBlur yes
+		DOF yes
+		Camera 1000000
+		Light -1
+		OutputType 0
+		PixelFormat 157
+		Transparency yes
+		UseEmissive yes
+		UseAmbient yes
+		UseSpecularity yes
+		UseReflection yes
+		AllowMatteAsBack no
+		MatteBackColor 1
+		MotionRange 0
+		MotionFDS 0
+		MediaMatteIdx 1
+		ZDepthThreshold 0
+		BilateralFilter 0
+		MaxZDepth 100
+		OutputMode 0
+		GMaskBlendType 0
+		BackgroundMode 0
+		ShadowMode 1
+		GMaskTransparency 0
+		GMaskBlending 1
+		GMaskBlendModel 0
+		GMaskCorrelation 0
+		GMaskColorBlendModel 0
+		GMaskColorBlendType 21
+		BackgroundColor 0 0 0 1
+		UseSSAO no
+		SSAORegen yes
+		SSAOContrast 1
+		SSAORadius 100
+		SSAOAttenuation 100
+		SSAOAngleBias 30
+		SSAOSoftness 8
+		SSAOJitterSoftness 1
+		SSAONumCamPos 1
+		SSAONumSteps 10
+		ShadingMode yes
+		AccumMode 1
+	End
+UIFocus 7
+End
+
+#
+# layers
+#
+ActionLayerFileVersion 2
+CreationDate Mon Sep  9 21:09:42 2024
+
+LayerCount 3
+
+Layer 0
+	FrontMode 1
+	MatteMode 1
+	ProxyMode yes
+	FrameMode AS_INPUT
+	ResWidth 3840
+	ResHeight 2160
+	ResPixelFormat 143
+	ResAspect 1.77777779
+	ResScanMode SCAN_FORMAT_FRAME
+	ImageDataType 4
+	FrontConnectedToMatte no
+	FrontClipName 	"(None)"
+	FrontClipUID 0 0 0
+	MatteClipName 	"(None)"
+	MatteClipUID 0 0 0
+	MediaFxAllocateFlag 3
+	MediaFxAllocateFlag 4
+	MediaFxAllocateFlag 9
+	KeyerPost no
+	End
+Layer 1
+	FrontMode 1
+	MatteMode 1
+	ProxyMode yes
+	FrameMode AS_INPUT
+	ResWidth 4096
+	ResHeight 2304
+	ResPixelFormat 157
+	ResAspect 1.77777779
+	ResScanMode SCAN_FORMAT_FRAME
+	ImageDataType 4
+	FrontConnectedToMatte no
+	FrontClipName 	""
+	FrontClipUID 0 105553192654692 4421276761
+	MatteClipName 	""
+	MatteClipUID 0 105553192654692 4421276761
+	MediaFxAllocateFlag 3
+	MediaFxAllocateFlag 4
+	MediaFxAllocateFlag 9
+	KeyerPost no
+	End
+Layer 2
+	FrontMode 1
+	MatteMode 1
+	ProxyMode yes
+	FrameMode AS_INPUT
+	ResWidth 4096
+	ResHeight 2304
+	ResPixelFormat 157
+	ResAspect 1.77777779
+	ResScanMode SCAN_FORMAT_FRAME
+	ImageDataType 4
+	FrontConnectedToMatte no
+	FrontClipName 	""
+	FrontClipUID 0 105553192654696 4421276761
+	MatteClipName 	""
+	MatteClipUID 0 105553192654696 4421276761
+	MediaFxAllocateFlag 3
+	MediaFxAllocateFlag 4
+	MediaFxAllocateFlag 9
+	KeyerPost no
+	End
+LayerEnd
+
+#
+# multitracks
+#
+ActionMTFileVersion 2
+CreationDate Mon Sep  9 21:09:42 2024
+
+
+Layer 0
+	End
+Layer 1
+	End
+Layer 2
+	End
+MultiTrackEnd
+
+#
+# drawing order
+#
+DrawingOrderFileVersion 1.0
+CreationDate Mon Sep  9 21:09:42 2024
+
+LookupTableFrame 0
+	LookupTableGroup 0
+		LookupTableNPath 3
+			OutputsSize 0
+			End
+	LookupTableGroup 1
+		LookupTableNPath 4
+			OutputsSize 0
+			End
+	LookupTableGroup 2
+		LookupTableNPath 0
+			OutputsSize 0
+			End
+	LookupTableGroup 3
+		LookupTableNPath 1
+			OutputsSize 0
+			End
+	LookupTableGroup 4
+		LookupTableNPath 2
+			OutputsSize 0
+			End
+	LookupTableGroup 5
+		LookupTableNPath 5
+			OutputsSize 0
+			End
+	LookupTableGroup 6
+		LookupTableNPath 6
+			OutputsSize 0
+			End
+	LookupTableGroup 7
+		LookupTableNPath 7
+			OutputsSize 0
+			End
+LookupTableFrame 1000
+	LookupTableGroup 0
+		LookupTableNPath 3
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 1
+		LookupTableNPath 4
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 2
+		LookupTableNPath 2
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 3
+		LookupTableNPath 1
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 4
+		LookupTableNPath 5
+			OutputsSize 0
+			End
+	LookupTableGroup 5
+		LookupTableNPath 6
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 6
+		LookupTableNPath 7
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 7
+		LookupTableNPath 0
+			OutputsSize 0
+			End
+LookupAutoKey no
+DrawingOrderEnd

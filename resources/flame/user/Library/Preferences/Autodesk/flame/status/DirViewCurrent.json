@@ -1,0 +1,104 @@
+{
+    "Settings": [
+        {
+            "name": "MainDirViewNFWThumbnailSize",
+            "value": 22
+        },
+        {
+            "name": "MainDirViewFWThumbnailSize",
+            "value": 45
+        },
+        {
+            "name": "AltDirViewThumbnailSize",
+            "value": 45
+        },
+        {
+            "name": "ModalDirViewThumbnailSize",
+            "value": 45
+        },
+        {
+            "name": "FxDirViewThumbnailSize",
+            "value": 22
+        },
+        {
+            "name": "MainDirViewNFWPiconSize",
+            "value": 3
+        },
+        {
+            "name": "MainDirViewFWPiconSize",
+            "value": 1
+        },
+        {
+            "name": "AltDirViewPiconSize",
+            "value": 1
+        },
+        {
+            "name": "ModalDirViewPiconSize",
+            "value": 1
+        },
+        {
+            "name": "FxDirViewPiconSize",
+            "value": 1
+        },
+        {
+            "name": "MainDirAreaTab",
+            "value": 1
+        },
+        {
+            "name": "AltDirAreaTab",
+            "value": 0
+        },
+        {
+            "name": "ModalDirAreaTab",
+            "value": 0
+        },
+        {
+            "name": "FxDirAreaTab",
+            "value": 0
+        },
+        {
+            "name": "FxDirViewMediaHubTab",
+            "value": 6
+        },
+        {
+            "name": "FxDirViewConformTab",
+            "value": 0
+        },
+        {
+            "name": "FxDirViewFimTab",
+            "value": 6
+        },
+        {
+            "name": "FxDirViewBatchTab",
+            "value": 6
+        },
+        {
+            "name": "FxDirViewTimelineAndToolsTab",
+            "value": 6
+        },
+        {
+            "name": "SavedMainDirViewModeNFW",
+            "value": 0
+        },
+        {
+            "name": "SavedMainDirViewModeFW",
+            "value": 0
+        },
+        {
+            "name": "SavedAltDirViewMode",
+            "value": 1
+        },
+        {
+            "name": "SavedModalDirViewMode",
+            "value": 1
+        },
+        {
+            "name": "SavedFXDirViewMode",
+            "value": 1
+        },
+        {
+            "name": "SavedFXTabDirViewMode",
+            "value": 1
+        }
+    ]
+}

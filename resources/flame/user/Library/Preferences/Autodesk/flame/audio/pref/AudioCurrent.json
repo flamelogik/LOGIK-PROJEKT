@@ -1,0 +1,84 @@
+{
+    "Settings": [
+        {
+            "name": "AudioEnabled",
+            "value": true
+        },
+        {
+            "name": "AudioSetResetPlayDelay",
+            "value": true
+        },
+        {
+            "name": "AudioBroadcastPlayDelay",
+            "value": 0.0
+        },
+        {
+            "name": "AudioHiresPlayDelay",
+            "value": 0.0
+        },
+        {
+            "name": "AudioAutoFadeLengthMs",
+            "value": 1.5
+        },
+        {
+            "name": "AudioMeterRange",
+            "value": 42.0
+        },
+        {
+            "name": "AudioMeterGreen",
+            "value": -12.0
+        },
+        {
+            "name": "AudioMeterYellow",
+            "value": -4.0
+        },
+        {
+            "name": "AudioMeterStep",
+            "value": 2.0
+        },
+        {
+            "name": "AudioSetMeterScale",
+            "value": 1
+        },
+        {
+            "name": "AudioInput",
+            "value": 9
+        },
+        {
+            "name": "AudioOutput",
+            "value": 0
+        },
+        {
+            "name": "AudioInputClock",
+            "value": 0
+        },
+        {
+            "name": "AudioOuputClock",
+            "value": 0
+        },
+        {
+            "name": "AudioInRate",
+            "value": 7
+        },
+        {
+            "name": "AudioOutRate",
+            "value": 7
+        },
+        {
+            "name": "AudioToneReferenceStandard",
+            "value": 0
+        },
+        {
+            "name": "AudioToneReferenceLevel",
+            "value": -20
+        },
+        {
+            "name": "AudioConsiderHeadTail",
+            "value": true
+        },
+        {
+            "name": "AudioMonitoringTracksExt",
+            "value": 2
+        }
+    ]
+}

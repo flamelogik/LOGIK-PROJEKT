@@ -1,0 +1,67 @@
+<ShaderNodePreset Name="K_BlurMask" Description="K_BlurMask 1.1
+
+	Blurs an isolated region based on the matte input.
+
+	Shader written by:   Kyle Obley (kyle.obley@gmail.com)" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="matte" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" DisplayName="Matte" Tooltip="" NoInput="White" Index="1">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" DisplayName="Strength" Tooltip="" NoInput="White" Index="2">
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="sigma" Type="float" DisplayName="Blur Amount" Page="0" Col="0" Row="0" Tooltip="" Inc="0.01" Default="0.0" Min="0.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="h_bias" Type="float" DisplayName="Horizontal Bias" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="sigma" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="v_bias" Type="float" DisplayName="Vertical Bias" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="6" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass5" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform ValueType="Popup" Name="matte_output_selection" Type="int" DisplayName="Matte Output" Page="0" Col="2" Row="0" Tooltip="" Inc="1" Default="1" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Original">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Blurred">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Strength">
+         </PopupEntry>
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="K_BlurMask">
+      <Col Page="0" Col="0" Name="Main">
+      </Col>
+      <Col Page="0" Col="1" Name="Bias">
+      </Col>
+      <Col Page="0" Col="2" Name="Output">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

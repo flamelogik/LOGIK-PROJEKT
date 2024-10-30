@@ -1,0 +1,8 @@
+{
+    "Settings": [
+        {
+            "name": "PyboxPresetPath",
+            "value": "/opt/Autodesk/presets/2025.pr194/pybox/"
+        }
+    ]
+}

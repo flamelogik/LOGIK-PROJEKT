@@ -1,0 +1,91 @@
+<ShaderNodePreset SupportsAdaptiveDegradation="0" LimitInputsToTexture="True" Version="1" Description="miles@noesclavo.com  BLURS  Blur a thing. Options include the abilty to constrain the blur within an optional matte input. This shader also provides the means to drive the amount of blur with the optional black and white strength channel.  The blur algorithm is the artistry of Lewis Saunders." Name="BLURS">
+   <Shader OutputBitDepth="Output" Index="1">
+      <Uniform Index="0" NoInput="Error" Tooltip="" DisplayName="Front" InputType="Front" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="Front">
+      </Uniform>
+      <Uniform Row="2" Col="0" Page="0" Default="False" Tooltip="Invert the matte" DisplayName="Invert Matte" Type="bool" Name="invert_matte">
+      </Uniform>
+      <Uniform Max="1000000" Min="-1000000" Default="0" Inc="1" Tooltip="Working colorspace. Set this to the current working colorspace. This insures a linear blur (no dark edges)." Row="0" Col="0" Page="0" DisplayName="Colorspace" Type="int" Name="i_colorspace" ValueType="Popup">
+         <PopupEntry Title="Rec 709" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="sRGB" Value="1">
+         </PopupEntry>
+         <PopupEntry Title="Linear" Value="2">
+         </PopupEntry>
+         <PopupEntry Title="2.2 Gamma" Value="3">
+         </PopupEntry>
+         <PopupEntry Title="1.8 Gamma" Value="4">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Index="1" NoInput="White" Tooltip="" DisplayName="Matte" InputType="Matte" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="Matte">
+      </Uniform>
+   </Shader>
+   <Shader OutputBitDepth="Output" Index="2">
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass1">
+      </Uniform>
+      <Uniform Index="2" NoInput="White" Tooltip="Optional black and white input. This will cause the shader to blur 100% where strength input is white and 0% where black, and every % in between." DisplayName="Strength" InputColor="80, 80, 20" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="Strength">
+      </Uniform>
+      <Uniform Row="3" Col="0" Page="0" Default="False" Tooltip="Use the matte input as the strength input as well." Type="bool" DisplayName="Matte is Strength" Name="matte_is_strength">
+      </Uniform>
+   </Shader>
+   <Shader OutputBitDepth="Output" Index="3">
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass1">
+      </Uniform>
+   </Shader>
+   <Shader OutputBitDepth="Output" Index="4">
+      <Uniform ResDependent="None" Max="1000000.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="Set the bias for the red channel." Row="0" Col="2" Page="0" DisplayName="Red Bias" Type="float" Name="blur_red">
+      </Uniform>
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass2">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="000000.0" Default="1.0" Inc="0.01" Tooltip="Set the bias for the green channel." Row="1" Col="2" Page="0" DisplayName="Green Bias" Type="float" Name="blur_green">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="00000.0" Default="1.0" Inc="0.01" Tooltip="Set the horizontal bias." Row="1" Col="1" Page="0" DisplayName="Blur X" Type="float" Name="h_bias">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="000000.0" Default="1.0" Inc="0.01" Tooltip="Set the bias for the blue channel." Row="2" Col="2" Page="0" DisplayName="Blue Bias" Type="float" Name="blur_blue">
+      </Uniform>
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass3">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0" Inc="0.01" Tooltip="Overall blur amount." Row="0" Col="1" Page="0" DisplayName="Blur" Type="float" Name="blur_amount">
+      </Uniform>
+   </Shader>
+   <Shader OutputBitDepth="Output" Index="5">
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass4">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="000000.0" Default="1.0" Inc="0.01" Tooltip="Set the veritcal bias." Row="2" Col="1" Page="0" DisplayName="Blur Y" Type="float" Name="v_bias">
+      </Uniform>
+      <Uniform Type="int" Name="i_colorspace">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Type="float" Name="blur_red">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass2">
+      </Uniform>
+      <Uniform Row="1" Col="0" Page="0" Default="True" Tooltip="Blur only the pixels that reside inside the area of the matte." DisplayName="Constrain Blur to Matte" Type="bool" Name="keep_inside">
+      </Uniform>
+      <Uniform Type="float" Name="blur_green">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass1">
+      </Uniform>
+      <Uniform Type="float" Name="blur_blue">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Type="float" Name="blur_amount">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Page Name="Page 1" Page="0">
+      <Col Name="Input / Options" Col="0" Page="0">
+      </Col>
+      <Col Name="Blur" Col="1" Page="0">
+      </Col>
+      <Col Name="Blur RGB" Col="2" Page="0">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

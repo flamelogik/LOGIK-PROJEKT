@@ -1,0 +1,4296 @@
+Module Mask
+Program Flame
+Version 2024.1
+FileVersion 3.100000
+CreationDate Mon Oct 23 12:12:08 2023
+
+FrameWidth 2880
+FrameHeight 1620
+FramePixelFormat 143
+FrameAspectRatio 1.777777791
+FrameDominance 2
+FrameColourSpace "Matte_201605"
+
+	MinFrame 1001
+	CurrentFrame 1001
+	MaxFrames 66
+	AnimRefFrame 1001
+	ShadingMode no
+	WireframeMode no
+	ZBufferMode yes
+	FilteringDefault Linear
+	PremultipliedDefault no
+	UntitledOutputs no
+	AppendTypeOutputs yes
+	LinetestMode no
+	DefaultHideCams no
+	HideCams no
+	CurrentCamera 30
+	GridMode 3
+	Grid3DColour 0.300000012 0.300000012 0.300000012
+	CameraPlaneType 0
+	PlayLockMode no
+	QuickResolution 6
+	AntiAliasingLevel 0
+	AntiAliasingSoftness 1
+	MotionBlurEditor
+		Channel 
+			Extrapolation constant
+			Value 1
+			Size 3
+			KeyVersion 2
+			Key 0
+				Frame 50
+				Value 1
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				FrameLock yes
+				DeleteLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 100
+				Value 1
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 2
+				Frame 150
+				Value 1
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				FrameLock yes
+				DeleteLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			End
+		ChannelEnd
+	TopLevelChannel
+		Channel mask209
+			Uncollapsed
+			End
+	ResultCamChannel
+		Channel ResultCamera
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+MotionBlurTopChannel
+		Channel motion_blur
+			Uncollapsed
+			End
+		MotionBlurPhaseChannel
+		Channel phase
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+	SoftwareAA
+		Channel SoftwareAA
+			Uncollapsed
+			End
+		MotionBlurEnableChannel
+		Channel enable
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+	MotionBlurShutterChannel
+		Channel shutter
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		ChannelEnd
+	MotionBlurSamplesChannel
+		Channel samples
+			Extrapolation constant
+			Value 5
+			Uncollapsed
+			End
+		ChannelEnd
+	SoftwareAASamples
+		Channel samples_n
+			Extrapolation constant
+			Value 128
+			Uncollapsed
+			End
+		ChannelEnd
+		DofMode no
+		DofSoftness 1
+		FogMode Off
+		FogColour 0 0 0
+		FogStart 0
+		FogEnd 1
+		FogRange 1
+		ProjectorMotionPathMode no
+		CamMotionPathMode no
+		AxisMotionPathMode no
+		LightMotionPathMode no
+		PropScalingMode yes
+		SPropScalingMode yes
+		YSnapMode no
+		YGridSize 1
+		UpdateMode yes
+		InteractiveMode 14680064
+		AutoParentMode yes
+		ForceProxyUpdate yes
+		SnapTo3DMode no
+		SnapToZMode yes
+		DrawIconsMode IconsOn
+		DrawSelectionMode Outline
+		WidgetOcclusion no
+		IconTransparency 0
+		GMaskWidget yes
+		SchematicTransparency 0
+		AxisIconScale 100
+		ClipInfo 0
+		SubMenu NODEBIN_MENU
+		ColourClamping no
+		ClampDivide no
+		SceneLinear no
+		MatteChannel MatteChnlBlue
+		NodeBinStereoMode no
+		OverscanMode 0
+		OverscanScale 100
+		ResolutionMode no
+		ColourSpaceMode no
+		FrameOnlyWorkingCam yes
+		ManipulatorOrientation 0
+		AutoImage yes
+		AmbientLightingMode yes
+		AbmientLightingIntensity 100
+		AmbientLightingShading 0
+		GMaskTextureSize 9
+		LightOpShadeEnableDefault yes
+		MiniUITabId 19
+		MiniUIObjectListId 0
+		MiniUIChildrenListId -1
+		SelectiveHUDActive yes
+		SelectiveToggleOverlay 1
+		SelectveAOVColour 1 0 1
+		SelectiveTransparency 50
+		SelectiveShowGMask yes
+		ResSelectorMode 0
+		ResAdaptativeMode 0
+		ResScalingMode 1
+		ResScalingValue 50
+		ResUnscaledWidth 2880
+		ResUnscaledHeight 1620
+		ResSrcPixelRatio 1
+		End
+
+#
+# node database
+#
+ConcreteFileVersion 2
+CreationDate Mon Oct 23 12:12:08 2023
+
+
+WorldScale 1
+
+PHedronToExternFile ""
+
+Node Group
+	Name scene
+	Number 0
+	Child 1
+	Child 2
+	Child 3
+	Child 4
+	Child 6
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 0
+	PosY 0
+	Flags SCHEMATIC_HIDDEN
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+	}
+End
+Node Camera
+	Name Default
+	Number 1
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -386
+	PosY 187
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 2225.456542969
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel distance
+			Extrapolation constant
+			Value 2225.45654
+			Uncollapsed
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			Uncollapsed
+			End
+		Channel near
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel far
+			Extrapolation constant
+			Value 10000
+			Uncollapsed
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 0
+		CamLensFilter 1
+		CamLensMode 0
+		CamMotionPathMode no
+		IconVisible yes
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 0
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Camera
+	Name Perspective
+	Number 2
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -193
+	PosY 258
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 2225.456542969
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel distance
+			Extrapolation constant
+			Value 2225.45654
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			End
+		Channel near
+			Extrapolation constant
+			Value 1
+			End
+		Channel far
+			Extrapolation constant
+			Value 10000
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 0
+		CamLensFilter 1
+		CamLensMode 0
+		CamMotionPathMode no
+		IconVisible no
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 1000004
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Camera
+	Name Object
+	Number 3
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 0
+	PosY 258
+	Flags HIDDEN&SCHEMATIC_HIDDEN
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel distance
+			Extrapolation constant
+			Value 0
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			End
+		Channel near
+			Extrapolation constant
+			Value 1
+			End
+		Channel far
+			Extrapolation constant
+			Value 10000
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 0
+		CamLensFilter 1
+		CamLensMode 0
+		CamMotionPathMode no
+		IconVisible yes
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 1000007
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Axis
+	Name axis1
+	Number 4
+	Child 5
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 80
+	PosY -365
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value -8.65142192e-06
+			Uncollapsed
+			End
+		Channel scaling/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel shearing/x
+			Extrapolation constant
+			Value -1.50995802e-05
+			Uncollapsed
+			End
+		Channel shearing/y
+			Extrapolation constant
+			Value 1.50995802e-05
+			Uncollapsed
+			End
+		Channel shearing/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceScale/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel offset
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		MBlur yes
+		Global no
+		Orientation 2
+		RigSelection 0
+		ReferenceIsTracking yes
+		AutoScale 0
+		Type 0
+		TrackingCamera -1
+		InvertMode no
+		Opts 0
+		PlaneColour 1 1 1
+		LookAt
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		Trackable
+		TrackingMode 0
+		MediaIdx 0
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 0
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3778
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		CoNodeFlags
+		Collapsed yes
+		CoNodeFlagsEnd
+	}
+End
+Node GMask
+	Name gmask1
+	Number 5
+	MotionPath yes
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 80
+	PosY -490
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Invert no
+		EnableKeyer no
+		InvertKeyer no
+		KeyerMode KEY_ALL_MULT
+		KeyerInterpolation LINEAR
+		LockSpline no
+		VertexCount 10
+		VertexTupleSize 6
+		GradientCount 0
+		GradidentTupleSize 2
+		DegreeAngles yes
+		GradientPointsMode FREE
+		ShapeAnimation yes
+		CurrentShape
+		VertexCount 10
+		PointData -174.289612
+		PointData 10.2318048
+		PointData -1487.09827
+		PointData 135.833862
+		PointData 5.71038866
+		PointData 10.2318048
+		PointData 196.389648
+		PointData 18.0401821
+		PointData -1327.2616
+		PointData 87.984726
+		PointData 16.3895397
+		PointData 18.0401821
+		PointData 189.688782
+		PointData 42.3447075
+		PointData -677.735229
+		PointData 63.551033
+		PointData 9.68876743
+		PointData 42.3447075
+		PointData 192.094742
+		PointData 14.5764933
+		PointData -213.496918
+		PointData 28.9367027
+		PointData 12.0947561
+		PointData 14.5764933
+		PointData -171.027344
+		PointData 19.5828838
+		PointData 167.259949
+		PointData 52.3521729
+		PointData 8.97263336
+		PointData 19.5828838
+		PointData 202.619644
+		PointData 13.2349195
+		PointData 679.347351
+		PointData 11.6294394
+		PointData 22.6197586
+		PointData 13.2349195
+		PointData 193.626968
+		PointData 34.569313
+		PointData 1314.62085
+		PointData -18.9126492
+		PointData 13.6269855
+		PointData 34.569313
+		PointData -101.309502
+		PointData 15.5733976
+		PointData 1518.23413
+		PointData -9.75008202
+		PointData 78.690506
+		PointData 15.5733976
+		PointData -29.0551796
+		PointData 20.9632225
+		PointData 1558.95691
+		PointData 845.425659
+		PointData 150.944946
+		PointData 20.9632225
+		PointData -0.408007741
+		PointData 0
+		PointData -1461.64636
+		PointData 876.986267
+		PointData -92.7518616
+		PointData 0
+		IndexesCount 10
+		Indexes 37512
+		Indexes 37514
+		Indexes 37516
+		Indexes 37518
+		Indexes 37520
+		Indexes 37522
+		Indexes 37524
+		Indexes 37526
+		Indexes 37528
+		Indexes 37530
+		Shapes 1
+			Shape 0
+				Frame 1066
+				Index 0
+				VertexCount 10
+				PointData -174.289612
+				PointData 10.2318048
+				PointData -1487.09827
+				PointData 135.833862
+				PointData 5.71038866
+				PointData 10.2318048
+				PointData 196.389648
+				PointData 18.0401821
+				PointData -1327.2616
+				PointData 87.984726
+				PointData 16.3895397
+				PointData 18.0401821
+				PointData 189.688782
+				PointData 42.3447075
+				PointData -677.735229
+				PointData 63.551033
+				PointData 9.68876743
+				PointData 42.3447075
+				PointData 192.094742
+				PointData 14.5764933
+				PointData -213.496918
+				PointData 28.9367027
+				PointData 12.0947561
+				PointData 14.5764933
+				PointData -171.027344
+				PointData 19.5828838
+				PointData 167.259949
+				PointData 52.3521729
+				PointData 8.97263336
+				PointData 19.5828838
+				PointData 202.619644
+				PointData 13.2349195
+				PointData 679.347351
+				PointData 11.6294394
+				PointData 22.6197586
+				PointData 13.2349195
+				PointData 193.626968
+				PointData 34.569313
+				PointData 1314.62085
+				PointData -18.9126492
+				PointData 13.6269855
+				PointData 34.569313
+				PointData -101.309502
+				PointData 15.5733976
+				PointData 1518.23413
+				PointData -9.75008202
+				PointData 78.690506
+				PointData 15.5733976
+				PointData -29.0551796
+				PointData 20.9632225
+				PointData 1558.95691
+				PointData 845.425659
+				PointData 150.944946
+				PointData 20.9632225
+				PointData -0.408007741
+				PointData 0
+				PointData -1461.64636
+				PointData 876.986267
+				PointData -92.7518616
+				PointData 0
+				IndexesCount 10
+				Indexes 37512
+				Indexes 37514
+				Indexes 37516
+				Indexes 37518
+				Indexes 37520
+				Indexes 37522
+				Indexes 37524
+				Indexes 37526
+				Indexes 37528
+				Indexes 37530
+				InterpolationType 0
+		CurrentShape
+		VertexCount 10
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		IndexesCount 10
+		Indexes 37512
+		Indexes 37514
+		Indexes 37516
+		Indexes 37518
+		Indexes 37520
+		Indexes 37522
+		Indexes 37524
+		Indexes 37526
+		Indexes 37528
+		Indexes 37530
+		Shapes 0
+		InterpolationType 0
+		CurrentShape
+		ValueCount 0
+		Shapes 0
+		InterpolationType 0
+		TrackerCamera -1
+		TrackerCameraType TRACK_CAMERA_LEFT
+		ViewType VIEW_AUTO_FRAME
+		Correlation 0
+		Composite 1
+		ColorBlendModel 0
+		ColorBlendType 21
+		Extrapolation 1
+		Closure 1
+		CurveColor 1 0.389999986 0
+		CurveHandleColor 1 1 0
+		EdgeColor 1 0.629999995 0
+		InactiveColor 0.5 0.5 0.5
+		LockedColor 0.75 0 0
+		KeyerFgSamplerColor 1 0 0
+		KeyerBgSamplerColor 0 1 0
+		GradientCurve
+			Current_Shape 1
+			Channel gradient_curve
+				Extrapolation constant
+				Value 0
+				Size 3
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 100
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 50
+					Value 50
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 2
+					Frame 100
+					Value 0
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				End
+			Shape_End
+		Visibility 0
+		LassoTolerance 0
+		BlendModel 3
+		FlameBlendType 0
+		GMaskType 0
+		PPMode 0
+		PolysplineHole no
+		LegacySmoothing no
+		Opts 2
+		DisplaySpline yes
+		DisplayVertex yes
+		DisplayGradientOutline yes
+		DisplayInactive yes
+		DisplayLocked yes
+		SplineKeyFraming no
+		KeyerType 0
+		CurrentShape
+		SamplersCount 0
+		NbKeyers 0
+		Flags 0
+		Shapes 0
+		InterpolationType 0
+		GroupChannel
+		Channel spline
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel track_spline
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shape
+			Extrapolation constant
+			Value 0
+			Size 1
+			KeyVersion 2
+			Key 0
+				Frame 1066
+				Value 0
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				ValueLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel track_shape
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel gradient
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel color
+			Extrapolation constant
+			Value 0
+			Size 1
+			KeyVersion 2
+			Key 0
+				Frame 1066
+				Value 0
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel transparency
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel intensity
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel smoothing
+			Extrapolation constant
+			Value 50
+			Uncollapsed
+			End
+		Channel blur
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tolerance
+			Extrapolation constant
+			Value 0.00999999978
+			Uncollapsed
+			End
+		Channel tracer/analysis
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/bg_softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/fg_softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/blur
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/shrink
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/dilate
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/smoothing
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/frames
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Trackable
+		TrackingMode 6
+		MediaIdx 0
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 14
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3776
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		Distortable
+			DistortableNbReferences 0
+			DistortableOpts 2
+	}
+End
+Node Axis
+	Name axis2
+	Number 6
+	Child 7
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 222
+	PosY -349
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value -8.65142192e-06
+			Uncollapsed
+			End
+		Channel scaling/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel shearing/x
+			Extrapolation constant
+			Value -1.50995802e-05
+			Uncollapsed
+			End
+		Channel shearing/y
+			Extrapolation constant
+			Value 1.50995802e-05
+			Uncollapsed
+			End
+		Channel shearing/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceScale/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel offset
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		MBlur yes
+		Global no
+		Orientation 2
+		RigSelection 0
+		ReferenceIsTracking yes
+		AutoScale 0
+		Type 0
+		TrackingCamera -1
+		InvertMode no
+		Opts 0
+		PlaneColour 1 1 1
+		LookAt
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		Trackable
+		TrackingMode 0
+		MediaIdx 0
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 0
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3778
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		CoNodeFlags
+		Collapsed yes
+		CoNodeFlagsEnd
+	}
+End
+Node GMask
+	Name gmask2
+	Number 7
+	MotionPath yes
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 222
+	PosY -474
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Invert no
+		EnableKeyer no
+		InvertKeyer no
+		KeyerMode KEY_ALL_MULT
+		KeyerInterpolation LINEAR
+		LockSpline no
+		VertexCount 107
+		VertexTupleSize 6
+		GradientCount 1
+		GradidentTupleSize 2
+		DegreeAngles yes
+		GradientPointsMode FREE
+		ShapeAnimation yes
+		CurrentShape
+		VertexCount 107
+		PointData -96.9305267
+		PointData 0
+		PointData -1475.89929
+		PointData 33.0091553
+		PointData 9.2463007
+		PointData 0
+		PointData -196.698959
+		PointData 21.257967
+		PointData -1367.98425
+		PointData 41.1536674
+		PointData -16.6991482
+		PointData 21.257967
+		PointData 170.537613
+		PointData 18.5780888
+		PointData -1062.56433
+		PointData 12.647768
+		PointData -9.46226883
+		PointData 18.5780888
+		PointData 187.431412
+		PointData 23.6138134
+		PointData -774.451477
+		PointData -4.65940332
+		PointData 7.4314189
+		PointData 23.6138134
+		PointData -169.245499
+		PointData 44.858223
+		PointData -625.813843
+		PointData 11.6296368
+		PointData 10.7546167
+		PointData 3.48230815
+		PointData -159.090042
+		PointData 3.48233032
+		PointData -614.615112
+		PointData 14.6838331
+		PointData 20.91078
+		PointData 0.682918251
+		PointData -157.500519
+		PointData 0.68296504
+		PointData -612.578979
+		PointData 15.7019005
+		PointData 22.4993019
+		PointData 0.965850472
+		PointData -157.500961
+		PointData 0.965850472
+		PointData -609.52478
+		PointData 16.719965
+		PointData 22.5000973
+		PointData 1.36587369
+		PointData -157.500519
+		PointData 1.36587369
+		PointData -605.452515
+		PointData 18.7560978
+		PointData 22.4993019
+		PointData 0.965850472
+		PointData -170.78302
+		PointData 0.965840042
+		PointData -602.398315
+		PointData 19.7741642
+		PointData 9.21681976
+		PointData 0.305457354
+		PointData 179.999939
+		PointData 0.305419922
+		PointData -601.380188
+		PointData 19.7741642
+		PointData 0
+		PointData 0.610839844
+		PointData 180.000046
+		PointData 0.610839844
+		PointData -599.344055
+		PointData 19.7741623
+		PointData 0
+		PointData 0.610839844
+		PointData 179.999985
+		PointData 0.610839844
+		PointData -597.307922
+		PointData 19.7741623
+		PointData 0
+		PointData 0.610839844
+		PointData 179.999985
+		PointData 0.610839844
+		PointData -595.27179
+		PointData 19.7741623
+		PointData 0
+		PointData 0.305419922
+		PointData 179.999985
+		PointData 0.305419922
+		PointData -594.253723
+		PointData 19.7741623
+		PointData 0
+		PointData 0.916259766
+		PointData 179.999985
+		PointData 0.916259766
+		PointData -591.199585
+		PointData 19.7741623
+		PointData 0
+		PointData 0.916259766
+		PointData -189.217545
+		PointData 0.916250288
+		PointData -588.145386
+		PointData 19.7741642
+		PointData -9.21737766
+		PointData 0.96584034
+		PointData 170.782928
+		PointData 0.96584034
+		PointData -585.091187
+		PointData 18.756094
+		PointData -9.21757126
+		PointData 0.916250288
+		PointData -180.000015
+		PointData 0.916259766
+		PointData -582.036987
+		PointData 18.756094
+		PointData 0
+		PointData 1.22167969
+		PointData 166.718414
+		PointData 1.22170305
+		PointData -577.964722
+		PointData 18.756094
+		PointData -13.2811975
+		PointData 0.68300122
+		PointData 166.719467
+		PointData 0.683001697
+		PointData -575.928467
+		PointData 17.7380276
+		PointData -13.2820024
+		PointData 0.916231811
+		PointData -179.999954
+		PointData 0.916259766
+		PointData -572.874329
+		PointData 17.7380257
+		PointData 0
+		PointData 0.916259766
+		PointData 179.999985
+		PointData 0.916259766
+		PointData -569.820129
+		PointData 17.7380257
+		PointData 0
+		PointData 1.52709961
+		PointData 179.999985
+		PointData 1.52709961
+		PointData -564.729797
+		PointData 17.7380257
+		PointData 0
+		PointData 0.916259766
+		PointData 179.999985
+		PointData 0.916259766
+		PointData -561.675598
+		PointData 17.7380238
+		PointData 0
+		PointData 1.22167969
+		PointData 179.999985
+		PointData 1.22167969
+		PointData -557.603333
+		PointData 17.7380238
+		PointData 0
+		PointData 1.22167969
+		PointData -180.000015
+		PointData 1.22167969
+		PointData -553.531067
+		PointData 17.7380257
+		PointData 0
+		PointData 0.916259766
+		PointData 179.999985
+		PointData 0.916259766
+		PointData -550.476929
+		PointData 17.7380238
+		PointData 0
+		PointData 1.22167969
+		PointData 179.999985
+		PointData 1.22167969
+		PointData -546.404724
+		PointData 17.7380238
+		PointData 0
+		PointData 0.610839844
+		PointData 166.717453
+		PointData 0.610822678
+		PointData -544.368591
+		PointData 17.7380219
+		PointData -13.2825298
+		PointData 0.682942212
+		PointData 157.501389
+		PointData 0.682966828
+		PointData -542.332397
+		PointData 16.7199554
+		PointData -22.500164
+		PointData 0.965790451
+		PointData 170.782318
+		PointData 0.96577996
+		PointData -539.278259
+		PointData 15.70189
+		PointData -9.21792507
+		PointData 0.916251183
+		PointData -180.000061
+		PointData 0.916259766
+		PointData -536.223999
+		PointData 15.701889
+		PointData -5.9635393e-05
+		PointData 0.916259766
+		PointData 179.999985
+		PointData 0.916259766
+		PointData -533.169739
+		PointData 15.7018862
+		PointData 0
+		PointData 0.916259766
+		PointData -179.999985
+		PointData 0.916259766
+		PointData -530.115601
+		PointData 15.7018881
+		PointData 0
+		PointData 0.610839844
+		PointData 157.499527
+		PointData 0.610829592
+		PointData -528.079468
+		PointData 15.7018881
+		PointData -22.5002098
+		PointData 0.431926936
+		PointData 157.500671
+		PointData 0.431926936
+		PointData -527.061401
+		PointData 14.6838198
+		PointData -22.5004635
+		PointData 0.305414796
+		PointData -180.000122
+		PointData 0.305419922
+		PointData -526.043335
+		PointData 14.6838198
+		PointData 0
+		PointData 0.305419922
+		PointData -193.28273
+		PointData 0.305411577
+		PointData -525.025269
+		PointData 14.6838207
+		PointData -13.2824516
+		PointData 0.682942033
+		PointData 166.716644
+		PointData 0.682942033
+		PointData -522.989136
+		PointData 13.6657562
+		PointData -13.2828732
+		PointData 0.916235089
+		PointData -179.999939
+		PointData 0.916259766
+		PointData -519.934937
+		PointData 13.6657534
+		PointData 0
+		PointData 0.610839844
+		PointData -179.999969
+		PointData 0.610839844
+		PointData -517.898804
+		PointData 13.6657543
+		PointData 0
+		PointData 0.305419922
+		PointData -179.999985
+		PointData 0.305419922
+		PointData -516.880737
+		PointData 13.6657553
+		PointData 0
+		PointData 0.610839844
+		PointData 179.999893
+		PointData 0.610839844
+		PointData -514.844543
+		PointData 13.6657534
+		PointData 0
+		PointData 0.305419922
+		PointData 179.999985
+		PointData 0.305419922
+		PointData -513.826538
+		PointData 13.6657524
+		PointData 0
+		PointData 0.305419922
+		PointData -179.999985
+		PointData 0.305419922
+		PointData -512.808472
+		PointData 13.6657543
+		PointData 0
+		PointData 0.305419922
+		PointData 166.718018
+		PointData 0.305441916
+		PointData -511.790375
+		PointData 13.6657524
+		PointData -13.2825298
+		PointData 0.682942212
+		PointData 166.717255
+		PointData 0.682942212
+		PointData -509.754242
+		PointData 12.647686
+		PointData -13.2822733
+		PointData 0.610853314
+		PointData -193.282425
+		PointData 0.610853732
+		PointData -507.718109
+		PointData 12.6476851
+		PointData -13.2825298
+		PointData 0.682942212
+		PointData 166.717072
+		PointData 0.682942033
+		PointData -505.682007
+		PointData 11.6296177
+		PointData -13.2826214
+		PointData 0.610854149
+		PointData -179.999969
+		PointData 0.610839844
+		PointData -503.645844
+		PointData 11.6296186
+		PointData 0
+		PointData 0.610839844
+		PointData 179.999969
+		PointData 0.610839844
+		PointData -501.609741
+		PointData 11.6296177
+		PointData 0
+		PointData 0.610870361
+		PointData 157.499695
+		PointData 0.610861778
+		PointData -499.573547
+		PointData 11.6296167
+		PointData -22.5002098
+		PointData 0.431926936
+		PointData 157.500214
+		PointData 0.431926936
+		PointData -498.555511
+		PointData 10.6115503
+		PointData -22.5007935
+		PointData 0.305415511
+		PointData -180.000092
+		PointData 0.305419922
+		PointData -497.537445
+		PointData 10.6115513
+		PointData 0
+		PointData 0.610839844
+		PointData 157.499619
+		PointData 0.610862136
+		PointData -495.501282
+		PointData 10.6115503
+		PointData -22.5002098
+		PointData 0.431926936
+		PointData 157.499649
+		PointData 0.431926936
+		PointData -494.483276
+		PointData 9.59348392
+		PointData -22.5006161
+		PointData 1.22169352
+		PointData -193.282349
+		PointData 1.22167516
+		PointData -490.411011
+		PointData 9.59348297
+		PointData -13.2824516
+		PointData 0.682942033
+		PointData 153.435822
+		PointData 0.68296957
+		PointData -488.374817
+		PointData 8.57541561
+		PointData -26.5646229
+		PointData 0.682937145
+		PointData 166.717117
+		PointData 0.682942152
+		PointData -486.338715
+		PointData 7.55735016
+		PointData -13.2824869
+		PointData 0.305442572
+		PointData -202.500565
+		PointData 0.305448085
+		PointData -485.320587
+		PointData 7.55734921
+		PointData -22.5018749
+		PointData 0.43189913
+		PointData 157.498062
+		PointData 0.43189913
+		PointData -484.302612
+		PointData 6.53928375
+		PointData -22.5021172
+		PointData 0.305418432
+		PointData -225.000305
+		PointData 0.305432826
+		PointData -483.284515
+		PointData 6.53928328
+		PointData -44.9993019
+		PointData 0.305428088
+		PointData 135.001404
+		PointData 0.305428088
+		PointData -483.284546
+		PointData 5.52121639
+		PointData -44.9993019
+		PointData 0.305428088
+		PointData -189.217331
+		PointData 0.305426836
+		PointData -482.266479
+		PointData 5.52121687
+		PointData -9.21758461
+		PointData 0.965810001
+		PointData 163.76416
+		PointData 0.96582371
+		PointData -479.21228
+		PointData 4.50314999
+		PointData -16.2354469
+		PointData 1.25929546
+		PointData 163.764542
+		PointData 1.25929558
+		PointData -475.139984
+		PointData 3.48508263
+		PointData -16.2355366
+		PointData 1.93164742
+		PointData 161.564972
+		PointData 1.93164527
+		PointData -469.031586
+		PointData 1.44894898
+		PointData -18.4349556
+		PointData 0.965822637
+		PointData 153.937805
+		PointData 0.965824068
+		PointData -465.977386
+		PointData 0.430882037
+		PointData -26.062603
+		PointData 1.1012038
+		PointData 149.873169
+		PointData 1.1012131
+		PointData -462.923187
+		PointData -1.60525131
+		PointData -30.1270294
+		PointData 0.682955444
+		PointData 144.21788
+		PointData 0.682957888
+		PointData -460.887024
+		PointData -2.62331796
+		PointData -35.7819862
+		PointData 0.431930751
+		PointData 112.49868
+		PointData 0.431921303
+		PointData -459.868988
+		PointData -3.64138436
+		PointData -67.4995041
+		PointData 0.305421829
+		PointData 135.000702
+		PointData 0.305425733
+		PointData -459.868988
+		PointData -4.65945053
+		PointData -44.9988594
+		PointData 0.305425733
+		PointData -180.000061
+		PointData 0.305419922
+		PointData -458.850922
+		PointData -4.65945101
+		PointData -2.98176965e-05
+		PointData 0.916259766
+		PointData 179.999985
+		PointData 0.916259766
+		PointData -455.796722
+		PointData -4.65945148
+		PointData 0
+		PointData 0.610839844
+		PointData 179.999985
+		PointData 0.610839844
+		PointData -453.76059
+		PointData -4.65945148
+		PointData 0
+		PointData 0.916259766
+		PointData 166.717422
+		PointData 0.916265368
+		PointData -450.70636
+		PointData -4.65945196
+		PointData -13.2824907
+		PointData 0.682942152
+		PointData 157.499588
+		PointData 0.682937205
+		PointData -448.670227
+		PointData -5.67751884
+		PointData -22.4998913
+		PointData 0.965821564
+		PointData 157.50032
+		PointData 0.965821743
+		PointData -445.616058
+		PointData -6.69558525
+		PointData -22.5001717
+		PointData 0.682937205
+		PointData 153.435455
+		PointData 0.682939053
+		PointData -443.579926
+		PointData -7.71365261
+		PointData -26.5651932
+		PointData 0.682940543
+		PointData 144.217529
+		PointData 0.682957888
+		PointData -441.543762
+		PointData -8.73171902
+		PointData -35.7819862
+		PointData 0.431930751
+		PointData 157.499329
+		PointData 0.431926936
+		PointData -440.525726
+		PointData -9.74978638
+		PointData -22.5004635
+		PointData 0.610829592
+		PointData -180.000122
+		PointData 0.610839844
+		PointData -438.489624
+		PointData -9.74978733
+		PointData 0
+		PointData 0.305419922
+		PointData -179.999985
+		PointData 0.305419922
+		PointData -437.471527
+		PointData -9.74978638
+		PointData 0
+		PointData 0.305419922
+		PointData -224.999725
+		PointData 0.305430472
+		PointData -436.453461
+		PointData -9.74978542
+		PointData -44.9997482
+		PointData 0.305430472
+		PointData 135.000488
+		PointData 0.305430472
+		PointData -436.453522
+		PointData -10.7678537
+		PointData -45.0006332
+		PointData 0.305435181
+		PointData -180.000046
+		PointData 0.305419922
+		PointData -435.435425
+		PointData -10.7678528
+		PointData 0
+		PointData 0.305419922
+		PointData 179.999985
+		PointData 0.305419922
+		PointData -434.417358
+		PointData -10.7678537
+		PointData 0
+		PointData 0.305419922
+		PointData -202.501785
+		PointData 0.305417717
+		PointData -433.399261
+		PointData -10.7678528
+		PointData -22.5003281
+		PointData 0.431927294
+		PointData 157.499527
+		PointData 0.431927294
+		PointData -432.381256
+		PointData -11.7859211
+		PointData -22.5017872
+		PointData 0.305417717
+		PointData -180.000092
+		PointData 0.305419922
+		PointData -431.363159
+		PointData -11.7859211
+		PointData 0
+		PointData 0.305419922
+		PointData -179.999939
+		PointData 0
+		PointData -430.345062
+		PointData -11.7859201
+		PointData -16.5347958
+		PointData 0
+		PointData 195.422119
+		PointData 30.6267414
+		PointData -335.664886
+		PointData -22.984663
+		PointData 15.4221344
+		PointData 30.6267414
+		PointData 179.999985
+		PointData 11.1987
+		PointData -281.707336
+		PointData -18.912405
+		PointData -9.75854527e-06
+		PointData 11.1987
+		PointData 190.619675
+		PointData 16.5729198
+		PointData -92.347023
+		PointData -30.111166
+		PointData 10.6196423
+		PointData 16.5729198
+		PointData 195.524094
+		PointData 19.0190487
+		PointData 6.40542412
+		PointData -28.0750465
+		PointData 15.5240917
+		PointData 19.0190487
+		PointData 168.439865
+		PointData 45.7224197
+		PointData 121.44693
+		PointData -28.0750675
+		PointData -11.5601368
+		PointData 45.7224197
+		PointData 199.653854
+		PointData 15.1346178
+		PointData 274.156921
+		PointData -55.5628777
+		PointData 19.6538754
+		PointData 15.1346178
+		PointData -190.619659
+		PointData 16.5728893
+		PointData 317.933777
+		PointData -43.346096
+		PointData -10.6196737
+		PointData 16.5728893
+		PointData 179.999985
+		PointData 23.4155884
+		PointData 550.052856
+		PointData -69.8158493
+		PointData 0
+		PointData 23.4155884
+		PointData 180
+		PointData 28.5057373
+		PointData 968.478271
+		PointData -81.0146484
+		PointData 0
+		PointData 28.5057373
+		PointData 179.999954
+		PointData 19.3432617
+		PointData 1070.28491
+		PointData -86.1050034
+		PointData -2.3051889e-05
+		PointData 19.3432617
+		PointData 179.999985
+		PointData 23.4152832
+		PointData 1436.78894
+		PointData -108.502518
+		PointData 0
+		PointData 23.4152832
+		PointData 148.523239
+		PointData 0
+		PointData 1510.0896
+		PointData -139.044495
+		PointData -85.8152084
+		PointData 0
+		PointData -5.85594082
+		PointData 39.9126244
+		PointData 1524.34216
+		PointData -872.052246
+		PointData -185.855865
+		PointData 39.9126244
+		PointData 4.05623674
+		PointData 0
+		PointData -209.424835
+		PointData -988.111511
+		PointData 175.634628
+		PointData 0
+		PointData -57.0508575
+		PointData 65.5131683
+		PointData -1539.01965
+		PointData -834.383362
+		PointData 122.949074
+		PointData 65.5131683
+		IndexesCount 107
+		Indexes 37532
+		Indexes 37534
+		Indexes 37536
+		Indexes 37538
+		Indexes 37540
+		Indexes 37541
+		Indexes 37542
+		Indexes 37543
+		Indexes 37544
+		Indexes 37545
+		Indexes 37546
+		Indexes 37547
+		Indexes 37548
+		Indexes 37549
+		Indexes 37550
+		Indexes 37551
+		Indexes 37552
+		Indexes 37553
+		Indexes 37554
+		Indexes 37555
+		Indexes 37556
+		Indexes 37557
+		Indexes 37558
+		Indexes 37559
+		Indexes 37560
+		Indexes 37561
+		Indexes 37562
+		Indexes 37563
+		Indexes 37564
+		Indexes 37565
+		Indexes 37566
+		Indexes 37567
+		Indexes 37568
+		Indexes 37569
+		Indexes 37570
+		Indexes 37571
+		Indexes 37572
+		Indexes 37573
+		Indexes 37574
+		Indexes 37575
+		Indexes 37576
+		Indexes 37577
+		Indexes 37578
+		Indexes 37579
+		Indexes 37580
+		Indexes 37581
+		Indexes 37582
+		Indexes 37583
+		Indexes 37584
+		Indexes 37585
+		Indexes 37586
+		Indexes 37587
+		Indexes 37588
+		Indexes 37589
+		Indexes 37590
+		Indexes 37591
+		Indexes 37592
+		Indexes 37593
+		Indexes 37594
+		Indexes 37595
+		Indexes 37596
+		Indexes 37597
+		Indexes 37598
+		Indexes 37599
+		Indexes 37600
+		Indexes 37601
+		Indexes 37602
+		Indexes 37603
+		Indexes 37604
+		Indexes 37605
+		Indexes 37606
+		Indexes 37607
+		Indexes 37608
+		Indexes 37609
+		Indexes 37610
+		Indexes 37611
+		Indexes 37612
+		Indexes 37613
+		Indexes 37614
+		Indexes 37615
+		Indexes 37616
+		Indexes 37617
+		Indexes 37618
+		Indexes 37619
+		Indexes 37620
+		Indexes 37621
+		Indexes 37622
+		Indexes 37623
+		Indexes 37624
+		Indexes 37625
+		Indexes 37626
+		Indexes 37627
+		Indexes 37629
+		Indexes 37631
+		Indexes 37633
+		Indexes 37635
+		Indexes 37637
+		Indexes 37639
+		Indexes 37641
+		Indexes 37643
+		Indexes 37645
+		Indexes 37647
+		Indexes 37649
+		Indexes 37651
+		Indexes 37653
+		Indexes 37655
+		Indexes 37657
+		Shapes 1
+			Shape 0
+				Frame 1066
+				Index 0
+				VertexCount 107
+				PointData -96.9305267
+				PointData 0
+				PointData -1475.89929
+				PointData 33.0091553
+				PointData 9.2463007
+				PointData 0
+				PointData -196.698959
+				PointData 21.257967
+				PointData -1367.98425
+				PointData 41.1536674
+				PointData -16.6991482
+				PointData 21.257967
+				PointData 170.537613
+				PointData 18.5780888
+				PointData -1062.56433
+				PointData 12.647768
+				PointData -9.46226883
+				PointData 18.5780888
+				PointData 187.431412
+				PointData 23.6138134
+				PointData -774.451477
+				PointData -4.65940332
+				PointData 7.4314189
+				PointData 23.6138134
+				PointData -169.245499
+				PointData 44.858223
+				PointData -625.813843
+				PointData 11.6296368
+				PointData 10.7546167
+				PointData 3.48230815
+				PointData -159.090042
+				PointData 3.48233032
+				PointData -614.615112
+				PointData 14.6838331
+				PointData 20.91078
+				PointData 0.682918251
+				PointData -157.500519
+				PointData 0.68296504
+				PointData -612.578979
+				PointData 15.7019005
+				PointData 22.4993019
+				PointData 0.965850472
+				PointData -157.500961
+				PointData 0.965850472
+				PointData -609.52478
+				PointData 16.719965
+				PointData 22.5000973
+				PointData 1.36587369
+				PointData -157.500519
+				PointData 1.36587369
+				PointData -605.452515
+				PointData 18.7560978
+				PointData 22.4993019
+				PointData 0.965850472
+				PointData -170.78302
+				PointData 0.965840042
+				PointData -602.398315
+				PointData 19.7741642
+				PointData 9.21681976
+				PointData 0.305457354
+				PointData 179.999939
+				PointData 0.305419922
+				PointData -601.380188
+				PointData 19.7741642
+				PointData 0
+				PointData 0.610839844
+				PointData 180.000046
+				PointData 0.610839844
+				PointData -599.344055
+				PointData 19.7741623
+				PointData 0
+				PointData 0.610839844
+				PointData 179.999985
+				PointData 0.610839844
+				PointData -597.307922
+				PointData 19.7741623
+				PointData 0
+				PointData 0.610839844
+				PointData 179.999985
+				PointData 0.610839844
+				PointData -595.27179
+				PointData 19.7741623
+				PointData 0
+				PointData 0.305419922
+				PointData 179.999985
+				PointData 0.305419922
+				PointData -594.253723
+				PointData 19.7741623
+				PointData 0
+				PointData 0.916259766
+				PointData 179.999985
+				PointData 0.916259766
+				PointData -591.199585
+				PointData 19.7741623
+				PointData 0
+				PointData 0.916259766
+				PointData -189.217545
+				PointData 0.916250288
+				PointData -588.145386
+				PointData 19.7741642
+				PointData -9.21737766
+				PointData 0.96584034
+				PointData 170.782928
+				PointData 0.96584034
+				PointData -585.091187
+				PointData 18.756094
+				PointData -9.21757126
+				PointData 0.916250288
+				PointData -180.000015
+				PointData 0.916259766
+				PointData -582.036987
+				PointData 18.756094
+				PointData 0
+				PointData 1.22167969
+				PointData 166.718414
+				PointData 1.22170305
+				PointData -577.964722
+				PointData 18.756094
+				PointData -13.2811975
+				PointData 0.68300122
+				PointData 166.719467
+				PointData 0.683001697
+				PointData -575.928467
+				PointData 17.7380276
+				PointData -13.2820024
+				PointData 0.916231811
+				PointData -179.999954
+				PointData 0.916259766
+				PointData -572.874329
+				PointData 17.7380257
+				PointData 0
+				PointData 0.916259766
+				PointData 179.999985
+				PointData 0.916259766
+				PointData -569.820129
+				PointData 17.7380257
+				PointData 0
+				PointData 1.52709961
+				PointData 179.999985
+				PointData 1.52709961
+				PointData -564.729797
+				PointData 17.7380257
+				PointData 0
+				PointData 0.916259766
+				PointData 179.999985
+				PointData 0.916259766
+				PointData -561.675598
+				PointData 17.7380238
+				PointData 0
+				PointData 1.22167969
+				PointData 179.999985
+				PointData 1.22167969
+				PointData -557.603333
+				PointData 17.7380238
+				PointData 0
+				PointData 1.22167969
+				PointData -180.000015
+				PointData 1.22167969
+				PointData -553.531067
+				PointData 17.7380257
+				PointData 0
+				PointData 0.916259766
+				PointData 179.999985
+				PointData 0.916259766
+				PointData -550.476929
+				PointData 17.7380238
+				PointData 0
+				PointData 1.22167969
+				PointData 179.999985
+				PointData 1.22167969
+				PointData -546.404724
+				PointData 17.7380238
+				PointData 0
+				PointData 0.610839844
+				PointData 166.717453
+				PointData 0.610822678
+				PointData -544.368591
+				PointData 17.7380219
+				PointData -13.2825298
+				PointData 0.682942212
+				PointData 157.501389
+				PointData 0.682966828
+				PointData -542.332397
+				PointData 16.7199554
+				PointData -22.500164
+				PointData 0.965790451
+				PointData 170.782318
+				PointData 0.96577996
+				PointData -539.278259
+				PointData 15.70189
+				PointData -9.21792507
+				PointData 0.916251183
+				PointData -180.000061
+				PointData 0.916259766
+				PointData -536.223999
+				PointData 15.701889
+				PointData -5.9635393e-05
+				PointData 0.916259766
+				PointData 179.999985
+				PointData 0.916259766
+				PointData -533.169739
+				PointData 15.7018862
+				PointData 0
+				PointData 0.916259766
+				PointData -179.999985
+				PointData 0.916259766
+				PointData -530.115601
+				PointData 15.7018881
+				PointData 0
+				PointData 0.610839844
+				PointData 157.499527
+				PointData 0.610829592
+				PointData -528.079468
+				PointData 15.7018881
+				PointData -22.5002098
+				PointData 0.431926936
+				PointData 157.500671
+				PointData 0.431926936
+				PointData -527.061401
+				PointData 14.6838198
+				PointData -22.5004635
+				PointData 0.305414796
+				PointData -180.000122
+				PointData 0.305419922
+				PointData -526.043335
+				PointData 14.6838198
+				PointData 0
+				PointData 0.305419922
+				PointData -193.28273
+				PointData 0.305411577
+				PointData -525.025269
+				PointData 14.6838207
+				PointData -13.2824516
+				PointData 0.682942033
+				PointData 166.716644
+				PointData 0.682942033
+				PointData -522.989136
+				PointData 13.6657562
+				PointData -13.2828732
+				PointData 0.916235089
+				PointData -179.999939
+				PointData 0.916259766
+				PointData -519.934937
+				PointData 13.6657534
+				PointData 0
+				PointData 0.610839844
+				PointData -179.999969
+				PointData 0.610839844
+				PointData -517.898804
+				PointData 13.6657543
+				PointData 0
+				PointData 0.305419922
+				PointData -179.999985
+				PointData 0.305419922
+				PointData -516.880737
+				PointData 13.6657553
+				PointData 0
+				PointData 0.610839844
+				PointData 179.999893
+				PointData 0.610839844
+				PointData -514.844543
+				PointData 13.6657534
+				PointData 0
+				PointData 0.305419922
+				PointData 179.999985
+				PointData 0.305419922
+				PointData -513.826538
+				PointData 13.6657524
+				PointData 0
+				PointData 0.305419922
+				PointData -179.999985
+				PointData 0.305419922
+				PointData -512.808472
+				PointData 13.6657543
+				PointData 0
+				PointData 0.305419922
+				PointData 166.718018
+				PointData 0.305441916
+				PointData -511.790375
+				PointData 13.6657524
+				PointData -13.2825298
+				PointData 0.682942212
+				PointData 166.717255
+				PointData 0.682942212
+				PointData -509.754242
+				PointData 12.647686
+				PointData -13.2822733
+				PointData 0.610853314
+				PointData -193.282425
+				PointData 0.610853732
+				PointData -507.718109
+				PointData 12.6476851
+				PointData -13.2825298
+				PointData 0.682942212
+				PointData 166.717072
+				PointData 0.682942033
+				PointData -505.682007
+				PointData 11.6296177
+				PointData -13.2826214
+				PointData 0.610854149
+				PointData -179.999969
+				PointData 0.610839844
+				PointData -503.645844
+				PointData 11.6296186
+				PointData 0
+				PointData 0.610839844
+				PointData 179.999969
+				PointData 0.610839844
+				PointData -501.609741
+				PointData 11.6296177
+				PointData 0
+				PointData 0.610870361
+				PointData 157.499695
+				PointData 0.610861778
+				PointData -499.573547
+				PointData 11.6296167
+				PointData -22.5002098
+				PointData 0.431926936
+				PointData 157.500214
+				PointData 0.431926936
+				PointData -498.555511
+				PointData 10.6115503
+				PointData -22.5007935
+				PointData 0.305415511
+				PointData -180.000092
+				PointData 0.305419922
+				PointData -497.537445
+				PointData 10.6115513
+				PointData 0
+				PointData 0.610839844
+				PointData 157.499619
+				PointData 0.610862136
+				PointData -495.501282
+				PointData 10.6115503
+				PointData -22.5002098
+				PointData 0.431926936
+				PointData 157.499649
+				PointData 0.431926936
+				PointData -494.483276
+				PointData 9.59348392
+				PointData -22.5006161
+				PointData 1.22169352
+				PointData -193.282349
+				PointData 1.22167516
+				PointData -490.411011
+				PointData 9.59348297
+				PointData -13.2824516
+				PointData 0.682942033
+				PointData 153.435822
+				PointData 0.68296957
+				PointData -488.374817
+				PointData 8.57541561
+				PointData -26.5646229
+				PointData 0.682937145
+				PointData 166.717117
+				PointData 0.682942152
+				PointData -486.338715
+				PointData 7.55735016
+				PointData -13.2824869
+				PointData 0.305442572
+				PointData -202.500565
+				PointData 0.305448085
+				PointData -485.320587
+				PointData 7.55734921
+				PointData -22.5018749
+				PointData 0.43189913
+				PointData 157.498062
+				PointData 0.43189913
+				PointData -484.302612
+				PointData 6.53928375
+				PointData -22.5021172
+				PointData 0.305418432
+				PointData -225.000305
+				PointData 0.305432826
+				PointData -483.284515
+				PointData 6.53928328
+				PointData -44.9993019
+				PointData 0.305428088
+				PointData 135.001404
+				PointData 0.305428088
+				PointData -483.284546
+				PointData 5.52121639
+				PointData -44.9993019
+				PointData 0.305428088
+				PointData -189.217331
+				PointData 0.305426836
+				PointData -482.266479
+				PointData 5.52121687
+				PointData -9.21758461
+				PointData 0.965810001
+				PointData 163.76416
+				PointData 0.96582371
+				PointData -479.21228
+				PointData 4.50314999
+				PointData -16.2354469
+				PointData 1.25929546
+				PointData 163.764542
+				PointData 1.25929558
+				PointData -475.139984
+				PointData 3.48508263
+				PointData -16.2355366
+				PointData 1.93164742
+				PointData 161.564972
+				PointData 1.93164527
+				PointData -469.031586
+				PointData 1.44894898
+				PointData -18.4349556
+				PointData 0.965822637
+				PointData 153.937805
+				PointData 0.965824068
+				PointData -465.977386
+				PointData 0.430882037
+				PointData -26.062603
+				PointData 1.1012038
+				PointData 149.873169
+				PointData 1.1012131
+				PointData -462.923187
+				PointData -1.60525131
+				PointData -30.1270294
+				PointData 0.682955444
+				PointData 144.21788
+				PointData 0.682957888
+				PointData -460.887024
+				PointData -2.62331796
+				PointData -35.7819862
+				PointData 0.431930751
+				PointData 112.49868
+				PointData 0.431921303
+				PointData -459.868988
+				PointData -3.64138436
+				PointData -67.4995041
+				PointData 0.305421829
+				PointData 135.000702
+				PointData 0.305425733
+				PointData -459.868988
+				PointData -4.65945053
+				PointData -44.9988594
+				PointData 0.305425733
+				PointData -180.000061
+				PointData 0.305419922
+				PointData -458.850922
+				PointData -4.65945101
+				PointData -2.98176965e-05
+				PointData 0.916259766
+				PointData 179.999985
+				PointData 0.916259766
+				PointData -455.796722
+				PointData -4.65945148
+				PointData 0
+				PointData 0.610839844
+				PointData 179.999985
+				PointData 0.610839844
+				PointData -453.76059
+				PointData -4.65945148
+				PointData 0
+				PointData 0.916259766
+				PointData 166.717422
+				PointData 0.916265368
+				PointData -450.70636
+				PointData -4.65945196
+				PointData -13.2824907
+				PointData 0.682942152
+				PointData 157.499588
+				PointData 0.682937205
+				PointData -448.670227
+				PointData -5.67751884
+				PointData -22.4998913
+				PointData 0.965821564
+				PointData 157.50032
+				PointData 0.965821743
+				PointData -445.616058
+				PointData -6.69558525
+				PointData -22.5001717
+				PointData 0.682937205
+				PointData 153.435455
+				PointData 0.682939053
+				PointData -443.579926
+				PointData -7.71365261
+				PointData -26.5651932
+				PointData 0.682940543
+				PointData 144.217529
+				PointData 0.682957888
+				PointData -441.543762
+				PointData -8.73171902
+				PointData -35.7819862
+				PointData 0.431930751
+				PointData 157.499329
+				PointData 0.431926936
+				PointData -440.525726
+				PointData -9.74978638
+				PointData -22.5004635
+				PointData 0.610829592
+				PointData -180.000122
+				PointData 0.610839844
+				PointData -438.489624
+				PointData -9.74978733
+				PointData 0
+				PointData 0.305419922
+				PointData -179.999985
+				PointData 0.305419922
+				PointData -437.471527
+				PointData -9.74978638
+				PointData 0
+				PointData 0.305419922
+				PointData -224.999725
+				PointData 0.305430472
+				PointData -436.453461
+				PointData -9.74978542
+				PointData -44.9997482
+				PointData 0.305430472
+				PointData 135.000488
+				PointData 0.305430472
+				PointData -436.453522
+				PointData -10.7678537
+				PointData -45.0006332
+				PointData 0.305435181
+				PointData -180.000046
+				PointData 0.305419922
+				PointData -435.435425
+				PointData -10.7678528
+				PointData 0
+				PointData 0.305419922
+				PointData 179.999985
+				PointData 0.305419922
+				PointData -434.417358
+				PointData -10.7678537
+				PointData 0
+				PointData 0.305419922
+				PointData -202.501785
+				PointData 0.305417717
+				PointData -433.399261
+				PointData -10.7678528
+				PointData -22.5003281
+				PointData 0.431927294
+				PointData 157.499527
+				PointData 0.431927294
+				PointData -432.381256
+				PointData -11.7859211
+				PointData -22.5017872
+				PointData 0.305417717
+				PointData -180.000092
+				PointData 0.305419922
+				PointData -431.363159
+				PointData -11.7859211
+				PointData 0
+				PointData 0.305419922
+				PointData -179.999939
+				PointData 0
+				PointData -430.345062
+				PointData -11.7859201
+				PointData -16.5347958
+				PointData 0
+				PointData 195.422119
+				PointData 30.6267414
+				PointData -335.664886
+				PointData -22.984663
+				PointData 15.4221344
+				PointData 30.6267414
+				PointData 179.999985
+				PointData 11.1987
+				PointData -281.707336
+				PointData -18.912405
+				PointData -9.75854527e-06
+				PointData 11.1987
+				PointData 190.619675
+				PointData 16.5729198
+				PointData -92.347023
+				PointData -30.111166
+				PointData 10.6196423
+				PointData 16.5729198
+				PointData 195.524094
+				PointData 19.0190487
+				PointData 6.40542412
+				PointData -28.0750465
+				PointData 15.5240917
+				PointData 19.0190487
+				PointData 168.439865
+				PointData 45.7224197
+				PointData 121.44693
+				PointData -28.0750675
+				PointData -11.5601368
+				PointData 45.7224197
+				PointData 199.653854
+				PointData 15.1346178
+				PointData 274.156921
+				PointData -55.5628777
+				PointData 19.6538754
+				PointData 15.1346178
+				PointData -190.619659
+				PointData 16.5728893
+				PointData 317.933777
+				PointData -43.346096
+				PointData -10.6196737
+				PointData 16.5728893
+				PointData 179.999985
+				PointData 23.4155884
+				PointData 550.052856
+				PointData -69.8158493
+				PointData 0
+				PointData 23.4155884
+				PointData 180
+				PointData 28.5057373
+				PointData 968.478271
+				PointData -81.0146484
+				PointData 0
+				PointData 28.5057373
+				PointData 179.999954
+				PointData 19.3432617
+				PointData 1070.28491
+				PointData -86.1050034
+				PointData -2.3051889e-05
+				PointData 19.3432617
+				PointData 179.999985
+				PointData 23.4152832
+				PointData 1436.78894
+				PointData -108.502518
+				PointData 0
+				PointData 23.4152832
+				PointData 148.523239
+				PointData 0
+				PointData 1510.0896
+				PointData -139.044495
+				PointData -85.8152084
+				PointData 0
+				PointData -5.85594082
+				PointData 39.9126244
+				PointData 1524.34216
+				PointData -872.052246
+				PointData -185.855865
+				PointData 39.9126244
+				PointData 4.05623674
+				PointData 0
+				PointData -209.424835
+				PointData -988.111511
+				PointData 175.634628
+				PointData 0
+				PointData -57.0508575
+				PointData 65.5131683
+				PointData -1539.01965
+				PointData -834.383362
+				PointData 122.949074
+				PointData 65.5131683
+				IndexesCount 107
+				Indexes 37532
+				Indexes 37534
+				Indexes 37536
+				Indexes 37538
+				Indexes 37540
+				Indexes 37541
+				Indexes 37542
+				Indexes 37543
+				Indexes 37544
+				Indexes 37545
+				Indexes 37546
+				Indexes 37547
+				Indexes 37548
+				Indexes 37549
+				Indexes 37550
+				Indexes 37551
+				Indexes 37552
+				Indexes 37553
+				Indexes 37554
+				Indexes 37555
+				Indexes 37556
+				Indexes 37557
+				Indexes 37558
+				Indexes 37559
+				Indexes 37560
+				Indexes 37561
+				Indexes 37562
+				Indexes 37563
+				Indexes 37564
+				Indexes 37565
+				Indexes 37566
+				Indexes 37567
+				Indexes 37568
+				Indexes 37569
+				Indexes 37570
+				Indexes 37571
+				Indexes 37572
+				Indexes 37573
+				Indexes 37574
+				Indexes 37575
+				Indexes 37576
+				Indexes 37577
+				Indexes 37578
+				Indexes 37579
+				Indexes 37580
+				Indexes 37581
+				Indexes 37582
+				Indexes 37583
+				Indexes 37584
+				Indexes 37585
+				Indexes 37586
+				Indexes 37587
+				Indexes 37588
+				Indexes 37589
+				Indexes 37590
+				Indexes 37591
+				Indexes 37592
+				Indexes 37593
+				Indexes 37594
+				Indexes 37595
+				Indexes 37596
+				Indexes 37597
+				Indexes 37598
+				Indexes 37599
+				Indexes 37600
+				Indexes 37601
+				Indexes 37602
+				Indexes 37603
+				Indexes 37604
+				Indexes 37605
+				Indexes 37606
+				Indexes 37607
+				Indexes 37608
+				Indexes 37609
+				Indexes 37610
+				Indexes 37611
+				Indexes 37612
+				Indexes 37613
+				Indexes 37614
+				Indexes 37615
+				Indexes 37616
+				Indexes 37617
+				Indexes 37618
+				Indexes 37619
+				Indexes 37620
+				Indexes 37621
+				Indexes 37622
+				Indexes 37623
+				Indexes 37624
+				Indexes 37625
+				Indexes 37626
+				Indexes 37627
+				Indexes 37629
+				Indexes 37631
+				Indexes 37633
+				Indexes 37635
+				Indexes 37637
+				Indexes 37639
+				Indexes 37641
+				Indexes 37643
+				Indexes 37645
+				Indexes 37647
+				Indexes 37649
+				Indexes 37651
+				Indexes 37653
+				Indexes 37655
+				Indexes 37657
+				InterpolationType 0
+		CurrentShape
+		VertexCount 107
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		IndexesCount 107
+		Indexes 37532
+		Indexes 37534
+		Indexes 37536
+		Indexes 37538
+		Indexes 37540
+		Indexes 37541
+		Indexes 37542
+		Indexes 37543
+		Indexes 37544
+		Indexes 37545
+		Indexes 37546
+		Indexes 37547
+		Indexes 37548
+		Indexes 37549
+		Indexes 37550
+		Indexes 37551
+		Indexes 37552
+		Indexes 37553
+		Indexes 37554
+		Indexes 37555
+		Indexes 37556
+		Indexes 37557
+		Indexes 37558
+		Indexes 37559
+		Indexes 37560
+		Indexes 37561
+		Indexes 37562
+		Indexes 37563
+		Indexes 37564
+		Indexes 37565
+		Indexes 37566
+		Indexes 37567
+		Indexes 37568
+		Indexes 37569
+		Indexes 37570
+		Indexes 37571
+		Indexes 37572
+		Indexes 37573
+		Indexes 37574
+		Indexes 37575
+		Indexes 37576
+		Indexes 37577
+		Indexes 37578
+		Indexes 37579
+		Indexes 37580
+		Indexes 37581
+		Indexes 37582
+		Indexes 37583
+		Indexes 37584
+		Indexes 37585
+		Indexes 37586
+		Indexes 37587
+		Indexes 37588
+		Indexes 37589
+		Indexes 37590
+		Indexes 37591
+		Indexes 37592
+		Indexes 37593
+		Indexes 37594
+		Indexes 37595
+		Indexes 37596
+		Indexes 37597
+		Indexes 37598
+		Indexes 37599
+		Indexes 37600
+		Indexes 37601
+		Indexes 37602
+		Indexes 37603
+		Indexes 37604
+		Indexes 37605
+		Indexes 37606
+		Indexes 37607
+		Indexes 37608
+		Indexes 37609
+		Indexes 37610
+		Indexes 37611
+		Indexes 37612
+		Indexes 37613
+		Indexes 37614
+		Indexes 37615
+		Indexes 37616
+		Indexes 37617
+		Indexes 37618
+		Indexes 37619
+		Indexes 37620
+		Indexes 37621
+		Indexes 37622
+		Indexes 37623
+		Indexes 37624
+		Indexes 37625
+		Indexes 37626
+		Indexes 37627
+		Indexes 37629
+		Indexes 37631
+		Indexes 37633
+		Indexes 37635
+		Indexes 37637
+		Indexes 37639
+		Indexes 37641
+		Indexes 37643
+		Indexes 37645
+		Indexes 37647
+		Indexes 37649
+		Indexes 37651
+		Indexes 37653
+		Indexes 37655
+		Indexes 37657
+		Shapes 0
+		InterpolationType 0
+		CurrentShape
+		ValueCount 2
+		Value 98.4014206
+		Value 8.71643162
+		Shapes 1
+			Shape 0
+				Frame 1066
+				Index 0
+				ValueCount 2
+				Value 98.4014206
+				Value 8.71643162
+				InterpolationType 0
+				TrackerCamera -1
+				TrackerCameraType TRACK_CAMERA_LEFT
+				ViewType VIEW_AUTO_FRAME
+				Correlation 0
+				Composite 1
+				ColorBlendModel 0
+				ColorBlendType 21
+				Extrapolation 1
+				Closure 1
+				CurveColor 1 0.389999986 0
+				CurveHandleColor 1 1 0
+				EdgeColor 1 0.629999995 0
+				InactiveColor 0.5 0.5 0.5
+				LockedColor 0.75 0 0
+				KeyerFgSamplerColor 1 0 0
+				KeyerBgSamplerColor 0 1 0
+				GradientCurve
+			Current_Shape 1
+			Channel gradient_curve
+				Extrapolation constant
+				Value 0
+				Size 3
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 100
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 50
+					Value 50
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 2
+					Frame 100
+					Value 0
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				End
+			Shape_End
+		Visibility 0
+		LassoTolerance 0
+		BlendModel 3
+		FlameBlendType 0
+		GMaskType 0
+		PPMode 0
+		PolysplineHole no
+		LegacySmoothing no
+		Opts 2
+		DisplaySpline yes
+		DisplayVertex yes
+		DisplayGradientOutline yes
+		DisplayInactive yes
+		DisplayLocked yes
+		SplineKeyFraming no
+		KeyerType 0
+		CurrentShape
+		SamplersCount 0
+		NbKeyers 0
+		Flags 0
+		Shapes 0
+		InterpolationType 0
+		GroupChannel
+		Channel spline
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel track_spline
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shape
+			Extrapolation constant
+			Value 0
+			Size 1
+			KeyVersion 2
+			Key 0
+				Frame 1066
+				Value 0
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				ValueLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel track_shape
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel gradient
+			Extrapolation constant
+			Value 0
+			Size 1
+			KeyVersion 2
+			Key 0
+				Frame 1066
+				Value 0
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				ValueLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel color
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel transparency
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel intensity
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel smoothing
+			Extrapolation constant
+			Value 50
+			Uncollapsed
+			End
+		Channel blur
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tolerance
+			Extrapolation constant
+			Value 0.00999999978
+			Uncollapsed
+			End
+		Channel tracer/analysis
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/bg_softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/fg_softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/blur
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/shrink
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/dilate
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/smoothing
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/frames
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Trackable
+		TrackingMode 6
+		MediaIdx 0
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 14
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3776
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		Distortable
+			DistortableNbReferences 0
+			DistortableOpts 2
+	}
+End
+ConcreteEnd
+CompassOrder
+	Count 0
+End
+
+#
+# outputs
+#
+CurrentOutputIdx 0
+NumberOfOutputs 1
+	OptFlags 2
+	OutputTypeNum 24
+	ChnOptFlags 0
+	ChnOptFlags 3
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	Index 0
+		Uuid 		"9af9b3b4-661d-454a-83db-95eaa0175717"
+		Name 		"output1"
+		Active yes
+		CompleteScene yes
+		AllMXPost no
+		UseGMask yes
+		UseLFORAys yes
+		MotionBlur yes
+		DOF yes
+		Camera 1000000
+		Light -1
+		OutputType 1
+		PixelFormat 143
+		Transparency yes
+		UseEmissive yes
+		UseAmbient yes
+		UseSpecularity yes
+		UseReflection yes
+		AllowMatteAsBack yes
+		MatteBackColor 2
+		MotionRange 0
+		MotionFDS 0
+		MediaMatteIdx 1
+		ZDepthThreshold 0
+		BilateralFilter 0
+		MaxZDepth 100
+		OutputMode 0
+		GMaskBlendType 0
+		BackgroundMode 0
+		ShadowMode 1
+		GMaskTransparency 0
+		GMaskBlending 1
+		GMaskBlendModel 0
+		GMaskCorrelation 0
+		GMaskColorBlendModel 0
+		GMaskColorBlendType 21
+		BackgroundColor 0 0 0 1
+		UseSSAO no
+		SSAORegen yes
+		SSAOContrast 1
+		SSAORadius 100
+		SSAOAttenuation 100
+		SSAOAngleBias 30
+		SSAOSoftness 8
+		SSAOJitterSoftness 1
+		SSAONumCamPos 1
+		SSAONumSteps 10
+		ShadingMode yes
+		AccumMode 1
+	End
+UIFocus 7
+End
+
+#
+# layers
+#
+ActionLayerFileVersion 2
+CreationDate Mon Oct 23 12:12:08 2023
+
+LayerCount 1
+
+Layer 0
+	FrontMode 1
+	MatteMode 1
+	ProxyMode yes
+	FrameMode AS_INPUT
+	ResWidth 2880
+	ResHeight 1620
+	ResPixelFormat 143
+	ResAspect 1.77777779
+	ResScanMode SCAN_FORMAT_FRAME
+	ImageDataType 4
+	FrontConnectedToMatte no
+	FrontClipName 	""
+	FrontClipUID 0 105553205222848 4409554204
+	MatteClipName 	""
+	MatteClipUID 0 105553205222848 4409554204
+	MediaFxAllocateFlag 3
+	MediaFxAllocateFlag 4
+	MediaFxAllocateFlag 9
+	KeyerPost no
+	End
+LayerEnd
+
+#
+# multitracks
+#
+ActionMTFileVersion 2
+CreationDate Mon Oct 23 12:12:08 2023
+
+
+Layer 0
+	End
+MultiTrackEnd
+
+#
+# drawing order
+#
+DrawingOrderFileVersion 1.0
+CreationDate Mon Oct 23 12:12:08 2023
+
+LookupTableFrame 1000
+	LookupTableGroup 0
+		LookupTableNPath 1
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 1
+		LookupTableNPath 2
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 2
+		LookupTableNPath 3
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 3
+		LookupTableNPath 4
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 4
+		LookupTableNPath 5
+			OutputsSize 0
+			End
+	LookupTableGroup 5
+		LookupTableNPath 6
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 6
+		LookupTableNPath 7
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 7
+		LookupTableNPath 0
+			OutputsSize 0
+			End
+LookupAutoKey no
+DrawingOrderEnd

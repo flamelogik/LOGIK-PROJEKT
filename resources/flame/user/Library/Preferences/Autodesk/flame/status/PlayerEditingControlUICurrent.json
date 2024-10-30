@@ -1,0 +1,12 @@
+{
+    "Settings": [
+        {
+            "name": "EditdeskShowFullScreenReel",
+            "value": false
+        },
+        {
+            "name": "EditdeskFullScreenIgnoreImplSplice",
+            "value": true
+        }
+    ]
+}

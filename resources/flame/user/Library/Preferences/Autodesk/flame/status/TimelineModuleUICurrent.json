@@ -1,0 +1,24 @@
+{
+    "Settings": [
+        {
+            "name": "TimeLineShowStoryBoardViewRequested",
+            "value": true
+        },
+        {
+            "name": "TimeLineShowFXPipelineRequested",
+            "value": true
+        },
+        {
+            "name": "TimeLinePlaybackStartStopOnFrame",
+            "value": true
+        },
+        {
+            "name": "TimeLineDisplayMode",
+            "value": 0
+        },
+        {
+            "name": "TimeLineFramesDisplayMode",
+            "value": 0
+        }
+    ]
+}

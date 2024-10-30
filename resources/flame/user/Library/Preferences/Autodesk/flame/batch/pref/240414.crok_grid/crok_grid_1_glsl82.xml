@@ -1,0 +1,87 @@
+<ShaderNodePreset Name="crok grid" Description="
+This Matchbox shader creates a grid.
+
+Setup:
+
+- Grid Colour: grid colour
+- Back Colour: bg colour
+- Grid Size : size of the main box
+- Line Width : width of the outline
+- Rotation Center: center of rotation
+- Rotation Value: how much rotation gets applied
+- Blur: apply blur to the grid
+
+ 
+Demo clip: http://vimeo.com/87956490
+
+Based on: http://glsl.heroku.com/e#13645.1
+			
+Matchbox version by ivar@inferno-op.com" Version="1" LimitInputsToTexture="True" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="gridcolor" Type="vec3" ValueType="Colour" IconType="None" DisplayName="Grid Color" Page="0" Col="0" Row="0" Tooltip="" Inc="1.0">
+         <SubUniform Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="backcolor" Type="vec3" ValueType="Colour" IconType="None" DisplayName="Back Color" Page="0" Col="0" Row="1" Tooltip="" Inc="1.0">
+         <SubUniform Default="0.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="propgridsize" Type="bool" DisplayName="Proportional" Tooltip="" Default="True" Page="0" Col="1" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="propgridsize" Name="size" Type="vec2" IconType="None" DisplayName="Size" Page="0" Col="1" Row="1" Tooltip="" Inc="0.001">
+         <SubUniform Default="0.5" Min="0.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.5" Min="0.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="propgridsize" Name="sizeProp" Type="float" DisplayName="Size" Page="0" Col="1" Row="1" Tooltip="" Inc="0.001" Default="0.500" Min="0.000" Max="10000.000" ResDependent="None">
+      </Uniform>
+      <Uniform Name="propwidth" Type="bool" DisplayName="Proportional" Tooltip="" Default="True" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="propwidth" Name="line" Type="vec2" IconType="None" DisplayName="Width" Page="0" Col="2" Row="1" Tooltip="" Inc="0.1">
+         <SubUniform Default="2.0" Min="0.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="2.0" Min="0.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="propwidth" Name="lineProp" Type="float" DisplayName="Width" Page="0" Col="2" Row="1" Tooltip="" Inc="1.00" Default="2.0" Min="0.0" Max="10000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="rotation" Type="float" DisplayName="Z Rotation" Page="0" Col="3" Row="0" Tooltip="" Inc="0.01" Default="0.0" Min="-10000.0" Max="10000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="rotationCentre" Type="float" DisplayName="Centre" Page="0" Col="3" Row="1" Tooltip="" Inc="0.01" Default="0.5" Min="-10000.0" Max="10000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="postBlur" Type="float" DisplayName="Blur" Page="0" Col="3" Row="4" Tooltip="" Inc="0.01" Default="0.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="postBlur" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Page 1">
+      <Col Page="0" Col="0" Name="Colours">
+      </Col>
+      <Col Page="0" Col="1" Name="Grid">
+      </Col>
+      <Col Page="0" Col="2" Name="Line">
+      </Col>
+      <Col Page="0" Col="3" Name="Rotation">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

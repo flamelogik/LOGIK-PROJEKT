@@ -1,0 +1,95 @@
+<ShaderNodePreset Name="Dilate" Description="Dilate - shrink or expand pixels based on brightness, or on closeness to a particular colour
+
+The strength input modulates the effet and can also use negative colours to reverse the dilation into erosion, and vice-versa
+
+When using colour weighting, the third input can set the colour to use per-pixel - using a clean greenscreen can let you spread edge colours inwards or outwards without having to pull a key to use with PixelSpread
+
+Make sure input is 16fp rather than 8-bit!
+
+Quick demo: https://www.youtube.com/watch?v=t2jISkR7fGc
+
+lewis@lewissaunders.com" Version="2" LimitInputsToTexture="True" SoftwareVersion="2017.0.0" ShaderType="Matchbox" CommercialUsePermitted="True" MatteProvider="False" TimelineUseBack="False" SupportsTimeline="False" SupportsTransition="False" SupportsAction="False" SupportsAdaptiveDegradation="False">
+   <Shader Index="1" OutputBitDepth="Output" GridSubdivision="1" Clear="0">
+      <Uniform Name="stretch" DisplayName="Stretch/squash" ChannelName="Stretch" Type="float" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="0.5" Min="0.001" Max="0.999" ResDependent="None">
+      </Uniform>
+      <Uniform Name="size" DisplayName="Size" ChannelName="Size" Type="float" Page="0" Col="1" Row="1" Tooltip="" Inc="0.1" Default="2.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform ValueType="Popup" Name="kernel" DisplayName="Kernel" ChannelName="Kernel" Type="int" Page="0" Col="3" Row="1" Tooltip="" Inc="1" Default="1" Min="0" Max="4">
+         <PopupEntry Value="0" Title="Box">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Subpixel box">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Triangle">
+         </PopupEntry>
+         <PopupEntry Value="3" Title="Ball">
+         </PopupEntry>
+         <PopupEntry Value="4" Title="Gaussian">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Name="usecolour" DisplayName="Use colour (forces box kernel)" ChannelName="Use colour" Type="bool" Tooltip="" Default="False" Page="0" Col="4" Row="1">
+      </Uniform>
+      <Uniform Name="screencolour" DisplayName="Colour" ChannelName="Colour" Type="vec3" ValueType="Colour" IconType="None" Action3DWidget="False" Page="0" Col="4" Row="2" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.05" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.2" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.05" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="usecleanscreen" DisplayName="Use screen input" ChannelName="usecleanscreen" Type="bool" Tooltip="" Default="False" Page="0" Col="4" Row="3">
+      </Uniform>
+      <Uniform Name="front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Front" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Selective" InputColor="80, 80, 20" DisplayName="Strength" Tooltip="" NoInput="White" Index="1">
+      </Uniform>
+      <Uniform Name="cleanscreen" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83" DisplayName="Screen colour" Tooltip="" NoInput="Black" Index="2">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output" GridSubdivision="1" Clear="0">
+      <Uniform Name="stretch" DisplayName="Stretch" ChannelName="stretch" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="size" DisplayName="Size" ChannelName="size" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="kernel" DisplayName="Kernel" ChannelName="kernel" Type="int">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="screencolour" DisplayName="Colour" ChannelName="Colour" Type="vec3">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="usecolour" DisplayName="Use colour" ChannelName="Use colour" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="usecleanscreen" DisplayName="Use screen input" ChannelName="usecleanscreen" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="cleanscreen" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Screen colour" Tooltip="" Index="2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Dilate">
+      <Col Page="0" Col="1" Name="Size">
+      </Col>
+      <Col Page="0" Col="2" Name="Shape">
+      </Col>
+      <Col Page="0" Col="3" Name="Structuring element">
+      </Col>
+      <Col Page="0" Col="4" Name="Weight by colour">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

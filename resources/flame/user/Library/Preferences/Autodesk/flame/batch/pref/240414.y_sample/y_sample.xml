@@ -1,0 +1,63 @@
+<ShaderNodePreset Name="SAMPLE" Description="miles@noesclavo.com
+
+SAMPLE
+
+Sample a color from an image and output that color as a solid frame. This shader also has the ability to animate the the sample area." Version="1" LimitInputsToTexture="True" SoftwareVersion="2016.0.0" ShaderType="Matchbox" CommercialUsePermitted="True" MatteProvider="False" TimelineUseBack="False" SupportsTimeline="False" SupportsTransition="False" SupportsAction="False" SupportsAdaptiveDegradation="False">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Front" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="scale" DisplayName="Scale Source" Type="float" Page="0" Col="1" Row="0" Tooltip="Scale the image before taking a sample." Inc="0.5" Default="2.0" Min="1.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionInvert="True" UIConditionType="Hide" UIConditionValue="True" UIConditionSource="action_coords" Name="pos" DisplayName="Picker Position" Type="vec2" IconType="Axis" Page="0" Col="0" Row="1" Tooltip="Location of the the pixel you'd like to sample." Inc="0.001">
+         <SubUniform Default="0.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionValue="True" UIConditionSource="action_coords" Name="a_pos" DisplayName="Picker Position" Type="vec3" ValueType="Position" IconType="None" Page="0" Col="0" Row="1" Tooltip="Use this to link up to a tracked axis in action, and get a precisely animated sample area." Inc="0.5">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="action_coords" DisplayName="Use Action Coordinates" Type="bool" Tooltip="Use this to link up to a tracked axis in action, and get a precisely animated sample area." Default="False" Page="0" Col="0" Row="0">
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="lod" DisplayName="Average" Type="float" Page="0" Col="1" Row="1" Tooltip="Leval of detail to sample." Inc="1.0" Default="0.0" Min="000000.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR_MIPMAP_NEAREST" GL_TEXTURE_MAG_FILTER="GL_LINEAR_MIPMAP_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="True" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="col_only" DisplayName="Output Color Only" Type="bool" Tooltip="Output the solid color." Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform Name="action_coords" DisplayName="action_coords" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="a_pos" DisplayName="a_pos" Type="vec3">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="pos" DisplayName="pos" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="SAMPLE">
+      <Col Page="0" Col="0" Name="Picker Coordinates">
+      </Col>
+      <Col Page="0" Col="1" Name="Sample Options">
+      </Col>
+      <Col Page="0" Col="2" Name="Output">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

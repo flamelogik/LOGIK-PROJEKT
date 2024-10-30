@@ -1,0 +1,684 @@
+{
+    "SearchSettings": {
+        "Tools": [
+            {
+                "Name": "2D Transform",
+                "Tags": [
+                    "Camera Shake",
+                    "Stabilizer",
+                    "Pan",
+                    "Scan"
+                ]
+            },
+            {
+                "Name": "Action",
+                "Weight": 10,
+                "Tags": [
+                    "3D",
+                    "Comp",
+                    "FBX",
+                    "Alembic",
+                    "Geometry",
+                    "SVG",
+                    "Camera",
+                    "Lighting",
+                    "Particles",
+                    "Lens Flare",
+                    "Texture",
+                    "Maps",
+                    "Deform",
+                    "Tracking"
+                ]
+            },
+            {
+                "Name": "Blur",
+                "Weight": 10,
+                "Tags": [
+                    "Gaussian",
+                    "Radial"
+                ]
+            },
+            {
+                "Name": "Colour Blend",
+                "Tags": [
+                    "Color"
+                ]
+            },
+            {
+                "Name": "Colour Correct",
+                "Tags": [
+                    "Color"
+                ]
+            },
+            {
+                "Name": "Colour Curves",
+                "Tags": [
+                    "Color"
+                ]
+            },
+            {
+                "Name": "Colour Source",
+                "Tags": [
+                    "Color",
+                    "Bars",
+                    "Noise",
+                    "Gradient"
+                ]
+            },
+            {
+                "Name": "Colour Warper",
+                "Tags": [
+                    "Color"
+                ]
+            },
+            {
+                "Name": "Colour Mgmt",
+                "Tags": [
+                    "Color",
+                    "Management",
+                    "Lut"
+                ]
+            },
+            {
+                "Name": "Compass",
+                "Tags": [
+                    "Backdrop"
+                ]
+            },
+            {
+                "Name": "Image",
+                "Weight": 10,
+                "Tags": [
+                    "MasterGrade",
+                    "Colour",
+                    "Color",
+                    "Grading",
+                    "Selective",
+                    "Secondary",
+                    "Semantic",
+                    "Look"
+                ]
+            },
+            {
+                "Name": "Look",
+                "Tags": [
+                    "CDL"
+                ]
+            },
+            {
+                "Name": "MasterK",
+                "Weight": 10,
+                "Tags": [
+                    "Keyer"
+                ]
+            },
+            {
+                "Name": "Matchbox",
+                "Tags": [
+                    "Plugins"
+                ]
+            },
+            {
+                "Name": "Mono",
+                "Weight": 10
+            },
+            {
+                "Name": "Motif",
+                "Tags": [
+                    "Kaleidoscope"
+                ]
+            },
+            {
+                "Name": "MUX",
+                "Tags": [
+                    "Switch"
+                ]
+            },
+            {
+                "Name": "OpenFX",
+                "Weight": 2,
+                "Tags": [
+                    "Plugins",
+                    "OFX"
+                ]
+            },
+            {
+                "Name": "Pixel Spread",
+                "Tags": [
+                    "Edge"
+                ]
+            },
+            {
+                "Name": "Recursive Ops",
+                "Tags": [
+                    "Clean",
+                    "Plate"
+                ]
+            },
+            {
+                "Name": "Render",
+                "Weight": 10
+            },
+            {
+                "Name": "Resize & Crop",
+                "Weight": 1,
+                "Tags": [
+                    "Pan",
+                    "Scan",
+                    "Resolution"
+                ]
+            },
+            {
+                "Name": "Sparks",
+                "Tags": [
+                    "Plugins"
+                ]
+            },
+            {
+                "Name": "Substance Noise",
+                "Tags": [
+                    "Pattern",
+                    "Generators"
+                ]
+            },
+            {
+                "Name": "Substance Splatter",
+                "Tags": [
+                    "Pattern"
+                ]
+            },
+            {
+                "Name": "Text",
+                "Tags": [
+                    "Title"
+                ]
+            },
+            {
+                "Name": "Timewarp",
+                "Tags": [
+                    "Speed",
+                    "Ramp"
+                ]
+            },
+            {
+                "Name": "Write File",
+                "Weight": 2,
+                "Tags": [
+                    "Export"
+                ]
+            },
+            {
+                "Name": "MasterGrade",
+                "Type": "Matchbox",
+                "Weight": 12,
+                "Tags": [
+                    "Colour",
+                    "Color",
+                    "Curves",
+                    "Lift",
+                    "Gamma",
+                    "Gain",
+                    "Primary",
+                    "Tone",
+                    "Correct"
+                ]
+            },
+            {
+                "Name": "PhysicalDefocus",
+                "Type": "Matchbox",
+                "Weight": 10,
+                "Tags": [
+                    "Bokeh",
+                    "Depth"
+                ]
+            },
+            {
+                "Name": "A2Beauty",
+                "Type": "Matchbox",
+                "Weight": 10,
+                "Tags": [
+                    "Frequency",
+                    "Dodge",
+                    "Burn"
+                ]
+            },
+            {
+                "Name": "ColourMgmt",
+                "Type": "Matchbox",
+                "Tags": [
+                    "Color",
+                    "Management",
+                    "Lut"
+                ]
+            },
+            {
+                "Name": "Axis",
+                "Tags": [
+                    "Position",
+                    "Tracking"
+                ]
+            },
+            {
+                "Name": "Camera Analysis",
+                "Weight": 10,
+                "Tags": [
+                    "Tracking",
+                    "Analyzer",
+                    "Mono"
+                ]
+            },
+            {
+                "Name": "Diffuse Map",
+                "Tags": [
+                    "Texture"
+                ]
+            },
+            {
+                "Name": "GMask",
+                "Tags": [
+                    "Window"
+                ]
+            },
+            {
+                "Name": "GMask Ellipse",
+                "Tags": [
+                    "Window",
+                    "Vignette"
+                ]
+            },
+            {
+                "Name": "GMask Rectangle",
+                "Tags": [
+                    "Window"
+                ]
+            },
+            {
+                "Name": "Lightbox",
+                "Tags": [
+                    "Plugins"
+                ]
+            },
+            {
+                "Name": "Material",
+                "Tags": [
+                    "Refraction",
+                    "Light Wrap"
+                ]
+            },
+            {
+                "Name": "Perspective Grid",
+                "Tags": [
+                    "Tracking"
+                ]
+            },
+            {
+                "Name": "Replica",
+                "Tags": [
+                    "Instance"
+                ]
+            },
+            {
+                "Name": "Selective",
+                "Tags": [
+                    "Secondary",
+                    "Keyer",
+                    "Semantic",
+                    "Matte"
+                ]
+            },
+            {
+                "Name": "Shader",
+                "Tags": [
+                    "PBR"
+                ]
+            },
+            {
+                "Name": "Surface",
+                "Tags": [
+                    "Blending",
+                    "Resolution",
+                    "Tracking",
+                    "Lens"
+                ]
+            },
+            {
+                "Name": "2D Transform",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Camera Shake",
+                    "Stabilizer",
+                    "Pan",
+                    "Scan"
+                ]
+            },
+            {
+                "Name": "Action",
+                "Type": "Timeline FX",
+                "Weight": 10,
+                "Tags": [
+                    "3D",
+                    "Comp",
+                    "FBX",
+                    "Alembic",
+                    "Geometry",
+                    "SVG",
+                    "Camera",
+                    "Lighting",
+                    "Particles",
+                    "Lens Flare",
+                    "Texture",
+                    "Maps",
+                    "Deform",
+                    "Tracking"
+                ]
+            },
+            {
+                "Name": "Blur",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Gaussian",
+                    "Radial"
+                ]
+            },
+            {
+                "Name": "Colour Correct",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Color"
+                ]
+            },
+            {
+                "Name": "Colour Warper",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Color"
+                ]
+            },
+            {
+                "Name": "Colour Mgmnt",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Color",
+                    "Management",
+                    "Lut"
+                ]
+            },
+            {
+                "Name": "Image",
+                "Type": "Timeline FX",
+                "Weight": 10,
+                "Tags": [
+                    "MasterGrade",
+                    "Colour",
+                    "Color",
+                    "Grading",
+                    "Selective",
+                    "Secondary",
+                    "Semantic",
+                    "Look"
+                ]
+            },
+            {
+                "Name": "Look",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "CDL"
+                ]
+            },
+            {
+                "Name": "Matchbox",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Plugins"
+                ]
+            },
+            {
+                "Name": "OpenFX",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Plugins",
+                    "OFX"
+                ]
+            },
+            {
+                "Name": "Resize",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Pan",
+                    "Scan",
+                    "Resolution"
+                ]
+            },
+            {
+                "Name": "Sparks",
+                "Type": "Timeline FX",
+                "Tags": [
+                    "Plugins"
+                ]
+            },
+            {
+                "Name": "MasterGrade",
+                "Type": "Timeline FX Matchbox",
+                "Weight": 10,
+                "Tags": [
+                    "Colour",
+                    "Color",
+                    "Curves",
+                    "Lift",
+                    "Gamma",
+                    "Gain",
+                    "Primary",
+                    "Tone",
+                    "Correct"
+                ]
+            },
+            {
+                "Name": "PhysicalDefocus",
+                "Type": "Timeline FX Matchbox",
+                "Weight": 10,
+                "Tags": [
+                    "Bokeh",
+                    "Depth"
+                ]
+            },
+            {
+                "Name": "A2Beauty",
+                "Type": "Timeline FX Matchbox",
+                "Weight": 10,
+                "Tags": [
+                    "Frequency",
+                    "Dodge",
+                    "Burn"
+                ]
+            },
+            {
+                "Name": "Add Adjustment Segment",
+                "Type": "Batch FX",
+                "Tags": [
+                    "Batch FX",
+                    "BFX"
+                ]
+            },
+            {
+                "Name": "Batch FX",
+                "Type": "Batch FX",
+                "Tags": [
+                    "Batch FX",
+                    "BFX"
+                ]
+            },
+            {
+                "Name": "Selection As 3D Comp",
+                "Type": "Batch FX",
+                "Tags": [
+                    "Batch FX",
+                    "BFX"
+                ]
+            },
+            {
+                "Name": "Selection As Clip",
+                "Type": "Batch FX",
+                "Tags": [
+                    "Batch FX",
+                    "BFX"
+                ]
+            },
+            {
+                "Name": "Selection As Flowgraph",
+                "Type": "Batch FX",
+                "Tags": [
+                    "Batch FX",
+                    "BFX"
+                ]
+            },
+            {
+                "Name": "InfillBlur",
+                "Type": "User",
+                "Weight": 13
+            },
+            {
+                "Name": "Difference Matte",
+                "Weight": 1
+            },
+            {
+                "Name": "crok_diffuse",
+                "Type": "User",
+                "Weight": 1
+            },
+            {
+                "Name": "crok_ibk",
+                "Type": "User",
+                "Weight": 4
+            },
+            {
+                "Name": "K_BlurMask",
+                "Type": "Matchbox",
+                "Weight": 3
+            },
+            {
+                "Name": "WRITE_FILE",
+                "Type": "User",
+                "Weight": 8
+            },
+            {
+                "Name": "PLATES",
+                "Type": "User",
+                "Weight": 9
+            },
+            {
+                "Name": "Airglow",
+                "Type": "Matchbox",
+                "Weight": 7
+            },
+            {
+                "Name": "ChromaticAberration",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "CHECKER",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "write_file",
+                "Type": "User",
+                "Weight": 1
+            },
+            {
+                "Name": "InfillBlur",
+                "Type": "Matchbox",
+                "Weight": 22
+            },
+            {
+                "Name": "CROK Uncomp",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "CROK_EXPON_BLUR",
+                "Type": "Shared",
+                "Weight": 3
+            },
+            {
+                "Name": "crok emboss",
+                "Type": "Matchbox",
+                "Weight": 2
+            },
+            {
+                "Name": "Match Grain",
+                "Weight": 2
+            },
+            {
+                "Name": "CryptoMatte",
+                "Weight": 1
+            },
+            {
+                "Name": "BCC Drop Shadow",
+                "Type": "OpenFX",
+                "Weight": 1
+            },
+            {
+                "Name": "DropShadow",
+                "Type": "Matchbox",
+                "Weight": 5
+            },
+            {
+                "Name": "CROK Defocus SFX",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "crok lightwrap",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "crok additive key",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "Dollface",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "crok deband",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "StingrayAmbientOcclusion",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "crok_pixelate",
+                "Type": "Matchbox",
+                "Weight": 1
+            },
+            {
+                "Name": "WRITE_FILE",
+                "Type": "Shared",
+                "Weight": 2
+            },
+            {
+                "Name": "PLATES",
+                "Type": "Shared",
+                "Weight": 1
+            },
+            {
+                "Name": "The_Noise",
+                "Type": "Shared",
+                "Weight": 1
+            },
+            {
+                "Name": "BCC Primatte Studio",
+                "Type": "OpenFX",
+                "Weight": 1
+            }
+        ],
+        "Learn": []
+    }
+}

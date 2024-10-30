@@ -1,0 +1,185 @@
+{
+    "Settings": [
+        {
+            "name": "ColorFrameMode",
+            "value": 3
+        },
+        {
+            "name": "ColorFrameModePercent",
+            "value": 0
+        },
+        {
+            "name": "ColorFrameColor",
+            "value": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox0",
+            "value": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox1",
+            "value": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox2",
+            "value": {
+                "r": 0.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox3",
+            "value": {
+                "r": 0.0,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox4",
+            "value": {
+                "r": 1.0,
+                "g": 0.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox5",
+            "value": {
+                "r": 1.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox6",
+            "value": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ColorFrameBox7",
+            "value": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox0",
+            "value": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox1",
+            "value": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox2",
+            "value": {
+                "r": 0.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox3",
+            "value": {
+                "r": 0.0,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox4",
+            "value": {
+                "r": 1.0,
+                "g": 0.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox5",
+            "value": {
+                "r": 1.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox6",
+            "value": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 1.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "TimelineColorFrameBox7",
+            "value": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "ToneType",
+            "value": 0
+        },
+        {
+            "name": "ToneType2",
+            "value": 3
+        },
+        {
+            "name": "ToneNbTracks2",
+            "value": 0
+        },
+        {
+            "name": "ToneMode",
+            "value": 1
+        },
+        {
+            "name": "SoftnessSize",
+            "value": 2
+        }
+    ]
+}

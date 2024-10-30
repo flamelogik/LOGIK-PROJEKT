@@ -1,0 +1,20 @@
+{
+    "Settings": [
+        {
+            "name": "KeyPPAutoSave",
+            "value": true
+        },
+        {
+            "name": "KeyPPAutoSaveTime",
+            "value": 5
+        },
+        {
+            "name": "KeyPPAutoKey",
+            "value": false
+        },
+        {
+            "name": "KeyPPContinuousUpdate",
+            "value": true
+        }
+    ]
+}

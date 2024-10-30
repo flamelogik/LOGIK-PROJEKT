@@ -1,0 +1,12 @@
+{
+    "Settings": [
+        {
+            "name": "CMUI_TRANSPARENCY",
+            "value": 20.0
+        },
+        {
+            "name": "CMUI_OVERLAY_ACTIVE",
+            "value": false
+        }
+    ]
+}

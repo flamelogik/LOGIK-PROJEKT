@@ -1,0 +1,83 @@
+{
+    "Settings": [
+        {
+            "name": "DistortAutoKeyMode",
+            "value": true
+        },
+        {
+            "name": "DistortIconsOn",
+            "value": true
+        },
+        {
+            "name": "DistortIconsTransparency",
+            "value": 0.0
+        },
+        {
+            "name": "DistortSchemTransparency",
+            "value": 0.0
+        },
+        {
+            "name": "DistortSchemAutoInsert",
+            "value": false
+        },
+        {
+            "name": "DistortControlPointClr",
+            "value": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 0.0
+            }
+        },
+        {
+            "name": "DistortFill",
+            "value": false
+        },
+        {
+            "name": "DistortFillNum",
+            "value": 0
+        },
+        {
+            "name": "DistortFillType",
+            "value": 0
+        },
+        {
+            "name": "DistortSrcCurrent",
+            "value": 0
+        },
+        {
+            "name": "DistortShowSrc",
+            "value": false
+        },
+        {
+            "name": "DistortShowDst",
+            "value": false
+        },
+        {
+            "name": "DistortSrcClr",
+            "value": {
+                "r": 1.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "DistortDstClr",
+            "value": {
+                "r": 1.0,
+                "g": 0.6299999952316284,
+                "b": 0.0,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "DistortAxisMotionPath",
+            "value": false
+        },
+        {
+            "name": "DistortAxisScaleProp",
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "NodeBin": [
+        {
+            "NodeLine": [
+                {
+                    "NodeType": "Custom",
+                    "Setup": "Rec709_to_ACES",
+                    "Version": 9990
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "HEADING",
+                    "Version": 9990
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "SLATE_and_BURN_IN",
+                    "Version": 10003
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "highpass",
+                    "Version": 10003
+                }
+            ]
+        },
+        {
+            "NodeLine": [
+                {
+                    "NodeType": "Custom",
+                    "Setup": "SUB_HEADING",
+                    "Version": 9990
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "Scar_Cleanup",
+                    "Version": 10003
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "_010",
+                    "Version": 10003
+                },
+                {
+                    "NodeType": "Custom",
+                    "Setup": "_020",
+                    "Version": 10003
+                }
+            ]
+        }
+    ]
+}

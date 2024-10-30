@@ -1,0 +1,23 @@
+{
+    "ChannelEditorSettings": {
+        "AutoSelection": true,
+        "TrackSnap": true,
+        "AutomaticFraming": true,
+        "ChannelFramingOperation": 0,
+        "HideUnselectedKeyframes": false,
+        "Regen": true,
+        "ShowTangentValues": false,
+        "FilterEnabled": true,
+        "IncludeChannelsFromParents": false,
+        "HierarchyWidth": 200,
+        "ShowTrackFrameRange": true,
+        "ShowCurvesFromSelectChannels": true,
+        "ShowCurvesOfCollapsedFolders": true,
+        "ShowKeyframeIndicators": true,
+        "ShowRangeIndicators": true,
+        "ShowEditBox": true,
+        "OptionsMode": 0,
+        "CanvasType": 0,
+        "LinkMode": 0
+    }
+}

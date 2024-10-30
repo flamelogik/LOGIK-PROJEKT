@@ -1,0 +1,106 @@
+{
+    "Settings": [
+        {
+            "name": "TextMatteKeyEffect",
+            "value": true
+        },
+        {
+            "name": "TextUndoLevels",
+            "value": 10
+        },
+        {
+            "name": "TextAutoKeyMode",
+            "value": true
+        },
+        {
+            "name": "TextUpdateMode",
+            "value": true
+        },
+        {
+            "name": "TextPlayLock",
+            "value": false
+        },
+        {
+            "name": "TextSetNumSamples",
+            "value": 0
+        },
+        {
+            "name": "TextSampleSoftness",
+            "value": 1.0
+        },
+        {
+            "name": "TextSetProcessingSpeed",
+            "value": true
+        },
+        {
+            "name": "TextRenderMode",
+            "value": 2
+        },
+        {
+            "name": "TextShadowBlurType",
+            "value": true
+        },
+        {
+            "name": "TextGlobalBlur",
+            "value": true
+        },
+        {
+            "name": "TextGlobalBlurEnable",
+            "value": false
+        },
+        {
+            "name": "TextGlobalBlurFactor",
+            "value": 5
+        },
+        {
+            "name": "TextPathShapeColor",
+            "value": {
+                "r": 0.0,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TextPathPointsColor",
+            "value": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.0,
+                "a": 1.0
+            }
+        },
+        {
+            "name": "TextCharAxisShow",
+            "value": false
+        },
+        {
+            "name": "TextSetRoll",
+            "value": true
+        },
+        {
+            "name": "TextSetCrawl",
+            "value": false
+        },
+        {
+            "name": "TextSetShowTab",
+            "value": true
+        },
+        {
+            "name": "TextHideSpellingError",
+            "value": false
+        },
+        {
+            "name": "TextUseCustomDictionary",
+            "value": true
+        },
+        {
+            "name": "TextSpellDictionary",
+            "value": 0
+        },
+        {
+            "name": "TextKeepLinksMode",
+            "value": false
+        }
+    ]
+}

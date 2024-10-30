@@ -1,0 +1,161 @@
+<ShaderNodePreset Name="crok regrain" Description="
+This Matchbox shader simulates film grain.
+
+Input:
+
+- Front: source clip
+- Matte: external matte input
+
+Setup:
+
+- Stock: Select your film grain presets
+- Amount: how much grain is applied
+- Softness: grain softness size
+- Size: grain size
+- Red | Green | Blue: adjust the different colour channels independently
+- Levels: adjust the low, mid and high values for your grain (its only avaiable if the Custom Stock Preset is selected )
+
+
+Demo clip: http://vimeo.com/107276957
+
+Matchbox version by ivar@inferno-op.com" Version="1.5" LimitInputsToTexture="True" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform ValueType="Popup" Name="stock" Type="int" DisplayName="Stock" Page="0" Col="0" Row="0" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Kodak 5245">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Kodak 5248">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Kodak 5287">
+         </PopupEntry>
+         <PopupEntry Value="3" Title="Kodak 5293">
+         </PopupEntry>
+         <PopupEntry Value="4" Title="Kodak 5296">
+         </PopupEntry>
+         <PopupEntry Value="5" Title="Kodak 5298">
+         </PopupEntry>
+         <PopupEntry Value="6" Title="Kodak 5217">
+         </PopupEntry>
+         <PopupEntry Value="7" Title="Kodak 5218">
+         </PopupEntry>
+         <PopupEntry Value="10" Title="Alan Skin">
+         </PopupEntry>
+         <PopupEntry Value="8" Title="BW">
+         </PopupEntry>
+         <PopupEntry Value="11" Title="BW Static">
+         </PopupEntry>
+         <PopupEntry Value="9" Title="Custom">
+         </PopupEntry>
+         <PopupEntry Value="12" Title="Custom Static">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Name="overall" Type="float" DisplayName="Amount" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="amount" Type="vec3" ValueType="Position" IconType="None" DisplayName="Gain" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="1.0" Min="0.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="rgb_blur" Type="vec3" ValueType="Position" IconType="None" DisplayName="Softness" Page="0" Col="2" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="0.0" Max="10.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="0.0" Max="10.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="0.0" Max="10.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur" Type="float" DisplayName="Softness" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="stock" Type="int">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="stock" Type="int">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+      <Uniform Name="Source" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Front" DisplayName="Source" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="Alpha" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Matte" DisplayName="Matte" Tooltip="" NoInput="White" Index="1">
+      </Uniform>
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="size" Type="vec3" ValueType="Position" IconType="None" DisplayName="Size" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01">
+         <SubUniform Default="1.0" Min="1.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="1.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="1.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="levels" Type="vec3" ValueType="Position" IconType="None" DisplayName="Levels" Page="0" Col="2" Row="2" Tooltip="" Inc="0.01">
+         <SubUniform Default="2.0" Min="-5.0" Max="10.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="stock" Type="int">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="gamma" Type="float" DisplayName="Matte Gamma" Page="1" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.01" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="grain_only" DisplayName="Grain Only" Type="bool" Tooltip="" Default="False" Page="1" Col="0" Row="0">
+      </Uniform>
+      <Uniform Name="uv_scale" DisplayName="Scale" Type="float" Page="0" Col="0" Row="4" Tooltip="" Inc="0.01" Default="1.0" Min="0.123213" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="alan_aspect" DisplayName="Aspect" Type="float" Page="0" Col="1" Row="4" Tooltip="" Inc="0.01" Default="1.0" Min="0.01" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform ValueType="Popup" Name="blend_mode" Type="int" DisplayName="Blend Mode" Page="0" Col="0" Row="1" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Add">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Overlay">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Spotlight">
+         </PopupEntry>
+      </Uniform>
+      <Uniform ValueType="Popup" Name="output_matte" Type="int" DisplayName="Matte Output" Page="1" Col="0" Row="1" Tooltip="" Inc="1" Default="2" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Luma * Matte">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Matte">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="White">
+         </PopupEntry>
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Look">
+      <Col Page="0" Col="0" Name="Overall">
+      </Col>
+      <Col Page="0" Col="1" Name="RGB Gain / RGB Size">
+      </Col>
+      <Col Page="0" Col="2" Name="Softness / Levels">
+      </Col>
+   </Page>
+   <Page Page="1" Name="Misc">
+      <Col Page="1" Col="0" Name="Input / Output">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

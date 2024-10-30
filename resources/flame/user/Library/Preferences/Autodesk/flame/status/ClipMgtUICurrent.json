@@ -1,0 +1,32 @@
+{
+    "Settings": [
+        {
+            "name": "ClipMgtSoftAutoSave",
+            "value": 3
+        },
+        {
+            "name": "ClipMgtHardAutoSave",
+            "value": 5
+        },
+        {
+            "name": "ClipMgtVtrStart",
+            "value": 0
+        },
+        {
+            "name": "ClipMgtFormatFileArchiveWhileArchivingAllSame",
+            "value": true
+        },
+        {
+            "name": "ClipMgtVaultPollInterval",
+            "value": 60
+        },
+        {
+            "name": "ClipMgtVaultLockTimeout",
+            "value": 600
+        },
+        {
+            "name": "ClipMgtModuleAutoSave",
+            "value": 5
+        }
+    ]
+}

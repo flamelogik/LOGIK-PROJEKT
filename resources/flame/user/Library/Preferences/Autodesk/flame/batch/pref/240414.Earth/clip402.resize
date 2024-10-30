@@ -1,0 +1,54 @@
+ResizeFileVersion 5
+CreationDate Fri Apr  7 03:25:24 2017
+
+
+DestinationWidth 1920
+DestinationHeight 1080
+DestinationPixelFormat 143
+DestinationAspect 1.77777779
+ResizeVideoScanFormat 2
+ResizeType 0
+ResizeQuality 4
+ResizeFieldFormat 0
+ResizePreserveAspect yes
+AutoKey no
+Regen yes
+LockRes no
+EndFrame 0
+PropRatioConstraint 1
+ResizeBackColourRed 0
+ResizeBackColourGreen 0
+ResizeBackColourBlue 0
+ResizeBackColourAlpha 0
+ResizeUseSrcField 0
+ResizeChannels
+Channel Position/x
+	Extrapolation constant
+	Value 0
+	End
+Channel Position/y
+	Extrapolation constant
+	Value 0
+	End
+Channel Scaling/x
+	Extrapolation constant
+	Value 100
+	End
+Channel Scaling/y
+	Extrapolation constant
+	Value 100
+	End
+Channel Resolution/Width
+	Extrapolation constant
+	Value 8000
+	End
+Channel Resolution/Height
+	Extrapolation constant
+	Value 4000
+	End
+ChannelEnd
+ResizeQualityBlur 1 1 1 1 0.829999983 0.829999983 1 1 1 1
+ResizeQualityAlpha 0 0 0 0 5.25 3.8499999 0 0 0 0
+ResizeQualityAdaptiveDeinterlacing no
+ResizeQualityAdaptiveTolerance 0.100000001
+ResizeEnd

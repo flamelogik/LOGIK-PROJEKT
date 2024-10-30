@@ -1,0 +1,33 @@
+	<ShaderNodePreset LimitInputsToTexture="True" SupportsAdaptiveDegradation="False" Description="softens the edges of your comp " SoftwareVersion="2017.0.0" ShaderType="Matchbox" TimelineUseBack="False" MatteProvider="False" SupportsTimeline="False" SupportsTransition="False" SupportsAction="False" Name="Edge_Blur">
+   <Shader OutputBitDepth="Output" Index="1">
+      <Uniform InputType="Front" Name="input1" DisplayName="Front" Tooltip="" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform InputType="Back" Name="input2" DisplayName="Back" Tooltip="" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" NoInput="" Index="1">
+      </Uniform>
+      <Uniform InputType="Matte" Name="input3" DisplayName="Matte" Tooltip="" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" NoInput="Error" Index="2">
+      </Uniform>
+      <Uniform InputType="fakeout" Name="fakeout" DisplayName="fakeout" Tooltip="" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" NoInput="Error" Index="3">
+      </Uniform>
+      <Uniform ResDependent="None" Max="200.0" Min="-0" Default="1.5" Inc="0.01" Tooltip="soft width of edge" Row="0" Col="0" Page="0" DisplayName="Softness" Type="float" Name="Softness">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000.0" Min="0" Default="150.0" Inc="0.01" Tooltip="hard width of edge" Row="1" Col="0" Page="0" DisplayName="Gain" Type="float" Name="Gain">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="0" Default="2.5" Inc="0.01" Tooltip="blurs the image" Row="0" Col="1" Page="0" DisplayName="Blur" Type="float" Name="Blur">
+      </Uniform>
+      <Uniform ResDependent="None" Max="400.0" Min="0" Default="O" Inc="1" Tooltip="size of grain" Row="0" Col="2" Page="0" DisplayName="Size" Type="int" Name="Size">
+      </Uniform>
+      <Uniform ResDependent="None" Max="20.0" Min="0" Default="0.O" Inc="0.01" Tooltip="" Row="1" Col="2" Page="0" DisplayName="Amount" Type="float" Name="Amount">
+      </Uniform>
+      <Uniform Name="bypass" Type="bool" DisplayName="Bypass (Front)" Tooltip="Disable/Enable Zigmod" Default="False" Page="0" Col="3" Row="4">
+      </Uniform>
+   </Shader>
+   <Page Name="Variables" Page="0">
+      <Col Name="Matte Edge" Col="0" Page="0">
+      </Col>
+      <Col Name="Blur" Col="1" Page="0">
+      </Col>
+      <Col Name="Regrain" Col="2" Page="0">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

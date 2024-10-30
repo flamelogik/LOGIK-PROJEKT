@@ -1,0 +1,81 @@
+{
+    "LayoutsPresets": {
+        "Version": 3,
+        "Presets": [
+            {
+                "Name": "2Up_Locked_View",
+                "Mode": 1,
+                "MediaPanelVis": false,
+                "MediaPanelFull": false,
+                "ViewingLayout": 1,
+                "Broadcast": 0,
+                "Viewports": [
+                    {
+                        "Name": "Result",
+                        "Cat0": "Node",
+                        "Cat1": "Results",
+                        "Cat2": "Comp",
+                        "CatOffset": 0
+                    },
+                    {
+                        "Name": "Result",
+                        "Cat0": "Node",
+                        "Cat1": "Results",
+                        "Cat2": "Comp",
+                        "CatOffset": 0
+                    },
+                    {
+                        "Name": "Result",
+                        "Cat0": "Node",
+                        "Cat1": "Results",
+                        "Cat2": "Comp",
+                        "CatOffset": 0
+                    },
+                    {
+                        "Name": "Result",
+                        "Cat0": "Node",
+                        "Cat1": "Results",
+                        "Cat2": "Comp",
+                        "CatOffset": 0
+                    },
+                    {
+                        "Name": "Schematic",
+                        "Cat0": "Node",
+                        "Cat1": "Views",
+                        "Cat2": "Schematic",
+                        "CatOffset": 0
+                    },
+                    {
+                        "Name": "Result",
+                        "Cat0": "Node",
+                        "Cat1": "Results",
+                        "Cat2": "Comp",
+                        "CatOffset": 0
+                    },
+                    {
+                        "Name": "Result",
+                        "Cat0": "Node",
+                        "Cat1": "Results",
+                        "Cat2": "Comp",
+                        "CatOffset": 0
+                    },
+                    {
+                        "Name": "Result",
+                        "Cat0": "Node",
+                        "Cat1": "Results",
+                        "Cat2": "Comp",
+                        "CatOffset": 0
+                    }
+                ],
+                "ZoomPanLocked": true,
+                "AltUICenterArea": false,
+                "Frames": true,
+                "Duration": true,
+                "Positioners": "Free",
+                "LeftPositioner": -1002,
+                "RightPositioner": -1001,
+                "ShowBottom": true
+            }
+        ]
+    }
+}

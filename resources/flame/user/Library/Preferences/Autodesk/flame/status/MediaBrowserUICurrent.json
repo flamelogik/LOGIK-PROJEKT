@@ -1,0 +1,12 @@
+{
+    "Settings": [
+        {
+            "name": "MediaBrowserThumbnailSize",
+            "value": 45
+        },
+        {
+            "name": "MediaBrowserPiconSize",
+            "value": 3
+        }
+    ]
+}

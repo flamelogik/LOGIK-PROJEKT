@@ -1,0 +1,49 @@
+<ShaderNodePreset Name="crok emboss" Description="
+This Matchbox shader simulates an emboss effect.
+
+Input:
+- Front: source clip
+
+Setup:
+- Height: bump height 
+- Specular: adjust the glossiness
+- Light Height: height of the lightsource
+- Position: light position in x / y
+
+
+Demo clip: http://vimeo.com/112310423
+
+Based on https://www.shadertoy.com/view/XdlGz8
+License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+Matchbox version by ivar@inferno-op.com" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="source" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Source" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="fNormalScale" Type="float" DisplayName="Height" Page="0" Col="0" Row="0" Tooltip="" Inc="0.01" Default="10.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="spec" Type="float" DisplayName="Specular" Page="0" Col="0" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="fLightHeight" Type="float" DisplayName="Light Height" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="fViewHeight" Type="float" DisplayName="View Height" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="position" Type="vec2" DisplayName="Position" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.50" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.50" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="SHOW_NORMAL_MAP" Type="bool" DisplayName="Normal Map" Tooltip="" Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="">
+      <Col Page="0" Col="0" Name="Style">
+      </Col>
+      <Col Page="0" Col="1" Name="Light">
+      </Col>
+      <Col Page="0" Col="2" Name="Output">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

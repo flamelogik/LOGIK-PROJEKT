@@ -1,0 +1,22 @@
+<Setup><Base><Version>21.020000</Version><NAME>crok_voronoi612</NAME><Note>
+This Matchbox shader creates voronoi noises.
+
+Setup:
+
+- Octaves: Octaves for the noise
+- Type: variations of the noise pattern
+- Zoom : zoom in/out
+- Detail: add aditional noise
+
+- Speed: animation speed
+- Offset: offsets the noise pattern
+
+Demo clip: http://vimeo.com/84470508
+
+Shader developer: Pietro De Nicola | denicola.pietro@gmail.com | blog: http://gdevice.blogspot.it
+
+Based on https://www.shadertoy.com/view/lsjGWD
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+Matchbox version by ivar@inferno-op.com</Note><Expanded>False</Expanded><ScrollBar>0</ScrollBar><Frames>0</Frames><Current_Time>33</Current_Time><Input_DataType>4</Input_DataType><ClampMode>0</ClampMode><AdapDegrad>False</AdapDegrad><ReadOnly>False</ReadOnly><Range Enable="False" Before="2" After="2" Start="1" End="100" SpanEnable="False" Span="100"/><NoMediaHandling>1</NoMediaHandling><UsedAsTransition>False</UsedAsTransition><FrameBounds W="3200" H="1800" X="0" Y="0" SX="26.666666666666664" SY="15"/></Base><State><NbPasses>1</NbPasses><Regen>True</Regen><OutputResMode>1</OutputResMode><OutputResolution><Width>3200</Width><Height>1800</Height><Format>143</Format><ScanFormat>2</ScanFormat><AspectRatio>1.777777777777778</AspectRatio><ColourSpace>ARRI LogC</ColourSpace></OutputResolution><ResSelectorParams><ResSelectorMode>0</ResSelectorMode><ResAdaptativeMode>0</ResAdaptativeMode><ResScalingMode>1</ResScalingMode><ResScalingValue>50</ResScalingValue><ResUnscaledWidth>3200</ResUnscaledWidth><ResUnscaledHeight>1800</ResUnscaledHeight></ResSelectorParams><TopChannel><Channel Name="crok_voronoi612"><Uncollapsed/></Channel></TopChannel><EffectChannel><Channel Name="Effect"><Uncollapsed/></Channel></EffectChannel><ShaderParameters><Parameter><Data><Channel Name="Octaves"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Type"><Extrap>constant</Extrap><Value>1</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Zoom"><Extrap>constant</Extrap><Value>19.9999962</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Detail"><Extrap>constant</Extrap><Value>30</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Speed"><Extrap>constant</Extrap><Value>0</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Offset"><Extrap>constant</Extrap><Value>4.47034836e-08</Value><Uncollapsed/></Channel></Data></Parameter></ShaderParameters><InputPage>0</InputPage><RenderContext>0</RenderContext><InputRewiring/><ShaderPresetIndex>0</ShaderPresetIndex><WorkingCS>From Source</WorkingCS></State></Setup>

@@ -1,0 +1,44 @@
+{
+    "Settings": [
+        {
+            "name": "PointerThreshold",
+            "value": 5
+        },
+        {
+            "name": "PointerMarginLock",
+            "value": true
+        },
+        {
+            "name": "PointerMarginLeft",
+            "value": 5
+        },
+        {
+            "name": "PointerMarginRight",
+            "value": 5
+        },
+        {
+            "name": "PointerMarginTop",
+            "value": 5
+        },
+        {
+            "name": "PointerMarginBottom",
+            "value": 5
+        },
+        {
+            "name": "PointTabletMonitors",
+            "value": 1
+        },
+        {
+            "name": "PointerUIUseSystemStylusButtons",
+            "value": true
+        },
+        {
+            "name": "PointerUseMouseCursorSkinForMouse",
+            "value": true
+        },
+        {
+            "name": "PointerUseTabletCursorSkinForTablet",
+            "value": true
+        }
+    ]
+}

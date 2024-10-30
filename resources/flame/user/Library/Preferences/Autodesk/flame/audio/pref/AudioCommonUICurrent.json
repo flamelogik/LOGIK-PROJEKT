@@ -1,0 +1,48 @@
+{
+    "Settings": [
+        {
+            "name": "AudioMonitorGangSlider12",
+            "value": false
+        },
+        {
+            "name": "AudioMonitorGangSlider34",
+            "value": false
+        },
+        {
+            "name": "AudioMonitorGangSlider56",
+            "value": false
+        },
+        {
+            "name": "AudioMonitorGangSlider78",
+            "value": false
+        },
+        {
+            "name": "AudioMonitorGangSlider910",
+            "value": false
+        },
+        {
+            "name": "AudioMonitorGangSlider1112",
+            "value": false
+        },
+        {
+            "name": "AudioMonitorGangSlider1314",
+            "value": false
+        },
+        {
+            "name": "AudioMonitorGangSlider1516",
+            "value": false
+        },
+        {
+            "name": "AudioWaveformTick",
+            "value": 2
+        },
+        {
+            "name": "AudioSetPrePost",
+            "value": 0
+        },
+        {
+            "name": "AudioSetWhich4TrackBank",
+            "value": 0
+        }
+    ]
+}

@@ -1,0 +1,241 @@
+<ShaderNodePreset Name="crok skin" Description="
+This shader creates skin type textures.
+
+
+Setup:
+- Large Detail: large skin texture opacity
+- Small Detail: Small skin texture opacity
+- Sharpness: overall sharpness of the texture
+- Color: skin color
+- Zoom Small: zoom in/out of the small skin texture
+- Zoom Large: zoom in/out of the Large skin texture
+- Overall Zoom: zoom in/out globally
+- Seed: random seed number to create different texture patterns
+
+Sommersprossen:
+- Enable: enable 'Sommersprossen'
+- Amount: how many 'Sommersprossen' are visible
+- Softness: softnss of the 'Sommersprossen'
+- Zoom: how large are the 'Sommersprossen'
+- Seed: random seed number to create different 'Sommersprossen'
+- Large Detail: large skin texture opacity
+- Small Detail: Small skin texture opacity
+- Sharpness: overall sharpness of the texture
+- Color: skin color
+- Zoom Small: zoom in/out of the small skin texture
+- Zoom Large: zoom in/out of the Large skin texture
+- Overall Zoom: zoom in/out globally
+- Seed: random seed number to create different texture patterns
+
+Demo clip: http://vimeo.com/113208838
+
+Based on http://glsl.herokuapp.com/e#15053.5 and Voronoi noises by Pietro De Nicola
+License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+Matchbox version by ivar@inferno-op.com" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="blend" Type="float" DisplayName="Large Detail" Page="1" Col="1" Row="0" Tooltip="" Inc="0.01" Default="1.00" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="contrast" Type="float" DisplayName="Small Detail" Page="1" Col="1" Row="1" Tooltip="" Inc="0.01" Default="1.00" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="tint" Type="vec3" ValueType="Colour" DisplayName="Large Detail" Page="3" Col="0" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default=".794" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.630" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.493" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="large_tint" Type="vec3" ValueType="Colour" DisplayName="Small Detail" Page="3" Col="0" Row="1" Tooltip="" Inc="0.01">
+         <SubUniform Default=".494" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.230" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.493" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="large_blend" Type="float" DisplayName="Blend" Page="3" Col="0" Row="2" Tooltip="" Inc="0.01" Default="0.91" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="zoom_large" Type="float" DisplayName="Zoom Large" Page="1" Col="2" Row="0" Tooltip="" Inc="0.01" Default="22.37" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="zoom_small" Type="float" DisplayName="Zoom Small" Page="1" Col="2" Row="1" Tooltip="" Inc="0.01" Default="0.160" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="overall_zoom" Type="float" DisplayName="Overall Zoom" Page="1" Col="2" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.05" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="seed" Type="float" DisplayName="Seed" Page="1" Col="2" Row="3" Tooltip="" Inc="0.01" Default="95.34" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="som_blend" Type="float" DisplayName="Large Detail" Page="2" Col="1" Row="0" Tooltip="" Inc="0.01" Default="-1.24" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="som_contrast" Type="float" DisplayName="Small Detail" Page="2" Col="1" Row="1" Tooltip="" Inc="0.01" Default="1.4" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="som_tint" Type="vec3" ValueType="Colour" DisplayName="Large Detail" Page="3" Col="1" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default=".812" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.523" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.44" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="som_large_tint" Type="vec3" ValueType="Colour" DisplayName="Small Detail" Page="3" Col="1" Row="1" Tooltip="" Inc="0.01">
+         <SubUniform Default=".649" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.354" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.238" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="som_large_blend" Type="float" DisplayName="Blend" Page="3" Col="1" Row="2" Tooltip="" Inc="0.01" Default="-0.03" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="som_zoom_large" Type="float" DisplayName="Zoom Large" Page="2" Col="2" Row="0" Tooltip="" Inc="0.01" Default="-0.74" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="som_zoom_small" Type="float" DisplayName="Zoom Small" Page="2" Col="2" Row="1" Tooltip="" Inc="0.01" Default="11.72" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="som_overall_zoom" Type="float" DisplayName="Overall Zoom" Page="2" Col="2" Row="2" Tooltip="" Inc="0.01" Default="2.04" Min="0.001" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="som_seed" Type="float" DisplayName="Seed" Page="2" Col="2" Row="3" Tooltip="" Inc="0.01" Default="456.06" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="iterations" Type="int" DisplayName="Amount" Page="2" Col="0" Row="1" Tooltip="" Inc="1" Default="45" Min="1" Max="100">
+      </Uniform>
+      <Uniform Name="zoom" Type="float" DisplayName="Zoom" Page="2" Col="0" Row="3" Tooltip="" Inc="0.1" Default="0.90" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="offset" Type="float" DisplayName="Seed" Page="2" Col="0" Row="4" Tooltip="" Inc="1.0" Default="6468.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="blur_matte" Type="float" DisplayName="Softness" Page="2" Col="0" Row="2" Tooltip="" Inc="0.1" Default="100.0" Min="0.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="blur_matte" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="6" OutputBitDepth="Output">
+      <Uniform Name="sharpness" Type="float" DisplayName="Sharpness" Page="1" Col="1" Row="2" Tooltip="" Inc="0.01" Default="0.0" Min="0.001" Max="2.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="som_sharpness" Type="float" DisplayName="Sharpness" Page="2" Col="1" Row="2" Tooltip="" Inc="0.01" Default="1.96" Min="0.001" Max="3.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass5" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="sommer" Type="bool" DisplayName="Enable" Tooltip="" Default="True" Page="2" Col="0" Row="0">
+      </Uniform>
+      <Uniform Name="bias_adj" Type="float" DisplayName="Roughness" Page="0" Col="0" Row="0" Tooltip="" Inc="0.001" Default="0.4" Min="0.001" Max="0.999" ResDependent="None">
+      </Uniform>
+      <Uniform Name="f_detail" Type="float" DisplayName="Detail" Page="0" Col="0" Row="1" Tooltip="" Inc="0.01" Default="5.0" Min="0.0" Max="35.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="base_skin_col" Type="vec3" ValueType="Colour" IconType="None" DisplayName="Base Skin Color" Page="3" Col="0" Row="4" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.8" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.55" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.44" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="p_bias_adj" Type="float" DisplayName="Amount" Page="0" Col="1" Row="0" Tooltip="" Inc="0.001" Default="0.30" Min="0.001" Max="0.999" ResDependent="None">
+      </Uniform>
+      <Uniform Name="p_detail" Type="float" DisplayName="Detail" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="5.0" Min="0.0" Max="35.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="p_scale" Type="float" DisplayName="Size" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01" Default="40.00" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="sun_scale" Type="float" DisplayName="Scale" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="12.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="7" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass6" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="fLightHeight" Type="float" DisplayName="Height" Page="3" Col="2" Row="2" Tooltip="" Inc="0.01" Default="0.25" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="spec" Type="float" DisplayName="Specular" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="position" Type="vec2" IconType="Light" DisplayName="Light Position" Page="3" Col="2" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.65" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+   </Shader>
+   <Shader Index="8" OutputBitDepth="Output">
+      <Uniform Name="blur_highlite" Type="float" DisplayName="Soften" Page="0" Col="0" Row="4" Tooltip="" Inc="0.001" Default="3.5" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass7" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+   </Shader>
+   <Shader Index="9" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass8" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_highlite" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="10" OutputBitDepth="Output">
+      <Uniform Name="blur_sun_spots" Type="float" DisplayName="Clarity" Page="0" Col="2" Row="2" Tooltip="" Inc="0.01" Default="40.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass6" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+   </Shader>
+   <Shader Index="11" OutputBitDepth="Output">
+      <Uniform Name="blur_sun_spots" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass10" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+   </Shader>
+   <Shader Index="12" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass9" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass6" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="b_high" Type="float" DisplayName="Bump Map" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="0.3" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="grunge_scale" Type="float" DisplayName="Roughen Edges" Page="0" Col="2" Row="3" Tooltip="" Inc="0.01" Default="50.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="s_bias_adj" Type="float" DisplayName="Amount" Page="0" Col="2" Row="0" Tooltip="" Inc="0.001" Default="0.5" Min="0.001" Max="0.999" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Global">
+      <Col Page="0" Col="0" Name="Base Skin">
+      </Col>
+      <Col Page="0" Col="1" Name="Pores">
+      </Col>
+      <Col Page="0" Col="2" Name="Sun Spots">
+      </Col>
+   </Page>
+   <Page Page="1" Name="Skin">
+      <Col Page="1" Col="1" Name="Style">
+      </Col>
+      <Col Page="1" Col="2" Name="Position / Scaling">
+      </Col>
+   </Page>
+   <Page Page="2" Name="Details">
+      <Col Page="2" Col="0" Name="Overall">
+      </Col>
+      <Col Page="2" Col="1" Name="Style">
+      </Col>
+      <Col Page="2" Col="2" Name="Position / Scaling">
+      </Col>
+   </Page>
+   <Page Page="3" Name="Color/Light">
+      <Col Page="3" Col="0" Name="General Skin">
+      </Col>
+      <Col Page="3" Col="1" Name="Additional Details">
+      </Col>
+      <Col Page="3" Col="2" Name="Lighting">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

@@ -1,0 +1,29 @@
+<ShaderNodePreset SupportsAdaptiveDegradation="0" LimitInputsToTexture="True" Version="1" Name="id_Edgy" CommercialUsePermitted="True" Description="Highlights 0.0 pixels revealing blanking issues usually due to shot stabilization.
+
+Matchbox by Bob Maple (bobm-matchbox [at] idolum.com)">
+   <Shader OutputBitDepth="Output" Index="1">
+      <Uniform Name="in_front" Type="sampler2D" DisplayName="Front" Index="0" NoInput="Error" InputType="Front" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR">
+      </Uniform>
+      <Uniform Name="unused" Type="sampler2D" DisplayName="Unused" Index="1" NoInput="Black" InputColor="86,86,86" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR">
+      </Uniform>
+      <Uniform Name="in_matte" Type="sampler2D" DisplayName="Matte" Index="2" NoInput="White" InputType="Matte" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR">
+      </Uniform>
+      <Uniform Name="colorHL" DisplayName="Highlight" Type="vec3" ValueType="Colour" Tooltip="Color for 0.0 pixel values" Page="0" Col="0" Row="0">
+         <SubUniform ResDependent="None" Max="1000.0" Min="-1000.0" Default="1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000.0" Min="-1000.0" Default="1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000.0" Min="-1000.0" Default="0.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="showMatte" DisplayName="Highlight in Matte" Type="bool" Tooltip="Output 0.0 pixels into the Matte channel" Default="False" Page="0" Col="0" Row="2">
+      </Uniform>
+      <Uniform Name="outputMatte" DisplayName="Output as Matte" Type="bool" Tooltip="Output 0.0 pixels as a Matte" Default="False" Page="0" Col="0" Row="3">
+      </Uniform>
+   </Shader>
+   <Page Name="Edgy" Page="0">
+      <Col Name="Highlight Colors" Col="0" Page="0">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

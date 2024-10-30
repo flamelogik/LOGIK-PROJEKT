@@ -1,0 +1,20 @@
+{
+    "Settings": [
+        {
+            "name": "CoDefaultBlendingMode",
+            "value": 0
+        },
+        {
+            "name": "CoDefaultSurfaceType",
+            "value": 0
+        },
+        {
+            "name": "CoDefaultTextSize",
+            "value": 50.0
+        },
+        {
+            "name": "CoDefaultTextFontFull",
+            "value": "/opt/Autodesk/font/System Fonts/Arial Unicode.ttf"
+        }
+    ]
+}

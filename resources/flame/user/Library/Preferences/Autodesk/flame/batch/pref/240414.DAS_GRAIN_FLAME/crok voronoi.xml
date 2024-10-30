@@ -1,0 +1,44 @@
+<ShaderNodePreset Name="crok voronoi" Description="
+This Matchbox shader creates voronoi noises.
+
+Setup:
+
+- Octaves: Octaves for the noise
+- Type: variations of the noise pattern
+- Zoom : zoom in/out
+- Detail: add aditional noise
+
+- Speed: animation speed
+- Offset: offsets the noise pattern
+
+Demo clip: http://vimeo.com/84470508
+
+Shader developer: Pietro De Nicola | denicola.pietro@gmail.com | blog: http://gdevice.blogspot.it
+
+Based on https://www.shadertoy.com/view/lsjGWD
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+Matchbox version by ivar@inferno-op.com" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="Octaves" Type="int" DisplayName="Octaves" Page="0" Col="0" Row="0" Tooltip="" Inc="1" Default="3" Min="1" Max="10">
+      </Uniform>
+      <Uniform Name="Type" Type="float" DisplayName="Type" Page="0" Col="0" Row="1" Tooltip="" Inc="1.0" Default="3.0" Min="1.0" Max="64.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="Zoom" Type="float" DisplayName="Zoom" Page="0" Col="0" Row="2" Tooltip="" Inc="0.05" Default="8.0" Min="1.0" Max="10000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="Detail" Type="float" DisplayName="Detail" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="2.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="Speed" Type="float" DisplayName="Speed" Page="0" Col="1" Row="0" Tooltip="" Inc="0.001" Default="1.0" Min="-100.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="Offset" Type="float" DisplayName="Offset" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Voronoi">
+      <Col Page="0" Col="0" Name="Noise">
+      </Col>
+      <Col Page="0" Col="1" Name="Timing">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

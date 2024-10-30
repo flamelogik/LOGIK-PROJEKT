@@ -1,0 +1,90 @@
+<Setup><Base><Version>19</Version><NAME>ColouredFrame181</NAME><Note>
+This Matchbox shader creates Colors, Noise, Checkerboards, Colorbars, Colorwheels, Gradients and Shapesto get you started.
+
+Version: 1.2
+
+Input:
+
+- Front: source clip
+- Back: background clip
+- Matte: mask used for the applied effect
+- Strength: amount of effect being applied 
+
+
+Output:
+
+- Result: result clip
+- Matte: alpha channel
+
+
+Type:
+
+Color:
+- Color: color of the generated frame
+- Selected Color Swatch: switch color circle on/off
+- Swatch Position: position of color circle
+- Palette: switch palette overlay on/off
+- Detail: palette color resolution
+
+Noise:
+- Color: switch colored noise on/off
+- Static: switch static frame on/off
+- Resolution: zoom in/out of the noise
+
+Checkerboard:
+- Color1: 1st color of the checkerboard
+- Color2: 2nd color of the checkerboard
+- Size: zoom in/out of the checkerboard
+- Aspect: adjust the aspect of the checkerboard
+- Palette: switch palette overlay on/off
+- Detail: palette color resolution
+		
+Colorbars:
+- SMPTE: SMPTE style color bars 
+- PAL: PAL style color bars
+- SMPTE2: SMPTE2 style color bars
+- 75%/100%: switch betweeen 75% and 100% brightness
+- Blue Only: show only the blue channel
+		
+Colorwheel:
+- Size: adjust colorwheel size
+- Value: adjust the gain value
+- Position: position of colorwheel
+- Aspect: adjust the aspect of the colorwheel
+	
+Gradient:
+- Horizontal/Vertical/Radial: switch between the different modes
+- Reverse Gradient: invert the selected gradient
+- Color1: 1st color of the gradient
+- Color2: 2nd color of the gradient
+- Palette: switch palette overlay on/off
+- Detail: palette color resolution
+	
+Shapes:
+- Square/Circle: switch between different shapes
+- Size: zoom in/out of the shapes
+- Aspect: adjust the aspect of the shapes
+
+Grid:
+- Color1: grid color 
+- Color2: bg color
+- Invert: invert color selection
+- Size: adjust grid size
+- Width: adjust grid width
+- Rotation: rotates the grid
+
+ST Map:
+Normal Map
+
+REF Map:
+Reflection Map
+- Speed: animation speed
+- Offset: offset animation in time
+- Static Chrome: static relection map
+- Zoom: Zoom in/out of the texture
+- Detail: fractal detail
+- Center: fractal center
+	
+EWA Filtering by lewis@lewissaunders.com
+
+Matchbox version by miles@noesclavo.com and ivar@inferno-op.com</Note><Expanded>False</Expanded><ScrollBar>0</ScrollBar><Frames>0</Frames><Current_Time>1</Current_Time><Input_DataType>4</Input_DataType><ClampMode>0</ClampMode><AdapDegrad>False</AdapDegrad><ReadOnly>False</ReadOnly><Range Enable="False" Before="2" After="2" Start="1" End="100" SpanEnable="False" Span="100"/><NoMediaHandling>1</NoMediaHandling><UsedAsTransition>False</UsedAsTransition><FrameBounds W="1920" H="1080" X="0" Y="0" SX="16" SY="9"/></Base><State><NbPasses>7</NbPasses><Regen>True</Regen><OutputResMode>0</OutputResMode><OutputResolution><Width>1920</Width><Height>1080</Height><Format>143</Format><ScanFormat>2</ScanFormat><AspectRatio>1.777777777777778</AspectRatio><ColourSpace>Unknown</ColourSpace></OutputResolution><TopChannel><Channel Name="ColouredFrame181"/></TopChannel><EffectChannel><Channel Name="Effect"/></EffectChannel><ShaderParameters><Parameter><value>2</value></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><Data><Channel Name="Size"><Uncollapsed/></Channel></Data></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="__of_Sides"><Uncollapsed/></Channel></Data></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><Data><Channel Name="Value"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>1</value></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="__of_Shapes"><Uncollapsed/></Channel></Data></Parameter><Parameter><X><Channel Name="X"><Uncollapsed/></Channel></X><Y><Channel Name="Y"><Uncollapsed/></Channel></Y><Icon>False</Icon><Action3D>False</Action3D></Parameter><Parameter><value>0</value></Parameter><Parameter><X><Channel Name="X"><Uncollapsed/></Channel></X><Y><Channel Name="Y"><Uncollapsed/></Channel></Y><Icon>False</Icon><Action3D>False</Action3D></Parameter><Parameter><Data><Channel Name="Size"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Swatch_Size"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Speed"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Resolution"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Size"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Aspect"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Offset"><Uncollapsed/></Channel></Data></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><Data><Channel Name="Aspect"><Uncollapsed/></Channel></Data></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><X><Channel Name="X"><Uncollapsed/></Channel></X><Y><Channel Name="Y"><Uncollapsed/></Channel></Y><Icon>False</Icon><Action3D>False</Action3D></Parameter><Parameter><Data><Channel Name="Zoom"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Rotation"><Uncollapsed/></Channel></Data></Parameter><Parameter><R><Channel Name="R"><Uncollapsed/></Channel></R><G><Channel Name="G"><Uncollapsed/></Channel></G><B><Channel Name="B"><Uncollapsed/></Channel></B></Parameter><Parameter><Data><Channel Name="Palette_Detail"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Palette_Detail"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Detail"><Uncollapsed/></Channel></Data></Parameter><Parameter><X><Channel Name="X"><Uncollapsed/></Channel></X><Y><Channel Name="Y"><Uncollapsed/></Channel></Y><Icon>False</Icon><Action3D>False</Action3D></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Width"><Uncollapsed/></Channel></Data></Parameter><Parameter><X><Channel Name="X"><Uncollapsed/></Channel></X><Y><Channel Name="Y"><Uncollapsed/></Channel></Y><Icon>False</Icon><Action3D>False</Action3D></Parameter><Parameter><Data><Channel Name="Palette_Detail"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Rotation"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Aspect"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="AA_Width"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Sharpness"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter></ShaderParameters><InputPage>0</InputPage><RenderContext>0</RenderContext><InputRewiring><InputIndex SamplerIndex="0">0</InputIndex><InputIndex SamplerIndex="1">1</InputIndex><InputIndex SamplerIndex="2">2</InputIndex><InputIndex SamplerIndex="3">3</InputIndex></InputRewiring><ShaderPresetIndex>0</ShaderPresetIndex><WorkingCS>From Source</WorkingCS></State></Setup>

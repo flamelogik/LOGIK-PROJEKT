@@ -1,0 +1,374 @@
+<ShaderNodePreset Name="ColouredFrame" Description="
+This Matchbox shader creates Colors, Noise, Checkerboards, Colorbars, Colorwheels, Gradients and Shapesto get you started.
+
+Version: 1.2
+
+Input:
+
+- Front: source clip
+- Back: background clip
+- Matte: mask used for the applied effect
+- Strength: amount of effect being applied 
+
+
+Output:
+
+- Result: result clip
+- Matte: alpha channel
+
+
+Type:
+
+Color:
+- Color: color of the generated frame
+- Selected Color Swatch: switch color circle on/off
+- Swatch Position: position of color circle
+- Palette: switch palette overlay on/off
+- Detail: palette color resolution
+
+Noise:
+- Color: switch colored noise on/off
+- Static: switch static frame on/off
+- Resolution: zoom in/out of the noise
+
+Checkerboard:
+- Color1: 1st color of the checkerboard
+- Color2: 2nd color of the checkerboard
+- Size: zoom in/out of the checkerboard
+- Aspect: adjust the aspect of the checkerboard
+- Palette: switch palette overlay on/off
+- Detail: palette color resolution
+		
+Colorbars:
+- SMPTE: SMPTE style color bars 
+- PAL: PAL style color bars
+- SMPTE2: SMPTE2 style color bars
+- 75%/100%: switch betweeen 75% and 100% brightness
+- Blue Only: show only the blue channel
+		
+Colorwheel:
+- Size: adjust colorwheel size
+- Value: adjust the gain value
+- Position: position of colorwheel
+- Aspect: adjust the aspect of the colorwheel
+	
+Gradient:
+- Horizontal/Vertical/Radial: switch between the different modes
+- Reverse Gradient: invert the selected gradient
+- Color1: 1st color of the gradient
+- Color2: 2nd color of the gradient
+- Palette: switch palette overlay on/off
+- Detail: palette color resolution
+	
+Shapes:
+- Square/Circle: switch between different shapes
+- Size: zoom in/out of the shapes
+- Aspect: adjust the aspect of the shapes
+
+Grid:
+- Color1: grid color 
+- Color2: bg color
+- Invert: invert color selection
+- Size: adjust grid size
+- Width: adjust grid width
+- Rotation: rotates the grid
+
+ST Map:
+Normal Map
+
+REF Map:
+Reflection Map
+- Speed: animation speed
+- Offset: offset animation in time
+- Static Chrome: static relection map
+- Zoom: Zoom in/out of the texture
+- Detail: fractal detail
+- Center: fractal center
+	
+EWA Filtering by lewis@lewissaunders.com
+
+Matchbox version by miles@noesclavo.com and ivar@inferno-op.com" Version="1" LimitInputsToTexture="True" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputType="Front" DisplayName="Front" Tooltip="" NoInput="Black" Index="0">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="Back" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputType="Back" DisplayName="Back" Tooltip="" NoInput="Black" Index="1">
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="Matte" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputType="Matte" DisplayName="Matte" Tooltip="" NoInput="White" Index="2">
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="67, 77, 83" DisplayName="Strength" Tooltip="" NoInput="White" Index="3">
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+   </Shader>
+   <Shader Index="6" OutputBitDepth="Output">
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="process" Name="swatch_center" Type="vec2" IconType="Axis" DisplayName="Swatch Position" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.85" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.85" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="ssat" Type="bool" DisplayName="Strength Effects Saturation" Tooltip="" Default="False" Page="0" Col="0" Row="2">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="process" ValueType="Popup" Name="grad_type" Type="int" DisplayName="Gradient" Page="0" Col="1" Row="0" Tooltip="" Inc="1" Default="0" Min="-1000000" Max="1000000">
+         <PopupEntry Value="0" Title="Horizontal">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Vertical">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Radial">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="process" Name="grad_color2" Type="vec3" ValueType="Colour" IconType="Pick" DisplayName="Color 2" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="3" UIConditionSource="process" ValueType="Popup" Name="colorbars_type" Type="int" DisplayName="Standard" Page="0" Col="1" Row="0" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="SMPTE">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="PAL">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="SMPTE 2">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="process" Name="grad_color1" Type="vec3" ValueType="Colour" IconType="Pick" DisplayName="Color 1" Page="0" Col="2" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="2" UIConditionSource="process" Name="show_cbpalette" Type="bool" DisplayName="Palette" Tooltip="" Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="2" UIConditionSource="process" Name="cb_color2" Type="vec3" ValueType="Colour" IconType="Pick" DisplayName="Color 2" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01">
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="slum" Type="bool" DisplayName="Strength Effects Luma" Tooltip="" Default="False" Page="0" Col="0" Row="3">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="4" UIConditionSource="process" Name="cw_val" Type="float" DisplayName="Value" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="-5.0" Max="5.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="2" UIConditionSource="process" Name="cbpalette_detail" Type="float" DisplayName="Palette Detail" Page="0" Col="2" Row="1" Tooltip="" Inc="1.0" Default="6.0" Min="0.0" Max="6.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="process" Name="show_swatch" Type="bool" DisplayName="Selected Color Swatch" Tooltip="" Default="True" Page="0" Col="1" Row="1">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="3" UIConditionSource="process" ValueType="Popup" Name="colorbars_p" Type="int" DisplayName="" Page="0" Col="1" Row="1" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="75%">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="100%">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="process" Name="grad_rev" Type="bool" DisplayName="Reverse Gradient" Tooltip="" Default="False" Page="0" Col="1" Row="2">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="process" Name="color" Type="vec3" ValueType="Colour" IconType="Pick" DisplayName="Color" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="4" UIConditionSource="process" Name="cw_center" Type="vec2" IconType="Axis" DisplayName="Position" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform ValueType="Popup" Name="process" Type="int" DisplayName="Generator" Page="0" Col="0" Row="0" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Color">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Noise">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Checker">
+         </PopupEntry>
+         <PopupEntry Value="3" Title="Colorbars">
+         </PopupEntry>
+         <PopupEntry Value="4" Title="Colorwheel">
+         </PopupEntry>
+         <PopupEntry Value="5" Title="Gradient">
+         </PopupEntry>
+         <PopupEntry Value="6" Title="Shape">
+         </PopupEntry>
+         <PopupEntry Value="7" Title="Grid">
+         </PopupEntry>
+         <PopupEntry Value="8" Title="ST Map">
+         </PopupEntry>
+         <PopupEntry Value="9" Title="REF Map">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="process" Name="palette_detail" Type="float" DisplayName="Palette Detail" Page="0" Col="2" Row="1" Tooltip="" Inc="1.0" Default="6.0" Min="0.0" Max="6.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="4" UIConditionSource="process" Name="cw_aspect" Type="float" DisplayName="Aspect" Page="0" Col="1" Row="4" Tooltip="" Inc="0.01" Default="1.0" Min="000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="process" ValueType="Popup" Name="grad_fit" Type="int" DisplayName="Radial Fit" Page="0" Col="1" Row="1" Tooltip="" Inc="1" Default="0" Min="-1000000" Max="1000000">
+         <PopupEntry Value="0" Title="Vertical">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Horizontal">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Full Frame">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="2" UIConditionSource="process" Name="checkerboard_freq" Type="float" DisplayName="Size" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01" Default=".25" Min="000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="process" Name="swatch_size" Type="float" DisplayName="Swatch Size" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01" Default="0.2" Min="000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass5" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST_MIPMAP_NEAREST" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP" GL_TEXTURE_WRAP_T="GL_CLAMP" Mipmaps="True" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="2" UIConditionSource="process" Name="cb_color1" Type="vec3" ValueType="Colour" IconType="Pick" DisplayName="Color 1" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="process" Name="show_palette" Type="bool" DisplayName="Palette" Tooltip="" Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="3" UIConditionSource="process" Name="blue_only" Type="bool" DisplayName="Blue Only" Tooltip="" Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="process" Name="show_gpalette" Type="bool" DisplayName="Palette" Tooltip="" Default="False" Page="0" Col="2" Row="2">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="4" UIConditionSource="process" Name="cw_size" Type="float" DisplayName="Size" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01" Default="0.95" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="shue" Type="bool" DisplayName="Strength Effects Hue" Tooltip="" Default="False" Page="0" Col="0" Row="4">
+      </Uniform>
+      <Uniform ValueType="Popup" Name="result" Type="int" DisplayName="Output" Page="0" Col="0" Row="1" Tooltip="" Inc="1" Default="0" Min="-1000000" Max="1000000">
+         <PopupEntry Value="0" Title="Everything">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Color Only">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Over Front">
+         </PopupEntry>
+         <PopupEntry Value="3" Title="Over Back">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="2" UIConditionSource="process" Name="cb_aspect" Type="float" DisplayName="Aspect" Page="0" Col="1" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="process" Name="gpalette_detail" Type="float" DisplayName="Palette Detail" Page="0" Col="2" Row="3" Tooltip="" Inc="1.0" Default="6.0" Min="0.0" Max="6.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="7" UIConditionSource="process" Name="g_gridcolor" Type="vec3" ValueType="Colour" IconType="None" DisplayName="Color 1" Page="0" Col="1" Row="0" Tooltip="" Inc="1.0">
+         <SubUniform Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="7" UIConditionSource="process" Name="g_backcolor" Type="vec3" ValueType="Colour" IconType="None" DisplayName="Color 2" Page="0" Col="1" Row="1" Tooltip="" Inc="1.0">
+         <SubUniform Default="0.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="0.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="7" UIConditionSource="process" Name="g_size" Type="vec2" IconType="None" DisplayName="Size" Page="0" Col="2" Row="0" Tooltip="" Inc="0.001">
+         <SubUniform Default="0.5" Min="0.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.5" Min="0.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="7" UIConditionSource="process" Name="g_line" Type="float" DisplayName="Width" Page="0" Col="2" Row="2" Tooltip="" Inc="1.0" Default="2.0" Min="1.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="7" UIConditionSource="process" Name="g_rotation" Type="float" DisplayName="Rotation" Page="0" Col="2" Row="3" Tooltip="" Inc="0.01" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="7" UIConditionSource="process" Name="g_invert" Type="bool" DisplayName="Invert" Tooltip="" Default="False" Page="0" Col="1" Row="2">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="process" Name="chrome_speed" Type="float" DisplayName="Speed" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="process" Name="chrome_offset" Type="float" DisplayName="Offset" Page="0" Col="1" Row="3" Tooltip="" Inc="0.01" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="process" Name="static_chrome" Type="bool" DisplayName="Static Chrome" Tooltip="" Default="False" Page="0" Col="1" Row="1">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="process" Name="chrome_zoom" Type="float" DisplayName="Zoom" Page="0" Col="2" Row="0" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="process" Name="chrome_detail" Type="float" DisplayName="Detail" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="0.1" Max="3.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="process" Name="chrome_center" Type="vec2" IconType="Axis" DisplayName="Center" Page="0" Col="2" Row="2" Tooltip="" Inc="0.1">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="process" ValueType="Popup" Name="chrome_type" Type="int" DisplayName="Type" Page="0" Col="1" Row="0" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Stripes">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Water">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="process" Name="cells" Type="float" DisplayName="Resolution" Page="0" Col="1" Row="2" Tooltip="" Inc="0.1" Default="100.0" Min="0.0001" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="process" ValueType="Popup" Name="color_noise" Type="bool" DisplayName="Color Noise" Tooltip="" Default="False" Page="0" Col="1" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="process" ValueType="Popup" Name="static_noise" Type="bool" DisplayName="Static Noise" Tooltip="" Default="False" Page="0" Col="1" Row="1">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="sides" Type="int" DisplayName="# of Sides" Page="0" Col="1" Row="0" Tooltip="" Inc="1" Default="3" Min="3" Max="1000000">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="num_shapes" Type="int" DisplayName="# of Shapes" Page="0" Col="1" Row="1" Tooltip="" Inc="1" Default="5" Min="1" Max="50">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="shape_aspect" Type="float" DisplayName="Aspect" Page="0" Col="2" Row="4" Tooltip="" Inc="1.0" Default="1.0" Min="0.0" Max="1000000.0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="shape_size" Type="float" DisplayName="Size" Page="0" Col="1" Row="2" Tooltip="" Inc=".1" Default=".5" Min="-1000000.0" Max="1000000.0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="shape_rotation" Type="float" DisplayName="Rotation" Page="0" Col="2" Row="0" Tooltip="" Inc="1" Default="0.0" Min="-1000000.0" Max="1000000.0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="shape_offset" Type="vec2" IconType="None" DisplayName="shape_offset" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="shape_color1" Type="vec3" ValueType="Colour" IconType="Pick" DisplayName="color1" Page="0" Col="1" Row="3" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="shape_color2" Type="vec3" ValueType="Colour" IconType="Pick" DisplayName="color2" Page="0" Col="1" Row="4" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.25" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.3" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="6" UIConditionSource="process" Name="clamp_shape" Type="bool" DisplayName="Clamp Shapes" Tooltip="" Default="False" Page="0" Col="3" Row="4">
+      </Uniform>
+   </Shader>
+   <Shader Index="7" OutputBitDepth="Output">
+      <Uniform Name="filterwidth" Type="float" DisplayName="AA Width" Page="0" Col="3" Row="0" Tooltip="" Inc="0.01" Default="3.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass6" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="filtersharpness" Type="float" DisplayName="Sharpness" Page="0" Col="3" Row="1" Tooltip="" Inc="0.01" Default="3.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Page 1">
+      <Col Page="0" Col="0" Name="Generator / Output Options">
+      </Col>
+      <Col Page="0" Col="1" Name="Options">
+      </Col>
+      <Col Page="0" Col="2" Name="Options">
+      </Col>
+      <Col Page="0" Col="3" Name="Options">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

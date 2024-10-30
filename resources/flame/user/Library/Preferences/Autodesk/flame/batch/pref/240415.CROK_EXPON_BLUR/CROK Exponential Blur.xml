@@ -1,0 +1,639 @@
+<ShaderNodePreset Name="CROK Exponential Blur" Description="
+The Exponential Blur blurs an image with an exponential falloff.
+
+Input:
+- Front: source clip
+
+Setup:
+- Amount: amount of blur applied
+- Blend: mix between the original image and the blurred one
+
+Output Options:
+- Clamp output: clamps the result to 0.0 - 1.0
+
+Matchbox version by ivar@inferno-op.com
+All the code used belongs to Miles / Lewis" Version="1.2" LimitInputsToTexture="True" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Front" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="80, 80, 20" DisplayName="Strength" Tooltip="" NoInput="White" Index="1">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="proportinal" Name="blur_amount" Type="float" DisplayName="Amount" Page="0" Col="0" Row="1" Tooltip="" Inc="0.01" Default="0.0" Min="-100.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2" IconType="None" DisplayName="Amount" Page="0" Col="0" Row="1" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="-100.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-100.0" Max="100.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool" DisplayName="Proportinal" Tooltip="" Default="True" Page="0" Col="0" Row="0">
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool" DisplayName="Enable Half Resolution" Tooltip="" Default="True" Page="0" Col="2" Row="1">
+      </Uniform>
+      <Uniform Name="blur_red" Type="float" DisplayName="Amount Red" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01" Default="1.0" Min="-10.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="blur_green" Type="float" DisplayName="Amount Green" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="-10.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float" DisplayName="Amount Blue" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="-10.0" Max="10.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="6" OutputBitDepth="Output">
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass5" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="7" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="8" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass7" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="9" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="10" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass9" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="11" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="12" OutputBitDepth="Output">
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass11" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="13" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="14" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass13" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="15" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="16" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" Tooltip="" Index="1">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="proportinal" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass15" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_red" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="ena_proxy" Type="bool">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_green" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_blue" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="17" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass14" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass10" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass16" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="Front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Front" Tooltip="" Index="0">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass12" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass8" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_amount" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass6" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="blur_xy_amount" Type="vec2">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="blend" Type="float" DisplayName="Blend" Page="0" Col="0" Row="4" Tooltip="" Inc="0.001" Default="1.0" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="gamma" Type="float" DisplayName="Gamma" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.001" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="clamp_output" Type="bool" DisplayName="Clamp Output" Tooltip="" Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="General">
+      <Col Page="0" Col="0" Name="Setup">
+      </Col>
+      <Col Page="0" Col="1" Name="Advanced">
+      </Col>
+      <Col Page="0" Col="2" Name="Output Options">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

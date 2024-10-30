@@ -1,0 +1,48 @@
+{
+    "CriteriaSettings": {
+        "CriteriaSettingList": [],
+        "CurrentCriteriaSetting": {
+            "SettingName": "",
+            "SettingOperator": 0,
+            "Criterias": [
+                {
+                    "CriteriaType": 0,
+                    "CriteriaActive": false,
+                    "CriteriaStrict": false
+                },
+                {
+                    "CriteriaType": 1,
+                    "CriteriaActive": true,
+                    "CriteriaStrict": false
+                },
+                {
+                    "CriteriaType": 2,
+                    "CriteriaActive": false,
+                    "CriteriaStrict": false,
+                    "NameFilter": ""
+                },
+                {
+                    "CriteriaType": 3,
+                    "CriteriaActive": false,
+                    "CriteriaStrict": false,
+                    "CriteriaColour": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 0.0
+                    }
+                },
+                {
+                    "CriteriaType": 4,
+                    "CriteriaActive": false,
+                    "CriteriaStrict": false
+                },
+                {
+                    "CriteriaType": 5,
+                    "CriteriaActive": false,
+                    "CriteriaStrict": false
+                }
+            ]
+        }
+    }
+}

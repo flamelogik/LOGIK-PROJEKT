@@ -1,0 +1,66 @@
+<ShaderNodePreset SupportsAdaptiveDegradation="False" SupportsAction="False" SupportsTransition="False" SupportsTimeline="False" TimelineUseBack="False" MatteProvider="False" CommercialUsePermitted="True" ShaderType="Matchbox" SoftwareVersion="2017.0.0" LimitInputsToTexture="True" Version="2" Description="
+Object Obliterator in a node!
+
+Requires a front and matte input.
+Increase Blur until the black goes away.
+For more blurring, use Blur After Divide.
+Optionally, you can grab texture from a different part of the frame to cover the blurred area.
+The retexturing is a simple subtract/add, similar to a regrain operation.
+
+Note that the matte output is the matte AFTER the blurring.
+So if you want to regrain, you should use your original matte, not the output of the node.
+
+Based on Renee's Object Obliterator:
+https://forum.logik.tv/t/renee-tymns-object-obliterator/4049" Name="KE_OO">
+   <Shader Clear="0" GridSubdivision="1" OutputBitDepth="Output" Index="1">
+      <Uniform Index="0" NoInput="Error" Tooltip="" DisplayName="Front" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="frontTex" InputType="Front">
+      </Uniform>
+      <Uniform Index="1" NoInput="White" Tooltip="" DisplayName="Matte (Optional)" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="matteTex" InputType="Matte">
+      </Uniform>
+   </Shader>
+   <Shader NbExecutions="2" ClearColor="0, 0, 0, 0" GridSubdivision="1" OutputBitDepth="Output" Index="2">
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass2">
+      </Uniform>
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass1">
+      </Uniform>
+      <Uniform Inc="1.0" Tooltip="" Row="0" Col="0" Page="0" Action3DWidget="False" IconType="None" Type="vec2" ChannelName="BlurSize" DisplayName="BlurSize" Name="maxBlurSize">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="0.1" Default="0.1">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="0.1" Default="0.1">
+         </SubUniform>
+      </Uniform>
+   </Shader>
+   <Shader Clear="0" GridSubdivision="1" OutputBitDepth="Output" Index="3">
+   </Shader>
+   <Shader NbExecutions="2" ClearColor="0, 0, 0, 0" GridSubdivision="1" OutputBitDepth="Output" Index="4">
+      <Uniform Inc="1.0" Tooltip="" Row="0" Col="1" Page="0" Action3DWidget="False" IconType="None" Type="vec2" ChannelName="BlurSize" DisplayName="BlurSize" Name="maxBlurSizeAD">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="0.0" Default="0.1">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="0.0" Default="0.1">
+         </SubUniform>
+      </Uniform>
+   </Shader>
+   <Shader Clear="0" GridSubdivision="1" OutputBitDepth="Output" Index="5">
+      <Uniform InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="adsk_results_pass6">
+      </Uniform>
+      <Uniform Row="0" Col="2" Page="0" Default="False" Tooltip="Enable retexturing" DisplayName="Activate" Type="bool" Name="addTexture">
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="Picks where the new texture will come from. Values are a percentage of the frame size." Row="1" Col="2" Page="0" DisplayName="Offset" IconType="None" Type="vec2" Name="axis">
+         <SubUniform ResDependent="None" Max="100.0" Min="-100.0" Default="0.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="100.0" Min="-100.0" Default="0.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Max="200.0" Min="-200.0" Default="100.0" Inc="1.0" Tooltip="Strength of retexturing" Row="3" Col="2" Page="0" DisplayName="Strength" IconType="None" Type="float" Name="strength">
+      </Uniform>
+   </Shader>
+   <Page Name="Options" Page="0">
+      <Col Name="Blur" Col="0" Page="0">
+      </Col>
+      <Col Name="Blur After Divide" Col="1" Page="0">
+      </Col>
+      <Col Name="Retexture" Col="2" Page="0">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

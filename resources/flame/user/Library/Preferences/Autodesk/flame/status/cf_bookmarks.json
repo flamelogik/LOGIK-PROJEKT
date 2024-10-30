@@ -1,0 +1,17 @@
+{
+    "DlBookmark": {
+        "Version": 1,
+        "Sections": [
+            {
+                "Section": "User",
+                "Bookmarks": [
+                    {
+                        "Bookmark": "User Home",
+                        "Path": "<user home>",
+                        "Visibility": "Global"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,139 @@
+<ShaderNodePreset Name="crok old tv" Description="
+This Matchbox shader simulates an old tube tv.
+
+Input:
+
+- Front: source clip
+
+Setup:
+
+- Slowscan: slow moving scanlines
+- Scanlines: tiny scanlines
+- Lines: rgb coloured lines 
+- Vignette softness: softness of the vignette
+- Vignette scale: scale of the vignette
+- TV Tube Vignette: add TV boarder around image
+- Noise Strenght: opacity of the noise
+- Noise Saturation: color saturation of the noise
+- Distort: distort the incoming image
+- Frequency: frequency of the distort effect
+- Speed: how fast the distortion is running through the image
+- Stripes: add VHS stripes
+- Bars: add VHS Bars 
+- TV Tube Dots: add CRT style pattern
+- Moire: add moire style noise
+- VCR Distortion: add a vcr distortion like effect
+
+Demo clip: http://vimeo.com/82188245
+
+Shader developer: Klowner, Jasper, gtoledo3 and Martin Rykfors
+
+Based on:
+- https://www.shadertoy.com/view/MsXGD4   
+- https://www.shadertoy.com/view/ldjGzV
+- https://www.shadertoy.com/view/4sf3Dr
+- https://www.shadertoy.com/view/4ssGR8
+			
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+Matchbox version by ivar@inferno-op.com" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="slow_scan" Type="bool" DisplayName="Enable Slow Scan" Tooltip="" Default="True" Page="0" Col="0" Row="0">
+      </Uniform>
+      <Uniform Name="pSlowscan" Type="float" DisplayName="Slowscan" Page="0" Col="0" Row="1" Tooltip="" Inc="0.005" Default="0.01" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="scanline_scan" Type="bool" DisplayName="Enable Scanlines" Tooltip="" Default="True" Page="0" Col="0" Row="2">
+      </Uniform>
+      <Uniform Name="pScanline" Type="float" DisplayName="Scanlines" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="0.6" Min="0.0" Max="2.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="add_vignette" Type="bool" DisplayName="Add Vignette" Tooltip="Enable / Disable Vignette" Default="True" Page="0" Col="1" Row="0">
+      </Uniform>
+      <Uniform Name="pVignettessoftness" Type="float" DisplayName="Softness" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="0.9" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="pVignettescale" Type="float" DisplayName="Scale" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01" Default="0.14" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="tv_tube_vignette" Type="bool" DisplayName="Add TV Tube Vignette" Tooltip="Enable / Disable TV Tube" Default="True" Page="0" Col="1" Row="3">
+      </Uniform>
+      <Uniform Name="tv_tube_vignette_scale" Type="float" DisplayName="Softness" Page="0" Col="1" Row="4" Tooltip="" Inc="0.01" Default=".7" Min="0.01" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="pAddGrain" Type="bool" DisplayName="Add Noise" Tooltip="" Default="True" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform Name="g_saturation" Type="float" DisplayName="Saturation" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="0.0" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="grain_opacity" Type="float" DisplayName="Strength" Page="0" Col="2" Row="2" Tooltip="" Inc="0.01" Default="5.0" Min="0.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="scanline_distort" Type="bool" DisplayName="Add Scanline Distortion" Tooltip="" Default="True" Page="0" Col="3" Row="0">
+      </Uniform>
+      <Uniform Name="pDistort" Type="float" DisplayName="Scanline Distort" Page="0" Col="3" Row="1" Tooltip="" Inc="0.01" Default="0.03" Min="0.0" Max="5.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="timer" Type="float" DisplayName="Frequency" Page="0" Col="3" Row="2" Tooltip="" Inc="0.01" Default="0.85" Min="0.0" Max="5.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="speed" Type="float" DisplayName="Speed" Page="0" Col="3" Row="3" Tooltip="" Inc="0.01" Default="2.0" Min="1.0" Max="5.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="iChannel0" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" DisplayName="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="vhs_stripes" Type="bool" DisplayName="Add VHS Stripes" Tooltip="Enable / Disable VHS Stripes" Default="False" Page="1" Col="0" Row="0">
+      </Uniform>
+      <Uniform Name="stripes_count" Type="float" DisplayName="Stripes" Page="1" Col="0" Row="1" Tooltip="" Inc="0.01" Default="0.50" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="Opacity" Type="float" DisplayName="Opacity" Page="1" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="vhs_bars" Type="bool" DisplayName="Add Bars" Tooltip="Enable / Disable Bars" Default="True" Page="1" Col="0" Row="3">
+      </Uniform>
+      <Uniform Name="bars_count" Type="float" DisplayName="Bars" Page="1" Col="0" Row="4" Tooltip="" Inc="0.1" Default="5.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="tube_moire" Type="bool" DisplayName="Add TV Tube Dots" Tooltip="Enable / Disable Tube Moire" Default="True" Page="1" Col="1" Row="0">
+      </Uniform>
+      <Uniform Name="tv_dots" Type="float" DisplayName="Style" Page="1" Col="1" Row="1" Tooltip="" Inc="1.00" Default="1.0" Min="0.0" Max="4.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="tv_dots_blend" Type="float" DisplayName="Opacity" Page="1" Col="1" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="moire" Type="bool" DisplayName="Add Moire" Tooltip="Enable / Disable Moire" Default="False" Page="1" Col="2" Row="0">
+      </Uniform>
+      <Uniform Name="opacity_moire" Type="float" DisplayName="Gain" Page="1" Col="2" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="moire_scale" Type="float" DisplayName="Scale" Page="1" Col="2" Row="2" Tooltip="" Inc="0.001" Default="0.15" Min="0.01" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="vcr_distortion" Type="bool" DisplayName="Add VCR Distortion" Tooltip="" Default="False" Page="1" Col="3" Row="0">
+      </Uniform>
+      <Uniform Name="tube_distortion" Type="bool" DisplayName="Add CRT Distortion" Tooltip="Enable Tube Distortion" Default="True" Page="2" Col="0" Row="0">
+      </Uniform>
+      <Uniform Name="Distort" Type="float" DisplayName="Tube Distortion" Page="2" Col="0" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="Scale" Type="float" DisplayName="Scale" Page="2" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.06" Min="1.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="tv_tube_lines" Type="bool" DisplayName="Add TV Lines" Tooltip="Enable / Disable TV Lines" Default="False" Page="2" Col="1" Row="0">
+      </Uniform>
+      <Uniform Name="tv_lines" Type="float" DisplayName="Lines" Page="2" Col="1" Row="1" Tooltip="" Inc="0.01" Default="2.5" Min="0.01" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="tv_lines_opacity" Type="float" DisplayName="Opacity" Page="2" Col="1" Row="2" Tooltip="" Inc="0.1" Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Page 1">
+      <Col Page="0" Col="0" Name="Scanlines">
+      </Col>
+      <Col Page="0" Col="1" Name="Vignette">
+      </Col>
+      <Col Page="0" Col="2" Name="Noise">
+      </Col>
+      <Col Page="0" Col="3" Name="Distortion">
+      </Col>
+   </Page>
+   <Page Page="1" Name="Page 2">
+      <Col Page="1" Col="0" Name="Stripes">
+      </Col>
+      <Col Page="1" Col="1" Name="CRT TV">
+      </Col>
+      <Col Page="1" Col="2" Name="Moire">
+      </Col>
+      <Col Page="1" Col="3" Name="VCR Distortion">
+      </Col>
+   </Page>
+   <Page Page="2" Name="Page 3">
+      <Col Page="2" Col="0" Name="CRT Distortion">
+      </Col>
+      <Col Page="2" Col="1" Name="TV Lines">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

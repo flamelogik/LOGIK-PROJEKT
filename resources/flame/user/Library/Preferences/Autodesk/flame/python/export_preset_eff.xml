@@ -1,0 +1,47 @@
+<preset version="14">
+  <type>image</type>
+  <comment>Creates 8-bit Jpeg file sequence numbered based on the timecode of the selected clip.</comment>
+  <video>
+    <fileType>Jpeg</fileType>
+    <codec>923688</codec>
+    <codecProfile/>
+    <namePattern>&lt;name&gt;.</namePattern>
+    <compressionQuality>100</compressionQuality>
+    <includeAlpha>False</includeAlpha>
+    <overwriteWithVersions>False</overwriteWithVersions>
+    <posterFrame>False</posterFrame>
+    <useFrameAsPoster>1</useFrameAsPoster>
+    <resize>
+      <resizeType>fit</resizeType>
+      <resizeFilter>lanczos</resizeFilter>
+      <width>0</width>
+      <height>0</height>
+      <bitsPerChannel>8</bitsPerChannel>
+      <numChannels>3</numChannels>
+      <floatingPoint>False</floatingPoint>
+      <bigEndian>True</bigEndian>
+      <pixelRatio>1</pixelRatio>
+      <scanFormat>P</scanFormat>
+      <ResSelectorMode>3</ResSelectorMode>
+      <ResAdaptativeMode>0</ResAdaptativeMode>
+      <ResScalingMode>1</ResScalingMode>
+      <ResScalingValue>50</ResScalingValue>
+    </resize>
+  </video>
+  <name>
+    <framePadding>6</framePadding>
+    <startFrame>1001</startFrame>
+    <frameIndex>0</frameIndex>
+  </name>
+  <subtitle>
+    <namePattern>&lt;subtitles name&gt;</namePattern>
+    <ReExportColour>False</ReExportColour>
+    <ReExportAlignment>1</ReExportAlignment>
+    <charFormatting>True</charFormatting>
+    <colourMode>NoColour</colourMode>
+    <alignmentMode>NoAlignment</alignmentMode>
+    <alignment>BottomCentre</alignment>
+    <alignmentType>an</alignmentType>
+    <timecodeMode>SameAsClip</timecodeMode>
+  </subtitle>
+</preset>

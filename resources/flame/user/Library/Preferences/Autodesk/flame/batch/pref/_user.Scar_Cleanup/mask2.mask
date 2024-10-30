@@ -1,0 +1,5821 @@
+Module Mask
+Program Flame
+Version 2025.1.1
+FileVersion 4.000000
+CreationDate Sun Sep  8 19:45:45 2024
+
+FrameWidth 4096
+FrameHeight 2304
+FramePixelFormat 143
+FrameAspectRatio 1.777777791
+FrameDominance 2
+FrameColourSpace "ACEScg"
+
+	MinFrame 1001
+	CurrentFrame 1057
+	MaxFrames 90
+	AnimRefFrame 1001
+	ShadingMode no
+	WireframeMode no
+	ZBufferMode yes
+	FilteringDefault Linear
+	PremultipliedDefault no
+	UntitledOutputs no
+	AppendTypeOutputs yes
+	LinetestMode no
+	DefaultHideCams no
+	HideCams no
+	CurrentCamera 8
+	GridMode 3
+	Grid3DColour 0.300000012 0.300000012 0.300000012
+	CameraPlaneType 0
+	PlayLockMode no
+	QuickResolution 6
+	AntiAliasingLevel 0
+	AntiAliasingSoftness 1
+	MotionBlurEditor
+		Channel 
+			Extrapolation constant
+			Value 1
+			Size 3
+			KeyVersion 2
+			Key 0
+				Frame 50
+				Value 1
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				FrameLock yes
+				DeleteLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 100
+				Value 1
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 2
+				Frame 150
+				Value 1
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				FrameLock yes
+				DeleteLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			End
+		ChannelEnd
+	TopLevelChannel
+		Channel mask2
+			Uncollapsed
+			End
+	ResultCamChannel
+		Channel ResultCamera
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+MotionBlurTopChannel
+		Channel motion_blur
+			Uncollapsed
+			End
+		MotionBlurPhaseChannel
+		Channel phase
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+	SoftwareAA
+		Channel SoftwareAA
+			Uncollapsed
+			End
+		MotionBlurEnableChannel
+		Channel enable
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+	MotionBlurShutterChannel
+		Channel shutter
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		ChannelEnd
+	MotionBlurSamplesChannel
+		Channel samples
+			Extrapolation constant
+			Value 5
+			Uncollapsed
+			End
+		ChannelEnd
+	SoftwareAASamples
+		Channel samples_n
+			Extrapolation constant
+			Value 128
+			Uncollapsed
+			End
+		ChannelEnd
+		DofMode no
+		DofSoftness 1
+		FogMode Off
+		FogColour 0 0 0
+		FogStart 0
+		FogEnd 1
+		FogRange 1
+		ProjectorMotionPathMode no
+		CamMotionPathMode no
+		AxisMotionPathMode no
+		LightMotionPathMode no
+		PropScalingMode yes
+		SPropScalingMode yes
+		YSnapMode no
+		YGridSize 1
+		UpdateMode yes
+		InteractiveMode 14680064
+		AutoParentMode yes
+		ForceProxyUpdate yes
+		SnapTo3DMode no
+		SnapToZMode yes
+		DrawIconsMode IconsOn
+		DrawSelectionMode Outline
+		WidgetOcclusion no
+		IconTransparency 0
+		GMaskWidget yes
+		SchematicTransparency 0
+		AxisIconScale 100
+		ClipInfo 0
+		SubMenu AXIS_MENU
+		ColourClamping no
+		ClampDivide no
+		SceneLinear yes
+		MatteChannel MatteChnlBlue
+		NodeBinStereoMode no
+		OverscanMode 0
+		OverscanScale 100
+		ResolutionMode no
+		ColourSpaceMode no
+		FrameOnlyWorkingCam yes
+		ManipulatorOrientation 0
+		AutoImage yes
+		AmbientLightingMode yes
+		AbmientLightingIntensity 100
+		AmbientLightingShading 0
+		GMaskTextureSize 9
+		LightOpShadeEnableDefault yes
+		MiniUITabId 19
+		MiniUIObjectListId 0
+		MiniUIChildrenListId -1
+		SelectiveHUDActive yes
+		SelectiveToggleOverlay 1
+		SelectveAOVColour 1 0 1
+		SelectiveTransparency 50
+		SelectiveShowGMask yes
+		ResSelectorMode 0
+		ResAdaptativeMode 0
+		ResScalingMode 1
+		ResScalingValue 50
+		ResUnscaledWidth 4096
+		ResUnscaledHeight 2304
+		ResSrcPixelRatio 1
+		End
+
+#
+# node database
+#
+ConcreteFileVersion 2
+CreationDate Sun Sep  8 19:45:45 2024
+
+
+WorldScale 1
+
+PHedronToExternFile ""
+
+Node Group
+	Name scene
+	Number 0
+	Child 1
+	Child 2
+	Child 3
+	Child 4
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 0
+	PosY 0
+	Flags SCHEMATIC_HIDDEN
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+	}
+End
+Node Camera
+	Name Default
+	Number 1
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -386
+	PosY 187
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 3165.094238281
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel distance
+			Extrapolation constant
+			Value 2967.27539
+			Uncollapsed
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			Uncollapsed
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			Uncollapsed
+			End
+		Channel near
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel far
+			Extrapolation constant
+			Value 10666.667
+			Uncollapsed
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 3
+		CamLensFilter 1
+		CamLensMode 1
+		CamMotionPathMode no
+		IconVisible yes
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 0
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Camera
+	Name Perspective
+	Number 2
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -193
+	PosY 258
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 3165.094238281
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel distance
+			Extrapolation constant
+			Value 2967.27539
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			End
+		Channel near
+			Extrapolation constant
+			Value 1
+			End
+		Channel far
+			Extrapolation constant
+			Value 10666.667
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 3
+		CamLensFilter 1
+		CamLensMode 1
+		CamMotionPathMode no
+		IconVisible no
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 1000004
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Camera
+	Name Object
+	Number 3
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX 0
+	PosY 258
+	Flags HIDDEN&SCHEMATIC_HIDDEN
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		CamChannel
+		{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel distance
+			Extrapolation constant
+			Value 0
+			End
+		Channel interest/x
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/y
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel interest/z
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel int_speed
+			Extrapolation constant
+			Value 0
+			End
+		Channel roll
+			Extrapolation constant
+			Value 0.000000000
+			End
+		Channel fov
+			Extrapolation constant
+			Value 40.000000000
+			End
+		Channel near
+			Extrapolation constant
+			Value 1
+			End
+		Channel far
+			Extrapolation constant
+			Value 10666.667
+			End
+		Channel lens_distortion/x
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/y
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/magnitude
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/adjustment
+			Extrapolation constant
+			Value 0
+			End
+		Channel lens_distortion/anamorph
+			Extrapolation constant
+			Value 1
+			End
+		ChannelEnd
+		}
+		CamLensFitRes 3
+		CamLensFilter 1
+		CamLensMode 1
+		CamMotionPathMode no
+		IconVisible yes
+		CamMotionPath
+		{
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		Path poi_path
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		}
+		Origin 0
+		CamIndex 1000007
+		CamPhysicalParameters
+		PhysicalCameraEnabled no
+		FStop FStop_1
+		Film_Type User_Defined
+		LookAt
+		Flags 30
+		LookAtBase
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		CoNodeFlags
+		Collapsed no
+		CoNodeFlagsEnd
+		}
+	}
+End
+Node Axis
+	Name axis1
+	Number 4
+	Child 5
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -233
+	PosY -46
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value -256.432007
+			Size 90
+			KeyVersion 2
+			Key 0
+				Frame 1001
+				Value 0
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 1002
+				Value 1.07971191
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0054117837
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0054117837
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 2
+				Frame 1003
+				Value 0.0324707031
+				RHandle_dX 0.333333343
+				RHandle_dY -0.821919739
+				LHandle_dX -0.333333343
+				LHandle_dY 0.821919739
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 3
+				Frame 1004
+				Value -3.85180688
+				RHandle_dX 0.333333343
+				RHandle_dY -1.34655762
+				LHandle_dX -0.333333343
+				LHandle_dY 1.34655762
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 4
+				Frame 1005
+				Value -8.046875
+				RHandle_dX 0.333333343
+				RHandle_dY -0.791666687
+				LHandle_dX -0.333333343
+				LHandle_dY 0.791666687
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 5
+				Frame 1006
+				Value -8.60180664
+				RHandle_dX 0.333333343
+				RHandle_dY 0.491922945
+				LHandle_dX -0.333333343
+				LHandle_dY -0.491922945
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 6
+				Frame 1007
+				Value -5.09533739
+				RHandle_dX 0.333333343
+				RHandle_dY 1.3700968
+				LHandle_dX -0.333333343
+				LHandle_dY -1.3700968
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 7
+				Frame 1008
+				Value -0.381225616
+				RHandle_dX 0.333333343
+				RHandle_dY 1.15350354
+				LHandle_dX -0.333333343
+				LHandle_dY -1.15350354
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 8
+				Frame 1009
+				Value 1.82568371
+				RHandle_dX 0.333333343
+				RHandle_dY -0.173522964
+				LHandle_dX -0.333333343
+				LHandle_dY 0.173522964
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 9
+				Frame 1010
+				Value -1.4223634
+				RHandle_dX 0.333333343
+				RHandle_dY -2.35980248
+				LHandle_dX -0.333333343
+				LHandle_dY 2.35980248
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 10
+				Frame 1011
+				Value -12.3331308
+				RHandle_dX 0.333333343
+				RHandle_dY -4.18648291
+				LHandle_dX -0.333333343
+				LHandle_dY 4.18648291
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 11
+				Frame 1012
+				Value -26.5412617
+				RHandle_dX 0.333333343
+				RHandle_dY -4.40753222
+				LHandle_dX -0.333333343
+				LHandle_dY 4.40753222
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 12
+				Frame 1013
+				Value -38.7783241
+				RHandle_dX 0.333333343
+				RHandle_dY -3.64062524
+				LHandle_dX -0.333333343
+				LHandle_dY 3.64062524
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 13
+				Frame 1014
+				Value -48.3850136
+				RHandle_dX 0.333333343
+				RHandle_dY -3.63865161
+				LHandle_dX -0.333333343
+				LHandle_dY 3.63865161
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 14
+				Frame 1015
+				Value -60.6102333
+				RHandle_dX 0.333333343
+				RHandle_dY -4.24422264
+				LHandle_dX -0.333333343
+				LHandle_dY 4.24422264
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 15
+				Frame 1016
+				Value -73.8503494
+				RHandle_dX 0.333333343
+				RHandle_dY -4.52311277
+				LHandle_dX -0.333333343
+				LHandle_dY 4.52311277
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 16
+				Frame 1017
+				Value -87.748909
+				RHandle_dX 0.333333343
+				RHandle_dY -4.5246377
+				LHandle_dX -0.333333343
+				LHandle_dY 4.5246377
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 17
+				Frame 1018
+				Value -100.998177
+				RHandle_dX 0.333333343
+				RHandle_dY -3.99308276
+				LHandle_dX -0.333333343
+				LHandle_dY 3.99308276
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 18
+				Frame 1019
+				Value -111.707405
+				RHandle_dX 0.333333343
+				RHandle_dY -3.52496338
+				LHandle_dX -0.333333343
+				LHandle_dY 3.52496338
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 19
+				Frame 1020
+				Value -122.147957
+				RHandle_dX 0.333333343
+				RHandle_dY -3.72387576
+				LHandle_dX -0.333333343
+				LHandle_dY 3.72387576
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 20
+				Frame 1021
+				Value -134.050659
+				RHandle_dX 0.333333343
+				RHandle_dY -4.53784323
+				LHandle_dX -0.333333343
+				LHandle_dY 4.53784323
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 21
+				Frame 1022
+				Value -149.375015
+				RHandle_dX 0.333333343
+				RHandle_dY -5.27093744
+				LHandle_dX -0.333333343
+				LHandle_dY 5.27093744
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 22
+				Frame 1023
+				Value -165.676285
+				RHandle_dX 0.333333343
+				RHandle_dY -5.39925146
+				LHandle_dX -0.333333343
+				LHandle_dY 5.39925146
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 23
+				Frame 1024
+				Value -181.770523
+				RHandle_dX 0.333333343
+				RHandle_dY -5.16859674
+				LHandle_dX -0.333333343
+				LHandle_dY 5.16859674
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 24
+				Frame 1025
+				Value -196.687866
+				RHandle_dX 0.333333343
+				RHandle_dY -4.81221533
+				LHandle_dX -0.333333343
+				LHandle_dY 4.81221533
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 25
+				Frame 1026
+				Value -210.643814
+				RHandle_dX 0.333333343
+				RHandle_dY -4.31775141
+				LHandle_dX -0.333333343
+				LHandle_dY 4.31775141
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 26
+				Frame 1027
+				Value -222.594376
+				RHandle_dX 0.333333343
+				RHandle_dY -3.8839519
+				LHandle_dX -0.333333343
+				LHandle_dY 3.8839519
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 27
+				Frame 1028
+				Value -233.947525
+				RHandle_dX 0.333333343
+				RHandle_dY -3.49564362
+				LHandle_dX -0.333333343
+				LHandle_dY 3.49564362
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 28
+				Frame 1029
+				Value -243.568237
+				RHandle_dX 0.333333343
+				RHandle_dY -3.08992505
+				LHandle_dX -0.333333343
+				LHandle_dY 3.08992505
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 29
+				Frame 1030
+				Value -252.487076
+				RHandle_dX 0.333333343
+				RHandle_dY -2.81854248
+				LHandle_dX -0.333333343
+				LHandle_dY 2.81854248
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 30
+				Frame 1031
+				Value -260.479492
+				RHandle_dX 0.333333343
+				RHandle_dY -2.40539289
+				LHandle_dX -0.333333343
+				LHandle_dY 2.40539289
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 31
+				Frame 1032
+				Value -266.919434
+				RHandle_dX 0.333333343
+				RHandle_dY -1.81667578
+				LHandle_dX -0.333333343
+				LHandle_dY 1.81667578
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 32
+				Frame 1033
+				Value -271.379547
+				RHandle_dX 0.333333343
+				RHandle_dY -0.973510742
+				LHandle_dX -0.333333343
+				LHandle_dY 0.973510742
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 33
+				Frame 1034
+				Value -272.760498
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0422515869
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0422515869
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 34
+				Frame 1035
+				Value -271.633057
+				RHandle_dX 0.333333343
+				RHandle_dY 0.62677002
+				LHandle_dX -0.333333343
+				LHandle_dY -0.62677002
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 35
+				Frame 1036
+				Value -268.999878
+				RHandle_dX 0.333333343
+				RHandle_dY 0.922948182
+				LHandle_dX -0.333333343
+				LHandle_dY -0.922948182
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 36
+				Frame 1037
+				Value -266.095367
+				RHandle_dX 0.333333343
+				RHandle_dY 0.82254535
+				LHandle_dX -0.333333343
+				LHandle_dY -0.82254535
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 37
+				Frame 1038
+				Value -264.064606
+				RHandle_dX 0.333333343
+				RHandle_dY 0.514592469
+				LHandle_dX -0.333333343
+				LHandle_dY -0.514592469
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 38
+				Frame 1039
+				Value -263.007812
+				RHandle_dX 0.333333343
+				RHandle_dY 0.352442414
+				LHandle_dX -0.333333343
+				LHandle_dY -0.352442414
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 39
+				Frame 1040
+				Value -261.949951
+				RHandle_dX 0.333333343
+				RHandle_dY 0.513956726
+				LHandle_dX -0.333333343
+				LHandle_dY -0.513956726
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 40
+				Frame 1041
+				Value -259.924072
+				RHandle_dX 0.333333343
+				RHandle_dY 0.443827301
+				LHandle_dX -0.333333343
+				LHandle_dY -0.443827301
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 41
+				Frame 1042
+				Value -259.286987
+				RHandle_dX 0.333333343
+				RHandle_dY -0.100850426
+				LHandle_dX -0.333333343
+				LHandle_dY 0.100850426
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 42
+				Frame 1043
+				Value -260.529175
+				RHandle_dX 0.333333343
+				RHandle_dY -0.699264526
+				LHandle_dX -0.333333343
+				LHandle_dY 0.699264526
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 43
+				Frame 1044
+				Value -263.482574
+				RHandle_dX 0.333333343
+				RHandle_dY -1.16040039
+				LHandle_dX -0.333333343
+				LHandle_dY 1.16040039
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 44
+				Frame 1045
+				Value -267.491577
+				RHandle_dX 0.333333343
+				RHandle_dY -1.17962134
+				LHandle_dX -0.333333343
+				LHandle_dY 1.17962134
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 45
+				Frame 1046
+				Value -270.560303
+				RHandle_dX 0.333333343
+				RHandle_dY -0.403747559
+				LHandle_dX -0.333333343
+				LHandle_dY 0.403747559
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 46
+				Frame 1047
+				Value -269.914062
+				RHandle_dX 0.333333343
+				RHandle_dY 0.595743835
+				LHandle_dX -0.333333343
+				LHandle_dY -0.595743835
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 47
+				Frame 1048
+				Value -266.98584
+				RHandle_dX 0.333333343
+				RHandle_dY 0.999104798
+				LHandle_dX -0.333333343
+				LHandle_dY -0.999104798
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 48
+				Frame 1049
+				Value -263.919434
+				RHandle_dX 0.333333343
+				RHandle_dY 0.794326782
+				LHandle_dX -0.333333343
+				LHandle_dY -0.794326782
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 49
+				Frame 1050
+				Value -262.219879
+				RHandle_dX 0.333333343
+				RHandle_dY 0.375707
+				LHandle_dX -0.333333343
+				LHandle_dY -0.375707
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 50
+				Frame 1051
+				Value -261.665192
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0799814835
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0799814835
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 51
+				Frame 1052
+				Value -261.73999
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0872751847
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0872751847
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 52
+				Frame 1053
+				Value -262.188843
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0718180314
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0718180314
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 53
+				Frame 1054
+				Value -262.170898
+				RHandle_dX 0.333333343
+				RHandle_dY 0.18760173
+				LHandle_dX -0.333333343
+				LHandle_dY -0.18760173
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 54
+				Frame 1055
+				Value -261.063232
+				RHandle_dX 0.333333343
+				RHandle_dY 0.629984558
+				LHandle_dX -0.333333343
+				LHandle_dY -0.629984558
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 55
+				Frame 1056
+				Value -258.390991
+				RHandle_dX 0.333333343
+				RHandle_dY 0.771870911
+				LHandle_dX -0.333333343
+				LHandle_dY -0.771870911
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 56
+				Frame 1057
+				Value -256.432007
+				RHandle_dX 0.333333343
+				RHandle_dY 0.786740601
+				LHandle_dX -0.333333343
+				LHandle_dY -0.786740601
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 57
+				Frame 1058
+				Value -253.670547
+				RHandle_dX 0.333333343
+				RHandle_dY 0.866737366
+				LHandle_dX -0.333333343
+				LHandle_dY -0.866737366
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 58
+				Frame 1059
+				Value -251.231583
+				RHandle_dX 0.333333343
+				RHandle_dY 0.990033448
+				LHandle_dX -0.333333343
+				LHandle_dY -0.990033448
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 59
+				Frame 1060
+				Value -247.730347
+				RHandle_dX 0.333333343
+				RHandle_dY 1.14310968
+				LHandle_dX -0.333333343
+				LHandle_dY -1.14310968
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 60
+				Frame 1061
+				Value -244.372925
+				RHandle_dX 0.333333343
+				RHandle_dY 1.33455408
+				LHandle_dX -0.333333343
+				LHandle_dY -1.33455408
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 61
+				Frame 1062
+				Value -239.723022
+				RHandle_dX 0.333333343
+				RHandle_dY 1.6133194
+				LHandle_dX -0.333333343
+				LHandle_dY -1.6133194
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 62
+				Frame 1063
+				Value -234.693008
+				RHandle_dX 0.333333343
+				RHandle_dY 1.63561761
+				LHandle_dX -0.333333343
+				LHandle_dY -1.63561761
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 63
+				Frame 1064
+				Value -229.909317
+				RHandle_dX 0.333333343
+				RHandle_dY 1.27817786
+				LHandle_dX -0.333333343
+				LHandle_dY -1.27817786
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 64
+				Frame 1065
+				Value -227.023941
+				RHandle_dX 0.333333343
+				RHandle_dY 0.797281921
+				LHandle_dX -0.333333343
+				LHandle_dY -0.797281921
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 65
+				Frame 1066
+				Value -225.125626
+				RHandle_dX 0.333333343
+				RHandle_dY 0.64046222
+				LHandle_dX -0.333333343
+				LHandle_dY -0.64046222
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 66
+				Frame 1067
+				Value -223.181168
+				RHandle_dX 0.333333343
+				RHandle_dY 0.64634198
+				LHandle_dX -0.333333343
+				LHandle_dY -0.64634198
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 67
+				Frame 1068
+				Value -221.247574
+				RHandle_dX 0.333333343
+				RHandle_dY 0.646728516
+				LHandle_dX -0.333333343
+				LHandle_dY -0.646728516
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 68
+				Frame 1069
+				Value -219.300797
+				RHandle_dX 0.333333343
+				RHandle_dY 0.654683411
+				LHandle_dX -0.333333343
+				LHandle_dY -0.654683411
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 69
+				Frame 1070
+				Value -217.319473
+				RHandle_dX 0.333333343
+				RHandle_dY 0.659484863
+				LHandle_dX -0.333333343
+				LHandle_dY -0.659484863
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 70
+				Frame 1071
+				Value -215.343887
+				RHandle_dX 0.333333343
+				RHandle_dY 0.648050964
+				LHandle_dX -0.333333343
+				LHandle_dY -0.648050964
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 71
+				Frame 1072
+				Value -213.431168
+				RHandle_dX 0.333333343
+				RHandle_dY 0.500101745
+				LHandle_dX -0.333333343
+				LHandle_dY -0.500101745
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 72
+				Frame 1073
+				Value -212.343277
+				RHandle_dX 0.333333343
+				RHandle_dY 0.350179046
+				LHandle_dX -0.333333343
+				LHandle_dY -0.350179046
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 73
+				Frame 1074
+				Value -211.330093
+				RHandle_dX 0.333333343
+				RHandle_dY 0.329467773
+				LHandle_dX -0.333333343
+				LHandle_dY -0.329467773
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 74
+				Frame 1075
+				Value -210.36647
+				RHandle_dX 0.333333343
+				RHandle_dY 0.19793956
+				LHandle_dX -0.333333343
+				LHandle_dY -0.19793956
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 75
+				Frame 1076
+				Value -210.142456
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0706583634
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0706583634
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 76
+				Frame 1077
+				Value -209.94252
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0267105103
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0267105103
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 77
+				Frame 1078
+				Value -209.982193
+				RHandle_dX 0.333333343
+				RHandle_dY 0.172098801
+				LHandle_dX -0.333333343
+				LHandle_dY -0.172098801
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 78
+				Frame 1079
+				Value -208.909927
+				RHandle_dX 0.333333343
+				RHandle_dY 0.783711731
+				LHandle_dX -0.333333343
+				LHandle_dY -0.783711731
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 79
+				Frame 1080
+				Value -205.279922
+				RHandle_dX 0.333333343
+				RHandle_dY 1.29927576
+				LHandle_dX -0.333333343
+				LHandle_dY -1.29927576
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 80
+				Frame 1081
+				Value -201.114273
+				RHandle_dX 0.333333343
+				RHandle_dY 1.49686944
+				LHandle_dX -0.333333343
+				LHandle_dY -1.49686944
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 81
+				Frame 1082
+				Value -196.298706
+				RHandle_dX 0.333333343
+				RHandle_dY 1.24023438
+				LHandle_dX -0.333333343
+				LHandle_dY -1.24023438
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 82
+				Frame 1083
+				Value -193.672867
+				RHandle_dX 0.333333343
+				RHandle_dY 0.243896484
+				LHandle_dX -0.333333343
+				LHandle_dY -0.243896484
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 83
+				Frame 1084
+				Value -194.835327
+				RHandle_dX 0.333333343
+				RHandle_dY -0.831502259
+				LHandle_dX -0.333333343
+				LHandle_dY 0.831502259
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 84
+				Frame 1085
+				Value -198.66188
+				RHandle_dX 0.333333343
+				RHandle_dY -1.18652344
+				LHandle_dX -0.333333343
+				LHandle_dY 1.18652344
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 85
+				Frame 1086
+				Value -201.954468
+				RHandle_dX 0.333333343
+				RHandle_dY -0.797787964
+				LHandle_dX -0.333333343
+				LHandle_dY 0.797787964
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 86
+				Frame 1087
+				Value -203.448608
+				RHandle_dX 0.333333343
+				RHandle_dY -0.228416443
+				LHandle_dX -0.333333343
+				LHandle_dY 0.228416443
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 87
+				Frame 1088
+				Value -203.324966
+				RHandle_dX 0.333333343
+				RHandle_dY 0.154703781
+				LHandle_dX -0.333333343
+				LHandle_dY -0.154703781
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 88
+				Frame 1089
+				Value -202.520386
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0816650391
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0816650391
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 89
+				Frame 1090
+				Value -202.834976
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 28.5588398
+			Size 90
+			KeyVersion 2
+			Key 0
+				Frame 1001
+				Value 0
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 1002
+				Value -3.24676538
+				RHandle_dX 0.333333343
+				RHandle_dY -1.27464807
+				LHandle_dX -0.333333343
+				LHandle_dY 1.27464807
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 2
+				Frame 1003
+				Value -7.64788866
+				RHandle_dX 0.333333343
+				RHandle_dY -1.22816992
+				LHandle_dX -0.333333343
+				LHandle_dY 1.22816992
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 3
+				Frame 1004
+				Value -10.6157846
+				RHandle_dX 0.333333343
+				RHandle_dY -0.843556821
+				LHandle_dX -0.333333343
+				LHandle_dY 0.843556821
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 4
+				Frame 1005
+				Value -12.7092295
+				RHandle_dX 0.333333343
+				RHandle_dY -0.394246429
+				LHandle_dX -0.333333343
+				LHandle_dY 0.394246429
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 5
+				Frame 1006
+				Value -12.9812632
+				RHandle_dX 0.333333343
+				RHandle_dY -0.197214767
+				LHandle_dX -0.333333343
+				LHandle_dY 0.197214767
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 6
+				Frame 1007
+				Value -13.892518
+				RHandle_dX 0.333333343
+				RHandle_dY -0.374125153
+				LHandle_dX -0.333333343
+				LHandle_dY 0.374125153
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 7
+				Frame 1008
+				Value -15.2260141
+				RHandle_dX 0.333333343
+				RHandle_dY -0.585113347
+				LHandle_dX -0.333333343
+				LHandle_dY 0.585113347
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 8
+				Frame 1009
+				Value -17.4031982
+				RHandle_dX 0.333333343
+				RHandle_dY -0.842936337
+				LHandle_dX -0.333333343
+				LHandle_dY 0.842936337
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 9
+				Frame 1010
+				Value -20.2836323
+				RHandle_dX 0.333333343
+				RHandle_dY -0.464894921
+				LHandle_dX -0.333333343
+				LHandle_dY 0.464894921
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 10
+				Frame 1011
+				Value -20.1925678
+				RHandle_dX 0.333333343
+				RHandle_dY 0.518463433
+				LHandle_dX -0.333333343
+				LHandle_dY -0.518463433
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 11
+				Frame 1012
+				Value -17.1728516
+				RHandle_dX 0.333333343
+				RHandle_dY 1.03428161
+				LHandle_dX -0.333333343
+				LHandle_dY -1.03428161
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 12
+				Frame 1013
+				Value -13.9868784
+				RHandle_dX 0.333333343
+				RHandle_dY 1.14572132
+				LHandle_dX -0.333333343
+				LHandle_dY -1.14572132
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 13
+				Frame 1014
+				Value -10.2985239
+				RHandle_dX 0.333333343
+				RHandle_dY 1.05219531
+				LHandle_dX -0.333333343
+				LHandle_dY -1.05219531
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 14
+				Frame 1015
+				Value -7.67370653
+				RHandle_dX 0.333333343
+				RHandle_dY 0.614939451
+				LHandle_dX -0.333333343
+				LHandle_dY -0.614939451
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 15
+				Frame 1016
+				Value -6.6088872
+				RHandle_dX 0.333333343
+				RHandle_dY 0.297159821
+				LHandle_dX -0.333333343
+				LHandle_dY -0.297159821
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 16
+				Frame 1017
+				Value -5.89074755
+				RHandle_dX 0.333333343
+				RHandle_dY 0.380584806
+				LHandle_dX -0.333333343
+				LHandle_dY -0.380584806
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 17
+				Frame 1018
+				Value -4.32537842
+				RHandle_dX 0.333333343
+				RHandle_dY 0.840494871
+				LHandle_dX -0.333333343
+				LHandle_dY -0.840494871
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 18
+				Frame 1019
+				Value -0.84777838
+				RHandle_dX 0.333333343
+				RHandle_dY 1.6479696
+				LHandle_dX -0.333333343
+				LHandle_dY -1.6479696
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 19
+				Frame 1020
+				Value 5.56243944
+				RHandle_dX 0.333333343
+				RHandle_dY 2.12856054
+				LHandle_dX -0.333333343
+				LHandle_dY -2.12856054
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 20
+				Frame 1021
+				Value 11.9235849
+				RHandle_dX 0.333333343
+				RHandle_dY 1.75741577
+				LHandle_dX -0.333333343
+				LHandle_dY -1.75741577
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 21
+				Frame 1022
+				Value 16.1069336
+				RHandle_dX 0.333333343
+				RHandle_dY 1.03160584
+				LHandle_dX -0.333333343
+				LHandle_dY -1.03160584
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 22
+				Frame 1023
+				Value 18.1132202
+				RHandle_dX 0.333333343
+				RHandle_dY 0.504425347
+				LHandle_dX -0.333333343
+				LHandle_dY -0.504425347
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 23
+				Frame 1024
+				Value 19.1334858
+				RHandle_dX 0.333333343
+				RHandle_dY 0.325683922
+				LHandle_dX -0.333333343
+				LHandle_dY -0.325683922
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 24
+				Frame 1025
+				Value 20.0673237
+				RHandle_dX 0.333333343
+				RHandle_dY 0.389282227
+				LHandle_dX -0.333333343
+				LHandle_dY -0.389282227
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 25
+				Frame 1026
+				Value 21.4691792
+				RHandle_dX 0.333333343
+				RHandle_dY 0.755788147
+				LHandle_dX -0.333333343
+				LHandle_dY -0.755788147
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 26
+				Frame 1027
+				Value 24.6020527
+				RHandle_dX 0.333333343
+				RHandle_dY 1.18947351
+				LHandle_dX -0.333333343
+				LHandle_dY -1.18947351
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 27
+				Frame 1028
+				Value 28.60602
+				RHandle_dX 0.333333343
+				RHandle_dY 1.34032154
+				LHandle_dX -0.333333343
+				LHandle_dY -1.34032154
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 28
+				Frame 1029
+				Value 32.6439819
+				RHandle_dX 0.333333343
+				RHandle_dY 1.30115736
+				LHandle_dX -0.333333343
+				LHandle_dY -1.30115736
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 29
+				Frame 1030
+				Value 36.4129639
+				RHandle_dX 0.333333343
+				RHandle_dY 0.994975388
+				LHandle_dX -0.333333343
+				LHandle_dY -0.994975388
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 30
+				Frame 1031
+				Value 38.6138344
+				RHandle_dX 0.333333343
+				RHandle_dY 0.625987351
+				LHandle_dX -0.333333343
+				LHandle_dY -0.625987351
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 31
+				Frame 1032
+				Value 40.1688881
+				RHandle_dX 0.333333343
+				RHandle_dY 0.477905273
+				LHandle_dX -0.333333343
+				LHandle_dY -0.477905273
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 32
+				Frame 1033
+				Value 41.481266
+				RHandle_dX 0.333333343
+				RHandle_dY 0.327799469
+				LHandle_dX -0.333333343
+				LHandle_dY -0.327799469
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 33
+				Frame 1034
+				Value 42.135685
+				RHandle_dX 0.333333343
+				RHandle_dY 0.187967941
+				LHandle_dX -0.333333343
+				LHandle_dY -0.187967941
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 34
+				Frame 1035
+				Value 42.6090736
+				RHandle_dX 0.333333343
+				RHandle_dY 0.183430985
+				LHandle_dX -0.333333343
+				LHandle_dY -0.183430985
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 35
+				Frame 1036
+				Value 43.2362709
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0535685234
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0535685234
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 36
+				Frame 1037
+				Value 42.9304848
+				RHandle_dX 0.333333343
+				RHandle_dY -0.197723389
+				LHandle_dX -0.333333343
+				LHandle_dY 0.197723389
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 37
+				Frame 1038
+				Value 42.0499306
+				RHandle_dX 0.333333343
+				RHandle_dY -0.327880859
+				LHandle_dX -0.333333343
+				LHandle_dY 0.327880859
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 38
+				Frame 1039
+				Value 40.9631996
+				RHandle_dX 0.333333343
+				RHandle_dY -0.642039001
+				LHandle_dX -0.333333343
+				LHandle_dY 0.642039001
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 39
+				Frame 1040
+				Value 38.1976967
+				RHandle_dX 0.333333343
+				RHandle_dY -1.04630601
+				LHandle_dX -0.333333343
+				LHandle_dY 1.04630601
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 40
+				Frame 1041
+				Value 34.6853638
+				RHandle_dX 0.333333343
+				RHandle_dY -0.924723923
+				LHandle_dX -0.333333343
+				LHandle_dY 0.924723923
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 41
+				Frame 1042
+				Value 32.649353
+				RHandle_dX 0.333333343
+				RHandle_dY -0.311747223
+				LHandle_dX -0.333333343
+				LHandle_dY 0.311747223
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 42
+				Frame 1043
+				Value 32.8148804
+				RHandle_dX 0.333333343
+				RHandle_dY 0.240376785
+				LHandle_dX -0.333333343
+				LHandle_dY -0.240376785
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 43
+				Frame 1044
+				Value 34.0916138
+				RHandle_dX 0.333333343
+				RHandle_dY 0.244486496
+				LHandle_dX -0.333333343
+				LHandle_dY -0.244486496
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 44
+				Frame 1045
+				Value 34.2817993
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0833333358
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0833333358
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 45
+				Frame 1046
+				Value 33.5916138
+				RHandle_dX 0.333333343
+				RHandle_dY -0.371419281
+				LHandle_dX -0.333333343
+				LHandle_dY 0.371419281
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 46
+				Frame 1047
+				Value 32.0532837
+				RHandle_dX 0.333333343
+				RHandle_dY -0.44844532
+				LHandle_dX -0.333333343
+				LHandle_dY 0.44844532
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 47
+				Frame 1048
+				Value 30.9009418
+				RHandle_dX 0.333333343
+				RHandle_dY -0.348612159
+				LHandle_dX -0.333333343
+				LHandle_dY 0.348612159
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 48
+				Frame 1049
+				Value 29.9616108
+				RHandle_dX 0.333333343
+				RHandle_dY -0.334065765
+				LHandle_dX -0.333333343
+				LHandle_dY 0.334065765
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 49
+				Frame 1050
+				Value 28.8965473
+				RHandle_dX 0.333333343
+				RHandle_dY -0.347269684
+				LHandle_dX -0.333333343
+				LHandle_dY 0.347269684
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 50
+				Frame 1051
+				Value 27.8779926
+				RHandle_dX 0.333333343
+				RHandle_dY -0.179972336
+				LHandle_dX -0.333333343
+				LHandle_dY 0.179972336
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 51
+				Frame 1052
+				Value 27.8167133
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0250854492
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0250854492
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 52
+				Frame 1053
+				Value 27.7274799
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0234069824
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0234069824
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 53
+				Frame 1054
+				Value 27.6762714
+				RHandle_dX 0.333333343
+				RHandle_dY -0.00897216797
+				LHandle_dX -0.333333343
+				LHandle_dY 0.00897216797
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 54
+				Frame 1055
+				Value 27.6736469
+				RHandle_dX 0.333333343
+				RHandle_dY 0.155751541
+				LHandle_dX -0.333333343
+				LHandle_dY -0.155751541
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 55
+				Frame 1056
+				Value 28.6107807
+				RHandle_dX 0.333333343
+				RHandle_dY 0.14753215
+				LHandle_dX -0.333333343
+				LHandle_dY -0.14753215
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 56
+				Frame 1057
+				Value 28.5588398
+				RHandle_dX 0.333333343
+				RHandle_dY -0.178161621
+				LHandle_dX -0.333333343
+				LHandle_dY 0.178161621
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 57
+				Frame 1058
+				Value 27.541811
+				RHandle_dX 0.333333343
+				RHandle_dY -0.261454254
+				LHandle_dX -0.333333343
+				LHandle_dY 0.261454254
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 58
+				Frame 1059
+				Value 26.9901142
+				RHandle_dX 0.333333343
+				RHandle_dY -0.222696945
+				LHandle_dX -0.333333343
+				LHandle_dY 0.222696945
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 59
+				Frame 1060
+				Value 26.2056293
+				RHandle_dX 0.333333343
+				RHandle_dY -0.141591385
+				LHandle_dX -0.333333343
+				LHandle_dY 0.141591385
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 60
+				Frame 1061
+				Value 26.1405659
+				RHandle_dX 0.333333343
+				RHandle_dY 0.000956217467
+				LHandle_dX -0.333333343
+				LHandle_dY -0.000956217467
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 61
+				Frame 1062
+				Value 26.2113667
+				RHandle_dX 0.333333343
+				RHandle_dY 0.016642252
+				LHandle_dX -0.333333343
+				LHandle_dY -0.016642252
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 62
+				Frame 1063
+				Value 26.2404194
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0282897949
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0282897949
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 63
+				Frame 1064
+				Value 26.3811054
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0220947266
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0220947266
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 64
+				Frame 1065
+				Value 26.3729877
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0105895996
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0105895996
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 65
+				Frame 1066
+				Value 26.444643
+				RHandle_dX 0.333333343
+				RHandle_dY 0.1688741
+				LHandle_dX -0.333333343
+				LHandle_dY -0.1688741
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 66
+				Frame 1067
+				Value 27.3862324
+				RHandle_dX 0.333333343
+				RHandle_dY 0.141988114
+				LHandle_dX -0.333333343
+				LHandle_dY -0.141988114
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 67
+				Frame 1068
+				Value 27.2965717
+				RHandle_dX 0.333333343
+				RHandle_dY -0.155893967
+				LHandle_dX -0.333333343
+				LHandle_dY 0.155893967
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 68
+				Frame 1069
+				Value 26.4508686
+				RHandle_dX 0.333333343
+				RHandle_dY -0.275695801
+				LHandle_dX -0.333333343
+				LHandle_dY 0.275695801
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 69
+				Frame 1070
+				Value 25.6423969
+				RHandle_dX 0.333333343
+				RHandle_dY -0.146158859
+				LHandle_dX -0.333333343
+				LHandle_dY 0.146158859
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 70
+				Frame 1071
+				Value 25.5739155
+				RHandle_dX 0.333333343
+				RHandle_dY -0.000834147155
+				LHandle_dX -0.333333343
+				LHandle_dY 0.000834147155
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 71
+				Frame 1072
+				Value 25.637392
+				RHandle_dX 0.333333343
+				RHandle_dY 0.167978927
+				LHandle_dX -0.333333343
+				LHandle_dY -0.167978927
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 72
+				Frame 1073
+				Value 26.581789
+				RHandle_dX 0.333333343
+				RHandle_dY 0.188415527
+				LHandle_dX -0.333333343
+				LHandle_dY -0.188415527
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 73
+				Frame 1074
+				Value 26.7678852
+				RHandle_dX 0.333333343
+				RHandle_dY 0.169891357
+				LHandle_dX -0.333333343
+				LHandle_dY -0.169891357
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 74
+				Frame 1075
+				Value 27.6011372
+				RHandle_dX 0.333333343
+				RHandle_dY 0.166595459
+				LHandle_dX -0.333333343
+				LHandle_dY -0.166595459
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 75
+				Frame 1076
+				Value 27.767458
+				RHandle_dX 0.333333343
+				RHandle_dY 0.00087483722
+				LHandle_dX -0.333333343
+				LHandle_dY -0.00087483722
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 76
+				Frame 1077
+				Value 27.6063862
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0496520996
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0496520996
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 77
+				Frame 1078
+				Value 27.4695454
+				RHandle_dX 0.333333343
+				RHandle_dY -0.193125412
+				LHandle_dX -0.333333343
+				LHandle_dY 0.193125412
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 78
+				Frame 1079
+				Value 26.4476337
+				RHandle_dX 0.333333343
+				RHandle_dY -0.645202637
+				LHandle_dX -0.333333343
+				LHandle_dY 0.645202637
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 79
+				Frame 1080
+				Value 23.5983295
+				RHandle_dX 0.333333343
+				RHandle_dY -1.22028601
+				LHandle_dX -0.333333343
+				LHandle_dY 1.22028601
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 80
+				Frame 1081
+				Value 19.1259174
+				RHandle_dX 0.333333343
+				RHandle_dY -1.3329469
+				LHandle_dX -0.333333343
+				LHandle_dY 1.3329469
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 81
+				Frame 1082
+				Value 15.6006479
+				RHandle_dX 0.333333343
+				RHandle_dY -0.418406487
+				LHandle_dX -0.333333343
+				LHandle_dY 0.418406487
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 82
+				Frame 1083
+				Value 16.6154785
+				RHandle_dX 0.333333343
+				RHandle_dY 0.843750179
+				LHandle_dX -0.333333343
+				LHandle_dY -0.843750179
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 83
+				Frame 1084
+				Value 20.6631489
+				RHandle_dX 0.333333343
+				RHandle_dY 1.1952213
+				LHandle_dX -0.333333343
+				LHandle_dY -1.1952213
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 84
+				Frame 1085
+				Value 23.7868061
+				RHandle_dX 0.333333343
+				RHandle_dY 0.805501282
+				LHandle_dX -0.333333343
+				LHandle_dY -0.805501282
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 85
+				Frame 1086
+				Value 25.4961567
+				RHandle_dX 0.333333343
+				RHandle_dY 0.473429352
+				LHandle_dX -0.333333343
+				LHandle_dY -0.473429352
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 86
+				Frame 1087
+				Value 26.6273823
+				RHandle_dX 0.333333343
+				RHandle_dY 0.337677002
+				LHandle_dX -0.333333343
+				LHandle_dY -0.337677002
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 87
+				Frame 1088
+				Value 27.5222187
+				RHandle_dX 0.333333343
+				RHandle_dY 0.418253571
+				LHandle_dX -0.333333343
+				LHandle_dY -0.418253571
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 88
+				Frame 1089
+				Value 29.1369038
+				RHandle_dX 0.333333343
+				RHandle_dY 0.295461029
+				LHandle_dX -0.333333343
+				LHandle_dY -0.295461029
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 89
+				Frame 1090
+				Value 29.2949848
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel scaling/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel shearing/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/x
+			Extrapolation constant
+			Value -657.12738
+			Uncollapsed
+			End
+		Channel centre/y
+			Extrapolation constant
+			Value -847.960815
+			Uncollapsed
+			End
+		Channel centre/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/x
+			Extrapolation constant
+			Value -913.559326
+			Size 90
+			KeyVersion 2
+			Key 0
+				Frame 1001
+				Value -657.127319
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 1002
+				Value -656.047607
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0054117837
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0054117837
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 2
+				Frame 1003
+				Value -657.094849
+				RHandle_dX 0.333333343
+				RHandle_dY -0.821919739
+				LHandle_dX -0.333333343
+				LHandle_dY 0.821919739
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 3
+				Frame 1004
+				Value -660.979126
+				RHandle_dX 0.333333343
+				RHandle_dY -1.34655762
+				LHandle_dX -0.333333343
+				LHandle_dY 1.34655762
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 4
+				Frame 1005
+				Value -665.174194
+				RHandle_dX 0.333333343
+				RHandle_dY -0.791666687
+				LHandle_dX -0.333333343
+				LHandle_dY 0.791666687
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 5
+				Frame 1006
+				Value -665.729126
+				RHandle_dX 0.333333343
+				RHandle_dY 0.491923004
+				LHandle_dX -0.333333343
+				LHandle_dY -0.491923004
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 6
+				Frame 1007
+				Value -662.222656
+				RHandle_dX 0.333333343
+				RHandle_dY 1.3700968
+				LHandle_dX -0.333333343
+				LHandle_dY -1.3700968
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 7
+				Frame 1008
+				Value -657.508545
+				RHandle_dX 0.333333343
+				RHandle_dY 1.15350342
+				LHandle_dX -0.333333343
+				LHandle_dY -1.15350342
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 8
+				Frame 1009
+				Value -655.301636
+				RHandle_dX 0.333333343
+				RHandle_dY -0.173522949
+				LHandle_dX -0.333333343
+				LHandle_dY 0.173522949
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 9
+				Frame 1010
+				Value -658.549683
+				RHandle_dX 0.333333343
+				RHandle_dY -2.35980225
+				LHandle_dX -0.333333343
+				LHandle_dY 2.35980225
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 10
+				Frame 1011
+				Value -669.460449
+				RHandle_dX 0.333333343
+				RHandle_dY -4.18648291
+				LHandle_dX -0.333333343
+				LHandle_dY 4.18648291
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 11
+				Frame 1012
+				Value -683.668579
+				RHandle_dX 0.333333343
+				RHandle_dY -4.40753174
+				LHandle_dX -0.333333343
+				LHandle_dY 4.40753174
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 12
+				Frame 1013
+				Value -695.90564
+				RHandle_dX 0.333333343
+				RHandle_dY -3.640625
+				LHandle_dX -0.333333343
+				LHandle_dY 3.640625
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 13
+				Frame 1014
+				Value -705.512329
+				RHandle_dX 0.333333343
+				RHandle_dY -3.63865161
+				LHandle_dX -0.333333343
+				LHandle_dY 3.63865161
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 14
+				Frame 1015
+				Value -717.737549
+				RHandle_dX 0.333333343
+				RHandle_dY -4.24422216
+				LHandle_dX -0.333333343
+				LHandle_dY 4.24422216
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 15
+				Frame 1016
+				Value -730.977661
+				RHandle_dX 0.333333343
+				RHandle_dY -4.52311182
+				LHandle_dX -0.333333343
+				LHandle_dY 4.52311182
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 16
+				Frame 1017
+				Value -744.876221
+				RHandle_dX 0.333333343
+				RHandle_dY -4.5246377
+				LHandle_dX -0.333333343
+				LHandle_dY 4.5246377
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 17
+				Frame 1018
+				Value -758.125488
+				RHandle_dX 0.333333343
+				RHandle_dY -3.99308276
+				LHandle_dX -0.333333343
+				LHandle_dY 3.99308276
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 18
+				Frame 1019
+				Value -768.834717
+				RHandle_dX 0.333333343
+				RHandle_dY -3.52496338
+				LHandle_dX -0.333333343
+				LHandle_dY 3.52496338
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 19
+				Frame 1020
+				Value -779.275269
+				RHandle_dX 0.333333343
+				RHandle_dY -3.72387695
+				LHandle_dX -0.333333343
+				LHandle_dY 3.72387695
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 20
+				Frame 1021
+				Value -791.177979
+				RHandle_dX 0.333333343
+				RHandle_dY -4.5378418
+				LHandle_dX -0.333333343
+				LHandle_dY 4.5378418
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 21
+				Frame 1022
+				Value -806.502319
+				RHandle_dX 0.333333343
+				RHandle_dY -5.27093506
+				LHandle_dX -0.333333343
+				LHandle_dY 5.27093506
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 22
+				Frame 1023
+				Value -822.803589
+				RHandle_dX 0.333333343
+				RHandle_dY -5.39925146
+				LHandle_dX -0.333333343
+				LHandle_dY 5.39925146
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 23
+				Frame 1024
+				Value -838.897827
+				RHandle_dX 0.333333343
+				RHandle_dY -5.16859961
+				LHandle_dX -0.333333343
+				LHandle_dY 5.16859961
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 24
+				Frame 1025
+				Value -853.815186
+				RHandle_dX 0.333333343
+				RHandle_dY -4.81221533
+				LHandle_dX -0.333333343
+				LHandle_dY 4.81221533
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 25
+				Frame 1026
+				Value -867.771118
+				RHandle_dX 0.333333343
+				RHandle_dY -4.31774902
+				LHandle_dX -0.333333343
+				LHandle_dY 4.31774902
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 26
+				Frame 1027
+				Value -879.72168
+				RHandle_dX 0.333333343
+				RHandle_dY -3.8839519
+				LHandle_dX -0.333333343
+				LHandle_dY 3.8839519
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 27
+				Frame 1028
+				Value -891.074829
+				RHandle_dX 0.333333343
+				RHandle_dY -3.49564624
+				LHandle_dX -0.333333343
+				LHandle_dY 3.49564624
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 28
+				Frame 1029
+				Value -900.695557
+				RHandle_dX 0.333333343
+				RHandle_dY -3.08992505
+				LHandle_dX -0.333333343
+				LHandle_dY 3.08992505
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 29
+				Frame 1030
+				Value -909.61438
+				RHandle_dX 0.333333343
+				RHandle_dY -2.81854248
+				LHandle_dX -0.333333343
+				LHandle_dY 2.81854248
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 30
+				Frame 1031
+				Value -917.606812
+				RHandle_dX 0.333333343
+				RHandle_dY -2.40539551
+				LHandle_dX -0.333333343
+				LHandle_dY 2.40539551
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 31
+				Frame 1032
+				Value -924.046753
+				RHandle_dX 0.333333343
+				RHandle_dY -1.81667078
+				LHandle_dX -0.333333343
+				LHandle_dY 1.81667078
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 32
+				Frame 1033
+				Value -928.506836
+				RHandle_dX 0.333333343
+				RHandle_dY -0.973510742
+				LHandle_dX -0.333333343
+				LHandle_dY 0.973510742
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 33
+				Frame 1034
+				Value -929.887817
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0422566719
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0422566719
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 34
+				Frame 1035
+				Value -928.760376
+				RHandle_dX 0.333333343
+				RHandle_dY 0.62677002
+				LHandle_dX -0.333333343
+				LHandle_dY -0.62677002
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 35
+				Frame 1036
+				Value -926.127197
+				RHandle_dX 0.333333343
+				RHandle_dY 0.922953308
+				LHandle_dX -0.333333343
+				LHandle_dY -0.922953308
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 36
+				Frame 1037
+				Value -923.222656
+				RHandle_dX 0.333333343
+				RHandle_dY 0.822550476
+				LHandle_dX -0.333333343
+				LHandle_dY -0.822550476
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 37
+				Frame 1038
+				Value -921.191895
+				RHandle_dX 0.333333343
+				RHandle_dY 0.514587402
+				LHandle_dX -0.333333343
+				LHandle_dY -0.514587402
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 38
+				Frame 1039
+				Value -920.135132
+				RHandle_dX 0.333333343
+				RHandle_dY 0.352437347
+				LHandle_dX -0.333333343
+				LHandle_dY -0.352437347
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 39
+				Frame 1040
+				Value -919.077271
+				RHandle_dX 0.333333343
+				RHandle_dY 0.513956726
+				LHandle_dX -0.333333343
+				LHandle_dY -0.513956726
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 40
+				Frame 1041
+				Value -917.051392
+				RHandle_dX 0.333333343
+				RHandle_dY 0.443827301
+				LHandle_dX -0.333333343
+				LHandle_dY -0.443827301
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 41
+				Frame 1042
+				Value -916.414307
+				RHandle_dX 0.333333343
+				RHandle_dY -0.100850426
+				LHandle_dX -0.333333343
+				LHandle_dY 0.100850426
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 42
+				Frame 1043
+				Value -917.656494
+				RHandle_dX 0.333333343
+				RHandle_dY -0.69925946
+				LHandle_dX -0.333333343
+				LHandle_dY 0.69925946
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 43
+				Frame 1044
+				Value -920.609863
+				RHandle_dX 0.333333343
+				RHandle_dY -1.16040039
+				LHandle_dX -0.333333343
+				LHandle_dY 1.16040039
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 44
+				Frame 1045
+				Value -924.618896
+				RHandle_dX 0.333333343
+				RHandle_dY -1.17962646
+				LHandle_dX -0.333333343
+				LHandle_dY 1.17962646
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 45
+				Frame 1046
+				Value -927.687622
+				RHandle_dX 0.333333343
+				RHandle_dY -0.403747559
+				LHandle_dX -0.333333343
+				LHandle_dY 0.403747559
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 46
+				Frame 1047
+				Value -927.041382
+				RHandle_dX 0.333333343
+				RHandle_dY 0.595743835
+				LHandle_dX -0.333333343
+				LHandle_dY -0.595743835
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 47
+				Frame 1048
+				Value -924.113159
+				RHandle_dX 0.333333343
+				RHandle_dY 0.999104798
+				LHandle_dX -0.333333343
+				LHandle_dY -0.999104798
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 48
+				Frame 1049
+				Value -921.046753
+				RHandle_dX 0.333333343
+				RHandle_dY 0.794331849
+				LHandle_dX -0.333333343
+				LHandle_dY -0.794331849
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 49
+				Frame 1050
+				Value -919.347168
+				RHandle_dX 0.333333343
+				RHandle_dY 0.375712067
+				LHandle_dX -0.333333343
+				LHandle_dY -0.375712067
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 50
+				Frame 1051
+				Value -918.79248
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0799764022
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0799764022
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 51
+				Frame 1052
+				Value -918.86731
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0872802734
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0872802734
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 52
+				Frame 1053
+				Value -919.316162
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0718180314
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0718180314
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 53
+				Frame 1054
+				Value -919.298218
+				RHandle_dX 0.333333343
+				RHandle_dY 0.18760173
+				LHandle_dX -0.333333343
+				LHandle_dY -0.18760173
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 54
+				Frame 1055
+				Value -918.190552
+				RHandle_dX 0.333333343
+				RHandle_dY 0.629984558
+				LHandle_dX -0.333333343
+				LHandle_dY -0.629984558
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 55
+				Frame 1056
+				Value -915.518311
+				RHandle_dX 0.333333343
+				RHandle_dY 0.771870911
+				LHandle_dX -0.333333343
+				LHandle_dY -0.771870911
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 56
+				Frame 1057
+				Value -913.559326
+				RHandle_dX 0.333333343
+				RHandle_dY 0.786743164
+				LHandle_dX -0.333333343
+				LHandle_dY -0.786743164
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 57
+				Frame 1058
+				Value -910.797852
+				RHandle_dX 0.333333343
+				RHandle_dY 0.866739929
+				LHandle_dX -0.333333343
+				LHandle_dY -0.866739929
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 58
+				Frame 1059
+				Value -908.358887
+				RHandle_dX 0.333333343
+				RHandle_dY 0.990030944
+				LHandle_dX -0.333333343
+				LHandle_dY -0.990030944
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 59
+				Frame 1060
+				Value -904.857666
+				RHandle_dX 0.333333343
+				RHandle_dY 1.14310706
+				LHandle_dX -0.333333343
+				LHandle_dY -1.14310706
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 60
+				Frame 1061
+				Value -901.500244
+				RHandle_dX 0.333333343
+				RHandle_dY 1.33455408
+				LHandle_dX -0.333333343
+				LHandle_dY -1.33455408
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 61
+				Frame 1062
+				Value -896.850342
+				RHandle_dX 0.333333343
+				RHandle_dY 1.6133219
+				LHandle_dX -0.333333343
+				LHandle_dY -1.6133219
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 62
+				Frame 1063
+				Value -891.820312
+				RHandle_dX 0.333333343
+				RHandle_dY 1.63562012
+				LHandle_dX -0.333333343
+				LHandle_dY -1.63562012
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 63
+				Frame 1064
+				Value -887.036621
+				RHandle_dX 0.333333343
+				RHandle_dY 1.27817786
+				LHandle_dX -0.333333343
+				LHandle_dY -1.27817786
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 64
+				Frame 1065
+				Value -884.151245
+				RHandle_dX 0.333333343
+				RHandle_dY 0.797281921
+				LHandle_dX -0.333333343
+				LHandle_dY -0.797281921
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 65
+				Frame 1066
+				Value -882.25293
+				RHandle_dX 0.333333343
+				RHandle_dY 0.64046222
+				LHandle_dX -0.333333343
+				LHandle_dY -0.64046222
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 66
+				Frame 1067
+				Value -880.308472
+				RHandle_dX 0.333333343
+				RHandle_dY 0.64634198
+				LHandle_dX -0.333333343
+				LHandle_dY -0.64634198
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 67
+				Frame 1068
+				Value -878.374878
+				RHandle_dX 0.333333343
+				RHandle_dY 0.646728516
+				LHandle_dX -0.333333343
+				LHandle_dY -0.646728516
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 68
+				Frame 1069
+				Value -876.428101
+				RHandle_dX 0.333333343
+				RHandle_dY 0.654683411
+				LHandle_dX -0.333333343
+				LHandle_dY -0.654683411
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 69
+				Frame 1070
+				Value -874.446777
+				RHandle_dX 0.333333343
+				RHandle_dY 0.659484863
+				LHandle_dX -0.333333343
+				LHandle_dY -0.659484863
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 70
+				Frame 1071
+				Value -872.471191
+				RHandle_dX 0.333333343
+				RHandle_dY 0.648050964
+				LHandle_dX -0.333333343
+				LHandle_dY -0.648050964
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 71
+				Frame 1072
+				Value -870.558472
+				RHandle_dX 0.333333343
+				RHandle_dY 0.500101745
+				LHandle_dX -0.333333343
+				LHandle_dY -0.500101745
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 72
+				Frame 1073
+				Value -869.470581
+				RHandle_dX 0.333333343
+				RHandle_dY 0.350179046
+				LHandle_dX -0.333333343
+				LHandle_dY -0.350179046
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 73
+				Frame 1074
+				Value -868.457397
+				RHandle_dX 0.333333343
+				RHandle_dY 0.329467773
+				LHandle_dX -0.333333343
+				LHandle_dY -0.329467773
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 74
+				Frame 1075
+				Value -867.493774
+				RHandle_dX 0.333333343
+				RHandle_dY 0.197937012
+				LHandle_dX -0.333333343
+				LHandle_dY -0.197937012
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 75
+				Frame 1076
+				Value -867.269775
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0706583634
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0706583634
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 76
+				Frame 1077
+				Value -867.069824
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0267130528
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0267130528
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 77
+				Frame 1078
+				Value -867.109497
+				RHandle_dX 0.333333343
+				RHandle_dY 0.172098801
+				LHandle_dX -0.333333343
+				LHandle_dY -0.172098801
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 78
+				Frame 1079
+				Value -866.037231
+				RHandle_dX 0.333333343
+				RHandle_dY 0.783711731
+				LHandle_dX -0.333333343
+				LHandle_dY -0.783711731
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 79
+				Frame 1080
+				Value -862.407227
+				RHandle_dX 0.333333343
+				RHandle_dY 1.29927576
+				LHandle_dX -0.333333343
+				LHandle_dY -1.29927576
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 80
+				Frame 1081
+				Value -858.241577
+				RHandle_dX 0.333333343
+				RHandle_dY 1.49686682
+				LHandle_dX -0.333333343
+				LHandle_dY -1.49686682
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 81
+				Frame 1082
+				Value -853.426025
+				RHandle_dX 0.333333343
+				RHandle_dY 1.24023438
+				LHandle_dX -0.333333343
+				LHandle_dY -1.24023438
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 82
+				Frame 1083
+				Value -850.800171
+				RHandle_dX 0.333333343
+				RHandle_dY 0.243896484
+				LHandle_dX -0.333333343
+				LHandle_dY -0.243896484
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 83
+				Frame 1084
+				Value -851.962646
+				RHandle_dX 0.333333343
+				RHandle_dY -0.831502259
+				LHandle_dX -0.333333343
+				LHandle_dY 0.831502259
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 84
+				Frame 1085
+				Value -855.789185
+				RHandle_dX 0.333333343
+				RHandle_dY -1.18652344
+				LHandle_dX -0.333333343
+				LHandle_dY 1.18652344
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 85
+				Frame 1086
+				Value -859.081787
+				RHandle_dX 0.333333343
+				RHandle_dY -0.797790527
+				LHandle_dX -0.333333343
+				LHandle_dY 0.797790527
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 86
+				Frame 1087
+				Value -860.575928
+				RHandle_dX 0.333333343
+				RHandle_dY -0.228413895
+				LHandle_dX -0.333333343
+				LHandle_dY 0.228413895
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 87
+				Frame 1088
+				Value -860.452271
+				RHandle_dX 0.333333343
+				RHandle_dY 0.154703781
+				LHandle_dX -0.333333343
+				LHandle_dY -0.154703781
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 88
+				Frame 1089
+				Value -859.647705
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0816650391
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0816650391
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 89
+				Frame 1090
+				Value -859.96228
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel referencePosition/y
+			Extrapolation constant
+			Value -819.401917
+			Size 90
+			KeyVersion 2
+			Key 0
+				Frame 1001
+				Value -847.960754
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 1002
+				Value -851.20752
+				RHandle_dX 0.333333343
+				RHandle_dY -1.27464807
+				LHandle_dX -0.333333343
+				LHandle_dY 1.27464807
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 2
+				Frame 1003
+				Value -855.608643
+				RHandle_dX 0.333333343
+				RHandle_dY -1.2281698
+				LHandle_dX -0.333333343
+				LHandle_dY 1.2281698
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 3
+				Frame 1004
+				Value -858.576538
+				RHandle_dX 0.333333343
+				RHandle_dY -0.843556702
+				LHandle_dX -0.333333343
+				LHandle_dY 0.843556702
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 4
+				Frame 1005
+				Value -860.669983
+				RHandle_dX 0.333333343
+				RHandle_dY -0.394246429
+				LHandle_dX -0.333333343
+				LHandle_dY 0.394246429
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 5
+				Frame 1006
+				Value -860.942017
+				RHandle_dX 0.333333343
+				RHandle_dY -0.197214767
+				LHandle_dX -0.333333343
+				LHandle_dY 0.197214767
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 6
+				Frame 1007
+				Value -861.853271
+				RHandle_dX 0.333333343
+				RHandle_dY -0.374125153
+				LHandle_dX -0.333333343
+				LHandle_dY 0.374125153
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 7
+				Frame 1008
+				Value -863.186768
+				RHandle_dX 0.333333343
+				RHandle_dY -0.585113525
+				LHandle_dX -0.333333343
+				LHandle_dY 0.585113525
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 8
+				Frame 1009
+				Value -865.363953
+				RHandle_dX 0.333333343
+				RHandle_dY -0.842936218
+				LHandle_dX -0.333333343
+				LHandle_dY 0.842936218
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 9
+				Frame 1010
+				Value -868.244385
+				RHandle_dX 0.333333343
+				RHandle_dY -0.464894623
+				LHandle_dX -0.333333343
+				LHandle_dY 0.464894623
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 10
+				Frame 1011
+				Value -868.15332
+				RHandle_dX 0.333333343
+				RHandle_dY 0.518463135
+				LHandle_dX -0.333333343
+				LHandle_dY -0.518463135
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 11
+				Frame 1012
+				Value -865.133606
+				RHandle_dX 0.333333343
+				RHandle_dY 1.03428137
+				LHandle_dX -0.333333343
+				LHandle_dY -1.03428137
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 12
+				Frame 1013
+				Value -861.947632
+				RHandle_dX 0.333333343
+				RHandle_dY 1.14572144
+				LHandle_dX -0.333333343
+				LHandle_dY -1.14572144
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 13
+				Frame 1014
+				Value -858.259277
+				RHandle_dX 0.333333343
+				RHandle_dY 1.05219519
+				LHandle_dX -0.333333343
+				LHandle_dY -1.05219519
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 14
+				Frame 1015
+				Value -855.63446
+				RHandle_dX 0.333333343
+				RHandle_dY 0.614939392
+				LHandle_dX -0.333333343
+				LHandle_dY -0.614939392
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 15
+				Frame 1016
+				Value -854.569641
+				RHandle_dX 0.333333343
+				RHandle_dY 0.297159821
+				LHandle_dX -0.333333343
+				LHandle_dY -0.297159821
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 16
+				Frame 1017
+				Value -853.851501
+				RHandle_dX 0.333333343
+				RHandle_dY 0.380584717
+				LHandle_dX -0.333333343
+				LHandle_dY -0.380584717
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 17
+				Frame 1018
+				Value -852.286133
+				RHandle_dX 0.333333343
+				RHandle_dY 0.840494812
+				LHandle_dX -0.333333343
+				LHandle_dY -0.840494812
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 18
+				Frame 1019
+				Value -848.808533
+				RHandle_dX 0.333333343
+				RHandle_dY 1.6479696
+				LHandle_dX -0.333333343
+				LHandle_dY -1.6479696
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 19
+				Frame 1020
+				Value -842.398315
+				RHandle_dX 0.333333343
+				RHandle_dY 2.1285603
+				LHandle_dX -0.333333343
+				LHandle_dY -2.1285603
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 20
+				Frame 1021
+				Value -836.03717
+				RHandle_dX 0.333333343
+				RHandle_dY 1.75741577
+				LHandle_dX -0.333333343
+				LHandle_dY -1.75741577
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 21
+				Frame 1022
+				Value -831.853821
+				RHandle_dX 0.333333343
+				RHandle_dY 1.03160608
+				LHandle_dX -0.333333343
+				LHandle_dY -1.03160608
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 22
+				Frame 1023
+				Value -829.847534
+				RHandle_dX 0.333333343
+				RHandle_dY 0.504425049
+				LHandle_dX -0.333333343
+				LHandle_dY -0.504425049
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 23
+				Frame 1024
+				Value -828.827271
+				RHandle_dX 0.333333343
+				RHandle_dY 0.325683594
+				LHandle_dX -0.333333343
+				LHandle_dY -0.325683594
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 24
+				Frame 1025
+				Value -827.893433
+				RHandle_dX 0.333333343
+				RHandle_dY 0.389282227
+				LHandle_dX -0.333333343
+				LHandle_dY -0.389282227
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 25
+				Frame 1026
+				Value -826.491577
+				RHandle_dX 0.333333343
+				RHandle_dY 0.755788147
+				LHandle_dX -0.333333343
+				LHandle_dY -0.755788147
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 26
+				Frame 1027
+				Value -823.358704
+				RHandle_dX 0.333333343
+				RHandle_dY 1.18947351
+				LHandle_dX -0.333333343
+				LHandle_dY -1.18947351
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 27
+				Frame 1028
+				Value -819.354736
+				RHandle_dX 0.333333343
+				RHandle_dY 1.3403219
+				LHandle_dX -0.333333343
+				LHandle_dY -1.3403219
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 28
+				Frame 1029
+				Value -815.316772
+				RHandle_dX 0.333333343
+				RHandle_dY 1.30115759
+				LHandle_dX -0.333333343
+				LHandle_dY -1.30115759
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 29
+				Frame 1030
+				Value -811.547791
+				RHandle_dX 0.333333343
+				RHandle_dY 0.994974792
+				LHandle_dX -0.333333343
+				LHandle_dY -0.994974792
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 30
+				Frame 1031
+				Value -809.346924
+				RHandle_dX 0.333333343
+				RHandle_dY 0.625986755
+				LHandle_dX -0.333333343
+				LHandle_dY -0.625986755
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 31
+				Frame 1032
+				Value -807.79187
+				RHandle_dX 0.333333343
+				RHandle_dY 0.477905273
+				LHandle_dX -0.333333343
+				LHandle_dY -0.477905273
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 32
+				Frame 1033
+				Value -806.479492
+				RHandle_dX 0.333333343
+				RHandle_dY 0.327799469
+				LHandle_dX -0.333333343
+				LHandle_dY -0.327799469
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 33
+				Frame 1034
+				Value -805.825073
+				RHandle_dX 0.333333343
+				RHandle_dY 0.187967941
+				LHandle_dX -0.333333343
+				LHandle_dY -0.187967941
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 34
+				Frame 1035
+				Value -805.351685
+				RHandle_dX 0.333333343
+				RHandle_dY 0.183430985
+				LHandle_dX -0.333333343
+				LHandle_dY -0.183430985
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 35
+				Frame 1036
+				Value -804.724487
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0535685234
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0535685234
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 36
+				Frame 1037
+				Value -805.030273
+				RHandle_dX 0.333333343
+				RHandle_dY -0.197723389
+				LHandle_dX -0.333333343
+				LHandle_dY 0.197723389
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 37
+				Frame 1038
+				Value -805.910828
+				RHandle_dX 0.333333343
+				RHandle_dY -0.327880859
+				LHandle_dX -0.333333343
+				LHandle_dY 0.327880859
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 38
+				Frame 1039
+				Value -806.997559
+				RHandle_dX 0.333333343
+				RHandle_dY -0.642039001
+				LHandle_dX -0.333333343
+				LHandle_dY 0.642039001
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 39
+				Frame 1040
+				Value -809.763062
+				RHandle_dX 0.333333343
+				RHandle_dY -1.0463053
+				LHandle_dX -0.333333343
+				LHandle_dY 1.0463053
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 40
+				Frame 1041
+				Value -813.275391
+				RHandle_dX 0.333333343
+				RHandle_dY -0.924723327
+				LHandle_dX -0.333333343
+				LHandle_dY 0.924723327
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 41
+				Frame 1042
+				Value -815.311401
+				RHandle_dX 0.333333343
+				RHandle_dY -0.311747223
+				LHandle_dX -0.333333343
+				LHandle_dY 0.311747223
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 42
+				Frame 1043
+				Value -815.145874
+				RHandle_dX 0.333333343
+				RHandle_dY 0.240376785
+				LHandle_dX -0.333333343
+				LHandle_dY -0.240376785
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 43
+				Frame 1044
+				Value -813.869141
+				RHandle_dX 0.333333343
+				RHandle_dY 0.244486496
+				LHandle_dX -0.333333343
+				LHandle_dY -0.244486496
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 44
+				Frame 1045
+				Value -813.678955
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0833333358
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0833333358
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 45
+				Frame 1046
+				Value -814.369141
+				RHandle_dX 0.333333343
+				RHandle_dY -0.371419281
+				LHandle_dX -0.333333343
+				LHandle_dY 0.371419281
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 46
+				Frame 1047
+				Value -815.907471
+				RHandle_dX 0.333333343
+				RHandle_dY -0.448445648
+				LHandle_dX -0.333333343
+				LHandle_dY 0.448445648
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 47
+				Frame 1048
+				Value -817.059814
+				RHandle_dX 0.333333343
+				RHandle_dY -0.348612458
+				LHandle_dX -0.333333343
+				LHandle_dY 0.348612458
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 48
+				Frame 1049
+				Value -817.999146
+				RHandle_dX 0.333333343
+				RHandle_dY -0.334065765
+				LHandle_dX -0.333333343
+				LHandle_dY 0.334065765
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 49
+				Frame 1050
+				Value -819.064209
+				RHandle_dX 0.333333343
+				RHandle_dY -0.347269684
+				LHandle_dX -0.333333343
+				LHandle_dY 0.347269684
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 50
+				Frame 1051
+				Value -820.082764
+				RHandle_dX 0.333333343
+				RHandle_dY -0.179972336
+				LHandle_dX -0.333333343
+				LHandle_dY 0.179972336
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 51
+				Frame 1052
+				Value -820.144043
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0250854492
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0250854492
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 52
+				Frame 1053
+				Value -820.233276
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0234069824
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0234069824
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 53
+				Frame 1054
+				Value -820.284485
+				RHandle_dX 0.333333343
+				RHandle_dY -0.00897216797
+				LHandle_dX -0.333333343
+				LHandle_dY 0.00897216797
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 54
+				Frame 1055
+				Value -820.287109
+				RHandle_dX 0.333333343
+				RHandle_dY 0.155751541
+				LHandle_dX -0.333333343
+				LHandle_dY -0.155751541
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 55
+				Frame 1056
+				Value -819.349976
+				RHandle_dX 0.333333343
+				RHandle_dY 0.14753215
+				LHandle_dX -0.333333343
+				LHandle_dY -0.14753215
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 56
+				Frame 1057
+				Value -819.401917
+				RHandle_dX 0.333333343
+				RHandle_dY -0.178161621
+				LHandle_dX -0.333333343
+				LHandle_dY 0.178161621
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 57
+				Frame 1058
+				Value -820.418945
+				RHandle_dX 0.333333343
+				RHandle_dY -0.261454254
+				LHandle_dX -0.333333343
+				LHandle_dY 0.261454254
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 58
+				Frame 1059
+				Value -820.970642
+				RHandle_dX 0.333333343
+				RHandle_dY -0.222696945
+				LHandle_dX -0.333333343
+				LHandle_dY 0.222696945
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 59
+				Frame 1060
+				Value -821.755127
+				RHandle_dX 0.333333343
+				RHandle_dY -0.141591385
+				LHandle_dX -0.333333343
+				LHandle_dY 0.141591385
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 60
+				Frame 1061
+				Value -821.82019
+				RHandle_dX 0.333333343
+				RHandle_dY 0.000956217467
+				LHandle_dX -0.333333343
+				LHandle_dY -0.000956217467
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 61
+				Frame 1062
+				Value -821.74939
+				RHandle_dX 0.333333343
+				RHandle_dY 0.016642252
+				LHandle_dX -0.333333343
+				LHandle_dY -0.016642252
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 62
+				Frame 1063
+				Value -821.720337
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0282897949
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0282897949
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 63
+				Frame 1064
+				Value -821.579651
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0220947266
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0220947266
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 64
+				Frame 1065
+				Value -821.587769
+				RHandle_dX 0.333333343
+				RHandle_dY 0.0105895996
+				LHandle_dX -0.333333343
+				LHandle_dY -0.0105895996
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 65
+				Frame 1066
+				Value -821.516113
+				RHandle_dX 0.333333343
+				RHandle_dY 0.1688741
+				LHandle_dX -0.333333343
+				LHandle_dY -0.1688741
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 66
+				Frame 1067
+				Value -820.574524
+				RHandle_dX 0.333333343
+				RHandle_dY 0.141988114
+				LHandle_dX -0.333333343
+				LHandle_dY -0.141988114
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 67
+				Frame 1068
+				Value -820.664185
+				RHandle_dX 0.333333343
+				RHandle_dY -0.155893967
+				LHandle_dX -0.333333343
+				LHandle_dY 0.155893967
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 68
+				Frame 1069
+				Value -821.509888
+				RHandle_dX 0.333333343
+				RHandle_dY -0.275695801
+				LHandle_dX -0.333333343
+				LHandle_dY 0.275695801
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 69
+				Frame 1070
+				Value -822.318359
+				RHandle_dX 0.333333343
+				RHandle_dY -0.146158859
+				LHandle_dX -0.333333343
+				LHandle_dY 0.146158859
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 70
+				Frame 1071
+				Value -822.386841
+				RHandle_dX 0.333333343
+				RHandle_dY -0.000834147155
+				LHandle_dX -0.333333343
+				LHandle_dY 0.000834147155
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 71
+				Frame 1072
+				Value -822.323364
+				RHandle_dX 0.333333343
+				RHandle_dY 0.167978927
+				LHandle_dX -0.333333343
+				LHandle_dY -0.167978927
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 72
+				Frame 1073
+				Value -821.378967
+				RHandle_dX 0.333333343
+				RHandle_dY 0.188415527
+				LHandle_dX -0.333333343
+				LHandle_dY -0.188415527
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 73
+				Frame 1074
+				Value -821.192871
+				RHandle_dX 0.333333343
+				RHandle_dY 0.169891357
+				LHandle_dX -0.333333343
+				LHandle_dY -0.169891357
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 74
+				Frame 1075
+				Value -820.359619
+				RHandle_dX 0.333333343
+				RHandle_dY 0.166595459
+				LHandle_dX -0.333333343
+				LHandle_dY -0.166595459
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 75
+				Frame 1076
+				Value -820.193298
+				RHandle_dX 0.333333343
+				RHandle_dY 0.00087483722
+				LHandle_dX -0.333333343
+				LHandle_dY -0.00087483722
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 76
+				Frame 1077
+				Value -820.35437
+				RHandle_dX 0.333333343
+				RHandle_dY -0.0496520996
+				LHandle_dX -0.333333343
+				LHandle_dY 0.0496520996
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 77
+				Frame 1078
+				Value -820.491211
+				RHandle_dX 0.333333343
+				RHandle_dY -0.193125412
+				LHandle_dX -0.333333343
+				LHandle_dY 0.193125412
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 78
+				Frame 1079
+				Value -821.513123
+				RHandle_dX 0.333333343
+				RHandle_dY -0.645202637
+				LHandle_dX -0.333333343
+				LHandle_dY 0.645202637
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 79
+				Frame 1080
+				Value -824.362427
+				RHandle_dX 0.333333343
+				RHandle_dY -1.22028601
+				LHandle_dX -0.333333343
+				LHandle_dY 1.22028601
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 80
+				Frame 1081
+				Value -828.834839
+				RHandle_dX 0.333333343
+				RHandle_dY -1.33294678
+				LHandle_dX -0.333333343
+				LHandle_dY 1.33294678
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 81
+				Frame 1082
+				Value -832.360107
+				RHandle_dX 0.333333343
+				RHandle_dY -0.418406159
+				LHandle_dX -0.333333343
+				LHandle_dY 0.418406159
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 82
+				Frame 1083
+				Value -831.345276
+				RHandle_dX 0.333333343
+				RHandle_dY 0.84375
+				LHandle_dX -0.333333343
+				LHandle_dY -0.84375
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 83
+				Frame 1084
+				Value -827.297607
+				RHandle_dX 0.333333343
+				RHandle_dY 1.19522095
+				LHandle_dX -0.333333343
+				LHandle_dY -1.19522095
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 84
+				Frame 1085
+				Value -824.17395
+				RHandle_dX 0.333333343
+				RHandle_dY 0.805501282
+				LHandle_dX -0.333333343
+				LHandle_dY -0.805501282
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 85
+				Frame 1086
+				Value -822.4646
+				RHandle_dX 0.333333343
+				RHandle_dY 0.473429352
+				LHandle_dX -0.333333343
+				LHandle_dY -0.473429352
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 86
+				Frame 1087
+				Value -821.333374
+				RHandle_dX 0.333333343
+				RHandle_dY 0.337677002
+				LHandle_dX -0.333333343
+				LHandle_dY -0.337677002
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 87
+				Frame 1088
+				Value -820.438538
+				RHandle_dX 0.333333343
+				RHandle_dY 0.418253571
+				LHandle_dX -0.333333343
+				LHandle_dY -0.418253571
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 88
+				Frame 1089
+				Value -818.823853
+				RHandle_dX 0.333333343
+				RHandle_dY 0.295461029
+				LHandle_dX -0.333333343
+				LHandle_dY -0.295461029
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 89
+				Frame 1090
+				Value -818.665771
+				RHandle_dX 0.333333343
+				RHandle_dY 0
+				LHandle_dX -0.333333343
+				LHandle_dY 0
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel referencePosition/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceScale/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel offset
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		MBlur yes
+		Global no
+		Orientation 2
+		RigSelection 0
+		ReferenceIsTracking yes
+		AutoScale 0
+		Type 0
+		TrackingCamera -1
+		InvertMode no
+		Opts 0
+		PlaneColour 1 1 1
+		LookAt
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		Trackable
+		TrackingMode 0
+		MediaIdx -1
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 0
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3778
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		CoNodeFlags
+		Collapsed yes
+		CoNodeFlagsEnd
+	}
+End
+Node Axis
+	Name axis2
+	Number 5
+	Child 6
+	MotionPath no
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -92
+	PosY -244
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Channel lookAt
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel position/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel speed
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel rotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel scaling/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel scaling/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel shearing/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shearing/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel centre/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referencePosition/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/x
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/y
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceRotation/z
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel referenceScale/x
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/y
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel referenceScale/z
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel offset
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Path position
+			Dimension 3
+			Closed no
+			Size 0
+			End
+
+		MBlur yes
+		Global no
+		Orientation 2
+		RigSelection 0
+		ReferenceIsTracking yes
+		AutoScale 0
+		Type 0
+		TrackingCamera -1
+		InvertMode no
+		Opts 0
+		PlaneColour 1 1 1
+		LookAt
+		LookatLinkChannel
+		CurrentShape
+		LookAtNodeIdx -1
+		Shapes 0
+		InterpolationType 0
+		}
+		Trackable
+		TrackingMode 0
+		MediaIdx 0
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 0
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3778
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		CoNodeFlags
+		Collapsed yes
+		CoNodeFlagsEnd
+	}
+End
+Node GMask
+	Name gmask1
+	Number 6
+	MotionPath yes
+	ShadowCaster yes
+	ShadowReceiver yes
+	ShadowOnly no
+	PosX -92
+	PosY -369
+	IsLocked no
+	IsSoftImported no
+	OutputsSize 1
+	0
+	Specifics
+	{
+		Invert no
+		EnableKeyer no
+		InvertKeyer no
+		KeyerMode KEY_ALL_MULT
+		KeyerInterpolation LINEAR
+		LockSpline no
+		VertexCount 10
+		VertexTupleSize 6
+		GradientCount 1
+		GradidentTupleSize 2
+		DegreeAngles yes
+		GradientPointsMode FREE
+		ShapeAnimation yes
+		CurrentShape
+		VertexCount 10
+		PointData -96.0089645
+		PointData 39.9748917
+		PointData -244.421783
+		PointData -1160.28882
+		PointData 83.9909973
+		PointData 39.9748917
+		PointData -78.3106079
+		PointData 30.981905
+		PointData -235.006104
+		PointData -1078.68628
+		PointData 101.689407
+		PointData 30.9817886
+		PointData -87.6140823
+		PointData 25.1301231
+		PointData -259.630432
+		PointData -877.178955
+		PointData 92.3859253
+		PointData 25.1301231
+		PointData -104.036217
+		PointData 38.8217125
+		PointData -250.858887
+		PointData -576.719666
+		PointData 75.9636765
+		PointData 38.8216667
+		PointData -91.8182907
+		PointData 65.9427185
+		PointData -189.253311
+		PointData -430.369507
+		PointData 88.1816788
+		PointData 65.942749
+		PointData -82.5284042
+		PointData 64.3636551
+		PointData -225.805969
+		PointData -218.765076
+		PointData 97.4715958
+		PointData 64.3636246
+		PointData -174.193268
+		PointData 186.12941
+		PointData -207.454926
+		PointData 81.2472992
+		PointData 5.80672312
+		PointData 186.12944
+		PointData 165.699722
+		PointData 165.184128
+		PointData 542.658142
+		PointData 73.9240112
+		PointData -14.3002844
+		PointData 165.184158
+		PointData 37.6588097
+		PointData 243.156052
+		PointData 600.198181
+		PointData -1274.60559
+		PointData -142.341202
+		PointData 243.156006
+		PointData -53.9725113
+		PointData 56.918499
+		PointData -219.313385
+		PointData -1404.04944
+		PointData 126.027344
+		PointData 56.9185524
+		IndexesCount 10
+		Indexes 28
+		Indexes 30
+		Indexes 32
+		Indexes 34
+		Indexes 36
+		Indexes 38
+		Indexes 40
+		Indexes 42
+		Indexes 44
+		Indexes 46
+		Shapes 2
+			Shape 0
+				Frame 1001
+				Index 0
+				VertexCount 10
+				PointData -96.0089188
+				PointData 39.9748878
+				PointData -252.001541
+				PointData -1160.28882
+				PointData 83.9909973
+				PointData 39.9748917
+				PointData -78.3106079
+				PointData 30.981905
+				PointData -242.585846
+				PointData -1078.68628
+				PointData 101.689407
+				PointData 30.9817848
+				PointData -87.6139755
+				PointData 25.1301231
+				PointData -267.210175
+				PointData -877.178955
+				PointData 92.3859863
+				PointData 25.1301231
+				PointData -104.036278
+				PointData 38.8217239
+				PointData -258.438629
+				PointData -576.719666
+				PointData 75.9637146
+				PointData 38.8216591
+				PointData -91.8182907
+				PointData 65.9427185
+				PointData -196.833069
+				PointData -430.369507
+				PointData 88.1816635
+				PointData 65.942749
+				PointData -82.5284042
+				PointData 64.3636551
+				PointData -225.805969
+				PointData -218.765076
+				PointData 97.4715958
+				PointData 64.3636246
+				PointData -174.193268
+				PointData 186.12941
+				PointData -207.454926
+				PointData 81.2472992
+				PointData 5.80672312
+				PointData 186.12944
+				PointData 165.699722
+				PointData 165.184128
+				PointData 542.658142
+				PointData 73.9240112
+				PointData -14.3002844
+				PointData 165.184158
+				PointData 37.6588097
+				PointData 243.156052
+				PointData 600.198181
+				PointData -1274.60559
+				PointData -142.341202
+				PointData 243.156006
+				PointData -53.9725113
+				PointData 56.918499
+				PointData -226.893143
+				PointData -1404.04944
+				PointData 126.027344
+				PointData 56.9185524
+				IndexesCount 10
+				Indexes 28
+				Indexes 30
+				Indexes 32
+				Indexes 34
+				Indexes 36
+				Indexes 38
+				Indexes 40
+				Indexes 42
+				Indexes 44
+				Indexes 46
+			Shape 1
+				Frame 1059
+				Index 1
+				VertexCount 10
+				PointData -96.0089645
+				PointData 39.9748917
+				PointData -244.395279
+				PointData -1160.28882
+				PointData 83.9909973
+				PointData 39.9748917
+				PointData -78.3106079
+				PointData 30.981905
+				PointData -234.979599
+				PointData -1078.68628
+				PointData 101.689407
+				PointData 30.9817886
+				PointData -87.6140823
+				PointData 25.1301231
+				PointData -259.603912
+				PointData -877.178955
+				PointData 92.3859253
+				PointData 25.1301231
+				PointData -104.036217
+				PointData 38.8217125
+				PointData -250.832382
+				PointData -576.719666
+				PointData 75.9636765
+				PointData 38.8216667
+				PointData -91.8182907
+				PointData 65.9427185
+				PointData -189.226807
+				PointData -430.369507
+				PointData 88.1816788
+				PointData 65.942749
+				PointData -82.5284042
+				PointData 64.3636551
+				PointData -225.805969
+				PointData -218.765076
+				PointData 97.4715958
+				PointData 64.3636246
+				PointData -174.193268
+				PointData 186.12941
+				PointData -207.454926
+				PointData 81.2472992
+				PointData 5.80672312
+				PointData 186.12944
+				PointData 165.699722
+				PointData 165.184128
+				PointData 542.658142
+				PointData 73.9240112
+				PointData -14.3002844
+				PointData 165.184158
+				PointData 37.6588097
+				PointData 243.156052
+				PointData 600.198181
+				PointData -1274.60559
+				PointData -142.341202
+				PointData 243.156006
+				PointData -53.9725113
+				PointData 56.918499
+				PointData -219.28688
+				PointData -1404.04944
+				PointData 126.027344
+				PointData 56.9185524
+				IndexesCount 10
+				Indexes 28
+				Indexes 30
+				Indexes 32
+				Indexes 34
+				Indexes 36
+				Indexes 38
+				Indexes 40
+				Indexes 42
+				Indexes 44
+				Indexes 46
+				InterpolationType 0
+		CurrentShape
+		VertexCount 10
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		PointData 0
+		IndexesCount 10
+		Indexes 28
+		Indexes 30
+		Indexes 32
+		Indexes 34
+		Indexes 36
+		Indexes 38
+		Indexes 40
+		Indexes 42
+		Indexes 44
+		Indexes 46
+		Shapes 0
+		InterpolationType 0
+		CurrentShape
+		ValueCount 2
+		Value 1.35282779
+		Value 5.0805006
+		Shapes 1
+			Shape 0
+				Frame 1001
+				Index 0
+				ValueCount 2
+				Value 1.35282779
+				Value 5.0805006
+				InterpolationType 0
+				TrackerCamera -1
+				TrackerCameraType TRACK_CAMERA_LEFT
+				ViewType VIEW_AUTO_FRAME
+				Correlation 0
+				Composite 1
+				ColorBlendModel 0
+				ColorBlendType 21
+				Extrapolation 1
+				Closure 1
+				CurveColor 1 0.389999986 0
+				CurveHandleColor 1 1 0
+				EdgeColor 1 0.629999995 0
+				InactiveColor 0.5 0.5 0.5
+				LockedColor 0.75 0 0
+				KeyerFgSamplerColor 1 0 0
+				KeyerBgSamplerColor 0 1 0
+				GradientCurve
+			Current_Shape 1
+			Channel gradient_curve
+				Extrapolation constant
+				Value 0
+				Size 3
+				KeyVersion 2
+				Key 0
+					Frame 0
+					Value 100
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 1
+					Frame 50
+					Value 50
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				Key 2
+					Frame 100
+					Value 0
+					RHandle_dX 16.666666
+					RHandle_dY -16.666666
+					LHandle_dX -16.666666
+					LHandle_dY 16.666666
+					CurveMode bezier
+					CurveOrder cubic
+					TangentMode smooth
+					End
+				End
+			Shape_End
+		Visibility 0
+		LassoTolerance 0
+		BlendModel 3
+		FlameBlendType 0
+		GMaskType 0
+		PPMode 0
+		PolysplineHole no
+		LegacySmoothing no
+		Opts 2
+		DisplaySpline yes
+		DisplayVertex yes
+		DisplayGradientOutline yes
+		DisplayInactive yes
+		DisplayLocked yes
+		SplineKeyFraming no
+		KeyerType 0
+		CurrentShape
+		SamplersCount 0
+		NbKeyers 0
+		Flags 0
+		Shapes 0
+		InterpolationType 0
+		GroupChannel
+		Channel spline
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel track_spline
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel shape
+			Extrapolation constant
+			Value 0.996514857
+			Size 2
+			KeyVersion 2
+			Key 0
+				Frame 1001
+				Value 0
+				RHandle_dX 19.333334
+				RHandle_dY 0
+				LHandle_dX -19.333334
+				LHandle_dY 0
+				ValueLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Key 1
+				Frame 1059
+				Value 1
+				RHandle_dX 19.333334
+				RHandle_dY 0
+				LHandle_dX -19.333334
+				LHandle_dY 0
+				ValueLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel track_shape
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel gradient
+			Extrapolation constant
+			Value 0
+			Size 1
+			KeyVersion 2
+			Key 0
+				Frame 1001
+				Value 0
+				RHandle_dX 0.25
+				RHandle_dY 0
+				LHandle_dX -0.25
+				LHandle_dY 0
+				ValueLock yes
+				CurveMode bezier
+				CurveOrder cubic
+				TangentMode smooth
+				End
+			Uncollapsed
+			End
+		Channel color
+			Extrapolation constant
+			Value 100
+			Uncollapsed
+			End
+		Channel transparency
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel intensity
+			Extrapolation constant
+			Value 1
+			Uncollapsed
+			End
+		Channel smoothing
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel blur
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tolerance
+			Extrapolation constant
+			Value 0.00999999978
+			Uncollapsed
+			End
+		Channel tracer/analysis
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/bg_softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/fg_softness
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/blur
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/shrink
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel tracer/dilate
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/smoothing
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		Channel motion_warp/frames
+			Extrapolation constant
+			Value 0
+			Uncollapsed
+			End
+		ChannelEnd
+		Trackable
+		TrackingMode 6
+		MediaIdx 0
+		UseMediaFX no
+		MediaSourceMode 0
+		TransModeFlags 14
+		ShapeTrackAlgo 0
+		SamplingPrecision 0.850000024
+		ShapeTrackFlags 3776
+		ShapeFilteringParam 0
+		LocalTrackerSize 7
+		LocalTrackerMaxNb 100
+		LocalTrackerTol 0
+		}
+		Distortable
+			DistortableNbReferences 0
+			DistortableOpts 2
+	}
+End
+ConcreteEnd
+CompassOrder
+	Count 0
+End
+
+#
+# outputs
+#
+CurrentOutputIdx 0
+NumberOfOutputs 1
+	OptFlags 2
+	OutputTypeNum 24
+	ChnOptFlags 0
+	ChnOptFlags 3
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	ChnOptFlags 0
+	Index 0
+		Uuid 		"d50d12a3-eaee-4627-9416-b5cf3fbd1470"
+		Name 		"output1"
+		Active yes
+		CompleteScene yes
+		AllMXPost no
+		UseGMask yes
+		UseLFORAys yes
+		MotionBlur yes
+		DOF yes
+		Camera 1000000
+		Light -1
+		OutputType 1
+		PixelFormat 143
+		Transparency yes
+		UseEmissive yes
+		UseAmbient yes
+		UseSpecularity yes
+		UseReflection yes
+		AllowMatteAsBack yes
+		MatteBackColor 2
+		MotionRange 0
+		MotionFDS 0
+		MediaMatteIdx 1
+		ZDepthThreshold 0
+		BilateralFilter 0
+		MaxZDepth 100
+		OutputMode 0
+		GMaskBlendType 0
+		BackgroundMode 0
+		ShadowMode 1
+		GMaskTransparency 0
+		GMaskBlending 1
+		GMaskBlendModel 0
+		GMaskCorrelation 0
+		GMaskColorBlendModel 0
+		GMaskColorBlendType 21
+		BackgroundColor 0 0 0 1
+		UseSSAO no
+		SSAORegen yes
+		SSAOContrast 1
+		SSAORadius 100
+		SSAOAttenuation 100
+		SSAOAngleBias 30
+		SSAOSoftness 8
+		SSAOJitterSoftness 1
+		SSAONumCamPos 1
+		SSAONumSteps 10
+		ShadingMode yes
+		AccumMode 1
+	End
+UIFocus 6
+End
+
+#
+# layers
+#
+ActionLayerFileVersion 2
+CreationDate Sun Sep  8 19:45:45 2024
+
+LayerCount 1
+
+Layer 0
+	FrontMode 1
+	MatteMode 0
+	ProxyMode yes
+	FrameMode AS_INPUT
+	ResWidth 4096
+	ResHeight 2304
+	ResPixelFormat 143
+	ResAspect 1.77777779
+	ResScanMode SCAN_FORMAT_FRAME
+	ImageDataType 4
+	FrontConnectedToMatte no
+	FrontClipName 	""
+	FrontClipUID 0 105553313092912 4414231641
+	MatteClipName 	""
+	MatteClipUID 0 105553313092912 4414231641
+	MediaFxAllocateFlag 3
+	MediaFxAllocateFlag 4
+	MediaFxAllocateFlag 9
+	KeyerPost no
+	End
+LayerEnd
+
+#
+# multitracks
+#
+ActionMTFileVersion 2
+CreationDate Sun Sep  8 19:45:45 2024
+
+
+Layer 0
+	End
+MultiTrackEnd
+
+#
+# drawing order
+#
+DrawingOrderFileVersion 1.0
+CreationDate Sun Sep  8 19:45:45 2024
+
+LookupTableFrame 1000
+	LookupTableGroup 0
+		LookupTableNPath 2
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 1
+		LookupTableNPath 3
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 2
+		LookupTableNPath 1
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 3
+		LookupTableNPath 4
+			OutputsSize 0
+			End
+	LookupTableGroup 4
+		LookupTableNPath 5
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 5
+		LookupTableNPath 6
+			OutputsSize 1
+				OutputIndex 0
+				ObjectColor 0
+				End
+			End
+	LookupTableGroup 6
+		LookupTableNPath 0
+			OutputsSize 0
+			End
+LookupAutoKey no
+DrawingOrderEnd

@@ -1,0 +1,202 @@
+<ShaderNodePreset Name="The Noise" Description="
+This shader creates diffferent noise patterns
+
+Concrete noise based on https://www.shadertoy.com/view/4lfGRs by S.Guillitte
+Simplex3D noise based on https://www.shadertoy.com/view/XtBGDG by Lallis
+FBM noise by iq
+Fractal Noise based on https://www.shadertoy.com/view/Msf3Wr by mu6k
+Value Noise based on https://www.shadertoy.com/view/lsf3WH by iq
+Worley Noise  based on https://www.shadertoy.com/view/ldB3zc by iq
+Ridged Noise based on https://www.shadertoy.com/view/ldj3Dw by nimitz
+Perlin Noise based on https://www.shadertoy.com/view/MllGzs by guil
+Perlin v2 Noise based on https://www.shadertoy.com/view/MlS3z1 byRenoM
+Crawling Noise based on https://www.shadertoy.com/view/lslXRS by nimitz
+Cells on Fire based on https://www.shadertoy.com/view/lsX3z4 by JoshP
+Water Noise based on https://www.shadertoy.com/view/llsGWl by guil
+Fluid Malone Noise based on https://www.shadertoy.com/view/4s23WK by Antonalog
+Slabrie Noise based on https://www.shadertoy.com/view/ldBSDd by FatumR
+Frederic Noise based on https://www.shadertoy.com/view/4tfXzl by clayjohn
+Flow Noise based on https://www.shadertoy.com/view/Md23Wc by Antonalog
+Francis Noise based on https://www.shadertoy.com/view/ldfGWj by morgan3d
+
+License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License." Version="1.3" LimitInputsToTexture="True" SoftwareVersion="2015.0.0" ShaderType="Matchbox" CommercialUsePermitted="False" MatteProvider="False" TimelineUseBack="False" SupportsTimeline="False" SupportsTransition="False" SupportsAction="True" SupportsAdaptiveDegradation="False">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform ValueType="Popup" Name="noise_type" Type="int" DisplayName="Noise Type" Page="0" Col="0" Row="0" Tooltip="" Inc="1" Default="2" Min="0" Max="1000000">
+         <PopupEntry Value="1" Title="Concrete">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="FBM">
+         </PopupEntry>
+         <PopupEntry Value="3" Title="Simplex3D">
+         </PopupEntry>
+         <PopupEntry Value="4" Title="Fractal">
+         </PopupEntry>
+         <PopupEntry Value="5" Title="Value">
+         </PopupEntry>
+         <PopupEntry Value="8" Title="Worley">
+         </PopupEntry>
+         <PopupEntry Value="9" Title="Ridged">
+         </PopupEntry>
+         <PopupEntry Value="10" Title="Perlin">
+         </PopupEntry>
+         <PopupEntry Value="11" Title="Plasma">
+         </PopupEntry>
+         <PopupEntry Value="12" Title="Marble">
+         </PopupEntry>
+         <PopupEntry Value="13" Title="Wood">
+         </PopupEntry>
+         <PopupEntry Value="14" Title="Clouds">
+         </PopupEntry>
+         <PopupEntry Value="15" Title="Crawling">
+         </PopupEntry>
+         <PopupEntry Value="16" Title="Cells on Fire">
+         </PopupEntry>
+         <PopupEntry Value="17" Title="Water">
+         </PopupEntry>
+         <PopupEntry Value="18" Title="Fluid Malone">
+         </PopupEntry>
+         <PopupEntry Value="19" Title="Slabrie">
+         </PopupEntry>
+         <PopupEntry Value="20" Title="Frederic">
+         </PopupEntry>
+         <PopupEntry Value="22" Title="Francis">
+         </PopupEntry>
+         <PopupEntry Value="21" Title="Flow">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Name="scale" DisplayName="Scale" Type="float" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01" Default="10.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="aspect" DisplayName="Aspect" Type="float" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="pos" DisplayName="Position" Type="vec2" IconType="Axis" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="rot" DisplayName="Rotation" Type="float" Page="0" Col="1" Row="4" Tooltip="" Inc="0.1" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="speed" DisplayName="Speed" Type="float" Page="0" Col="2" Row="0" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="offset" DisplayName="Offset" Type="float" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="noise_type" Name="c_detail" DisplayName="Turbulence" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.01" Max="100." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="noise_type" Name="c_noise_itt" DisplayName="Detail" Type="int" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="6" Min="1" Max="12" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="4" UIConditionSource="noise_type" Name="f_detail" DisplayName="Detail" Type="float" Page="0" Col="0" Row="2" Tooltip="" Inc="0.001" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="5" UIConditionSource="noise_type" ValueType="Popup" Name="v_noise_type" Type="int" DisplayName="Noise Type" Page="0" Col="0" Row="1" Tooltip="" Inc="1" Default="1" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Blocky">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Fractal">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="8" UIConditionSource="noise_type" ValueType="Popup" Name="w_color_type" Type="int" DisplayName="Type" Page="0" Col="0" Row="1" Tooltip="" Inc="1" Default="2" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Flat">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Balls">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Cells">
+         </PopupEntry>
+         <PopupEntry Value="3" Title="Grid">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="8" UIConditionSource="noise_type" Name="w_detail" DisplayName="Smoothness" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.001" Default="1.0" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="noise_type" ValueType="Popup" Name="r_noise_type" Type="int" DisplayName="Noise Type" Page="0" Col="0" Row="1" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="FBM">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Sinus+FBM">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Triangle Wave">
+         </PopupEntry>
+         <PopupEntry Value="3" Title="HighFreqSin">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="9" UIConditionSource="noise_type" Name="r_detail" DisplayName="Detail" Type="float" Page="0" Col="0" Row="2" Tooltip="" Inc="0.001" Default="1.0" Min="0.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="10" UIConditionSource="noise_type" Name="p1_itt" DisplayName="Detail" Type="int" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="6" Min="1" Max="6" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="10" UIConditionSource="noise_type" Name="perlinv1_v" DisplayName="Structure" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="0.5" Min="0.01" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="11" UIConditionSource="noise_type" Name="plasma_detail" DisplayName="Turbulence" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.001" Max="100." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="11" UIConditionSource="noise_type" Name="plasma_iter" DisplayName="Detail" Type="int" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="6" Min="1" Max="12" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="12" UIConditionSource="noise_type" Name="marble_detail" DisplayName="Turbulence" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.001" Max="100." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="12" UIConditionSource="noise_type" Name="marble_iter" DisplayName="Detail" Type="int" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="6" Min="1" Max="12" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="13" UIConditionSource="noise_type" Name="wood_detail" DisplayName="Turbulence" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.001" Max="100." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="13" UIConditionSource="noise_type" Name="wood_iter" DisplayName="Detail" Type="int" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="6" Min="1" Max="12" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="14" UIConditionSource="noise_type" Name="cloud_detail" DisplayName="Turbulence" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.001" Max="100." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="14" UIConditionSource="noise_type" Name="cloud_iter" DisplayName="Detail" Type="int" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="6" Min="1" Max="12" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="15" UIConditionSource="noise_type" Name="crawling_detail" DisplayName="Turbulence" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.001" Max="100." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="15" UIConditionSource="noise_type" Name="crawling_iter" DisplayName="Detail" Type="int" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="3" Min="1" Max="16" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="15" UIConditionSource="noise_type" Name="crawling_displace" DisplayName="Displace" Type="float" Page="0" Col="0" Row="4" Tooltip="" Inc="0.01" Default="1.0" Min="-10." Max="10." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="16" UIConditionSource="noise_type" ValueType="Popup" Name="cof_noise_type" Type="int" DisplayName="Type" Page="0" Col="0" Row="1" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Brain">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Mosaic">
+         </PopupEntry>
+         <PopupEntry Value="2" Title="Misc">
+         </PopupEntry>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="17" UIConditionSource="noise_type" Name="water_detail" DisplayName="Detail" Type="float" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="-100000.0" Max="100000." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="17" UIConditionSource="noise_type" Name="w_noise" DisplayName="Noise" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="10." ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="18" UIConditionSource="noise_type" Name="malone_detail" Type="int" DisplayName="Detail" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="25" Min="1" Max="50">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="18" UIConditionSource="noise_type" Name="malone_swirl" Type="float" DisplayName="Swirl" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.5" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="18" UIConditionSource="noise_type" Name="malone_size" Type="float" DisplayName="Size" Page="0" Col="0" Row="4" Tooltip="" Inc="0.01" Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="19" UIConditionSource="noise_type" Name="slabrie_detail" Type="int" DisplayName="Detail" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="5" Min="1" Max="10" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="19" UIConditionSource="noise_type" Name="slabrie_amp" Type="float" DisplayName="Amplitude" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="20" UIConditionSource="noise_type" Name="fred_itt" Type="int" DisplayName="Detail" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="10" Min="1" Max="24" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="20" UIConditionSource="noise_type" Name="fred_detail" Type="float" DisplayName="Amplitude" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="3.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="20" UIConditionSource="noise_type" Name="fred_density" Type="float" DisplayName="Density" Page="0" Col="0" Row="4" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="2.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="21" UIConditionSource="noise_type" Name="flow_detail" Type="float" DisplayName="Detail" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="3.0" Min="0.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="21" UIConditionSource="noise_type" Name="flow_amp" Type="float" DisplayName="Amplitude" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="22" UIConditionSource="noise_type" Name="francis_detail" Type="int" DisplayName="Detail" Page="0" Col="0" Row="2" Tooltip="" Inc="1" Default="7" Min="1" Max="50" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="22" UIConditionSource="noise_type" Name="francis_amp" Type="float" DisplayName="Amplitude" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="-2.5" Min="-10.0" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="a_gamma" DisplayName="Gamma" Type="float" Page="1" Col="0" Row="0" Tooltip="" Inc="0.001" Default="1.0" Min="0.001" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="a_gain" DisplayName="Gain" Type="float" Page="1" Col="0" Row="1" Tooltip="" Inc="0.1" Default="100.0" Min="0.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="a_offset" DisplayName="Offset" Type="float" Page="1" Col="0" Row="2" Tooltip="" Inc="0.001" Default="0.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="a_contrast" DisplayName="Contrast" Type="float" Page="1" Col="0" Row="3" Tooltip="" Inc="0.1" Default="100.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="General">
+      <Col Page="0" Col="0" Name="Look">
+      </Col>
+      <Col Page="0" Col="1" Name="Translation">
+      </Col>
+      <Col Page="0" Col="2" Name="Timing">
+      </Col>
+   </Page>
+   <Page Page="1" Name="Color">
+      <Col Page="1" Col="0" Name="Setup">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

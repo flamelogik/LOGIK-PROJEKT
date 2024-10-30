@@ -1,0 +1,375 @@
+<Presets>
+   <Preset Name="PalePinkSkin">
+      <Shader Index="1">
+         <Uniform Name="blend" DisplayName="Large Detail" Type="float" Value="5">
+         </Uniform>
+         <Uniform Name="contrast" DisplayName="Small Detail" Type="float" Value="1">
+         </Uniform>
+         <Uniform Name="tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.820801">
+            </SubUniform>
+            <SubUniform Value="0.725586">
+            </SubUniform>
+            <SubUniform Value="0.708984">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="large_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.786621">
+            </SubUniform>
+            <SubUniform Value="0.602051">
+            </SubUniform>
+            <SubUniform Value="0.531738">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="large_blend" DisplayName="large_blend" Type="float" Value="0.88">
+         </Uniform>
+         <Uniform Name="zoom_small" DisplayName="Zoom Small" Type="float" Value="0.16">
+         </Uniform>
+         <Uniform Name="zoom_large" DisplayName="Zoom Large" Type="float" Value="55">
+         </Uniform>
+         <Uniform Name="overall_zoom" DisplayName="Overall Zoom" Type="float" Value="1">
+         </Uniform>
+         <Uniform Name="seed" DisplayName="Seed" Type="float" Value="95.34">
+         </Uniform>
+      </Shader>
+      <Shader Index="2">
+         <Uniform Name="som_blend" DisplayName="Large Detail" Type="float" Value="1.1">
+         </Uniform>
+         <Uniform Name="som_contrast" DisplayName="Small Detail" Type="float" Value="1.4">
+         </Uniform>
+         <Uniform Name="som_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.807617">
+            </SubUniform>
+            <SubUniform Value="0.689941">
+            </SubUniform>
+            <SubUniform Value="0.650879">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="som_large_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.801758">
+            </SubUniform>
+            <SubUniform Value="0.617676">
+            </SubUniform>
+            <SubUniform Value="0.546875">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="som_large_blend" DisplayName="large_blend" Type="float" Value="0.12">
+         </Uniform>
+         <Uniform Name="som_zoom_small" DisplayName="Zoom Small" Type="float" Value="333">
+         </Uniform>
+         <Uniform Name="som_zoom_large" DisplayName="Zoom Large" Type="float" Value="10">
+         </Uniform>
+         <Uniform Name="som_overall_zoom" DisplayName="Overall Zoom" Type="float" Value="3.3">
+         </Uniform>
+         <Uniform Name="som_seed" DisplayName="Seed" Type="float" Value="10">
+         </Uniform>
+      </Shader>
+      <Shader Index="3">
+         <Uniform Name="iterations" DisplayName="Amount" Type="int" Value="45">
+         </Uniform>
+         <Uniform Name="zoom" DisplayName="Zoom" Type="float" Value="0.9">
+         </Uniform>
+         <Uniform Name="offset" DisplayName="Seed" Type="float" Value="6468">
+         </Uniform>
+      </Shader>
+      <Shader Index="4">
+         <Uniform Name="blur_matte" DisplayName="Softness" Type="float" Value="100">
+         </Uniform>
+      </Shader>
+      <Shader Index="6">
+         <Uniform Name="sharpness" DisplayName="Sharpness" Type="float" Value="0.5">
+         </Uniform>
+         <Uniform Name="sommer" DisplayName="Enable" Type="bool" Value="1">
+         </Uniform>
+         <Uniform Name="som_sharpness" DisplayName="Sharpness" Type="float" Value="1.96">
+         </Uniform>
+         <Uniform Name="bias_adj" DisplayName="Amount" Type="float" Value="0.33">
+         </Uniform>
+         <Uniform Name="f_detail" DisplayName="Detail" Type="float" Value="10">
+         </Uniform>
+         <Uniform Name="base_skin_col" DisplayName="base_skin_col" Type="vec3">
+            <SubUniform Value="0.786133">
+            </SubUniform>
+            <SubUniform Value="0.602051">
+            </SubUniform>
+            <SubUniform Value="0.53125">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="p_bias_adj" DisplayName="Amount" Type="float" Value="0.23">
+         </Uniform>
+         <Uniform Name="p_detail" DisplayName="Detail" Type="float" Value="6.93">
+         </Uniform>
+         <Uniform Name="p_scale" DisplayName="Size" Type="float" Value="35.47">
+         </Uniform>
+      </Shader>
+      <Shader Index="7">
+         <Uniform Name="fLightHeight" DisplayName="fLightHeight" Type="float" Value="0.25">
+         </Uniform>
+         <Uniform Name="spec" DisplayName="spec" Type="float" Value="1">
+         </Uniform>
+         <Uniform Name="position" DisplayName="position" Type="vec2">
+            <SubUniform Value="0.65">
+            </SubUniform>
+            <SubUniform Value="1.5">
+            </SubUniform>
+         </Uniform>
+      </Shader>
+      <Shader Index="8">
+         <Uniform Name="blur_highlite" DisplayName="blur_highlite" Type="float" Value="2.9">
+         </Uniform>
+      </Shader>
+      <Shader Index="10">
+         <Uniform Name="b_high" DisplayName="Amount" Type="float" Value="0.05">
+         </Uniform>
+      </Shader>
+   </Preset>
+   <Preset Name="PaleWhite">
+      <Shader Index="1">
+         <Uniform Name="blend" DisplayName="Large Detail" Type="float" Value="0.3">
+         </Uniform>
+         <Uniform Name="contrast" DisplayName="Small Detail" Type="float" Value="12">
+         </Uniform>
+         <Uniform Name="tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.945098">
+            </SubUniform>
+            <SubUniform Value="0.756863">
+            </SubUniform>
+            <SubUniform Value="0.643137">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="large_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.792157">
+            </SubUniform>
+            <SubUniform Value="0.627451">
+            </SubUniform>
+            <SubUniform Value="0.533333">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="large_blend" DisplayName="large_blend" Type="float" Value="-2.3">
+         </Uniform>
+         <Uniform Name="zoom_small" DisplayName="Zoom Small" Type="float" Value="0.16">
+         </Uniform>
+         <Uniform Name="zoom_large" DisplayName="Zoom Large" Type="float" Value="22.37">
+         </Uniform>
+         <Uniform Name="overall_zoom" DisplayName="Overall Zoom" Type="float" Value="10">
+         </Uniform>
+         <Uniform Name="seed" DisplayName="Seed" Type="float" Value="100">
+         </Uniform>
+      </Shader>
+      <Shader Index="2">
+         <Uniform Name="som_blend" DisplayName="Large Detail" Type="float" Value="33">
+         </Uniform>
+         <Uniform Name="som_contrast" DisplayName="Small Detail" Type="float" Value="25">
+         </Uniform>
+         <Uniform Name="som_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.996078">
+            </SubUniform>
+            <SubUniform Value="0.854902">
+            </SubUniform>
+            <SubUniform Value="0.729412">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="som_large_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.988235">
+            </SubUniform>
+            <SubUniform Value="0.772549">
+            </SubUniform>
+            <SubUniform Value="0.654902">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="som_large_blend" DisplayName="large_blend" Type="float" Value="-0.66">
+         </Uniform>
+         <Uniform Name="som_zoom_small" DisplayName="Zoom Small" Type="float" Value="11.72">
+         </Uniform>
+         <Uniform Name="som_zoom_large" DisplayName="Zoom Large" Type="float" Value="-0.74">
+         </Uniform>
+         <Uniform Name="som_overall_zoom" DisplayName="Overall Zoom" Type="float" Value="2.04">
+         </Uniform>
+         <Uniform Name="som_seed" DisplayName="Seed" Type="float" Value="452">
+         </Uniform>
+      </Shader>
+      <Shader Index="3">
+         <Uniform Name="iterations" DisplayName="Amount" Type="int" Value="13">
+         </Uniform>
+         <Uniform Name="zoom" DisplayName="Zoom" Type="float" Value="1000">
+         </Uniform>
+         <Uniform Name="offset" DisplayName="Seed" Type="float" Value="-1000">
+         </Uniform>
+      </Shader>
+      <Shader Index="4">
+         <Uniform Name="blur_matte" DisplayName="Softness" Type="float" Value="100">
+         </Uniform>
+      </Shader>
+      <Shader Index="6">
+         <Uniform Name="sharpness" DisplayName="Sharpness" Type="float" Value="0.301">
+         </Uniform>
+         <Uniform Name="sommer" DisplayName="Enable" Type="bool" Value="1">
+         </Uniform>
+         <Uniform Name="som_sharpness" DisplayName="Sharpness" Type="float" Value="1.33">
+         </Uniform>
+         <Uniform Name="bias_adj" DisplayName="Amount" Type="float" Value="0.15">
+         </Uniform>
+         <Uniform Name="f_detail" DisplayName="Detail" Type="float" Value="6">
+         </Uniform>
+         <Uniform Name="base_skin_col" DisplayName="base_skin_col" Type="vec3">
+            <SubUniform Value="0.992157">
+            </SubUniform>
+            <SubUniform Value="0.796078">
+            </SubUniform>
+            <SubUniform Value="0.698039">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="p_bias_adj" DisplayName="Amount" Type="float" Value="0.25">
+         </Uniform>
+         <Uniform Name="p_detail" DisplayName="Detail" Type="float" Value="3333">
+         </Uniform>
+         <Uniform Name="p_scale" DisplayName="Size" Type="float" Value="33">
+         </Uniform>
+      </Shader>
+      <Shader Index="7">
+         <Uniform Name="fLightHeight" DisplayName="fLightHeight" Type="float" Value="0.66">
+         </Uniform>
+         <Uniform Name="spec" DisplayName="spec" Type="float" Value="3.81">
+         </Uniform>
+         <Uniform Name="position" DisplayName="position" Type="vec2">
+            <SubUniform Value="1.41">
+            </SubUniform>
+            <SubUniform Value="1.5">
+            </SubUniform>
+         </Uniform>
+      </Shader>
+      <Shader Index="8">
+         <Uniform Name="blur_highlite" DisplayName="blur_highlite" Type="float" Value="3">
+         </Uniform>
+      </Shader>
+      <Shader Index="10">
+         <Uniform Name="b_high" DisplayName="Amount" Type="float" Value="0.5">
+         </Uniform>
+      </Shader>
+   </Preset>
+   <Preset Name="SkinWhiteTanned">
+      <Shader Index="1">
+         <Uniform Name="blend" DisplayName="Large Detail" Type="float" Value="1.97">
+         </Uniform>
+         <Uniform Name="contrast" DisplayName="Small Detail" Type="float" Value="2.26">
+         </Uniform>
+         <Uniform Name="tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.841642">
+            </SubUniform>
+            <SubUniform Value="0.630499">
+            </SubUniform>
+            <SubUniform Value="0.456501">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="large_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.636364">
+            </SubUniform>
+            <SubUniform Value="0.408602">
+            </SubUniform>
+            <SubUniform Value="0.246334">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="large_blend" DisplayName="large_blend" Type="float" Value="0.0599992">
+         </Uniform>
+         <Uniform Name="zoom_small" DisplayName="Zoom Small" Type="float" Value="0.35">
+         </Uniform>
+         <Uniform Name="zoom_large" DisplayName="Zoom Large" Type="float" Value="34.84">
+         </Uniform>
+         <Uniform Name="overall_zoom" DisplayName="Overall Zoom" Type="float" Value="0.001">
+         </Uniform>
+         <Uniform Name="seed" DisplayName="Seed" Type="float" Value="89.4">
+         </Uniform>
+      </Shader>
+      <Shader Index="2">
+         <Uniform Name="som_blend" DisplayName="Large Detail" Type="float" Value="0.73">
+         </Uniform>
+         <Uniform Name="som_contrast" DisplayName="Small Detail" Type="float" Value="1.65">
+         </Uniform>
+         <Uniform Name="som_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.941349">
+            </SubUniform>
+            <SubUniform Value="0.792766">
+            </SubUniform>
+            <SubUniform Value="0.637341">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="som_large_tint" DisplayName="Color" Type="vec3">
+            <SubUniform Value="0.607038">
+            </SubUniform>
+            <SubUniform Value="0.371457">
+            </SubUniform>
+            <SubUniform Value="0.217009">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="som_large_blend" DisplayName="large_blend" Type="float" Value="0.8">
+         </Uniform>
+         <Uniform Name="som_zoom_small" DisplayName="Zoom Small" Type="float" Value="46.49">
+         </Uniform>
+         <Uniform Name="som_zoom_large" DisplayName="Zoom Large" Type="float" Value="-7.96">
+         </Uniform>
+         <Uniform Name="som_overall_zoom" DisplayName="Overall Zoom" Type="float" Value="0.001">
+         </Uniform>
+         <Uniform Name="som_seed" DisplayName="Seed" Type="float" Value="425.45">
+         </Uniform>
+      </Shader>
+      <Shader Index="3">
+         <Uniform Name="iterations" DisplayName="Amount" Type="int" Value="49">
+         </Uniform>
+         <Uniform Name="zoom" DisplayName="Zoom" Type="float" Value="9.69999">
+         </Uniform>
+         <Uniform Name="offset" DisplayName="Seed" Type="float" Value="-340">
+         </Uniform>
+      </Shader>
+      <Shader Index="4">
+         <Uniform Name="blur_matte" DisplayName="Softness" Type="float" Value="100">
+         </Uniform>
+      </Shader>
+      <Shader Index="6">
+         <Uniform Name="sharpness" DisplayName="Sharpness" Type="float" Value="0.001">
+         </Uniform>
+         <Uniform Name="sommer" DisplayName="Enable" Type="bool" Value="1">
+         </Uniform>
+         <Uniform Name="som_sharpness" DisplayName="Sharpness" Type="float" Value="0.001">
+         </Uniform>
+         <Uniform Name="bias_adj" DisplayName="Amount" Type="float" Value="0.732">
+         </Uniform>
+         <Uniform Name="f_detail" DisplayName="Detail" Type="float" Value="5.368">
+         </Uniform>
+         <Uniform Name="base_skin_col" DisplayName="base_skin_col" Type="vec3">
+            <SubUniform Value="0.651026">
+            </SubUniform>
+            <SubUniform Value="0.426197">
+            </SubUniform>
+            <SubUniform Value="0.261975">
+            </SubUniform>
+         </Uniform>
+         <Uniform Name="p_bias_adj" DisplayName="Amount" Type="float" Value="0.277">
+         </Uniform>
+         <Uniform Name="p_detail" DisplayName="Detail" Type="float" Value="3.45999">
+         </Uniform>
+         <Uniform Name="p_scale" DisplayName="Size" Type="float" Value="25.27">
+         </Uniform>
+      </Shader>
+      <Shader Index="7">
+         <Uniform Name="fLightHeight" DisplayName="fLightHeight" Type="float" Value="3">
+         </Uniform>
+         <Uniform Name="spec" DisplayName="spec" Type="float" Value="0.3">
+         </Uniform>
+         <Uniform Name="position" DisplayName="position" Type="vec2">
+            <SubUniform Value="0.65">
+            </SubUniform>
+            <SubUniform Value="1.5">
+            </SubUniform>
+         </Uniform>
+      </Shader>
+      <Shader Index="8">
+         <Uniform Name="blur_highlite" DisplayName="blur_highlite" Type="float" Value="5">
+         </Uniform>
+      </Shader>
+      <Shader Index="10">
+         <Uniform Name="b_high" DisplayName="Amount" Type="float" Value="0.15">
+         </Uniform>
+      </Shader>
+   </Preset>
+</Presets>
+

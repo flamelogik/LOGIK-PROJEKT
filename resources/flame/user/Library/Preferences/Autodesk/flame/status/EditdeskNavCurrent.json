@@ -1,0 +1,20 @@
+{
+    "Settings": [
+        {
+            "name": "EditdeskGotoPreviousSomethingSaver3",
+            "value": 5
+        },
+        {
+            "name": "EditdeskGotoNextSomethingSaver3",
+            "value": 6
+        },
+        {
+            "name": "FIMGotoPreviousSomethingSaver",
+            "value": 5
+        },
+        {
+            "name": "FIMGotoNextSomethingSaver",
+            "value": 6
+        }
+    ]
+}

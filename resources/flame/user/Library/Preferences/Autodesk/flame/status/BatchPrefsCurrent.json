@@ -1,0 +1,61 @@
+{
+    "Settings": [
+        {
+            "name": "BatchUpdateSourcesMode",
+            "value": false
+        },
+        {
+            "name": "BatchSetAutoParent",
+            "value": true
+        },
+        {
+            "name": "BatchSetAutoInsert",
+            "value": false
+        },
+        {
+            "name": "BatchSetSmartReplace",
+            "value": false
+        },
+        {
+            "name": "BatchSetClipInfo",
+            "value": 7
+        },
+        {
+            "name": "BatchSchematicTransparency",
+            "value": 0.0
+        },
+        {
+            "name": "BatchHighlightPath",
+            "value": true
+        },
+        {
+            "name": "BatchSetShowIndicators",
+            "value": true
+        },
+        {
+            "name": "BatchSetShowElbowName",
+            "value": true
+        },
+        {
+            "name": "BatchSetShowKeyIndicator",
+            "value": true
+        },
+        {
+            "name": "BatchSetShowAdaptors",
+            "value": true
+        },
+        {
+            "name": "DefaultActionCollapseExpand",
+            "value": 0
+        },
+        {
+            "name": "BatchSetCompassDefaultColor",
+            "value": {
+                "r": 0.1666666567325592,
+                "g": 0.1666666567325592,
+                "b": 0.1666666567325592,
+                "a": 1.0
+            }
+        }
+    ]
+}

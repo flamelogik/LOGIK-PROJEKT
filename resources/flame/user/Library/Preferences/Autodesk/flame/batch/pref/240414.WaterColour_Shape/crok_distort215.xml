@@ -1,0 +1,121 @@
+<ShaderNodePreset Name="CROK Distort" Description="
+This Matchbox shader adds a lens distortion effect.
+
+Input:
+- Front: source clip
+- Lens: distortion clip
+- Matte: region of interest
+- Strength: strength clip
+
+Setup:
+- Amount: overall distortion
+- Displace: the displacement amount
+- Softness: amount of softness applied to the distortion
+- Rotate: offset the distortion
+
+Filtering:
+- Blur Lens: softens incoming lens clip
+- Blur Strength: softens incoming strength clip
+- Strength Amount: blends in / out strength clip
+- FXAA Amount: amount of Antialiasing applied
+
+Matchbox version by ivar@inferno-op.com
+Big thx to lewis@lewissaunders.com for helping me out on some parts of the shader" Version="1.50" LimitInputsToTexture="True" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="Strength" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Strength" InputColor="67, 77, 83" Tooltip="" NoInput="White" Index="3">
+      </Uniform>
+      <Uniform Name="blur_strength" Type="float" DisplayName="Blur Strength" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="0.0" Min="0.0" Max="100.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="blur_strength" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="Lens" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" DisplayName="Lens" Tooltip="" NoInput="Error" Index="1">
+      </Uniform>
+      <Uniform Name="blur_matte" Type="float" DisplayName="Blur Lens" Page="0" Col="2" Row="0" Tooltip="" Inc="0.01" Default="10.0" Min="0.001" Max="256.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="Matte" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" DisplayName="Matte" InputType="Matte" Tooltip="" NoInput="White" Index="2">
+      </Uniform>
+      <Uniform Name="blur_matte" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+      <Uniform Name="Source" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_MIRRORED_REPEAT" GL_TEXTURE_WRAP_T="GL_MIRRORED_REPEAT" Mipmaps="False" DisplayName="Source" InputType="Front" Tooltip="" NoInput="Error" Index="0">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="67, 77, 83">
+      </Uniform>
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_MIRRORED_REPEAT" GL_TEXTURE_WRAP_T="GL_MIRRORED_REPEAT" Mipmaps="False">
+      </Uniform>
+      <Uniform ValueType="Popup" Name="style" Type="int" DisplayName="Type" Page="0" Col="0" Row="0" Tooltip="" Inc="1" Default="0" Min="0" Max="1000000">
+         <PopupEntry Value="0" Title="Glossy">
+         </PopupEntry>
+         <PopupEntry Value="1" Title="Emboss">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Name="blend" Type="float" DisplayName="Strength Amount" Page="0" Col="2" Row="2" Tooltip="" Inc="0.001" Default="1.0" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="style" Name="amount" Type="float" DisplayName="Amount" Page="0" Col="0" Row="1" Tooltip="" Inc="0.01" Default="5.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="style" Name="glossy" Type="float" DisplayName="Displace" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="20.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="style" Name="softness" Type="float" DisplayName="Softness" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="10.0" Min="0.01" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="0" UIConditionSource="style" Name="aspect" Type="float" DisplayName="Rotate" Page="0" Col="0" Row="4" Tooltip="" Inc="0.001" Default="0.1" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="style" Name="d_amount" Type="float" DisplayName="Amount" Page="0" Col="0" Row="1" Tooltip="" Inc="0.01" Default="5.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="style" Name="height" Type="float" DisplayName="Height" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="10.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="style" Name="l_amount" Type="float" DisplayName="Light Amount" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="0.5" Min="0.001" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="style" Name="offset" Type="vec3" IconType="Axis" ValueType="Position" DisplayName="Offset" Page="0" Col="1" Row="0" Tooltip="" Inc="0.01">
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="2.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="style" Name="light" Type="vec3" IconType="Light" ValueType="Position" DisplayName="Light" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01">
+         <SubUniform Default="0.0" Min="0.0" Max="1.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="0.0" Max="1.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.05" Min="0.0" Max="1.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Name="enable_aa" Type="bool" DisplayName="Enable Oversampling" Tooltip="" Default="False" Page="0" Col="3" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="1" UIConditionSource="enable_aa" Name="oversamples" Type="int" DisplayName="Samples" Page="0" Col="3" Row="1" Tooltip="" Inc="1" Default="3" Min="1" Max="16">
+      </Uniform>
+   </Shader>
+   <Shader Index="6" OutputBitDepth="Output">
+      <Uniform Name="mixx" Type="float" DisplayName="FXAA Amount" Page="0" Col="3" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="General">
+      <Col Page="0" Col="0" Name="Look">
+      </Col>
+      <Col Page="0" Col="1" Name="Texture Offset / Lighting">
+      </Col>
+      <Col Page="0" Col="2" Name="Filtering">
+      </Col>
+      <Col Page="0" Col="3" Name="AntiAliasing">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

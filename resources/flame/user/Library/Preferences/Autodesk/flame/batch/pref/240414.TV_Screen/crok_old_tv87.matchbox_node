@@ -1,0 +1,39 @@
+<Setup><Base><Version>17</Version><NAME>crok_old_tv87</NAME><Note>
+This Matchbox shader simulates an old tube tv.
+
+Input:
+
+- Front: source clip
+
+Setup:
+
+- Slowscan: slow moving scanlines
+- Scanlines: tiny scanlines
+- Lines: rgb coloured lines 
+- Vignette softness: softness of the vignette
+- Vignette scale: scale of the vignette
+- TV Tube Vignette: add TV boarder around image
+- Noise Strenght: opacity of the noise
+- Noise Saturation: color saturation of the noise
+- Distort: distort the incoming image
+- Frequency: frequency of the distort effect
+- Speed: how fast the distortion is running through the image
+- Stripes: add VHS stripes
+- Bars: add VHS Bars 
+- TV Tube Dots: add CRT style pattern
+- Moire: add moire style noise
+- VCR Distortion: add a vcr distortion like effect
+
+Demo clip: http://vimeo.com/82188245
+
+Shader developer: Klowner, Jasper, gtoledo3 and Martin Rykfors
+
+Based on:
+- https://www.shadertoy.com/view/MsXGD4   
+- https://www.shadertoy.com/view/ldjGzV
+- https://www.shadertoy.com/view/4sf3Dr
+- https://www.shadertoy.com/view/4ssGR8
+			
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+Matchbox version by ivar@inferno-op.com</Note><Expanded>False</Expanded><ScrollBar>0</ScrollBar><Frames>0</Frames><Current_Time>1</Current_Time><Input_DataType>4</Input_DataType><ClampMode>0</ClampMode><AdapDegrad>False</AdapDegrad><ReadOnly>False</ReadOnly><Range Enable="False" Before="2" After="2" Start="1" End="100" SpanEnable="False" Span="100"/><NoMediaHandling>1</NoMediaHandling><UsedAsTransition>False</UsedAsTransition><FrameBounds W="3840" H="2160" X="0" Y="0" SX="32" SY="18"/></Base><State><NbPasses>1</NbPasses><Regen>True</Regen><OutputResMode>1</OutputResMode><OutputResolution><Width>1920</Width><Height>1080</Height><Format>143</Format><ScanFormat>2</ScanFormat><AspectRatio>1.777777777777778</AspectRatio><ColourSpace>Unknown</ColourSpace></OutputResolution><TopChannel><Channel Name="crok_old_tv87"><Uncollapsed/></Channel></TopChannel><ShaderParameters><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Slowscan"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Scanlines"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>1</value></Parameter><Parameter><Data><Channel Name="Softness"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Scale"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Softness"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Saturation"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Strength"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Scanline_Distort"><Extrap>constant</Extrap><Value>0.00999999978</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Frequency"><Extrap>constant</Extrap><Value>0.820000052</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Speed"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Stripes"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Opacity"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Bars"><Uncollapsed/></Channel></Data></Parameter><Parameter><value>1</value></Parameter><Parameter><Data><Channel Name="Style"><Extrap>constant</Extrap><Value>4</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Opacity"><Extrap>constant</Extrap><Value>2.16999936</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>81</Frame><Value>2.16999936</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><value>1</value></Parameter><Parameter><Data><Channel Name="Gain"><Extrap>constant</Extrap><Value>2.11999917</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>81</Frame><Value>2.11999917</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Scale"><Extrap>constant</Extrap><Value>0.332000524</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>81</Frame><Value>0.332000524</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Tube_Distortion"><Extrap>constant</Extrap><Value>0.869999945</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Scale"><Extrap>constant</Extrap><Value>1.03999996</Value><Uncollapsed/></Channel></Data></Parameter><Parameter><value>0</value></Parameter><Parameter><Data><Channel Name="Lines"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Opacity"><Uncollapsed/></Channel></Data></Parameter></ShaderParameters><InputPage>0</InputPage><RenderContext>0</RenderContext><InputRewiring><InputIndex SamplerIndex="0">0</InputIndex></InputRewiring><ShaderPresetIndex>0</ShaderPresetIndex></State></Setup>

@@ -1,0 +1,117 @@
+<ShaderNodePreset Description="A simple image cropper with built-in 2D texture offset and borders. It's Croptastic!
+
+Matchbox by Bob Maple (bobm-matchbox [at] idolum.com)" CommercialUsePermitted="True" Name="id_Croptastic" Version="1" LimitInputsToTexture="True" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform IconType="None" Page="0" Col="0" Row="0" Inc="1.00" Max="10000.0" Min="0.0" Tooltip="Left side crop amount (pixels)" DisplayName="Left" Type="float" Name="crop_l">
+      </Uniform>
+      <Uniform IconType="None" Page="0" Col="0" Row="1" Inc="1.00" Max="10000.0" Min="0.0" Tooltip="Right side crop amount (pixels)" DisplayName="Right" Type="float" Name="crop_r">
+      </Uniform>
+      <Uniform IconType="None" Page="0" Col="0" Row="2" Inc="1.00" Max="10000.0" Min="0.0" Tooltip="Top crop amount (pixels)" DisplayName="Top" Type="float" Name="crop_t">
+      </Uniform>
+      <Uniform IconType="None" Page="0" Col="0" Row="3" Inc="1.00" Max="10000.0" Min="0.0" Tooltip="Bottom crop amount (pixels)" DisplayName="Bottom" Type="float" Name="crop_b">
+      </Uniform>
+      <Uniform Page="0" Col="0" Row="4" Default="false" Tooltip="Invert crop (inside crop)" DisplayName="Invert" Type="bool" Name="invert">
+      </Uniform>
+      <Uniform IconType="None" Page="0" Col="1" Row="0" Inc="1.0" Tooltip="X/Y Offset Amount" DisplayName="Offset" Type="vec2" Name="offset_xy">
+         <SubUniform Default="0.0" Min="-10000.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="0.0" Min="-10000.0" Max="10000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Page="0" Col="2" Row="0" Default="False" Tooltip="Enable Border" Type="bool" DisplayName="Border" Name="border">
+      </Uniform>
+      <Uniform Page="0" Col="2" Row="1" Inc="1.0" Max="10000.0" Min="0.0" Default="10" Tooltip="Border Size" Type="float" DisplayName="Size" Name="border_size">
+      </Uniform>
+      <Uniform Page="0" Col="2" Row="2" Tooltip="Border Color" ValueType="Colour" Type="vec3" DisplayName="Color" Name="border_color">
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Page="0" Col="2" Row="3" Max="100.0" Min="0.0" Inc="1.00" Default="100.0" Tooltip="Border Opacity" Type="float" DisplayName="Opacity" Name="border_trans">
+      </Uniform>
+      <Uniform Page="0" Col="2" Row="4" Default="True" Tooltip="Renders the simple border on top of Advanced Borders" Type="bool" DisplayName="Over Advanced Borders" Name="border_overadv">
+      </Uniform>
+      <Uniform Page="1" Col="0" Row="0" Default="False" Type="bool" DisplayName="Enable Left" Name="aborder_l">
+      </Uniform>
+      <Uniform Page="1" Col="0" Row="1" Default="False" Type="bool" DisplayName="Enable Right" Name="aborder_r">
+      </Uniform>
+      <Uniform Page="1" Col="0" Row="2" Default="False" Type="bool" DisplayName="Enable Top" Name="aborder_t">
+      </Uniform>
+      <Uniform Page="1" Col="0" Row="3" Default="False" Type="bool" DisplayName="Enable Bottom" Name="aborder_b">
+      </Uniform>
+      <Uniform Page="1" Col="1" Row="0" Inc="1.0" Max="10000.0" Min="0.0" Default="10" Tooltip="Border Size" Type="float" DisplayName="Left" Name="aborder_lsize">
+      </Uniform>
+      <Uniform Page="1" Col="1" Row="1" Inc="1.0" Max="10000.0" Min="0.0" Default="10" Tooltip="Border Size" Type="float" DisplayName="Right" Name="aborder_rsize">
+      </Uniform>
+      <Uniform Page="1" Col="1" Row="2" Inc="1.0" Max="10000.0" Min="0.0" Default="10" Tooltip="Border Size" Type="float" DisplayName="Top" Name="aborder_tsize">
+      </Uniform>
+      <Uniform Page="1" Col="1" Row="3" Inc="1.0" Max="10000.0" Min="0.0" Default="10" Tooltip="Border Size" Type="float" DisplayName="Bottom" Name="aborder_bsize">
+      </Uniform>
+      <Uniform Page="1" Col="2" Row="0" Tooltip="Border Color" ValueType="Colour" Type="vec3" DisplayName="Left" Name="aborder_lcolor">
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Page="1" Col="2" Row="1" Tooltip="Border Color" ValueType="Colour" Type="vec3" DisplayName="Right" Name="aborder_rcolor">
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Page="1" Col="2" Row="2" Tooltip="Border Color" ValueType="Colour" Type="vec3" DisplayName="Top" Name="aborder_tcolor">
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Page="1" Col="2" Row="3" Tooltip="Border Color" ValueType="Colour" Type="vec3" DisplayName="Bottom" Name="aborder_bcolor">
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+         <SubUniform Default="1.0" Min="-1000.0" Max="1000.0" ResDependent="None">
+         </SubUniform>
+      </Uniform>
+      <Uniform Page="1" Col="3" Row="0" Max="100.0" Min="0.0" Inc="1.00" Default="100.0" Tooltip="Border Opacity" Type="float" DisplayName="Left" Name="aborder_ltrans">
+      </Uniform>
+      <Uniform Page="1" Col="3" Row="1" Max="100.0" Min="0.0" Inc="1.00" Default="100.0" Tooltip="Border Opacity" Type="float" DisplayName="Right" Name="aborder_rtrans">
+      </Uniform>
+      <Uniform Page="1" Col="3" Row="2" Max="100.0" Min="0.0" Inc="1.00" Default="100.0" Tooltip="Border Opacity" Type="float" DisplayName="Top" Name="aborder_ttrans">
+      </Uniform>
+      <Uniform Page="1" Col="3" Row="3" Max="100.0" Min="0.0" Inc="1.00" Default="100.0" Tooltip="Border Opacity" Type="float" DisplayName="Bottom" Name="aborder_btrans">
+      </Uniform>
+      <Uniform GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputType="Front" NoInput="Error" Index="0" DisplayName="Front" Type="sampler2D" Name="in_front">
+      </Uniform>
+      <Uniform GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputColor="86,86,86" NoInput="Black" Index="1" DisplayName="Unused" Type="sampler2D" Name="unused">
+      </Uniform>
+      <Uniform GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_WRAP_T="GL_REPEAT" Mipmaps="False" InputType="Matte" NoInput="White" Index="2" DisplayName="Matte" Type="sampler2D" Name="in_matte">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Crop  Offset">
+      <Col Page="0" Col="0" Name="Cropping">
+      </Col>
+      <Col Page="0" Col="1" Name="Texture">
+      </Col>
+      <Col Page="0" Col="2" Name="Border">
+      </Col>
+   </Page>
+   <Page Page="1" Name="Adv Borders">
+      <Col Page="1" Col="1" Name="Size">
+      </Col>
+      <Col Page="1" Col="2" Name="Color">
+      </Col>
+      <Col Page="1" Col="3" Name="Opacity">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

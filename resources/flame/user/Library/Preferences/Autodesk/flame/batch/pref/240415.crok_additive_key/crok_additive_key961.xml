@@ -1,0 +1,137 @@
+<ShaderNodePreset Name="crok additive key" Description="
+This is an Additive Keyer 
+
+Input:
+- FG original: original fg
+- FG Despilled: despilled fg 
+- Back: background
+- Matte: matte clip (needed for default Additive Key processing) 
+- Matte Holdout: garbage matte input to define the region of interest (optional)
+- FG Clean: despilled clean green / blue sceen clip (optional)
+
+- Enable Joels Version: Enables a differnt kind of additive processing
+- Blend BG: Blends in the BG
+- BG Gamma: adjusts the gamma of the BG
+- BG Offset: offsets the BG
+ 
+- Global Restore: adjust the overall detail level 
+- Restore Darks: dials in darker parts of the fg footage
+- Restore Highlight: dials in lighter parts of the fg footage
+- Desaturate Dark: desaturate the dark parts of the fg footage
+- Desaturate High: desaturate the light parts of the fg footage
+
+- Show Pixel Spread: shows the pixel spread image only
+- Size: adjust the size of the pixelspread
+
+- Enable Matte Denoise: denoise the incomming matte for cleaner edge details
+- Amount: amount of denoise applied to the matte
+- Radius: radius of the applied denoise effect
+
+- Output Background: just output the processed background for further comping
+- Clamp Output: clamp the output to values between 0 and 1 
+
+Matchbox version by Erwan Leroy, Joel Osis and ivar@inferno-op.com" LimitInputsToTexture="True" SupportsAdaptiveDegradation="0">
+   <Shader Index="1" OutputBitDepth="Output">
+      <Uniform Name="front" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="80, 30, 30" DisplayName="FG Despilled" Tooltip="" NoInput="Error" Index="1">
+      </Uniform>
+   </Shader>
+   <Shader Index="2" OutputBitDepth="Output">
+      <Uniform Name="back" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Back" DisplayName="Back" Tooltip="" NoInput="Error" Index="2">
+      </Uniform>
+   </Shader>
+   <Shader Index="3" OutputBitDepth="Output">
+      <Uniform Name="matte" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Matte" DisplayName="Matte" Tooltip="" NoInput="White" Index="3">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="denoise" DisplayName="Enable Matte Denoise" Type="bool" Tooltip="" Default="False" Page="0" Col="2" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="denoise" Name="sigma_color" DisplayName="Amount" Type="float" Page="0" Col="2" Row="1" Tooltip="" Inc="0.01" Default="5.0" Min="0.01" Max="100.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="denoise" Name="filter_window" DisplayName="Radius" Type="float" Page="0" Col="2" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.01" Max="10.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="4" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+   </Shader>
+   <Shader Index="5" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="blur" Type="float" DisplayName="Size" Page="0" Col="2" Row="4" Tooltip="" Inc="0.1" Default="250.0" Min="1.0" Max="1000.0" ResDependent="None">
+      </Uniform>
+   </Shader>
+   <Shader Index="6" OutputBitDepth="Output">
+      <Uniform Name="blur" Type="float">
+         <Duplicate>
+         </Duplicate>
+      </Uniform>
+      <Uniform Name="adsk_results_pass5" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+   </Shader>
+   <Shader Index="7" OutputBitDepth="Output">
+      <Uniform Name="holdout" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="0, 50, 100" DisplayName="Matte Holdout" Tooltip="" NoInput="White" Index="4">
+      </Uniform>
+   </Shader>
+   <Shader Index="8" OutputBitDepth="Output">
+      <Uniform Name="adsk_results_pass3" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass1" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass6" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass4" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass2" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="adsk_results_pass7" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False">
+      </Uniform>
+      <Uniform Name="org_fg" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_LINEAR" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputType="Front" DisplayName="FG Original" Tooltip="" NoInput="White" Index="0">
+      </Uniform>
+      <Uniform Name="reference" Type="sampler2D" GL_TEXTURE_MIN_FILTER="GL_NEAREST" GL_TEXTURE_MAG_FILTER="GL_NEAREST" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" Mipmaps="False" InputColor="100, 50, 50" DisplayName="FG Clean" Tooltip="" NoInput="White" Index="5">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="show_pixelspread" DisplayName="Show Pixel Spread" Type="bool" Tooltip="" Default="False" Page="0" Col="2" Row="3">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="mix_global" DisplayName="Gobal Restore" Type="float" Page="0" Col="0" Row="0" Tooltip="" Inc="0.01" Default="1.0" Min="-3.0" Max="3.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="mix_darks" DisplayName="Restore Darks" Type="float" Page="0" Col="0" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="2.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="mix_highs" DisplayName="Restore Highlights" Type="float" Page="0" Col="0" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.0" Max="2.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="desat_darks" DisplayName="Desaturate Darks" Type="float" Page="0" Col="0" Row="3" Tooltip="" Inc="0.01" Default="0.0" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="False" UIConditionSource="joel_add" Name="desat_highs" DisplayName="Desaturate Highs" Type="float" Page="0" Col="0" Row="4" Tooltip="" Inc="0.01" Default="0.0" Min="0.0" Max="1.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="joel_add" Type="bool" DisplayName="Enable Joels Version" Tooltip="" Default="False" Page="0" Col="1" Row="0">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="joel_add" Name="bias_adj" Type="float" DisplayName="Blend BG" Page="0" Col="1" Row="1" Tooltip="" Inc="0.01" Default="1.0" Min="0.001" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="joel_add" Name="gamma" Type="float" DisplayName="BG Gamma" Page="0" Col="1" Row="2" Tooltip="" Inc="0.01" Default="1.0" Min="0.01" Max="10.0" ResDependent="None">
+      </Uniform>
+      <Uniform UIConditionType="Hide" UIConditionInvert="False" UIConditionValue="True" UIConditionSource="joel_add" Name="offset" Type="float" DisplayName="BG Offset" Page="0" Col="1" Row="3" Tooltip="" Inc="0.01" Default="0.0" Min="-1000000.0" Max="1000000.0" ResDependent="None">
+      </Uniform>
+      <Uniform Name="output_bg" DisplayName="Output Background" Type="bool" Tooltip="" Default="False" Page="0" Col="3" Row="0">
+      </Uniform>
+      <Uniform Name="clamp_output" DisplayName="Clamp Output" Type="bool" Tooltip="" Default="True" Page="0" Col="3" Row="1">
+      </Uniform>
+      <Uniform Max="1000000" Min="0" Default="0" Inc="1" Tooltip="" Row="3" Col="3" Page="0" DisplayName="Matte Output" Type="int" Name="output_opt" ValueType="Popup">
+         <PopupEntry Title="Additive" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Add + Hold" Value="1">
+         </PopupEntry>
+      </Uniform>
+      <Uniform Name="invert_holdout" DisplayName="Invert Holdout Matte" Type="bool" Tooltip="" Default="False" Page="0" Col="3" Row="4">
+      </Uniform>
+   </Shader>
+   <Page Page="0" Name="Additive Key Comp">
+      <Col Page="0" Col="0" Name="Details / Saturation">
+      </Col>
+      <Col Page="0" Col="1" Name="Additive Key by Joel">
+      </Col>
+      <Col Page="0" Col="2" Name="Pixel Spread / Denoise">
+      </Col>
+      <Col Page="0" Col="3" Name="Input / Output">
+      </Col>
+   </Page>
+</ShaderNodePreset>
+

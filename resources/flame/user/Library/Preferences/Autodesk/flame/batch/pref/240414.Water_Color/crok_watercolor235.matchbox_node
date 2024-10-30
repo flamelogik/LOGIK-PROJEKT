@@ -1,0 +1,25 @@
+<Setup><Base><Version>17.100000</Version><NAME>crok_watercolor235</NAME><Note>
+This Matchbox shader simulates watercolor like textures.
+
+Input:
+
+- Use External Matte: use an external displacment matte
+
+
+Setup:
+
+- Zoom: zoom in / out of the texture
+- Detail: amount of detail the texture has 
+- Speed: speed of the changing the main structure
+- Depth: depth of the texture
+- Seed: offset the texture
+
+- Blur: blur the painterly effect
+- Radius: define the radius of the paint fx
+- Velocity: define the speed of the paint fx
+- Offset: move the center of the pain fx
+
+
+Demo clip: http://vimeo.com/116442578
+
+Matchbox version by ivar@inferno-op.com</Note><Expanded>False</Expanded><ScrollBar>0</ScrollBar><Frames>0</Frames><Current_Time>100</Current_Time><Input_DataType>4</Input_DataType><ClampMode>0</ClampMode><AdapDegrad>False</AdapDegrad><ReadOnly>False</ReadOnly><Range Enable="False" Before="2" After="2" Start="1" End="100" SpanEnable="False" Span="100"/><NoMediaHandling>1</NoMediaHandling><UsedAsTransition>False</UsedAsTransition><FrameBounds W="1300" H="945" X="0" Y="0" SX="10.833333333333332" SY="7.875000000000000"/></Base><State><NbPasses>6</NbPasses><Regen>True</Regen><OutputResMode>0</OutputResMode><OutputResolution><Width>1920</Width><Height>1080</Height><Format>143</Format><ScanFormat>2</ScanFormat><AspectRatio>1.777777777777778</AspectRatio><ColourSpace>Unknown</ColourSpace></OutputResolution><TopChannel><Channel Name="crok_watercolor235"><Uncollapsed/></Channel></TopChannel><EffectChannel><Channel Name="Effect"><Uncollapsed/></Channel></EffectChannel><ShaderParameters><Parameter><Data><Channel Name="Zoom"><Extrap>constant</Extrap><Value>0</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>44</Frame><Value>0</Value><RHandle_dX>14.333333</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-14.333333</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Detail"><Extrap>constant</Extrap><Value>0.228999898</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>44</Frame><Value>0.228999898</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Speed"><Extrap>constant</Extrap><Value>0.150000006</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>44</Frame><Value>0.150000006</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Depth"><Extrap>constant</Extrap><Value>25</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>44</Frame><Value>25</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Seed"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Blur"><Extrap>constant</Extrap><Value>0</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>44</Frame><Value>0</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Radius"><Uncollapsed/></Channel></Data></Parameter><Parameter><Data><Channel Name="Velocity"><Extrap>constant</Extrap><Value>2</Value><Size>1</Size><KeyVersion>2</KeyVersion><KFrames><Key Index="0"><Frame>44</Frame><Value>2</Value><RHandle_dX>0.250000</RHandle_dX><RHandle_dY>0</RHandle_dY><LHandle_dX>-0.250000</LHandle_dX><LHandle_dY>0</LHandle_dY><CurveMode>bezier</CurveMode><CurveOrder>cubic</CurveOrder><TangentMode>smooth</TangentMode></Key></KFrames><Uncollapsed/></Channel></Data></Parameter><Parameter><X><Channel Name="X"><Uncollapsed/></Channel></X><Y><Channel Name="Y"><Uncollapsed/></Channel></Y><Icon>False</Icon><Action3D>False</Action3D></Parameter><Parameter><value>1</value></Parameter></ShaderParameters><InputPage>0</InputPage><RenderContext>0</RenderContext><InputRewiring><InputIndex SamplerIndex="0">0</InputIndex></InputRewiring><ShaderPresetIndex>0</ShaderPresetIndex></State></Setup>
