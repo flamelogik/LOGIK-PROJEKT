@@ -107,11 +107,13 @@ fi
 if [[ $PROJEKT_OS == "lin" ]]; 
 then 
 
-    export PROJEKT_APPS=/s84/apps
-    export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
-
-    export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
-    #export nuke_root=/usr/local/Nuke$nuke_version
+    # server install...
+    # export PROJEKT_APPS=/s84/apps
+    # export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
+    # export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
+    
+    # local install...
+    export nuke_root=/usr/local/Nuke$nuke_version
 
 
     #check if app dir exists:
