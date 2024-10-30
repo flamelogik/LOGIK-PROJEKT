@@ -75,24 +75,7 @@ nuke.addKnobChanged(projekt_core.vfxtools.update_root_warnings_callback, nodeCla
 # This section builds the PROJEKT menu on the toolbar.
 # ========================================================================== #
 """
-Work Files...
------
-Create...
-Publish...
-Load...
-Manage...
------
-Library...
------
-Set Resolution
-Set Frame Range
-Set Colorspace
-Apply All Settings
------
-Build Workfile
-Template Builder ->
------
-Experimental tools...
+
 """
 
 menuTitle="PROJEKT"
@@ -136,7 +119,7 @@ projekt_menu.addCommand('scripts/unpack_direnv_diff',
 # ========================================================================== #
 
 # add a menu for scanned gizmos, supply the name of the toolbar/node to add.
-gizmo_menu = "Toolzz"
+gizmo_menu = "Gizmos"
 # Store the gizmo_menu globally
 global current_gizmo_menu
 current_gizmo_menu = gizmo_menu

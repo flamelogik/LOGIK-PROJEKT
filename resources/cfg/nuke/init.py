@@ -6,7 +6,7 @@ import os
 print("# -------------------------------------------------------------------------- #")
 
 # ========================================================================== #
-# This section sets the color management to OCIO.
+# This section sets the color management knob to OCIO.
 # ========================================================================== #
 
 nuke.knobDefault('Root.colorManagement', 'OCIO')
