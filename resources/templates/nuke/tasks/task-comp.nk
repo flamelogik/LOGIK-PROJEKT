@@ -1,0 +1,116 @@
+set cut_paste_input [stack 0]
+version 15.0 v2
+BackdropNode {
+ inputs 0
+ name BackdropNode1
+ tile_color 0xa09797ff
+ label <center>dp_200
+ note_font_size 42
+ selected true
+ xpos 290
+ ypos -239
+ bdwidth 241
+ bdheight 292
+}
+BackdropNode {
+ inputs 0
+ name BackdropNode2
+ tile_color 0xa04040ff
+ label <center>dp_200_Render
+ note_font_size 42
+ selected true
+ xpos 220
+ ypos 252
+ bdwidth 381
+ bdheight 294
+ z_order 1
+}
+Read {
+ inputs 0
+ file_type exr
+ localizationPolicy off
+ format "4448 3096 0 0 4448 3096 1 "
+ first 991
+ before black
+ last 1055
+ after black
+ frame_mode "start at"
+ frame 991.0
+ origfirst 991
+ origlast 1055
+ origset true
+ auto_alpha true
+ name Read1
+ label color
+ selected true
+ xpos 370
+ ypos -149
+}
+ModifyMetaData {
+ metadata {
+  {set hiero/shot dp_200}
+  {set hiero/shot_guid 5D912663-1F99-4A0B-AA7F-2CB5DC4875F9}
+  {set hiero/clip dp_200_color}
+ }
+ name ModifyMetaData1
+ selected true
+ xpos 370
+ ypos -39
+}
+TimeClip {
+ time ""
+ first 991
+ last 1055
+ frame_mode "start at"
+ frame 991
+ origfirst 991
+ origlast 1055
+ origset true
+ mask_metadata true
+ name TimeClip1
+ label "Set frame range to \[knob first] - \[knob last]"
+ selected true
+ xpos 370
+ ypos 4
+}
+AddTimeCode {
+ startcode 04:47:51:03
+ metafps false
+ frame 973
+ useFrame true
+ name AddTimeCode1
+ selected true
+ xpos 370
+ ypos 341
+}
+ModifyMetaData {
+ metadata {
+  {set hiero/project Reynolds-Chefs-Kiss2_DDB_241010}
+  {set hiero/project_guid F3205EAB-3A86-49ED-94A5-D68B18DE48EB}
+  {set input/frame_rate 23.976024627685547}
+ }
+ name ModifyMetaData2
+ selected true
+ xpos 370
+ ypos 381
+}
+Write {
+ channels all
+ file_type exr
+ compression DWAA
+ metadata "all metadata except input/*"
+ noprefix true
+ first_part rgba
+ "standard layer name format" true
+ write_full_layer_names true
+ create_directories true
+ first 991
+ last 1055
+ ocioColorspace scene_linear
+ display default
+ view sRGB
+ name Write_exr
+ selected true
+ xpos 370
+ ypos 422
+}
