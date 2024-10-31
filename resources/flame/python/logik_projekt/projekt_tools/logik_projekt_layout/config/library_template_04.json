@@ -152,10 +152,10 @@
                 "object_color": ""
             },
             "item_19": {
-                "object_name": "video_folder",
+                "object_name": "transcodes_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
-                "display_name": "'video'",
+                "display_name": "'transcodes'",
                 "object_type": "folder",
                 "object_color": ""
             }
