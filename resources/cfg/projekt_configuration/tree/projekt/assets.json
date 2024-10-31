@@ -49,7 +49,7 @@
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
                 "path": "/{projekts_dir}/{projekt_dir}/assets/audio",
                 "bookmark_name": "audio",
-                "bookmark_type": "bookmark",
+                "bookmark_type": "folder",
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global",
                 "children": {
@@ -231,7 +231,7 @@
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
                 "path": "/{projekts_dir}/{projekt_dir}/assets/footage",
                 "bookmark_name": "footage",
-                "bookmark_type": "bookmark",
+                "bookmark_type": "folder",
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global",
                 "children": {
