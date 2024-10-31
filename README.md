@@ -127,7 +127,7 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 -------------------------------------------------------------------------------
 
     # Create /etc/synthetic.conf to link /PROJEKTS to test PROJEKTS directory:
-    sudo cat "PROJEKTS   Users/Shared/PROJEKTS" > /etc/synthetic.conf
+    echo "PROJEKTS	System/Volumes/Data/Users/Shared/PROJEKTS" | sudo tee /etc/synthetic.conf
 
 -------------------------------------------------------------------------------
 

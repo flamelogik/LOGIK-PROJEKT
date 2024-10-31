@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_save_config.py
-# Version:          0.5.0
+# Version:          1.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-10-30
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -238,7 +238,8 @@ def pyside6_qt_save_config(
     # Set config paths
 
     config_path = os.path.join(script_path, 'config')
-    config_xml = os.path.join(config_path, 'config.xml')
+    # config_xml = os.path.join(config_path, 'config.xml')
+    config_xml = os.path.join(script_path, 'config.xml')
     print(f'    Config path: {config_xml}\n')
 
     # Save config
@@ -429,4 +430,8 @@ def pyside6_qt_save_config(
 # version:               0.5.0
 # modified:              2024-08-31 - 18:26:06
 # comments:              prep for release.
+# -------------------------------------------------------------------------- #
+# version:               1.0.0
+# modified:              2024-10-30 - 07:35:27
+# comments:              Refactored PySide6 Output Node Config UI.
 # -------------------------------------------------------------------------- #
