@@ -51,7 +51,135 @@
                 "bookmark_name": "audio",
                 "bookmark_type": "bookmark",
                 "bookmark_parent": "assets",
-                "bookmark_visibility": "Global"
+                "bookmark_visibility": "Global",
+                "children": {
+                    "item_01": {
+                        "object_name": "dub_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'dub'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "dub",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/audio",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/audio/dub",
+                        "bookmark_name": "dub",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "audio",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_02": {
+                        "object_name": "mix_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'mix'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "mix",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/audio",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/audio/mix",
+                        "bookmark_name": "mix",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "audio",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_03": {
+                        "object_name": "music_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'music'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "music",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/audio",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/audio/music",
+                        "bookmark_name": "music",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "audio",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_04": {
+                        "object_name": "production_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'production'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "production",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/audio",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/audio/production",
+                        "bookmark_name": "production",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "audio",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_05": {
+                        "object_name": "sound_effects_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'sound_effects'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "sound_effects",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/audio",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/audio/sound_effects",
+                        "bookmark_name": "sound_effects",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "audio",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_06": {
+                        "object_name": "stems_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'stems'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "stems",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/audio",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/audio/stems",
+                        "bookmark_name": "stems",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "audio",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_07": {
+                        "object_name": "voiceover_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'voiceover'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "voiceover",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/audio",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/audio/voiceover",
+                        "bookmark_name": "voiceover",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "audio",
+                        "bookmark_visibility": "Global"
+                    }
+                }        
             },
             "item_03": {
                 "object_name": "cgi_folder",
@@ -90,42 +218,98 @@
                 "bookmark_visibility": "Global"
             },
             "item_05": {
-                "object_name": "footage_graded_folder",
+                "object_name": "footage_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
-                "display_name": "'footage_graded'",
+                "display_name": "'footage'",
                 "object_type": "folder",
                 "object_color": "",
                 "link": "True",
-                "dir_name": "footage_graded",
+                "dir_name": "footage",
                 "filesystem_type": "folder",
                 "flame_type": "folder",
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
-                "path": "/{projekts_dir}/{projekt_dir}/assets/footage_graded",
-                "bookmark_name": "footage_graded",
+                "path": "/{projekts_dir}/{projekt_dir}/assets/footage",
+                "bookmark_name": "footage",
                 "bookmark_type": "bookmark",
                 "bookmark_parent": "assets",
-                "bookmark_visibility": "Global"
+                "bookmark_visibility": "Global",
+                "children": {
+                    "item_01": {
+                        "object_name": "graded_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "footage_folder",
+                        "display_name": "'graded'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "graded",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/footage",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/footage/graded",
+                        "bookmark_name": "graded",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "footage",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_02": {
+                        "object_name": "raw_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "footage_folder",
+                        "display_name": "'raw'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "raw",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/footage",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/footage/raw",
+                        "bookmark_name": "raw",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "footage",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_03": {
+                        "object_name": "stock_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "footage_folder",
+                        "display_name": "'stock'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "stock",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/footage",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/footage/stock",
+                        "bookmark_name": "stock",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "footage",
+                        "bookmark_visibility": "Global"
+                    },
+                    "item_04": {
+                        "object_name": "transcodes_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "footage_folder",
+                        "display_name": "'transcodes'",
+                        "object_type": "folder",
+                        "object_color": "",
+                        "link": "True",
+                        "dir_name": "transcodes",
+                        "filesystem_type": "folder",
+                        "flame_type": "folder",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/footage",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/footage/transcodes",
+                        "bookmark_name": "transcodes",
+                        "bookmark_type": "bookmark",
+                        "bookmark_parent": "footage",
+                        "bookmark_visibility": "Global"
+                    }
+                }
             },
             "item_06": {
-                "object_name": "footage_raw_folder",
-                "process_type": "create_or_validate_object",
-                "parent_object": "assets_library",
-                "display_name": "'footage_raw'",
-                "object_type": "folder",
-                "object_color": "",
-                "link": "True",
-                "dir_name": "footage_raw",
-                "filesystem_type": "folder",
-                "flame_type": "folder",
-                "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
-                "path": "/{projekts_dir}/{projekt_dir}/assets/footage_raw",
-                "bookmark_name": "footage_raw",
-                "bookmark_type": "bookmark",
-                "bookmark_parent": "assets",
-                "bookmark_visibility": "Global"
-            },
-            "item_07": {
                 "object_name": "graphics_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -143,7 +327,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_08": {
+            "item_07": {
                 "object_name": "images_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -161,7 +345,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_09": {
+            "item_08": {
                 "object_name": "legal_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -179,7 +363,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_10": {
+            "item_09": {
                 "object_name": "matchmoving_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -197,7 +381,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_11": {
+            "item_10": {
                 "object_name": "miscellaneous_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -215,7 +399,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_12": {
+            "item_11": {
                 "object_name": "paint_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -233,7 +417,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_13": {
+            "item_12": {
                 "object_name": "photoshop_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -251,7 +435,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_14": {
+            "item_13": {
                 "object_name": "roto_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -269,7 +453,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_15": {
+            "item_14": {
                 "object_name": "slates_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -287,7 +471,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_16": {
+            "item_15": {
                 "object_name": "subtitles_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -301,6 +485,24 @@
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
                 "path": "/{projekts_dir}/{projekt_dir}/assets/subtitles",
                 "bookmark_name": "subtitles",
+                "bookmark_type": "bookmark",
+                "bookmark_parent": "assets",
+                "bookmark_visibility": "Global"
+            },
+            "item_16": {
+                "object_name": "supers_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'supers'",
+                "object_type": "folder",
+                "object_color": "",
+                "link": "True",
+                "dir_name": "supers",
+                "filesystem_type": "folder",
+                "flame_type": "folder",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
+                "path": "/{projekts_dir}/{projekt_dir}/assets/supers",
+                "bookmark_name": "supers",
                 "bookmark_type": "bookmark",
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
@@ -342,19 +544,19 @@
                 "bookmark_visibility": "Global"
             },
             "item_19": {
-                "object_name": "transcodes_folder",
+                "object_name": "video_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
-                "display_name": "'transcodes'",
+                "display_name": "'video'",
                 "object_type": "folder",
                 "object_color": "",
                 "link": "True",
-                "dir_name": "transcodes",
+                "dir_name": "video",
                 "filesystem_type": "folder",
                 "flame_type": "folder",
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
-                "path": "/{projekts_dir}/{projekt_dir}/assets/transcodes",
-                "bookmark_name": "transcodes",
+                "path": "/{projekts_dir}/{projekt_dir}/assets/video",
+                "bookmark_name": "video",
                 "bookmark_type": "bookmark",
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"

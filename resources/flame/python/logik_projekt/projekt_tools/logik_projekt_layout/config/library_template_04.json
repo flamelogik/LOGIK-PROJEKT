@@ -48,26 +48,26 @@
                         "object_color": ""
                     },
                     "item_04": {
-                        "object_name": "stems_folder",
-                        "process_type": "create_or_validate_object",
-                        "parent_object": "audio_folder",
-                        "display_name": "'stems'",
-                        "object_type": "folder",
-                        "object_color": ""
-                    },
-                    "item_05": {
-                        "object_name": "sfx_folder",
-                        "process_type": "create_or_validate_object",
-                        "parent_object": "audio_folder",
-                        "display_name": "'sfx'",
-                        "object_type": "folder",
-                        "object_color": ""
-                    },
-                    "item_06": {
                         "object_name": "production_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
                         "display_name": "'production'",
+                        "object_type": "folder",
+                        "object_color": ""
+                    },
+                    "item_05": {
+                        "object_name": "sound_effects_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'sound_effects'",
+                        "object_type": "folder",
+                        "object_color": ""
+                    },
+                    "item_06": {
+                        "object_name": "stems_folder",
+                        "process_type": "create_or_validate_object",
+                        "parent_object": "audio_folder",
+                        "display_name": "'stems'",
                         "object_type": "folder",
                         "object_color": ""
                     },
