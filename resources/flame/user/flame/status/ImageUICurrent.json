@@ -1,0 +1,16 @@
+{
+    "Settings": [
+        {
+            "name": "ImportImageFileType",
+            "value": 23
+        },
+        {
+            "name": "ImportFormat",
+            "value": 0
+        },
+        {
+            "name": "UseSoftImportBool",
+            "value": false
+        }
+    ]
+}

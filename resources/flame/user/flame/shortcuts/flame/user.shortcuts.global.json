@@ -1,0 +1,81 @@
+{
+    "Version": "2025.1",
+    "globalShortcuts": [
+        {
+            "Description": "Delete",
+            "Category": "General",
+            "FunctionName": "HotkeyGlobalDelete",
+            "Key1": "KEY_DELETE>"
+        },
+        {
+            "Description": "Delete",
+            "Category": "General",
+            "FunctionName": "HotkeyGlobalForwardDelete",
+            "Key1": "KEY_DELETE>"
+        },
+        {
+            "Description": "Fit In View",
+            "Category": "Viewing",
+            "FunctionName": "GlobalZoomFit",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_HOME"
+        },
+        {
+            "Description": "Auto Keyframe",
+            "Category": "Animation",
+            "FunctionName": "HotkeyGlobalAutoKey",
+            "Key1": "KEY_;"
+        },
+        {
+            "Description": "Set Keyframe",
+            "Category": "Animation",
+            "FunctionName": "HotkeyGlobalSetKey",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_SHFT",
+            "Key3": "KEY_K"
+        },
+        {
+            "Description": "Delete Keyframe",
+            "Category": "Animation",
+            "FunctionName": "HotkeyGlobalRemoveKey",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_SHFT",
+            "Key3": "KEY_DELETE>"
+        },
+        {
+            "Description": "Reset Node/Timeline FX",
+            "Category": "Tools",
+            "FunctionName": "HotkeyGlobalResetFxNode",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_SHFT",
+            "Key3": "KEY_CTL",
+            "Key4": "KEY_R"
+        },
+        {
+            "Description": "Main Menu - create-openclip : configure projekt_neat_video",
+            "Category": "Hook",
+            "FunctionName": "Main_Menu_-_create-openclip___configure_projekt_neat_video",
+            "Dynamic": "1"
+        },
+        {
+            "Description": "Batch - create-openclip : projekt_comp selected clips",
+            "Category": "Hook",
+            "FunctionName": "Batch_-_create-openclip___projekt_comp_selected_clips",
+            "Dynamic": "1",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_CTL",
+            "Key3": "KEY_COMMAND",
+            "Key4": "KEY_P"
+        },
+        {
+            "Description": "Batch - create-openclip : projekt_neat_video selected clips",
+            "Category": "Hook",
+            "FunctionName": "Batch_-_create-openclip___projekt_neat_video_selected_clips",
+            "Dynamic": "1",
+            "Key1": "KEY_ALT",
+            "Key2": "KEY_CTL",
+            "Key3": "KEY_COMMAND",
+            "Key4": "KEY_N"
+        }
+    ]
+}

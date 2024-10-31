@@ -1,0 +1,11 @@
+{
+    "GlobalSettings": {
+        "ApplyDiagnostics": false,
+        "Standard": 1,
+        "SyncMode": 1,
+        "CSMode": 3,
+        "CSPixel": true,
+        "CSLine": true,
+        "CSBox": true
+    }
+}

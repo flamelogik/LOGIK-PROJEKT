@@ -1,0 +1,413 @@
+{
+    "NodeBinTabs": [
+        {
+            "Title": "Colour",
+            "Index": 1,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Clamp"
+                        },
+                        {
+                            "Token": "CCurves"
+                        },
+                        {
+                            "Token": "Col"
+                        },
+                        {
+                            "Token": "Exposure"
+                        },
+                        {
+                            "Token": "Image"
+                        },
+                        {
+                            "Token": "Mono"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "CC"
+                        },
+                        {
+                            "Token": "Lut"
+                        },
+                        {
+                            "Token": "CWarp"
+                        },
+                        {
+                            "Token": "Gradient"
+                        },
+                        {
+                            "Token": "Look"
+                        },
+                        {
+                            "Token": "Neg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Key",
+            "Index": 2,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Histo2d"
+                        },
+                        {
+                            "Token": "BlendComp"
+                        },
+                        {
+                            "Token": "CCurves"
+                        },
+                        {
+                            "Token": "Comp"
+                        },
+                        {
+                            "Token": "Denoise"
+                        },
+                        {
+                            "Token": "EdgeDetect"
+                        },
+                        {
+                            "Token": "Mask"
+                        },
+                        {
+                            "Token": "KeyerChannel"
+                        },
+                        {
+                            "Token": "LumKey"
+                        },
+                        {
+                            "Token": "KeyerRGBCMYL"
+                        },
+                        {
+                            "Token": "MasterK"
+                        },
+                        {
+                            "Token": "MatteEdge"
+                        },
+                        {
+                            "Token": "Mono"
+                        },
+                        {
+                            "Token": "BPaint"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Auto"
+                        },
+                        {
+                            "Token": "Blur"
+                        },
+                        {
+                            "Token": "CWarp"
+                        },
+                        {
+                            "Token": "CryptoMatte"
+                        },
+                        {
+                            "Token": "DiffMatte"
+                        },
+                        {
+                            "Token": "GMask"
+                        },
+                        {
+                            "Token": "Key3d"
+                        },
+                        {
+                            "Token": "KeyerHLS"
+                        },
+                        {
+                            "Token": "KeyerRGB"
+                        },
+                        {
+                            "Token": "KeyerYUV"
+                        },
+                        {
+                            "Token": "Curves"
+                        },
+                        {
+                            "Token": "MKeyer"
+                        },
+                        {
+                            "Token": "Neg"
+                        },
+                        {
+                            "Token": "PixelSpread"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Comp",
+            "Index": 3,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Histo2d"
+                        },
+                        {
+                            "Token": "Blur3D"
+                        },
+                        {
+                            "Token": "Auto"
+                        },
+                        {
+                            "Token": "BlendComp"
+                        },
+                        {
+                            "Token": "Clamp"
+                        },
+                        {
+                            "Token": "Col"
+                        },
+                        {
+                            "Token": "Comp"
+                        },
+                        {
+                            "Token": "Denoise"
+                        },
+                        {
+                            "Token": "DiffMatte"
+                        },
+                        {
+                            "Token": "EdgeDetect"
+                        },
+                        {
+                            "Token": "Gradient"
+                        },
+                        {
+                            "Token": "MatchGrain"
+                        },
+                        {
+                            "Token": "Mono"
+                        },
+                        {
+                            "Token": "MoBlur"
+                        },
+                        {
+                            "Token": "Neg"
+                        },
+                        {
+                            "Token": "PixelSpread"
+                        },
+                        {
+                            "Token": "Separate"
+                        },
+                        {
+                            "Token": "Text"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Transform2D"
+                        },
+                        {
+                            "Token": "Action"
+                        },
+                        {
+                            "Token": "AutoStabilize"
+                        },
+                        {
+                            "Token": "Blur"
+                        },
+                        {
+                            "Token": "Lut"
+                        },
+                        {
+                            "Token": "Combine"
+                        },
+                        {
+                            "Token": "CryptoMatte"
+                        },
+                        {
+                            "Token": "DepthOfField"
+                        },
+                        {
+                            "Token": "Dissolve"
+                        },
+                        {
+                            "Token": "Mask"
+                        },
+                        {
+                            "Token": "LensDistortion"
+                        },
+                        {
+                            "Token": "Curves"
+                        },
+                        {
+                            "Token": "MotionAnalysis"
+                        },
+                        {
+                            "Token": "MotionConvert"
+                        },
+                        {
+                            "Token": "BPaint"
+                        },
+                        {
+                            "Token": "Regrain"
+                        },
+                        {
+                            "Token": "STMap"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "FX",
+            "Index": 4,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Blur3D"
+                        },
+                        {
+                            "Token": "Blur"
+                        },
+                        {
+                            "Token": "Compound"
+                        },
+                        {
+                            "Token": "Deform"
+                        },
+                        {
+                            "Token": "Distort"
+                        },
+                        {
+                            "Token": "Filter"
+                        },
+                        {
+                            "Token": "Gradient"
+                        },
+                        {
+                            "Token": "Motif"
+                        },
+                        {
+                            "Token": "Post"
+                        },
+                        {
+                            "Token": "Stylize"
+                        },
+                        {
+                            "Token": "SubstanceSplatter"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Average"
+                        },
+                        {
+                            "Token": "BumpDisplace"
+                        },
+                        {
+                            "Token": "Damage"
+                        },
+                        {
+                            "Token": "DepthOfField"
+                        },
+                        {
+                            "Token": "EdgeDetect"
+                        },
+                        {
+                            "Token": "Glow"
+                        },
+                        {
+                            "Token": "Matchbox"
+                        },
+                        {
+                            "Token": "OpenFX"
+                        },
+                        {
+                            "Token": "RecursiveOps"
+                        },
+                        {
+                            "Token": "SubstanceNoise"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Format",
+            "Index": 5,
+            "NodeBin": [
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Transform2D"
+                        },
+                        {
+                            "Token": "BurnMetadata"
+                        },
+                        {
+                            "Token": "Lut"
+                        },
+                        {
+                            "Token": "DeInterlace"
+                        },
+                        {
+                            "Token": "Flip"
+                        },
+                        {
+                            "Token": "Look"
+                        },
+                        {
+                            "Token": "MotionConvert"
+                        },
+                        {
+                            "Token": "Resize"
+                        },
+                        {
+                            "Token": "StereoToolbox"
+                        }
+                    ]
+                },
+                {
+                    "NodeLine": [
+                        {
+                            "Token": "Letterbox"
+                        },
+                        {
+                            "Token": "Clamp"
+                        },
+                        {
+                            "Token": "Deal"
+                        },
+                        {
+                            "Token": "FieldMerge"
+                        },
+                        {
+                            "Token": "Interlace"
+                        },
+                        {
+                            "Token": "MapConvert"
+                        },
+                        {
+                            "Token": "Pulldown"
+                        },
+                        {
+                            "Token": "Stereo"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

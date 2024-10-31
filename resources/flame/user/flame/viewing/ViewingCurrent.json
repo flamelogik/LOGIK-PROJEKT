@@ -1,0 +1,24 @@
+{
+    "Settings": [
+        {
+            "name": "ViewingGrabRefBakeViewTransform",
+            "value": false
+        },
+        {
+            "name": "ViewingGrabRefBakeViewTransformType",
+            "value": 0
+        },
+        {
+            "name": "ViewingDefaultZoomType",
+            "value": 0
+        },
+        {
+            "name": "ViewingFitAllowsUpscale",
+            "value": false
+        },
+        {
+            "name": "ViewingDefaultHome",
+            "value": 100
+        }
+    ]
+}

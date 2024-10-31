@@ -1,0 +1,48 @@
+{
+    "Settings": [
+        {
+            "name": "PlayAllFramesBatch",
+            "value": 1
+        },
+        {
+            "name": "PlayAllFramesTimeline",
+            "value": 0
+        },
+        {
+            "name": "PlayAllFramesTools",
+            "value": 1
+        },
+        {
+            "name": "PlayAudioMonitoringBatch",
+            "value": true
+        },
+        {
+            "name": "PlayAudioMonitoringTimeline",
+            "value": true
+        },
+        {
+            "name": "DefaultRenderingOptionForSave2",
+            "value": 1
+        },
+        {
+            "name": "BGRAContextsForSave",
+            "value": 0
+        },
+        {
+            "name": "DefaultIncludeHistory",
+            "value": false
+        },
+        {
+            "name": "ModuleUIScrubUpdateNumerics",
+            "value": true
+        },
+        {
+            "name": "ModuleUIAutoSaveEnabled",
+            "value": true
+        },
+        {
+            "name": "ModuleUIAppendOutputTypeEnabled",
+            "value": true
+        }
+    ]
+}

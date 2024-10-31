@@ -1,0 +1,14 @@
+{
+    "ExplorerFilterPresets": {
+        "PresetsType": [
+            {
+                "PresetName": "TL_FX",
+                "Presets": []
+            },
+            {
+                "PresetName": "References",
+                "Presets": []
+            }
+        ]
+    }
+}

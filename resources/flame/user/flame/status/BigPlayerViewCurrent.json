@@ -1,0 +1,40 @@
+{
+    "Settings": [
+        {
+            "name": "EditdeskShowSubtitles",
+            "value": true
+        },
+        {
+            "name": "PlayerSidePanel",
+            "value": 4
+        },
+        {
+            "name": "EditdeskShowIcons",
+            "value": true
+        },
+        {
+            "name": "EditdeskShowIconsDuringPlayback",
+            "value": true
+        },
+        {
+            "name": "EditdesPlayerOptionsCacheOnPlayback",
+            "value": false
+        },
+        {
+            "name": "ToggleMetadataOverlay",
+            "value": false
+        },
+        {
+            "name": "AutoRamPlay",
+            "value": true
+        },
+        {
+            "name": "SavedOverlayName",
+            "value": "burnin_info_UHD"
+        },
+        {
+            "name": "SavedOverlayPath",
+            "value": "/opt/Autodesk/shared/burn_metadata/overlay/burnin_info_UHD.burnmetadata_node"
+        }
+    ]
+}

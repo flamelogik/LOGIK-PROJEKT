@@ -1,0 +1,56 @@
+{
+    "Settings": [
+        {
+            "name": "EdlViewerAutoUpdate",
+            "value": true
+        },
+        {
+            "name": "EdlSelectEdits",
+            "value": false
+        },
+        {
+            "name": "EdlFontSelect",
+            "value": 1
+        },
+        {
+            "name": "EdlRipple",
+            "value": false
+        },
+        {
+            "name": "EdlCaptureImport",
+            "value": 0
+        },
+        {
+            "name": "EDLAssemble_Editing",
+            "value": 0
+        },
+        {
+            "name": "EDLDissRenderMode",
+            "value": 0
+        },
+        {
+            "name": "EDLTWRenderMode",
+            "value": 0
+        },
+        {
+            "name": "EDLFocusAlignment",
+            "value": 0
+        },
+        {
+            "name": "EDLDissolveCurve",
+            "value": 0
+        },
+        {
+            "name": "EDLTimewarpMix",
+            "value": 0.0
+        },
+        {
+            "name": "EdlKeepSystemComments",
+            "value": true
+        },
+        {
+            "name": "EdlHideComments",
+            "value": false
+        }
+    ]
+}
