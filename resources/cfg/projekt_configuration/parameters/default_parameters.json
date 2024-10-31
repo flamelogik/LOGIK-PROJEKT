@@ -21,7 +21,7 @@
 
     "Start Frame: ": "1001",
 
-    "Init Config: ": "1920x1080@23976p.cfg",
+    "Init Config: ": "1920x1080@24000p.cfg",
 
     "Color Science: ": "ADSK_ACES_1.1"
 }
