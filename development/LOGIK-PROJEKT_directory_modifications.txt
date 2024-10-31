@@ -1,0 +1,303 @@
+.
+├── assets
+│   ├── artwork
+│   ├── audio
+│   ├── cgi
+│   ├── font
+│   ├── footage_graded
+│   ├── footage_raw
+│   ├── graphics
+│   ├── images
+│   ├── legal
+│   ├── matchmoving
+│   ├── miscellaneous
+│   ├── paint
+│   ├── photoshop
+│   ├── roto
+│   ├── slates
+│   ├── subtitles
+│   ├── titles
+│   ├── tracking
+│   └── transcodes
+├── backup
+│   └── backup_scripts
+│       └── dxs-studio-02
+├── cfg
+│   ├── log
+│   ├── pref
+│   ├── template
+│   └── workstation
+│       └── dxs-studio-02
+├── docs
+│   ├── agreements
+│   │   ├── employment
+│   │   ├── memoranda_of_understanding
+│   │   ├── non_disclosure
+│   │   └── service
+│   ├── briefs
+│   │   ├── design_briefs
+│   │   ├── marketing_briefs
+│   │   └── projekt_briefs
+│   ├── contracts
+│   │   ├── client_contracts
+│   │   ├── lease_contracts
+│   │   └── vendor_contracts
+│   ├── designs
+│   │   ├── mockups
+│   │   ├── specifications
+│   │   └── wireframes
+│   ├── estimates
+│   │   ├── cost_estimates
+│   │   ├── projekt_estimates
+│   │   └── time_estimates
+│   ├── financial
+│   │   ├── budgets
+│   │   ├── invoices
+│   │   ├── reports
+│   │   └── statements
+│   ├── guidelines
+│   │   ├── branding
+│   │   ├── compliance
+│   │   ├── localization
+│   │   └── styleguide
+│   ├── handbooks
+│   │   ├── employee
+│   │   ├── policy
+│   │   └── training
+│   ├── invoices
+│   │   ├── client
+│   │   ├── paid
+│   │   ├── unpaid
+│   │   └── vendor
+│   ├── job_description
+│   │   ├── administrative_roles
+│   │   ├── management_roles
+│   │   └── technical_roles
+│   ├── knowledge_base
+│   │   ├── faqs
+│   │   ├── how_to_guides
+│   │   └── troubleshooting
+│   ├── licenses
+│   │   ├── product_licenses
+│   │   ├── service_licenses
+│   │   └── software_licenses
+│   ├── memoranda
+│   │   ├── external_memos
+│   │   ├── internal_memos
+│   │   └── meeting_memos
+│   ├── non_disclosure
+│   │   ├── client_ndas
+│   │   ├── employee_ndas
+│   │   └── vendor_ndas
+│   ├── org_charts
+│   │   ├── company_charts
+│   │   ├── department_charts
+│   │   └── team_charts
+│   ├── policies
+│   │   ├── hr_policies
+│   │   ├── it_policies
+│   │   └── operational_policies
+│   ├── quotations
+│   │   ├── client_quotations
+│   │   ├── service_quotations
+│   │   └── vendor_quotations
+│   ├── reports
+│   │   ├── annual_reports
+│   │   ├── projekt_reports
+│   │   └── quarterly_reports
+│   ├── schedules
+│   │   ├── meeting_schedules
+│   │   ├── projekt_schedules
+│   │   └── training_schedules
+│   ├── technical
+│   │   ├── technical_manuals
+│   │   ├── technical_reports
+│   │   └── technical_specifications
+│   ├── user_guides
+│   │   ├── product_user_guides
+│   │   ├── service_user_guides
+│   │   └── software_user_guides
+│   ├── vendor_list
+│   │   ├── approved_vendors
+│   │   ├── blacklisted_vendors
+│   │   └── preferred_vendors
+│   ├── workflows
+│   │   ├── approval_workflows
+│   │   ├── operational_workflows
+│   │   └── process_workflows
+│   └── xml
+│       ├── xml_templates
+│       └── xslt_templates
+├── editorial
+│   ├── aaf
+│   ├── davinci_resolve
+│   ├── edl
+│   ├── final_cut_pro
+│   ├── premiere
+│   │   ├── 01_premiere_projects
+│   │   │   ├── z_OldEdits
+│   │   │   └── z_Template
+│   │   │       └── 1986_PREMIERE_TEMPLATE_241029_XX_2025.prproj
+│   │   ├── 02_footage
+│   │   │   ├── 01_transcodes                                       -> assets/transcodes
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 02_stock                                            -> assets/footage_raw/stock
+│   │   │   │   └── _YYMMDD
+│   │   │   └── 03_misc                                             -> assets/footage_raw
+│   │   │       └── _YYMMDD
+│   │   ├── 03_audio
+│   │   │   ├── 01_mix                                              -> assets/audio/mix
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 02_music                                            -> assets/audio/music
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 03_sfx                                              -> assets/audio/sfx
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 04_vo                                               -> assets/audio/vo
+│   │   │   │   └── _YYMMDD
+│   │   │   └── 05_production                                       -> assets/audio/production
+│   │   │       └── _YYMMDD
+│   │   ├── 04_gfx
+│   │   │   ├── 01_aftereffects                                     -> assets/graphics/aftereffects
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 02_graphic_inputs                                   -> assets/graphics/inputs
+│   │   │   │   └── _YYMMDD
+│   │   │   └── 03_graphic_outputs                                  -> assets/graphics/outputs
+│   │   │       └── _YYMMDD
+│   │   ├── 05_stills  
+│   │   │   ├── 01_psds                                             -> assets/photoshop
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 02_images                                           -> assets/images
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 03_supers                                           -> assets/supers
+│   │   │   │   └── _YYMMDD
+│   │   │   └── 04_legal                                            -> assets/legal
+│   │   │       └── _YYMMDD
+│   │   ├── 06_color
+│   │   │   ├── 01_color_inputs                                     -> DOES_THIS_MEAN_GRADING?
+│   │   │   │   └── _YYMMDD
+│   │   │   └── 02_color_outputs                                    -> DOES_THIS_MEAN_GRADING?
+│   │   │       └── _YYMMDD
+│   │   ├── 07_misc
+│   │   │   ├── 01_export_presets                                   -> resources/adobe/premiere/premiere_presets/export
+│   │   │   │   ├── 720p Posting.epr
+│   │   │   │   ├── Adobe_Desktop.epr
+│   │   │   │   ├── Adobe_Mobile.epr
+│   │   │   │   ├── Boeing MASTER.epr
+│   │   │   │   ├── Boeing NBC.epr
+│   │   │   │   ├── Boeing email v2.epr
+│   │   │   │   ├── Boeing-Twitter.epr
+│   │   │   │   ├── Boeing.com-YT.epr
+│   │   │   │   ├── CBNC_Low.epr
+│   │   │   │   ├── CNBC_High.epr
+│   │   │   │   ├── CNBC_Med.epr
+│   │   │   │   ├── CNBC_Mezz.epr
+│   │   │   │   ├── Facebook-Instagram Feed.epr
+│   │   │   │   ├── Facebook-Instagram In-Stream.epr
+│   │   │   │   ├── Facebook-Instagram Stories.epr
+│   │   │   │   ├── Hulu-Innovid.epr
+│   │   │   │   ├── Instagram Reel.epr
+│   │   │   │   ├── Keynote.epr
+│   │   │   │   ├── LinkedIn 16x9.epr
+│   │   │   │   ├── LinkedIn 1x1.epr
+│   │   │   │   ├── Network Clearance.epr
+│   │   │   │   ├── Pinterest.epr
+│   │   │   │   ├── PresetTree.xml
+│   │   │   │   ├── Programmatic.epr
+│   │   │   │   ├── Snapchat Video Ad.epr
+│   │   │   │   ├── Snapchat Video Story.epr
+│   │   │   │   ├── TikTok.epr
+│   │   │   │   ├── Twitter Video Ads.epr
+│   │   │   │   └── Twitter Video Carousel.epr
+│   │   │   ├── 02_fonts                                            -> assets/font
+│   │   │   │   ├── Gotham                                          -> resources/adobe/fonts
+│   │   │   │   └── KC Striker Sans
+│   │   │   │       └── KCStrikerSans.otf
+│   │   │   ├── 03_scripts
+│   │   │   │   └── _YYMMDD
+│   │   │   ├── 04_slates                                           -> assets/slates
+│   │   │   │   ├── Slate Audio                                     -> resources/adobe/premiere/premiere_templates/slates/Slate Audio
+│   │   │   │   │   └── neg20db_1k Audio Extracted.wav
+│   │   │   │   └── Slate Graphics                                  -> resources/adobe/premiere/premiere_templates/slates/Slate Graphics
+│   │   │   │       ├── 1986 Logo
+│   │   │   │       │   └── 1986_white_fill_RGB_10x.png
+│   │   │   │       └── Countdown Numbers
+│   │   │   │           ├── Black
+│   │   │   │           │   ├── 0.png
+│   │   │   │           │   ├── 1.png
+│   │   │   │           │   ├── 2.png
+│   │   │   │           │   ├── 3.png
+│   │   │   │           │   ├── 4.png
+│   │   │   │           │   ├── 5.png
+│   │   │   │           │   ├── 6.png
+│   │   │   │           │   ├── 7.png
+│   │   │   │           │   ├── 8.png
+│   │   │   │           │   └── 9.png
+│   │   │   │           ├── Ticker.mov
+│   │   │   │           └── White
+│   │   │   │               ├── 0_001.png
+│   │   │   │               ├── 1_001.png
+│   │   │   │               ├── 2_001.png
+│   │   │   │               ├── 3_001.png
+│   │   │   │               ├── 4_001.png
+│   │   │   │               ├── 5_001.png
+│   │   │   │               ├── 6_001.png
+│   │   │   │               ├── 7_001.png
+│   │   │   │               ├── 8_001.png
+│   │   │   │               └── 9_001.png
+│   │   │   ├── 05_notes
+│   │   │   │   └── _YYMMDD
+│   │   │   └── 06_aspect_ratio_masks                                   -> resources/adobe/premiere/premiere_templates/aspect_ratio_masks
+│   │   │       ├── 185 Letterbox.png
+│   │   │       ├── 1x1 mask.png
+│   │   │       ├── 235 Letterbox.png
+│   │   │       ├── 275 Ultra Panavision 70.png
+│   │   │       ├── 300 Extreme Scope.png
+│   │   │       ├── 400 PolyVision.png
+│   │   │       ├── 4x3 mask.png
+│   │   │       ├── 4x5 mask.png
+│   │   │       └── 9x16 mask.png
+│   │   └── 08_postings
+│   │       ├── 01_postings
+│   │       └── 02_masters
+│   ├── prep
+│   └── xml
+├── flame
+│   ├── archives
+│   │   ├── dxs-studio-02
+│   │   └── shared
+│   ├── iterations
+│   └── setups
+├── masters
+│   ├── master_edits
+│   ├── slated_masters
+│   └── versioned_masters
+├── reference
+│   ├── reference_images
+│   ├── reference_movies
+│   └── reference_style_guide
+├── scenes
+│   ├── 3ds
+│   ├── alembic
+│   ├── baselight
+│   ├── blender
+│   ├── c4d
+│   ├── cut
+│   ├── fbx
+│   ├── geometry
+│   ├── houdini
+│   ├── maya
+│   ├── resolve
+│   ├── unity
+│   ├── unreal_engine
+│   └── usd
+├── shots
+├── software
+│   └── applications
+├── tmp
+├── utilities
+│   └── Synergy
+│       └── SynColor
+│           └── Shared
+├── version
+└── work_in_progress
+    └── postings
