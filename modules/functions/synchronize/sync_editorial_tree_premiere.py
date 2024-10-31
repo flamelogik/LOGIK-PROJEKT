@@ -5,7 +5,7 @@
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
 #                   Copyright © 2024 man-made-mekanyzms
                 
-#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   LOGIK-PROJEKT creates editorial_dirs_premiere, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
 #                   LOGIK-PROJEKT is free software.
@@ -186,3 +186,194 @@ separator = '# ' + '-' * 75 + ' #'
 # ========================================================================== #
 # This section defines the primary functions for the script.
 # ========================================================================== #
+
+def sync_editorial_tree_premiere(
+        the_projekts_dir,
+        the_projekt_dir, # disable?
+        the_projekt_flame_dirs,
+        the_projekt_flame_dir, # disable?
+        # the_projekt_name,
+        # the_projekt_flame_name,
+        separator
+    ):
+
+    """
+    Create editorial_dirs_premiere and symbolic links for the editorial subdirectory tree.
+    """
+
+    # # Set the projekt_dir
+    # the_projekt_dir =f"{the_projekts_dir}/{the_projekt_name}"
+
+    # # Set the projekt_flame_dir
+    # the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+
+    # Set the editorial_sw_name
+    # editorial_sw_name =f"davinci_resolve"
+    # editorial_sw_name =f"final_cut_pro"
+    editorial_sw_name =f"premiere"
+
+    # Set the source and target python editorial_dirs_premiere
+    editorial_sw_src_dir = "resources/adobe/premiere"
+
+    src_assets_dir = os.path.abspath(
+        os.path.join(
+            the_projekts_dir,
+            the_projekt_dir,
+            "assets",
+        )
+    )
+    
+    src_audio_dir = os.path.abspath(
+        os.path.join(
+            src_assets_dir,
+            "audio",
+        )
+    )
+    
+    src_footage_dir = os.path.abspath(
+        os.path.join(
+            src_assets_dir,
+            "footage",
+        )
+    )
+    
+    src_graphics_dir = os.path.abspath(
+        os.path.join(
+            src_assets_dir,
+            "graphics",
+        )
+    )
+    
+    src_slates_dir = os.path.abspath(
+        os.path.join(
+            src_assets_dir,
+            "slates",
+        )
+    )
+
+    tgt_shared_python_dir = "/opt/Autodesk/shared/python"
+
+    editorial_sw_tgt_path = os.path.abspath(
+        os.path.join(
+            the_projekts_dir,
+            the_projekt_dir,
+            "editorial",
+            editorial_sw_name
+        )
+    )
+
+    # List of editorial_dirs_premiere to create
+    editorial_dirs_premiere = [
+        "01_projekt",
+        "02_footage",
+        "03_audio",
+        "04_stills",
+        "05_graphics",
+        "06_color",
+        "07_misc",
+        "08_postings"
+    ]
+
+    # Create each editorial_dir if it doesn't exist
+    for editorial_dir in editorial_dirs_premiere:
+        dir_path = os.path.join(editorial_sw_tgt_path, editorial_dir)
+        os.makedirs(dir_path, exist_ok=True)
+
+    # source_path = os.path.abspath(
+    #     os.path.join(
+    #         the_projekts_dir,
+    #         the_projekt_dir,
+    #         "editorial",
+    #         "premiere"
+    #     )
+    # )
+
+    # target_path = os.path.abspath(
+    #     os.path.join(
+    #         the_projekt_flame_dirs,
+    #         the_projekt_flame_dir,
+    #         "batch",
+    #         "flame",
+    #         "iterations"
+    #     )
+    # )
+    
+    # print(f"  Linking batch iterations directory\n")
+    # print(f"  from: {source_path}")
+    # print(f"  to:   {target_path}\n")
+    
+    # if not os.path.exists(source_path):
+    #     print(f"  Source path does not exist: {os.path.basename(source_path)}")
+    #     return
+    
+    # os.makedirs(os.path.dirname(target_path), exist_ok=True)
+    
+    # try:
+    #     if os.path.lexists(target_path):
+    #         print(f"  Removing existing link: {os.path.basename(target_path)}")
+    #         os.remove(target_path)
+        
+    #     os.symlink(source_path, target_path)
+    #     print(f"  Successfully linked: {os.path.basename(source_path)} -> {os.path.basename(target_path)}\n")
+    # except Exception as e:
+    #     print(f"  Error creating symbolic link for iterations: {e}")
+
+# ========================================================================== #
+# This section defines how to handle the main script function.
+# ========================================================================== #
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Create symbolic link for iterations directory.")
+    parser.add_argument("--the_projekts_dir", required=True, help="Path to the projects directory")
+    parser.add_argument("--the_projekt_dir", required=True, help="Name of the project directory")
+    parser.add_argument("--the_projekt_flame_dirs", required=True, help="Path to the project flame editorial_dirs_premiere")
+    parser.add_argument("--the_projekt_flame_dir", required=True, help="Name of the project flame directory")
+    args = parser.parse_args()
+
+    # sync_editorial_tree_premiere(
+    #     args.the_projekts_dir,
+    #     args.the_projekt_dir,
+    #     args.the_projekt_flame_dirs,
+    #     args.the_projekt_flame_dir
+    # )
+
+    sync_editorial_tree_premiere(
+        the_projekts_dir,
+        # the_projekt_dir, # disable?
+        the_projekt_flame_dirs,
+        # the_projekt_flame_dir, # disable?
+        the_projekt_name,
+        the_projekt_flame_name,
+        separator
+    )
+# ========================================================================== #
+# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# ========================================================================== #
+
+# Changelist:       
+
+# -------------------------------------------------------------------------- #
+# version:          0.0.1
+# created:          2024-01-19 - 12:34:56
+# comments:         scripts to create flame projekts, presets & templates.
+# -------------------------------------------------------------------------- #
+# version:          0.1.0
+# modified:         2024-04-20 - 16:20:00
+# comments:         refactored monolithic program into separate functions.
+# -------------------------------------------------------------------------- #
+# version:          0.5.0
+# modified:         2024-05-24 - 20:24:00
+# comments:         merged flame_colortoolkit with projekt.
+# -------------------------------------------------------------------------- #
+# version:          0.6.0
+# modified:         2024-05-25 - 15:00:03
+# comments:         started conversion to python3.
+# -------------------------------------------------------------------------- #
+# version:          0.7.0
+# modified:         2024-06-21 - 18:21:03
+# comments:         started gui design with pyside6.
+# -------------------------------------------------------------------------- #
+# version:          0.9.9
+# modified:         2024-08-31 - 16:51:09
+# comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
