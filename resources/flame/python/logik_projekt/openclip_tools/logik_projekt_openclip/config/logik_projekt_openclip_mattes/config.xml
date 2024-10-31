@@ -1,0 +1,14 @@
+<logik_projekt_openclip_mattes_settings>
+    <render_node_type>Write File Node</render_node_type>
+    <write_file_media_path>/PROJEKTS/</write_file_media_path>
+    <write_file_pattern>&lt;project nickname&gt;/shots/&lt;shot name&gt;/media/renders/&lt;name&gt;_&lt;version name&gt;/&lt;name&gt;_&lt;version name&gt;&lt;frame&gt;&lt;ext&gt;</write_file_pattern>
+    <write_file_create_open_clip>True</write_file_create_open_clip>
+    <write_file_include_setup>True</write_file_include_setup>
+    <write_file_create_open_clip_value>&lt;project nickname&gt;/shots/&lt;shot name&gt;/openclip/output_clips/flame/&lt;name&gt;&lt;ext&gt;</write_file_create_open_clip_value>
+    <write_file_include_setup_value>&lt;project nickname&gt;/shots/&lt;shot name&gt;/batch_setups/&lt;name&gt;_&lt;version name&gt;_&lt;workstation&gt;_&lt;user nickname&gt;&lt;ext&gt;</write_file_include_setup_value>
+    <write_file_image_format>OpenEXR 16-bit fp</write_file_image_format>
+    <write_file_compression>PIZ</write_file_compression>
+    <write_file_padding>8</write_file_padding>
+    <write_file_frame_index>Use Start Frame</write_file_frame_index>
+    <write_file_version_name>v&lt;version&gt;</write_file_version_name>
+</logik_projekt_openclip_mattes_settings>

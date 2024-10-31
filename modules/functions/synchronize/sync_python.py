@@ -226,7 +226,6 @@ def sync_python_scripts(
     # Set the rsync options
     sync_opts = ["-av"]
 
-
     # Use rsync to copy the python scripts
     result = subprocess.run(
         ["rsync"] + sync_opts + [f"{src_shared_python_dir}/", f"{tgt_shared_python_dir}/"],
