@@ -138,7 +138,7 @@ def sync_editorial_tree_premiere(
         separator
     ):
     """
-    Function to create the editorial directory structure for Premiere projects,
+    Function to create the directory structure for Premiere projects,
     set up symbolic links to asset directories, and copy template resources.
     """
     
@@ -195,20 +195,32 @@ def sync_editorial_tree_premiere(
     # Define template directories to copy
     template_dirs = [
         {
-            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/slates"),
-            "dst": f"{premiere_dir}/07_misc/04_slates"
-        },
-        {
-            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/aspect_ratio_masks"),
-            "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_projekts"),
+            "dst": f"{premiere_dir}/01_projekts"
         },
         {
             "src": os.path.join(resources_base, "adobe/premiere/premiere_presets/premiere_export_presets"),
             "dst": f"{premiere_dir}/07_misc/01_export_presets"
         },
         {
-            "src": os.path.join(resources_base, "adobe/premiere/fonts"),
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_fonts"),
             "dst": f"{premiere_dir}/07_misc/02_fonts"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_scripts"),
+            "dst": f"{premiere_dir}/07_misc/03_scripts"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_slates"),
+            "dst": f"{premiere_dir}/07_misc/04_slates"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_notes"),
+            "dst": f"{premiere_dir}/07_misc/05_notes"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_aspect_ratio_masks"),
+            "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
         }
     ]
 
@@ -224,14 +236,14 @@ def sync_editorial_tree_premiere(
     for folder in premiere_folders:
         folder_path = os.path.join(premiere_dir, folder)
         
-        # If directory exists, back it up
-        if os.path.exists(folder_path):
-            backup_path = generate_backup_name(folder_path)
-            print(f"  * {folder_path} exists")
-            print(f"  * Backing up directory to:")
-            print(f"  *   {backup_path}")
-            shutil.move(folder_path, backup_path)
-            print()
+        # # If directory exists, back it up
+        # if os.path.exists(folder_path):
+        #     backup_path = generate_backup_name(folder_path)
+        #     print(f"  * {folder_path} exists")
+        #     print(f"  * Backing up directory to:")
+        #     print(f"  *   {backup_path}")
+        #     shutil.move(folder_path, backup_path)
+        #     print()
 
         # Create the directory
         os.makedirs(folder_path)
@@ -308,7 +320,7 @@ def main():
     sync_editorial_tree_premiere(
         the_projekts_dir,
         the_projekt_name,
-        the_projekt_editorial_name,
+        the_projekt_flame_name,
         separator
     )
 
