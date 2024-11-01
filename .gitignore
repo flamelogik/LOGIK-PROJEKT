@@ -26,3 +26,7 @@ resources/utilities/scripts/bash/bash_project_template/docs/placeholder
 resources/utilities/scripts/bash/bash_project_template/logs/placeholder
 resources/utilities/scripts/bash/bash_project_template/prefs/placeholder
 resources/flame/Syncolor/Shared/transforms.tar.xz
+resources/tmp/current_projekt_bookmarks.json
+resources/tmp/current_projekt_parameters.xml
+resources/tmp/current_projekt_template.json
+resources/tmp/current_projekt_template.json.bak
