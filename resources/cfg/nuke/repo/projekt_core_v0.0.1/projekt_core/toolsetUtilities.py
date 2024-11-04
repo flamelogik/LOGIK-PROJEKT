@@ -153,7 +153,7 @@ def addMenu(menu_title: str, index: int) -> None:
             menu_title="Toolsets",
             index=index,
             directory_path=toolSetsDir,
-            reload_command='projekt_core.toolsetUtilities.reloadMenu("Toolsets", index)',
+            reload_command=f'projekt_core.toolsetUtilities.reloadMenu("Toolsets", {index})',
             open_folder_command=f'projekt_core.utilities.openToolsetsDir()',
             export_command='projekt_core.toolsetUtilities.saveNodesAsToolset()'
         )
@@ -162,7 +162,7 @@ def addMenu(menu_title: str, index: int) -> None:
             menu_title="Templates",
             index=index,
             directory_path=templatesDir,
-            reload_command='projekt_core.toolsetUtilities.reloadMenu("Templates", index)',
+            reload_command=f'projekt_core.toolsetUtilities.reloadMenu("Templates", {index})',
             open_folder_command=f'projekt_core.utilities.openTemplatesDir()',
             export_command='projekt_core.toolsetUtilities.saveNodesAsTemplate()'
         )
@@ -180,7 +180,7 @@ def reloadMenu(menu_title: str, index: int) -> None:
     :param index: The index at which the reloaded menu should be inserted.
     """
     menubar = nuke.menu("Nuke")
-    menu = menubar.addMenu(f"&{menu_title}", index=index)
+    menu = menubar.addMenu(f"&{menu_title}", index)
     menu.clearMenu()
     addMenu(menu_title, index)
 
