@@ -2,100 +2,108 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        .nuke
-# Version:          0.0.1
-# Created:          2024-10-09
-# Modified:         
+# File Name:        nuke
+# Version:          0.0.2
+# Created:          
+# Modified:         2024-11-03
 
-
-# ========================================================================== #
-# 
-# ========================================================================== #
+# -------------------------------------------------------------------------- #
 
 echo "setting up Nuke environment... $PROJEKT_NAME"
-
-
-# ========================================================================== #
-# This section sets the OCIO environment variable for Nuke.
-# ========================================================================== #
-
-export OCIO=$PROJEKT_PIPELINE_ROOT/ocio/$ocio_studio_config_name
-#export OCIO=$PROJEKT_PIPELINE_ROOT/ocio/$ocio_cg_config_name
 
 # ========================================================================== #
 # This section sets the NUKE_PATH.
 # ========================================================================== #
 
 export NUKE_PATH=$PROJEKT_PIPELINE_ROOT/nuke
-#export HIERO_PLUGIN_PATH=$PROJEKT_PIPELINE_ROOT/nuke/hiero
-
-# ========================================================================== #
-# This section sets debug options for Nuke.
-# ========================================================================== #
-
-
-# Controls whether or not automatic interface scaling for high resolution screens is enabled. On Windows, this variable is enabled (1) by default. On Linux distributions, scaling is currently disabled (0) by default.
-# Note:  macOS handles scaling automatically, so this variable is not required.
-# export QT_AUTO_SCREEN_SCALE_FACTOR = 1
-# QT_SCALE_FACTOR = 1, 1.5, 2
-
-# -------------------------------------------------------------------------- #
-
-# Controls the state of the Prioritize OCIO Roles preference. 
-# This variable allows you to set the desired behavior at an environment level for all artists, rather than allowing individual artists to change the preference.
-# 0 Roles are hidden. 1 Roles are prioritized, which is the same behavior as Nuke 12.2 releases. 2 Roles are de-prioritized.
-# NUKE_OCIO_ROLES
-
-# -------------------------------------------------------------------------- #
-
-# "The import nuke function checks-out a nuke_r render license by default. 
-# If you have an interactive license, set this environment variable to 1.
-# export NUKE_INTERACTIVE = 1 
-
-# -------------------------------------------------------------------------- #
-
-# Nuke log/debug environment variables
-# NUKE_DEBUG_IMAGECACHE = 1
-# NUKE_DEBUG_MEMORY = 1
-# FOUNDRY_LICENSE_DEBUG = 1
-# FOUNDRY_LOG_FILE = path/file.log
-# FOUNDRY_LOG_LEVEL = error, warning, message, verbose
-# FRAMESERVER_LOG_DIR = /path/logs/frameserver
-
-# -------------------------------------------------------------------------- #
-
-# performance related
-# HIERO_DISABLE_THUMBNAILS
-# HIERO_DISABLE_THUMBNAILS_CACHE
-# NUKE_LOCALIZATION_NUMWATCHERS
-
 
 # ========================================================================== #
 # This section reads the nuke version from ./software/etc
 # ========================================================================== #
 
-export nuke_version=$(cat $PROJEKT_PATH/software/etc/nuke_version)
-
-## optional: read nuke version from json...
-# # get the nuke executible base on the version
-# nuke_version=$(python3 << EOF
-# import json
-# data = json.loads('''$SOFTWARE_VERSIONS''')
-# print(data['nuke'])
-# EOF
-# )
+export nuke_version=$(cat $PROJEKT_PIPELINE_ROOT/etc/nuke_version)
 
 # -------------------------------------------------------------------------- #
 
-# Assemble the major minor string
-nuke_version_major_minor=$(echo $nuke_version | sed 's/\([0-9]*.[0-9]*\).*/\1/')
+# Assemble the major minor string (ie. 15.0, 14.1 )
+nuke_major_minor=$(echo $nuke_version | sed 's/\([0-9]*.[0-9]*\).*/\1/')
 
 # -------------------------------------------------------------------------- #
 
-# Assemble Nuke executible name (Nuke15.0, Nuke13.2 etc.)
-nuke_command="Nuke$nuke_version_major_minor"
+# Assemble Nuke executible name (ie. Nuke15.0, Nuke13.2 )
+nuke_command="Nuke$nuke_major_minor"
 
 # -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# This section sets the OCIO environment variable for ACES 1.3 based of the VFX Reference Platform.
+# ========================================================================== #
+
+# Determine corect ocio/VFXRP folder by nuke version
+if [[ "$nuke_major_minor" == "14.0" || "$nuke_major_minor" == "14.1" ]]; then
+    folder="CY2022-2.1.x"
+elif [[ "$nuke_major_minor" == "15.0" || "$nuke_major_minor" == "15.1" ]]; then
+    folder="CY2023-2.2.x"
+else
+    echo "Unsupported Nuke version: $nuke_major_minor"
+    exit 1
+fi
+
+# ========================================================================== #
+# This section selects the ocio config file based on the config_type.
+# ========================================================================== #
+
+# Set the config_type. This string searches for the correct config file.
+# options are: 'studio' 'cg' or 'custom'. Setting to 'nuke' will unset the OCIO variable.
+
+# config_type="cg" 
+# config_type="studio"
+# config_type="custom"
+
+config_type="studio"
+
+# -------------------------------------------------------------------------- #
+
+# Determine the config file pattern based on the config_type
+if [[ "$config_type" == "studio" ]]; then
+    config_pattern="studio-config"
+elif [[ "$config_type" == "cg" ]]; then
+    config_pattern="cg-config"
+elif [[ "$config_type" == "custom" ]]; then
+    config_pattern="custom"
+elif [[ "$config_type" == "nuke" ]]; then
+    config_pattern=""
+else
+    echo "Unsupported config type: $config_type"
+    exit 1
+fi
+
+# -------------------------------------------------------------------------- #
+
+# Search for the config file in the determined folder
+directory="$PROJEKT_PIPELINE_ROOT/ocio/$folder"
+config_file=$(find "$directory" -type f -name "*$config_pattern*.ocio" | head -n 1)
+
+# Check if the config file was found
+if [[ -z "$config_file" ]]; then
+    echo "Config file not found for pattern: $config_pattern in folder: $directory"
+    exit 1
+fi
+
+# ========================================================================== #
+# This section sets the OCIO environment variable.
+# ========================================================================== #
+echo $config_file
+if [[ "$config_file" != "nuke" ]]; then
+    export OCIO="$config_file"
+else
+    export -n OCIO
+fi
+
+
+# ========================================================================== #
+# This section finds the default Nuke install path according to the OS.
+# ========================================================================== #
 
 # path to the default Nuke installs
 if [[ $PROJEKT_OS == "mac" ]]; 
@@ -107,26 +115,47 @@ fi
 if [[ $PROJEKT_OS == "lin" ]]; 
 then 
 
-    # server install...
+    # server
     # export PROJEKT_APPS=/s84/apps
     # export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
     # export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
-    
-    # local install...
-    export nuke_root=/usr/local/Nuke$nuke_version
 
+    # local
+    export nuke_root=/usr/local/Nuke$nuke_version
 
     #check if app dir exists:
     # if [ -d "$DIRECTORY" ]; then
     #     echo "$DIRECTORY does exist."
     # fi
 
-
-    #export OPTICAL_FLARES_PATH=/opt/nuke_plugs/OpticalFlares
-    #export OPTICAL_FLARES_PRESET_PATH=/opt/nuke_plugs/OpticalFlares/Textures-And-Presets
-    #export OPTICAL_FLARES_DISPLAY_NAME=:1
-
 fi
+
+# ========================================================================== #
+# This section sets additional environment variables for Nuke plugins.
+# ========================================================================== #
+
+#export OPTICAL_FLARES_PATH=/opt/nuke_plugs/OpticalFlares
+#export OPTICAL_FLARES_PRESET_PATH=/opt/nuke_plugs/OpticalFlares/Textures-And-Presets
+#export OPTICAL_FLARES_DISPLAY_NAME=:1
+
+
+# -------------------------------------------------------------------------- #
+# Enable debug logging for troubleshooting performance bottlenecks (use temporarily)
+
+# export NUKE_PERF_LOG=1
+# export NUKE_PERF_TIMING=1
+
+# -------------------------------------------------------------------------- #
+# The 'import nuke' function checks-out a nuke_r render license by default. 
+# To use an interactive license, set this environment variable to 1.
+
+# export NUKE_INTERACTIVE = 1 
+
+
+# -------------------------------------------------------------------------- #
+
+# NUKE_LOCALIZATION_NUMWATCHERS
+
 
 # ========================================================================== #
 # This section displays information in the shell.
@@ -137,6 +166,7 @@ echo "# ------------------------------------------------------------------------
 echo NUKE ENVIRONMENT
 echo "# -------------------------------------------------------------------------- #"
 echo "nuke_version:     "$nuke_version
+echo "nuke_major_minor: "$nuke_major_minor
 echo
 echo "OCIO:             "$OCIO
 echo "NUKE_PATH:        "$NUKE_PATH
@@ -154,9 +184,12 @@ echo "# ------------------------------------------------------------------------
 echo
 
 
+# ========================================================================== #
+# This section runs Nuke.
+# ========================================================================== #
 
-# $nuke_root/$nuke_command -nukex $@
+
 $nuke_root/$nuke_command $@
-# python software/nuke.py
+
 
 
