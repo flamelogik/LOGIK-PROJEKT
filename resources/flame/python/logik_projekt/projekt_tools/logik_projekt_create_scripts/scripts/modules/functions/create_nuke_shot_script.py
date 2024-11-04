@@ -87,8 +87,7 @@ def create_nuke_shot_script(shot_name,
     os.makedirs(shot_scripts_app_task_dir, exist_ok=True)
 
     # Define the file path for the script
-    # shot_scripts_app_task_file = f"{shot_name}_{app_name}_{task_type}_{version_name}.nk"
-    shot_scripts_app_task_file = f"{shot_name}_{task_type}_{version_name}.nk"
+    shot_scripts_app_task_file = f"{shot_name}_{app_name}_{task_type}_{version_name}.nk"
     shot_scripts_app_task_file_path = os.path.join(shot_scripts_app_task_dir,
                                               shot_scripts_app_task_file)
 
@@ -98,7 +97,7 @@ def create_nuke_shot_script(shot_name,
 # Task Name: {shot_name}_{app_name}_{task_type}
 Root {{
  inputs 0
- name "{shot_name}_{task_type}_{version_name}.nk"
+ name "{shot_name}_{app_name}_{task_type}_{version_name}.nk"
  frame NUKE_START_FRAME
  first_frame NUKE_START_FRAME
  last_frame NUKE_END_FRAME
@@ -118,8 +117,7 @@ Root {{
  floatLut "ACES - ACEScg"
 }}
 Write {{
- name Write_EXR
- file "{shot_renders_dir}/{shot_name}_{task_type}_{version_name}/{shot_name}_{task_type}_{version_name}.%04d.exr"
+ file "{shot_renders_dir}/{shot_name}_{app_name}_{task_type}_{version_name}/{shot_name}_{app_name}_{task_type}_{version_name}.%08d.exr"
  file_type exr
  write_ACES_compliant_EXR true
  metadata "all metadata"
