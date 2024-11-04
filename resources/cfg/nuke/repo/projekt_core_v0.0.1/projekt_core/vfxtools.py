@@ -75,15 +75,18 @@ def setup_root_projekt_knobs():
     add_knob_if_not_exists('shot_div', nuke.Text_Knob, "", "")
 
     add_knob_if_not_exists('favorites', nuke.Enumeration_Knob, 'Bookmarks:', ['projekt', 'shot', 'work'])
-    add_knob_if_not_exists('user', nuke.String_Knob, 'User:')
-    if nuke.root().knob('user') is not None:
-        nuke.root().knob('user').setValue('')
+    # add_knob_if_not_exists('user', nuke.String_Knob, 'User:')
+    # if nuke.root().knob('user') is not None:
+    #     nuke.root().knob('user').setValue('')
 
     add_knob_if_not_exists('fav_div', nuke.Text_Knob, "", "")
-    add_knob_if_not_exists('set_projekt_from_env_vars', nuke.PyScript_Knob, 'PROJEKT <-> from env_vars', 'projekt_core.vfxtools.set_projekt_from_env_vars()')
-    add_knob_if_not_exists('set_env_from_script', nuke.PyScript_Knob, 'PROJEKT <-> from nuke script', 'projekt_core.vfxtools.parse_script_for_env()')
-    if nuke.root().knob('set_env_from_script') is not None:
-        nuke.root().knob('set_env_from_script').setFlag(nuke.STARTLINE)
+    # PROJEKT <-> from env_vars
+    add_knob_if_not_exists('set_projekt_from_env_vars', nuke.PyScript_Knob, '---setup PROJEKT---', 'projekt_core.vfxtools.set_projekt_from_env_vars()')
+    
+    
+    # add_knob_if_not_exists('set_env_from_script', nuke.PyScript_Knob, 'PROJEKT <-> from nuke script', 'projekt_core.vfxtools.parse_script_for_env()')
+    # if nuke.root().knob('set_env_from_script') is not None:
+        # nuke.root().knob('set_env_from_script').setFlag(nuke.STARTLINE)
     # add_knob_if_not_exists('set_shell_env', nuke.PyScript_Knob, 'set shell variables', 'vfxtools.set_projekt_env()')
     # if nuke.root().knob('set_shell_env') is not None:
     #     nuke.root().knob('set_shell_env').setFlag(nuke.STARTLINE)
@@ -226,17 +229,54 @@ def update_root_warnings_callback():
     Returns:
         None
     """
-    root = nuke.root()
-    # Check if the required knobs exist
-    if root.knob('projekt_path_knob') and root.knob('projekt_name_knob'):
-        logger.info('Required knobs exist, proceeding with update_root_warnings')
-        knob_name = nuke.thisKnob().name()
-        if knob_name in ['projekt_name_knob', 'shot_name_knob', 'projekt_path_knob', 'favorites']:
-            try:
-                update_root_warnings()
-            except Exception as e:
-                logger.error("An error occurred in update_root_warnings_callback: %s", str(e))
+    try:
+        # Verify that a script is open by checking if nuke.root() is valid
+        root = nuke.root()
+        if not root:
+            logger.warning("No script is currently open; skipping update_root_warnings_callback.")
+            return
+
+
+        projekt_path_knob = nuke.root().knob('projekt_path_knob')
+        projekt_name_knob = nuke.root().knob('projekt_name_knob')
+
+        if projekt_path_knob and projekt_name_knob:
+            # logger.info('Required knobs exist, proceeding with update_root_warnings')
+            knob_name = nuke.thisKnob().name()
+            if knob_name in ['projekt_name_knob', 'shot_name_knob', 'projekt_path_knob', 'favorites']:
+                try:
+                    update_root_warnings()
+                except Exception as e:
+                    logger.error("An error occurred in update_root_warnings_callback: %s", str(e))
+    except ValueError as ve:
+        pass
+        # logger.error("ValueError in update_root_warnings_callback: %s", str(ve))
+    except Exception as e:
+        logger.error("An unexpected error occurred in update_root_warnings_callback: %s", str(e))
+
+    # # Check if the required knobs exist
+    # if nuke.root().knob('projekt_path_knob') and nuke.root().knob('projekt_name_knob'):
+    #     logger.info('Required knobs exist, proceeding with update_root_warnings')
+    #     knob_name = nuke.thisKnob().name()
+    #     if knob_name in ['projekt_name_knob', 'shot_name_knob', 'projekt_path_knob', 'favorites']:
+    #         try:
+    #             update_root_warnings()
+    #         except Exception as e:
+    #             logger.error("An error occurred in update_root_warnings_callback: %s", str(e))
 # -------------------------------------------------------------------------- #
+
+# Register the callback dynamically
+def enable_update_root_warnings_callback():
+    # Adds the knob change callback for the root node
+    nuke.addKnobChanged(update_root_warnings_callback, nodeClass='Root')
+    logger.info("update_root_warnings_callback enabled.")
+
+
+def disable_update_root_warnings_callback():
+    # Removes the knob change callback to prevent errors when the script is closed
+    nuke.removeKnobChanged(update_root_warnings_callback, nodeClass='Root')
+    logger.info("update_root_warnings_callback disabled.")
+
 
 # ========================================================================== #
 # This section defines functions to set name, shot, and path knobs based on environment variables.
@@ -300,17 +340,68 @@ def on_root_node_create_callback():
 
 # -------------------------------------------------------------------------- #
 
-# def - add parse_script_for_env()
-    # """
-    # given a script saved onto disk, parseScriptForEnv() will set the JOB, SEQ, SHOT in the nuke.root() tab.
-    # BUG:  this needs to check if the script is saved into a job/seq/shot structure. right now the callback adds the root tab and 
-    #       tries to parse the script, mucks up if script is on the desktop for example. 
-    #       should match against rootDir() or something and verify the path exists before continuing.
-    # 7.23.13 added some checks for script to see if it falls in the pipeline before setting root variables.
+def parse_script_for_env():
+    """
+    Given a script saved onto disk, parseScriptForEnv() will set the projekt, path, and shot in the nuke.root() tab.
+    This function checks if the script is saved into a job/seq/shot structure. It verifies the path exists before continuing.
+        
+    """
+ 
+    projekt_root_value = str(settings.projekt_root_path())
 
-    # """
+    logger.info('Checking if the script exists...')
+    name = nuke.root().name()
+    if name != 'Root':
+        logger.info('Script exists on disk, setting projekt/path/shot knobs...')
+        # Check if the shot is stored in the root path folder.
+        if not name.startswith(projekt_root_value):
+            logger.warning(f'script not stored in {projekt_root_value}')
+            # set the bookmark back to projekt...
+            nuke.root().knob('favorites').setValue('projekt')
+            return
+
+        # Projekt is in the root path, let's set pull the env variables...
+        projekt_name = settings.projekt_name()
+        logger.info(f'Setting PROJEKT to: {projekt_name}')
+        try:
+            nuke.root().knob('projekt_name_knob').setValue(projekt_name)
+        except Exception as e:
+            logger.error(f'Error setting projekt_name_knob: {e}')
+
+        # Path
+        projekt_path = str(settings.projekt_path())
+        logger.info(f'Setting Path to: {projekt_path}')
+        try:
+            nuke.root().knob('projekt_path_knob').setValue(projekt_path)
+        except Exception as e:
+            logger.error(f'Error setting projekt_path_knob: {e}')
+
+        # Setup current shot... split is not the most reliable method...
+        parseShot = name.split('/')[4:5]
+        if parseShot:
+            logger.info(f'Setting SHOT to: {parseShot[0]}')
+            try:
+                nuke.root().knob('shot_name_knob').setValue(parseShot[0])
+                nuke.root().knob('favorites').setValue('shot')
+            except Exception as e:
+                logger.error(f'Error setting shot_name_knob: {e}')
+
+    else:
+        logger.info('No script found on disk.')
+        return
 
 # -------------------------------------------------------------------------- #
+
+def on_script_load_parse_for_env():
+    """
+    Callback function to run parse_script_for_env when a script is opened.
+    """
+    logger.info('parse_script_for_env callback triggered')
+    try:
+        parse_script_for_env()
+    except Exception as e:
+        logger.error(f'Error in on_script_load callback: {e}')
+
 
 # ========================================================================== #
 # This section defines functions to read and set the shell environment variables in Nuke.
