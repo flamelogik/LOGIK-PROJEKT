@@ -94,7 +94,9 @@ def shot_favorite_config():
     projList =[
 
         ['projekt dir', projekt_path, 0, 'Folder.png'],
-        ['shots dir', projekt_path / 'shots', 0,''],
+        ['→ assets dir', projekt_path / 'assets', 0, 'Server.png'],  
+        ['→ shots dir', projekt_path / 'shots', 0,''],
+
         ['========== ', projekt_path / 'shots',0,'Folder.png'],
         [f"{shot_name}", projekt_shots_dir / shot_name,0, 'Folder.png'],   
         ['==========', projekt_path / 'shots',0,''],
@@ -218,7 +220,7 @@ def favoritesKnobChanged():
         knob_value = knob.value()
         projekt_core.favoritesRedux.removeFavoritesForCurrentShot()
         projekt_core.favoritesRedux.removeGlobalFavorites()
-        projekt_core.favoritesRedux.removeWorkFavorites()
+        # projekt_core.favoritesRedux.removeWorkFavorites()
         if knob_value == 'projekt':
             projekt_core.favoritesRedux.addGlobalFavorites()
         # shot bookmark checks...
@@ -230,5 +232,5 @@ def favoritesKnobChanged():
             else:
                 nuke.message('Shot is not set. Please set the shot name.')
                 knob_value = 'projekt'
-        elif knob_value == 'work':
-            projekt_core.favoritesRedux.addWorkFavorites()
+        # elif knob_value == 'work':
+        #     projekt_core.favoritesRedux.addWorkFavorites()
