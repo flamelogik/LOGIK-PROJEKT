@@ -18,7 +18,6 @@ import os
 import re
 import inspect
 from typing import Optional
-
 import projekt_core.settings
 
 
@@ -168,6 +167,7 @@ class GizmoPathManager(object):
         elif isinstance(rootMenu, str):
             rootMenu = nuke.menu(rootMenu).addMenu('menuTitle')
 
+
         self._recursiveAddGizmoMenuItems(rootMenu, self._crawlData,
                                          defaultSubMenu=defaultTopMenu,
                                          topLevel=True)
@@ -199,7 +199,7 @@ class GizmoPathManager(object):
 # This section defines the utility functions.
 # ========================================================================== #
 
-def add_menu(root_menu: Optional[str] = None, default_top_menu: Optional[str] = None) -> None:
+def add_menu(root_menu: Optional[str] = None, index=9, default_top_menu: Optional[str] = None) -> None:
     """
     Add gizmos to the Nuke menu and the DAG tab menu, making them accessible.
     
@@ -219,6 +219,10 @@ def add_menu(root_menu: Optional[str] = None, default_top_menu: Optional[str] = 
         if giz_manager is None:
             logger.warning('gizManager is not available as a global')
             return
+
+        # create the Nuke menu...
+        nuke.menu("Nuke").addMenu(root_menu, index=index)
+        logger.info(f'Adding menu items to {root_menu} at index {index}')
 
         logger.info('Adding gizmo menu items...')
         add_gizmo_menu_items(giz_manager, root_menu)
