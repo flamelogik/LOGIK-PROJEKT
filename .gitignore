@@ -1,16 +1,11 @@
 __pycache__/
 *.pyc
 .DS_Store
-resources/flame/templates/scratch_archive_2.sh
-resources/flame/templates/scratch_archive_3.sh
-resources/flame/templates/scratch_archive.sh
-resources/flame/templates/scratch_backup.sh
 resources/tmp/current_projekt_bookmarks.json
 resources/tmp/current_projekt_parameters.xml
 resources/tmp/current_projekt_template.json
 resources/tmp/current_projekt_template.json.bak
 run_logikprojekt_linux.sh
-tmp
 install/current_adsk_python_version.pref
 install/logs/2024-09-25-current_adsk_python_version_log.txt
 install/logs/2024-10-03-current_adsk_python_version_log.txt
@@ -19,10 +14,4 @@ LOGIK-PROJEKT.app/Contents/MacOS/run_logikprojekt_macos
 LOGIK-PROJEKT.app/Contents/Resources/logik_projekt_icon.icns
 resources/utilities/flame_configs/init_config/default/init.cfg.default
 resources/utilities/flame_configs/init_config/freesync/init.cfg.freesync
-resources/utilities/scripts/bash/bash_project_template/placeholder
-resources/utilities/scripts/bash/bash_project_template/cfg/placeholder
-resources/utilities/scripts/bash/bash_project_template/data/placeholder
-resources/utilities/scripts/bash/bash_project_template/docs/placeholder
-resources/utilities/scripts/bash/bash_project_template/logs/placeholder
-resources/utilities/scripts/bash/bash_project_template/prefs/placeholder
 resources/flame/Syncolor/Shared/transforms.tar.xz
