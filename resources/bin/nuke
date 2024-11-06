@@ -1,0 +1,220 @@
+#!/bin/bash
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 silo 84
+                
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+ 
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+                
+#                   Contact: brian@silo84.com
+
+# -------------------------------------------------------------------------- #
+
+# File Name:        .nuke
+# Version:          0.0.1
+# Created:          2024-10-09
+# Modified:         
+
+# ========================================================================== #
+# This section creates a decorative separator for blocks of text.
+# ========================================================================== #
+
+# Define a variable called 'separator'.
+# That starts and ends with '+', and 75 '-' characters in between.
+separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
+
+# Define a variable called 'separator_hash'.
+# That starts and ends with '#', and 75 '-' characters in between.
+separator_hash=$(printf '# %s #' "$(printf -- '-%.0s' {1..74})")
+
+# Print a separator to the shell
+echo -e "\n$separator_hash\n"
+# echo -e "\n$separator_hash\n"  # -e option may be unnecessary
+
+# ========================================================================== #
+
+# Print a message to the shell
+echo -e "  Setting up Nuke environment... $PROJEKT_NAME\n"
+
+# ========================================================================== #
+# This section sets the OCIO environment variable for Nuke.
+# ========================================================================== #
+
+export OCIO=$PROJEKT_PIPELINE_ROOT/ocio/$ocio_studio_config_name
+#export OCIO=$PROJEKT_PIPELINE_ROOT/ocio/$ocio_cg_config_name
+
+# ========================================================================== #
+# This section sets the NUKE_PATH.
+# ========================================================================== #
+
+export NUKE_PATH=$PROJEKT_PIPELINE_ROOT/nuke
+#export HIERO_PLUGIN_PATH=$PROJEKT_PIPELINE_ROOT/nuke/hiero
+
+# ========================================================================== #
+# This section sets debug options for Nuke.
+# ========================================================================== #
+
+# Controls whether or not automatic interface scaling for high resolution 
+# screens is enabled. On Windows, this variable is enabled (1) by default.
+# On Linux distributions, scaling is currently disabled (0) by default.
+
+# Note:
+# macOS handles scaling automatically, so this variable is not required.
+# export QT_AUTO_SCREEN_SCALE_FACTOR = 1
+# QT_SCALE_FACTOR = 1, 1.5, 2
+
+# -------------------------------------------------------------------------- #
+
+# Controls the state of the Prioritize OCIO Roles preference. 
+# This variable allows you to set the desired behavior at an environment
+# level for all artists, rather than allowing individual artists to change 
+# the preference.
+
+# 0 Roles are hidden.
+# 1 Roles are prioritized, which is the same behavior as Nuke 12.2 releases.
+# 2 Roles are de-prioritized.
+
+# NUKE_OCIO_ROLES
+
+# -------------------------------------------------------------------------- #
+
+# "The import nuke function checks-out a nuke_r render license by default. 
+# If you have an interactive license, set this environment variable to 1.
+# export NUKE_INTERACTIVE = 1 
+
+# -------------------------------------------------------------------------- #
+
+# Nuke log/debug environment variables
+# NUKE_DEBUG_IMAGECACHE = 1
+# NUKE_DEBUG_MEMORY = 1
+# FOUNDRY_LICENSE_DEBUG = 1
+# FOUNDRY_LOG_FILE = path/file.log
+# FOUNDRY_LOG_LEVEL = error, warning, message, verbose
+# FRAMESERVER_LOG_DIR = /path/logs/frameserver
+
+# -------------------------------------------------------------------------- #
+
+# performance related
+# HIERO_DISABLE_THUMBNAILS
+# HIERO_DISABLE_THUMBNAILS_CACHE
+# NUKE_LOCALIZATION_NUMWATCHERS
+
+# ========================================================================== #
+# This section reads the nuke version from ./software/etc
+# ========================================================================== #
+
+export nuke_version=$(cat $PROJEKT_PATH/software/etc/nuke_version)
+
+## optional: read nuke version from json...
+# # get the nuke executible base on the version
+# nuke_version=$(python3 << EOF
+# import json
+# data = json.loads('''$SOFTWARE_VERSIONS''')
+# print(data['nuke'])
+# EOF
+# )
+
+# -------------------------------------------------------------------------- #
+
+# Assemble the major minor string
+nuke_version_major_minor=$(echo $nuke_version | sed 's/\([0-9]*.[0-9]*\).*/\1/')
+
+# -------------------------------------------------------------------------- #
+
+# Assemble Nuke executible name (Nuke15.0, Nuke13.2 etc.)
+nuke_command="Nuke$nuke_version_major_minor"
+
+# -------------------------------------------------------------------------- #
+
+# path to the default Nuke installs
+if [[ $PROJEKT_OS == "mac" ]]; 
+then 
+    export nuke_root=/Applications/Nuke$nuke_version/Nuke$nuke_version.app/Contents/MacOS
+
+fi
+
+if [[ $PROJEKT_OS == "lin" ]]; 
+then 
+
+    # server install...
+    # export PROJEKT_APPS=/s84/apps
+    # export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
+    # export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
+    
+    # local install...
+    export nuke_root=/usr/local/Nuke$nuke_version
+
+
+    #check if app dir exists:
+    # if [ -d "$DIRECTORY" ]; then
+    #     echo "$DIRECTORY does exist."
+    # fi
+
+
+    #export OPTICAL_FLARES_PATH=/opt/nuke_plugs/OpticalFlares
+    #export OPTICAL_FLARES_PRESET_PATH=/opt/nuke_plugs/OpticalFlares/Textures-And-Presets
+    #export OPTICAL_FLARES_DISPLAY_NAME=:1
+
+fi
+
+# ========================================================================== #
+# This section displays information in the shell.
+# ========================================================================== #
+
+# echo 
+# echo "# -------------------------------------------------------------------------- #"
+echo -e "\n$separator_hash\n"
+echo "  NUKE ENVIRONMENT"
+echo -e "\n$separator_hash\n"
+# echo "# -------------------------------------------------------------------------- #"
+echo "  nuke_version:         "$nuke_version
+echo        
+echo "  OCIO:                 "$OCIO
+echo "  NUKE_PATH:            "$NUKE_PATH
+echo "  HIERO_PLUGIN_PATH:    "$HIERO_PLUGIN_PATH
+echo "  nuke_version:         "$nuke_version
+echo "  nuke app string:      "$nuke_root/$nuke_command
+echo "  os:                   "$PROJEKT_OS
+echo    
+    
+echo "  nuke_root:            "$nuke_root
+echo "  nuke_command:         "$nuke_command
+
+# echo
+# echo "# -------------------------------------------------------------------------- #"
+# echo
+echo -e "\n$separator_hash\n"
+
+
+# $nuke_root/$nuke_command -nukex $@
+$nuke_root/$nuke_command $@
+# python software/nuke.py
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #
+
+
