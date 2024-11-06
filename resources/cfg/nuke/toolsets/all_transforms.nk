@@ -1,0 +1,38 @@
+set cut_paste_input [stack 0]
+version 15.0 v2
+push $cut_paste_input
+Transform {
+ center {1024 778}
+ name Transform1
+ selected true
+ xpos 266
+ ypos -105
+}
+Transform {
+ center {1024 778}
+ name Transform2
+ selected true
+ xpos 266
+ ypos -79
+}
+Transform {
+ center {1024 778}
+ name Transform3
+ selected true
+ xpos 266
+ ypos -53
+}
+Transform {
+ center {1024 778}
+ name Transform4
+ selected true
+ xpos 266
+ ypos -27
+}
+Transform {
+ center {1024 778}
+ name Transform5
+ selected true
+ xpos 266
+ ypos -1
+}

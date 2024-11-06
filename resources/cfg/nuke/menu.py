@@ -1,108 +1,251 @@
-#
-
-# -------------------------------------------------------------------------- #
-
-# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
-#                   LOGIK-PROJEKT creates directories, files, scripts & tools
-#                   for use with Autodesk Flame and other software.
-
-#                   LOGIK-PROJEKT is free software.
-
-#                   You can redistribute it and/or modify it under the terms
-#                   of the GNU General Public License as published by the
-#                   Free Software Foundation, either version 3 of the License,
-#                   or any later version.
- 
-#                   This program is distributed in the hope that it will be
-#                   useful, but WITHOUT ANY WARRANTY; without even the
-#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
-#                   PARTICULAR PURPOSE.
-
-#                   See the GNU General Public License for more details.
-
-#                   You should have received a copy of the GNU General
-#                   Public License along with this program.
-
-#                   If not, see <https://www.gnu.org/licenses/>.
-                
-#                   Contact: phil_man@mac.com
-
-# -------------------------------------------------------------------------- #
-
-# filename: menu.py
-
-# Installation:
-# Windows: C:\Users\YourUsername\.nuke\menu.py
-# macOS: /Users/YourUsername/.nuke/menu.py
-# Linux: /home/YourUsername/.nuke/menu.py
-
-# ========================================================================== #
-# This section defines the import statements and directory paths.
-# ========================================================================== #
-
-import os.path
 import nuke
-import nukescripts
-import re
+
+
+print("# -------------------------------------------------------------------------- #")
+print("running menu.py...")
+
+# ========================================================================== #
+# This section imports various projekt_core tools
+# ========================================================================== #
+
+
+# Import projekt_core modules
+
+# try:
+#     import projekt_core
+#     print("projekt_core imported successfully.")
+# except ImportError as e:
+#     print(f"Error importing core: {e}")
 
 try:
-    from PySide6 import QtWidgets, QtCore, QtGui
-except ImportError:
-    from PySide2 import QtWidgets, QtCore, QtGui
+    import projekt_core.settings
+    print("projekt_core.settings imported successfully.")
+except ImportError as e:
+    print(f"Error importing core: {e}")
 
-# Function to update the versioning in the file paths of all write nodes
-def update_write_node_version():
-    
-    """Increments the versioning in the file paths of all write nodes"""
-    root_name = nuke.toNode("root").name()
+try:
+    import projekt_core.utilities
+    print("projekt_core.utilities imported successfully.")
+except ImportError as e:
+    print(f"Error importing core: {e}")
 
-    # Get the version number from the script name
-    (script_prefix, script_version) = nukescripts.version_get(root_name, "v")
+try:
+    import projekt_core.vfxtools
+    print("projekt_core.vfxtools imported successfully.")
+except ImportError as e:
+    print(f"Error importing core: {e}")
 
-    for node in nuke.allNodes("Write"):
-        
-        file_knob = node["file"]
+try:
+    import projekt_core.favoritesRedux
+    # logger.info("projekt_core.favoritesRedux imported successfully.")
+    print("projekt_core.favoritesRedux imported successfully.")
 
-        if file_knob is not None:
-            
-            current_path = file_knob.value()
+except ImportError as e:
+    print(f"Error importing favoritesRedux: {e}")
 
-            if current_path:
-                
-                # Split directory and filename
-                dirname, basename = os.path.split(current_path)
-
-                # Split basename and extension
-                basename, ext = os.path.splitext(basename)
-
-                # Extract version from basename
-                (path_prefix, path_version) = nukescripts.version_get(basename, "v")
-
-                # Check if script version is greater than file path version
-                if script_version > path_version:
-                    
-                    # Version up basename
-                    new_basename = nukescripts.version_set(
-                        basename, path_prefix, int(path_version), int(script_version)
-                    )
-                    # Update directory name
-                    new_dirname = dirname.replace(
-                        path_prefix + str(path_version).zfill(4), path_prefix + str(int(script_version)).zfill(4)
-                    )
-                    # Reconstruct full path
-                    new_path = os.path.join(new_dirname, new_basename + ext)
-                    file_knob.setValue(new_path)
-
-
-# Add a callback to the script_save event
-nuke.addOnScriptSave(update_write_node_version)
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# This section imports the logging module and sets up the logger.
 # ========================================================================== #
 
-# Changelist:       
+from projekt_core.utilities import logger
+
+# ========================================================================== #
+# This section adds a PROJEKT tab on the Root node.
+# ========================================================================== #
+
+projekt_core.vfxtools.create_projekt_panel()
 
 # -------------------------------------------------------------------------- #
+
+# add a callback to update the job warnings
+# nuke.addKnobChanged(projekt_core.vfxtools.jobWarnings, nodeClass="Root")
+#nuke.addUpdateUI(projekt_core.vfxtools.jobWarnings, nodeClass="Root")
+
+# ========================================================================== #
+# This section registers a callback for job warnings.
+# ========================================================================== #
+
+# Register the callback for any knob change
+nuke.addKnobChanged(projekt_core.vfxtools.update_root_warnings_callback, nodeClass='Root')
+
+
+
+# ========================================================================== #
+# This section builds the PROJEKT menu on the toolbar.
+# ========================================================================== #
+"""
+
+"""
+
+menuTitle="PROJEKT"
+menubar = nuke.menu("Nuke")
+
+# index=7 places the PROJEKT menu after default nuke menus.
+projekt_menu = menubar.addMenu(menuTitle,index=7)
+
+# add a info string to the menu /sh010, compositing {shot}/{task}
+projekt_menu.addCommand("{shot}| compositing", 
+                             '', 
+                             '')
+projekt_menu.addSeparator()
+projekt_menu.addCommand('work files...', 
+                             projekt_core.utilities.placeholder_func, 
+                             '')
+projekt_menu.addSeparator()
+projekt_menu.addCommand('publish...', 
+                             projekt_core.utilities.placeholder_func, 
+                             '')
+projekt_menu.addCommand('load...', 
+                             projekt_core.utilities.placeholder_func, 
+                             '')
+projekt_menu.addCommand('manage...', 
+                             projekt_core.utilities.placeholder_func, 
+                             '')
+projekt_menu.addSeparator()
+projekt_menu.addCommand('library...', 
+                             projekt_core.utilities.placeholder_func, 
+                             '')
+projekt_menu.addSeparator()
+projekt_menu.addCommand('scripts/print_env_vars', 
+                             'projekt_core.utilities.placeholder_func()', 
+                             '')
+projekt_menu.addCommand('scripts/unpack_direnv_diff', 
+                             'print(projekt_core.vfxtools.unpack_direnv_diff())', 
+                             '')
+
+# ========================================================================== #
+# This section adds gizmos to the menu and node toolbar.
+# ========================================================================== #
+
+# add a menu for scanned gizmos, supply the name of the toolbar/node to add.
+gizmo_menu = "Gizmos"
+# Store the gizmo_menu globally
+global current_gizmo_menu
+current_gizmo_menu = gizmo_menu
+
+# Add the menu
+projekt_core.gizmoUtilities.add_menu(root_menu=current_gizmo_menu)
+
+
+
+# ========================================================================== #
+# This section adds Toolsets, Templates to the menu.
+# ========================================================================== #
+
+try:
+    import projekt_core.toolsetUtilities
+    print("projekt_core.toolsetUtilities imported successfully.")
+except ImportError as e:
+    print(f"Error importing core: {e}")
+
+# -------------------------------------------------------------------------- #
+# Add the Toolsets Menu...
+projekt_core.toolsetUtilities.addMenu("Toolsets", index=9)
+
+# -------------------------------------------------------------------------- #
+# Add the Templates Menu...
+projekt_core.toolsetUtilities.addMenu("Templates", index=10)
+
+
+# ========================================================================== #
+# This section adds pyScripts to the menu.
+# ========================================================================== #
+
+try:
+    import pyScripts
+    import projekt_core.setupScripts
+    print("projekt_core.setupScripts imported successfully.")
+    print("# -------------------------------------------------------------------------- #")
+except ImportError as e:
+    print(f"Error importing core: {e}")
+
+
+
+# ========================================================================== #
+# This section handles dynamic favorites, includes callback.
+# ========================================================================== #
+
+
+# # -------------------------------------------------------------------------- #
+# # callback to add global favorites
+nuke.addOnCreate(projekt_core.favoritesRedux.addGlobalFavorites, nodeClass = 'Root')
+
+# Flag to ensure single registration
+if not hasattr(nuke, 'favoritesKnobChanged_registered'):
+    nuke.addKnobChanged(projekt_core.favoritesRedux.favoritesKnobChanged, nodeClass='Root')
+    nuke.favoritesKnobChanged_registered = True
+
+# -------------------------------------------------------------------------- #
+# def setShotFavesOnLoad(): 
+    # 
+    # todo: this is not implemented yet... should be moved into favoritesRedux.py...
+    # """
+#     logger.info("Running setShotFavesOnLoad")
+#     projekt_core.favoritesRedux.removeFavoritesForCurrentShot()
+#     projekt_core.favoritesRedux.addFavoritesForCurrentShot()
+
+
+# nuke.addOnScriptLoad(setShotFavesOnLoad, nodeClass='Root')
+
+
+
+# ========================================================================== #
+# This section registers callbacks for script load...
+# ========================================================================== #
+
+# Register the callback to set the set environment variables on empty script load
+# nuke.addOnCreate(projekt_core.vfxtools.on_root_node_create_callback, nodeClass='Root')
+# nuke.addOnScriptLoad(projekt_core.vfxtools.on_root_node_create_callback, nodeClass='Root')
+
+
+# ========================================================================== #
+# This section loads knob defaults.
+# ========================================================================== #
+
+# Node defaults
+#import defaults
+
+# ========================================================================== #
+# This section loads additional tools.
+# ========================================================================== #
+
+# Toggle Viewer Pipes
+# import viewerOps
+# nuke.menu("Nuke").addCommand('Viewer/Toggle Viewer Pipes', 
+#                              viewerOps.toggleViewerPipes, 
+#                              'alt+t')
+
+# # -------------------------------------------------------------------------- #
+
+# # ReadFromWrite
+# import readFromWrite
+# nuke.menu('Nuke').addCommand('Edit/Node/Read from Write',
+#                              'readFromWrite.ReadFromWrite()',
+#                              'alt+r')
+
+# ========================================================================== #
+# This section defines third party tool packages.
+# ========================================================================== #
+
+# Example:
+# KnobScripter v3.1.0
+# https://github.com/adrianpueyo/KnobScripter
+
+# print("Importing KnobScripter:")
+# nuke.pluginAddPath("./repo/KnobScripter-3.1.0")
+# try:
+#     import KnobScripter
+# except ImportError:
+#     print("Failed to import KnobScripter... Continuing without it.")
+
+
+# -------------------------------------------------------------------------- #
+
+print("# -------------------------------------------------------------------------- #")
+
+
+#nuke.addOnCreate(createWriteDirectories, nodeClass='Write')
+#nuke.addOnCreate(createWriteDirectories, nodeClass='DeepWrite')
+#nuke.addOnCreate(createWriteDirectories, nodeClass='WriteGeo')
+#nuke.addOnCreate(createWriteDirectories, nodeClass='SmartVector')

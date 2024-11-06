@@ -1,0 +1,124 @@
+# -------------------------------------------------------------------------- #
+
+# File Name:        .envrc
+# Version:          0.0.2
+# Created:          2024-10-26
+# Modified:         
+
+# ========================================================================== #
+# This section determines the running os
+# ========================================================================== #
+
+os=$(uname -s)
+# if [[ $os == *"CYGWIN"* ]]; then export PROJEKT_OS="cyg"; fi
+if [[ $os == *"Darwin"* ]]; then export PROJEKT_OS="mac"; fi
+if [[ $os == *"Linux"*  ]]; then export PROJEKT_OS="lin"; fi
+
+
+
+
+# ========================================================================== #
+# This section defines the projekt folder path and name
+# ========================================================================== #
+
+# Set path to the 'projekt folder' via $PWD
+# bug: $PWD in direnv is resolving to the full path rather than the symlink. 
+# export PROJEKT_PATH=$PWD
+
+# Set the path to the root directory.
+export PROJEKT_ROOT="/PROJEKTS"
+
+# -------------------------------------------------------------------------- #
+
+# Extract the 'projekt name' from path
+result=${PWD##*/}     # assign to a variable
+result=${result:-/}    
+export PROJEKT_NAME=$result
+
+# -------------------------------------------------------------------------- #
+
+# Build the path to the projekt folder.
+export PROJEKT_PATH=$PROJEKT_ROOT/$PROJEKT_NAME
+
+
+# -------------------------------------------------------------------------- #
+
+# Set the path to the 'software' directory
+
+export PROJEKT_PIPELINE_ROOT=$PROJEKT_PATH/software
+
+# -------------------------------------------------------------------------- #
+
+# Set the path to the 'templates' directory
+
+export PROJEKT_PIPE_TEMPLATES=$PROJEKT_PIPELINE_ROOT/templates
+
+
+# ========================================================================== #
+# This section adds a bin folder to the path.
+# ========================================================================== #
+
+PATH_add $PROJEKT_PIPELINE_ROOT/bin
+
+
+
+# ========================================================================== #
+# This section displays pathing information in the shell.
+# ========================================================================== #
+
+echo "entering job $result"
+echo
+echo "# -------------------------------------------------------------------------- #"
+echo PATHING ENVIRONMENT
+echo "# -------------------------------------------------------------------------- #"
+echo "projekt name:     " $PROJEKT_NAME
+echo "projekt root:     " $PROJEKT_ROOT   
+echo "projekt path:     " $PROJEKT_PATH
+echo "pipeline path:    " $PROJEKT_PIPELINE_ROOT
+echo "template path:    " $PROJEKT_PIPE_TEMPLATES
+#echo "project path:    " $PROJ
+echo "os:               " $PROJEKT_OS
+echo "path:             " $PATH
+echo
+
+
+# ========================================================================== #
+# This section configures environment variables for licensing.
+# ========================================================================== #
+
+echo "# -------------------------------------------------------------------------- #"
+echo LICENSING ENVIRONMENT
+echo "# -------------------------------------------------------------------------- #"
+
+license_server=license.server-at.studio
+
+# export foundry_LICENSE=4101@$license_server #default
+
+export foundry_LICENSE=4500@10.10.120.50
+export neatlab_LICENSE=25053@$license_server
+export pixelmania_LICENSE=5053@$license_server
+export KEENTOOLS_LICENSE_SERVER=7096@$license_server
+export genarts_LICENSE=5053@$license_server
+
+echo "foundry_LICENSE:          " $foundry_LICENSE
+echo "neatlab_LICENSE:          " $neatlab_LICENSE
+echo "pixelmania_LICENSE:       " $pixelmania_LICENSE
+echo "KEENTOOLS_LICENSE_SERVER: " $KEENTOOLS_LICENSE_SERVER
+echo "genarts_LICENSE:          " $genarts_LICENSE
+echo
+echo "# -------------------------------------------------------------------------- #"
+echo
+echo
+
+
+# Changelist:       
+# -------------------------------------------------------------------------- #
+# version:          0.0.1
+# created:          
+# comments:         .envrc file for environment via direnv.
+# -------------------------------------------------------------------------- #      
+# -------------------------------------------------------------------------- #
+# version:          0.0.2
+# created:          
+# comments:         replace job with projekt.
+# -------------------------------------------------------------------------- #
