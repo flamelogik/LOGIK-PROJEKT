@@ -1,3 +1,35 @@
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+
+# -------------------------------------------------------------------------- #
+
 # File Name:        download_aces_1_2_config.py
 # Version:          0.0.1
 # Created:          2024-11-03
@@ -33,6 +65,7 @@ import urllib.request
 import zipfile
 from typing import List
 from datetime import datetime
+import shutil
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -59,13 +92,6 @@ ACTIVE_DISPLAYS_PATTERN = re.compile(r'active_displays:\s*\[(.*?)\]', re.DOTALL)
 ACTIVE_VIEWS_PATTERN = re.compile(r'active_views:\s*\[(.*?)\]', re.DOTALL)
 DESCRIPTION_PATTERN = re.compile(r'description:\s*')
 
-import urllib.request
-import zipfile
-from pathlib import Path
-import shutil
-import logging
-
-logger = logging.getLogger(__name__)
 
 def download_and_extract_zip(url: str, destination_dir: Path):
     zip_path = destination_dir / "OpenColorIO-Config-ACES-1.2.zip"

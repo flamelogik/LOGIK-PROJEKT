@@ -1,11 +1,41 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        download_ocio_configs.py
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+
+# -------------------------------------------------------------------------- #
+
+# File Name:        download_aces_1_3_configs.py
 # Version:          0.0.2
 # Created:          2024-11-03
-# Modified:         2024-11-01
+# Modified:         2024-11-06
 
+# -------------------------------------------------------------------------- #
 
 """
 This script downloads and modifies OpenColorIO (OCIO) configuration files from a specified GitHub repository.
@@ -219,3 +249,9 @@ if __name__ == "__main__":
         total_downloaded += download_assets(tag, PLATFORM_DATA, CONFIG_DATA, keep_active_views, keep_displays, DESTINATION_DIR)
     
     logger.info(f"Total .ocio assets downloaded: {total_downloaded}")
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #
