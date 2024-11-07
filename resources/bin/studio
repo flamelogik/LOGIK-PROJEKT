@@ -1,8 +1,8 @@
-resources/bin/nuke#!/bin/bash
+#!/bin/bash
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        nukex
+# File Name:        studio
 # Version:          0.0.1
 # Created:          2024-10-09
 # Modified:         
@@ -10,8 +10,8 @@ resources/bin/nuke#!/bin/bash
 
 
 # ========================================================================== #
-# This section runs NukeX.
+# This section runs NukeStudio.
 # ========================================================================== #
 
 
-nuke -nukex $@
+nuke --studio $@
