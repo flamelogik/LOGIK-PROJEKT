@@ -5,10 +5,28 @@
 # File Name:        nuke
 # Version:          0.0.2
 # Created:          2024-10-25
-# Modified:         2024-11-03
+# Modified:         2024-11-07
 
-# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section creates a decorative separator for blocks of text.
+# ========================================================================== #
 
+# Define a variable called 'separator'.
+# That starts and ends with '+', and 75 '-' characters in between.
+separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
+
+# Define a variable called 'separator_hash'.
+# That starts and ends with '#', and 75 '-' characters in between.
+separator_hash=$(printf '# %s #' "$(printf -- '-%.0s' {1..74})")
+
+# Print a separator to the shell
+echo -e "\n$separator_hash\n"
+# echo -e "\n$separator_hash\n"  # -e option may be unnecessary
+
+
+# ========================================================================== #
+
+# Print a message to the shell
 echo "setting up Nuke environment... $PROJEKT_NAME"
 
 # ========================================================================== #
@@ -187,10 +205,13 @@ fi
 # This section displays information in the shell.
 # ========================================================================== #
 
-echo 
-echo "# -------------------------------------------------------------------------- #"
-echo NUKE ENVIRONMENT
-echo "# -------------------------------------------------------------------------- #"
+# echo 
+# echo "# -------------------------------------------------------------------------- #"
+echo -e "\n$separator_hash\n"
+echo "  NUKE ENVIRONMENT"
+echo -e "\n$separator_hash\n"
+# echo "# -------------------------------------------------------------------------- #"
+
 echo "nuke_version:     "$nuke_version
 echo "nuke_major_minor: "$nuke_major_minor
 echo
@@ -205,9 +226,7 @@ echo
 echo "nuke_root:        "$nuke_root
 echo "nuke_command:     "$nuke_command
 
-echo
-echo "# -------------------------------------------------------------------------- #"
-echo
+echo -e "\n$separator_hash\n"
 
 
 # ========================================================================== #
