@@ -1,9 +1,38 @@
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
 # -------------------------------------------------------------------------- #
 
 # File Name:        .envrc
 # Version:          0.0.2
 # Created:          2024-10-26
-# Modified:         
+# Modified:         2021-11-06
 
 # ========================================================================== #
 # This section determines the running os
@@ -30,7 +59,7 @@ export PROJEKT_ROOT="/PROJEKTS"
 
 # -------------------------------------------------------------------------- #
 
-# Extract the 'projekt name' from path
+# Extract projekt name from path
 result=${PWD##*/}     # assign to a variable
 result=${result:-/}    
 export PROJEKT_NAME=$result
@@ -44,13 +73,11 @@ export PROJEKT_PATH=$PROJEKT_ROOT/$PROJEKT_NAME
 # -------------------------------------------------------------------------- #
 
 # Set the path to the 'software' directory
-
 export PROJEKT_PIPELINE_ROOT=$PROJEKT_PATH/software
 
 # -------------------------------------------------------------------------- #
 
 # Set the path to the 'templates' directory
-
 export PROJEKT_PIPE_TEMPLATES=$PROJEKT_PIPELINE_ROOT/templates
 
 
@@ -66,21 +93,19 @@ PATH_add $PROJEKT_PIPELINE_ROOT/bin
 # This section displays pathing information in the shell.
 # ========================================================================== #
 
-echo "entering job $result"
+echo "entering projekt $result"
 echo
 echo "# -------------------------------------------------------------------------- #"
 echo PATHING ENVIRONMENT
 echo "# -------------------------------------------------------------------------- #"
-echo "projekt name:     " $PROJEKT_NAME
-echo "projekt root:     " $PROJEKT_ROOT   
-echo "projekt path:     " $PROJEKT_PATH
-echo "pipeline path:    " $PROJEKT_PIPELINE_ROOT
-echo "template path:    " $PROJEKT_PIPE_TEMPLATES
-#echo "project path:    " $PROJ
-echo "os:               " $PROJEKT_OS
-echo "path:             " $PATH
+echo "PROJEKT_NAME:             " $PROJEKT_NAME
+echo "PROJEKT_ROOT:             " $PROJEKT_ROOT   
+echo "PROJEKT_PATH:             " $PROJEKT_PATH
+echo "PROJEKT_PIPELINE_ROOT:    " $PROJEKT_PIPELINE_ROOT
+echo "PROJEKT_PIPE_TEMPLATES:   " $PROJEKT_PIPE_TEMPLATES
+echo "PROJEKT_OS:               " $PROJEKT_OS
+echo "PATH:                     " $PATH
 echo
-
 
 # ========================================================================== #
 # This section configures environment variables for licensing.
@@ -92,11 +117,10 @@ echo "# ------------------------------------------------------------------------
 
 license_server=license.server-at.studio
 
-# export foundry_LICENSE=4101@$license_server #default
-
-export foundry_LICENSE=4500@10.10.120.50
+export foundry_LICENSE=4101@$license_server #default
 export neatlab_LICENSE=25053@$license_server
 export pixelmania_LICENSE=5053@$license_server
+
 export KEENTOOLS_LICENSE_SERVER=7096@$license_server
 export genarts_LICENSE=5053@$license_server
 
@@ -122,3 +146,9 @@ echo
 # created:          
 # comments:         replace job with projekt.
 # -------------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #
