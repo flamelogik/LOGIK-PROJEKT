@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+.env
 resources/tmp/current_projekt_bookmarks.json
 resources/tmp/current_projekt_parameters.xml
 resources/tmp/current_projekt_template.json
@@ -15,3 +16,8 @@ LOGIK-PROJEKT.app/Contents/Resources/logik_projekt_icon.icns
 resources/utilities/flame_configs/init_config/default/init.cfg.default
 resources/utilities/flame_configs/init_config/freesync/init.cfg.freesync
 resources/flame/Syncolor/Shared/transforms.tar.xz
+install/logs/2024-11-06-current_adsk_python_version_log.txt
+resources/tmp/current_projekt_bookmarks.json
+resources/tmp/current_projekt_parameters.xml
+resources/tmp/current_projekt_template.json
+resources/tmp/current_projekt_template.json.bak
