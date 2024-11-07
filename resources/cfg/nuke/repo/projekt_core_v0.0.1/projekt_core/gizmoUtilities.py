@@ -1,6 +1,42 @@
-"""
-gizmoUtilities.py
 
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+# -------------------------------------------------------------------------- #
+
+# File Name:        gizmoUtilities.py
+# Version:          0.0.1
+# Created:          2024-10-27
+# Modified:         2021-11-06
+
+# -------------------------------------------------------------------------- #
+
+"""
 This module is responsible for managing gizmo directories and loading gizmos into Nuke.
 It sets up the gizmo directory path and provides utilities for adding gizmos to the Nuke menu.
 
@@ -18,7 +54,6 @@ import os
 import re
 import inspect
 from typing import Optional
-
 import projekt_core.settings
 
 
@@ -168,6 +203,7 @@ class GizmoPathManager(object):
         elif isinstance(rootMenu, str):
             rootMenu = nuke.menu(rootMenu).addMenu('menuTitle')
 
+
         self._recursiveAddGizmoMenuItems(rootMenu, self._crawlData,
                                          defaultSubMenu=defaultTopMenu,
                                          topLevel=True)
@@ -199,7 +235,7 @@ class GizmoPathManager(object):
 # This section defines the utility functions.
 # ========================================================================== #
 
-def add_menu(root_menu: Optional[str] = None, default_top_menu: Optional[str] = None) -> None:
+def add_menu(root_menu: Optional[str] = None, index=9, default_top_menu: Optional[str] = None) -> None:
     """
     Add gizmos to the Nuke menu and the DAG tab menu, making them accessible.
     
@@ -219,6 +255,10 @@ def add_menu(root_menu: Optional[str] = None, default_top_menu: Optional[str] = 
         if giz_manager is None:
             logger.warning('gizManager is not available as a global')
             return
+
+        # create the Nuke menu...
+        nuke.menu("Nuke").addMenu(root_menu, index=index)
+        logger.info(f'Adding menu items to {root_menu} at index {index}')
 
         logger.info('Adding gizmo menu items...')
         add_gizmo_menu_items(giz_manager, root_menu)
@@ -334,3 +374,9 @@ if __name__ == '__main__':
     main()
 
 print("# -------------------------------------------------------------------------- #")
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #

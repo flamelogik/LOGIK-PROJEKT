@@ -1,14 +1,52 @@
-__author__ = "Brian Willard"
-__copyright__ = "Copyright 2023 Brian Willard"
-__license__ = "Apache-2.0 - https://opensource.org/licenses/apache-2-0"
-__version__ = "0.0.1"
-__email__ = "brian@silo84.com"
-__website__ = "www.silo84.com"
-__status__ = "Testing"
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+# -------------------------------------------------------------------------- #
+
+# File Name:        setupScripts.py
+# Version:          0.0.1
+# Created:          2024-10-30
+# Modified:         2021-11-06
+
+# -------------------------------------------------------------------------- #
 
 """
-reloading existing modules works, but we are having issues accessing newly 
-imported_modules in globals() after the fact.
+This script sets up a custom 'pyScripts' menu in Nuke's menubar by performing the following tasks:
+1. Initializes logging and environment paths.
+2. Creates a 'pyScripts' menu in Nuke.
+3. Recursively scans a specified directory for Python scripts and adds them to the menu.
+   Python files that start with __ are not loaded into the 'pyScripts' menu.
+4. Handles module imports and reloads to maintain script references.
+5. Provides utility functions to:
+   - Open directories in the system file explorer.
+   - Reload the 'pyScripts' menu.
+6. Adds options to reload the menu and open the scripts directory.
 
 """
 
@@ -122,7 +160,7 @@ def reload_module(module_name: str):
 
 
 # ========================================================================== #
-# This section 
+# This section traverses the specified directory and adds the python scripts
 # ========================================================================== #
 
 for path, dirs, files in os.walk(scriptsRootDir):
@@ -161,13 +199,13 @@ for path, dirs, files in os.walk(scriptsRootDir):
             # print(f"{localDirPath} {_state}")
 
 # ========================================================================== #
-# This section 
+# This section
 # ========================================================================== #
 
 logger.info(f'imported_modules: {imported_modules}')
 
 # ========================================================================== #
-# This section 
+# This section adds options to reload the menu and open the pyScripts directory.
 # ========================================================================== #
 m.addSeparator()
 #m.addCommand('reload pyScripts Menu', 'pyScripts.reload.reload_pyScripts.main()', '')
@@ -181,7 +219,7 @@ m.addCommand('openScriptsDir', 'projekt_core.utilities.openScriptsDir()', '')
 
 
 # ========================================================================== #
-# This section 
+# This section reloads the specified menu in Nuke.
 # ========================================================================== #
 
 def reload_main():
@@ -244,6 +282,12 @@ def reload_main():
 
     logger.info('rebuilding pyScripts menu complete')
 
-
+# -------------------------------------------------------------------------- #
 
 logger.info('setupScripts complete')
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #

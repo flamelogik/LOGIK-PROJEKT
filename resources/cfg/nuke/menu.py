@@ -1,3 +1,40 @@
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+# -------------------------------------------------------------------------- #
+
+# File Name:        menu.py
+# Version:          0.0.1
+# Created:          2024-10-25
+# Modified:         2021-11-07
+
+
 import nuke
 
 
@@ -7,7 +44,6 @@ print("running menu.py...")
 # ========================================================================== #
 # This section imports various projekt_core tools
 # ========================================================================== #
-
 
 # Import projekt_core modules
 
@@ -56,11 +92,6 @@ from projekt_core.utilities import logger
 
 projekt_core.vfxtools.create_projekt_panel()
 
-# -------------------------------------------------------------------------- #
-
-# add a callback to update the job warnings
-# nuke.addKnobChanged(projekt_core.vfxtools.jobWarnings, nodeClass="Root")
-#nuke.addUpdateUI(projekt_core.vfxtools.jobWarnings, nodeClass="Root")
 
 # ========================================================================== #
 # This section registers a callback for job warnings.
@@ -69,6 +100,9 @@ projekt_core.vfxtools.create_projekt_panel()
 # Register the callback for any knob change
 nuke.addKnobChanged(projekt_core.vfxtools.update_root_warnings_callback, nodeClass='Root')
 
+# Register these functions to run on script load and script close
+# nuke.addOnScriptLoad(projekt_core.vfxtools.enable_update_root_warnings_callback)
+# nuke.addOnScriptClose(projekt_core.vfxtools.disable_update_root_warnings_callback)
 
 
 # ========================================================================== #
@@ -85,9 +119,9 @@ menubar = nuke.menu("Nuke")
 projekt_menu = menubar.addMenu(menuTitle,index=7)
 
 # add a info string to the menu /sh010, compositing {shot}/{task}
-projekt_menu.addCommand("{shot}| compositing", 
-                             '', 
-                             '')
+# projekt_menu.addCommand(f"{shot}| compositing", 
+#                              '', 
+#                              '')
 projekt_menu.addSeparator()
 projekt_menu.addCommand('work files...', 
                              projekt_core.utilities.placeholder_func, 
@@ -96,16 +130,16 @@ projekt_menu.addSeparator()
 projekt_menu.addCommand('publish...', 
                              projekt_core.utilities.placeholder_func, 
                              '')
-projekt_menu.addCommand('load...', 
-                             projekt_core.utilities.placeholder_func, 
-                             '')
-projekt_menu.addCommand('manage...', 
-                             projekt_core.utilities.placeholder_func, 
-                             '')
+# projekt_menu.addCommand('load...', 
+#                              projekt_core.utilities.placeholder_func, 
+#                              '')
+# projekt_menu.addCommand('manage...', 
+#                              projekt_core.utilities.placeholder_func, 
+#                              '')
 projekt_menu.addSeparator()
-projekt_menu.addCommand('library...', 
-                             projekt_core.utilities.placeholder_func, 
-                             '')
+# projekt_menu.addCommand('library...', 
+#                              projekt_core.utilities.placeholder_func, 
+#                              '')
 projekt_menu.addSeparator()
 projekt_menu.addCommand('scripts/print_env_vars', 
                              'projekt_core.utilities.placeholder_func()', 
@@ -123,9 +157,10 @@ gizmo_menu = "Gizmos"
 # Store the gizmo_menu globally
 global current_gizmo_menu
 current_gizmo_menu = gizmo_menu
+# index=9
 
 # Add the menu
-projekt_core.gizmoUtilities.add_menu(root_menu=current_gizmo_menu)
+projekt_core.gizmoUtilities.add_menu(root_menu=current_gizmo_menu, index=9)
 
 
 
@@ -141,11 +176,11 @@ except ImportError as e:
 
 # -------------------------------------------------------------------------- #
 # Add the Toolsets Menu...
-projekt_core.toolsetUtilities.addMenu("Toolsets", index=9)
+projekt_core.toolsetUtilities.addMenu("Toolsets", index=10)
 
 # -------------------------------------------------------------------------- #
 # Add the Templates Menu...
-projekt_core.toolsetUtilities.addMenu("Templates", index=10)
+projekt_core.toolsetUtilities.addMenu("Templates", index=11)
 
 
 # ========================================================================== #
@@ -190,6 +225,7 @@ if not hasattr(nuke, 'favoritesKnobChanged_registered'):
 
 
 
+
 # ========================================================================== #
 # This section registers callbacks for script load...
 # ========================================================================== #
@@ -198,13 +234,18 @@ if not hasattr(nuke, 'favoritesKnobChanged_registered'):
 # nuke.addOnCreate(projekt_core.vfxtools.on_root_node_create_callback, nodeClass='Root')
 # nuke.addOnScriptLoad(projekt_core.vfxtools.on_root_node_create_callback, nodeClass='Root')
 
+# Register the callback to run on script load
+nuke.addOnScriptLoad(projekt_core.vfxtools.on_script_load_parse_for_env, nodeClass='Root')
 
 # ========================================================================== #
 # This section loads knob defaults.
 # ========================================================================== #
+try:
+    import projekt_core.defaults
+    print("projekt_core.defaults imported successfully.")
+except ImportError as e:
+    print(f"Error importing core: {e}")
 
-# Node defaults
-#import defaults
 
 # ========================================================================== #
 # This section loads additional tools.
@@ -223,6 +264,18 @@ if not hasattr(nuke, 'favoritesKnobChanged_registered'):
 # nuke.menu('Nuke').addCommand('Edit/Node/Read from Write',
 #                              'readFromWrite.ReadFromWrite()',
 #                              'alt+r')
+
+# -------------------------------------------------------------------------- #
+# ========================================================================== #
+# This section imports the version_up module.
+# ========================================================================== #
+
+try:
+    import projekt_core.version_up
+    print("projekt_core.version_up imported successfully.")
+except ImportError as e:
+    print(f"Error importing core: {e}")
+
 
 # ========================================================================== #
 # This section defines third party tool packages.
@@ -249,3 +302,9 @@ print("# -----------------------------------------------------------------------
 #nuke.addOnCreate(createWriteDirectories, nodeClass='DeepWrite')
 #nuke.addOnCreate(createWriteDirectories, nodeClass='WriteGeo')
 #nuke.addOnCreate(createWriteDirectories, nodeClass='SmartVector')
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #
