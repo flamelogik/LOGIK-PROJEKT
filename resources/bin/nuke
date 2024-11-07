@@ -160,9 +160,9 @@ if [[ $PROJEKT_OS == "lin" ]];
 then 
 
     # server
-    export PROJEKT_APPS=/s84/apps
-    export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
-    export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
+    # export PROJEKT_APPS=/s84/apps
+    # export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
+    # export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
 
     # local
     # export nuke_root=/usr/local/Nuke$nuke_version
