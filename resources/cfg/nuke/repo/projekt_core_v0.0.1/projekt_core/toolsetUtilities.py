@@ -1,11 +1,67 @@
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+# -------------------------------------------------------------------------- #
+
+# File Name:        toolsetUtilities.py
+# Version:          0.0.1
+# Created:          2024-10-28
+# Modified:         2021-11-06
+
+# -------------------------------------------------------------------------- #
+
 """
+This module provides utility functions for managing Nuke toolsets and templates. 
+It includes functions to open directories, export selected nodes as scripts, 
+and create menus in Nuke's menu bar.
+
 Functions:
-- openDirectory(directory: Path) -> None: Open the specified directory in the file explorer.
-- openToolsetsDir(directory: Path) -> None: Open the directory that contains the toolset.
-- openTemplatesDir(directory: Path) -> None: Open the directory that contains the templates.
-- exportNodesAsScript(export_type: str, directory: Path, reload_function) -> None: Export selected nodes as an nk script on disk in the specified directory.
-- saveNodesAsToolset() -> None: Export selected nodes as an nk script on disk in the toolSetsDir folder.
-- saveNodesAsTemplate() -> None: Export selected nodes as an nk script on disk in the templatesDir folder.
+1. `openDirectory(directory: Path) -> None`: Opens the specified directory in the file explorer.
+2. `openToolsetsDir(directory: Path) -> None`: Opens the directory that contains the toolsets.
+3. `openTemplatesDir(directory: Path) -> None`: Opens the directory that contains the templates.
+4. `exportNodesAsScript() -> None`: Exports selected nodes as an nk script on disk in the specified directory.
+5. `saveNodesAsToolset() -> None`: Exports selected nodes as an nk script on disk in the toolSetsDir folder.
+6. `saveNodesAsTemplate() -> None`: Exports selected nodes as an nk script on disk in the templatesDir folder.
+7. `createMenu() -> None`: Creates a menu in Nuke's menu bar with the specified title and index, 
+    populated with items found in the specified directory path.
+8. `addMenu(menu_title: str, index: int) -> None`: Adds a menu to Nuke.
+9. `reloadMenu(menu_title: str, index: int) -> None`: Reloads the specified menu in Nuke.
+
+Dependencies:
+- nuke
+- os
+- sys
+- pathlib
+- projekt_core.settings
+- projekt_core.utilities
+- logging (for logger)
+
 
 """
 
@@ -180,20 +236,13 @@ def reloadMenu(menu_title: str, index: int) -> None:
     :param index: The index at which the reloaded menu should be inserted.
     """
     menubar = nuke.menu("Nuke")
-    menu = menubar.addMenu(f"&{menu_title}", index)
+    menu = menubar.addMenu(f"&{menu_title}", str(index))
     menu.clearMenu()
     addMenu(menu_title, index)
 
-# ========================================================================== #
-# This section creates the Toolsets and Templates menus in Nuke.
-# ========================================================================== #
-
-# Toolsets Menu
-# addMenu("Toolsets", -4)
 
 # -------------------------------------------------------------------------- #
 
-# Templates Menu
-# addMenu("Templates", -5)
-
-# print("# -------------------------------------------------------------------------- #")
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #

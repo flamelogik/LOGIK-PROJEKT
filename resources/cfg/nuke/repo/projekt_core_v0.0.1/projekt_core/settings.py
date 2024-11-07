@@ -1,15 +1,74 @@
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+# -------------------------------------------------------------------------- #
+
+# File Name:        settings.py
+# Version:          0.0.1
+# Created:          2024-10-25
+# Modified:         2021-11-06
+
+# -------------------------------------------------------------------------- #
+
+"""
+This module provides functions to retrieve various directory paths used in the Nuke pipeline. 
+The paths are returned as pathlib.Path objects and include:
+
+1. `projekt_root_windows_path()`: Returns the root path of the pipeline on Windows.
+2. `projekt_root_path()`: Returns the root path of the project, either from an environment variable or a default location.
+3. `projekt_full_path(projekt_name)`: Returns the full path to a project by combining the root path and the project name.
+4. `get_projekt_path_from_env()`: Returns the path to the project job from an environment variable.
+5. `projekt_path()`: Returns the resolved path of the project.
+6. `projekt_name()`: Retrieves the value of the 'PROJEKT_NAME' environment variable.
+7. `projekt_shot()`: Retrieves the value of the 'PROJEKT_SHOT' environment variable.
+8. `projekt_shot_path()`: Returns the path of the current shot in the project.
+9. `pipeline_root_path()`: Returns the pipeline root path from an environment variable.
+10. `nuke_pipeline_path()`: Returns the root path of the Nuke pipeline.
+11. `nuke_gizmos_path()`: Returns the path to the directory where the Nuke gizmos are located.
+12. `nuke_custom_gizmos_path()`: Returns the path to the custom gizmos directory.
+13. `nuke_scripts_path()`: Returns the path to the Nuke pyScripts directory.
+14. `nuke_toolsets_path()`: Returns the path to the Nuke toolsets folder.
+15. `nuke_templates_path()`: Returns the path to the Nuke templates folder.
+16. `ocio_configs_path()`: Returns the file path for the OpenColorIO (OCIO) configuration.
+
+Dependencies:
+- pathlib
+- os
+- logging
+- projekt_core.utilities (for convert_to_nuke_path and logger)
+"""
+
 import os
 import logging
 from pathlib import Path
 from projekt_core.utilities import convert_to_nuke_path
 
-
-
-
-"""
-Common functions for path settings.
-
-"""
 # ========================================================================== #
 # This section imports the logging module and sets up the logger.
 # ========================================================================== #
@@ -314,3 +373,9 @@ if projekt_root_path() is None:
 	logger.warning("Projekt Root not found... ")
 if projekt_shot() is None:
     logger.warning("PROJEKT_SHOT not found... ")
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #

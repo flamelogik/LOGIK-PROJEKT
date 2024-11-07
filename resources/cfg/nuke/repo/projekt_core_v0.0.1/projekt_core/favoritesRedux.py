@@ -1,3 +1,70 @@
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+# -------------------------------------------------------------------------- #
+
+# File Name:        FavoritesRedux.py
+# Version:          0.0.1
+# Created:          2024-10-25
+# Modified:         2024-11-06
+
+# -------------------------------------------------------------------------- #
+
+"""
+This script manages the favorites directories in Nuke. It provides functions 
+to clear default bookmarks, configure global, shot, and work favorites, and 
+manage these favorites based on user actions. The script also includes a 
+callback function to handle changes to the 'favorites' knob in Nuke.
+
+Key functionalities:
+- clear_default_bookmarks: Removes default bookmarks from Nuke.
+- global_favorite_config: Defines the global favorite directories.
+- shot_favorite_config: Defines the shot-specific favorite directories.
+- work_favorite_config: Defines the work-specific favorite directories.
+- manageFavorites: Adds or removes favorites in Nuke based on the given action.
+- addGlobalFavorites: Adds global favorites to Nuke.
+- removeGlobalFavorites: Removes global favorites from Nuke.
+- addFavoritesForCurrentShot: Adds shot-specific favorites to Nuke.
+- removeFavoritesForCurrentShot: Removes shot-specific favorites from Nuke.
+- addWorkFavorites: Adds work-specific favorites to Nuke.
+- removeWorkFavorites: Removes work-specific favorites from Nuke.
+- favoritesKnobChanged: Callback function to handle changes to the 'favorites' knob.
+
+The script uses the projekt_core module for settings and utilities, and 
+integrates logging for tracking actions performed.
+
+# -------------------------------------------------------------------------- #
+
+
+"""
+
+
 import os
 import nuke
 
@@ -5,17 +72,6 @@ import projekt_core
 from projekt_core import settings as settings
 from projekt_core import utilities as utilities
 
-# import projekt_core.settings
-# import projekt_core.utilities
-
-
-
-"""
-- we'll need callbacks for on project load, close to dynamically add those to the FileChooser_Favorites.pref. 
-- if nuke crashes, we might have stale entries, so maybe we need another function to clean those lines on nuke's launch.
-
-
-"""
 # ========================================================================== #
 # This section imports the logging module and sets up the logger.
 # ========================================================================== #
@@ -72,12 +128,6 @@ def global_favorite_config():
             ['→ shots', projekt_path /  'shots', 0, 'Server.png'], 
             ['→ editorial', projekt_path / 'editorial', 0, 'Server.png'], 
             ['→ reference', projekt_path / 'reference', 0, 'Server.png'], 
-
-
-            #    ['EDITORIAL-Jobs', projekt_core.settings.projekt_root_path(), 0, 'Server.png'],
-            #    ['PIPELINE-Resource', os.path.join(projekt_core.settings.projekt_path(), 'resource'), 0, 'FXElements.png'],
-            #    ['PIPELINE', os.path.join(projekt_core.settings.projekt_path(), 'nukePipeline'), 32,'Pipeline.png'],
-            #    ['  ','projekt_core.vfxtools.rootPath()',0,'']
               ]
     return projList
 
@@ -102,33 +152,14 @@ def shot_favorite_config():
         ['==========', projekt_path / 'shots',0,''],
         [f" → {'scripts'}", projekt_shots_dir / shot_name / 'scripts' / 'nuke',0, 'Folder.png'], 
         [f" → {'sources'}", projekt_shots_dir / shot_name / 'media' / 'sources',0, 'Folder.png'],  
-        [f" → {'renders'}", projekt_shots_dir / shot_name / 'media' /'renders',0, 'Folder.png'],  
-             
-
-        # [projekt_core.settings.projekt_name(), projekt_core.settings.projekt_path(),0, 'Folder.png'],
-        # [f"----{shot_name}", str(projekt_shots_dir / shot_name),0, 'Folder.png'],        
-        # ['------------------',utilities.convert_to_nuke_path_string(projekt_core.settings.projekt_path() / 'shots'),0,''],
-        # [projekt_core.settings.projekt_shot(), projekt_core.settings.projekt_shot_path(),0, 'Folder.png'],
-
-        #   ['IO', os.path.join(projekt_core.vfxtools.jobPath(),'IO'),1, 'Read.png'],
-        #   ['Maya', os.path.join(projekt_core.vfxtools.jobPath(),'Maya'),16, 'Camera.png'],
-        #   ['nk_scripts', os.path.join(projekt_core.settings.projekt_path(),'nuke','scripts'),2, 'NukeApp64.png'],
-        #   ['cg_render', os.path.join(projekt_core.settings.projekt_path(),'cg','render'),1, 'Camera.png'],
-        #   ['cg_cam', os.path.join(projekt_core.settings.projekt_path(),'cg','cam'),16, 'Camera.png'],
-        #   ['cg_geo', os.path.join(projekt_core.settings.projekt_path(),'cg','geo'),16, 'Camera.png'],
-        #   ['nuke_renders', os.path.join(projekt_core.settings.projekt_path(),'nuke', 'renders'),1, 'Write.png'],
-        #   ['nuke_prerenders', os.path.join(projekt_core.settings.projekt_path(),'nuke', 'prerenders'),1, 'Write.png'],
-        #   ['elements', os.path.join(projekt_core.settings.projekt_path(),'elements'),1, 'Read.png'],
-        #   ['plates', os.path.join(projekt_core.settings.projekt_path(),'plates'),1, 'Read.png'],
+        [f" → {'renders'}", projekt_shots_dir / shot_name / 'media' /'renders',0, 'Folder.png']
         ]
 
     return projList
 
 def work_favorite_config():
     """
-    Project dir: /s84/jobs/The_Easy_Kind/
-    Shot dir: /s84/jobs/The_Easy_Kind/sh010/
-    Work dir: /s84/jobs/The_Easy_Kind/sh010/work/compositing/
+
     """
     projList = [
         ["Projekt dir", settings.projekt_path(),0, 'LoadParent.png'],
@@ -234,3 +265,10 @@ def favoritesKnobChanged():
                 knob_value = 'projekt'
         # elif knob_value == 'work':
         #     projekt_core.favoritesRedux.addWorkFavorites()
+
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #
