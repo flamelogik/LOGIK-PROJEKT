@@ -36,6 +36,60 @@
                 "bookmark_visibility": "Global"
             },
             "item_02": {
+                "object_name": "adobe_premiere_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "editorial_library",
+                "display_name": "'adobe_premiere'",
+                "object_type": "folder",
+                "object_color": "",
+                "link": "True",
+                "dir_name": "adobe_premiere",
+                "filesystem_type": "folder",
+                "flame_type": "folder",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/editorial",
+                "path": "/{projekts_dir}/{projekt_dir}/editorial/adobe_premiere",
+                "bookmark_name": "adobe_premiere",
+                "bookmark_type": "bookmark",
+                "bookmark_parent": "editorial",
+                "bookmark_visibility": "Global"
+            },
+            "item_03": {
+                "object_name": "avid_media_composer_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "editorial_library",
+                "display_name": "'avid_media_composer'",
+                "object_type": "folder",
+                "object_color": "",
+                "link": "True",
+                "dir_name": "avid_media_composer",
+                "filesystem_type": "folder",
+                "flame_type": "folder",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/editorial",
+                "path": "/{projekts_dir}/{projekt_dir}/editorial/avid_media_composer",
+                "bookmark_name": "avid_media_composer",
+                "bookmark_type": "bookmark",
+                "bookmark_parent": "editorial",
+                "bookmark_visibility": "Global"
+            },
+            "item_04": {
+                "object_name": "davinci_resolve_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "editorial_library",
+                "display_name": "'davinci_resolve'",
+                "object_type": "folder",
+                "object_color": "",
+                "link": "True",
+                "dir_name": "davinci_resolve",
+                "filesystem_type": "folder",
+                "flame_type": "folder",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/editorial",
+                "path": "/{projekts_dir}/{projekt_dir}/editorial/davinci_resolve",
+                "bookmark_name": "davinci_resolve",
+                "bookmark_type": "bookmark",
+                "bookmark_parent": "editorial",
+                "bookmark_visibility": "Global"
+            },
+            "item_05": {
                 "object_name": "edl_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "editorial_library",
@@ -53,7 +107,25 @@
                 "bookmark_parent": "editorial",
                 "bookmark_visibility": "Global"
             },
-            "item_03": {
+            "item_06": {
+                "object_name": "final_cut_pro_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "editorial_library",
+                "display_name": "'final_cut_pro'",
+                "object_type": "folder",
+                "object_color": "",
+                "link": "True",
+                "dir_name": "final_cut_pro",
+                "filesystem_type": "folder",
+                "flame_type": "folder",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/editorial",
+                "path": "/{projekts_dir}/{projekt_dir}/editorial/final_cut_pro",
+                "bookmark_name": "final_cut_pro",
+                "bookmark_type": "bookmark",
+                "bookmark_parent": "editorial",
+                "bookmark_visibility": "Global"
+            },
+            "item_07": {
                 "object_name": "prep_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "editorial_library",
@@ -71,7 +143,7 @@
                 "bookmark_parent": "editorial",
                 "bookmark_visibility": "Global"
             },
-            "item_04": {
+            "item_08": {
                 "object_name": "xml_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "editorial_library",

@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_flame_functions.py
-# Version:          0.5.0
+# Version:          1.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-10-30
 
 # ========================================================================== #
 # This section imports the pyflame functions.
@@ -74,6 +74,9 @@ from modules.functions.pyside6_qt_load_config import (
 )
 from modules.functions.pyside6_qt_save_config import (
     pyside6_qt_save_config as pyside6_qt_save_config
+)
+from modules.functions.pyside6_qt_output_config_ui import (
+    pyside6_qt_output_config_ui as pyside6_qt_output_config_ui
 )
 
 # ========================================================================== #
@@ -258,4 +261,8 @@ from modules.functions.pyside6_qt_save_config import (
 # version:               0.5.0
 # modified:              2024-08-31 - 18:26:06
 # comments:              prep for release.
+# -------------------------------------------------------------------------- #
+# version:               1.0.0
+# modified:              2024-10-30 - 07:35:27
+# comments:              Refactored PySide6 Output Node Config UI.
 # -------------------------------------------------------------------------- #
