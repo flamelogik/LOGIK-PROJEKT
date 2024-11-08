@@ -69,7 +69,7 @@ def disableGPUAcceleration():
 
 
 def main():
-    nuke.message('disabling GPU acceleration knobs...')
+    print('disabling GPU acceleration knobs...')
     disableGPUAcceleration()
 
 # -------------------------------------------------------------------------- #
