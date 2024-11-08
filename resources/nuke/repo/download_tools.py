@@ -76,6 +76,8 @@ zip_urls = {
     "https://github.com/xbourque/pixelfudger/raw/main/downloads/pixelfudger_3.2v1_nov_2023.zip": "init"
 }
 
+# list of directories to avoid drilling down into when creating the menu and init files
+no_drill_down_list = ["KnobScripter"]
 # ========================================================================== #
 # This section contains the dictionaries for the `init.py` and `menu.py` files.
 # ========================================================================== #
@@ -299,15 +301,19 @@ def process_zip_urls(zip_urls: Dict[str, str]) -> None:
 # ========================================================================== #
 # This section contains the function to create an `init.py` or `menu.py` file.
 # # ========================================================================== #
+from pathlib import Path
+from typing import Dict, List
 
-def create_nuke_py(file_name: str, items: Dict[str, str], file_types: list) -> None:
+
+def create_nuke_py(file_name: str, items: Dict[str, str], file_types: List[str], no_drill_down_list: List[str]) -> None:
     """
     Creates a Python file with nuke.pluginAddPath() statements for specified directories and file types.
 
     Args:
         file_name (str): The name of the Python file to be created.
         items (Dict[str, str]): A dictionary where keys are directory paths to be processed.
-        file_types (list): A list of file types to look for in the directories.
+        file_types (List[str]): A list of file types to look for in the directories.
+        no_drill_down_list (List[str]): A list of directory names to avoid drilling down into.
 
     Returns:
         None
@@ -322,12 +328,18 @@ def create_nuke_py(file_name: str, items: Dict[str, str], file_types: list) -> N
             if dir_path_item.is_dir():
                 found = False
 
+                # Check if the directory is in the no_drill_down_list
+                if any(no_drill in dir_path_item.name for no_drill in no_drill_down_list):
+                    f.write(f"nuke.pluginAddPath('{dir_path_item}')\n")
+                    found = True
+
                 # Check for file types in main directory
-                for file_type in file_types:
-                    if (dir_path_item / file_type).exists():
-                        f.write(f"nuke.pluginAddPath('{dir_path_item}')\n")
-                        found = True
-                        break
+                if not found:
+                    for file_type in file_types:
+                        if (dir_path_item / file_type).exists():
+                            f.write(f"nuke.pluginAddPath('{dir_path_item}')\n")
+                            found = True
+                            break
 
                 # If not found, check for subdirectory matching repository name
                 if not found:
@@ -380,8 +392,8 @@ def main() -> None:
     delete_existing_files()
     process_repo_urls(repo_urls)
     process_zip_urls(zip_urls)
-    create_nuke_py("init.py", init_py_items, ["init.py", "__init__.py"])
-    create_nuke_py("menu.py", menu_py_items, ["menu.py", "__menu__.py", "__init__.py"])
+    create_nuke_py("init.py", init_py_items, ["init.py", "__init__.py"], no_drill_down_list)
+    create_nuke_py("menu.py", menu_py_items, ["menu.py", "__menu__.py", "__init__.py"], no_drill_down_list)
     logger.info("Script execution completed.")
     print(f"init_py_items: {init_py_items}")
     print(f"menu_py_items: {menu_py_items}")
