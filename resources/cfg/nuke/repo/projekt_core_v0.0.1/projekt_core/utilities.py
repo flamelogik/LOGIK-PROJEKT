@@ -1,3 +1,65 @@
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
+#                   Copyright © 2024 Silo 84
+               
+#                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   for use with Autodesk Flame and other software.
+
+#                   LOGIK-PROJEKT is free software.
+
+#                   You can redistribute it and/or modify it under the terms
+#                   of the GNU General Public License as published by the
+#                   Free Software Foundation, either version 3 of the License,
+#                   or any later version.
+
+#                   This program is distributed in the hope that it will be
+#                   useful, but WITHOUT ANY WARRANTY; without even the
+#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
+#                   PARTICULAR PURPOSE.
+
+#                   See the GNU General Public License for more details.
+
+#                   You should have received a copy of the GNU General
+#                   Public License along with this program.
+
+#                   If not, see <https://www.gnu.org/licenses/>.
+               
+#                   Contact: brian@silo84.com
+# -------------------------------------------------------------------------- #
+
+# File Name:        utilities.py
+# Version:          0.0.1
+# Created:          2024-10-25
+# Modified:         2021-11-06
+
+# -------------------------------------------------------------------------- #
+
+"""
+This module provides utility functions for setting up logging, converting paths, 
+and opening directories in the file explorer.
+
+Functions:
+1. `setup_logger(name="projekt_core", log_level=logging.DEBUG, log_file=None, formatter=None) -> logging.Logger`: 
+    Configures and returns a logger with the specified name and log level.
+2. `convert_to_nuke_path_string(path) -> str`: Converts path separators to forward slash ('/') for Nuke.
+3. `convert_to_nuke_path(path) -> Path`: Converts path separators to forward slash ('/') for Nuke and returns a Path object.
+4. `openDirectory(directory: Path) -> None`: Opens the specified directory in the file explorer.
+5. `openToolsetsDir() -> None`: Opens the directory that contains the toolsets.
+6. `openTemplatesDir() -> None`: Opens the directory that contains the templates.
+7. `openGizmosDir() -> None`: Opens the directory that contains the gizmos.
+8. `openScriptsDir() -> None`: Opens the directory that contains the Python scripts.
+9. `placeholder_func() -> None`: Placeholder function.
+
+Dependencies:
+- sys
+- logging
+- pathlib
+- subprocess
+- projekt_core.settings
+"""
+
 import sys
 import logging
 from pathlib import Path
@@ -163,12 +225,17 @@ def openScriptsDir() -> None:
 
 
 # ========================================================================== #
-# This section configures the logger.
+# This section ccreates a placeholder function.
 # ========================================================================== #
-
 
 def placeholder_func():
     """
     Placeholder function.
     """
     pass
+
+# -------------------------------------------------------------------------- #
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #
