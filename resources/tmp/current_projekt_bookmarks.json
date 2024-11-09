@@ -17,7 +17,7 @@
                     },
                     {
                         "Bookmark": "projekt home",
-                        "Path": "/PROJEKTS/ncis_syd_s2/",
+                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/",
                         "Visibility": "Global"
                     },
                     {
@@ -28,102 +28,102 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "assets",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "artwork",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/artwork",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/artwork",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "audio",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/audio",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/audio",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cgi",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/cgi",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/cgi",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "font",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/font",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/font",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "footage_graded",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/footage_graded",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/footage_graded",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "footage_raw",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/footage_raw",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/footage_raw",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "graphics",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/graphics",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/graphics",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "images",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/images",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "legal",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/legal",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/legal",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "matchmoving",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/matchmoving",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/matchmoving",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "miscellaneous",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/miscellaneous",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/miscellaneous",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "paint",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/paint",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/paint",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "photoshop",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/photoshop",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/photoshop",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "roto",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/roto",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/roto",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slates",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/slates",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/slates",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "subtitles",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/subtitles",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/subtitles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "titles",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/titles",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/titles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "tracking",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/tracking",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/tracking",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "video",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/assets/video",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/assets/video",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -133,27 +133,27 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "editorial",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/editorial",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/editorial",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "aaf",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/editorial/aaf",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/editorial/aaf",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "edl",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/editorial/edl",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/editorial/edl",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "prep",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/editorial/prep",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/editorial/prep",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "xml",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/editorial/xml",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/editorial/xml",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -163,22 +163,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "flame",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/flame",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/flame",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "archives",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/flame/archives",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/flame/archives",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "iterations",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/flame/iterations",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/flame/iterations",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "setups",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/flame/setups",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/flame/setups",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -188,22 +188,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "masters",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/masters",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "master_edits",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/masters/master_edits",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/masters/master_edits",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slated_masters",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/masters/slated_masters",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/masters/slated_masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "versioned_masters",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/masters/versioned_masters",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/masters/versioned_masters",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -213,22 +213,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "reference",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/reference",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/reference",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_images",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/reference/reference_images",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/reference/reference_images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_movies",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/reference/reference_movies",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/reference/reference_movies",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_style_guide",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/reference/reference_style_guide",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/reference/reference_style_guide",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -238,77 +238,77 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "scenes",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "3ds",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/3ds",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/3ds",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "alembic",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/alembic",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/alembic",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "baselight",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/baselight",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/baselight",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "blender",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/blender",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/blender",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "c4d",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/c4d",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/c4d",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cut",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/cut",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/cut",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "fbx",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/fbx",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/fbx",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "geometry",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/geometry",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/geometry",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "houdini",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/houdini",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/houdini",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "maya",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/maya",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/maya",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "resolve",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/resolve",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unity",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/unity",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/unity",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unreal_engine",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/unreal_engine",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/unreal_engine",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "usd",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/scenes/usd",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/scenes/usd",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -318,7 +318,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "shots",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/shots",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/shots",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -328,7 +328,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "tmp",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/tmp",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/tmp",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -338,7 +338,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "utilities",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/utilities",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/utilities",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -358,7 +358,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "version",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/version",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/version",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -368,12 +368,12 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "work_in_progress",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/work_in_progress",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/work_in_progress",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "postings",
-                                        "Path": "/PROJEKTS/ncis_syd_s2/work_in_progress/postings",
+                                        "Path": "/PROJEKTS/vfx_shot_tracker_test_01/work_in_progress/postings",
                                         "Visibility": "Global"
                                     }
                                 ]
