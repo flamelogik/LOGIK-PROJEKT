@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # -------------------------------------------------------------------------- #
 
@@ -31,18 +30,47 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        studio
+# File Name:        disableGPUAcceleration.py
 # Version:          0.0.1
-# Created:          2024-10-09
+# Created:          2024-11-08
 # Modified:         
 
+# -------------------------------------------------------------------------- #
+
+import nuke
+
+def disableGPUAcceleration():
+    """
+    Disables GPU acceleration for all nodes in the current Nuke script.
+
+    This function iterates through all nodes in the Nuke script and sets the 
+    GPU-related knobs to 0 (disabled) if they exist. Specifically, it targets 
+    the following knobs:
+    - 'useGPUIfAvailable'
+    - 'r3dUseCUDA'
+    - 'arriUseCUDA'
+    - 'Use GPU if Available'
+
+    Note:
+    - This function requires the Nuke environment to be properly set up and 
+      accessible.
+    - The function does not return any value.
+    """
+    for i in nuke.allNodes():
+        if i.knob('useGPUIfAvailable'):
+            i.knob('useGPUIfAvailable').setValue(0)
+        if i.knob('r3dUseCUDA'):
+            i.knob('r3dUseCUDA').setValue(0)
+        if i.knob('arriUseCUDA'):
+            i.knob('r3dUseCUDA').setValue(0)
+        # Use GPU if Available' knobs...
+        if i.knob('Use GPU if Available'):
+            i.knob('Use GPU if Available').setValue(0)
 
 
-# ========================================================================== #
-# This section runs NukeStudio.
-# ========================================================================== #
-
-nuke --studio $@
+def main():
+    print('disabling GPU acceleration knobs...')
+    disableGPUAcceleration()
 
 # -------------------------------------------------------------------------- #
 
