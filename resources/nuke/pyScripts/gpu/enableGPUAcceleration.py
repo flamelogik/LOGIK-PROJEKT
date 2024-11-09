@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # -------------------------------------------------------------------------- #
 
@@ -31,18 +30,44 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        studio
+# File Name:        enableGPUAcceleration.py
 # Version:          0.0.1
-# Created:          2024-10-09
+# Created:          2024-11-08
 # Modified:         
 
+# -------------------------------------------------------------------------- #
 
 
-# ========================================================================== #
-# This section runs NukeStudio.
-# ========================================================================== #
+import nuke
 
-nuke --studio $@
+def enableGPUAcceleration():
+    """
+    Enables GPU acceleration for all applicable nodes in Nuke.
+
+    This function iterates through all nodes in the Nuke script and enables GPU acceleration
+    for nodes that have the following knobs:
+    - 'useGPUIfAvailable'
+    - 'r3dUseCUDA'
+    - 'arriUseCUDA'
+    - 'Use GPU if Available'
+
+    Each of these knobs is set to a value of 1 to enable GPU usage if available.
+    """
+    for i in nuke.allNodes():
+        if i.knob('useGPUIfAvailable'):
+            i.knob('useGPUIfAvailable').setValue(1)
+        if i.knob('r3dUseCUDA'):
+            i.knob('r3dUseCUDA').setValue(1)
+        if i.knob('arriUseCUDA'):
+            i.knob('r3dUseCUDA').setValue(1)
+        # Use GPU if Available' knobs...
+        if i.knob('Use GPU if Available'):
+            i.knob('Use GPU if Available').setValue(1)
+
+
+def main():
+    print('enabling GPU acceleration knobs...')
+    enableGPUAcceleration()
 
 # -------------------------------------------------------------------------- #
 

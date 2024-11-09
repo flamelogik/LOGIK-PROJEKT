@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # -------------------------------------------------------------------------- #
 
@@ -31,18 +30,56 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        studio
+# File Name:        hello_from_pyside2.py
 # Version:          0.0.1
-# Created:          2024-10-09
+# Created:          2024-11-08
 # Modified:         
 
+# -------------------------------------------------------------------------- #
 
+import nuke
 
-# ========================================================================== #
-# This section runs NukeStudio.
-# ========================================================================== #
+try:
+    from PySide import QtGui, QtCore
+except ImportError:
+    from PySide2 import QtCore, QtWidgets as QtGui
 
-nuke --studio $@
+# Your script code here, using QtGui and QtCore as needed
+
+def main():
+    """
+    Main function to create and display a PySide2 QDialog.
+
+    This function checks if a QApplication instance already exists.
+    If not, it creates a new QApplication instance. Then, it creates
+    a QDialog with a QLabel displaying "Hello from PySide2!" and 
+    shows the dialog.
+
+    The dialog has the title "Nuke PySide/PySide2 Compatibility" and 
+    is set to a geometry of 400x200 pixels at position (100, 100).
+
+    Returns:
+        None
+    """
+    
+    # Check if a QApplication instance already exists
+    app = QtGui.QApplication.instance()
+    if not app:
+        app = QtGui.QApplication([])
+
+    dialog = QtGui.QDialog()
+    dialog.setWindowTitle("Nuke PySide/PySide2 Compatibility")
+    dialog.setGeometry(100, 100, 400, 200)
+
+    label = QtGui.QLabel("Hello from PySide2!")
+    layout = QtGui.QVBoxLayout()
+    layout.addWidget(label)
+    dialog.setLayout(layout)
+
+    dialog.exec_()
+
+if __name__ == "__main__":
+    main()
 
 # -------------------------------------------------------------------------- #
 

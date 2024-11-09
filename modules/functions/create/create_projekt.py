@@ -236,10 +236,10 @@ from functions.synchronize.sync_mediaImport import (
     sync_mediaimport_rules
 )
 
-# # Import the sync_nuke_dirs function
-# from functions.synchronize.sync_nuke_dirs import (
-#     sync_nuke_dirs
-# )
+# Import the sync_nuke_dirs function
+from functions.synchronize.sync_nuke_dirs import (
+    sync_nuke_dirs
+)
 
 # # Import the sync_overlays function  # DIFFERENT TO BURNIN METADATA OVERLAYS
 # from functions.synchronize.sync_overlays import (
@@ -810,23 +810,23 @@ def main():
 
         # ------------------------------------------------------------------ #
 
-        # # Print a banner head
-        # logger.log_and_print(f"{banner_head('Copying Nuke Directories')}")
+        # Print a banner head
+        logger.log_and_print(f"{banner_head('Copying Nuke Directories')}")
 
-        # # Function to copy nuke directories
-        # sync_nuke_dirs(
-        #     the_projekts_dir,
-        #     the_projekt_flame_dirs,
-        #     the_adsk_dir,
-        #     the_adsk_dir_linux,
-        #     the_adsk_dir_macos,
-        #     the_projekt_name,
-        #     the_projekt_flame_name,
-        #     separator
-        # )
+        # Function to copy nuke directories
+        sync_nuke_dirs(
+            the_projekts_dir,
+            the_projekt_flame_dirs,
+            the_adsk_dir,
+            the_adsk_dir_linux,
+            the_adsk_dir_macos,
+            the_projekt_name,
+            the_projekt_flame_name,
+            separator
+        )
 
-        # # Print a separator
-        # logger.log_and_print(f"\n{separator}")
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
 

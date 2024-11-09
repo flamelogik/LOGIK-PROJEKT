@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # -------------------------------------------------------------------------- #
 
@@ -31,21 +30,40 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        studio
+# File Name:        print_environment_variables.py
 # Version:          0.0.1
-# Created:          2024-10-09
+# Created:          2024-11-08
 # Modified:         
 
+# -------------------------------------------------------------------------- #
+
+import os
+
+def print_environment_variables():
+    """
+    Prints all environment variables and their values.
+
+    This function retrieves all environment variable names (keys) from the
+    os.environ dictionary and prints each key-value pair.
+
+    Returns:
+        None
+    """
+    # Get all keys (environment variable names) in os.environ
+    env_keys = os.environ.keys()
+
+    # Print key-value pairs
+    for key in env_keys:
+        value = os.environ[key]
+        print(f"{key}: {value}")
 
 
-# ========================================================================== #
-# This section runs NukeStudio.
-# ========================================================================== #
-
-nuke --studio $@
+def main():
+    print_environment_variables()
 
 # -------------------------------------------------------------------------- #
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
 # ========================================================================== #
+
