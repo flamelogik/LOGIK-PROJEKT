@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_source_script.py
-# Version:          2.2.8
+# Version:          2.2.9
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-11-09
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -139,7 +139,7 @@ Read {{
  origlast {shot_source_version_end_frame}
  origset true
  name Read1
- label "\n<center><b>{shot_source_dir}\n\n<center><b>Frame range :</b></font> <font color = red>\[value first] - \[value last] </font></center>"
+ label "\n<center><b>{shot_source_dir}\n\n<center><b>Frame range :</b></font> <font color = green>\[value first] - \[value last] </font></center>"
  xpos 0
  ypos 0
 }}
@@ -210,7 +210,7 @@ Read {{
  origlast {shot_source_version_end_frame}
  origset true
  name Read1
- label "\n<center><b>{shot_source_dir}\n\n<center><b>Frame range :</b></font> <font color = red>\[value first] - \[value last] </font></center>"
+ label "\n<center><b>{shot_source_dir}\n\n<center><b>Frame range :</b></font> <font color = green>\[value first] - \[value last] </font></center>"
 
  xpos 0
  ypos 0
