@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_token_push_button.py
-# Version:          0.5.0
+# Version:          1.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-10-30
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -317,4 +317,8 @@ class pyside6_qt_token_push_button(QtWidgets.QPushButton):
 # version:               0.5.0
 # modified:              2024-08-31 - 18:26:05
 # comments:              prep for release.
+# -------------------------------------------------------------------------- #
+# version:               1.0.0
+# modified:              2024-10-30 - 07:35:27
+# comments:              Refactored PySide6 Output Node Config UI.
 # -------------------------------------------------------------------------- #

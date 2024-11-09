@@ -24,6 +24,62 @@
                 "object_color": ""
             },
             "item_03": {
+                "object_name": "dub_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "audio_folder",
+                "display_name": "'dub'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_04": {
+                "object_name": "mix_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "audio_folder",
+                "display_name": "'mix'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_05": {
+                "object_name": "music_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "audio_folder",
+                "display_name": "'music'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_06": {
+                "object_name": "production_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "audio_folder",
+                "display_name": "'production'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_07": {
+                "object_name": "sound_effects_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "audio_folder",
+                "display_name": "'sound_effects'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_08": {
+                "object_name": "stems_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "audio_folder",
+                "display_name": "'stems'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_09": {
+                "object_name": "voiceover_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "audio_folder",
+                "display_name": "'voiceover'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_10": {
                 "object_name": "cgi_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -31,7 +87,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_04": {
+            "item_11": {
                 "object_name": "font_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -39,23 +95,47 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_05": {
-                "object_name": "footage_graded_folder",
+            "item_12": {
+                "object_name": "footage_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
-                "display_name": "'footage_graded'",
+                "display_name": "'footage'",
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_06": {
-                "object_name": "footage_raw_folder",
+            "item_13": {
+                "object_name": "graded_folder",
                 "process_type": "create_or_validate_object",
-                "parent_object": "assets_library",
-                "display_name": "'footage_raw'",
+                "parent_object": "footage_folder",
+                "display_name": "'graded'",
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_07": {
+            "item_14": {
+                "object_name": "raw_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "footage_folder",
+                "display_name": "'raw'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_15": {
+                "object_name": "stock_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "footage_folder",
+                "display_name": "'stock'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_16": {
+                "object_name": "transcodes_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "footage_folder",
+                "display_name": "'transcodes'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_17": {
                 "object_name": "graphics_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -63,7 +143,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_08": {
+            "item_18": {
                 "object_name": "images_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -71,7 +151,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_09": {
+            "item_19": {
                 "object_name": "legal_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -79,7 +159,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_10": {
+            "item_20": {
                 "object_name": "matchmoving_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -87,7 +167,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_11": {
+            "item_21": {
                 "object_name": "miscellaneous_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -95,7 +175,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_12": {
+            "item_22": {
                 "object_name": "paint_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -103,7 +183,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_13": {
+            "item_23": {
                 "object_name": "photoshop_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -111,7 +191,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_14": {
+            "item_24": {
                 "object_name": "roto_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -119,7 +199,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_15": {
+            "item_25": {
                 "object_name": "slates_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -127,7 +207,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_16": {
+            "item_26": {
                 "object_name": "subtitles_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -135,7 +215,15 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_17": {
+            "item_27": {
+                "object_name": "supers_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "assets_library",
+                "display_name": "'supers'",
+                "object_type": "folder",
+                "object_color": ""
+            },
+            "item_28": {
                 "object_name": "titles_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -143,7 +231,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_18": {
+            "item_29": {
                 "object_name": "tracking_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -151,7 +239,7 @@
                 "object_type": "folder",
                 "object_color": ""
             },
-            "item_19": {
+            "item_30": {
                 "object_name": "video_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",

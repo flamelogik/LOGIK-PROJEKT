@@ -1,0 +1,84 @@
+#!/bin/bash
+
+# -------------------------------------------------------------------------- #
+
+# File Name:        .flame
+# Version:          0.0.1
+# Created:          2024-11-03
+# Modified:         
+
+
+# ========================================================================== #
+# 
+# ========================================================================== #
+
+echo "setting up Flame environment... $PROJEKT_NAME"
+
+# ========================================================================== #
+# This section reads the flame version from ./software/etc
+# ========================================================================== #
+
+export flame_version=$(cat $PROJEKT_PATH/software/etc/flame_version)
+
+
+# -------------------------------------------------------------------------- #
+# path to the default Flame installs
+if [[ $PROJEKT_OS == "mac" ]]; 
+then 
+    export flame_app_bin=/opt/Autodesk/flame_$flame_version/bin/startApplication
+
+fi
+
+if [[ $PROJEKT_OS == "lin" ]]; 
+then 
+    # local
+    export flame_app_bin=/opt/Autodesk/flame_$flame_version/bin/startApplication
+
+
+    #check if app dir exists:
+    # if [ -d "$DIRECTORY" ]; then
+    #     echo "$DIRECTORY does exist."
+    # fi
+
+
+fi
+
+# ========================================================================== #
+# This section prints the help for the Flame command
+# ========================================================================== #
+
+# Start flame with libraries closed
+export DL_STARTUP_LIBS_CLOSED=1
+
+# central sysconfig file
+# DL_SYSCONFIG_FILE=$PROJEKT_PATH/flame/etc/sysconfig
+
+# enable to get debug info from python hooks...
+# export DL_DEBUG_PYTHON_HOOKS=1
+
+# enable to set the python hook path inside the projekt...
+# DL_PYTHON_HOOK_PATH=$PROJEKT_PATH/software/flame/python
+
+
+# -------------------------------------------------------------------------- #
+# /opt/Autodesk/flame_2025.1.2/bin/startApplication --help
+
+echo 
+echo "# -------------------------------------------------------------------------- #"
+echo FLAME ENVIRONMENT
+echo "# -------------------------------------------------------------------------- #"
+echo "flame_version: $flame_version"
+echo "flame_app_bin: $flame_app_bin"
+echo
+echo "# -------------------------------------------------------------------------- #"
+echo
+
+
+
+
+# ========================================================================== #
+# This section runs the Flame startApplication command
+# ========================================================================== #
+
+$flame_app_bin $@
+
