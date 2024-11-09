@@ -17,7 +17,7 @@
                     },
                     {
                         "Bookmark": "projekt home",
-                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/",
+                        "Path": "/PROJEKTS/1108_yankee_zulu/",
                         "Visibility": "Global"
                     },
                     {
@@ -28,102 +28,167 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "assets",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "artwork",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/artwork",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/artwork",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "audio",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio",
-                                        "Visibility": "Global"
+                                        "Folder": "audio",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "audio",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "dub",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio/dub",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "mix",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio/mix",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "music",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio/music",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "production",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio/production",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "sound_effects",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio/sound_effects",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "stems",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio/stems",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "voiceover",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/audio/voiceover",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
                                     },
                                     {
                                         "Bookmark": "cgi",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/cgi",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/cgi",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "font",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/font",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/font",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "footage_graded",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_graded",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "footage_raw",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_raw",
-                                        "Visibility": "Global"
+                                        "Folder": "footage",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "footage",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/footage",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "graded",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/footage/graded",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "raw",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/footage/raw",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "stock",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/footage/stock",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "transcodes",
+                                                "Path": "/PROJEKTS/1108_yankee_zulu/assets/footage/transcodes",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
                                     },
                                     {
                                         "Bookmark": "graphics",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/graphics",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/graphics",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "images",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/images",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "legal",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/legal",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/legal",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "matchmoving",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/matchmoving",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/matchmoving",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "miscellaneous",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/miscellaneous",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/miscellaneous",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "paint",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/paint",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/paint",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "photoshop",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/photoshop",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/photoshop",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "roto",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/roto",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/roto",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slates",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/slates",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/slates",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "subtitles",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/subtitles",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/subtitles",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "supers",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/supers",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "titles",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/titles",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/titles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "tracking",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/tracking",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/tracking",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "video",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/video",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/assets/video",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -133,27 +198,47 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "editorial",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "aaf",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/aaf",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/aaf",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "adobe_premiere",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/adobe_premiere",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "avid_media_composer",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/avid_media_composer",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "davinci_resolve",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/davinci_resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "edl",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/edl",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/edl",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "final_cut_pro",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/final_cut_pro",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "prep",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/prep",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/prep",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "xml",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/xml",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/editorial/xml",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -163,22 +248,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "flame",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/flame",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "archives",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/archives",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/flame/archives",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "iterations",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/iterations",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/flame/iterations",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "setups",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/setups",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/flame/setups",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -188,22 +273,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "masters",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "master_edits",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/master_edits",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/masters/master_edits",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slated_masters",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/slated_masters",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/masters/slated_masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "versioned_masters",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/versioned_masters",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/masters/versioned_masters",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -213,22 +298,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "reference",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/reference",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_images",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_images",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/reference/reference_images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_movies",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_movies",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/reference/reference_movies",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_style_guide",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_style_guide",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/reference/reference_style_guide",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -238,77 +323,77 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "scenes",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "3ds",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/3ds",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/3ds",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "alembic",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/alembic",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/alembic",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "baselight",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/baselight",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/baselight",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "blender",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/blender",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/blender",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "c4d",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/c4d",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/c4d",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cut",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/cut",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/cut",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "fbx",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/fbx",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/fbx",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "geometry",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/geometry",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/geometry",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "houdini",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/houdini",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/houdini",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "maya",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/maya",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/maya",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "resolve",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/resolve",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unity",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/unity",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/unity",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unreal_engine",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/unreal_engine",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/unreal_engine",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "usd",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/usd",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/scenes/usd",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -318,7 +403,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "shots",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/shots",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/shots",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -328,7 +413,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "tmp",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/tmp",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/tmp",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -338,7 +423,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "utilities",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/utilities",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/utilities",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -358,7 +443,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "version",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/version",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/version",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -368,12 +453,12 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "work_in_progress",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/work_in_progress",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/work_in_progress",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "postings",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/work_in_progress/postings",
+                                        "Path": "/PROJEKTS/1108_yankee_zulu/work_in_progress/postings",
                                         "Visibility": "Global"
                                     }
                                 ]
