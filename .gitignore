@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+.env
 resources/flame/templates/scratch_archive_2.sh
 resources/flame/templates/scratch_archive_3.sh
 resources/flame/templates/scratch_archive.sh
