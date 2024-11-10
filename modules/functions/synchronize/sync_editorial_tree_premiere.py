@@ -123,7 +123,7 @@ the_projekts_dir = config.get(
 
 # These paths should be passed from the main app.
 the_projekt_name = "8888_new_job"
-the_projekt_editorial_name = f"{the_projekt_name}_{the_sanitized_version}"
+the_projekt_flame_name = f"{the_projekt_name}_{the_sanitized_version}"
 
 separator = '# ' + '-' * 75 + ' #'
 
@@ -131,10 +131,10 @@ separator = '# ' + '-' * 75 + ' #'
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-def sync_editorial_tree(
+def sync_editorial_tree_premiere(
         the_projekts_dir,
         the_projekt_name,
-        the_projekt_editorial_name,
+        the_projekt_flame_name,
         separator
     ):
     """
@@ -305,10 +305,10 @@ def main():
     separator = "-" * 80
 
     # Call the main sync function
-    sync_editorial_tree(
+    sync_editorial_tree_premiere(
         the_projekts_dir,
         the_projekt_name,
-        the_projekt_editorial_name,
+        the_projekt_flame_name,
         separator
     )
 
