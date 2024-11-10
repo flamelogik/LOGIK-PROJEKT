@@ -96,6 +96,41 @@ if modules_dir not in sys.path:
 # This section defines third party imports.
 # ========================================================================== #
 
+# # Import all third-party imports from third_party_imports.py
+# from functions.import_statements.logik_projekt_imports import (
+#     create_separator,
+#     banner_head,
+#     banner_tail,
+#     TimestampUtility,
+#     ShellLogger,
+#     create_xml_file,
+#     run_wiretap_create_node,
+#     create_the_projekt_directories,
+#     create_the_projekt_flame_directories,
+#     symlink_iterations_dir,
+#     symlink_subdirectories,
+#     template_directory_path,
+#     sync_archive_prefs,
+#     sync_batch_project_bins,
+#     update_flame_colortoolkit_bookmarks,
+#     sync_bookmarks,
+#     sync_overlays,
+#     sync_io_presets,
+#     sync_media_import_rules,
+#     sync_mediahub_rules,
+#     sync_mediaimport_rules,
+#     sync_python_scripts,
+#     sync_color_policies,
+#     sync_color_transforms,
+#     add_syncolor_policy,
+#     create_projekt_flame_launcher_script,
+#     create_projekt_flame_archive_script,
+#     create_projekt_backup_script,
+#     backup_projekt_template,
+#     backup_projekt_parameters_xml,
+#     backup_projekt_creation_log
+# )
+
 # Local Application/Library Specific Imports
 
 # Import the shell decoration functions
@@ -199,6 +234,11 @@ from functions.synchronize.sync_mediahub import (
 # Import the sync_mediaimport_rules function
 from functions.synchronize.sync_mediaImport import (
     sync_mediaimport_rules
+)
+
+# Import the sync_nuke_dirs function
+from functions.synchronize.sync_nuke_dirs import (
+    sync_nuke_dirs
 )
 
 # # Import the sync_overlays function  # DIFFERENT TO BURNIN METADATA OVERLAYS
@@ -771,6 +811,40 @@ def main():
         # ------------------------------------------------------------------ #
 
         # Print a banner head
+        logger.log_and_print(f"{banner_head('Copying Nuke Directories')}")
+
+        # Function to copy nuke directories
+        sync_nuke_dirs(
+            the_projekts_dir,
+            the_projekt_flame_dirs,
+            the_adsk_dir,
+            the_adsk_dir_linux,
+            the_adsk_dir_macos,
+            the_projekt_name,
+            the_projekt_flame_name,
+            separator
+        )
+
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
+
+        # ------------------------------------------------------------------ #
+
+        # # Print a banner head
+        # logger.log_and_print(f"{banner_head('Creating Editorial Structure - Premiere')}")
+
+        # # # Function to create editorial directory structure - premiere
+        # # sync_editorial_tree_premiere(
+        # #     the_projekts_dir,
+        # #     the_projekt_flame_dirs,
+        # #     the_adsk_dir,
+        # #     the_adsk_dir_linux,
+        # #     the_adsk_dir_macos,
+        # #     the_projekt_name,
+        # #     the_projekt_flame_name,
+        # #     separator
+        # # )
+
         logger.log_and_print(f"{banner_head('Creating Editorial Structure - Premiere')}")
 
         # # Function to create editorial directory structure - premiere
@@ -784,6 +858,11 @@ def main():
         #     the_projekt_flame_name,
         #     separator
         # )
+
+        # # Print a separator
+        # logger.log_and_print(f"\n{separator}")
+
+        # # # ------------------------------------------------------------------ #
 
         # Function to create editorial directory structure - premiere
         sync_editorial_tree_premiere(

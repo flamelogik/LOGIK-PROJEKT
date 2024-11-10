@@ -243,7 +243,7 @@ class WidgetLayoutRight(QWidget):
         self.projekt_summary = self.add_text_edit("Projekt Summary:", True, fixed_height=360)
         self.initialize_projekt_summary()
         self.combo_box_software_version = self.add_combobox("Software Version:")
-        self.combo_box_framestore = self.add_combobox("Framestore:")
+        self.combo_box_framestore = self.add_combobox("Media Cache:")
         self.environment_summary = self.add_text_edit("Environment Summary:", True, fixed_height=216)
         # self.create_projekt_button = self.add_button("Create Projekt")
         self.add_create_projekt_button()
