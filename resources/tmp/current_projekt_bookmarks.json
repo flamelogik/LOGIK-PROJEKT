@@ -17,7 +17,7 @@
                     },
                     {
                         "Bookmark": "projekt home",
-                        "Path": "/PROJEKTS/24033_airheads_sizzle/",
+                        "Path": "/PROJEKTS/777_my_lucky_projekt/",
                         "Visibility": "Global"
                     },
                     {
@@ -28,16 +28,12 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "assets",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "artwork",
-<<<<<<< HEAD
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/artwork",
-                                        "Visibility": "Global"
-=======
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/artwork",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/artwork",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -45,59 +41,54 @@
                                         "Bookmarks": [
                                             {
                                                 "Bookmark": "audio",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "dub",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/dub",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio/dub",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "mix",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/mix",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio/mix",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "music",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/music",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio/music",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "production",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/production",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio/production",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "sound_effects",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/sound_effects",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio/sound_effects",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "stems",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/stems",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio/stems",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "voiceover",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/voiceover",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/audio/voiceover",
                                                 "Visibility": "Global"
                                             }
                                         ]
->>>>>>> origin/development-dxs
                                     },
                                     {
                                         "Bookmark": "cgi",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/cgi",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/cgi",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "font",
-<<<<<<< HEAD
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/font",
-                                        "Visibility": "Global"
-=======
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/font",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/font",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -105,180 +96,99 @@
                                         "Bookmarks": [
                                             {
                                                 "Bookmark": "footage",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/footage",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "graded",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/graded",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/footage/graded",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "raw",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/raw",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/footage/raw",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "stock",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/stock",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/footage/stock",
                                                 "Visibility": "Global"
                                             },
                                             {
                                                 "Bookmark": "transcodes",
-                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/transcodes",
+                                                "Path": "/PROJEKTS/777_my_lucky_projekt/assets/footage/transcodes",
                                                 "Visibility": "Global"
                                             }
                                         ]
->>>>>>> origin/development-dxs
                                     },
                                     {
                                         "Bookmark": "graphics",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/graphics",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/graphics",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "images",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/images",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "legal",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/legal",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/legal",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "matchmoving",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/matchmoving",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/matchmoving",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "miscellaneous",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/miscellaneous",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/miscellaneous",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "paint",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/paint",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/paint",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "photoshop",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/photoshop",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/photoshop",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "roto",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/roto",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/roto",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slates",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/slates",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/slates",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "subtitles",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/subtitles",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/subtitles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "supers",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/supers",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "supers",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/supers",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/supers",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "titles",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/titles",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/titles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "tracking",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/tracking",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/tracking",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "video",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/video",
-                                        "Visibility": "Global"
-                                    }
-                                ]
-                            },
-                            {
-                                "Folder": "audio",
-                                "Bookmarks": [
-                                    {
-                                        "Bookmark": "audio",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "dub",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio/dub",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "mix",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio/mix",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "music",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio/music",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "production",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio/production",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "sound_effects",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio/sound_effects",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "stems",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio/stems",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "voiceover",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/audio/voiceover",
-                                        "Visibility": "Global"
-                                    }
-                                ]
-                            },
-                            {
-                                "Folder": "footage",
-                                "Bookmarks": [
-                                    {
-                                        "Bookmark": "footage",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/footage",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "graded",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/footage/graded",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "raw",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/footage/raw",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "stock",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/footage/stock",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "transcodes",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/assets/footage/transcodes",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/assets/video",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -288,67 +198,47 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "editorial",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "aaf",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/aaf",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/aaf",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "adobe_premiere",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/adobe_premiere",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/adobe_premiere",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "avid_media_composer",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/avid_media_composer",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/avid_media_composer",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "davinci_resolve",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/davinci_resolve",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "adobe_premiere",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/adobe_premiere",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "avid_media_composer",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/avid_media_composer",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "davinci_resolve",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/davinci_resolve",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/davinci_resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "edl",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/edl",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/edl",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "final_cut_pro",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/final_cut_pro",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "final_cut_pro",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/final_cut_pro",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/final_cut_pro",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "prep",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/prep",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/prep",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "xml",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/editorial/xml",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/editorial/xml",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -358,22 +248,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "flame",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/flame",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/flame",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "archives",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/flame/archives",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/flame/archives",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "iterations",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/flame/iterations",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/flame/iterations",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "setups",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/flame/setups",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/flame/setups",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -383,22 +273,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "masters",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/masters",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "master_edits",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/masters/master_edits",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/masters/master_edits",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slated_masters",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/masters/slated_masters",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/masters/slated_masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "versioned_masters",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/masters/versioned_masters",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/masters/versioned_masters",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -408,22 +298,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "reference",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/reference",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/reference",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_images",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/reference/reference_images",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/reference/reference_images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_movies",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/reference/reference_movies",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/reference/reference_movies",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_style_guide",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/reference/reference_style_guide",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/reference/reference_style_guide",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -433,77 +323,77 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "scenes",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "3ds",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/3ds",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/3ds",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "alembic",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/alembic",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/alembic",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "baselight",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/baselight",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/baselight",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "blender",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/blender",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/blender",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "c4d",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/c4d",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/c4d",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cut",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/cut",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/cut",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "fbx",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/fbx",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/fbx",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "geometry",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/geometry",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/geometry",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "houdini",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/houdini",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/houdini",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "maya",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/maya",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/maya",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "resolve",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/resolve",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unity",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/unity",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/unity",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unreal_engine",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/unreal_engine",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/unreal_engine",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "usd",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/scenes/usd",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/scenes/usd",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -513,7 +403,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "shots",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/shots",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/shots",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -523,7 +413,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "tmp",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/tmp",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/tmp",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -533,7 +423,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "utilities",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/utilities",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/utilities",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -553,7 +443,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "version",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/version",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/version",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -563,12 +453,12 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "work_in_progress",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/work_in_progress",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/work_in_progress",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "postings",
-                                        "Path": "/PROJEKTS/24033_airheads_sizzle/work_in_progress/postings",
+                                        "Path": "/PROJEKTS/777_my_lucky_projekt/work_in_progress/postings",
                                         "Visibility": "Global"
                                     }
                                 ]
