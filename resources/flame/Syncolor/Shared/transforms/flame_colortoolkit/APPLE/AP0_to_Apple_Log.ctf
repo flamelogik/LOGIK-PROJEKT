@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.6" id="87c4ab4d-2fa0-4b57-9957-e21c0b5fc0e5" name="AP0_to_Apple_Log" inverseOf="camera/Apple/AppleLog_to_ACES">
    <Description>AP0(ACES2065-1)_to_Apple_Log</Description>
@@ -65549,3 +65550,6 @@
       </Array>
    </InverseLUT1D>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

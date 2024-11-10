@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "Serial Number: ": "11111",
     "Client Name: ": "randy",
     "Campaign Name: ": "cakes",
@@ -6,6 +7,15 @@
     "Resolution: ": "3840 x 2160 | UHDTV 4K 16:9",
     "Width: ": "3840",
     "Height: ": "2160",
+=======
+    "Serial Number: ": "10101010",
+    "Client Name: ": "LOGIK PROJEKT",
+    "Campaign Name: ": "First Release",
+    "Projekt Name: ": "10101010_logik_projekt_first_release",
+    "Resolution: ": "1920 x 1080 | HD 1080 16:9",
+    "Width: ": "1920",
+    "Height: ": "1080",
+>>>>>>> origin/development-dxs
     "Storage Aspect Ratio: ": "1.7777778",
     "Display Aspect Ratio: ": "1.7777778",
     "Pixel Aspect Ratio: ": "1.0",

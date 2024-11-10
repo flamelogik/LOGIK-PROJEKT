@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.3" id="camera/Sony/SLog3-SGamut3_no-cam-black_to_ACES" name="S3SGamut3_to_AP0">
    <Description>S3SGamut3_to_AP0(2065-1)</Description>
@@ -4135,3 +4136,6 @@
       </Array>
    </Matrix>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

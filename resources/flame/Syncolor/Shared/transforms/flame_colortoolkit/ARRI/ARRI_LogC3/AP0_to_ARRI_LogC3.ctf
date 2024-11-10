@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.3" id="camera/Arri/ACES_to_Alexa-v3-LogC-EI800_no-cam-black" name="AP0_to_ARRI_LogC3">
    <Description>AP0(ACES2065-1)_to_ARRI_LogC3</Description>
@@ -65571,3 +65572,6 @@
       </Array>
    </LUT1D>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

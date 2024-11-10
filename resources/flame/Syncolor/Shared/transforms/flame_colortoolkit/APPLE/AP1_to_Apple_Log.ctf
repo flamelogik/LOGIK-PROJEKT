@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.6" id="primaries/ACEScg_to_ACES" name="AP1_to_Apple_Log">
    <Description>AP1(ACEScg)_to_Apple_Log</Description>
@@ -65588,3 +65589,6 @@
       </Array>
    </InverseLUT1D>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs
