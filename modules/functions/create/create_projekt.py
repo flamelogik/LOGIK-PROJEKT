@@ -246,10 +246,10 @@ from functions.synchronize.sync_nuke_dirs import (
 #     sync_overlays
 # )
 
-# # Import the sync_editorial_tree_premiere function
-# from functions.synchronize.sync_editorial_tree_premiere import (
-#     sync_editorial_tree_premiere
-# )
+# Import the sync_editorial_tree_premiere function
+from functions.synchronize.sync_editorial_tree_premiere import (
+    sync_editorial_tree_premiere
+)
 
 # -------------------------------------------------------------------------- #
 
@@ -845,9 +845,15 @@ def main():
         # #     separator
         # # )
 
+        logger.log_and_print(f"{banner_head('Creating Editorial Structure - Premiere')}")
+
         # # Function to create editorial directory structure - premiere
         # sync_editorial_tree_premiere(
         #     the_projekts_dir,
+        #     the_projekt_flame_dirs,
+        #     the_adsk_dir,
+        #     the_adsk_dir_linux,
+        #     the_adsk_dir_macos,
         #     the_projekt_name,
         #     the_projekt_flame_name,
         #     separator
@@ -857,6 +863,19 @@ def main():
         # logger.log_and_print(f"\n{separator}")
 
         # # # ------------------------------------------------------------------ #
+
+        # Function to create editorial directory structure - premiere
+        sync_editorial_tree_premiere(
+            the_projekts_dir,
+            the_projekt_name,
+            the_projekt_flame_name,
+            separator
+        )
+
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
+
+        # # ------------------------------------------------------------------ #
 
         # Print a banner head
         logger.log_and_print(f"{banner_head('Copying Python Scripts')}")
