@@ -17,7 +17,7 @@
                     },
                     {
                         "Bookmark": "projekt home",
-                        "Path": "/PROJEKTS/666_devils_pants/",
+                        "Path": "/PROJEKTS/241031_premiere_test_01/",
                         "Visibility": "Global"
                     },
                     {
@@ -28,102 +28,157 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "assets",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "artwork",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/artwork",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/artwork",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "audio",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/audio",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "dub",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio/dub",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "mix",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio/mix",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "music",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio/music",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "production",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio/production",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "sound_effects",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio/sound_effects",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "stems",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio/stems",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "voiceover",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/audio/voiceover",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cgi",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/cgi",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/cgi",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "font",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/font",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/font",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "footage_graded",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/footage_graded",
+                                        "Bookmark": "footage",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/footage",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "footage_raw",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/footage_raw",
+                                        "Bookmark": "graded",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/footage/graded",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "raw",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/footage/raw",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "stock",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/footage/stock",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "transcodes",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/footage/transcodes",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "graphics",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/graphics",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/graphics",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "images",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/images",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "legal",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/legal",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/legal",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "matchmoving",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/matchmoving",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/matchmoving",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "miscellaneous",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/miscellaneous",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/miscellaneous",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "paint",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/paint",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/paint",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "photoshop",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/photoshop",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/photoshop",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "roto",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/roto",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/roto",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slates",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/slates",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/slates",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "subtitles",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/subtitles",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/subtitles",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "supers",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/supers",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "titles",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/titles",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/titles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "tracking",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/tracking",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/tracking",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "video",
-                                        "Path": "/PROJEKTS/666_devils_pants/assets/video",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/assets/video",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -133,27 +188,42 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "editorial",
-                                        "Path": "/PROJEKTS/666_devils_pants/editorial",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "aaf",
-                                        "Path": "/PROJEKTS/666_devils_pants/editorial/aaf",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial/aaf",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "davinci_resolve",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial/davinci_resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "edl",
-                                        "Path": "/PROJEKTS/666_devils_pants/editorial/edl",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial/edl",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "final_cut_pro",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial/final_cut_pro",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "premiere",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial/premiere",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "prep",
-                                        "Path": "/PROJEKTS/666_devils_pants/editorial/prep",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial/prep",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "xml",
-                                        "Path": "/PROJEKTS/666_devils_pants/editorial/xml",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/editorial/xml",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -163,22 +233,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "flame",
-                                        "Path": "/PROJEKTS/666_devils_pants/flame",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/flame",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "archives",
-                                        "Path": "/PROJEKTS/666_devils_pants/flame/archives",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/flame/archives",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "iterations",
-                                        "Path": "/PROJEKTS/666_devils_pants/flame/iterations",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/flame/iterations",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "setups",
-                                        "Path": "/PROJEKTS/666_devils_pants/flame/setups",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/flame/setups",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -188,22 +258,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "masters",
-                                        "Path": "/PROJEKTS/666_devils_pants/masters",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "master_edits",
-                                        "Path": "/PROJEKTS/666_devils_pants/masters/master_edits",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/masters/master_edits",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slated_masters",
-                                        "Path": "/PROJEKTS/666_devils_pants/masters/slated_masters",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/masters/slated_masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "versioned_masters",
-                                        "Path": "/PROJEKTS/666_devils_pants/masters/versioned_masters",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/masters/versioned_masters",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -213,22 +283,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "reference",
-                                        "Path": "/PROJEKTS/666_devils_pants/reference",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/reference",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_images",
-                                        "Path": "/PROJEKTS/666_devils_pants/reference/reference_images",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/reference/reference_images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_movies",
-                                        "Path": "/PROJEKTS/666_devils_pants/reference/reference_movies",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/reference/reference_movies",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_style_guide",
-                                        "Path": "/PROJEKTS/666_devils_pants/reference/reference_style_guide",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/reference/reference_style_guide",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -238,77 +308,77 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "scenes",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "3ds",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/3ds",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/3ds",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "alembic",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/alembic",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/alembic",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "baselight",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/baselight",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/baselight",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "blender",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/blender",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/blender",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "c4d",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/c4d",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/c4d",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cut",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/cut",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/cut",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "fbx",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/fbx",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/fbx",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "geometry",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/geometry",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/geometry",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "houdini",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/houdini",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/houdini",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "maya",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/maya",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/maya",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "resolve",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/resolve",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unity",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/unity",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/unity",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unreal_engine",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/unreal_engine",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/unreal_engine",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "usd",
-                                        "Path": "/PROJEKTS/666_devils_pants/scenes/usd",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/scenes/usd",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -318,7 +388,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "shots",
-                                        "Path": "/PROJEKTS/666_devils_pants/shots",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/shots",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -328,7 +398,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "tmp",
-                                        "Path": "/PROJEKTS/666_devils_pants/tmp",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/tmp",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -338,7 +408,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "utilities",
-                                        "Path": "/PROJEKTS/666_devils_pants/utilities",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/utilities",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -358,7 +428,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "version",
-                                        "Path": "/PROJEKTS/666_devils_pants/version",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/version",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -368,12 +438,12 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "work_in_progress",
-                                        "Path": "/PROJEKTS/666_devils_pants/work_in_progress",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/work_in_progress",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "postings",
-                                        "Path": "/PROJEKTS/666_devils_pants/work_in_progress/postings",
+                                        "Path": "/PROJEKTS/241031_premiere_test_01/work_in_progress/postings",
                                         "Visibility": "Global"
                                     }
                                 ]

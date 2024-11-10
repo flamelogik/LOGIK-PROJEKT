@@ -49,11 +49,11 @@
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
                 "path": "/{projekts_dir}/{projekt_dir}/assets/audio",
                 "bookmark_name": "audio",
-                "bookmark_type": "bookmark",
+                "bookmark_type": "folder",
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global",
                 "children": {
-                    "item_01": {
+                    "item_03": {
                         "object_name": "dub_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
@@ -71,7 +71,7 @@
                         "bookmark_parent": "audio",
                         "bookmark_visibility": "Global"
                     },
-                    "item_02": {
+                    "item_04": {
                         "object_name": "mix_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
@@ -89,7 +89,7 @@
                         "bookmark_parent": "audio",
                         "bookmark_visibility": "Global"
                     },
-                    "item_03": {
+                    "item_05": {
                         "object_name": "music_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
@@ -107,7 +107,7 @@
                         "bookmark_parent": "audio",
                         "bookmark_visibility": "Global"
                     },
-                    "item_04": {
+                    "item_06": {
                         "object_name": "production_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
@@ -125,7 +125,7 @@
                         "bookmark_parent": "audio",
                         "bookmark_visibility": "Global"
                     },
-                    "item_05": {
+                    "item_07": {
                         "object_name": "sound_effects_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
@@ -143,7 +143,7 @@
                         "bookmark_parent": "audio",
                         "bookmark_visibility": "Global"
                     },
-                    "item_06": {
+                    "item_08": {
                         "object_name": "stems_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
@@ -161,7 +161,7 @@
                         "bookmark_parent": "audio",
                         "bookmark_visibility": "Global"
                     },
-                    "item_07": {
+                    "item_09": {
                         "object_name": "voiceover_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "audio_folder",
@@ -181,7 +181,7 @@
                     }
                 }        
             },
-            "item_03": {
+            "item_10": {
                 "object_name": "cgi_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -199,7 +199,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_04": {
+            "item_11": {
                 "object_name": "font_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -217,7 +217,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_05": {
+            "item_12": {
                 "object_name": "footage_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -231,11 +231,11 @@
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
                 "path": "/{projekts_dir}/{projekt_dir}/assets/footage",
                 "bookmark_name": "footage",
-                "bookmark_type": "bookmark",
+                "bookmark_type": "folder",
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global",
                 "children": {
-                    "item_01": {
+                    "item_13": {
                         "object_name": "graded_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "footage_folder",
@@ -253,7 +253,7 @@
                         "bookmark_parent": "footage",
                         "bookmark_visibility": "Global"
                     },
-                    "item_02": {
+                    "item_14": {
                         "object_name": "raw_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "footage_folder",
@@ -271,7 +271,7 @@
                         "bookmark_parent": "footage",
                         "bookmark_visibility": "Global"
                     },
-                    "item_03": {
+                    "item_15": {
                         "object_name": "stock_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "footage_folder",
@@ -289,7 +289,7 @@
                         "bookmark_parent": "footage",
                         "bookmark_visibility": "Global"
                     },
-                    "item_04": {
+                    "item_16": {
                         "object_name": "transcodes_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "footage_folder",
@@ -309,7 +309,7 @@
                     }
                 }
             },
-            "item_06": {
+            "item_17": {
                 "object_name": "graphics_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -327,7 +327,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_07": {
+            "item_18": {
                 "object_name": "images_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -345,7 +345,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_08": {
+            "item_19": {
                 "object_name": "legal_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -363,7 +363,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_09": {
+            "item_20": {
                 "object_name": "matchmoving_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -381,7 +381,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_10": {
+            "item_21": {
                 "object_name": "miscellaneous_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -399,7 +399,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_11": {
+            "item_22": {
                 "object_name": "paint_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -417,7 +417,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_12": {
+            "item_23": {
                 "object_name": "photoshop_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -435,7 +435,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_13": {
+            "item_24": {
                 "object_name": "roto_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -453,7 +453,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_14": {
+            "item_25": {
                 "object_name": "slates_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -471,7 +471,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_15": {
+            "item_26": {
                 "object_name": "subtitles_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -489,7 +489,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_16": {
+            "item_27": {
                 "object_name": "supers_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -507,7 +507,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_17": {
+            "item_28": {
                 "object_name": "titles_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -525,7 +525,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_18": {
+            "item_29": {
                 "object_name": "tracking_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
@@ -543,7 +543,7 @@
                 "bookmark_parent": "assets",
                 "bookmark_visibility": "Global"
             },
-            "item_19": {
+            "item_30": {
                 "object_name": "video_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "assets_library",
