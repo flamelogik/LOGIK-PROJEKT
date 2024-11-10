@@ -348,12 +348,7 @@ def main():
 
     # Call the main sync function
 
-    sync_editorial_tree(
-        the_projekts_dir,
-        the_projekt_name,
-        the_projekt_editorial_name,
-
-      sync_editorial_tree_premiere(
+    sync_editorial_tree_premiere(
         the_projekts_dir,
         the_projekt_name,
         the_projekt_flame_name,
