@@ -219,11 +219,41 @@ fi
 
 # -------------------------------------------------------------------------- #
 
-# Prompt user to enter the password securely
+# More secure method to prompt for password
+
+# Function to show password dialog with hidden input
+show_password_dialog() {
+    local prompt="$1"
+    local title="$3"
+    
+    if [ "$OS" = "macOS" ]; then
+        osascript <<EOF
+            tell application "System Events"
+                display dialog "${prompt}" default answer "" with hidden answer buttons {"OK", "Cancel"} default button "OK"
+                text returned of the result
+            end tell
+EOF
+    elif [ "$OS" = "Linux" ]; then
+        zenity --password --title="$title" --text="$prompt"
+    fi
+}
+
+# Replace your existing password prompt section with this:
 password_match=0
 while [ "$password_match" -eq 0 ]; do
-    my_password=$(show_dialog "Enter Password:" "" "Enter Password")
-    confirm_password=$(show_dialog "Confirm Password:" "" "Confirm Password")
+    my_password=$(show_password_dialog "Enter Password:" "" "Enter Password")
+    # Check if user cancelled
+    if [ -z "$my_password" ]; then
+        show_error "Password entry cancelled. Exiting."
+        exit 1
+    fi
+    
+    confirm_password=$(show_password_dialog "Confirm Password:" "" "Confirm Password")
+    # Check if user cancelled
+    if [ -z "$confirm_password" ]; then
+        show_error "Password entry cancelled. Exiting."
+        exit 1
+    fi
     
     if [ "$my_password" = "$confirm_password" ]; then
         password_match=1
@@ -231,6 +261,23 @@ while [ "$password_match" -eq 0 ]; do
         show_error "Passwords do not match. Please try again."
     fi
 done
+
+# -------------------------------------------------------------------------- #
+
+# Older method to prompt for password which displays the password in plain text
+
+# # Prompt user to enter the password securely
+# password_match=0
+# while [ "$password_match" -eq 0 ]; do
+#     my_password=$(show_dialog "Enter Password:" "" "Enter Password")
+#     confirm_password=$(show_dialog "Confirm Password:" "" "Confirm Password")
+    
+#     if [ "$my_password" = "$confirm_password" ]; then
+#         password_match=1
+#     else
+#         show_error "Passwords do not match. Please try again."
+#     fi
+# done
 
 # -------------------------------------------------------------------------- #
 
