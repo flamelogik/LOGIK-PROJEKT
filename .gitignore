@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+.env
 resources/flame/templates/scratch_archive_2.sh
 resources/flame/templates/scratch_archive_3.sh
 resources/flame/templates/scratch_archive.sh
@@ -30,3 +31,4 @@ resources/tmp/current_projekt_bookmarks.json
 resources/tmp/current_projekt_parameters.xml
 resources/tmp/current_projekt_template.json
 resources/tmp/current_projekt_template.json.bak
+development/send_webhook.sh
