@@ -1,9 +1,9 @@
 {
-    "Resolution: ": "3840 x 2160 | UHDTV 4K 16:9",
+    "Resolution: ": "1920 x 1080 | HD 1080 16:9",
 
-    "Width: ": "3840",
+    "Width: ": "1920",
 
-    "Height: ": "2160",
+    "Height: ": "1080",
 
     "Storage Aspect Ratio: ": "1.7777778",
 
@@ -21,7 +21,7 @@
 
     "Start Frame: ": "1001",
 
-    "Init Config: ": "3840x2160@23976p.cfg",
+    "Init Config: ": "1920x1080@23976p.cfg",
 
     "Color Science: ": "ADSK_ACES_1.1"
 }
