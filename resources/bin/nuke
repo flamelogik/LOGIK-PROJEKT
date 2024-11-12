@@ -1,10 +1,10 @@
-#
+#!/bin/bash
 
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
+#                   Copyright © 2024 Silo 84
+               
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
@@ -14,7 +14,7 @@
 #                   of the GNU General Public License as published by the
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
- 
+
 #                   This program is distributed in the hope that it will be
 #                   useful, but WITHOUT ANY WARRANTY; without even the
 #                   implied warranty of MERCHANTABILITY or FITNESS FOR A
@@ -26,15 +26,14 @@
 #                   Public License along with this program.
 
 #                   If not, see <https://www.gnu.org/licenses/>.
-                
-#                   Contact: phil_man@mac.com
+               
+#                   Contact: brian@silo84.com
 
 # -------------------------------------------------------------------------- #
-
 # File Name:        nuke
-# Version:          0.0.2
+# Version:          0.0.3
 # Created:          2024-10-25
-# Modified:         2024-11-07
+# Modified:         2024-11-08
 
 # ========================================================================== #
 # This section creates a decorative separator for blocks of text.
@@ -161,16 +160,12 @@ if [[ "$config_type" != "aces_1.2" ]]; then
     fi
 fi
 
-
-
 # ========================================================================== #
-# This section sets the OCIO environment variable.
+# This section unsets the OCIO environment variable if set to 'nuke'
 # ========================================================================== #
 # echo $config_file
-# if [[ "$config_file" != "nuke" ]]; then
-#     export OCIO="$config_file"
-# else
-#     export -n OCIO
+# if [[ "$config_file" == "nuke" ]]; then
+#     export -n OCIO 
 # fi
 
 
@@ -182,35 +177,24 @@ fi
 if [[ $PROJEKT_OS == "mac" ]]; 
 then 
     export nuke_root=/Applications/Nuke$nuke_version/Nuke$nuke_version.app/Contents/MacOS
+    export NUKE_FONT_PATH=$PROJEKT_PATH/assets/font #fonts
 
 fi
 
 if [[ $PROJEKT_OS == "lin" ]]; 
 then 
 
-    # server
-    export PROJEKT_APPS=/s84/apps
-    export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
-    export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
+    # server apps
+    # export PROJEKT_APPS=/s84/apps
+    # export NUKE_FONT_PATH=$PROJEKT_APPS/NUKE/fonts #fonts
+    # export nuke_root=$PROJEKT_APPS/NUKE/Nuke$nuke_version
 
-    # local
-    # export nuke_root=/usr/local/Nuke$nuke_version
-
-    #check if app dir exists:
-    # if [ -d "$DIRECTORY" ]; then
-    #     echo "$DIRECTORY does exist."
-    # fi
+    # local apps
+    export nuke_root=/usr/local/Nuke$nuke_version
+    export NUKE_FONT_PATH=$PROJEKT_PATH/assets/font #fonts
+    
 
 fi
-
-# ========================================================================== #
-# This section sets additional environment variables for Nuke plugins.
-# ========================================================================== #
-
-#export OPTICAL_FLARES_PATH=/opt/nuke_plugs/OpticalFlares
-#export OPTICAL_FLARES_PRESET_PATH=/opt/nuke_plugs/OpticalFlares/Textures-And-Presets
-#export OPTICAL_FLARES_DISPLAY_NAME=:1
-
 
 # -------------------------------------------------------------------------- #
 # Enable debug logging for troubleshooting performance bottlenecks (use temporarily)
@@ -220,26 +204,37 @@ fi
 
 # -------------------------------------------------------------------------- #
 # The 'import nuke' function checks-out a nuke_r render license by default. 
-# To use an interactive license, set this environment variable to 1.
+# To use an interactive license instead, set this environment variable to 1.
 
-# export NUKE_INTERACTIVE = 1 
+# export NUKE_INTERACTIVE=1 
 
 
 # -------------------------------------------------------------------------- #
+# Environment Variable: NUKE_LOCALIZATION_NUMWATCHERS
+# Description: This environment variable is used to specify the number of watchers 
+# for the localization process.
+# Usage: Set this variable to control how many localization watchers are active.
+# Example: export NUKE_LOCALIZATION_NUMWATCHERS=5
 
-# NUKE_LOCALIZATION_NUMWATCHERS
+# NUKE_LOCALIZATION_NUMWATCHERS=5
+
+# ========================================================================== #
+# This section sets additional environment variables for 3rd party Nuke plugins.
+# ========================================================================== #
+
+#export OPTICAL_FLARES_PATH=$PROJEKT_PATH/software/ofx/lin/OpticalFlares
+#export OPTICAL_FLARES_PRESET_PATH=$PROJEKT_PATH/software/ofx/lin/Textures-And-Presets
+#export OPTICAL_FLARES_DISPLAY_NAME=:1
 
 
 # ========================================================================== #
 # This section displays information in the shell.
 # ========================================================================== #
 
-# echo 
-# echo "# -------------------------------------------------------------------------- #"
-echo -e "\n$separator_hash\n"
+
+echo "\n$separator_hash\n"
 echo "  NUKE ENVIRONMENT"
-echo -e "\n$separator_hash\n"
-# echo "# -------------------------------------------------------------------------- #"
+echo "\n$separator_hash\n"
 
 echo "nuke_version:     "$nuke_version
 echo "nuke_major_minor: "$nuke_major_minor
@@ -255,7 +250,7 @@ echo
 echo "nuke_root:        "$nuke_root
 echo "nuke_command:     "$nuke_command
 
-echo -e "\n$separator_hash\n"
+echo "\n$separator_hash\n"
 
 
 # ========================================================================== #
@@ -267,4 +262,8 @@ echo -e "\n$separator_hash\n"
 $nuke_root/$nuke_command $@
 
 
+# -------------------------------------------------------------------------- #
 
+# ========================================================================== #
+# C2 A9 32 30 32 34 20 7C 20 62 72 69 61 6E 40 73 69 6C 6F 38 34 2E 63 6F 6D #
+# ========================================================================== #

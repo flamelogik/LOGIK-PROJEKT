@@ -37,9 +37,49 @@
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "audio",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio",
-                                        "Visibility": "Global"
+                                        "Folder": "audio",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "audio",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "dub",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/dub",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "mix",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/mix",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "music",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/music",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "production",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/production",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "sound_effects",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/sound_effects",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "stems",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/stems",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "voiceover",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio/voiceover",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
                                     },
                                     {
                                         "Bookmark": "cgi",
@@ -52,14 +92,34 @@
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Bookmark": "footage_graded",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_graded",
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "footage_raw",
-                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_raw",
-                                        "Visibility": "Global"
+                                        "Folder": "footage",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "footage",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "graded",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/graded",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "raw",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/raw",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "stock",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/stock",
+                                                "Visibility": "Global"
+                                            },
+                                            {
+                                                "Bookmark": "transcodes",
+                                                "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage/transcodes",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
                                     },
                                     {
                                         "Bookmark": "graphics",
@@ -112,6 +172,11 @@
                                         "Visibility": "Global"
                                     },
                                     {
+                                        "Bookmark": "supers",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/supers",
+                                        "Visibility": "Global"
+                                    },
+                                    {
                                         "Bookmark": "titles",
                                         "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/titles",
                                         "Visibility": "Global"
@@ -142,8 +207,28 @@
                                         "Visibility": "Global"
                                     },
                                     {
+                                        "Bookmark": "adobe_premiere",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/adobe_premiere",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "avid_media_composer",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/avid_media_composer",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "davinci_resolve",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/davinci_resolve",
+                                        "Visibility": "Global"
+                                    },
+                                    {
                                         "Bookmark": "edl",
                                         "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/edl",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "final_cut_pro",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/final_cut_pro",
                                         "Visibility": "Global"
                                     },
                                     {

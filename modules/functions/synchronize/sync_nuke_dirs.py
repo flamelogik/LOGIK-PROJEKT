@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        sync_nuke_dirs.py
-# Version:          0.9.9
-# Created:          2024-01-19
-# Modified:         2024-08-31
+# Version:          0.0.1
+# Created:          2024-11-07
+# Modified:         2024-11-07
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -214,15 +214,65 @@ def sync_nuke_dirs(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+    # ------------------------------------------------------------------------- #
     # Set the source and target nuke directories
     src_nuke_dir = "resources/nuke"
     tgt_nuke_dir = f"{the_projekt_dir}/software/nuke"
+
 
     # Create the tgt_nuke_dir if it doesn't exist
     os.makedirs(
         tgt_nuke_dir,
         exist_ok=True
     )
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target bin directories
+    src_bin_dir = "resources/bin"
+    tgt_bin_dir = f"{the_projekt_dir}/software/bin"
+
+    # Create the tgt_ocio_dir if it doesn't exist
+    os.makedirs(
+        tgt_bin_dir,
+        exist_ok=True
+    )
+
+
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target ocio directories
+    src_ocio_dir = "resources/ocio"
+    tgt_ocio_dir = f"{the_projekt_dir}/software/ocio"
+
+    # Create the tgt_ocio_dir if it doesn't exist
+    os.makedirs(
+        tgt_ocio_dir,
+        exist_ok=True
+    )
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target etc directories
+    src_etc_dir = "resources/etc"
+    tgt_etc_dir = f"{the_projekt_dir}/software/etc"
+
+    # Create the tgt_etc_dir if it doesn't exist
+    os.makedirs(
+        tgt_etc_dir,
+        exist_ok=True
+    )   
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target templates directories
+    src_templates_dir = "resources/templates"
+    tgt_templates_dir = f"{the_projekt_dir}/software/templates"
+
+    # Create the tgt_templates_dir if it doesn't exist
+    os.makedirs(
+        tgt_templates_dir,
+        exist_ok=True
+    )  
+
+    # ------------------------------------------------------------------------- #
 
     print("  synchronizing nuke directories.\n")
 
@@ -232,6 +282,11 @@ def sync_nuke_dirs(
     # Set the rsync options
     sync_opts = ["-av"]
 
+    # ========================================================================== #
+    # This section uses rsync to synchronize the nuke/etc/ocio/templates folders.
+    # ========================================================================== #
+
+    # ------------------------------------------------------------------------- #
     # Use rsync to copy the nuke scripts
     result = subprocess.run(
         ["rsync"] + sync_opts + [f"{src_nuke_dir}/", f"{tgt_nuke_dir}/"],
@@ -244,8 +299,60 @@ def sync_nuke_dirs(
 
     print("\n  Logik PROJEKT Nuke directories synchronized.")
 
+    # ------------------------------------------------------------------------- #
+    # Use rsync to copy the bin folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_bin_dir}/", f"{tgt_bin_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+
+    # ------------------------------------------------------------------------- #
+    # Use rsync to copy the etc folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_etc_dir}/", f"{tgt_etc_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
+
+    print("\n  Logik PROJEKT etc directories synchronized.")
+
+    # ------------------------------------------------------------------------- #
+    # Use rsync to copy the ocio folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_ocio_dir}/", f"{tgt_ocio_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
+
+    print("\n  Logik PROJEKT ocio directories synchronized.")
+
+    # ------------------------------------------------------------------------- #
+    # use rsync to copy the templates folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_templates_dir}/", f"{tgt_templates_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
+    print("\n  Logik PROJEKT templates directories synchronized.")
+
+
+# ------------------------------------------------------------------------- #
+
+
+
 # ========================================================================== #
-# This section copies the envrc file
+# This section copies the envrc file to root of the projekt directory.
 # ========================================================================== #
 
     # Set the src_nuke_envrc path
