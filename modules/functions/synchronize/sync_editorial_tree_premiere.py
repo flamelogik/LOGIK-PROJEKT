@@ -154,9 +154,20 @@ def sync_editorial_tree_premiere(
     premiere_dir = os.path.join(projekt_base, 'editorial', 'adobe_premiere')
     resources_base = get_resource_path("resources")
 
+    # # Define the main directory structure
+    # premiere_folders = [
+    #     "01_projekts",
+    #     "02_footage",
+    #     "03_audio",
+    #     "04_gfx",
+    #     "05_stills",
+    #     "06_color",
+    #     "07_misc",
+    #     "08_postings"
+    # ]
+
     # Define the main directory structure
     premiere_folders = [
-        "01_projekts",
         "02_footage",
         "03_audio",
         "04_gfx",
