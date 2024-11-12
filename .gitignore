@@ -70,3 +70,5 @@ resources/tmp/current_projekt_parameters.xml
 resources/tmp/current_projekt_template.json
 resources/tmp/current_projekt_template.json.bak
 development/send_webhook.sh
+install/logs/2024-11-08-current_adsk_python_version_log.txt
+LOGIK-PROJEKT.desktop
