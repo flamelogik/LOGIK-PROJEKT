@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.3" id="primaries/ACEScg_to_ACES" name="AP1_to_Canon_Daylight">
    <Description>AP1(ACEScg)_to_Canon_Daylight</Description>
@@ -4149,3 +4150,6 @@
       </Array>
    </InverseLUT1D>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

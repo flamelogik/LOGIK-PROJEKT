@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.3" id="3847db68-a48a-464e-9491-8141f15c27df" name="AP0_to_S3SGamut3_Cine_Venice" inverseOf="camera/Sony/SLog3-SGamut3.Cine-Venice_no-cam-black_to_ACES">
    <Description></Description>
@@ -4111,3 +4112,6 @@
       </Array>
    </InverseLUT1D>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

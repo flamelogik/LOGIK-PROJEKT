@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.3" id="camera/Sony/SLog3-SGamut3.Cine-Venice_no-cam-black_to_ACES" name="S3SGamut3_Cine_Venice_to_AP1">
    <Description>S3SGamut3_Cine_Venice_to_AP1(ACEScg)</Description>
@@ -4142,3 +4143,6 @@
       </Array>
    </Matrix>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

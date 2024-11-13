@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.3" id="camera/Red/Log3G10-REDWideGamutRGB_to_ACES" name="R3D_Log3G10_to_AP0">
    <Description>R3D_Log3G10_to_AP0(ACES2065-1)</Description>
@@ -4135,3 +4136,6 @@
       </Array>
    </Matrix>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

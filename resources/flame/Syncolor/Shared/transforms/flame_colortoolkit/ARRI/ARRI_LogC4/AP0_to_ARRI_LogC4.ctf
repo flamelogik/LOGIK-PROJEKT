@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.6" id="94a4060c-c649-407f-b5f2-7d18693004c6" name="AP0_to_ARRI_LogC4" inverseOf="camera/Arri/LogC4-AWG4_to_ACES">
    <Description>AP0(ACES2065-1)_to_ARRI_LogC4</Description>
@@ -65551,3 +65552,6 @@
       </Array>
    </InverseLUT1D>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs

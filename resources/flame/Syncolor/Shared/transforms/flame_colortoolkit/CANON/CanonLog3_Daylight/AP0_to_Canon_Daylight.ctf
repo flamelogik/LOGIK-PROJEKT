@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ProcessList version="1.3" id="5af04936-2ae2-480f-9836-cb6a06a040f3" name="AP0_to_Canon_Daylight" inverseOf="camera/Canon/CanonLog3-CinemaGamut-D55_to_ACES">
    <Description>AP0(ACES2065-1)_to_Canon_Daylight</Description>
@@ -4111,3 +4112,6 @@
       </Array>
    </InverseLUT1D>
 </ProcessList>
+=======
+
+>>>>>>> origin/development-dxs
