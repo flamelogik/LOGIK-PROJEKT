@@ -205,48 +205,6 @@ def sync_editorial_tree_premiere(
         {"src": f"{projekt_base}/masters", "dst": f"{premiere_dir}/08_postings/02_masters"}
     ]
 
-    # # Define template directories to copy
-    # template_dirs = [
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/slates"),
-    #         "dst": f"{premiere_dir}/07_misc/04_slates"
-    #     },
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/aspect_ratio_masks"),
-    #         "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_projekts"),
-    #         "dst": f"{premiere_dir}/01_projekts"
-    #     },
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_presets/premiere_export_presets"),
-    #         "dst": f"{premiere_dir}/07_misc/01_export_presets"
-    #     },
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/fonts"),
-    #         "dst": f"{premiere_dir}/07_misc/02_fonts"
-
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_fonts"),
-    #         "dst": f"{premiere_dir}/07_misc/02_fonts"
-    #     },
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_scripts"),
-    #         "dst": f"{premiere_dir}/07_misc/03_scripts"
-    #     },
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_slates"),
-    #         "dst": f"{premiere_dir}/07_misc/04_slates"
-    #     },
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_notes"),
-    #         "dst": f"{premiere_dir}/07_misc/05_notes"
-    #     },
-    #     {
-    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_aspect_ratio_masks"),
-    #         "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
-
-    #     }
-    # ]
-
     # Define template directories to copy
     template_dirs = [
         {
@@ -301,7 +259,7 @@ def sync_editorial_tree_premiere(
         #     print()
 
         # Create the directory
-        os.makedirs(folder_path)
+        os.makedirs(folder_path, exist_ok=True)  # Addendum: exist_ok=True
         print(f"  Created directory: {folder_path}")
 
     print("\n  Creating symbolic links...")
