@@ -195,11 +195,11 @@ def sync_editorial_tree_premiere(
     # Define template directories to copy
     template_dirs = [
         {
-            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/slates"),
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_slates"),
             "dst": f"{premiere_dir}/07_misc/04_slates"
         },
         {
-            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/aspect_ratio_masks"),
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_aspect_ratio_masks"),
             "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
         },
         {
@@ -207,7 +207,7 @@ def sync_editorial_tree_premiere(
             "dst": f"{premiere_dir}/07_misc/01_export_presets"
         },
         {
-            "src": os.path.join(resources_base, "adobe/premiere/fonts"),
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_fonts"),
             "dst": f"{premiere_dir}/07_misc/02_fonts"
         }
     ]
@@ -234,7 +234,7 @@ def sync_editorial_tree_premiere(
             print()
 
         # Create the directory
-        os.makedirs(folder_path)
+        os.makedirs(folder_path, exist_ok=True)
         print(f"  Created directory: {folder_path}")
 
     print("\n  Creating symbolic links...")
