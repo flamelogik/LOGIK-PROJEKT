@@ -1,0 +1,92 @@
+.
+├── assets
+│   ├── artwork
+│   ├── audio
+│   │   ├── dub
+│   │   ├── mix
+│   │   ├── music
+│   │   ├── production
+│   │   ├── sound_effects
+│   │   ├── stems
+│   │   └── voiceover
+│   ├── cgi
+│   ├── font
+│   ├── footage
+│   │   ├── graded
+│   │   ├── raw
+│   │   ├── stock
+│   │   └── transcodes
+│   ├── graphics
+│   ├── images
+│   ├── legal
+│   ├── matchmoving
+│   ├── miscellaneous
+│   ├── paint
+│   ├── photoshop
+│   ├── roto
+│   ├── slates
+│   ├── subtitles
+│   ├── supers
+│   ├── titles
+│   ├── tracking
+│   └── video
+├── editorial
+│   ├── aaf
+│   ├── davinci_resolve
+│   ├── edl
+│   ├── final_cut_pro
+│   ├── premiere
+│   │   ├── 01_premiere_projects
+│   │   │   ├── z_OldEdits
+│   │   │   └── z_Template
+│   │   │       └── 1986_PREMIERE_TEMPLATE_241029_XX_2025.prproj
+│   │   ├── 02_footage
+│   │   │   ├── 01_transcodes                                       -> assets/footage/transcodes
+│   │   │   ├── 02_stock                                            -> assets/footage/stock
+│   │   │   └── 03_misc                                             -> assets/footage/
+│   │   ├── 03_audio
+│   │   │   ├── 01_mix                                              -> assets/audio/mix
+│   │   │   ├── 02_music                                            -> assets/audio/music
+│   │   │   ├── 03_sfx                                              -> assets/audio/sound_effects
+│   │   │   ├── 04_vo                                               -> assets/audio/voiceover
+│   │   │   └── 05_production                                       -> assets/audio/production
+│   │   ├── 04_gfx
+│   │   │   ├── 01_aftereffects                                     -> assets/graphics/aftereffects
+│   │   │   ├── 02_graphic_inputs                                   -> assets/graphics/inputs
+│   │   │   └── 03_graphic_outputs                                  -> assets/graphics/outputs
+│   │   ├── 05_stills  
+│   │   │   ├── 01_psds                                             -> assets/photoshop
+│   │   │   ├── 02_images                                           -> assets/images
+│   │   │   ├── 03_supers                                           -> assets/supers
+│   │   │   └── 04_legal                                            -> assets/legal
+│   │   ├── 06_color
+│   │   │   ├── 01_color_inputs                                     -> DOES_THIS_MEAN_GRADING?
+│   │   │   └── 02_color_outputs                                    -> DOES_THIS_MEAN_GRADING?
+│   │   ├── 07_misc
+│   │   │   ├── 01_export_presets                                   -> resources/adobe/premiere/premiere_presets/export
+│   │   │   ├── 02_fonts                                            -> assets/font
+│   │   │   │   ├── Gotham                                          -> resources/adobe/fonts
+│   │   │   │   └── KC Striker Sans
+│   │   │   │       └── KCStrikerSans.otf
+│   │   │   ├── 03_scripts
+│   │   │   ├── 04_slates                                           -> assets/slates
+│   │   │   │   ├── Slate Audio                                     -> resources/adobe/premiere/premiere_templates/slates/Slate Audio
+│   │   │   │   └── Slate Graphics                                  -> resources/adobe/premiere/premiere_templates/slates/Slate Graphics
+│   │   │   ├── 05_notes
+│   │   │   └── 06_aspect_ratio_masks                               -> resources/adobe/premiere/premiere_templates/aspect_ratio_masks
+│   │   └── 08_postings
+│   │       ├── 01_postings                                         -> work_in_progress/postings
+│   │       └── 02_masters                                          -> masters
+│   ├── prep
+│   └── xml
+├── masters
+│   ├── master_edits
+│   ├── slated_masters
+│   └── versioned_masters
+├── reference
+│   ├── reference_images
+│   ├── reference_movies
+│   └── reference_style_guide
+├── version
+└── work_in_progress
+    └── postings
