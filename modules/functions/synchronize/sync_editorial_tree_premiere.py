@@ -32,7 +32,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        sync_editorial_tree_premiere.py
+# File Name:        sync_editorial_tree_premiere_premiere.py
 # Version:          0.9.0
 # Created:          2024-10-31
 # Modified:         2024-10-31
@@ -212,6 +212,14 @@ def sync_editorial_tree_premiere(
             "dst": f"{premiere_dir}/01_projekts"
         },
         {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_slates"),
+            "dst": f"{premiere_dir}/07_misc/04_slates"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_aspect_ratio_masks"),
+            "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
+        },
+        {
             "src": os.path.join(resources_base, "adobe/premiere/premiere_presets/premiere_export_presets"),
             "dst": f"{premiere_dir}/07_misc/01_export_presets"
         },
@@ -260,6 +268,7 @@ def sync_editorial_tree_premiere(
 
         # Create the directory
         os.makedirs(folder_path, exist_ok=True)  # Addendum: exist_ok=True
+
         print(f"  Created directory: {folder_path}")
 
     print("\n  Creating symbolic links...")
