@@ -154,20 +154,9 @@ def sync_editorial_tree_premiere(
     premiere_dir = os.path.join(projekt_base, 'editorial', 'adobe_premiere')
     resources_base = get_resource_path("resources")
 
-    # # Define the main directory structure
-    # premiere_folders = [
-    #     "01_projekts",
-    #     "02_footage",
-    #     "03_audio",
-    #     "04_gfx",
-    #     "05_stills",
-    #     "06_color",
-    #     "07_misc",
-    #     "08_postings"
-    # ]
-
     # Define the main directory structure
     premiere_folders = [
+        "01_projekts",
         "02_footage",
         "03_audio",
         "04_gfx",
@@ -176,6 +165,17 @@ def sync_editorial_tree_premiere(
         "07_misc",
         "08_postings"
     ]
+
+    # # Define the main directory structure
+    # premiere_folders = [
+    #     "02_footage",
+    #     "03_audio",
+    #     "04_gfx",
+    #     "05_stills",
+    #     "06_color",
+    #     "07_misc",
+    #     "08_postings"
+    # ]
 
     # Define subfolders and their corresponding symbolic links
     symbolic_links = [
@@ -196,10 +196,10 @@ def sync_editorial_tree_premiere(
         {"src": f"{projekt_base}/assets/graphics", "dst": f"{premiere_dir}/04_gfx/02_input"},
         {"src": f"{projekt_base}/assets/graphics", "dst": f"{premiere_dir}/04_gfx/03_output"},
         # Stills links
-        {"src": f"{projekt_base}/assets/photoshop", "dst": f"{premiere_dir}/05_stills/01_photoshop"},
-        {"src": f"{projekt_base}/assets/images", "dst": f"{premiere_dir}/05_stills/02_images"},
-        {"src": f"{projekt_base}/assets/supers", "dst": f"{premiere_dir}/05_stills/03_supers"},
-        {"src": f"{projekt_base}/assets/legal", "dst": f"{premiere_dir}/05_stills/04_legal"},
+        {"src": f"{projekt_base}/assets/graphics/photoshop", "dst": f"{premiere_dir}/05_stills/01_photoshop"},
+        {"src": f"{projekt_base}/assets/graphics/images", "dst": f"{premiere_dir}/05_stills/02_images"},
+        {"src": f"{projekt_base}/assets/graphics/supers", "dst": f"{premiere_dir}/05_stills/03_supers"},
+        {"src": f"{projekt_base}/assets/graphics/legal", "dst": f"{premiere_dir}/05_stills/04_legal"},
         # Postings links
         {"src": f"{projekt_base}/work_in_progress/postings", "dst": f"{premiere_dir}/08_postings/01_postings"},
         {"src": f"{projekt_base}/masters", "dst": f"{premiere_dir}/08_postings/02_masters"}
@@ -259,7 +259,7 @@ def sync_editorial_tree_premiere(
         #     print()
 
         # Create the directory
-        os.makedirs(folder_path, exist_ok=True)  # Addendum: exist_ok=True
+        os.makedirs(folder_path, exist_ok=True)  # added exist_ok=True flag
         print(f"  Created directory: {folder_path}")
 
     print("\n  Creating symbolic links...")
