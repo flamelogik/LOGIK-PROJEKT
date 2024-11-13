@@ -144,10 +144,10 @@ def sync_editorial_tree_premiere(
     set up symbolic links to asset directories, and copy template resources.
     """
     
-    # Nested function to generate backup name with current date
-    def generate_backup_name(path):
-        date_str = datetime.datetime.now().strftime("%Y_%m_%d")
-        return f"{path}.{date_str}.bak"
+    # # Nested function to generate backup name with current date
+    # def generate_backup_name(path):
+    #     date_str = datetime.datetime.now().strftime("%Y_%m_%d")
+    #     return f"{path}.{date_str}.bak"
 
     # Define the base paths
     projekt_base = os.path.join(the_projekts_dir, the_projekt_name)
@@ -272,23 +272,27 @@ def sync_editorial_tree_premiere(
         print(f"  Created directory: {folder_path}")
 
     print("\n  Creating symbolic links...")
-    
+
     # Create symbolic links
     for link in symbolic_links:
         src_path = link["src"]
         dst_path = link["dst"]
-        
+
         # Create parent directory if it doesn't exist
         os.makedirs(os.path.dirname(dst_path), exist_ok=True)
-        
+
+        # # Remove existing symlink if it exists
+        # if os.path.islink(dst_path):
+        #     backup_path = generate_backup_name(dst_path)
+        #     print(f"  * Existing symlink found: {dst_path}")
+        #     print(f"  * Backing up to: {backup_path}")
+        #     os.rename(dst_path, backup_path)
+        #     print()
+
         # Remove existing symlink if it exists
         if os.path.islink(dst_path):
-            backup_path = generate_backup_name(dst_path)
-            print(f"  * Existing symlink found: {dst_path}")
-            print(f"  * Backing up to: {backup_path}")
-            os.rename(dst_path, backup_path)
-            print()
-        
+            os.unlink(dst_path)
+
         # Create the symbolic link
         try:
             if os.path.exists(src_path):
@@ -309,14 +313,18 @@ def sync_editorial_tree_premiere(
         # Create parent directory if it doesn't exist
         os.makedirs(os.path.dirname(dst_path), exist_ok=True)
 
-        # If destination exists, back it up
+        # # If destination exists, back it up
+        # if os.path.exists(dst_path):
+        #     backup_path = generate_backup_name(dst_path)
+        #     print(f"  * {dst_path} exists")
+        #     print(f"  * Backing up directory to:")
+        #     print(f"  *   {backup_path}")
+        #     shutil.move(dst_path, backup_path)
+        #     print()
+
+        # Remove existing directory if it exists
         if os.path.exists(dst_path):
-            backup_path = generate_backup_name(dst_path)
-            print(f"  * {dst_path} exists")
-            print(f"  * Backing up directory to:")
-            print(f"  *   {backup_path}")
-            shutil.move(dst_path, backup_path)
-            print()
+            shutil.rmtree(dst_path)
 
         # Copy the directory
         try:
