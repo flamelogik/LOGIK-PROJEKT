@@ -845,7 +845,6 @@ def main():
         # #     separator
         # # )
 
-<<<<<<< HEAD
         # Function to create editorial directory structure - premiere
         sync_editorial_tree_premiere(
             the_projekts_dir,
@@ -853,21 +852,6 @@ def main():
             the_projekt_flame_name,
             separator
         )
-=======
-        logger.log_and_print(f"{banner_head('Creating Editorial Structure - Premiere')}")
-
-        # # Function to create editorial directory structure - premiere
-        # sync_editorial_tree_premiere(
-        #     the_projekts_dir,
-        #     the_projekt_flame_dirs,
-        #     the_adsk_dir,
-        #     the_adsk_dir_linux,
-        #     the_adsk_dir_macos,
-        #     the_projekt_name,
-        #     the_projekt_flame_name,
-        #     separator
-        # )
->>>>>>> origin/development
 
         # Print a separator
         logger.log_and_print(f"\n{separator}")

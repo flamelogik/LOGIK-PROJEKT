@@ -224,18 +224,18 @@
                 "object_color": ""
             },
             "item_29": {
-                "object_name": "2d_tracking_folder",
+                "object_name": "tracking_2d_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "matchmoving_folder",
-                "display_name": "'2d_tracking'",
+                "display_name": "'tracking_2d'",
                 "object_type": "folder",
                 "object_color": ""
             },
             "item_30": {
-                "object_name": "3d_tracking_folder",
+                "object_name": "tracking_3d_folder",
                 "process_type": "create_or_validate_object",
                 "parent_object": "matchmoving_folder",
-                "display_name": "'3d_tracking'",
+                "display_name": "'tracking_3d'",
                 "object_type": "folder",
                 "object_color": ""
             },

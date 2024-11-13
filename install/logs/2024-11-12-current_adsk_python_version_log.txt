@@ -1,0 +1,43 @@
+
++ --------------------------------------------------------------------------- +
+
+  2024-11-12 18:56:37 - Reading preference file:
+  2024-11-12 18:56:37 - /Volumes/LC-Admin/Autodesk/LOGIK-PROJEKT-LC/install/current_adsk_python_version.pref
+  2024-11-12 18:56:37 - 
+  2024-11-12 18:56:37 - Preference file loaded:
+  2024-11-12 18:56:37 - 
+  2024-11-12 18:56:37 - 
+  2024-11-12 18:56:37 - Analyzing directory: /opt/Autodesk/python
+  2024-11-12 18:56:37 - Sorted contents of /opt/Autodesk/python:
+  2024-11-12 18:56:37 - 2025.2.1
+  2024-11-12 18:56:37 - 2025.1.pr203
+  2024-11-12 18:56:37 - 2025.1.pr202
+  2024-11-12 18:56:37 - 2025.1.pr200
+  2024-11-12 18:56:37 - 
+  2024-11-12 18:56:37 - The highest version is: 2025.2.1
+  2024-11-12 18:56:37 - 
+  2024-11-12 18:56:37 - Python version 2025.2.1 is available and executable
+  2024-11-12 18:56:37 - Updated preference file with:
+  2024-11-12 18:56:37 - /opt/Autodesk/python/2025.2.1/bin/python
+  2024-11-12 18:56:37 - 
+
++ --------------------------------------------------------------------------- +
+
+  2024-11-12 18:56:37 - Creating macOS application: LOGIK-PROJEKT.app
+  2024-11-12 18:56:37 - Creating the macOS application components
+
++ --------------------------------------------------------------------------- +
+
+  2024-11-12 18:56:37 - Creating LOGIK-PROJEKT shell script for linux: run_logikprojekt_linux.sh
+  2024-11-12 18:56:37 - Making the file executable: run_logikprojekt_linux.sh
+  2024-11-12 18:56:37 - Creating macOS application shell script: run_logikprojekt_macos
+
++ --------------------------------------------------------------------------- +
+
+  2024-11-12 18:56:37 - Creating desktop entry file: LOGIK-PROJEKT.desktop
+  2024-11-12 18:56:37 - Making the file executable: LOGIK-PROJEKT.desktop
+  2024-11-12 18:56:37 - This script is not configured to move files on macOS (Darwin).
+  2024-11-12 18:56:37 - File 'LOGIK-PROJEKT.desktop' has been created and made executable.
+
++ --------------------------------------------------------------------------- +
+

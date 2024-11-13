@@ -323,8 +323,8 @@
                 "parent_dir": "/{projekts_dir}/{projekt_dir}/assets",
                 "path": "/{projekts_dir}/{projekt_dir}/assets/graphics",
                 "bookmark_name": "graphics",
-                "bookmark_type": "bookmark",
-                "bookmark_parent": "folder",
+                "bookmark_type": "folder",
+                "bookmark_parent": "assets",
                 "bookmark_visibility": "Global",
                 "children": {
                     "item_18": {
@@ -339,7 +339,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/artwork",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/artwork",
                         "bookmark_name": "artwork",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -357,7 +357,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/cgi",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/cgi",
                         "bookmark_name": "cgi",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -375,7 +375,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/images",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/images",
                         "bookmark_name": "images",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -393,7 +393,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/legal",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/legal",
                         "bookmark_name": "legal",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -411,7 +411,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/paint",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/paint",
                         "bookmark_name": "paint",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -429,7 +429,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/photoshop",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/photoshop",
                         "bookmark_name": "photoshop",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -447,7 +447,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/slates",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/slates",
                         "bookmark_name": "slates",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -465,7 +465,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/subtitles",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/subtitles",
                         "bookmark_name": "subtitles",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -483,7 +483,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/supers",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/supers",
                         "bookmark_name": "supers",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -501,7 +501,7 @@
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/graphics",
-                        "path": "/{projekts_dir}/{projekt_dir}/assetss/graphics/titles",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/graphics/titles",
                         "bookmark_name": "titles",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "graphics",
@@ -546,37 +546,37 @@
                 "bookmark_visibility": "Global",
                 "children": {
                     "item_30": {
-                        "object_name": "2d_tracking_folder",
+                        "object_name": "tracking_2d_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "matchmoving_folder",
-                        "display_name": "'2d_tracking'",
+                        "display_name": "'tracking_2d'",
                         "object_type": "folder",
                         "object_color": "",
                         "link": "True",
-                        "dir_name": "2d_tracking",
+                        "dir_name": "tracking_2d",
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/matchmoving",
-                        "path": "/{projekts_dir}/{projekt_dir}/assets/matchmoving/2d_tracking",
-                        "bookmark_name": "2d_tracking",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/matchmoving/tracking_2d",
+                        "bookmark_name": "tracking_2d",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "matchmoving",
                         "bookmark_visibility": "Global"
                     },
                     "item_31": {
-                        "object_name": "3d_tracking_folder",
+                        "object_name": "tracking_3d_folder",
                         "process_type": "create_or_validate_object",
                         "parent_object": "matchmoving_folder",
-                        "display_name": "'3d_tracking'",
+                        "display_name": "'tracking_3d'",
                         "object_type": "folder",
                         "object_color": "",
                         "link": "True",
-                        "dir_name": "3d_tracking",
+                        "dir_name": "tracking_3d",
                         "filesystem_type": "folder",
                         "flame_type": "folder",
                         "parent_dir": "/{projekts_dir}/{projekt_dir}/assets/matchmoving",
-                        "path": "/{projekts_dir}/{projekt_dir}/assets/matchmoving/3d_tracking",
-                        "bookmark_name": "3d_tracking",
+                        "path": "/{projekts_dir}/{projekt_dir}/assets/matchmoving/tracking_3d",
+                        "bookmark_name": "tracking_3d",
                         "bookmark_type": "bookmark",
                         "bookmark_parent": "matchmoving",
                         "bookmark_visibility": "Global"
@@ -660,42 +660,3 @@
         }
     }
 }
-
-
-
-.
-├── audio
-│   ├── dub
-│   ├── mix
-│   ├── music
-│   ├── production
-│   ├── sound_effects
-│   ├── stems
-│   └── voiceover
-├── font
-├── footage
-│   ├── graded
-│   ├── lut
-│   ├── raw
-│   ├── stock
-│   ├── transcodes
-│   └── video
-├── graphics
-│   ├── artwork
-│   ├── cgi
-│   ├── images
-│   ├── legal
-│   ├── paint
-│   ├── photoshop
-│   ├── slates
-│   ├── subtitles
-│   ├── supers
-│   └── titles
-├── matchmoving
-│   ├── 2d_tracking
-│   └── 3d_tracking
-├── miscellaneous
-└── rotoscope
-    ├── gmasks
-    ├── raster
-    └── source
