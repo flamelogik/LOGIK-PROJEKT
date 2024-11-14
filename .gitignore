@@ -66,3 +66,4 @@ resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Ven
 resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Venice/S3SGamut3_Venice_to_AP1.ctf
 resources/flame/Syncolor/Shared/transforms.tar.xz
 development/send_webhook.sh
+customization/testing/premiere_directories.py

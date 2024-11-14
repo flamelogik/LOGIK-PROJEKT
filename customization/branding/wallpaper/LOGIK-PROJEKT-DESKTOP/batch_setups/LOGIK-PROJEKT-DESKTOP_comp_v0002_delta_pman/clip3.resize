@@ -1,0 +1,64 @@
+ResizeFileVersion 9
+CreationDate Sat Nov  9 11:45:15 2024
+
+
+DestinationWidth 1920
+DestinationHeight 1080
+DestinationPixelFormat 124
+DestinationAspect 1.77777779
+ResizeVideoScanFormat 2
+AnimRefFrame 1001
+ResizeType 1
+ResizeQuality 4
+ResizeFieldFormat 0
+ResizePreserveAspect yes
+AutoKey no
+Regen yes
+LockRes no
+EndFrame 0
+PropRatioConstraint 1
+OtherRatioConstraint 0
+UseRatio no
+ResizeBackColourRed 0
+ResizeBackColourGreen 0
+ResizeBackColourBlue 0
+ResizeBackColourAlpha 0
+ResizeUseSrcField 0
+DimensionMode 0
+AdaptativeMode 0
+ScalingMode 1
+ScalingValue 50
+UnscaledWidth 1024
+UnscaledHeight 1024
+SrcPixelRatio 1
+ResizeChannels
+Channel Position/x
+	Extrapolation constant
+	Value 0
+	End
+Channel Position/y
+	Extrapolation constant
+	Value 0
+	End
+Channel Scaling/x
+	Extrapolation constant
+	Value 100
+	End
+Channel Scaling/y
+	Extrapolation constant
+	Value 100
+	End
+Channel Resolution/Width
+	Extrapolation constant
+	Value 1024
+	End
+Channel Resolution/Height
+	Extrapolation constant
+	Value 1024
+	End
+ChannelEnd
+ResizeQualityBlur 1 1 1 1 0.829999983 0.829999983 1 1 1 1
+ResizeQualityAlpha 0 0 0 0 5.25 3.8499999 0 0 0 0
+ResizeQualityAdaptiveDeinterlacing no
+ResizeQualityAdaptiveTolerance 0.100000001
+ResizeEnd
