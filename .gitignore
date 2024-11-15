@@ -71,3 +71,4 @@ resources/tmp/current_projekt_template.json
 resources/tmp/current_projekt_template.json.bak
 development/send_webhook.sh
 customization/testing/premiere_directories.py
+customization/branding/rocky-fonts/rocky-fonts-master
