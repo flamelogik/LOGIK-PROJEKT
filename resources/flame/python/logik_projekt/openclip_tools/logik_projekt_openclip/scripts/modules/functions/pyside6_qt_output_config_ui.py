@@ -70,7 +70,7 @@ from typing import (
 current_script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Append parent_dir to sys.path to access modules relative to the script
-parent_dir = os.path.abspath(os.path.join(current_script_dir, ".."))
+parent_dir = os.path.abspath(os.path.join(current_script_dir, "..", ".."))
 sys.path.append(parent_dir)
 
 # ========================================================================== #
