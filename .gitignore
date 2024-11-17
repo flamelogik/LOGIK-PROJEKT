@@ -65,10 +65,6 @@ resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Ven
 resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Venice/S3SGamut3_Venice_to_AP0.ctf
 resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Venice/S3SGamut3_Venice_to_AP1.ctf
 resources/flame/Syncolor/Shared/transforms.tar.xz
-resources/tmp/current_projekt_bookmarks.json
-resources/tmp/current_projekt_parameters.xml
-resources/tmp/current_projekt_template.json
-resources/tmp/current_projekt_template.json.bak
 development/send_webhook.sh
 customization/testing/premiere_directories.py
 customization/branding/rocky-fonts/rocky-fonts-master
