@@ -48,6 +48,10 @@
 from modules.classes.pyside6_qt_button import (
     pyside6_qt_button as pyside6_qt_button
 )
+
+from modules.classes.pyside6_qt_button import (
+    pyside6_qt_button as pyside6_qt_button
+)
 from modules.classes.pyside6_qt_clickable_line_edit import (
     pyside6_qt_clickable_line_edit as pyside6_qt_clickable_line_edit
 )
