@@ -62,15 +62,7 @@ sys.path.append(classes_dir)
 from classes.pyside6_qt_button import (
     pyside6_qt_button as pyside6_qt_button
 )
-<<<<<<< HEAD:resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/pyside6_qt_flame_classes.py
-
-from modules.classes.pyside6_qt_button import (
-    pyside6_qt_button as pyside6_qt_button
-)
-from modules.classes.pyside6_qt_clickable_line_edit import (
-=======
 from classes.pyside6_qt_clickable_line_edit import (
->>>>>>> origin/development-2026:resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/modules/pyside6_qt_flame_classes.py
     pyside6_qt_clickable_line_edit as pyside6_qt_clickable_line_edit
 )
 from classes.pyside6_qt_label import (
