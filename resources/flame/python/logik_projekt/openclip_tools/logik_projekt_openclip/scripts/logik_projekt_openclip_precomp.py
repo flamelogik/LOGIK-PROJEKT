@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        logik_projekt_openclip_precomp.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Created:          2024-01-19
-# Modified:         2024-10-30
+# Modified:         2024-11-16
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -881,4 +881,8 @@ def get_media_panel_custom_ui_actions():
 # version:               1.0.0
 # modified:              2024-10-30 - 07:35:26
 # comments:              Refactored PySide6 Output Node Config UI.
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-11-16 - 16:52:06
+# comments:              Fixed circular import statements
 # -------------------------------------------------------------------------- #
