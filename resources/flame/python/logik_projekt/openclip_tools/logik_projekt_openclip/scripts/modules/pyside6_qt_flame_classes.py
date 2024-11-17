@@ -31,52 +31,92 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        pyside6_qt_flame_functions.py
+# File Name:        pyside6_qt_flame_classes.py
 # Version:          1.0.0
 # Created:          2024-01-19
 # Modified:         2024-10-30
 
 # ========================================================================== #
-# This section imports the pyflame functions.
+# This section imports the necessary modules and adds the 'classes' directory
+# ========================================================================== #
+
+import os
+import sys
+
+# Get the directory path of the currently executing script
+current_script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Append the 'classes' directory to sys.path to access modules
+classes_dir = os.path.join(current_script_dir, 'classes')
+sys.path.append(classes_dir)
+
+# ========================================================================== #
+# This section imports the Qt UI classes.
 # ========================================================================== #
 
 # # EXAMPLE
-# from modules.functions.example import (
+# from classes.example import (
 #     example_function as new_function_name
 # )
 
-from modules.functions.pyside6_qt_get_shot_name import (
-    pyside6_qt_get_shot_name as pyside6_qt_get_shot_name
+from classes.pyside6_qt_button import (
+    pyside6_qt_button as pyside6_qt_button
 )
-from modules.functions.pyside6_qt_print import (
-    pyside6_qt_print as pyside6_qt_print
+<<<<<<< HEAD:resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/pyside6_qt_flame_classes.py
+
+from modules.classes.pyside6_qt_button import (
+    pyside6_qt_button as pyside6_qt_button
 )
-from modules.functions.pyside6_qt_get_flame_version import (
-    pyside6_qt_get_flame_version as pyside6_qt_get_flame_version
+from modules.classes.pyside6_qt_clickable_line_edit import (
+=======
+from classes.pyside6_qt_clickable_line_edit import (
+>>>>>>> origin/development-2026:resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/modules/pyside6_qt_flame_classes.py
+    pyside6_qt_clickable_line_edit as pyside6_qt_clickable_line_edit
 )
-from modules.functions.pyside6_qt_file_browser import (
-    pyside6_qt_file_browser as pyside6_qt_file_browser
+from classes.pyside6_qt_label import (
+    pyside6_qt_label as pyside6_qt_label
 )
-from modules.functions.pyside6_qt_resolve_shot_name import (
-    pyside6_qt_resolve_shot_name as pyside6_qt_resolve_shot_name
+from classes.pyside6_qt_line_edit import (
+    pyside6_qt_line_edit as pyside6_qt_line_edit
 )
-from modules.functions.pyside6_qt_resolve_path_tokens import (
-    pyside6_qt_resolve_path_tokens as pyside6_qt_resolve_path_tokens
+from classes.pyside6_qt_list_widget import (
+    pyside6_qt_list_widget as pyside6_qt_list_widget
 )
-from modules.functions.pyside6_qt_refresh_hooks import (
-    pyside6_qt_refresh_hooks as pyside6_qt_refresh_hooks
+from classes.pyside6_qt_message_window import (
+    pyside6_qt_message_window as pyside6_qt_message_window
 )
-from modules.functions.pyside6_qt_open_in_finder import (
-    pyside6_qt_open_in_finder as pyside6_qt_open_in_finder
+from classes.pyside6_qt_password_window import (
+    pyside6_qt_password_window as pyside6_qt_password_window
 )
-from modules.functions.pyside6_qt_load_config import (
-    pyside6_qt_load_config as pyside6_qt_load_config
+from classes.pyside6_qt_preset_window import (
+    pyside6_qt_preset_window as pyside6_qt_preset_window
 )
-from modules.functions.pyside6_qt_save_config import (
-    pyside6_qt_save_config as pyside6_qt_save_config
+from classes.pyside6_qt_progress_window import (
+    pyside6_qt_progress_window as pyside6_qt_progress_window
 )
-from modules.functions.pyside6_qt_output_config_ui import (
-    pyside6_qt_output_config_ui as pyside6_qt_output_config_ui
+from classes.pyside6_qt_push_button import (
+    pyside6_qt_push_button as pyside6_qt_push_button
+)
+from classes.pyside6_qt_push_button_menu import (
+    pyside6_qt_push_button_menu as pyside6_qt_push_button_menu
+)
+from classes.pyside6_qt_qdialog import (
+    pyside6_qt_qdialog as pyside6_qt_qdialog
+)
+from classes.pyside6_qt_slider import (
+    pyside6_qt_slider as pyside6_qt_slider
+)
+from classes.pyside6_qt_text_edit import (
+    pyside6_qt_text_edit as pyside6_qt_text_edit
+)
+from classes.pyside6_qt_token_push_button import (
+    pyside6_qt_token_push_button as pyside6_qt_token_push_button
+)
+from classes.pyside6_qt_tree_widget import (
+    pyside6_qt_tree_widget as pyside6_qt_tree_widget
+)
+from classes.pyside6_qt_window import (
+    pyside6_qt_window as pyside6_qt_window
 )
 
 # ========================================================================== #

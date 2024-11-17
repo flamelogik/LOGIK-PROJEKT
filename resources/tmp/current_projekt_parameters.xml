@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 <Project><Workstation>delta</Workstation><Name>10101010_logik_projekt_first_release_2025_2_1_delta</Name><Nickname>10101010_logik_projekt_first_release</Nickname><ShotgunProjectName>10101010_logik_projekt_first_release</ShotgunProjectName><SetupDir>10101010_logik_projekt_first_release_2025_2_1_delta</SetupDir><Partition>stonefs</Partition><FrameWidth>1920</FrameWidth><FrameHeight>1080</FrameHeight><FrameDepth>16-bit fp</FrameDepth><AspectRatio>1.7777778</AspectRatio><FieldDominance>PROGRESSIVE</FieldDominance><FrameRate>23.976 fps</FrameRate><DefaultStartFrame>1001</DefaultStartFrame></Project>
+=======
+<Project><Workstation>delta</Workstation><Name>1010_abc_def_2025_2_1_delta</Name><Nickname>1010_abc_def</Nickname><ShotgunProjectName>1010_abc_def</ShotgunProjectName><SetupDir>1010_abc_def_2025_2_1_delta</SetupDir><Partition>stonefs</Partition><FrameWidth>1920</FrameWidth><FrameHeight>1080</FrameHeight><FrameDepth>16-bit fp</FrameDepth><AspectRatio>1.7777778</AspectRatio><FieldDominance>PROGRESSIVE</FieldDominance><FrameRate>23.976 fps</FrameRate><DefaultStartFrame>1001</DefaultStartFrame></Project>
+>>>>>>> Stashed changes
