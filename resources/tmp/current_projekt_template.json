@@ -1,8 +1,15 @@
 {
+<<<<<<< Updated upstream
     "Serial Number: ": "24033",
     "Client Name: ": "kfc",
     "Campaign Name: ": "sizzle",
     "Projekt Name: ": "24033_kfc_sizzle",
+=======
+    "Serial Number: ": "1010",
+    "Client Name: ": "abc",
+    "Campaign Name: ": "def",
+    "Projekt Name: ": "1010_abc_def",
+>>>>>>> Stashed changes
     "Resolution: ": "1920 x 1080 | HD 1080 16:9",
     "Width: ": "1920",
     "Height: ": "1080",
