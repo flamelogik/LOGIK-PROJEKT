@@ -72,3 +72,9 @@ resources/tmp/current_projekt_template.json.bak
 development/send_webhook.sh
 customization/testing/premiere_directories.py
 customization/branding/rocky-fonts/rocky-fonts-master
+resources/flame/python/logik_projekt/openclip_tools/scratch_comp.py
+resources/flame/python/logik_projekt/openclip_tools/scratch_mattes.py
+resources/flame/python/logik_projekt/openclip_tools/scratch_multichannel.py
+resources/flame/python/logik_projekt/openclip_tools/scratch_neat_video.py
+resources/flame/python/logik_projekt/openclip_tools/scratch_precomp.py
+error
