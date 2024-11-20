@@ -230,7 +230,6 @@ def sync_editorial_tree_premiere(
         {
             "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_projekts"),
             "dst": f"{premiere_dir}/01_projekts"
-<<<<<<< Updated upstream
         },
         {
             "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_slates"),
@@ -239,8 +238,6 @@ def sync_editorial_tree_premiere(
         {
             "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_aspect_ratio_masks"),
             "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
-=======
->>>>>>> Stashed changes
         },
         {
             "src": os.path.join(resources_base, "adobe/premiere/premiere_presets/premiere_export_presets"),
