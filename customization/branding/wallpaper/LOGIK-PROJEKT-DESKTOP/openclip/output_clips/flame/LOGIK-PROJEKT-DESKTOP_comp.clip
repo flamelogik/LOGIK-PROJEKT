@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clip type="clip" version="6">
+	<name type="string">LOGIK-PROJEKT-DESKTOP_comp</name>
+	<userData type="dict">
+		<appName type="binary">AutodeskÂ® FlameÂ®</appName>
+		<appVersion type="string">2025.2.1</appVersion>
+		<module type="string">Batch</module>
+	</userData>
+	<tracks>
+		<track uid="7174fed9bf74446e823042329c0357c2">
+			<trackType>video</trackType>
+			<editRate type="rate">
+				<numerator>24000</numerator>
+				<denominator>1001</denominator>
+			</editRate>
+			<name type="string">LOGIK-PROJEKT-DESKTOP_comp</name>
+			<feeds currentVersion="v0004">
+				<feed vuid="v0001" uid="bd981aee7533413abf32845aae29c396">
+					<storageFormat type="format">
+						<type>video</type>
+						<channelsDepth type="uint">16</channelsDepth>
+						<channelsEncoding type="string">Float</channelsEncoding>
+						<channelsEndianess type="string">Little Endian</channelsEndianess>
+						<colourSpace type="string">Rec.709 video</colourSpace>
+						<fieldDominance type="int">2</fieldDominance>
+						<height type="uint">2160</height>
+						<nbChannels type="uint">3</nbChannels>
+						<pixelLayout type="string">RGB</pixelLayout>
+						<pixelRatio type="float">1</pixelRatio>
+						<rowOrdering type="string">down</rowOrdering>
+						<width type="uint">5120</width>
+					</storageFormat>
+					<userData type="dict">
+						<recordTimecode type="time" label="00:00:00+00">
+							<rate>24</rate>
+							<nbTicks>0</nbTicks>
+							<dropMode>NDF</dropMode>
+						</recordTimecode>
+					</userData>
+					<sampleRate>
+						<numerator>24000</numerator>
+						<denominator>1001</denominator>
+					</sampleRate>
+					<startTimecode type="time">
+						<rate>24</rate>
+						<nbTicks>0</nbTicks>
+						<dropMode>NDF</dropMode>
+					</startTimecode>
+					<spans>
+						<span>
+							<path encoding="file">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/media/renders/LOGIK-PROJEKT-DESKTOP_comp_v0001/LOGIK-PROJEKT-DESKTOP_comp_v0001.00001001.exr</path>
+						</span>
+					</spans>
+				</feed>
+				<feed vuid="v0002" uid="0ad596806b404d2f9dbcb45186f8e8b2">
+					<storageFormat type="format">
+						<type>video</type>
+						<channelsDepth type="uint">16</channelsDepth>
+						<channelsEncoding type="string">Float</channelsEncoding>
+						<channelsEndianess type="string">Little Endian</channelsEndianess>
+						<colourSpace type="string">Rec.709 video</colourSpace>
+						<fieldDominance type="int">2</fieldDominance>
+						<height type="uint">2160</height>
+						<nbChannels type="uint">3</nbChannels>
+						<pixelLayout type="string">RGB</pixelLayout>
+						<pixelRatio type="float">1</pixelRatio>
+						<rowOrdering type="string">down</rowOrdering>
+						<width type="uint">5120</width>
+					</storageFormat>
+					<userData type="dict">
+						<recordTimecode type="time" label="00:00:00+00">
+							<rate>24</rate>
+							<nbTicks>0</nbTicks>
+							<dropMode>NDF</dropMode>
+						</recordTimecode>
+					</userData>
+					<sampleRate>
+						<numerator>24000</numerator>
+						<denominator>1001</denominator>
+					</sampleRate>
+					<startTimecode type="time">
+						<rate>24</rate>
+						<nbTicks>0</nbTicks>
+						<dropMode>NDF</dropMode>
+					</startTimecode>
+					<spans>
+						<span>
+							<path encoding="file">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/media/renders/LOGIK-PROJEKT-DESKTOP_comp_v0002/LOGIK-PROJEKT-DESKTOP_comp_v0002.00001001.exr</path>
+						</span>
+					</spans>
+				</feed>
+				<feed vuid="v0003" uid="26d7611861f347e4bd87042d598b780c">
+					<storageFormat type="format">
+						<type>video</type>
+						<channelsDepth type="uint">16</channelsDepth>
+						<channelsEncoding type="string">Integer</channelsEncoding>
+						<channelsEndianess type="string">Little Endian</channelsEndianess>
+						<colourSpace type="string">Rec.709 video</colourSpace>
+						<fieldDominance type="int">2</fieldDominance>
+						<height type="uint">2160</height>
+						<nbChannels type="uint">3</nbChannels>
+						<pixelLayout type="string">RGB</pixelLayout>
+						<pixelRatio type="float">1</pixelRatio>
+						<rowOrdering type="string">down</rowOrdering>
+						<width type="uint">5120</width>
+					</storageFormat>
+					<userData type="dict">
+						<recordTimecode type="time" label="00:00:00+00">
+							<rate>24</rate>
+							<nbTicks>0</nbTicks>
+							<dropMode>NDF</dropMode>
+						</recordTimecode>
+					</userData>
+					<sampleRate>
+						<numerator>24000</numerator>
+						<denominator>1001</denominator>
+					</sampleRate>
+					<startTimecode type="time">
+						<rate>24</rate>
+						<nbTicks>0</nbTicks>
+						<dropMode>NDF</dropMode>
+					</startTimecode>
+					<spans>
+						<span>
+							<path encoding="file">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/media/renders/LOGIK-PROJEKT-DESKTOP_comp_v0003/LOGIK-PROJEKT-DESKTOP_comp_v0003.00001001.png</path>
+						</span>
+					</spans>
+				</feed>
+				<feed vuid="v0004" uid="80b3029c77fa4e43af6b6232796822c4">
+					<storageFormat type="format">
+						<type>video</type>
+						<channelsDepth type="uint">8</channelsDepth>
+						<channelsEncoding type="string">Integer</channelsEncoding>
+						<channelsEndianess type="string">Little Endian</channelsEndianess>
+						<colourSpace type="string">Rec.709 video</colourSpace>
+						<fieldDominance type="int">2</fieldDominance>
+						<height type="uint">2160</height>
+						<nbChannels type="uint">3</nbChannels>
+						<pixelLayout type="string">RGB</pixelLayout>
+						<pixelRatio type="float">1</pixelRatio>
+						<rowOrdering type="string">down</rowOrdering>
+						<width type="uint">5120</width>
+					</storageFormat>
+					<userData type="dict">
+						<recordTimecode type="time" label="00:00:00+00">
+							<rate>24</rate>
+							<nbTicks>0</nbTicks>
+							<dropMode>NDF</dropMode>
+						</recordTimecode>
+					</userData>
+					<sampleRate>
+						<numerator>24000</numerator>
+						<denominator>1001</denominator>
+					</sampleRate>
+					<startTimecode type="time">
+						<rate>24</rate>
+						<nbTicks>0</nbTicks>
+						<dropMode>NDF</dropMode>
+					</startTimecode>
+					<spans>
+						<span>
+							<path encoding="file">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/media/renders/LOGIK-PROJEKT-DESKTOP_comp_v0004/LOGIK-PROJEKT-DESKTOP_comp_v0004.00001001.png</path>
+						</span>
+					</spans>
+				</feed>
+			</feeds>
+		</track>
+	</tracks>
+	<versions currentVersion="v0004">
+		<version uid="v0001">
+			<name>v0001</name>
+			<creationDate>2024/11/09 11:44:15 AM</creationDate>
+			<userData type="dict">
+				<appName type="binary">AutodeskÂ® FlameÂ®</appName>
+				<appVersion type="string">2025.2.1</appVersion>
+				<batchSetup type="binary">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/batch_setups/LOGIK-PROJEKT-DESKTOP_comp_v0001_delta_pman.batch</batchSetup>
+				<module type="string">Batch</module>
+				<versionNumber type="uint64">1</versionNumber>
+			</userData>
+		</version>
+		<version uid="v0002">
+			<name>v0002</name>
+			<creationDate>2024/11/09 11:45:15 AM</creationDate>
+			<userData type="dict">
+				<appName type="binary">AutodeskÂ® FlameÂ®</appName>
+				<appVersion type="string">2025.2.1</appVersion>
+				<batchSetup type="binary">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/batch_setups/LOGIK-PROJEKT-DESKTOP_comp_v0002_delta_pman.batch</batchSetup>
+				<module type="string">Batch</module>
+				<versionNumber type="uint64">2</versionNumber>
+			</userData>
+		</version>
+		<version uid="v0003">
+			<name>v0003</name>
+			<creationDate>2024/11/09 11:48:14 AM</creationDate>
+			<userData type="dict">
+				<appName type="binary">AutodeskÂ® FlameÂ®</appName>
+				<appVersion type="string">2025.2.1</appVersion>
+				<batchSetup type="binary">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/batch_setups/LOGIK-PROJEKT-DESKTOP_comp_v0003_delta_pman.batch</batchSetup>
+				<module type="string">Batch</module>
+				<versionNumber type="uint64">3</versionNumber>
+			</userData>
+		</version>
+		<version uid="v0004">
+			<name>v0004</name>
+			<creationDate>2024/11/09 11:52:14 AM</creationDate>
+			<userData type="dict">
+				<appName type="binary">AutodeskÂ® FlameÂ®</appName>
+				<appVersion type="string">2025.2.1</appVersion>
+				<batchSetup type="binary">/PROJEKTS/1108_yankee_zulu/shots/LOGIK-PROJEKT-DESKTOP/batch_setups/LOGIK-PROJEKT-DESKTOP_comp_v0004_delta_pman.batch</batchSetup>
+				<module type="string">Batch</module>
+				<versionNumber type="uint64">4</versionNumber>
+			</userData>
+		</version>
+	</versions>
+</clip>

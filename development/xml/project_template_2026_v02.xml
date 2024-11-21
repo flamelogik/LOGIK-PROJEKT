@@ -1,0 +1,19 @@
+<Project>
+    <Workstation>juliet</Workstation>
+    <Name>openclip_2026_v05_2026_juliet</Name>
+    <Nickname>openclip_2026_v05</Nickname>
+    <ShotgunProjectName>openclip_2026_v05</ShotgunProjectName>
+    <!-- <ProjectDir>/opt/Autodesk/projekt/openclip_2026_v05_2026_juliet</ProjectDir> -->
+    <!-- <SetupDir>/opt/Autodesk/projekt/openclip_2026_v05_2026_juliet/flame/setups</SetupDir> -->
+    <MediaDir>/mnt/StorageMedia/framestore/openclip_2026_v05_2026_juliet/flame/media/cache</MediaDir>
+    <OCIOConfigFile>/opt/Autodesk/colour_mgmt/configs/flame_internal_use/syncolor_foundation_config/config.ocio</OCIOConfigFile>
+    <!-- <Partition>stonefs</Partition> -->
+    <FrameWidth>1920</FrameWidth>
+    <FrameHeight>1080</FrameHeight>
+    <FrameDepth>16-bit fp</FrameDepth>
+    <AspectRatio>1.7777778</AspectRatio>
+    <FieldDominance>PROGRESSIVE</FieldDominance>
+    <FrameRate>23.976 fps</FrameRate>
+    <DefaultStartFrame>1001</DefaultStartFrame>
+    <IntermediatesProfile>0:2</IntermediatesProfile>
+</Project>

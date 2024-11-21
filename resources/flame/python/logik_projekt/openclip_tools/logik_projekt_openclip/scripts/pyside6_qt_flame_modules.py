@@ -32,12 +32,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_flame_modules.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Created:          2024-01-19
-# Modified:         2024-10-30
+# Modified:         2024-11-16
 
 # ========================================================================== #
-# This section imports the necessary modules.
+# This section imports the necessary modules and adds the modules directory
 # ========================================================================== #
 
 # Standard library imports
@@ -49,6 +49,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import typing
 from typing import (
     Union,
@@ -67,7 +68,15 @@ from PySide6 import (
     QtGui
 )
 
-from pyside6_qt_flame_classes import (
+# Get the directory path of the currently executing script
+current_script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Append the 'modules' directory to sys.path to access modules
+modules_dir = os.path.join(current_script_dir, 'modules')
+sys.path.append(modules_dir)
+
+# from pyside6_qt_flame_classes import (
+from modules.pyside6_qt_flame_classes import (
     pyside6_qt_button,
     pyside6_qt_clickable_line_edit,
     pyside6_qt_label,
@@ -87,7 +96,8 @@ from pyside6_qt_flame_classes import (
     pyside6_qt_window
 )
 
-from pyside6_qt_flame_functions import (
+# from pyside6_qt_flame_functions import (
+from modules.pyside6_qt_flame_functions import (
     pyside6_qt_get_shot_name,
     pyside6_qt_print,
     pyside6_qt_get_flame_version,
@@ -97,8 +107,11 @@ from pyside6_qt_flame_functions import (
     pyside6_qt_refresh_hooks,
     pyside6_qt_open_in_finder,
     pyside6_qt_load_config,
-    pyside6_qt_save_config,
-    pyside6_qt_output_config_ui
+    pyside6_qt_save_config
+)
+
+from modules.functions.pyside6_qt_output_config_ui import (
+    pyside6_qt_output_config_ui as pyside6_qt_output_config_ui
 )
 
 # ========================================================================== #
@@ -106,7 +119,7 @@ from pyside6_qt_flame_functions import (
 # ========================================================================== #
 
 # # If this script is executed as main:
-# # Call functions for immediate execution
+# # Call scripts for immediate execution
 # if __name__ == "__main__":
 
 # ========================================================================== #
@@ -287,4 +300,8 @@ from pyside6_qt_flame_functions import (
 # version:               1.0.0
 # modified:              2024-10-30 - 07:35:27
 # comments:              Refactored PySide6 Output Node Config UI.
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-11-16 - 16:52:07
+# comments:              Fixed circular import statements
 # -------------------------------------------------------------------------- #

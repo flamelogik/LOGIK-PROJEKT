@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        logik_projekt_openclip_multichannel.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Created:          2024-01-19
-# Modified:         2024-10-30
+# Modified:         2024-11-16
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -77,7 +77,7 @@ sys.path.append(parent_dir)
 # This section imports the Qt UI classes.
 # ========================================================================== #
 
-from pyside6_qt_flame_classes import (
+from modules.pyside6_qt_flame_classes import (
     pyside6_qt_button,
     pyside6_qt_clickable_line_edit,
     pyside6_qt_label,
@@ -101,7 +101,7 @@ from pyside6_qt_flame_classes import (
 # This section imports the pyflame functions.
 # ========================================================================== #
 
-from pyside6_qt_flame_functions import (
+from modules.pyside6_qt_flame_functions import (
     pyside6_qt_get_flame_version,
     pyside6_qt_get_shot_name,
     pyside6_qt_file_browser,
@@ -111,8 +111,11 @@ from pyside6_qt_flame_functions import (
     pyside6_qt_resolve_shot_name,
     pyside6_qt_resolve_path_tokens,
     pyside6_qt_refresh_hooks,
-    pyside6_qt_save_config,
-    pyside6_qt_output_config_ui
+    pyside6_qt_save_config
+)
+
+from modules.functions.pyside6_qt_output_config_ui import (
+    pyside6_qt_output_config_ui as pyside6_qt_output_config_ui
 )
 
 # ========================================================================== #
@@ -878,4 +881,8 @@ def get_media_panel_custom_ui_actions():
 # version:               1.0.0
 # modified:              2024-10-30 - 07:35:26
 # comments:              Refactored PySide6 Output Node Config UI.
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-11-16 - 16:52:06
+# comments:              Fixed circular import statements
 # -------------------------------------------------------------------------- #

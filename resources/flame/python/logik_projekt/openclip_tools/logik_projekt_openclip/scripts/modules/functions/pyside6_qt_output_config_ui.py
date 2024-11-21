@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_output_config_ui.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Created:          2024-01-19
-# Modified:         2024-10-30
+# Modified:         2024-11-16
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -70,7 +70,7 @@ from typing import (
 current_script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Append parent_dir to sys.path to access modules relative to the script
-parent_dir = os.path.abspath(os.path.join(current_script_dir, ".."))
+parent_dir = os.path.abspath(os.path.join(current_script_dir, "..", ".."))
 sys.path.append(parent_dir)
 
 # ========================================================================== #
@@ -431,4 +431,8 @@ class pyside6_qt_output_config_ui:
 # version:               1.0.0
 # modified:              2024-10-30 - 07:35:27
 # comments:              Refactored PySide6 Output Node Config UI.
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-11-16 - 16:52:07
+# comments:              Fixed circular import statements
 # -------------------------------------------------------------------------- #

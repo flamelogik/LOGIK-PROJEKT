@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_get_shot_name.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Created:          2024-01-19
-# Modified:         2024-10-30
+# Modified:         2024-11-16
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -354,4 +354,8 @@ def pyside6_qt_get_shot_name(shot_name_source) -> str:
 # version:               1.0.0
 # modified:              2024-10-30 - 07:35:27
 # comments:              Refactored PySide6 Output Node Config UI.
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-11-16 - 16:52:07
+# comments:              Fixed circular import statements
 # -------------------------------------------------------------------------- #

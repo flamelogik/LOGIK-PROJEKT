@@ -32,68 +32,82 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_flame_classes.py
-# Version:          1.0.0
+# Version:          1.0.1
 # Created:          2024-01-19
-# Modified:         2024-10-30
+# Modified:         2024-11-16
+
+# ========================================================================== #
+# This section imports the necessary modules and adds the 'classes' directory
+# ========================================================================== #
+
+import os
+import sys
+
+# Get the directory path of the currently executing script
+current_script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Append the 'classes' directory to sys.path to access modules
+classes_dir = os.path.join(current_script_dir, 'classes')
+sys.path.append(classes_dir)
 
 # ========================================================================== #
 # This section imports the Qt UI classes.
 # ========================================================================== #
 
 # # EXAMPLE
-# from modules.classes.example import (
+# from classes.example import (
 #     example_function as new_function_name
 # )
 
-from modules.classes.pyside6_qt_button import (
+from classes.pyside6_qt_button import (
     pyside6_qt_button as pyside6_qt_button
 )
-from modules.classes.pyside6_qt_clickable_line_edit import (
+from classes.pyside6_qt_clickable_line_edit import (
     pyside6_qt_clickable_line_edit as pyside6_qt_clickable_line_edit
 )
-from modules.classes.pyside6_qt_label import (
+from classes.pyside6_qt_label import (
     pyside6_qt_label as pyside6_qt_label
 )
-from modules.classes.pyside6_qt_line_edit import (
+from classes.pyside6_qt_line_edit import (
     pyside6_qt_line_edit as pyside6_qt_line_edit
 )
-from modules.classes.pyside6_qt_list_widget import (
+from classes.pyside6_qt_list_widget import (
     pyside6_qt_list_widget as pyside6_qt_list_widget
 )
-from modules.classes.pyside6_qt_message_window import (
+from classes.pyside6_qt_message_window import (
     pyside6_qt_message_window as pyside6_qt_message_window
 )
-from modules.classes.pyside6_qt_password_window import (
+from classes.pyside6_qt_password_window import (
     pyside6_qt_password_window as pyside6_qt_password_window
 )
-from modules.classes.pyside6_qt_preset_window import (
+from classes.pyside6_qt_preset_window import (
     pyside6_qt_preset_window as pyside6_qt_preset_window
 )
-from modules.classes.pyside6_qt_progress_window import (
+from classes.pyside6_qt_progress_window import (
     pyside6_qt_progress_window as pyside6_qt_progress_window
 )
-from modules.classes.pyside6_qt_push_button import (
+from classes.pyside6_qt_push_button import (
     pyside6_qt_push_button as pyside6_qt_push_button
 )
-from modules.classes.pyside6_qt_push_button_menu import (
+from classes.pyside6_qt_push_button_menu import (
     pyside6_qt_push_button_menu as pyside6_qt_push_button_menu
 )
-from modules.classes.pyside6_qt_qdialog import (
+from classes.pyside6_qt_qdialog import (
     pyside6_qt_qdialog as pyside6_qt_qdialog
 )
-from modules.classes.pyside6_qt_slider import (
+from classes.pyside6_qt_slider import (
     pyside6_qt_slider as pyside6_qt_slider
 )
-from modules.classes.pyside6_qt_text_edit import (
+from classes.pyside6_qt_text_edit import (
     pyside6_qt_text_edit as pyside6_qt_text_edit
 )
-from modules.classes.pyside6_qt_token_push_button import (
+from classes.pyside6_qt_token_push_button import (
     pyside6_qt_token_push_button as pyside6_qt_token_push_button
 )
-from modules.classes.pyside6_qt_tree_widget import (
+from classes.pyside6_qt_tree_widget import (
     pyside6_qt_tree_widget as pyside6_qt_tree_widget
 )
-from modules.classes.pyside6_qt_window import (
+from classes.pyside6_qt_window import (
     pyside6_qt_window as pyside6_qt_window
 )
 
@@ -283,4 +297,8 @@ from modules.classes.pyside6_qt_window import (
 # version:               1.0.0
 # modified:              2024-10-30 - 07:35:27
 # comments:              Refactored PySide6 Output Node Config UI.
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-11-16 - 16:52:07
+# comments:              Fixed circular import statements
 # -------------------------------------------------------------------------- #
