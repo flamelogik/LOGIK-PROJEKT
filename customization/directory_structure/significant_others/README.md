@@ -1,0 +1,3 @@
+resources/cfg/projekt_configuration/tree/projekt/assets.json
+resources/cfg/projekt_configuration/tree/projekt/software.json
+resources/flame/python/logik_projekt/projekt_tools/logik_projekt_layout/config/library_template_04.json
