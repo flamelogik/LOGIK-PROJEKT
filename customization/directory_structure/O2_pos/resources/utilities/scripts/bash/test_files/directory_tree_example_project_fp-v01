@@ -1,0 +1,1766 @@
+FP_BRADESCO_ALTA_RENDA_J_0001687_2024
+├── ARCHIVE_MAQ_086
+├── BRADESCO_ALTA_RENDA_VIAGEM_FILME_A
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_010
+│   │       │   ├── batch
+│   │       │   │   └── vfx_010_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_020
+│   │       │   ├── batch
+│   │       │   │   └── vfx_020_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_030
+│   │       │   ├── batch
+│   │       │   │   └── vfx_030_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_040
+│   │       │   ├── batch
+│   │       │   │   └── vfx_040_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_050
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_050_v00
+│   │       │   │   ├── vfx_050_v01
+│   │       │   │   │   ├── action1.action.2
+│   │       │   │   │   ├── action1.action.5
+│   │       │   │   │   └── action1.action.6
+│   │       │   │   ├── vfx_050_v02
+│   │       │   │   │   ├── action1.action.2
+│   │       │   │   │   ├── action1.action.5
+│   │       │   │   │   └── action1.action.6
+│   │       │   │   ├── vfx_050_v03
+│   │       │   │   │   ├── action1.action.2
+│   │       │   │   │   ├── action1.action.5
+│   │       │   │   │   └── action1.action.6
+│   │       │   │   ├── vfx_050_v04
+│   │       │   │   │   ├── action1.action.2
+│   │       │   │   │   ├── action1.action.5
+│   │       │   │   │   └── action1.action.6
+│   │       │   │   ├── vfx_050_v05
+│   │       │   │   │   ├── action1.action.2
+│   │       │   │   │   ├── action1.action.5
+│   │       │   │   │   └── action1.action.6
+│   │       │   │   ├── vfx_050_v06
+│   │       │   │   │   ├── action1.action.2
+│   │       │   │   │   ├── action1.action.5
+│   │       │   │   │   └── action1.action.6
+│   │       │   │   ├── vfx_050_v07
+│   │       │   │   │   ├── action1.action.2
+│   │       │   │   │   ├── action1.action.5
+│   │       │   │   │   └── action1.action.6
+│   │       │   │   └── vfx_050_v08
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_060
+│   │       │   ├── batch
+│   │       │   │   └── vfx_060_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_070
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_070_Breakdown
+│   │       │   │   ├── vfx_070_MATTE_BORDAS_V_100
+│   │       │   │   ├── vfx_070_MATTE_BORDAS_V_102
+│   │       │   │   ├── vfx_070_MATTE_DECK_V_101
+│   │       │   │   ├── vfx_070_MATTE_v10
+│   │       │   │   ├── vfx_070_MATTE_V_100
+│   │       │   │   ├── vfx_070_stp_camera_v200
+│   │       │   │   ├── vfx_070_stp_camera_v201
+│   │       │   │   ├── vfx_070_v00
+│   │       │   │   ├── vfx_070_v01
+│   │       │   │   ├── vfx_070_v02
+│   │       │   │   ├── vfx_070_v03
+│   │       │   │   ├── vfx_070_v04
+│   │       │   │   ├── vfx_070_v05
+│   │       │   │   ├── vfx_070_v06
+│   │       │   │   ├── vfx_070_v07
+│   │       │   │   ├── vfx_070_v08
+│   │       │   │   └── vfx_070_v09
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_080
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_080_v00
+│   │       │   │   ├── vfx_080_v01
+│   │       │   │   ├── vfx_080_v02
+│   │       │   │   └── vfx_080_v03
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_090
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_090_v00
+│   │       │   │   └── vfx_090_v01
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_100
+│   │           ├── batch
+│   │           │   └── vfx_100_v00
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   ├── vfx_050
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   ├── v05
+│   │   │   ├── v06
+│   │   │   ├── v07
+│   │   │   └── v08
+│   │   ├── vfx_070
+│   │   │   ├── MATTE_BORDAS_V_100
+│   │   │   ├── MATTE_BORDAS_V_102
+│   │   │   ├── MATTE_DECK_V_101
+│   │   │   ├── MATTE_v10
+│   │   │   ├── MATTE_V_100
+│   │   │   ├── stp_camera_v200
+│   │   │   ├── stp_camera_v201
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   ├── v05
+│   │   │   ├── v06
+│   │   │   ├── v07
+│   │   │   ├── v08
+│   │   │   └── v09
+│   │   ├── vfx_080
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   └── v03
+│   │   └── vfx_090
+│   │       └── v01
+│   └── SOURCE_MEDIA
+│       ├── vfx_010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_030
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_040
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_050
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       └── pre_render
+│       ├── vfx_060
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_070
+│       │   ├── cena_maior 
+│       │   ├── flat
+│       │   │   ├── base
+│       │   │   │   └── v00
+│       │   │   └── offline
+│       │   │       └── v00
+│       │   └── NEAT
+│       ├── vfx_080
+│       │   ├── cena_maior
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_090
+│       │   ├── cena_maior
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_100
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               └── offline
+│                   └── v00
+├── COMPS_WIP_FABIO
+│   ├── Bat_BRA_AVIAO_001
+│   └── Bat_BRA_AVIAO_002
+│       ├── action1.action.4
+│       ├── action1.action.5
+│       └── mkeyer1
+├── FILME_BRADESCO_ALTA_RENDA_GASTRONOMIA_15S
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_1610
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_1610_v00
+│   │       │   │   └── vfx_1610_v01
+│   │       │   │       ├── action4.action.1
+│   │       │   │       ├── action4.action.5
+│   │       │   │       ├── action5.action.1
+│   │       │   │       ├── action5.action.2
+│   │       │   │       └── action5.action.3
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_1620
+│   │           ├── batch
+│   │           │   └── vfx_1620_v00
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   └── vfx_1610
+│   │       └── v01
+│   └── SOURCE_MEDIA
+│       ├── vfx_1610
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       ├── plate_01
+│       │       │   └── v00
+│       │       └── plate_02
+│       │           └── v00
+│       └── vfx_1620
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               └── offline
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_GASTRONOMIA_30S
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_3010
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_3010_v00
+│   │       │   │   ├── vfx_3010_v01
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_3010_v02
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_3010_v03
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_3010_v04
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v05
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v06
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v07
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v08
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v09
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v10
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v11
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v12
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v13
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v14
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v15
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v16
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   ├── vfx_3010_v17
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.3
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   └── action4.action.7
+│   │       │   │   └── vfx_3010_v18
+│   │       │   │       ├── action2.action.1
+│   │       │   │       ├── action2.action.2
+│   │       │   │       ├── action2.action.3
+│   │       │   │       ├── action4.action.1
+│   │       │   │       ├── action4.action.3
+│   │       │   │       ├── action4.action.5
+│   │       │   │       ├── action4.action.7
+│   │       │   │       └── action5.action.5
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_3020
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_3020_v00
+│   │       │   │   ├── vfx_3020_v01
+│   │       │   │   ├── vfx_3020_v02
+│   │       │   │   ├── vfx_3020_v03
+│   │       │   │   ├── vfx_3020_v04
+│   │       │   │   └── vfx_3020_v05
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_3030
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_3030_v00
+│   │       │   │   ├── vfx_3030_v01
+│   │       │   │   └── vfx_3030_v02
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_3040
+│   │           ├── batch
+│   │           │   ├── vfx_3040_v00
+│   │           │   ├── vfx_3040_v01
+│   │           │   │   ├── action2.action.1
+│   │           │   │   ├── action6.action.2
+│   │           │   │   └── action6.action.4
+│   │           │   ├── vfx_3040_v02
+│   │           │   │   ├── action2.action.1
+│   │           │   │   ├── action6.action.2
+│   │           │   │   └── action6.action.4
+│   │           │   ├── vfx_3040_v03
+│   │           │   │   ├── action2.action.1
+│   │           │   │   ├── action6.action.2
+│   │           │   │   └── action6.action.4
+│   │           │   └── vfx_3040_v04
+│   │           │       ├── action2.action.1
+│   │           │       ├── action6.action.2
+│   │           │       └── action6.action.4
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   ├── vfx_3010
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   ├── v05
+│   │   │   ├── v06
+│   │   │   ├── v07
+│   │   │   ├── v08
+│   │   │   ├── v09
+│   │   │   ├── v10
+│   │   │   ├── v11
+│   │   │   ├── v12
+│   │   │   ├── v13
+│   │   │   ├── v14
+│   │   │   ├── v15
+│   │   │   ├── v16
+│   │   │   ├── v17
+│   │   │   └── v18
+│   │   ├── vfx_3020
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   └── v05
+│   │   ├── vfx_3030
+│   │   │   ├── v01
+│   │   │   └── v02
+│   │   └── vfx_3040
+│   │       ├── v01
+│   │       ├── v02
+│   │       ├── v03
+│   │       └── v04
+│   └── SOURCE_MEDIA
+│       ├── vfx_3010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       ├── plate_01
+│       │       │   └── v00
+│       │       └── plate_02
+│       │           └── v00
+│       ├── vfx_3020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       └── plate_02
+│       │           └── v00
+│       ├── vfx_3030
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_3040
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   └── v00
+│               └── plate_02
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_GASTRONOMIA_30S_01A
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_3010
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_3010_v00
+│   │       │   │   ├── vfx_3010_v01
+│   │       │   │   ├── vfx_3010_v02
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   └── action2.action.2
+│   │       │   │   ├── vfx_3010_v03
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   └── action2.action.2
+│   │       │   │   ├── vfx_3010_v04
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   └── action2.action.2
+│   │       │   │   ├── vfx_3010_v05
+│   │       │   │   │   ├── action1.action.1
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action1.action.8
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_3010_v06
+│   │       │   │   │   ├── action1.action.1
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action1.action.8
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_3010_v07
+│   │       │   │   │   ├── action1.action.1
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action1.action.8
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_3010_v08
+│   │       │   │   │   ├── action1.action.1
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action1.action.8
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_3010_v09
+│   │       │   │   │   ├── action1.action.1
+│   │       │   │   │   ├── action1.action.3
+│   │       │   │   │   ├── action1.action.4
+│   │       │   │   │   ├── action1.action.6
+│   │       │   │   │   ├── action1.action.8
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action2.action.3
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   └── vfx_3010_v10
+│   │       │   │       ├── action1.action.1
+│   │       │   │       ├── action1.action.3
+│   │       │   │       ├── action1.action.4
+│   │       │   │       ├── action1.action.6
+│   │       │   │       ├── action1.action.8
+│   │       │   │       ├── action2.action.1
+│   │       │   │       ├── action2.action.2
+│   │       │   │       ├── action2.action.3
+│   │       │   │       ├── action4.action.1
+│   │       │   │       └── action4.action.5
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_3020
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_3020_v00
+│   │       │   │   ├── vfx_3020_v01
+│   │       │   │   ├── vfx_3020_v02
+│   │       │   │   ├── vfx_3020_v03
+│   │       │   │   ├── vfx_3020_v04
+│   │       │   │   ├── vfx_3020_v05
+│   │       │   │   ├── vfx_3020_v06
+│   │       │   │   └── vfx_3020_v07
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_3030
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_3030_v00
+│   │       │   │   └── vfx_3030_v01
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_3040
+│   │           ├── batch
+│   │           │   ├── vfx_3040_v00
+│   │           │   ├── vfx_3040_v01
+│   │           │   ├── vfx_3040_v02
+│   │           │   ├── vfx_3040_v03
+│   │           │   ├── vfx_3040_v04
+│   │           │   ├── vfx_3040_v05
+│   │           │   └── vfx_3040_v06
+│   │           │       ├── action6.action.2
+│   │           │       └── action6.action.4
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   ├── vfx_3010
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   ├── v05
+│   │   │   ├── v06
+│   │   │   ├── v07
+│   │   │   ├── v08
+│   │   │   ├── v09
+│   │   │   └── v10
+│   │   ├── vfx_3020
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   ├── v05
+│   │   │   ├── v06
+│   │   │   └── v07
+│   │   ├── vfx_3030
+│   │   │   └── v01
+│   │   └── vfx_3040
+│   │       ├── v01
+│   │       ├── v02
+│   │       ├── v03
+│   │       ├── v04
+│   │       ├── v05
+│   │       └── v06
+│   └── SOURCE_MEDIA
+│       ├── vfx_3010
+│       │   ├── flat
+│       │   │   ├── base
+│       │   │   │   └── v00
+│       │   │   ├── offline
+│       │   │   │   └── v00
+│       │   │   ├── plate_01
+│       │   │   │   └── v00
+│       │   │   └── plate_02
+│       │   │       └── v00
+│       │   └── neat
+│       ├── vfx_3020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── color
+│       │       ├── offline
+│       │       │   └── v00
+│       │       └── plate_01
+│       │           └── v00
+│       ├── vfx_3030
+│       │   └── flat
+│       │       ├── base
+│       │       │   ├── v00
+│       │       │   └── v01
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_3040
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   └── v00
+│               └── plate_01
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_GASTRONOMIA_30S_01B
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_4010
+│   │       │   ├── batch
+│   │       │   │   └── vfx_4010_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_4020
+│   │       │   ├── batch
+│   │       │   │   └── vfx_4020_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_4030
+│   │       │   ├── batch
+│   │       │   │   └── vfx_4030_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_4040
+│   │           ├── batch
+│   │           │   └── vfx_4040_v00
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   └── SOURCE_MEDIA
+│       ├── vfx_4010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       ├── plate_01
+│       │       │   └── v00
+│       │       └── plate_02
+│       │           └── v00
+│       ├── vfx_4020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       └── plate_02
+│       │           └── v00
+│       ├── vfx_4030
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_4040
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   └── v00
+│               └── plate_02
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_GASTRONOMIA_30S_EDIT_02A
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_4010
+│   │       │   ├── batch
+│   │       │   │   └── vfx_4010_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_4020
+│   │       │   ├── batch
+│   │       │   │   └── vfx_4020_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_4030
+│   │       │   ├── batch
+│   │       │   │   └── vfx_4030_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_4040
+│   │           ├── batch
+│   │           │   └── vfx_4040_v00
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   └── SOURCE_MEDIA
+│       ├── vfx_4010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       └── plate_01
+│       │           └── v00
+│       ├── vfx_4020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       └── plate_01
+│       │           └── v00
+│       ├── vfx_4030
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_4040
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   └── v00
+│               └── plate_01
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_GASTRONOMIA_30S_EDIT_02B
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_5010
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_5010_v00
+│   │       │   │   ├── vfx_5010_v01
+│   │       │   │   │   ├── action2.action.1
+│   │       │   │   │   ├── action2.action.2
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   └── action4.action.5
+│   │       │   │   ├── vfx_5010_v02
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   ├── action5.action.1
+│   │       │   │   │   ├── action5.action.2
+│   │       │   │   │   └── action5.action.3
+│   │       │   │   ├── vfx_5010_v03
+│   │       │   │   │   ├── action4.action.1
+│   │       │   │   │   ├── action4.action.5
+│   │       │   │   │   ├── action5.action.1
+│   │       │   │   │   ├── action5.action.2
+│   │       │   │   │   └── action5.action.3
+│   │       │   │   └── vfx_5010_v04
+│   │       │   │       ├── action4.action.1
+│   │       │   │       ├── action4.action.5
+│   │       │   │       ├── action5.action.1
+│   │       │   │       ├── action5.action.2
+│   │       │   │       └── action5.action.3
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_5020
+│   │       │   ├── batch
+│   │       │   │   └── vfx_5020_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_5030
+│   │       │   ├── batch
+│   │       │   │   └── vfx_5030_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_5040
+│   │           ├── batch
+│   │           │   ├── vfx_5040_v00
+│   │           │   ├── vfx_5040_v01
+│   │           │   │   ├── action6.action.2
+│   │           │   │   └── action6.action.4
+│   │           │   ├── vfx_5040_v02
+│   │           │   │   ├── action6.action.2
+│   │           │   │   └── action6.action.4
+│   │           │   └── vfx_5040_v03
+│   │           │       ├── action6.action.2
+│   │           │       └── action6.action.4
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   ├── vfx_5010
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   └── v04
+│   │   └── vfx_5040
+│   │       ├── v01
+│   │       ├── v02
+│   │       └── v03
+│   └── SOURCE_MEDIA
+│       ├── vfx_5010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       ├── plate_01
+│       │       │   └── v00
+│       │       └── plate_02
+│       │           └── v00
+│       ├── vfx_5020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       ├── offline
+│       │       │   └── v00
+│       │       └── plate_01
+│       │           └── v00
+│       ├── vfx_5030
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_5040
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   └── v00
+│               └── plate_01
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_SOCIAL_HOTEIS
+│   ├── PROJECT
+│   │   └── flame
+│   │       └── vfx_1020
+│   │           ├── batch
+│   │           │   ├── vfx_1020_v00
+│   │           │   ├── vfx_1020_v01
+│   │           │   │   └── action1.action.3
+│   │           │   ├── vfx_1020_v02
+│   │           │   │   ├── action1.action.3
+│   │           │   │   └── action1.action.4
+│   │           │   ├── vfx_1020_v03
+│   │           │   │   ├── action1.action.3
+│   │           │   │   ├── action1.action.4
+│   │           │   │   ├── action1.action.5
+│   │           │   │   ├── action3.action.1
+│   │           │   │   ├── action3.action.2
+│   │           │   │   ├── action3.action.3
+│   │           │   │   └── action3.action.4
+│   │           │   ├── vfx_1020_v04
+│   │           │   │   ├── action1.action.3
+│   │           │   │   ├── action1.action.4
+│   │           │   │   ├── action1.action.5
+│   │           │   │   ├── action3.action.1
+│   │           │   │   ├── action3.action.2
+│   │           │   │   ├── action3.action.3
+│   │           │   │   └── action3.action.4
+│   │           │   ├── vfx_1020_v05
+│   │           │   │   ├── action1.action.3
+│   │           │   │   ├── action1.action.4
+│   │           │   │   ├── action1.action.5
+│   │           │   │   ├── action3.action.1
+│   │           │   │   ├── action3.action.2
+│   │           │   │   ├── action3.action.3
+│   │           │   │   └── action3.action.4
+│   │           │   ├── vfx_1020_v06
+│   │           │   │   ├── action1.action.3
+│   │           │   │   ├── action1.action.4
+│   │           │   │   ├── action1.action.5
+│   │           │   │   ├── action3.action.1
+│   │           │   │   ├── action3.action.2
+│   │           │   │   ├── action3.action.3
+│   │           │   │   └── action3.action.4
+│   │           │   └── vfx_1020_v07
+│   │           │       ├── action1.action.3
+│   │           │       ├── action1.action.4
+│   │           │       ├── action1.action.5
+│   │           │       ├── action3.action.1
+│   │           │       ├── action3.action.2
+│   │           │       ├── action3.action.3
+│   │           │       └── action3.action.4
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   └── vfx_1020
+│   │       ├── v01
+│   │       ├── v02
+│   │       ├── v03
+│   │       ├── v04
+│   │       ├── v05
+│   │       ├── v06
+│   │       └── v07
+│   └── SOURCE_MEDIA
+│       └── vfx_1020
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   └── v00
+│               └── plate_01
+│                   ├── v00
+│                   └── v01
+├── FILME_BRADESCO_ALTA_RENDA_SOCIAL_MENU_PONTOS
+│   ├── CAMERA
+│   ├── PROJECT
+│   │   └── flame
+│   │       └── vfx_1010
+│   │           ├── batch
+│   │           │   ├── vfx_1010_filme_30_v19
+│   │           │   ├── vfx_1010_v00
+│   │           │   ├── vfx_1010_v01
+│   │           │   ├── vfx_1010_v02
+│   │           │   │   └── action2.action.3
+│   │           │   ├── vfx_1010_v03
+│   │           │   ├── vfx_1010_v04
+│   │           │   ├── vfx_1010_v05
+│   │           │   ├── vfx_1010_v06
+│   │           │   ├── vfx_1010_v07
+│   │           │   ├── vfx_1010_v08
+│   │           │   ├── vfx_1010_v09
+│   │           │   ├── vfx_1010_v10
+│   │           │   │   └── action1.action.7
+│   │           │   ├── vfx_1010_v11
+│   │           │   ├── vfx_1010_v12
+│   │           │   ├── vfx_1010_v13
+│   │           │   ├── vfx_1010_v14
+│   │           │   ├── vfx_1010_v15
+│   │           │   ├── vfx_1010_v16
+│   │           │   ├── vfx_1010_v17
+│   │           │   └── vfx_1010_v18
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   └── vfx_1010
+│   │       ├── filme_30_v19
+│   │       ├── v01
+│   │       ├── v02
+│   │       ├── v03
+│   │       ├── v04
+│   │       ├── v05
+│   │       ├── v06
+│   │       ├── v07
+│   │       ├── v08
+│   │       ├── v09
+│   │       ├── v10
+│   │       ├── v11
+│   │       ├── v12
+│   │       ├── v13
+│   │       ├── v14
+│   │       ├── v15
+│   │       ├── v16
+│   │       ├── v17
+│   │       └── v18
+│   └── SOURCE_MEDIA
+│       └── vfx_1010
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   ├── v00
+│               │   └── v01
+│               └── plate_01
+│                   ├── v00
+│                   └── v01
+├── FILME_BRADESCO_ALTA_RENDA_SOCIAL_PARCELAMENTO
+│   ├── PROJECT
+│   │   └── flame
+│   │       └── vfx_1030
+│   │           ├── batch
+│   │           │   ├── vfx_1030_v00
+│   │           │   ├── vfx_1030_v01
+│   │           │   ├── vfx_1030_v02
+│   │           │   ├── vfx_1030_v03
+│   │           │   ├── vfx_1030_v04
+│   │           │   ├── vfx_1030_v05
+│   │           │   │   └── action5.action.5
+│   │           │   ├── vfx_1030_v06
+│   │           │   │   └── action5.action.5
+│   │           │   ├── vfx_1030_v07
+│   │           │   │   └── action5.action.5
+│   │           │   ├── vfx_1030_v08
+│   │           │   │   └── action5.action.5
+│   │           │   ├── vfx_1030_v09
+│   │           │   │   └── action5.action.5
+│   │           │   └── vfx_1030_v10
+│   │           │       └── action5.action.5
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   └── vfx_1030
+│   │       ├── v01
+│   │       ├── v02
+│   │       ├── v03
+│   │       ├── v04
+│   │       ├── v05
+│   │       ├── v06
+│   │       ├── v07
+│   │       ├── v08
+│   │       ├── v09
+│   │       └── v10
+│   └── SOURCE_MEDIA
+│       └── vfx_1030
+│           ├── flat
+│           │   ├── base
+│           │   │   └── v00
+│           │   ├── grading
+│           │   └── offline
+│           │       └── v00
+│           └── neat
+├── FILME_BRADESCO_ALTA_RENDA_SOCIAL_VIP_CONCIERGE_V1_B
+│   ├── PROJECT
+│   │   └── flame
+│   │       └── vfx_7010
+│   │           ├── batch
+│   │           │   ├── vfx_7010_teste_ML_v00
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v00
+│   │           │   ├── vfx_7010_v01
+│   │           │   ├── vfx_7010_v02
+│   │           │   ├── vfx_7010_v03
+│   │           │   │   ├── action3.action.3
+│   │           │   │   ├── action3.action.5
+│   │           │   │   ├── action3.action.6
+│   │           │   │   └── action3.action.7
+│   │           │   ├── vfx_7010_v04
+│   │           │   │   ├── action3.action.3
+│   │           │   │   ├── action3.action.5
+│   │           │   │   ├── action3.action.6
+│   │           │   │   ├── action3.action.7
+│   │           │   │   └── action4.action.1
+│   │           │   ├── vfx_7010_v05
+│   │           │   │   ├── action3.action.3
+│   │           │   │   ├── action3.action.5
+│   │           │   │   ├── action3.action.6
+│   │           │   │   ├── action3.action.7
+│   │           │   │   └── action4.action.1
+│   │           │   ├── vfx_7010_v06
+│   │           │   │   ├── action3.action.3
+│   │           │   │   ├── action3.action.5
+│   │           │   │   ├── action3.action.6
+│   │           │   │   ├── action3.action.7
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action5.action.3
+│   │           │   │   ├── action6.action.3
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action7.action.1
+│   │           │   ├── vfx_7010_v07
+│   │           │   │   ├── action3.action.3
+│   │           │   │   ├── action3.action.5
+│   │           │   │   ├── action3.action.6
+│   │           │   │   ├── action3.action.7
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action5.action.3
+│   │           │   │   ├── action6.action.3
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action7.action.1
+│   │           │   ├── vfx_7010_v08
+│   │           │   │   ├── action3.action.3
+│   │           │   │   ├── action3.action.5
+│   │           │   │   ├── action3.action.6
+│   │           │   │   ├── action3.action.7
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action5.action.3
+│   │           │   │   ├── action6.action.3
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v09
+│   │           │   │   ├── action3.action.3
+│   │           │   │   ├── action3.action.5
+│   │           │   │   ├── action3.action.6
+│   │           │   │   ├── action3.action.7
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action5.action.3
+│   │           │   │   ├── action6.action.3
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v10
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.3
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v11
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.3
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v12
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v13
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v14
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v15
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v16
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   ├── vfx_7010_v17
+│   │           │   │   ├── action4.action.1
+│   │           │   │   ├── action6.action.5
+│   │           │   │   ├── action6.action.6
+│   │           │   │   ├── action6.action.7
+│   │           │   │   └── action6.action.8
+│   │           │   └── vfx_7010_v18
+│   │           │       ├── action4.action.1
+│   │           │       ├── action6.action.5
+│   │           │       ├── action6.action.6
+│   │           │       ├── action6.action.7
+│   │           │       └── action6.action.8
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   └── vfx_7010
+│   │       ├── v01
+│   │       ├── v02
+│   │       ├── v03
+│   │       ├── v04
+│   │       ├── v05
+│   │       ├── v06
+│   │       ├── v07
+│   │       ├── v08
+│   │       ├── v09
+│   │       ├── v10
+│   │       ├── v11
+│   │       ├── v12
+│   │       ├── v13
+│   │       ├── v14
+│   │       ├── v15
+│   │       ├── v16
+│   │       ├── v17
+│   │       └── v18
+│   └── SOURCE_MEDIA
+│       └── vfx_7010
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               ├── offline
+│               │   └── v00
+│               ├── plate_01
+│               │   └── v00
+│               └── plate_02
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_VIAGEM_15s
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_1510
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1510_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_1520
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1520_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_1530
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1530_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_1540
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1540_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_1550
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1550_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_1560
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1560_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_1570
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1570_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_1580
+│   │       │   ├── batch
+│   │       │   │   └── vfx_1580_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_1590
+│   │           ├── batch
+│   │           │   └── vfx_1590_v00
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   └── SOURCE_MEDIA
+│       ├── vfx_1510
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_1520
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_1530
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_1540
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_1550
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_1560
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_1570
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_1580
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_1590
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               └── offline
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_VIAGEM_30s
+│   ├── PROJECT
+│   │   ├── flame
+│   │   │   ├── vfx_010
+│   │   │   │   ├── batch
+│   │   │   │   │   ├── vfx_010_v00
+│   │   │   │   │   ├── vfx_010_v01
+│   │   │   │   │   └── vfx_010_v02
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_020
+│   │   │   │   ├── batch
+│   │   │   │   │   └── vfx_020_v00
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_030
+│   │   │   │   ├── batch
+│   │   │   │   │   └── vfx_030_v00
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_040
+│   │   │   │   ├── batch
+│   │   │   │   │   ├── vfx_040_let_v101
+│   │   │   │   │   ├── vfx_040_let_v102
+│   │   │   │   │   ├── vfx_040_let_v103
+│   │   │   │   │   ├── vfx_040_v00
+│   │   │   │   │   ├── vfx_040_v01
+│   │   │   │   │   ├── vfx_040_v02
+│   │   │   │   │   ├── vfx_040_v03
+│   │   │   │   │   ├── vfx_040_v04
+│   │   │   │   │   └── vfx_040_v05
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_050
+│   │   │   │   ├── batch
+│   │   │   │   │   ├── vfx_050_v00
+│   │   │   │   │   ├── vfx_050_v01
+│   │   │   │   │   ├── vfx_050_v02
+│   │   │   │   │   ├── vfx_050_v03
+│   │   │   │   │   ├── vfx_050_v04
+│   │   │   │   │   ├── vfx_050_v05
+│   │   │   │   │   ├── vfx_050_v06
+│   │   │   │   │   └── vfx_050_v07
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_051
+│   │   │   │   ├── batch
+│   │   │   │   │   ├── vfx_051_v00
+│   │   │   │   │   ├── vfx_051_v01
+│   │   │   │   │   ├── vfx_051_v02
+│   │   │   │   │   ├── vfx_051_v03
+│   │   │   │   │   └── vfx_051_v04
+│   │   │   │   │       └── mkeyer1
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_060
+│   │   │   │   ├── batch
+│   │   │   │   │   ├── vfx_060_v00
+│   │   │   │   │   ├── vfx_060_v01
+│   │   │   │   │   └── vfx_060_v02
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_070
+│   │   │   │   ├── batch
+│   │   │   │   │   └── vfx_070_v00
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_080
+│   │   │   │   ├── batch
+│   │   │   │   │   └── vfx_080_v00
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_081
+│   │   │   │   ├── batch
+│   │   │   │   │   ├── vfx_081_v00
+│   │   │   │   │   └── vfx_081_v01
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   ├── vfx_090
+│   │   │   │   ├── batch
+│   │   │   │   │   ├── vfx_090_v00
+│   │   │   │   │   ├── vfx_090_v01
+│   │   │   │   │   ├── vfx_090_v02
+│   │   │   │   │   ├── vfx_090_v03
+│   │   │   │   │   │   └── action4.action.6
+│   │   │   │   │   ├── vfx_090_v04
+│   │   │   │   │   │   └── action4.action.6
+│   │   │   │   │   ├── vfx_090_v05
+│   │   │   │   │   │   └── action4.action.6
+│   │   │   │   │   └── vfx_090_v06
+│   │   │   │   │       └── action4.action.6
+│   │   │   │   ├── openclip_render
+│   │   │   │   └── openclip_source
+│   │   │   └── vfx_100
+│   │   │       ├── batch
+│   │   │       │   └── vfx_100_v00
+│   │   │       ├── openclip_render
+│   │   │       └── openclip_source
+│   │   └── tracking
+│   │       └── vfx_060
+│   ├── RENDER
+│   │   ├── vfx_010
+│   │   │   ├── v01
+│   │   │   └── v02
+│   │   ├── vfx_040
+│   │   │   ├── let_v101
+│   │   │   ├── let_v102
+│   │   │   ├── let_v103
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   └── v05
+│   │   ├── vfx_050
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   ├── v04
+│   │   │   ├── v05
+│   │   │   ├── v06
+│   │   │   └── v07
+│   │   ├── vfx_051
+│   │   │   ├── v01
+│   │   │   ├── v02
+│   │   │   ├── v03
+│   │   │   └── v04
+│   │   ├── vfx_060
+│   │   │   ├── v01
+│   │   │   └── v02
+│   │   ├── vfx_081
+│   │   │   └── v01
+│   │   └── vfx_090
+│   │       ├── v01
+│   │       ├── v02
+│   │       ├── v03
+│   │       ├── v04
+│   │       ├── v05
+│   │       └── v06
+│   └── SOURCE_MEDIA
+│       ├── 081
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_030
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_040
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_050
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_051
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_060
+│       │   ├── flat
+│       │   │   ├── base
+│       │   │   │   └── v00
+│       │   │   └── offline
+│       │   │       └── v00
+│       │   ├── neat
+│       │   └── roto
+│       ├── vfx_070
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_080
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_081
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_090
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_100
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               └── offline
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_VIAGEM_30S_EDIT_03A
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_2010
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2010_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2020
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2020_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2030
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2030_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2040
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2040_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2050
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2050_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2060
+│   │       │   ├── batch
+│   │       │   │   ├── vfx_2060_op_proj_v101
+│   │       │   │   ├── vfx_2060_op_proj_v102
+│   │       │   │   ├── vfx_2060_op_proj_v103
+│   │       │   │   ├── vfx_2060_v00
+│   │       │   │   ├── vfx_2060_v01
+│   │       │   │   │   └── action2.action.1
+│   │       │   │   ├── vfx_2060_v02
+│   │       │   │   │   └── action2.action.1
+│   │       │   │   └── vfx_2060_v03
+│   │       │   │       ├── action2.action.1
+│   │       │   │       └── action2.action.2
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2070
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2070_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2080
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2080_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_2090
+│   │       │   ├── batch
+│   │       │   │   └── vfx_2090_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       ├── vfx_3000
+│   │       │   ├── batch
+│   │       │   │   └── vfx_3000_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_3010
+│   │           ├── batch
+│   │           │   └── vfx_3010_v00
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   ├── RENDER
+│   │   └── vfx_2060
+│   │       ├── op_proj_v101
+│   │       ├── op_proj_v102
+│   │       ├── op_proj_v103
+│   │       ├── v01
+│   │       ├── v02
+│   │       └── v03
+│   └── SOURCE_MEDIA
+│       ├── vfx_2010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_2020
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_2030
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_2040
+│       │   ├── cena_sem_tw
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_2050
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_2060
+│       │   ├── flat
+│       │   │   ├── base
+│       │   │   │   └── v00
+│       │   │   └── offline
+│       │   │       └── v00
+│       │   └── prerender
+│       ├── vfx_2070
+│       │   ├── cena_sem_tw
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_2080
+│       │   ├── cena_sem_tw
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_2090
+│       │   ├── cena_sem_tw
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       ├── vfx_3000
+│       │   ├── cena_sem_tw
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_3010
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               └── offline
+│                   └── v00
+├── FILME_BRADESCO_ALTA_RENDA_VIAGEM_5s
+│   ├── PROJECT
+│   │   └── flame
+│   │       ├── vfx_5010
+│   │       │   ├── batch
+│   │       │   │   └── vfx_5010_v00
+│   │       │   ├── openclip_render
+│   │       │   └── openclip_source
+│   │       └── vfx_5020
+│   │           ├── batch
+│   │           │   └── vfx_5020_v00
+│   │           ├── openclip_render
+│   │           └── openclip_source
+│   └── SOURCE_MEDIA
+│       ├── vfx_5010
+│       │   └── flat
+│       │       ├── base
+│       │       │   └── v00
+│       │       └── offline
+│       │           └── v00
+│       └── vfx_5020
+│           └── flat
+│               ├── base
+│               │   └── v00
+│               └── offline
+│                   └── v00
+└── FILME_BRADESCO_ALTA_RENDA_VIAGEM_6s
+    ├── PROJECT
+    │   └── flame
+    │       ├── vfx_6010
+    │       │   ├── batch
+    │       │   │   ├── vfx_6010_v00
+    │       │   │   ├── vfx_6010_v01
+    │       │   │   └── vfx_6010_v02
+    │       │   ├── openclip_render
+    │       │   └── openclip_source
+    │       └── vfx_6020
+    │           ├── batch
+    │           │   └── vfx_6020_v00
+    │           ├── openclip_render
+    │           └── openclip_source
+    ├── RENDER
+    │   └── vfx_6010
+    │       ├── v01
+    │       └── v02
+    └── SOURCE_MEDIA
+        ├── vfx_6010
+        │   └── flat
+        │       ├── base
+        │       │   └── v00
+        │       └── offline
+        │           └── v00
+        └── vfx_6020
+            └── flat
+                ├── base
+                │   └── v00
+                └── offline
+                    └── v00
+
+1763 directories

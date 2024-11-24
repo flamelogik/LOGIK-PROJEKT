@@ -1,0 +1,40 @@
+{
+    "item_00": {
+        "object_name": "trabalho_em_andamento_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'trabalho_em_andamento'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Blue\")",
+        "link": "True",
+        "dir_name": "trabalho_em_andamento",
+        "filesystem_type": "folder",
+        "flame_type": "library",
+        "parent_dir": "/{projekts_dir}/{projekt_dir}",
+        "path": "/{projekts_dir}/{projekt_dir}/trabalho_em_andamento",
+        "bookmark_name": "trabalho_em_andamento",
+        "bookmark_type": "folder",
+        "bookmark_parent": "projekt directories",
+        "bookmark_visibility": "Global",
+        "children": {
+            "item_01": {
+                "object_name": "postagens_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "trabalho_em_andamento_library",
+                "display_name": "'postagens'",
+                "object_type": "folder",
+                "object_color": "",
+                "link": "True",
+                "dir_name": "postagens",
+                "filesystem_type": "folder",
+                "flame_type": "folder",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/trabalho_em_andamento",
+                "path": "/{projekts_dir}/{projekt_dir}/trabalho_em_andamento/postagens",
+                "bookmark_name": "postagens",
+                "bookmark_type": "bookmark",
+                "bookmark_parent": "trabalho_em_andamento",
+                "bookmark_visibility": "Global"
+            }
+        }
+    }
+}
