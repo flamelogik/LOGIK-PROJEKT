@@ -1,0 +1,52 @@
+{
+    "item_00": {
+        "object_name": "mestres_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'mestres'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Blue\")",
+        "children": {
+            "item_01": {
+                "object_name": "mestres_final_folder",
+                "process_type": "create_or_validate_object",
+                "parent_object": "mestres_library",
+                "display_name": "'mestres_final'",
+                "object_type": "folder",
+                "object_color": "object_colors.get(\"Dark Red\")"
+            },
+            "item_02": {
+                "object_name": "mestres_final_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "mestres_final_folder",
+                "display_name": "'mestres_final'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Red\")"
+            },
+            "item_03": {
+                "object_name": "versiones_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "mestres_final_folder",
+                "display_name": "'versiones'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Green\")"
+            },
+            "item_04": {
+                "object_name": "slates_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "mestres_final_folder",
+                "display_name": "'slates'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Blue\")"
+            },
+            "item_05": {
+                "object_name": "mestres_agendados_reel",
+                "process_type": "create_or_validate_object",
+                "parent_object": "mestres_final_folder",
+                "display_name": "'mestres_agendados'",
+                "object_type": "reel",
+                "object_color": "object_colors.get(\"Dark Gold\")"
+            }
+        }
+    }
+}

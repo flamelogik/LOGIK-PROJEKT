@@ -1,0 +1,305 @@
+assets: ativos
+
+backup: backup (commonly used as is)
+
+cfg: cfg (abbreviation likely stays the same)
+
+docs: documentos
+
+editorial: editorial
+
+flame: Flame (proper noun, remains the same)
+
+masters: mestres
+
+reference: referência
+
+scenes: cenas
+
+shots: tomadas
+
+software: software (commonly used as is)
+
+tmp: tmp (abbreviation likely stays the same)
+
+utilities: utilitários
+
+version: versão
+
+work_in_progress: trabalho_em_andamento
+
+
+
+
+
+
+
+
+
+
+
+artwork cgi footage footage_raw images matchmoving paint roto subtitles titles video audio font footage_graded graphics legal miscellaneous photoshop slates supers tracking
+Here are the translations of these terms into Brazilian Portuguese:
+
+artwork: obra de arte
+
+cgi: CGI (commonly used as is)
+
+footage: filmagem
+
+footage_raw: filmagem_bruta
+
+images: imagens
+
+matchmoving: matchmoving (commonly used as is)
+
+paint: pintura
+
+roto: rotoscopia
+
+subtitles: legendas
+
+titles: títulos
+
+video: vídeo
+
+audio: áudio
+
+font: fonte
+
+footage_graded: filmagem_graduada
+
+graphics: gráficos
+
+legal: legal (jurídico, if referring to legal matters)
+
+miscellaneous: diversos
+
+photoshop: Photoshop (proper noun, remains the same)
+
+slates: claquetes
+
+supers: supers (commonly used as is)
+
+tracking: rastreamento
+
+
+
+
+
+
+backup_scripts
+The term "backup_scripts" can be translated into Brazilian Portuguese as "scripts_de_backup".
+
+
+
+
+
+
+
+
+log pref template workstation
+Here are the translations for those terms into Brazilian Portuguese:
+
+log: log (often used as is, but you could also use "registro")
+
+pref: preferências
+
+template: modelo
+
+workstation: estação de trabalho
+
+
+
+
+
+
+
+
+
+
+├── agreements (acordos)
+│   ├── employment (emprego)
+│   ├── memoranda_of_understanding (memorandos_de_entendimento)
+│   ├── non_disclosure (não_divulgação)
+│   └── service (serviço)
+├── briefs (briefings)
+│   ├── design_briefs (briefings_de_design)
+│   ├── marketing_briefs (briefings_de_marketing)
+│   └── projekt_briefs (briefings_de_projeto)
+├── contracts (contratos)
+│   ├── client_contracts (contratos_de_clientes)
+│   ├── lease_contracts (contratos_de_aluguel)
+│   └── vendor_contracts (contratos_de_fornecedores)
+├── designs (designs)
+│   ├── mockups (mockups)
+│   ├── specifications (especificações)
+│   └── wireframes (wireframes)
+├── estimates (estimativas)
+│   ├── cost_estimates (estimativas_de_custo)
+│   ├── projekt_estimates (estimativas_de_projeto)
+│   └── time_estimates (estimativas_de_tempo)
+├── financial (financeiro)
+│   ├── budgets (orçamentos)
+│   ├── invoices (faturas)
+│   ├── reports (relatórios)
+│   └── statements (declarações)
+├── guidelines (diretrizes)
+│   ├── branding (branding)
+│   ├── compliance (conformidade)
+│   ├── localization (localização)
+│   └── styleguide (guia_de_estilo)
+├── handbooks (manuais)
+│   ├── employee (funcionário)
+│   ├── policy (política)
+│   └── training (treinamento)
+├── invoices (faturas)
+│   ├── client (cliente)
+│   ├── paid (pagas)
+│   ├── unpaid (não_pagadas)
+│   └── vendor (fornecedor)
+├── job_description (descrição_de_trabalho)
+│   ├── administrative_roles (funções_administrativas)
+│   ├── management_roles (funções_de_gestão)
+│   └── technical_roles (funções_técnicas)
+├── knowledge_base (base_de_conhecimento)
+│   ├── faqs (perguntas_frequentes)
+│   ├── how_to_guides (guias_de_como_fazer)
+│   └── troubleshooting (solução_de_problemas)
+├── licenses (licenças)
+│   ├── product_licenses (licenças_de_produto)
+│   ├── service_licenses (licenças_de_serviço)
+│   └── software_licenses (licenças_de_software)
+├── memoranda (memorandos)
+│   ├── external_memos (memorandos_externos)
+│   ├── internal_memos (memorandos_internos)
+│   └── meeting_memos (memorandos_de_reunião)
+├── non_disclosure (não_divulgação)
+│   ├── client_ndas (ndas_de_cliente)
+│   ├── employee_ndas (ndas_de_funcionário)
+│   └── vendor_ndas (ndas_de_fornecedor)
+├── org_charts (organogramas)
+│   ├── company_charts (organogramas_da_empresa)
+│   ├── department_charts (organogramas_do_departamento)
+│   └── team_charts (organogramas_da_equipe)
+├── policies (políticas)
+│   ├── hr_policies (políticas_de_rh)
+│   ├── it_policies (políticas_de_ti)
+│   └── operational_policies (políticas_operacionais)
+├── quotations (cotações)
+│   ├── client_quotations (cotações_de_clientes)
+│   ├── service_quotations (cotações_de_serviço)
+│   └── vendor_quotations (cotações_de_fornecedores)
+├── reports (relatórios)
+│   ├── annual_reports (relatórios_anuais)
+│   ├── projekt_reports (relatórios_de_projetos)
+│   └── quarterly_reports (relatórios_trimestrais)
+├── schedules (agendas)
+│   ├── meeting_schedules (agendas_de_reunião)
+│   ├── projekt_schedules (agendas_de_projetos)
+│   └── training_schedules (agendas_de_treinamento)
+├── technical (técnico)
+│   ├── technical_manuals (manuais_técnicos)
+│   ├── technical_reports (relatórios_técnicos)
+│   └── technical_specifications (especificações_técnicas)
+├── user_guides (guias_do_usuário)
+│   ├── product_user_guides (guias_do_usuário_do_produto)
+│   ├── service_user_guides (guias_do_usuário_do_serviço)
+│   └── software_user_guides (guias_do_usuário_do_software)
+├── vendor_list (lista_de_fornecedores)
+│   ├── approved_vendors (fornecedores_aprovados)
+│   ├── blacklisted_vendors (fornecedores_na_lista_negra)
+│   └── preferred_vendors (fornecedores_preferidos)
+├── workflows (fluxos_de_trabalho)
+│   ├── approval_workflows (fluxos_de_trabalho_de_aprovação)
+│   ├── operational_workflows (fluxos_de_trabalho_operacionais)
+│   └── process_workflows (fluxos_de_trabalho_de_processos)
+└── xml (xml)
+    ├── xml_templates (modelos_xml)
+    └── xslt_templates (modelos_xslt)
+
+
+
+
+
+
+
+
+
+
+
+archives iterations setups
+Here are the translations for those terms into Brazilian Portuguese:
+
+archives: arquivos
+
+iterations: iterações
+
+setups: configurações
+
+
+
+
+
+
+
+
+
+
+
+
+master_edits slated_masters versioned_masters
+Here are the translations for those terms into Brazilian Portuguese:
+
+master_edits: edições_mestre
+
+slated_masters: mestres_agendados
+
+versioned_masters: mestres_versionados
+
+
+
+
+
+
+
+
+
+
+
+
+reference_images reference_movies reference_style_guide
+Here are the translations for those terms into Brazilian Portuguese:
+
+reference_images: imagens_de_referência
+
+reference_movies: filmes_de_referência
+
+reference_style_guide: guia_de_estilo_de_referência
+
+
+
+
+
+
+
+
+
+
+
+
+work_in_progress postings rotoscope
+Here are the translations for those terms into Brazilian Portuguese:
+
+work_in_progress: trabalho_em_andamento
+
+postings: postagens
+
+rotoscope: rotoscopia
+
+
+
+
+
+
+
