@@ -13,21 +13,21 @@ class ProjectDirectoryCreatorGUI:
     def __init__(self):
         self.separator_hash = f"# {'-' * 75} #"
         self.base_directory = "/mnt/Publicidade/ADV"
-        
+
         # Create main window
         self.root = tk.Tk()
         self.root.title("Create Project Directories")
-        self.root.geometry("600x700")
-        
+        self.root.geometry("960x540")
+
         # Style configuration
         self.style = ttk.Style()
         self.style.configure('Title.TLabel', font=('Arial', 16, 'bold'))
         self.style.configure('Header.TLabel', font=('Arial', 12, 'bold'))
         self.style.configure('Info.TLabel', font=('Arial', 10))
-        
+
         self.creating_directories = False
         self.create_gui()
-        
+
     def create_gui(self):
         """Create the GUI elements"""
         # Main container with padding
@@ -35,85 +35,85 @@ class ProjectDirectoryCreatorGUI:
         main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
         self.root.columnconfigure(0, weight=1)
         self.root.rowconfigure(0, weight=1)
-        
+
         # Title
         title_label = ttk.Label(main_frame, text="Create Project Directories", style='Title.TLabel')
         title_label.grid(row=0, column=0, columnspan=2, pady=(0, 20))
-        
+
         # Base directory display
         base_dir_label = ttk.Label(main_frame, text="Base Directory:", style='Header.TLabel')
         base_dir_label.grid(row=1, column=0, sticky=tk.W, pady=(0, 5))
         base_dir_value = ttk.Label(main_frame, text=self.base_directory, style='Info.TLabel')
         base_dir_value.grid(row=2, column=0, columnspan=2, sticky=tk.W, pady=(0, 20))
-        
+
         # Input fields
         input_frame = ttk.LabelFrame(main_frame, text="Project Information", padding="10")
         input_frame.grid(row=3, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 20))
-        
+
         # Client Name
-        ttk.Label(input_frame, text="Client Name:").grid(row=0, column=0, sticky=tk.W, pady=5)
+        ttk.Label(input_frame, text="Client:").grid(row=0, column=0, sticky=tk.W, pady=5)
         self.client_name_var = tk.StringVar()
-        self.client_name_entry = ttk.Entry(input_frame, textvariable=self.client_name_var, width=40)
+        self.client_name_entry = ttk.Entry(input_frame, textvariable=self.client_name_var, width=90)
         self.client_name_entry.grid(row=0, column=1, sticky=tk.W, pady=5)
-        
+
         # Campaign Name
-        ttk.Label(input_frame, text="Campaign Name:").grid(row=1, column=0, sticky=tk.W, pady=5)
+        ttk.Label(input_frame, text="Campaign:").grid(row=1, column=0, sticky=tk.W, pady=5)
         self.campaign_name_var = tk.StringVar()
-        self.campaign_name_entry = ttk.Entry(input_frame, textvariable=self.campaign_name_var, width=40)
+        self.campaign_name_entry = ttk.Entry(input_frame, textvariable=self.campaign_name_var, width=90)
         self.campaign_name_entry.grid(row=1, column=1, sticky=tk.W, pady=5)
-        
+
         # Project ID
         ttk.Label(input_frame, text="Project ID:").grid(row=2, column=0, sticky=tk.W, pady=5)
         self.project_id_var = tk.StringVar()
-        self.project_id_entry = ttk.Entry(input_frame, textvariable=self.project_id_var, width=40)
+        self.project_id_entry = ttk.Entry(input_frame, textvariable=self.project_id_var, width=90)
         self.project_id_entry.grid(row=2, column=1, sticky=tk.W, pady=5)
-        
+
         # Preview Frame
         preview_frame = ttk.LabelFrame(main_frame, text="Preview", padding="10")
         preview_frame.grid(row=4, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 20))
-        
+
         # Preview Label
-        self.preview_var = tk.StringVar(value="Final Project Name: ")
-        self.preview_label = ttk.Label(preview_frame, textvariable=self.preview_var, wraplength=500)
+        self.preview_var = tk.StringVar(value="Project Name: ")
+        self.preview_label = ttk.Label(preview_frame, textvariable=self.preview_var, wraplength=720)
         self.preview_label.grid(row=0, column=0, sticky=tk.W)
-        
-        # Progress Frame
-        self.progress_frame = ttk.LabelFrame(main_frame, text="Progress", padding="10")
-        self.progress_frame.grid(row=5, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 20))
-        
-        # Progress Bar
-        self.progress_var = tk.DoubleVar()
-        self.progress_bar = ttk.Progressbar(self.progress_frame, variable=self.progress_var, maximum=100)
-        self.progress_bar.grid(row=0, column=0, sticky=(tk.W, tk.E), padx=5, pady=5)
-        
-        # Progress Label
-        self.progress_label = ttk.Label(self.progress_frame, text="")
-        self.progress_label.grid(row=1, column=0, sticky=(tk.W, tk.E), padx=5, pady=5)
-        
+
+        # # Progress Frame
+        # self.progress_frame = ttk.LabelFrame(main_frame, text="Progress", padding="10")
+        # self.progress_frame.grid(row=5, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 20))
+
+        # # Progress Bar
+        # self.progress_var = tk.DoubleVar()
+        # self.progress_bar = ttk.Progressbar(self.progress_frame, variable=self.progress_var, maximum=90)
+        # self.progress_bar.grid(row=0, column=0, sticky=(tk.W, tk.E), padx=5, pady=5)
+
+        # # Progress Label
+        # self.progress_label = ttk.Label(self.progress_frame, text="")
+        # self.progress_label.grid(row=1, column=0, sticky=(tk.W, tk.E), padx=5, pady=5)
+
         # Buttons
         button_frame = ttk.Frame(main_frame)
         button_frame.grid(row=6, column=0, columnspan=2, sticky=(tk.W, tk.E))
         button_frame.columnconfigure(0, weight=1)
         button_frame.columnconfigure(1, weight=1)
         button_frame.columnconfigure(2, weight=1)
-        
+
         # Preview Button
         self.preview_btn = ttk.Button(button_frame, text="Update Preview", command=self.update_preview)
         self.preview_btn.grid(row=0, column=0, padx=5)
-        
+
         # Create Button
         self.create_btn = ttk.Button(button_frame, text="Create Directories", command=self.create_directories)
         self.create_btn.grid(row=0, column=1, padx=5)
-        
+
         # Exit Button
         self.exit_btn = ttk.Button(button_frame, text="Quit", command=self.quit_application)
         self.exit_btn.grid(row=0, column=2, padx=5)
-        
+
         # Bind events
         self.client_name_var.trace('w', lambda *args: self.update_preview())
         self.campaign_name_var.trace('w', lambda *args: self.update_preview())
         self.project_id_var.trace('w', lambda *args: self.update_preview())
-        
+
     def string_clean(self, input_str: str) -> str:
         """Clean and format input string according to project naming conventions."""
         result = input_str.strip()
@@ -122,19 +122,19 @@ class ProjectDirectoryCreatorGUI:
         result = result.strip('_')
         result = re.sub(r'_+', '_', result)
         return result
-        
+
     def update_preview(self, *args):
         """Update the preview of the project name"""
         client = self.string_clean(self.client_name_var.get())
         campaign = self.string_clean(self.campaign_name_var.get())
         project_id = self.string_clean(self.project_id_var.get())
-        
+
         if client and campaign and project_id:
             project_name = f"{client}_{campaign}_{project_id}"
-            self.preview_var.set(f"Final Project Name: {project_name}")
+            self.preview_var.set(f"Project Name: {project_name}")
         else:
-            self.preview_var.set("Final Project Name: (Please fill in all fields)")
-    
+            self.preview_var.set("Project Name: (Please fill in all fields)")
+
     def validate_inputs(self) -> bool:
         """Validate all input fields"""
         if not self.client_name_var.get().strip():
@@ -147,50 +147,46 @@ class ProjectDirectoryCreatorGUI:
             messagebox.showerror("Error", "Please enter the Project ID.")
             return False
         return True
-    
+
     def create_directories(self):
         """Initiate directory creation process"""
         if self.creating_directories:
             return
-        
+
         if not self.validate_inputs():
             return
-        
+
         client = self.string_clean(self.client_name_var.get())
         campaign = self.string_clean(self.campaign_name_var.get())
         project_id = self.string_clean(self.project_id_var.get())
         project_name = f"{client}_{campaign}_{project_id}"
-        
+
         # Confirm directory creation
-        # if not messagebox.askyesno("Confirmar", 
-        #                          f"Você quer criar os diretórios do projeto?\n\n"
-        #                          f"Nome do Projeto: {project_name}\n"
-        #                          f"Diretório Base: {self.base_directory}"):
-        #     return
-        if not messagebox.askyesno("Confirm", 
+        if not messagebox.askyesno("Confirm",
                                 f"Do you want to create the project directories?\n\n"
                                 f"Project Name: {project_name}\n"
                                 f"Base Directory: {self.base_directory}"):
             return
+
         # Disable buttons during creation
         self.creating_directories = True
         self.toggle_buttons()
-        
+
         # Start directory creation in a separate thread
         thread = threading.Thread(target=self.create_directory_structure,
                                 args=(Path(self.base_directory) / project_name,))
         thread.start()
-    
+
     def create_directory_structure(self, project_path: Path):
         """Create the complete directory structure."""
         try:
             # Update progress bar visibility
             self.root.after(0, lambda: self.progress_label.config(
                 text="Starting directory creation..."))
-            
+
             # Create base project directory
             project_path.mkdir(parents=True, exist_ok=True)
-            
+
             # Define all directories (same as before)
             directories = [
                 # All directories from the previous version...
@@ -317,35 +313,35 @@ class ProjectDirectoryCreatorGUI:
                 "versão"
             ]
 
-            
+
             total_dirs = len(directories)
             for idx, directory in enumerate(directories, 1):
                 if not self.creating_directories:  # Check if cancelled
                     break
-                    
+
                 full_path = project_path / directory
                 full_path.mkdir(parents=True, exist_ok=True)
-                
+
                 # Update progress
                 progress = (idx / total_dirs) * 100
                 self.root.after(0, lambda p=progress: self.progress_var.set(p))
                 self.root.after(0, lambda d=directory: self.progress_label.config(
                     text=f"Creating: {d}"))
-            
+
             if self.creating_directories:  # Only show success if not cancelled
-                self.root.after(0, lambda: messagebox.showinfo("Success", 
+                self.root.after(0, lambda: messagebox.showinfo("Success",
                     "Project directories have been successfully created!"))
-            
+
         except Exception as e:
             self.root.after(0, lambda: messagebox.showerror("Error",
                 f"Error creating directories:\n{str(e)}"))
-        
+
         finally:
             self.creating_directories = False
             self.root.after(0, self.toggle_buttons)
             self.root.after(0, lambda: self.progress_var.set(0))
             self.root.after(0, lambda: self.progress_label.config(text=""))
-    
+
     def toggle_buttons(self):
         """Toggle button states based on directory creation status"""
         state = 'disabled' if self.creating_directories else 'normal'
@@ -355,17 +351,17 @@ class ProjectDirectoryCreatorGUI:
         self.client_name_entry.config(state=state)
         self.campaign_name_entry.config(state=state)
         self.project_id_entry.config(state=state)
-    
+
     def quit_application(self):
         """Safely quit the application"""
         if self.creating_directories:
-            if messagebox.askyesno("Confirm", 
+            if messagebox.askyesno("Confirm",
                 "Directory creation is in progress. Do you really want to exit?"):
                 self.creating_directories = False
             else:
                 return
         self.root.quit()
-    
+
     def run(self):
         """Start the GUI application"""
         self.root.protocol("WM_DELETE_WINDOW", self.quit_application)
