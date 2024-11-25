@@ -52,37 +52,13 @@ now_underscore=$(date +%H_%M)
 # ========================================================================== #
 
 # Get the directory of this script
-cfg_dir="$(dirname "$0")"
+version_dir="$(dirname "$0")"
 
 # Get the parent directory
-parent_dir="$(dirname "$cfg_dir")"
+parent_dir="$(dirname "$version_dir")"
 
-# Change directory to cfg_dir
+# Change directory to version_dir
 cd "$parent_dir" || exit
-
-# -------------------------------------------------------------------------- #
-
-# Define version_dir
-version_dir="$parent_dir/version"
-
-echo $version_dir
-
-# Check if the directory exists or create it
-if [ ! -d "$version_dir" ]; then
-    echo -e "  Directory '$version_dir' not found.\n"
-    read -p "  Do you want to create it? [y/n]: " create_dir
-    echo -e "\n$separator\n"
-    if [ "$create_dir" = "y" ]; then
-        mkdir -p "$version_dir" \
-        || { echo "Error: Unable to create directory '$version_dir'."; \
-        exit 1; }
-        echo -e "\n$separator\n"
-    else
-        echo "Exiting. Directory not created."
-        exit 1
-        echo -e "\n$separator\n"
-    fi
-fi
 
 # Define version_file
 version_file="$version_dir/version.json"

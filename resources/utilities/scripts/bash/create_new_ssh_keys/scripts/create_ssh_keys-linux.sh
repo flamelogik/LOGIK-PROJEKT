@@ -2,30 +2,16 @@
 
 # -------------------------------------------------------------------------- #
 
-# Program Name:     create_new_ssh_keys.sh
-# Version:          2.0.0
-# Language:         bash script
-# Flame Version:    2025.x
+# Program Name:     create_ssh_keys-linux.sh
+# Version:          3.0.0
 # Author:           Phil MAN - phil_man@mac.com
-# Toolset:          MAN_MADE_MATERIAL
 # Created:          2024-03-12
-# Modified:         2024-10-15
-# Modifier:         Phil MAN - phil_man@mac.com
+# Modified:         2024-11-25
 
 # Changelist:       Added function to create/read 'project_setup_template'.
 
-# -------------------------------------------------------------------------- #
-
 # Description:      This program will generate SSH keys and prompt the user
 #                   to create an encrypted backup tar file.
-
-# Installation:     Copy the 'FLAME-DEPLOYMENT' repo to your home directory,
-
-# -------------------------------------------------------------------------- #
-
-# ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
-# ========================================================================== #
 
 # ========================================================================== #
 # This section sets variables and gathers user information.
@@ -35,7 +21,16 @@
 
 # Define today's date in 'YYYY-MM-DD' format
 today=$(date +'%Y-%m-%d')
-# today="$(date +'%Y-%m-%d')-TEST8"
+
+# -------------------------------------------------------------------------- #
+
+# Check if required commands are available
+for cmd in zenity openssl ssh-keygen tar chmod; do
+    if ! command -v "$cmd" &> /dev/null; then
+        echo "Error: $cmd is not installed. Exiting."
+        exit 1
+    fi
+done
 
 # -------------------------------------------------------------------------- #
 
@@ -52,7 +47,7 @@ fi
 
 # Create an enclosing folder
 ssh_keys_folder="$chosen_folder/ssh_keys-$today"
-mkdir -p $ssh_keys_folder
+mkdir -p "$ssh_keys_folder"
 
 # -------------------------------------------------------------------------- #
 
@@ -70,8 +65,7 @@ exec &> "$ssh_key_creation_log"
 # Prompt user to enter their email address
 email_address=$(zenity --entry \
     --title="Generate SSH Keys" \
-    --text="You are about to generate new SSH keys. \n
-Enter your email address:")
+    --text="You are about to generate new SSH keys. \nEnter your email address:")
 
 # Check if user cancelled the prompt
 if [ $? -ne 0 ]; then
@@ -111,29 +105,16 @@ done
 mkdir -p ~/.ssh
 
 # Define SSH key paths
-sshkey_path_dsa="~/.ssh/id_dsa-$today"
-sshkey_path_ecdsa="~/.ssh/id_ecdsa-$today"
-sshkey_path_ed25519="~/.ssh/id_ed25519-$today"
-sshkey_path_rsa="~/.ssh/id_rsa-$today"
-
-# Define SSH key names
-sshkey_dsa="id_dsa-$today"
-sshkey_ecdsa="id_ecdsa-$today"
-sshkey_ed25519="id_ed25519-$today"
-sshkey_rsa="id_rsa-$today"
+sshkey_path_dsa="$HOME/.ssh/id_dsa-$today"
+sshkey_path_ecdsa="$HOME/.ssh/id_ecdsa-$today"
+sshkey_path_ed25519="$HOME/.ssh/id_ed25519-$today"
+sshkey_path_rsa="$HOME/.ssh/id_rsa-$today"
 
 # Generate SSH keys with today's date suffix and use the password if required
-ssh-keygen -t dsa -C "$today - $email_address" \
-           -f ~/.ssh/id_dsa-$today -N "$my_password"
-
-ssh-keygen -t ecdsa -b 521 -C "$today - $email_address" \
-           -f ~/.ssh/id_ecdsa-$today -N "$my_password"
-
-ssh-keygen -t ed25519 -C "$today - $email_address" \
-           -f ~/.ssh/id_ed25519-$today -N "$my_password"
-
-ssh-keygen -t rsa -b 4096 -C "$today - $email_address" \
-           -f ~/.ssh/id_rsa-$today -N "$my_password"
+ssh-keygen -t dsa -C "$today - $email_address" -f "$sshkey_path_dsa" -N "$my_password"
+ssh-keygen -t ecdsa -b 521 -C "$today - $email_address" -f "$sshkey_path_ecdsa" -N "$my_password"
+ssh-keygen -t ed25519 -C "$today - $email_address" -f "$sshkey_path_ed25519" -N "$my_password"
+ssh-keygen -t rsa -b 4096 -C "$today - $email_address" -f "$sshkey_path_rsa" -N "$my_password"
 
 # -------------------------------------------------------------------------- #
 
@@ -142,15 +123,8 @@ tar_filepath="$ssh_keys_folder/ssh_keys_$today.tar"
 encrypted_tar_filepath="$ssh_keys_folder/encrypted_ssh_keys_$today.tar.enc"
 decrypted_tar_filepath="$ssh_keys_folder/decrypted_ssh_keys_$today.tar"
 
-# Define the filenames for the tar files
-encrypted_tar_file="$(basename "$encrypted_tar_filepath")"
-decrypted_tar_file="$(basename "$decrypted_tar_filepath")"
-
-# -------------------------------------------------------------------------- #
-
 # Create a tar file of the private keys
-tar -cvf "$tar_filepath" \
-    ~/.ssh/id_*-$today
+tar -cvf "$tar_filepath" "$sshkey_path_dsa" "$sshkey_path_ecdsa" "$sshkey_path_ed25519" "$sshkey_path_rsa"
 
 # Check if tar command was successful
 if [ $? -ne 0 ]; then
@@ -159,11 +133,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Encrypt the tar file with strong encryption
-openssl aes-256-cbc -salt \
-    -pbkdf2 \
-    -in "$tar_filepath" \
-    -out "$encrypted_tar_filepath" \
-    -k "$my_password"
+openssl aes-256-cbc -salt -pbkdf2 -in "$tar_filepath" -out "$encrypted_tar_filepath" -k "$my_password"
 
 # Check if encryption was successful
 if [ $? -ne 0 ]; then
@@ -174,7 +144,7 @@ fi
 # -------------------------------------------------------------------------- #
 
 # Copy public keys generated today to the chosen folder
-cp ~/.ssh/id_*-$today.pub "$ssh_keys_folder/"
+cp "$sshkey_path_dsa.pub" "$sshkey_path_ecdsa.pub" "$sshkey_path_ed25519.pub" "$sshkey_path_rsa.pub" "$ssh_keys_folder/"
 
 # -------------------------------------------------------------------------- #
 
@@ -184,84 +154,22 @@ decryption_script="$ssh_keys_folder/decrypt.sh"
 # Remove the previous decryption script if it exists
 rm -f "$decryption_script"
 
-# -------------------------------------------------------------------------- #
-
 # Generate the decryption script
-echo '#!/bin/bash' > "$decryption_script"
+cat <<EOF > "$decryption_script"
+#!/bin/bash
 
-echo '' >> "$decryption_script"
+# Prompt user for password
+my_password=\$(zenity --password --title="Enter Password" --width=600)
 
-echo '' >> "$decryption_script"
+# Check if password is provided
+if [ -z "\$my_password" ]; then
+    zenity --error --text="Password cannot be empty. \nExiting."
+    exit 1
+fi
 
-echo '# Prompt user for password' >> "$decryption_script"
-
-echo 'my_password=$(zenity --password \' >> "$decryption_script"
-
-echo '    --title="Enter Password" \' >> "$decryption_script"
-
-echo '    --width=600)' >> "$decryption_script"
-
-echo '' >> "$decryption_script"
-
-# -------------------------------------------------------------------------- #
-
-echo '# Check if password is provided' >> "$decryption_script"
-
-echo 'if [ -z "$my_password" ]; then' >> "$decryption_script"
-
-echo '    zenity --error --text="Password cannot be empty. \nExiting."' \
-        >> "$decryption_script"
-
-echo '    exit 1' >> "$decryption_script"
-
-echo 'fi' >> "$decryption_script"
-
-echo '' >> "$decryption_script"
-
-# -------------------------------------------------------------------------- #
-
-echo '# Decrypt the encrypted file' >> "$decryption_script"
-
-echo 'openssl aes-256-cbc -d \' >> "$decryption_script"
-
-echo '    -pbkdf2 \' >> "$decryption_script"
-
-echo "    -in \"$encrypted_tar_file\" \\" >> "$decryption_script"
-
-echo "    -out \"$decrypted_tar_file\" \\" >> "$decryption_script"
-
-echo '    -k "$my_password"' >> "$decryption_script"
-
-echo '' >> "$decryption_script"
-
-# -------------------------------------------------------------------------- #
-
-# echo '# Check if decryption was successful' >> "$decryption_script"
-
-# echo 'if [ $? -eq 0 ]; then' >> "$decryption_script"
-
-# echo "    zenity --info --text=\"Decrypted file: \"$decrypted_tar_file\"\"" \
-#     >> "$decryption_script"
-
-# echo 'else' >> "$decryption_script"
-
-# echo '    zenity --error --text="Decryption failed." \' >> "$decryption_script"
-
-# echo 'fi' >> "$decryption_script"
-
-# echo '' >> "$decryption_script"
-
-# -------------------------------------------------------------------------- #
-
-# echo '# Extract the ssh keys from the tar file' >> "$decryption_script"
-
-# echo "tar -xvf \"$decrypted_tar_file\"" >> "$decryption_script"
-
-# echo '# Remove the tar file' >> "$decryption_script"
-
-# echo "rm -v \"$decrypted_tar_file\"" >> "$decryption_script"
-
-# -------------------------------------------------------------------------- #
+# Decrypt the encrypted file
+openssl aes-256-cbc -d -pbkdf2 -in "$encrypted_tar_filepath" -out "$decrypted_tar_filepath" -k "\$my_password"
+EOF
 
 # Make the decryption script executable
 chmod +x "$decryption_script"
@@ -274,24 +182,16 @@ extraction_script="$ssh_keys_folder/extract.sh"
 # Remove the previous extraction script if it exists
 rm -f "$extraction_script"
 
-# -------------------------------------------------------------------------- #
-
 # Generate the extraction script
-echo '#!/bin/bash' > "$extraction_script"
+cat <<EOF > "$extraction_script"
+#!/bin/bash
 
-echo '' >> "$extraction_script"
+# Extract the ssh keys from the tar file
+tar -xvf "$decrypted_tar_filepath"
 
-echo '' >> "$extraction_script"
-
-echo '# Extract the ssh keys from the tar file' >> "$extraction_script"
-
-echo "tar -xvf \"$decrypted_tar_file\"" >> "$extraction_script"
-
-echo '# Remove the tar file' >> "$extraction_script"
-
-echo "rm -v \"$decrypted_tar_file\"" >> "$extraction_script"
-
-# -------------------------------------------------------------------------- #
+# Remove the tar file
+rm -v "$decrypted_tar_filepath"
+EOF
 
 # Make the extraction script executable
 chmod +x "$extraction_script"
@@ -299,7 +199,7 @@ chmod +x "$extraction_script"
 # -------------------------------------------------------------------------- #
 
 # Remove the tar file after encryption
-rm "$ssh_keys_folder/ssh_keys_$today.tar"
+rm "$tar_filepath"
 
 # -------------------------------------------------------------------------- #
 
@@ -309,12 +209,11 @@ unset my_password
 # -------------------------------------------------------------------------- #
 
 # Prompt user to add SSH keys to SSH agent
-zenity --question --text="SSH keys generated and encrypted. \n
-Do you want to add them to the SSH agent?"
+zenity --question --text="SSH keys generated and encrypted. \nDo you want to add them to the SSH agent?"
 
 # If user chooses to add SSH keys to SSH agent
 if [ $? -eq 0 ]; then
-    ssh-add ~/.ssh/id_*-$today
+    ssh-add "$sshkey_path_dsa" "$sshkey_path_ecdsa" "$sshkey_path_ed25519" "$sshkey_path_rsa"
     zenity --info --text="SSH keys added to SSH agent."
 fi
 
@@ -323,9 +222,21 @@ fi
 zenity --info --text="Script finished."
 
 # ========================================================================== #
-# C2 A9 2D 32 30 32 34 2D 4D 41 4E 5F 4D 41 44 45 5F 4D 41 54 45 52 49 61 4C #
+# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
+
+# Changelist:
+
+# -------------------------------------------------------------------------- #
+# version:               1.0.0
+# modified:              2024-03-10 - 10:20:24
+# comments:              Initial commit
+# -------------------------------------------------------------------------- #
 # version:               2.0.0
 # modified:              2024-10-15 - 10:47:35
-# comments:              Added decrypt and extract scripts for all 3 major OSes.
+# comments:              Added decrypt/extract scripts for all 3 major OSes.
+# -------------------------------------------------------------------------- #
+# version:               3.0.0
+# modified:              2024-11-25 - 09:34:35
+# comments:              Split monolithic script into OS specific versions
 # -------------------------------------------------------------------------- #
