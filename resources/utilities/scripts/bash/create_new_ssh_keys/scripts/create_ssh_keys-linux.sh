@@ -19,18 +19,29 @@
 
 # -------------------------------------------------------------------------- #
 
-# Define today's date in 'YYYY-MM-DD' format
-today=$(date +'%Y-%m-%d')
+# Define today's date in 'YYYY_MM_DD-HH_MM_SS' format
+today=$(date +'%Y_%m_%d-%H_%M_%S')
 
 # -------------------------------------------------------------------------- #
 
-# Check if required commands are available
-for cmd in zenity openssl ssh-keygen tar chmod; do
+# # Check if required commands are available
+# for cmd in zenity openssl ssh-keygen tar chmod; do
+#     if ! command -v "$cmd" &> /dev/null; then
+#         echo "Error: $cmd is not installed. Exiting."
+#         exit 1
+#     fi
+# done
+
+validate_commands() {
+  local required_cmds=("$@")
+  for cmd in "${required_cmds[@]}"; do
     if ! command -v "$cmd" &> /dev/null; then
-        echo "Error: $cmd is not installed. Exiting."
-        exit 1
+      zenity --error --text="Critical error: $cmd is not installed."
+      exit 1
     fi
-done
+  done
+}
+validate_commands "zenity" "openssl" "ssh-keygen" "tar" "chmod"
 
 # -------------------------------------------------------------------------- #
 
@@ -62,22 +73,42 @@ exec &> "$ssh_key_creation_log"
 
 # -------------------------------------------------------------------------- #
 
-# Prompt user to enter their email address
+# # Prompt user to enter their email address
+# email_address=$(zenity --entry \
+#     --title="Generate SSH Keys" \
+#     --text="You are about to generate new SSH keys. \nEnter your email address:")
+
+# # Check if user cancelled the prompt
+# if [ $? -ne 0 ]; then
+#     zenity --error --text="Operation cancelled. Exiting."
+#     exit 1
+# fi
+
+# # Check if email address is provided
+# if [ -z "$email_address" ]; then
+#     zenity --error --text="Email address cannot be empty. Exiting."
+#     exit 1
+# fi
+
+validate_email() {
+    local email="$1"
+    local email_regex="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$"
+    if [[ ! "$email" =~ $email_regex ]]; then
+        zenity --error --text="Invalid email format. Please try again."
+        return 1
+    fi
+}
+
 email_address=$(zenity --entry \
     --title="Generate SSH Keys" \
     --text="You are about to generate new SSH keys. \nEnter your email address:")
 
-# Check if user cancelled the prompt
 if [ $? -ne 0 ]; then
     zenity --error --text="Operation cancelled. Exiting."
     exit 1
 fi
 
-# Check if email address is provided
-if [ -z "$email_address" ]; then
-    zenity --error --text="Email address cannot be empty. Exiting."
-    exit 1
-fi
+validate_email "$email_address" || exit 1
 
 # -------------------------------------------------------------------------- #
 

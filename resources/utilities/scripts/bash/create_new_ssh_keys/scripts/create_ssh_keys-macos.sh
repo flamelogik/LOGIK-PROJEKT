@@ -19,8 +19,8 @@
 
 # -------------------------------------------------------------------------- #
 
-# Define today's date in 'YYYY-MM-DD' format
-today=$(date +'%Y-%m-%d')
+# Define today's date in 'YYYY_MM_DD-HH_MM_SS' format
+today=$(date +'%Y_%m_%d-%H_%M_%S')
 
 # -------------------------------------------------------------------------- #
 
