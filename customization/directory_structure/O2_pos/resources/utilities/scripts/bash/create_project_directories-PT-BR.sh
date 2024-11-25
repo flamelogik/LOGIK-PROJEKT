@@ -41,22 +41,23 @@ function get_user_input() {
     local prompt_text="$1"      # Text to show in the prompt
     local value_name="$2"       # Name of the value being entered (for display)
     local return_var="$3"       # Name of variable to store the result
-    
+
     while true; do
         # Prompt user for input
         printf "\n%s\n\n" "$separator_hash"
         read -p "  Digite o $prompt_text:  " input_value
-        
+
         # Transform the input
         input_value=$(string_clean "$input_value")
-        
+
         # Prompt the user to confirm
         printf "\n  Este é o $value_name correto %s? %s\n\n" "$value_name" "$input_value"
-        read -p "  [S (Sim) / N (Não) / Q (Sair)]:  " confirm
-        
+        read -p "  [S (Sim) / N (Não) / Q (Sair)] [S]:  " confirm
+        confirm=${confirm:-S}
+
         # Convert confirm to uppercase for case-insensitive comparison
         confirm=${confirm^^}
-        
+
         case $confirm in
             S|SIM)
                 printf "\n  Prosseguindo com %s: %s\n" "$value_name" "$input_value"
@@ -64,7 +65,7 @@ function get_user_input() {
                 return 0
                 ;;
             N|NÃO|NAO)
-                printf "  Por favor, digite o %s novamente\n" "$value_name"
+                printf "  Por favor, digite o %s novamente.\n" "$value_name"
                 ;;
             Q|SAIR)
                 printf "  Saindo do script.\n"
@@ -74,7 +75,7 @@ function get_user_input() {
                 printf "  Entrada inválida. Por favor, digite S, N, ou Q.\n"
                 ;;
         esac
-        
+
         printf "\n"
     done
 }
@@ -99,7 +100,7 @@ concatenated_project_name="${client_name}_${campaign_name}_${project_id}"
 
 # Display final project name
 printf "\n%s\n\n" "$separator_hash"
-printf "  Nome Final do Projeto: $concatenated_project_name"
+printf "  Nome Final do Projeto: %s\n" "$concatenated_project_name"
 
 # -------------------------------------------------------------------------- #
 
@@ -108,7 +109,7 @@ base_directory="/mnt/Publicidade/ADV"
 
 # Echo the base directory
 printf "\n%s\n\n" "$separator_hash"
-printf "  Diretório Base: $base_directory"
+printf "  Diretório Base: %s\n" "$base_directory"
 
 # -------------------------------------------------------------------------- #
 
@@ -116,9 +117,12 @@ printf "  Diretório Base: $base_directory"
 while true; do
     printf "\n%s\n\n" "$separator_hash"
     printf "  Você quer criar os diretórios do projeto? "
-    read -p "  [S (Sim) / N (Não) / Q (Sair)]: " confirm_create
+    read -p "  [S (Sim) / N (Não) / Q (Sair)] [S]: " confirm_create
+    confirm_create=${confirm_create:-S}
+
+    # Convert confirm to uppercase for case-insensitive comparison
     confirm_create=${confirm_create^^}
-    
+
     case $confirm_create in
         S|SIM)
             printf "\n  Criando diretórios do projeto...\n"
@@ -196,4 +200,3 @@ mkdir -p versão
 # Changelist:
 
 # -------------------------------------------------------------------------- #
-

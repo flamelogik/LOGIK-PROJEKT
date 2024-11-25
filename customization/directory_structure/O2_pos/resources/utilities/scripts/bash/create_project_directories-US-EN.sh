@@ -41,22 +41,23 @@ function get_user_input() {
     local prompt_text="$1"      # Text to show in the prompt
     local value_name="$2"       # Name of the value being entered (for display)
     local return_var="$3"       # Name of variable to store the result
-    
+
     while true; do
         # Prompt user for input
         printf "\n%s\n\n" "$separator_hash"
         read -p "  Enter the $prompt_text: " input_value
-        
+
         # Transform the input
         input_value=$(string_clean "$input_value")
-        
+
         # Prompt the user to confirm
         printf "\n  Is this the correct %s? %s\n\n" "$value_name" "$input_value"
-        read -p "  [Y (Yes) / N (No) / Q (quit)]: " confirm
-        
+        read -p "  [Y (Yes) / N (No) / Q (quit)] [Y]: " confirm
+        confirm=${confirm:-Y}
+
         # Convert confirm to uppercase for case-insensitive comparison
         confirm=${confirm^^}
-        
+
         case $confirm in
             Y|YES)
                 printf "\n  Proceeding with %s: %s\n" "$value_name" "$input_value"
@@ -74,7 +75,7 @@ function get_user_input() {
                 printf "  Invalid input. Please enter Y, N, or Q.\n"
                 ;;
         esac
-        
+
         printf "\n"
     done
 }
@@ -116,9 +117,12 @@ printf "  Base Directory: %s\n" "$base_directory"
 while true; do
     printf "\n%s\n\n" "$separator_hash"
     printf "  Do you want to create the project directories? \n"
-    read -p "  [Y (Yes) / N (No) / Q (quit)]: " confirm_create
+    read -p "  [Y (Yes) / N (No) / Q (quit)] [Y]: " confirm_create
+    confirm_create=${confirm_create:-Y}
+
+    # Convert confirm to uppercase for case-insensitive comparison
     confirm_create=${confirm_create^^}
-    
+
     case $confirm_create in
         Y|YES)
             printf "\n  Creating project directories...\n"
@@ -149,7 +153,7 @@ cd "$project_directory" || exit
 
 # -------------------------------------------------------------------------- #
 
-# Create directories using curly braces
+# Create O2-Pos-SP default project directories
 mkdir -p 01_PROJETO/ARTE/{01_AEP,02_PSD,03_C4D,04_AI,05_INDD,06_OUT_COLLECT,_ASSETS/{AUDIO,FONT,MODEL,PRE_RENDER/{AE,C4D},STILL,VIDEO}}
 mkdir -p 01_PROJETO/{COR,EDIT/Adobe\ Premiere\ Pro\ Auto-Save,FINALIZADOR}
 mkdir -p 03_EDLs_XMLs_AAfs
