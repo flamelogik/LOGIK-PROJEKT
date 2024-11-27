@@ -17,11 +17,7 @@
                     },
                     {
                         "Bookmark": "projekt home",
-<<<<<<< Updated upstream
-                        "Path": "/PROJEKTS/24033_kfc_sizzle/",
-=======
-                        "Path": "/PROJEKTS/1010_abc_def/",
->>>>>>> Stashed changes
+                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/",
                         "Visibility": "Global"
                     },
                     {
@@ -32,291 +28,102 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "assets",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "artwork",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/artwork",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/artwork",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/artwork",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Folder": "audio",
-                                        "Bookmarks": [
-                                            {
-                                                "Bookmark": "audio",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "dub",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio/dub",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio/dub",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "mix",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio/mix",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio/mix",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "music",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio/music",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio/music",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "production",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio/production",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio/production",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "sound_effects",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio/sound_effects",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio/sound_effects",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "stems",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio/stems",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio/stems",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "voiceover",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/audio/voiceover",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/audio/voiceover",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            }
-                                        ]
+                                        "Bookmark": "audio",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/audio",
+                                        "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cgi",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/cgi",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/cgi",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/cgi",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "font",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/font",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/font",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/font",
                                         "Visibility": "Global"
                                     },
                                     {
-                                        "Folder": "footage",
-                                        "Bookmarks": [
-                                            {
-                                                "Bookmark": "footage",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/footage",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/footage",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "graded",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/footage/graded",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/footage/graded",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "raw",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/footage/raw",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/footage/raw",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "stock",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/footage/stock",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/footage/stock",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            },
-                                            {
-                                                "Bookmark": "transcodes",
-<<<<<<< Updated upstream
-                                                "Path": "/PROJEKTS/24033_kfc_sizzle/assets/footage/transcodes",
-=======
-                                                "Path": "/PROJEKTS/1010_abc_def/assets/footage/transcodes",
->>>>>>> Stashed changes
-                                                "Visibility": "Global"
-                                            }
-                                        ]
+                                        "Bookmark": "footage_graded",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_graded",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "footage_raw",
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/footage_raw",
+                                        "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "graphics",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/graphics",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/graphics",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/graphics",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "images",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/images",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/images",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "legal",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/legal",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/legal",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/legal",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "matchmoving",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/matchmoving",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/matchmoving",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/matchmoving",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "miscellaneous",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/miscellaneous",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/miscellaneous",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/miscellaneous",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "paint",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/paint",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/paint",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/paint",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "photoshop",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/photoshop",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/photoshop",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/photoshop",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "roto",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/roto",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/roto",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/roto",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slates",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/slates",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/slates",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/slates",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "subtitles",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/subtitles",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/subtitles",
->>>>>>> Stashed changes
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "supers",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/supers",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/supers",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/subtitles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "titles",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/titles",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/titles",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/titles",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "tracking",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/tracking",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/tracking",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/tracking",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "video",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/assets/video",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/assets/video",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/assets/video",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -326,83 +133,27 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "editorial",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "aaf",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/aaf",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/aaf",
->>>>>>> Stashed changes
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "adobe_premiere",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/adobe_premiere",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/adobe_premiere",
->>>>>>> Stashed changes
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "avid_media_composer",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/avid_media_composer",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/avid_media_composer",
->>>>>>> Stashed changes
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "davinci_resolve",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/davinci_resolve",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/davinci_resolve",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/aaf",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "edl",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/edl",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/edl",
->>>>>>> Stashed changes
-                                        "Visibility": "Global"
-                                    },
-                                    {
-                                        "Bookmark": "final_cut_pro",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/final_cut_pro",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/final_cut_pro",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/edl",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "prep",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/prep",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/prep",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/prep",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "xml",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/editorial/xml",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/editorial/xml",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/editorial/xml",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -412,38 +163,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "flame",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/flame",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/flame",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "archives",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/flame/archives",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/flame/archives",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/archives",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "iterations",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/flame/iterations",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/flame/iterations",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/iterations",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "setups",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/flame/setups",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/flame/setups",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/flame/setups",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -453,38 +188,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "masters",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/masters",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/masters",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "master_edits",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/masters/master_edits",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/masters/master_edits",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/master_edits",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "slated_masters",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/masters/slated_masters",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/masters/slated_masters",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/slated_masters",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "versioned_masters",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/masters/versioned_masters",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/masters/versioned_masters",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/masters/versioned_masters",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -494,38 +213,22 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "reference",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/reference",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/reference",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_images",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/reference/reference_images",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/reference/reference_images",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_images",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_movies",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/reference/reference_movies",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/reference/reference_movies",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_movies",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "reference_style_guide",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/reference/reference_style_guide",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/reference/reference_style_guide",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/reference/reference_style_guide",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -535,137 +238,77 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "scenes",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "3ds",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/3ds",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/3ds",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/3ds",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "alembic",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/alembic",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/alembic",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/alembic",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "baselight",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/baselight",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/baselight",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/baselight",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "blender",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/blender",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/blender",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/blender",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "c4d",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/c4d",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/c4d",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/c4d",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "cut",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/cut",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/cut",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/cut",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "fbx",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/fbx",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/fbx",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/fbx",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "geometry",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/geometry",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/geometry",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/geometry",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "houdini",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/houdini",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/houdini",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/houdini",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "maya",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/maya",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/maya",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/maya",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "resolve",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/resolve",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/resolve",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/resolve",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unity",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/unity",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/unity",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/unity",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "unreal_engine",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/unreal_engine",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/unreal_engine",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/unreal_engine",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "usd",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/scenes/usd",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/scenes/usd",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/scenes/usd",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -675,11 +318,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "shots",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/shots",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/shots",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/shots",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -689,11 +328,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "tmp",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/tmp",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/tmp",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/tmp",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -703,11 +338,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "utilities",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/utilities",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/utilities",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/utilities",
                                         "Visibility": "Global"
                                     },
                                     {
@@ -727,11 +358,7 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "version",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/version",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/version",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/version",
                                         "Visibility": "Global"
                                     }
                                 ]
@@ -741,20 +368,12 @@
                                 "Bookmarks": [
                                     {
                                         "Bookmark": "work_in_progress",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/work_in_progress",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/work_in_progress",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/work_in_progress",
                                         "Visibility": "Global"
                                     },
                                     {
                                         "Bookmark": "postings",
-<<<<<<< Updated upstream
-                                        "Path": "/PROJEKTS/24033_kfc_sizzle/work_in_progress/postings",
-=======
-                                        "Path": "/PROJEKTS/1010_abc_def/work_in_progress/postings",
->>>>>>> Stashed changes
+                                        "Path": "/PROJEKTS/10101010_logik_projekt_first_release/work_in_progress/postings",
                                         "Visibility": "Global"
                                     }
                                 ]
