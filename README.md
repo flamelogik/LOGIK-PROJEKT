@@ -92,8 +92,21 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 -------------------------------------------------------------------------------
 
-    # Reboot workstation:
+    # Reboot workstation: (optional)
     sudo reboot
+
+-------------------------------------------------------------------------------
+
+    # unlink /PROJEKTS before linking to alternative PROJEKTS directory:
+    sudo unlink /PROJEKTS
+
+-------------------------------------------------------------------------------
+
+    # Link /PROJEKTS to alternative PROJEKTS directory: (examples)
+    sudo ln -s /mnt/NAS_FAST/PROJEKTS /PROJEKTS
+    sudo ln -s /mnt/NAS_SLOW/PROJEKTS /PROJEKTS
+    sudo ln -s /Volumes/My_Lucid_Link_Drive/PROJEKTS /PROJEKTS
+    sudo ln -s /Volumes/Client_Lucid_Link_Drive/PROJEKTS /PROJEKTS
 
 -------------------------------------------------------------------------------
 
@@ -133,7 +146,7 @@ The tools were developed with Autodesk Flame 2025+, Python 3.11, & PySide 6.
 
 -------------------------------------------------------------------------------
 
-    # Reboot workstation:
+    # Reboot workstation: (required)
     sudo reboot
 
 -------------------------------------------------------------------------------
