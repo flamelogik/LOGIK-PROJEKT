@@ -6,8 +6,8 @@ LOGIK-PROJEKT changelist for Significant Others LA
 ├── modules
 │   ├── functions
 │   │   └── create
-│   └── widgets
-│       └── layout
+│   └── synchronize
+│       └── sync_company_templates.py
 ├── resources
 │   ├── cfg
 │   │   └── projekt_configuration
