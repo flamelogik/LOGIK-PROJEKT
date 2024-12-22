@@ -1,5 +1,5 @@
 #
-
+# DEVELOPMENT
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
@@ -31,7 +31,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        get_environment.py
+# File Name:        ocio_config.py
 # Version:          0.9.9
 # Created:          2024-01-19
 # Modified:         2024-08-31
@@ -96,7 +96,10 @@ if modules_dir not in sys.path:
 # This section defines third party imports.
 # ========================================================================== #
 
-# -------------------------------------------------------------------------- #
+# Third-Party imports
+from PySide6.QtWidgets import QComboBox
+
+from modules.widgets.combo_box.items_ocio_config import combo_box_items_ocio_config
 
 # ========================================================================== #
 # This section defines environment specific variables.
@@ -183,109 +186,55 @@ the_projekt_flame_name = f"{the_projekt_name}_{the_sanitized_version}_{the_hostn
 
 separator = '# ' + '-' * 75 + ' #'
 
+the_projekt_dir = f"{the_projekts_dir}/{the_projekt_name}"
+the_projekt_flame_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+
 # ========================================================================== #
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-class GetEnvironment:
-    @staticmethod
-    def read_json_config(file_path):
-        """Read the JSON configuration file."""
-        try:
-            with open(file_path, 'r') as file:
-                return json.load(file)
-        except Exception as e:
-            print(f"Error reading JSON file: {e}")
-            return {}
-
-    @staticmethod
-    def projekt_user_name():
-        """Get the current username."""
-        try:
-            return os.getlogin()
-        except Exception as e:
-            return str(e)
-
-    @staticmethod
-    def projekt_primary_group():
-        """Get the primary group name of the current user."""
-        try:
-            username = getpass.getuser()
-            gid = os.getgid()
-            group_info = grp.getgrgid(gid)
-            return group_info.gr_name
-        except Exception as e:
-            return str(e)
-
-    @staticmethod
-    def projekt_os():
-        """Get the current operating system."""
-        return platform.system()
-
-    @staticmethod
-    def projekt_hostname():
-        """Get the hostname of the current machine."""
-        try:
-            return socket.gethostname()
-        except Exception as e:
-            return str(e)
-
-    @staticmethod
-    def projekt_localhostname():
-        """Get the local hostname."""
-        try:
-            return socket.gethostbyname(socket.gethostname())
-        except Exception as e:
-            return str(e)
-
-    @staticmethod
-    def projekt_computername():
-        """Get the computer name."""
-        try:
-            return platform.node()
-        except Exception as e:
-            return str(e)
-
-    @staticmethod
-    def projekt_workstation_name():
-        """Get the first part of the FQDN as the workstation name."""
-        try:
-            fqdn = socket.getfqdn()
-            parts = fqdn.split('.')
-            return parts[0]
-        except Exception as e:
-            return str(e)
-
-    @staticmethod
-    def get_environment_summary():
-        """Get a summary of the environment details."""
-        json_config = GetEnvironment.read_json_config('resources/cfg/projekt_configuration/roots/projekt_roots.json')
+class WidgetOCIOConfig(QComboBox):
+    def __init__(self, parent=None):
+        super().__init__(parent)
         
-        summary = {
-            "Username": GetEnvironment.projekt_user_name(),
-            "Primary Group": GetEnvironment.projekt_primary_group(),
-            "Operating System": GetEnvironment.projekt_os(),
-            "Workstation Name": GetEnvironment.projekt_workstation_name(),
-            "FQDN": GetEnvironment.projekt_computername(),
-            "Network Adress": GetEnvironment.projekt_localhostname(),
-            # "Hostname": GetEnvironment.projekt_hostname(),
-            # "Hostname": GetEnvironment.projekt_workstation_name(),
-            # "Local Hostname": GetEnvironment.projekt_localhostname(),
+        # Set object name if needed
+        self.setObjectName("template_ocio_config")
+
+        # Load items from the imported list
+        self.addItems(combo_box_items_ocio_config)
+
+        # Set default properties
+        self.setCurrentText(self.get_default_ocio_configuration())
+        self.setEditable(False)
+
+    def get_widget_parameters(self):
+        widget_parameters = {
+            "widget_name": "template_ocio_config",
+            "widget_type": "QComboBox",
+            "widget_label_name": "OCIO Config: ",
+            "widget_default_value": self.get_default_ocio_configuration(),
+            "widget_placeholder_value": "",
+            "widget_item_values": "items_ocio_config.py",
+            "widget_read_only": False
         }
-        
-        # Add JSON config data to the summary
-        summary.update(json_config)
-        
-        return summary
+        return widget_parameters
 
-# ========================================================================== #
-# This section defines how to handle the main script function.
-# ========================================================================== #
-
-if __name__ == "__main__":
-    environment_summary = GetEnvironment.get_environment_summary()
-    for key, value in environment_summary.items():
-        print(f"  {key}: {value}")
+    def get_default_ocio_configuration(self):
+        """
+        Reads the JSON file and returns the default color science.
+        """
+        json_file_path = get_resource_path(
+            'resources/cfg/projekt_configuration/parameters/default_parameters.json'
+        )
+        
+        try:
+            with open(json_file_path, 'r') as file:
+                data = json.load(file)
+            ocio_config = data.get("OCIO Config: ")
+            return ocio_config
+        except:
+            # Return a default value in case of an error
+            return "ADSK_Example_OCIO"
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #

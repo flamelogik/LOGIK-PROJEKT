@@ -200,15 +200,20 @@ def create_xml_file(the_projekt_information, projekt_xml_path, logger):
         "Name": "the_projekt_flame_name",
         "Nickname": "the_projekt_name",
         "ShotgunProjectName": "the_projekt_name",
-        "SetupDir": "the_projekt_flame_name",
-        "Partition": "the_framestore",
+        "ProjectDir": "xml_project_dir",
+        "SetupDir": "xml_setup_dir",  # ENABLE FOR 2026
+        "MediaDir": "xml_media_dir",
+        "OCIOConfigFile": "xml_ocio_config",
+        "SetupDir": "the_projekt_flame_name",  # DISABLE FOR 2026
+        "Partition": "the_framestore",  # DISABLE FOR 2026
         "FrameWidth": "the_projekt_width",
         "FrameHeight": "the_projekt_height",
         "FrameDepth": "the_projekt_bit_depth",
         "AspectRatio": "the_projekt_aspect_ratio",
         "FieldDominance": "the_projekt_scan_mode",
         "FrameRate": "the_projekt_frame_rate",
-        "DefaultStartFrame": "the_projekt_start_frame"
+        "DefaultStartFrame": "the_projekt_start_frame",
+        "IntermediatesProfile": "xml_intermediates_profile"
     }
 
     for tag, param_name in mappings.items():
