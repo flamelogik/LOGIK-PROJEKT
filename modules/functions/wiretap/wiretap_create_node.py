@@ -221,16 +221,24 @@ def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
     # [-g <effective group>] (assumes super-user privileges)
 
     # ---------------------------------------------------------------------- #
-
+    # ENABLE FOR 2025
     # Create a logik projekt flame project node using wiretap
     /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
-    -n /volumes/stonefs \\  # DISABLE FOR 2026
-    # -h 127.0.0.1 \\  # ENABLE FOR 2026
-    # -n /projects \\  # ENABLE FOR 2026
-    # -t PROJECT \\  # ENABLE FOR 2026
+    -n /volumes/stonefs \\
     -d "{the_projekt_flame_name}" \\
     -s XML \\
     -f "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+    # # DISABLE FOR 2025
+    # # Create a logik projekt flame project node using wiretap
+    # /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
+    # -h 127.0.0.1 \\
+    # -n /projects \\
+    # -t PROJECT \\
+    # -d "{the_projekt_flame_name}" \\
+    # -s XML \\
+    # -f "{projekt_xml_path}"
 
     # ---------------------------------------------------------------------- #
     """
