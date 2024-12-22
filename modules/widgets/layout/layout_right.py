@@ -330,7 +330,7 @@ class WidgetLayoutRight(QWidget):
             "Scan Mode:",
             "Start Frame:",
             "Init Config:",
-            "Color Science:"
+            "Color Science:",
             "OCIO Config:"
         ]
         self.projekt_summary.setPlainText("\n".join(keys))
@@ -354,7 +354,7 @@ class WidgetLayoutRight(QWidget):
             "template_scan_mode": "Scan Mode:",
             "template_start_frame": "Start Frame:",
             "template_init_config": "Init Config:",
-            "template_color_science": "Color Science:"
+            "template_color_science": "Color Science:",
             "template_ocio_config": "OCIO Config:"
         }
 
