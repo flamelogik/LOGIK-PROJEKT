@@ -489,8 +489,8 @@ class WidgetLayoutRight(QWidget):
             the_projekt_color_science = self.get_projekt_summary_value("Color Science:")
 
             # Get the_hostname
-            # the_hostname = GetEnvironment.projekt_hostname() or 'N/A'
-            the_hostname = GetEnvironment.projekt_workstation_name() or 'N/A'
+            the_hostname = GetEnvironment.projekt_hostname() or 'N/A'
+            # the_hostname = GetEnvironment.projekt_workstation_name() or 'N/A'
 
             # Calculate projekt_flame_name
             if the_projekt_name and sanitized_version and the_hostname != 'N/A':
@@ -502,6 +502,7 @@ class WidgetLayoutRight(QWidget):
                 'Username': GetEnvironment.projekt_user_name() or 'N/A',
                 'Group': GetEnvironment.projekt_primary_group() or 'N/A',
                 'Operating System': GetEnvironment.projekt_os() or 'N/A',
+                'Hostname': the_hostname,
                 'Workstation Name': GetEnvironment.projekt_workstation_name() or 'N/A',
                 'FQDN': GetEnvironment.projekt_computername() or 'N/A',
                 'Network Address': GetEnvironment.projekt_localhostname() or 'N/A',

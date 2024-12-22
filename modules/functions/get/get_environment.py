@@ -224,11 +224,21 @@ class GetEnvironment:
 
     @staticmethod
     def projekt_hostname():
-        """Get the hostname of the current machine."""
+        """Get the first part of the computer name."""
         try:
-            return socket.gethostname()
+            computer_name = GetEnvironment.projekt_computername()
+            parts = computer_name.split('.')
+            return parts[0]
         except Exception as e:
             return str(e)
+
+    # @staticmethod
+    # def projekt_hostname():
+    #     """Get the hostname of the current machine."""
+    #     try:
+    #         return socket.gethostname()
+    #     except Exception as e:
+    #         return str(e)
 
     @staticmethod
     def projekt_localhostname():
@@ -256,6 +266,16 @@ class GetEnvironment:
         except Exception as e:
             return str(e)
 
+    # @staticmethod
+    # def projekt_workstation_name():
+    #     """Get the first part of the computer name."""
+    #     try:
+    #         computer_name = GetEnvironment.projekt_computername()
+    #         parts = computer_name.split('.')
+    #         return parts[0]
+    #     except Exception as e:
+    #         return str(e)
+
     @staticmethod
     def get_environment_summary():
         """Get a summary of the environment details."""
@@ -265,6 +285,7 @@ class GetEnvironment:
             "Username": GetEnvironment.projekt_user_name(),
             "Primary Group": GetEnvironment.projekt_primary_group(),
             "Operating System": GetEnvironment.projekt_os(),
+            "Hostname": GetEnvironment.projekt_hostname(),
             "Workstation Name": GetEnvironment.projekt_workstation_name(),
             "FQDN": GetEnvironment.projekt_computername(),
             "Network Adress": GetEnvironment.projekt_localhostname(),
