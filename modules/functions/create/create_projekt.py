@@ -935,11 +935,11 @@ def main():
         logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
-
+        # DISABLE THIS SECTION FOR 2026 (OCIO)
         # Print a banner head
-        logger.log_and_print(f"{banner_head('Add Syncolor Policy')}")
+        logger.log_and_print(f"{banner_head('Add Syncolor Policy')}")  # DISABLE FOR 2026
 
-        # Function to add_syncolor_policy
+        # Function to add_syncolor_policy  # DISABLE FOR 2026
         add_syncolor_policy(
             the_projekt_color_science,
             the_projekt_flame_name,

@@ -321,9 +321,9 @@ class WidgetLayoutRight(QWidget):
             "Resolution:",
             "Width:",
             "Height:",
-            "Storage Aspect Ratio:",
-            "Display Aspect Ratio:",
-            "Pixel Aspect Ratio:",
+            # "Storage Aspect Ratio:",
+            # "Display Aspect Ratio:",
+            # "Pixel Aspect Ratio:",
             "Aspect Ratio:",
             "Bit Depth:",
             "Framerate:",
@@ -331,6 +331,7 @@ class WidgetLayoutRight(QWidget):
             "Start Frame:",
             "Init Config:",
             "Color Science:"
+            "OCIO Config:"
         ]
         self.projekt_summary.setPlainText("\n".join(keys))
 
@@ -354,6 +355,7 @@ class WidgetLayoutRight(QWidget):
             "template_start_frame": "Start Frame:",
             "template_init_config": "Init Config:",
             "template_color_science": "Color Science:"
+            "template_ocio_config": "OCIO Config:"
         }
 
         current_text = self.projekt_summary.toPlainText()
@@ -487,7 +489,8 @@ class WidgetLayoutRight(QWidget):
             the_projekt_color_science = self.get_projekt_summary_value("Color Science:")
 
             # Get the_hostname
-            the_hostname = GetEnvironment.projekt_hostname() or 'N/A'
+            # the_hostname = GetEnvironment.projekt_hostname() or 'N/A'
+            the_hostname = GetEnvironment.projekt_workstation_name() or 'N/A'
 
             # Calculate projekt_flame_name
             if the_projekt_name and sanitized_version and the_hostname != 'N/A':
@@ -499,11 +502,11 @@ class WidgetLayoutRight(QWidget):
                 'Username': GetEnvironment.projekt_user_name() or 'N/A',
                 'Group': GetEnvironment.projekt_primary_group() or 'N/A',
                 'Operating System': GetEnvironment.projekt_os() or 'N/A',
-                'Hostname': the_hostname,
-                'Local Hostname': GetEnvironment.projekt_localhostname() or 'N/A',
-                'Computer Name': GetEnvironment.projekt_computername() or 'N/A',
-                'Software Version': software_version or 'N/A',
+                'Workstation Name': GetEnvironment.projekt_workstation_name() or 'N/A',
+                'FQDN': GetEnvironment.projekt_computername() or 'N/A',
+                'Network Address': GetEnvironment.projekt_localhostname() or 'N/A',
                 'Framestore': self.combo_box_framestore.currentText() or 'N/A',
+                'Software Version': software_version or 'N/A',
                 'Sanitized App Ver': sanitized_sw_ver or 'N/A',
                 'Sanitized Version#': sanitized_version or 'N/A',
                 'Projekt Flame Name': the_projekt_flame_name
@@ -622,6 +625,13 @@ class WidgetLayoutRight(QWidget):
                 key, value = line.split(':', 1)
                 env_dict[key.strip()] = value.strip()
 
+        the_projekt_flame_name = env_dict.get("Projekt Flame Name", "")
+        xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+        xml_setup_dir = f"{xml_project_dir}/setups"
+        xml_media_dir = f"{xml_project_dir}/media"
+        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
+        xml_intermediates_profile = f"0:596088"
+
         return {
             "the_projekt_serial_number": summary_dict.get("Serial Number", ""),
             "the_projekt_client_name": summary_dict.get("Client Name", ""),
@@ -651,7 +661,12 @@ class WidgetLayoutRight(QWidget):
             "the_framestore": env_dict.get("Framestore", ""),
             "the_sanitized_sw_ver": env_dict.get("Sanitized App Ver", ""),
             "the_sanitized_version": env_dict.get("Sanitized Version#", ""),
-            "the_projekt_flame_name": env_dict.get("Projekt Flame Name", ""),
+            "the_projekt_flame_name": the_projekt_flame_name,
+            "xml_project_dir": xml_project_dir,
+            "xml_setup_dir": xml_setup_dir,
+            "xml_media_dir": xml_media_dir,
+            "xml_ocio_config": xml_ocio_config,
+            "xml_intermediates_profile": xml_intermediates_profile,
         }
 
 # =========================================================================== #

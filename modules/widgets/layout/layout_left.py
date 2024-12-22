@@ -130,6 +130,7 @@ from modules.widgets.combo_box.scan_mode import WidgetScanMode
 from modules.widgets.combo_box.start_frame import WidgetStartFrame
 from modules.widgets.combo_box.init_config import WidgetInitConfig
 from modules.widgets.combo_box.color_science import WidgetColorScience
+from modules.widgets.combo_box.ocio_config import WidgetOCIOConfig
 from modules.functions.string.string_utilities import string_clean
 from modules.functions.export.export_template import export_template_as_json
 from modules.widgets.style_sheet.projekt_style_sheet import (
@@ -255,9 +256,9 @@ class LayoutLeft(QWidget):
             (WidgetResolution(), QLabel()),
             (WidgetWidth(), QLabel()),
             (WidgetHeight(), QLabel()),
-            (WidgetStorageAspectRatio(), QLabel()),
-            (WidgetDisplayAspectRatio(), QLabel()),
-            (WidgetPixelAspectRatio(), QLabel()),
+            # (WidgetStorageAspectRatio(), QLabel()),
+            # (WidgetDisplayAspectRatio(), QLabel()),
+            # (WidgetPixelAspectRatio(), QLabel()),
             (WidgetAspectRatio(), QLabel()),
             (WidgetBitDepth(), QLabel()),
             (WidgetFrameRate(), QLabel()),
@@ -265,6 +266,7 @@ class LayoutLeft(QWidget):
             (WidgetStartFrame(), QLabel()),
             (WidgetInitConfig(), QLabel()),
             (WidgetColorScience(), QLabel()),
+            (WidgetOCIOConfig(), QLabel()),
         ]
 
         # Set minimum height for each widget and align labels and widgets horizontally
