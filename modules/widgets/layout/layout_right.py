@@ -330,7 +330,7 @@ class WidgetLayoutRight(QWidget):
             "Scan Mode:",
             "Start Frame:",
             "Init Config:",
-            "Color Science:"
+            "Color Science:",
             "OCIO Config:"
         ]
         self.projekt_summary.setPlainText("\n".join(keys))
