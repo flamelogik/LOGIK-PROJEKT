@@ -162,7 +162,7 @@ fi
 # created:          2024-09-09 - 10:38:56
 # comments:         added launchd option and removal script.
 # -------------------------------------------------------------------------- #
-# version:          1.0.0
+# Version:          1.9.9
 # created:          2024-09-09 - 18:38:56
 # comments:         created GUI and reverted to cron.
 # -------------------------------------------------------------------------- #

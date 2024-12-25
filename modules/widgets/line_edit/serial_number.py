@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        serial_number.py
-# Version:          0.9.9
+# Version:          1.9.9
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-25
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -245,4 +245,8 @@ class WidgetSerialNumber(QLineEdit):
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:10
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# Version:          1.9.9
+# modified:         2024-12-25 - 09:50:19
+# comments:         Preparation for future features
 # -------------------------------------------------------------------------- #

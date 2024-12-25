@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        items_bit_depth.py
-# Version:          0.9.9
+# Version:          1.9.9
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-25
 
 # ========================================================================== #
 # This section defines the primary functions for the script.
@@ -79,4 +79,8 @@ combo_box_items_bit_depth = [
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# Version:          1.9.9
+# modified:         2024-12-25 - 09:50:16
+# comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
