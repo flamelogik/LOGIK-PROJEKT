@@ -72,7 +72,8 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+
+
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -200,10 +201,10 @@ def create_xml_file(the_projekt_information, projekt_xml_path, logger):
         "Name": "the_projekt_flame_name",
         "Nickname": "the_projekt_name",
         "ShotgunProjectName": "the_projekt_name",
-        "ProjectDir": "xml_project_dir",
-        "SetupDir": "xml_setup_dir",  # ENABLE FOR 2026
-        "MediaDir": "xml_media_dir",
-        "OCIOConfigFile": "xml_ocio_config",
+        # "ProjectDir": "xml_project_dir",  # ENABLE FOR 2026
+        # "SetupDir": "xml_setup_dir",  # ENABLE FOR 2026
+        # "MediaDir": "xml_media_dir",  # ENABLE FOR 2026
+        # "OCIOConfigFile": "xml_ocio_config",  # ENABLE FOR 2026
         "SetupDir": "the_projekt_flame_name",  # DISABLE FOR 2026
         "Partition": "the_framestore",  # DISABLE FOR 2026
         "FrameWidth": "the_projekt_width",

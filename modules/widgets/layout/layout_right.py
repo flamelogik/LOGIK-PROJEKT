@@ -102,6 +102,7 @@ from PySide6.QtWidgets import (
     QFileDialog,
     QHBoxLayout,
     QLabel,
+    QLineEdit,
     QMessageBox,
     QPushButton,
     QTextEdit,
@@ -125,6 +126,10 @@ from functions.get.get_flame_software import (
 from functions.get.get_framestores import get_framestore_list
 
 from functions.string.string_utilities import string_clean
+
+from widgets.line_edit.flame_projekt_directory import WidgetFlameProjektDirectory
+from widgets.line_edit.flame_projekt_media_cache import WidgetFlameProjektMediaCache
+from widgets.line_edit.flame_projekt_setups_dir import WidgetFlameProjektSetupsDir
 
 from widgets.style_sheet.projekt_style_sheet import (
     ProjektStyleSheet,
@@ -240,14 +245,17 @@ class WidgetLayoutRight(QWidget):
 
         # Add widgets
         self.add_import_template_button()
-        self.projekt_summary = self.add_text_edit("Projekt Summary:", True, fixed_height=360)
+        self.projekt_summary = self.add_text_edit("Projekt Summary:", True, fixed_height=300)
         self.initialize_projekt_summary()
         self.combo_box_software_version = self.add_combobox("Software Version:")
-        self.combo_box_framestore = self.add_combobox("Media Cache:")
-        self.environment_summary = self.add_text_edit("Environment Summary:", True, fixed_height=216)
+        self.combo_box_framestore = self.add_combobox("Framestore:")
+        self.add_labeled_widget("Projekt Flame Directory:", WidgetFlameProjektDirectory())
+        self.add_labeled_widget("Setups Directory:", WidgetFlameProjektSetupsDir()) 
+        self.add_labeled_widget("Media Cache:", WidgetFlameProjektMediaCache())
+        self.environment_summary = self.add_text_edit("Environment Summary:", True, fixed_height=300)
         # self.create_projekt_button = self.add_button("Create Projekt")
         self.add_create_projekt_button()
-        self.command_monitor = self.add_text_edit("Command Monitor:", True, fixed_height=320)
+        self.command_monitor = self.add_text_edit("Command Monitor:", True, fixed_height=160)
 
         # Load data into widgets
         self.load_software_versions()
@@ -292,6 +300,11 @@ class WidgetLayoutRight(QWidget):
         combobox = QComboBox()
         self.add_labeled_widget(label_text, combobox)
         return combobox
+
+    def add_line_edit(self, label_text):
+        line_edit = QLineEdit()
+        self.add_labeled_widget(label_text, line_edit)
+        return line_edit
 
     def add_button(self, button_text):
         button = QPushButton(button_text)

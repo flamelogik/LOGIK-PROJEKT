@@ -189,6 +189,8 @@ separator = '# ' + '-' * 75 + ' #'
 
 # Function to synchronize burn_metadata overlays
 def sync_overlays(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -196,7 +198,8 @@ def sync_overlays(
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     ):
     
     # Nested function to generate backup filename with current date
@@ -214,10 +217,20 @@ def sync_overlays(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+    # Define the projekt flame setups directory based on the flame version
+    if the_sanitized_version.startswith("2025"):
+        the_projekt_flame_setups_dir = the_projekt_flame_dir
+    else:
+        the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
+
+    # # Set the projekt_flame_setups_dir
+    # the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, "setups")  # Fix for flame 2026
+
     # Set the source and target directories for copying
     src_burn_metadata_dir = "resources/flame/presets/burn_metadata"
     tgt_shared_burn_metadata_dir = "/opt/Autodesk/shared/burn_metadata"
-    tgt_project_burn_metadata_dir = os.path.join(the_projekt_flame_dir, "burn_metadata")
+    # tgt_project_burn_metadata_dir = os.path.join(the_projekt_flame_dir, "burn_metadata")  # Disabled for flame 2026
+    tgt_project_burn_metadata_dir = os.path.join(the_projekt_flame_setups_dir, "burn_metadata")  # Enabled for flame 2026
 
     print("  synchronizing burn_metadata overlays.\n")
 
@@ -263,6 +276,8 @@ def main():
 
     # Call the function to synchronize burn_metadata overlays
     sync_overlays(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -270,7 +285,8 @@ def main():
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     )
 
 if __name__ == "__main__":

@@ -234,7 +234,7 @@ class WidgetOCIOConfig(QComboBox):
             return ocio_config
         except:
             # Return a default value in case of an error
-            return "ADSK_Example_OCIO"
+            return "OCIO_studio_config"
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #

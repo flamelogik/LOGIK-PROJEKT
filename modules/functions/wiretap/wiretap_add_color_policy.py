@@ -189,7 +189,11 @@ separator = '# ' + '-' * 75 + ' #'
 # ========================================================================== #
 
 # Function to add the logik projekt synColor policy
-def add_syncolor_policy(the_projekt_color_science, the_projekt_flame_name, separator):
+def add_syncolor_policy(
+        the_projekt_color_science,
+        the_projekt_flame_name,
+        separator,
+    ):
     """
     Add the synColor policy with wiretap_duplicate_node
     """
@@ -239,8 +243,12 @@ def add_syncolor_policy(the_projekt_color_science, the_projekt_flame_name, separ
 
 if __name__ == "__main__":
     # Example usage
-    add_syncolor_policy(the_projekt_color_science, the_projekt_flame_name, separator)
-
+    add_syncolor_policy(
+        the_projekt_color_science,
+        the_projekt_flame_name,
+        separator,
+    )
+    
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
