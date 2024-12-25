@@ -1,5 +1,5 @@
 #
-
+# DEVELOPMENT
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
@@ -31,7 +31,7 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        sync_batch.py
+# File Name:        projekt_name.py
 # Version:          0.9.9
 # Created:          2024-01-19
 # Modified:         2024-08-31
@@ -96,7 +96,7 @@ if modules_dir not in sys.path:
 # This section defines third party imports.
 # ========================================================================== #
 
-# -------------------------------------------------------------------------- #
+from PySide6.QtWidgets import QLineEdit
 
 # ========================================================================== #
 # This section defines environment specific variables.
@@ -183,101 +183,38 @@ the_projekt_flame_name = f"{the_projekt_name}_{the_sanitized_version}_{the_hostn
 
 separator = '# ' + '-' * 75 + ' #'
 
+the_projekt_dir = f"{the_projekts_dir}/{the_projekt_name}"
+the_projekt_flame_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+
+
 # ========================================================================== #
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-# Function to create batch project bin nodes
-def sync_batch_project_bins(
-        the_hostname,
-        the_projekt_os,
-        the_projekts_dir,
-        the_projekt_flame_dirs,
-        the_adsk_dir,
-        the_adsk_dir_linux,
-        the_adsk_dir_macos,
-        the_projekt_name,
-        the_projekt_flame_name,
-        the_sanitized_version,
-        separator,
-    ):
-    
-    # Nested function to generate backup filename with current date
-    def generate_backup_filename(filepath):
-        # Get the current date
-        date_str = datetime.datetime.now().strftime("%Y_%m_%d")
-        # Split the file path into name and extension
-        base, ext = os.path.splitext(filepath)
-        # Create the backup filename with the date suffix
-        return f"{base}.{date_str}.bak"
+class WidgetFlameProjektDirectory(QLineEdit):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        
+        # Set object name if needed
+        self.setObjectName("template_flame_projekt_directory")
 
-    # Set the projekt_dir
-    the_projekt_dir =f"{the_projekts_dir}/{the_projekt_name}"
+        # Set default properties
+        self.setPlaceholderText("/opt/Autodesk/project")
+        self.setReadOnly(True)
 
-    # Set the projekt_flame_dir
-    the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+        # Optionally, set additional properties based on widget_parameters
 
-    # Define the projekt flame setups directory based on the flame version
-    if the_sanitized_version.startswith("2025"):
-        the_projekt_flame_setups_dir = the_projekt_flame_dir
-    else:
-        the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
-
-    # # Set the projekt_flame_setups_dir
-    # the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, "setups")  # Fix for flame 2026
-
-    # Set the source and target directories for copying
-    src_batch_pref_dir = "resources/flame/presets/batch/pref"
-    # tgt_batch_pref_dir = os.path.join(the_projekt_flame_dir, "batch/pref")  # Disabled for flame 2026
-    tgt_batch_pref_dir = os.path.join(the_projekt_flame_setups_dir, "batch/pref")  # Enabled for flame 2026
-
-    print("  creating batch project bin.\n")
-
-    # Set the umask to 0
-    os.umask(0)
-
-    # Set the rsync options
-    sync_opts = ["-av"]
-
-    # Use rsync to copy nodes to the batch Projects bin
-    result = subprocess.run(
-        ["rsync"] + sync_opts + [f"{src_batch_pref_dir}/", f"{tgt_batch_pref_dir}/"],
-        text=True,
-        capture_output=True
-    )
-
-    # Print rsync output with two whitespaces for padding
-    print(result.stdout.replace('\n', '\n  '))
-
-    print(f"\n  batch project bin created.")
-    # print(f"\n" + separator + "\n")
-
-# ========================================================================== #
-# This section defines how to handle the main script function.
-# ========================================================================== #
-
-def main():
-    # Example values for the function arguments
-    global separator
-    separator = "-" * 80
-
-    # Call the function to create batch project bins
-    sync_batch_project_bins(
-        the_hostname,
-        the_projekt_os,
-        the_projekts_dir,
-        the_projekt_flame_dirs,
-        the_adsk_dir,
-        the_adsk_dir_linux,
-        the_adsk_dir_macos,
-        the_projekt_name,
-        the_projekt_flame_name,
-        the_sanitized_version,
-        separator,
-    )
-
-if __name__ == "__main__":
-    main()
+    def get_widget_parameters(self):
+        widget_parameters = {
+            "widget_name": "template_flame_projekt_directory",
+            "widget_type": "QLineEdit",
+            "widget_label_name": "Projekt Flame Directory: ",
+            "widget_default_value": "",
+            "widget_placeholder_value": "/opt/Autodesk/project",
+            "widget_item_values": "",
+            "widget_read_only": True
+        }
+        return widget_parameters
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
@@ -307,6 +244,6 @@ if __name__ == "__main__":
 # comments:         started gui design with pyside6.
 # -------------------------------------------------------------------------- #
 # version:          0.9.9
-# modified:         2024-08-31 - 16:51:09
+# modified:         2024-08-31 - 16:51:10
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #

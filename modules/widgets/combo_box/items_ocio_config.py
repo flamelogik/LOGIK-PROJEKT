@@ -41,18 +41,7 @@
 # ========================================================================== #
 
 combo_box_items_ocio_config = [
-    "ADSK_Example_OCIO",
-    "ADSK_ACES_1.1",
-    "ADSK_Legacy",
-    "ADSK_Scene_Linear",
-    "ARRI_LogC_V3",
-    "ARRI_LogC_V4",
-    "Canon_log2_cine",
-    "Canon_log3_cine",
-    "Sony_Cine_709",
-    "Sony_LC_709",
-    "Sony_LCA_709",
-    "Sony_SLog2_709",
+    "OCIO_studio_config",
 ]
 
 # ========================================================================== #
