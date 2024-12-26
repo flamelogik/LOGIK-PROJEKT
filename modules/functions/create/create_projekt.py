@@ -543,6 +543,7 @@ def main():
             the_projekts_dir,
             the_projekt_name,
             the_projekt_flame_dir,
+            the_sanitized_version,
             bookmarks_file,
             tmp_bookmarks_file,
             the_projekt_dirs_json_dir,
@@ -561,8 +562,9 @@ def main():
         create_the_projekt_flame_directories(
             the_flame_dirs_json_file,
             the_projekt_flame_dirs,
-            # the_projekt_flame_dir,  # Disable for flame 2026
-            the_projekt_flame_setups_dir,  # Enable for flame 2026
+            # the_projekt_flame_dir,
+            the_projekt_flame_setups_dir,
+            # the_sanitized_version,
             # logger
         )
 
@@ -579,7 +581,8 @@ def main():
             the_projekts_dir,
             the_projekt_dir,
             the_projekt_flame_dirs,
-            the_projekt_flame_dir
+            the_projekt_flame_dir,
+            the_sanitized_version,
         )
 
         # Print a separator
@@ -597,7 +600,7 @@ def main():
             the_projekt_flame_dirs,
             the_projekt_flame_dir,
             the_sanitized_version,
-            the_hostname
+            the_hostname,
         )
 
         # Print a separator

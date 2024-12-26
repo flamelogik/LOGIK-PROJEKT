@@ -193,7 +193,7 @@ def symlink_subdirectories(
         the_projekt_flame_dirs,
         the_projekt_flame_dir,
         the_sanitized_version,
-        the_hostname
+        the_hostname,
     ):
 
     source_setups_dir = os.path.abspath(
@@ -256,7 +256,7 @@ def main():
         args.the_projekt_flame_dirs,
         args.the_projekt_flame_dir,
         args.the_sanitized_version,
-        args.the_hostname
+        args.the_hostname,
     )
 
 # ========================================================================== #

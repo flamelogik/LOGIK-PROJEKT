@@ -254,7 +254,7 @@ def sync_io_presets(
 
     # Set the source and target import presets directories
     src_import_presets_dir = "resources/flame/presets/import"
-    tgt_import_presets_dir = os.path.join(the_projekt_flame_dir, "import")
+    tgt_import_presets_dir = os.path.join(the_projekt_flame_setups_dir, "import")
 
     print("  synchronizing project import presets directories.\n")
 

@@ -196,7 +196,7 @@ def create_the_projekt_directories(
         bookmarks_file,
         tmp_bookmarks_file,
         the_projekt_dirs_json_dir,
-        the_projekt_dirs_json_files
+        the_projekt_dirs_json_files,
     ):
 
     def _write_bookmarks(file_path, bookmarks):
