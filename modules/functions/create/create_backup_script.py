@@ -189,6 +189,8 @@ separator = '# ' + '-' * 75 + ' #'
 
 # Function to create projekt rsync script
 def create_projekt_backup_script(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -196,7 +198,7 @@ def create_projekt_backup_script(
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        the_hostname,
+        the_sanitized_version,
         separator,
     ):
 
@@ -395,6 +397,8 @@ def main():
 
     # Call the functions to backup logs and files
     create_projekt_backup_script(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -402,7 +406,7 @@ def main():
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        the_hostname,
+        the_sanitized_version,
         separator,
     )
 
