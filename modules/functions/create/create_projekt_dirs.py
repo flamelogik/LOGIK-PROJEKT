@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_projekt_dirs.py
-# Version:          0.9.9
+# Version:          1.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-25
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -196,7 +196,7 @@ def create_the_projekt_directories(
         bookmarks_file,
         tmp_bookmarks_file,
         the_projekt_dirs_json_dir,
-        the_projekt_dirs_json_files
+        the_projekt_dirs_json_files,
     ):
 
     def _write_bookmarks(file_path, bookmarks):
@@ -458,4 +458,8 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.0.0
+# modified:         2024-12-25 - 09:50:13
+# comments:         Preparation for future features
 # -------------------------------------------------------------------------- #

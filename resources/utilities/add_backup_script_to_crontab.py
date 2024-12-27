@@ -32,7 +32,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        add_backup_script_to_crontab.py
-# Version:          1.0.0
+# Version:          1.9.9
 # Created:          2024-01-19
 # Modified:         2024-09-07
 
@@ -307,7 +307,7 @@ if __name__ == "__main__":
 # created:          2024-09-07 - 10:38:56
 # comments:         added launchd option and removal script.
 # -------------------------------------------------------------------------- #
-# version:          1.0.0
+# Version:          1.9.9
 # created:          2024-09-07 - 18:38:56
 # comments:         created GUI and reverted to cron.
 # -------------------------------------------------------------------------- #
@@ -352,7 +352,7 @@ if __name__ == "__main__":
 # -------------------------------------------------------------------------- #
 
 # File Name:        add_archive_script_to_crontab.py
-# Version:          1.0.0
+# Version:          1.9.9
 # Created:          2024-01-19
 # Modified:         2024-09-07
 
@@ -666,7 +666,7 @@ if __name__ == "__main__":
 # created:          2024-09-07 - 10:38:56
 # comments:         added launchd option and removal script.
 # -------------------------------------------------------------------------- #
-# version:          1.0.0
+# Version:          1.9.9
 # created:          2024-09-07 - 18:38:56
 # comments:         created GUI and reverted to cron.
 # -------------------------------------------------------------------------- #
