@@ -319,7 +319,14 @@ def create_the_projekt_directories(
             children = item.get('children', {})
             if children:
                 for key, value in children.items():
-                    _collect_keys_values(value, bookmarks_list, the_projekts_dir, the_projekt_name, the_projekts_flame_dir, current_folder_bookmarks)
+                    _collect_keys_values(
+                        value,
+                        bookmarks_list,
+                        the_projekts_dir,
+                        the_projekt_name,
+                        the_projekts_flame_dir,
+                        current_folder_bookmarks
+                    )
 
     bookmarks_file_header = {
         "DlBookmark": {

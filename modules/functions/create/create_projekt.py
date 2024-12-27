@@ -543,7 +543,7 @@ def main():
             the_projekts_dir,
             the_projekt_name,
             the_projekt_flame_dir,
-            the_sanitized_version,
+            # the_sanitized_version,
             bookmarks_file,
             tmp_bookmarks_file,
             the_projekt_dirs_json_dir,
