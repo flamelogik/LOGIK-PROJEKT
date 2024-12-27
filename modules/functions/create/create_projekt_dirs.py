@@ -32,7 +32,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_projekt_dirs.py
-# Version:          1.0.0
+# Version:          1.9.9
 # Created:          2024-01-19
 # Modified:         2024-12-25
 
@@ -193,6 +193,7 @@ def create_the_projekt_directories(
         the_projekts_dir,
         the_projekt_name,
         the_projekts_flame_dir,
+        the_sanitized_version,
         bookmarks_file,
         tmp_bookmarks_file,
         the_projekt_dirs_json_dir,
@@ -466,7 +467,7 @@ if __name__ == "__main__":
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
-# version:          1.0.0
+# version:          1.9.9
 # modified:         2024-12-25 - 09:50:13
 # comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
