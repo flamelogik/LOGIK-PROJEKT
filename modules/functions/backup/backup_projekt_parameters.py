@@ -217,8 +217,11 @@ def backup_projekt_parameters_xml(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
-    # Set the projekt_flame_setups_dir
-    the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, "setups")  # Fix for flame 2026
+    # Define the projekt flame setups directory based on the flame version
+    if the_sanitized_version.startswith("2025"):
+        the_projekt_flame_setups_dir = the_projekt_flame_dir
+    else:
+        the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
 
     # Set the umask to 0
     os.umask(0)
