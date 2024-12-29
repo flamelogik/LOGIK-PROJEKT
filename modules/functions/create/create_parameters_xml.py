@@ -32,7 +32,7 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_parameters_xml.py
-# Version:          1.0.0
+# Version:          1.9.9
 # Created:          2024-01-19
 # Modified:         2024-12-25
 
@@ -73,7 +73,6 @@ def get_base_path():
             )
         )
 
-
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -87,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -264,7 +265,7 @@ def create_xml_file(the_projekt_information, projekt_xml_path, logger):
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
-# version:          1.0.0
+# Version:          1.9.9
 # modified:         2024-12-25 - 09:50:12
 # comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
