@@ -223,9 +223,6 @@ def sync_color_policies(
     else:
         the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
 
-    # # Set the projekt_flame_setups_dir
-    # the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, "setups")  # Fix for flame 2026
-
     # Set the source parent directory
     src_policies_dir = "resources/flame/Syncolor/Shared/policies"
     tgt_projekt_policies_dir = os.path.join(the_projekt_dir, "utilities", "Synergy", "SynColor", "Shared", "policies")
