@@ -42,6 +42,8 @@
 
 combo_box_items_ocio_config = [
     "OCIO_studio_config",
+    "flame_example_config",
+    "syncolor_aces1.1_config",
 ]
 
 # ========================================================================== #
