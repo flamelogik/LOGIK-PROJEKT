@@ -262,8 +262,8 @@ from functions.backup.backup_creation_log import (
 # This section defines how to handle the main script function.
 # ========================================================================== #
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
