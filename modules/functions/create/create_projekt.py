@@ -155,12 +155,14 @@ from functions.shell.shell_logging import (
 
 # Import the create_xml_file function
 from functions.create.create_parameters_xml import (
-    create_xml_file
+    create_xml_file_legacy,
+    create_xml_file,
 )
 
 # Import the run_wiretap_create_node function
 from functions.wiretap.wiretap_create_node import (
-    run_wiretap_create_node
+    run_wiretap_create_node_legacy,
+    run_wiretap_create_node,
 )
 
 # -------------------------------------------------------------------------- #
@@ -514,8 +516,16 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Projekt XML File')}")
 
-        # Call the create_xml_file function
-        create_xml_file(the_projekt_information, projekt_xml_path, logger)
+        # Call the create_xml_file function based on the flame version
+        if the_sanitized_version.startswith("2025"):
+
+            # Call the create_xml_file_legacy function
+            create_xml_file_legacy(the_projekt_information, projekt_xml_path, logger)
+
+        else:
+
+            # Call the create_xml_file function
+            create_xml_file(the_projekt_information, projekt_xml_path, logger)
 
         # Print a separator
         logger.log_and_print(f"\n{separator}")
@@ -525,8 +535,16 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Flame Projekt')}")
 
-        # Call the run_wiretap_create_node function
-        run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
+        # Call the run_wiretap_create_node function based on the flame version
+        if the_sanitized_version.startswith("2025"):
+
+            # Call the run_wiretap_create_node_legacy function
+            run_wiretap_create_node_legacy(the_projekt_flame_name, projekt_xml_path, separator)
+
+        else:
+
+            # Call the run_wiretap_create_node function
+            run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
         # Print a separator
         logger.log_and_print(f"\n{separator}")

@@ -189,7 +189,7 @@ separator = '# ' + '-' * 75 + ' #'
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-def create_xml_file(the_projekt_information, projekt_xml_path, logger):
+def create_xml_file_legacy(the_projekt_information, projekt_xml_path, logger):
     root = ET.Element("Project")
     
     def add_element(parent, tag, value):
@@ -206,8 +206,51 @@ def create_xml_file(the_projekt_information, projekt_xml_path, logger):
         # "SetupDir": "xml_setup_dir",  # ENABLE FOR 2026
         # "MediaDir": "xml_media_dir",  # ENABLE FOR 2026
         # "OCIOConfigFile": "xml_ocio_config",  # ENABLE FOR 2026
-        "SetupDir": "the_projekt_flame_name",  # DISABLE FOR 2026
-        "Partition": "the_framestore",  # DISABLE FOR 2026
+        "SetupDir": "the_projekt_flame_name",  # ENABLE FOR 2025
+        "Partition": "the_framestore",  # ENABLE FOR 2025
+        "FrameWidth": "the_projekt_width",
+        "FrameHeight": "the_projekt_height",
+        "FrameDepth": "the_projekt_bit_depth",
+        "AspectRatio": "the_projekt_aspect_ratio",
+        "FieldDominance": "the_projekt_scan_mode",
+        "FrameRate": "the_projekt_frame_rate",
+        "DefaultStartFrame": "the_projekt_start_frame",
+        # "IntermediatesProfile": "xml_intermediates_profile"  # ENABLE FOR 2026
+    }
+
+    for tag, param_name in mappings.items():
+        value = the_projekt_information.get(param_name, 'N/A')
+        add_element(root, tag, str(value))
+
+    tree = ET.ElementTree(root)
+    try:
+        tree.write(projekt_xml_path, encoding='utf-8', xml_declaration=False)
+        log_message = f"  XML file created at:\n  {projekt_xml_path}\n"
+        logger.log_and_print(log_message)
+    except Exception as e:
+        error_message = f"  Error creating XML file: {e}\n"
+        logger.log_and_print(error_message)
+        raise  # Re-raise the exception after logging
+
+def create_xml_file(the_projekt_information, projekt_xml_path, logger):
+    root = ET.Element("Project")
+    
+    def add_element(parent, tag, value):
+        elem = ET.SubElement(parent, tag)
+        elem.text = value
+    
+    # Define the mapping of XML tags to parameter names
+    mappings = {
+        "Workstation": "the_hostname",
+        "Name": "the_projekt_flame_name",
+        "Nickname": "the_projekt_name",
+        "ShotgunProjectName": "the_projekt_name",
+        "ProjectDir": "xml_project_dir",  # ENABLE FOR 2026
+        "SetupDir": "xml_setup_dir",  # ENABLE FOR 2026
+        "MediaDir": "xml_media_dir",  # ENABLE FOR 2026
+        "OCIOConfigFile": "xml_ocio_config",  # ENABLE FOR 2026
+        # "SetupDir": "the_projekt_flame_name",  # ENABLE FOR 2025
+        # "Partition": "the_framestore",  # ENABLE FOR 2025
         "FrameWidth": "the_projekt_width",
         "FrameHeight": "the_projekt_height",
         "FrameDepth": "the_projekt_bit_depth",

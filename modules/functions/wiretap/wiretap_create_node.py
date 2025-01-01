@@ -190,8 +190,8 @@ separator = '# ' + '-' * 75 + ' #'
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-# def run_wiretap_create_node(projekt_xml_path, the_projekt_flame_name):
-def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator):
+# def run_wiretap_create_node_legacy(projekt_xml_path, the_projekt_flame_name):
+def run_wiretap_create_node_legacy(the_projekt_flame_name, projekt_xml_path, separator):
     """
     Create the logik projekt flame project node using wiretap_create_node.
     """
@@ -225,7 +225,7 @@ def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
     # ---------------------------------------------------------------------- #
 
     # THIS IS THE COMMAND FOR 2025
-    
+
     # Create a logik projekt flame project node using wiretap
     /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
     -n /volumes/stonefs \\
@@ -261,13 +261,85 @@ def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
     # print(f"  Command errors:\n")
     # print(stderr.decode())
 
+# def run_wiretap_create_node(projekt_xml_path, the_projekt_flame_name):
+def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator):
+    """
+    Create the logik projekt flame project node using wiretap_create_node.
+    """
+
+    # separator = '# ' + '-' * 75 + ' #'
+
+    # Create the bash command
+    bash_command = f"""
+
+    # set -ex
+
+    # Set the umask to 0
+    umask 0
+
+    # ---------------------------------------------------------------------- #
+
+    # echo -e "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+
+    # Create the logik projekt flame project node using wiretap_create_node
+
+    # -n <parent node ID>
+    # -d <display name>
+    # -t <server-specific node type string (default = NODE)>
+    # [-h <host name or IP address> (default = 127.0.0.1)]
+    # [-s <metadata stream name> (default = none]
+    # [-f <file containing metadata> (default = none)]
+    # [-g <effective group>] (assumes super-user privileges)
+
+    # ---------------------------------------------------------------------- #
+
+    # # THIS IS THE COMMAND FOR 2025
+
+    # # Create a logik projekt flame project node using wiretap
+    # /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
+    # -n /volumes/stonefs \\
+    # -d "{the_projekt_flame_name}" \\
+    # -s XML \\
+    # -f "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+
+    # THIS IS THE COMMAND FOR 2026
+
+    # Create a logik projekt flame project node using wiretap
+    /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
+    -h 127.0.0.1 \\
+    -n /projects \\
+    -t PROJECT \\
+    -d "{the_projekt_flame_name}" \\
+    -s XML \\
+    -f "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+    """
+
+    print(f"  Running the following bash command:")
+    print(f"{bash_command}")
+
+    # Run the bash command
+    process = subprocess.Popen(bash_command, shell=True, executable='/bin/bash', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = process.communicate()
+
+    print(f"  Command output:\n")
+    print(stdout.decode())
+    # print(f"  Command errors:\n")
+    # print(stderr.decode())
+
 # ========================================================================== #
 # This section defines how to handle the main script function.
 # ========================================================================== #
 
 if __name__ == "__main__":
     # Example usage
-    # run_wiretap_create_node(projekt_xml_path, the_projekt_flame_name)
+    # run_wiretap_create_node_legacy(projekt_xml_path, the_projekt_flame_name)
+    run_wiretap_create_node_legacy(the_projekt_flame_name, projekt_xml_path, separator)
     run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
 # ========================================================================== #
