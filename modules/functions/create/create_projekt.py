@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_logik_projekt.py
-# Version:          1.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-12-25
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -72,7 +72,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..',
             )
         )
-    
+
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -88,6 +88,7 @@ def get_resource_path(relative_path):
 modules_dir = get_resource_path('modules')
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -154,12 +155,14 @@ from functions.shell.shell_logging import (
 
 # Import the create_xml_file function
 from functions.create.create_parameters_xml import (
-    create_xml_file
+    create_xml_file_legacy,
+    create_xml_file,
 )
 
 # Import the run_wiretap_create_node function
 from functions.wiretap.wiretap_create_node import (
-    run_wiretap_create_node
+    run_wiretap_create_node_legacy,
+    run_wiretap_create_node,
 )
 
 # -------------------------------------------------------------------------- #
@@ -465,9 +468,6 @@ def main():
         else:
             the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
 
-        # the_projekt_flame_setups_dir = the_projekt_flame_dir  # Disable for flame 2025
-        # the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')  # Enable for flame 2026
-
         bookmarks_file = 'resources/tmp/current_projekt_bookmarks.json'
         tmp_bookmarks_file = 'resources/tmp/tmp_bookmarks.json'
 
@@ -516,8 +516,16 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Projekt XML File')}")
 
-        # Call the create_xml_file function
-        create_xml_file(the_projekt_information, projekt_xml_path, logger)
+        # Call the create_xml_file function based on the flame version
+        if the_sanitized_version.startswith("2025"):
+
+            # Call the create_xml_file_legacy function
+            create_xml_file_legacy(the_projekt_information, projekt_xml_path, logger)
+
+        else:
+
+            # Call the create_xml_file function
+            create_xml_file(the_projekt_information, projekt_xml_path, logger)
 
         # Print a separator
         logger.log_and_print(f"\n{separator}")
@@ -527,8 +535,16 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Flame Projekt')}")
 
-        # Call the run_wiretap_create_node function
-        run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
+        # Call the run_wiretap_create_node function based on the flame version
+        if the_sanitized_version.startswith("2025"):
+
+            # Call the run_wiretap_create_node_legacy function
+            run_wiretap_create_node_legacy(the_projekt_flame_name, projekt_xml_path, separator)
+
+        else:
+
+            # Call the run_wiretap_create_node function
+            run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
         # Print a separator
         logger.log_and_print(f"\n{separator}")
@@ -543,7 +559,7 @@ def main():
             the_projekts_dir,
             the_projekt_name,
             the_projekt_flame_dir,
-            # the_sanitized_version,
+            the_sanitized_version,
             bookmarks_file,
             tmp_bookmarks_file,
             the_projekt_dirs_json_dir,
@@ -876,31 +892,6 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Editorial Structure - Premiere')}")
 
-        # # # Function to create editorial directory structure - premiere
-        # # sync_editorial_tree_premiere(
-        # #     the_projekts_dir,
-        # #     the_projekt_flame_dirs,
-        # #     the_adsk_dir,
-        # #     the_adsk_dir_linux,
-        # #     the_adsk_dir_macos,
-        # #     the_projekt_name,
-        # #     the_projekt_flame_name,
-        # #     separator
-        # # )
-
-        # # Function to create editorial directory structure - premiere
-        # sync_editorial_tree_premiere(
-        #     the_projekts_dir,
-        #     the_projekt_name,
-        #     the_projekt_flame_name,
-        #     separator
-        # )
-
-        # # Print a separator
-        # logger.log_and_print(f"\n{separator}")
-
-        # # # ------------------------------------------------------------------ #
-
         # Function to create editorial directory structure - premiere
         sync_editorial_tree_premiere(
             the_hostname,
@@ -1182,7 +1173,11 @@ if __name__ == "__main__":
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
-# Version:          1.9.9
+# version:          1.9.9
 # modified:         2024-12-25 - 09:50:13
 # comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:17
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

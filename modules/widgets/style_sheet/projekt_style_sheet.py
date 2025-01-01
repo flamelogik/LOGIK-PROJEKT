@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        projekt_style_sheet.py
-# Version:          1.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-12-25
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the stylesheet for the main application.
@@ -277,7 +277,11 @@ def apply_stylesheet(app, stylesheet):
 # modified:         2024-08-31 - 16:51:10
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
-# Version:          1.9.9
+# version:          1.9.9
 # modified:         2024-12-25 - 09:50:19
 # comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:29
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

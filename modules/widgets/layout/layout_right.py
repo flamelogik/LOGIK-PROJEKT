@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        layout_right.py
-# Version:          1.0.0
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-12-25
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -252,10 +254,10 @@ class WidgetLayoutRight(QWidget):
         self.add_labeled_widget("Projekt Flame Directory:", WidgetFlameProjektDirectory())
         self.add_labeled_widget("Setups Directory:", WidgetFlameProjektSetupsDir()) 
         self.add_labeled_widget("Media Cache:", WidgetFlameProjektMediaCache())
-        self.environment_summary = self.add_text_edit("Environment Summary:", True, fixed_height=300)
+        self.environment_summary = self.add_text_edit("Environment Summary:", True, fixed_height=220)
         # self.create_projekt_button = self.add_button("Create Projekt")
         self.add_create_projekt_button()
-        self.command_monitor = self.add_text_edit("Command Monitor:", True, fixed_height=160)
+        self.command_monitor = self.add_text_edit("Command Monitor:", True, fixed_height=240)
 
         # Load data into widgets
         self.load_software_versions()
@@ -514,15 +516,15 @@ class WidgetLayoutRight(QWidget):
             env_data = {
                 'Username': GetEnvironment.projekt_user_name() or 'N/A',
                 'Group': GetEnvironment.projekt_primary_group() or 'N/A',
-                'Operating System': GetEnvironment.projekt_os() or 'N/A',
+                # 'Operating System': GetEnvironment.projekt_os() or 'N/A',
                 'Hostname': the_hostname,
-                'Workstation Name': GetEnvironment.projekt_workstation_name() or 'N/A',
-                'FQDN': GetEnvironment.projekt_computername() or 'N/A',
-                'Network Address': GetEnvironment.projekt_localhostname() or 'N/A',
+                # 'Workstation Name': GetEnvironment.projekt_workstation_name() or 'N/A',
+                # 'FQDN': GetEnvironment.projekt_computername() or 'N/A',
+                # 'Network Address': GetEnvironment.projekt_localhostname() or 'N/A',
                 'Framestore': self.combo_box_framestore.currentText() or 'N/A',
                 'Software Version': software_version or 'N/A',
-                'Sanitized App Ver': sanitized_sw_ver or 'N/A',
-                'Sanitized Version#': sanitized_version or 'N/A',
+                # 'Sanitized App Ver': sanitized_sw_ver or 'N/A',
+                # 'Sanitized Version#': sanitized_version or 'N/A',
                 'Projekt Flame Name': the_projekt_flame_name
             }
             summary_text = '\n'.join(f"{key}: {value}" for key, value in env_data.items())
@@ -546,65 +548,65 @@ class WidgetLayoutRight(QWidget):
     # Add check for Projekt Client before creating the Projekt
     # Add check for Projekt Campaign before creating the Projekt
 
-    def create_projekt(self):
-        projekt_name = self.get_projekt_summary_value("Projekt Name:")
-        if not projekt_name:
-            QMessageBox.critical(self, "Error", "The PROJEKT information is missing.\n\nFill out the information & Export a PROJEKT Template\n\nOR\n\nImport a PROJEKT template\n\nThen choose the flame version & framestore.\n\nThen create a PROJEKT.")
-            return
+    # def create_projekt(self):
+    #     projekt_name = self.get_projekt_summary_value("Projekt Name:")
+    #     if not projekt_name:
+    #         QMessageBox.critical(self, "Error", "The PROJEKT information is missing.\n\nFill out the information & Export a PROJEKT Template\n\nOR\n\nImport a PROJEKT template\n\nThen choose the flame version & framestore.\n\nThen create a PROJEKT.")
+    #         return
 
-        self.update_command_monitor("  Starting PROJEKT creation...")
+    #     self.update_command_monitor("  Starting PROJEKT creation...")
 
-        # Gather information from variables
-        projekt_info = self.gather_projekt_info()
+    #     # Gather information from variables
+    #     projekt_info = self.gather_projekt_info()
 
-        projekt_creation_script_path = 'modules/functions/create/create_projekt.py'
+    #     projekt_creation_script_path = 'modules/functions/create/create_projekt.py'
 
-        try:
-            python_executable = "/usr/bin/python3"  # Replace with the correct path
-            os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
+    #     try:
+    #         python_executable = "/usr/bin/python3"  # Replace with the correct path
+    #         os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
 
-            # Execute the script and capture output
-            result = subprocess.run([python_executable, projekt_creation_script_path], 
-                                    input=json.dumps(projekt_info), 
-                                    text=True, 
-                                    capture_output=True, 
-                                    check=True)
+    #         # Execute the script and capture output
+    #         result = subprocess.run([python_executable, projekt_creation_script_path], 
+    #                                 input=json.dumps(projekt_info), 
+    #                                 text=True, 
+    #                                 capture_output=True, 
+    #                                 check=True)
             
-            # Update Command Monitor with script output
-            self.update_command_monitor(f"  Executed {projekt_creation_script_path}:\n{result.stdout}")
-        except subprocess.CalledProcessError as e:
-            # Handle errors
-            self.update_command_monitor(f"  Error executing {projekt_creation_script_path}:\n{e.stderr}")
+    #         # Update Command Monitor with script output
+    #         self.update_command_monitor(f"  Executed {projekt_creation_script_path}:\n{result.stdout}")
+    #     except subprocess.CalledProcessError as e:
+    #         # Handle errors
+    #         self.update_command_monitor(f"  Error executing {projekt_creation_script_path}:\n{e.stderr}")
 
-        self.update_command_monitor("  PROJEKT creation completed.")
+    #     self.update_command_monitor("  PROJEKT creation completed.")
 
-        # =========================================================================== #
+    #     # =========================================================================== #
 
-        self.update_command_monitor("  Starting FLAME Launcher...")
+    #     self.update_command_monitor("  Starting FLAME Launcher...")
 
-        # Gather information from variables
-        projekt_info = self.gather_projekt_info()
+    #     # Gather information from variables
+    #     projekt_info = self.gather_projekt_info()
 
-        flame_launcher_script_path = 'modules/functions/run/run_flame_launcher_script.py'
+    #     flame_launcher_script_path = 'modules/functions/run/run_flame_launcher_script.py'
 
-        try:
-            python_executable = "/usr/bin/python3"  # Replace with the correct path
-            os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
+    #     try:
+    #         python_executable = "/usr/bin/python3"  # Replace with the correct path
+    #         os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
 
-            # Execute the script and capture output
-            result = subprocess.run([python_executable, flame_launcher_script_path], 
-                                    input=json.dumps(projekt_info), 
-                                    text=True, 
-                                    capture_output=True, 
-                                    check=True)
+    #         # Execute the script and capture output
+    #         result = subprocess.run([python_executable, flame_launcher_script_path], 
+    #                                 input=json.dumps(projekt_info), 
+    #                                 text=True, 
+    #                                 capture_output=True, 
+    #                                 check=True)
             
-            # Update Command Monitor with script output
-            self.update_command_monitor(f"  Executed {flame_launcher_script_path}:\n{result.stdout}")
-        except subprocess.CalledProcessError as e:
-            # Handle errors
-            self.update_command_monitor(f"  Error executing {flame_launcher_script_path}:\n{e.stderr}")
+    #         # Update Command Monitor with script output
+    #         self.update_command_monitor(f"  Executed {flame_launcher_script_path}:\n{result.stdout}")
+    #     except subprocess.CalledProcessError as e:
+    #         # Handle errors
+    #         self.update_command_monitor(f"  Error executing {flame_launcher_script_path}:\n{e.stderr}")
 
-        self.update_command_monitor("  FLAME Launcher completed.")
+    #     self.update_command_monitor("  FLAME Launcher completed.")
 
     def handle_stdout(self):
         data = self.process.readAllStandardOutput()
@@ -616,8 +618,84 @@ class WidgetLayoutRight(QWidget):
         stderr = bytes(data).decode("utf8")
         self.update_command_monitor(stderr)
 
+    # def update_command_monitor(self, message):
+    #     self.command_monitor.append(message)
+    #     self.command_monitor.verticalScrollBar().setValue(
+    #         self.command_monitor.verticalScrollBar().maximum()
+    #     )
+
+    def create_projekt(self):
+        projekt_name = self.get_projekt_summary_value("Projekt Name:")
+        if not projekt_name:
+            QMessageBox.critical(self, "Error", "The PROJEKT information is missing.\n\nFill out the information & Export a PROJEKT Template\n\nOR\n\nImport a PROJEKT template\n\nThen choose the flame version & framestore.\n\nThen create a PROJEKT.")
+            return
+
+        self.update_command_monitor("Starting PROJEKT creation...")
+        
+        # Gather information from variables
+        projekt_info = self.gather_projekt_info()
+        
+        # Initialize QProcess if not already done
+        if not hasattr(self, 'processes'):
+            self.processes = []
+        
+        # Create processes for both scripts
+        for script_path in ['modules/functions/create/create_projekt.py', 
+                        'modules/functions/run/run_flame_launcher_script.py']:
+            process = QProcess()
+            process.setProcessChannelMode(QProcess.MergedChannels)
+            
+            # Connect signals for output handling
+            process.readyReadStandardOutput.connect(
+                lambda p=process: self.handle_process_output(p))
+            process.finished.connect(
+                lambda code, status, p=process, script=script_path: 
+                self.handle_process_finished(code, status, p, script))
+            
+            self.processes.append((process, script_path))
+
+        # Start the first process
+        self.start_next_process()
+
+    def start_next_process(self):
+        if not self.processes:
+            self.update_command_monitor("All processes completed.")
+            return
+            
+        process, script_path = self.processes[0]
+        python_executable = "/usr/bin/python3"
+        
+        try:
+            projekt_info = self.gather_projekt_info()
+            process.start(python_executable, [script_path])
+            process.write(json.dumps(projekt_info).encode())
+            process.closeWriteChannel()
+            
+            self.update_command_monitor(f"Started execution of {script_path}")
+        except Exception as e:
+            self.update_command_monitor(f"Error starting {script_path}: {str(e)}")
+            self.processes.pop(0)
+            self.start_next_process()
+
+    def handle_process_output(self, process):
+        output = process.readAllStandardOutput().data().decode()
+        self.update_command_monitor(output)
+
+    def handle_process_finished(self, exit_code, exit_status, process, script_path):
+        if exit_code == 0:
+            self.update_command_monitor(f"Successfully completed {script_path}")
+        else:
+            self.update_command_monitor(f"Error executing {script_path}. Exit code: {exit_code}")
+        
+        # Remove the completed process and start the next one
+        self.processes.pop(0)
+        self.start_next_process()
+
     def update_command_monitor(self, message):
-        self.command_monitor.append(message)
+        self.command_monitor.append(message.strip())
+        # Force an immediate update
+        QApplication.processEvents()
+        # Scroll to bottom
         self.command_monitor.verticalScrollBar().setValue(
             self.command_monitor.verticalScrollBar().maximum()
         )
@@ -722,7 +800,11 @@ if __name__ == "__main__":
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
-# version:          1.0.0
+# version:          1.9.9
 # modified:         2024-12-25 - 09:50:18
 # comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:26
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

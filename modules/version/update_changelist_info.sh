@@ -32,8 +32,8 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        update_changelist_info.sh
-# Version:          0.0.0
-# Modified:         2024-08-22
+# Version:          2.0.0
+# Modified:         2024-12-31
 
 # set -ex
 
@@ -65,26 +65,32 @@ now_underscore=$(date +%H_%M)
 # This section locates the running script and the related directories.
 # ========================================================================== #
 
-# Get the directory of the script
+# Get the name of the running script
+script_name=$(basename "$0")
+
+# Get the directory of the running script
 script_dir="$(dirname "$0")"
 
-# Change directory to script_dir
-cd "$script_dir" || exit
+# Set the app_rel_dir (two levels up from the script directory)
+app_rel_dir="$script_dir/../.."
+
+# Set the app_dir to the absolute path of the app_rel_dir
+app_dir=$(cd "$app_rel_dir" && pwd)
+
+# Change to the app_dir
+cd "$app_dir" || exit
+
+# Set the modules_dir
+modules_dir="$app_dir/modules"
+
+# Set the version_dir
+version_dir="$modules_dir/version"
+
+# echo $app_dir
+# echo $modules_dir
+# echo $version_dir
 
 # -------------------------------------------------------------------------- #
-
-# Get the parent directory
-parent_dir="$(dirname "$script_dir")"
-
-# Change directory to script_dir
-cd "$parent_dir" || exit
-
-# -------------------------------------------------------------------------- #
-
-# Define version_dir
-version_dir="$parent_dir/../modules/version"
-
-echo $version_dir
 
 # Check if the directory exists or create it
 if [ ! -d "$version_dir" ]; then
@@ -207,7 +213,7 @@ change_comments="${change_comments:0:56}"
 
 # Directory containing logik projekt python scripts.
 # scripts_dir="$parent_dir/../testing"  # For testing purposes
-scripts_dir="$parent_dir/../modules"  # For production
+scripts_dir="$modules_dir"  # For production
 
 # Check if the directory exists or create it
 if [ ! -d "$scripts_dir" ]; then
@@ -281,4 +287,12 @@ done
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:16
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 10:30:16
+# comments:         Fixed pathing issues
 # -------------------------------------------------------------------------- #
