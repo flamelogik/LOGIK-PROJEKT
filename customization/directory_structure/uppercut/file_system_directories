@@ -1,0 +1,95 @@
+├── AUDIO
+│   └── 2025-01-03_Vendor Name
+├── CONFORM_PREP
+│   ├── GRAPHICS
+│   │   └── 2025-01-03
+│   │       └── 1254
+│   ├── OFFLINE
+│   │   └── 2025-01-03
+│   │       └── 1254
+│   └── XML
+│       └── 2025-01-03
+│           └── 1254
+├── DELIVERABLES
+├── DOCS
+│   ├── FLAME_ARCHIVE
+│   ├── Fonts
+│   ├── Inventory
+│   ├── PrePro
+│   ├── Scripts_Boards
+│   ├── Slates
+│   └── VFX_Shot_List
+├── FOOTAGE
+│   ├── AI
+│   │   └── DALL-E
+│   ├── CLIENT_ELEMENTS
+│   ├── CLIENT_REF
+│   ├── COLOR_PREP
+│   │   └── 2025-01-03
+│   ├── DAILIES
+│   ├── GRADE
+│   │   └── 2025-01-03_Vendor Name
+│   ├── PREVIOUS_MASTERS
+│   ├── RAW
+│   │   └── 2025-01-03
+│   └── UNIQUE_STOCK_ELEMENTS
+│       └── 2025-01-03
+├── FROM_FLAME
+│   └── 2025-01-03
+│       └── 1254
+├── MASTERS
+├── SHOTS
+│   └── Common
+│       ├── 2D
+│       │   ├── AE
+│       │   │   └── Renders
+│       │   ├── Mocha
+│       │   │   └── Exports
+│       │   ├── Nuke
+│       │   ├── Paint
+│       │   ├── Photoshop
+│       │   └── Roto
+│       │       └── Exports
+│       ├── 3D
+│       │   ├── Anim
+│       │   ├── Assets
+│       │   ├── FX
+│       │   ├── Lighting
+│       │   ├── Texturing
+│       │   └── Tracking
+│       │       ├── PFTrack
+│       │       └── Syntheyes
+│       ├── Elements
+│       ├── Plates
+│       ├── PreRenders
+│       ├── RedPens
+│       ├── References
+│       ├── Renders
+│       └── Setups
+└── VENDORS
+    ├── IN
+    │   ├── CG
+    │   │   └── 2025-01-03
+    │   ├── COMP
+    │   │   └── 2025-01-03
+    │   ├── DESIGN
+    │   │   └── 2025-01-03
+    │   ├── PAINT
+    │   │   └── 2025-01-03
+    │   ├── ROTO
+    │   │   └── 2025-01-03
+    │   └── TRACKING
+    │       └── 2025-01-03
+    └── OUT
+        ├── CG
+        │   └── 2025-01-03
+        ├── COMP
+        │   └── 2025-01-03
+        ├── DESIGN
+        │   └── 2025-01-03
+        ├── PAINT
+        │   └── 2025-01-03
+        ├── ROTO
+        │   └── 2025-01-03
+        └── TRACKING
+            └── 2025-01-03

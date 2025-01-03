@@ -1,0 +1,74 @@
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-03 12:05:23 - Reading preference file:
+  2025-01-03 12:05:23 - /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/install/current_adsk_python_version.pref
+  2025-01-03 12:05:23 - 
+  2025-01-03 12:05:23 - Preference file loaded:
+  2025-01-03 12:05:23 - /opt/Autodesk/python/2026.pr211/bin/python
+  2025-01-03 12:05:23 - 
+  2025-01-03 12:05:23 - Analyzing directory: /opt/Autodesk/python
+  2025-01-03 12:05:23 - Sorted contents of /opt/Autodesk/python:
+  2025-01-03 12:05:23 - 2026.pr213
+  2025-01-03 12:05:23 - 2025.2.2
+  2025-01-03 12:05:23 - 2025.pr196
+  2025-01-03 12:05:23 - 2024.2.pr190
+  2025-01-03 12:05:23 - 2024.pr179
+  2025-01-03 12:05:23 - 2023.pr157
+  2025-01-03 12:05:23 - 
+  2025-01-03 12:05:23 - The highest version is: 2026.pr213
+  2025-01-03 12:05:23 - 
+  2025-01-03 12:05:23 - Python version 2026.pr213 is available and executable
+  2025-01-03 12:05:23 - Updated preference file with:
+  2025-01-03 12:05:23 - /opt/Autodesk/python/2026.pr213/bin/python
+  2025-01-03 12:05:23 - 
+
++ --------------------------------------------------------------------------- +
+
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-03 12:09:22 - Reading preference file:
+  2025-01-03 12:09:22 - /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/install/current_adsk_python_version.pref
+  2025-01-03 12:09:22 - 
+  2025-01-03 12:09:22 - Preference file loaded:
+  2025-01-03 12:09:22 - /opt/Autodesk/python/2026.pr213/bin/python
+  2025-01-03 12:09:22 - 
+  2025-01-03 12:09:22 - Analyzing directory: /opt/Autodesk/python
+  2025-01-03 12:09:22 - Sorted contents of /opt/Autodesk/python:
+  2025-01-03 12:09:22 - 2026.pr213
+  2025-01-03 12:09:22 - 2025.2.2
+  2025-01-03 12:09:22 - 2025.pr196
+  2025-01-03 12:09:22 - 2024.2.pr190
+  2025-01-03 12:09:22 - 2024.pr179
+  2025-01-03 12:09:22 - 2023.pr157
+  2025-01-03 12:09:22 - 
+  2025-01-03 12:09:22 - The highest version is: 2026.pr213
+  2025-01-03 12:09:22 - 
+  2025-01-03 12:09:22 - Python version 2026.pr213 is available and executable
+  2025-01-03 12:09:22 - 
+  2025-01-03 12:09:22 - No update needed.
+  2025-01-03 12:09:22 - 
+  2025-01-03 12:09:22 - Preference file already contains the latest version:
+  2025-01-03 12:09:22 - /opt/Autodesk/python/2026.pr213/bin/python
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-03 12:09:22 - Creating macOS application: LOGIK-PROJEKT.app
+  2025-01-03 12:09:22 - Creating the macOS application components
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-03 12:09:22 - Creating LOGIK-PROJEKT shell script for linux: run_logikprojekt_linux.sh
+  2025-01-03 12:09:22 - Making the file executable: run_logikprojekt_linux.sh
+  2025-01-03 12:09:22 - Creating macOS application shell script: run_logikprojekt_macos
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-03 12:09:22 - Creating desktop entry file: LOGIK-PROJEKT.desktop
+  2025-01-03 12:09:22 - Making the file executable: LOGIK-PROJEKT.desktop
+  2025-01-03 12:09:22 - This script is not configured to move files on macOS (Darwin).
+  2025-01-03 12:09:22 - File 'LOGIK-PROJEKT.desktop' has been created and made executable.
+
++ --------------------------------------------------------------------------- +
+

@@ -237,6 +237,42 @@ def string_clean(string):
 
     return string
 
+def string_clean_upper(string):
+
+    '''
+    Clean string: allow only upper case letters, numbers, and underscores.
+
+        * Convert to lowercase
+
+        * Keep only lowercase letters, numbers, underscores, and replace
+          other characters with underscores
+
+        * Replace whitespace characters with underscores
+
+        * Replace consecutive underscores with single underscore
+
+        * Remove leading and trailing underscores
+
+    '''
+
+    string = string.upper()
+
+    string = ''.join(
+        character 
+        if character.isupper() 
+        or character.isdigit() 
+        or character == '_' 
+        or character.isspace() 
+        else '_' for character in string)
+
+    string = string.replace(' ', '_')
+
+    string = '_'.join(filter(None, string.split('_')))
+
+    string = string.strip('_')
+
+    return string
+
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
