@@ -1,46 +1,23 @@
 """
-Script Name: uc project starter
-Script Version: 0.6
+Script Name: uc projekt starter
+Script Version: 0.1
 Flame Version: 2025.1
 Written by: John Geehreng
-Creation Date: 10.07.24
-Update Date: 12.11.24
+Creation Date: 01.06.25
+Update Date: 
 
-Custom Action Type: Project Launch
+Custom Action Type: Projekt Launch
 
 Description:
 
-    Configure Project on Launch
+    Configure Projekt on Launch
 
-To install:
-
-    Copy script into /opt/Autodesk/shared/python/uc_project_starter
 
 Updates:
 
-    v0.6 12.11.24
+    v0.1 01.06.25
 
-        Check that item like slates, shipping kit, and safety guides exist before trying to import them. Move text file to /var/tmp
-
-    v0.5 12.08.24
-
-        Automatically import Safety Guides
-
-    v0.4 10.25.24
-
-        Changed Posting kit to Shipping Kit
-
-    v0.3 10.08.24
-
-        Cache Slates and Guides -> item.cache_media(mode='current')
-
-    v0.2 10.07.24
-
-        typo fix
-    
-    v0.1 10.07.24
-
-        Start with MediaHub Options only
+        Repurpose UC Project Starter for Logik Projekt
 """
 
 #-------------------------------------#
@@ -49,36 +26,22 @@ Updates:
 import os
 import flame
 import datetime
-import requests
-import platform
-import json
-from pyflame_lib_uc_project_starter import *
 
 #-------------------------------------#
 # Main Script
 
-SCRIPT_NAME = 'UC Project Starter'
-SCRIPT_VERSION = 'v0.6'
-SCRIPT_PATH = '/opt/Autodesk/shared/python/uc_project_starter'
+SCRIPT_NAME = 'UC Projekt Starter'
+SCRIPT_VERSION = 'v0.1'
+SCRIPT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 class ProjectStarter():
 
     def __init__(self, selection) -> None:
 
-        print('\n')
-        print('[=========', f'{SCRIPT_NAME} {SCRIPT_VERSION} Start', '=========]\n')
-
-        # Check script path, if path is incorrect, stop script.
-        if not self.check_script_path():
-            return
-
-        # Create/Load config file settings.
-        self.load_config()
-
         # Define common variables
         self.project_name = flame.project.current_project.name
         self.project_nickname = flame.project.current_project.nickname
-        self.project_file = f"/var/tmp/{self.project_name}_project_starter.txt"
+        self.project_file = f"/opt/Autodesk/project/{self.project_name}/setups/tmp/project_starter.txt"
         self.wks = flame.project.current_project.current_workspace
         self.libs = flame.project.current_project.current_workspace.libraries
         self.dsk = flame.project.current_project.current_workspace.desktop
@@ -86,86 +49,25 @@ class ProjectStarter():
         self.today = (dateandtime.strftime("%Y-%m-%d"))
         self.time = (dateandtime.strftime("%H%M"))
 
-        # Give the option to apply the job template or not.
-        template_dialogue = flame.messages.show_in_dialog(
-        title = f"{SCRIPT_NAME} - {SCRIPT_VERSION}",
-        message = 'Would you like to apply the default job template?\n\nIf this is not a new project, please hit "No."',
-        type = "info",
-        buttons = ["Yes"],
-        cancel_button = "No")
+        # Create project file so UC Proect Starter does not run again.
+        message = f"{SCRIPT_NAME} was not used for {self.project_name}."
+        self.create_project_file(message)
 
-        if template_dialogue == "Yes":
+        # Set Default MediaHub Options
+        self.set_mediahub_options()
 
-            # Set Default MediaHub Options
-            self.set_mediahub_options()
+        # Create Desktop, Libraries, Shared Libraries, and Subfolders
+        self.create_libraries()
+        self.new_conform_desktop()
 
-            # Check for nearline job folder
-            self.create_job_folders()
-
-            # Create Desktop, Libraries, Shared Libraries, and Subfolders
-            self.create_libraries()
-            self.new_conform_desktop()
-
-            # Should be done, but maybe load project bin?
-            
-            # Create the file and don't ask about the current project again
-            message = f"{SCRIPT_NAME} was used for {self.project_name}."
-            self.create_project_file(message)
-            
-            print('\n')
-            print('[=========', f'{SCRIPT_NAME} {SCRIPT_VERSION} End', '=========]\n')
-
-        else:
-            # Create the file and don't ask about the current project again
-            message = f"{SCRIPT_NAME} was not used for {self.project_name}."
-            self.create_project_file(message)
-            return
-
-    def check_script_path(self) -> bool:
-        """
-        Check Script Path
-        =================
-
-        Check if script is installed in the correct location.
-
-        Returns:
-        --------
-            bool: True if script is installed in correct location, False if not.
-        """
-
-        if os.path.dirname(os.path.abspath(__file__)) != SCRIPT_PATH:
-            PyFlameMessageWindow(
-                message=f'Script path is incorrect. Please reinstall script.<br><br>Script path should be:<br><br>{SCRIPT_PATH}',
-                type=MessageType.ERROR,
-                )
-            return False
-        return True
-
-    def load_config(self) -> None:
-        """
-        Load Config
-        ===========
-
-        Loads configuration values from the config file and applies them to `self.settings`.
-
-        If the config file does not exist, it creates the file using the default values
-        from the `config_values` dictionary. Otherwise, it loads the existing config values
-        and applies them to `self.settings`.
-        """
-
-        self.settings = PyFlameConfig(
-            config_values={
-                'library_list': 'Some value',
-                'shared_library_list': 'Some value',
-                },
-            )
         
+    
     def create_project_file(self,message):
-        print ("Creating Project File.")
-        # Create this file so the prompt does not show up again.
-        f = open(self.project_file, "w")
-        f.write(message + '\n')
-        f.close()
+            print ("Creating Project File.")
+            # Create this file so the prompt does not show up again.
+            f = open(self.project_file, "w")
+            f.write(message + '\n')
+            f.close()
 
     def set_mediahub_options(self):
         print("Setting MediaHub Options")
@@ -317,80 +219,9 @@ class ProjectStarter():
         except:
             print ('Cannot Find WIPS Libray')
 
-    def create_job_folders(self):
-        
-        def send_to_slack_commands(message):
-            response = requests.post (
-                            'https://hooks.slack.com/services/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',
-                            json = { 'text': message }
-                        )
-
-        job_folder = f'/Volumes/vfx/UC_Jobs/{self.project_nickname}'
-        job_folder_message = f'Job Folder  "{self.project_nickname}"  is being created.\nYou will recieve a slack message when it has finished.'
-
-        print("Checking for Job Folder.")
-        if not os.path.isdir(job_folder):
-            print (" Job Folder dles not exist.")
-            warning_dialogue = flame.messages.show_in_dialog(
-            title = f"{SCRIPT_NAME} - Warning",
-            message = f'No Job Folder found for "{self.project_nickname}" project. \n\nWould you like to create a "{self.project_nickname}" Job Folder?',
-            type = "warning",
-            buttons = ["Yes"],
-            cancel_button = "No")
-            if warning_dialogue == "Yes":
-                if re.search(r'[U][CSW][\d]{6}_',self.project_nickname):
-                    print("  Valid Job Number.")
-                    pass
-                else:
-                    print("  Invalid Job Number.")
-                    warning_dialogue = flame.messages.show_in_dialog(
-                        title = "In Valid Job Number Warning",
-                        message = f'The job folder should start with UC, US, or UW and be followed by 6 digits.\n\nWould you still like to create a "{self.project_nickname}" Job Folder?',
-                        type = "warning",
-                        buttons = ["Yes"],
-                        cancel_button = "Cancel")
-                    if warning_dialogue == "Yes":
-                        pass
-                    else:
-                        print ("  Job Folder not needed.")
-                        return
-            else:
-                print ("  Job Folder not needed.")
-                return
-            
-            # Creating Job Folders on vfx server
-            print("   Creating Job Folders via Slack.")
-
-            # Build Location List for Slack Command
-            location_list = []
-            user_nickname = flame.users.current_user.nickname
-            site = platform.node().split('-')[0].lower()
-            location_list.append(site)
-            # print(f"Location List: {location_list}")
-
-            task = { 'cmd':'jobfolders', 'user': user_nickname, 'job': self.project_nickname, 'location': location_list }
-            task_dump = json.dumps(task)
-            create_job_command =  f"<@U04FQKR4Z5E> | {task_dump}"
-
-            send_to_slack_commands(create_job_command)
-
-            flame.messages.show_in_console('Create Job Folders Command sent to admin_commands channel. This will take about 1 minute for NYC and 2 minutes for LAX and ATL.', 'info',6)
-
-            flame.messages.show_in_dialog(
-                title = f"{SCRIPT_NAME} - Success",
-                message = job_folder_message,
-                type = "info",
-                buttons = ["Ok"]
-                )
-        else:
-            print(' Job folder exists.','\n')
             
 #-------------------------------------#
 # Flame Menus
 
 def app_initialized(selection):
-    # Check for a project file...
-    project_name = flame.project.current_project.name
-    project_file = f"/var/tmp/{project_name}_project_starter.txt"
-    if not os.path.isfile(project_file):
         ProjectStarter(selection)
