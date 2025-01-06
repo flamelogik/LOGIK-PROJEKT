@@ -42,8 +42,8 @@ the_projekt_flame_name="LogikProjektFlameName"
 flame_workstation_name="FlameWorkstationName"
 
 # Define paths
-archive_script_path="LogikProjektDirectories/LogikProjektDirectory/flame/archives/ArchiveScriptName"
-archive_script_cron_log_dir="LogikProjektDirectories/LogikProjektDirectory/flame/archives/FlameWorkstationName/cron_log/"
+archive_script_path="LogikProjektDirectories/LogikProjektDirectory/DOCS/FLAME_ARCHIVE/ArchiveScriptName"
+archive_script_cron_log_dir="LogikProjektDirectories/LogikProjektDirectory/DOCS/FLAME_ARCHIVE/FlameWorkstationName/cron_log/"
 
 # Inform the user about the shell script and log path
 echo -e "\n  Shell script to be scheduled:\n\n  $archive_script_path\n\n"

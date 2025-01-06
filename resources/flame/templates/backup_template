@@ -80,7 +80,7 @@ the_projekt_root_directory="LogikProjektDirectories"
 the_projekt_job_directory="${the_projekt_root_directory}/${the_projekt_name}"
 
 # set the path for the the_projekt_job_rsync_directory
-the_projekt_job_rsync_directory="${the_projekt_job_directory}/backup/backup_scripts/${flame_workstation_name}"
+the_projekt_job_rsync_directory="${the_projekt_job_directory}/DOCS/BACKUPS/${flame_workstation_name}"
 
 # Make ${the_projekt_job_rsync_directory} if it doesn't exist
 mkdir -p -m 777 "${the_projekt_job_rsync_directory}"

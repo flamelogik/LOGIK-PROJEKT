@@ -231,7 +231,8 @@ def backup_projekt_template(
     # Set the tgt_cfg_template_dir preferences
     tgt_cfg_template_dir = os.path.join(
         the_projekt_dir,
-        'cfg',
+        'DOCS',
+        'CFG',
         'template',
     )
 

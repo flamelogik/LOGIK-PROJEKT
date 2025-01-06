@@ -42,8 +42,8 @@ the_projekt_flame_name="LogikProjektFlameName"
 flame_workstation_name="FlameWorkstationName"
 
 # Define paths
-backup_script_path="LogikProjektDirectories/LogikProjektDirectory/backup/backup_scripts/FlameWorkstationName/BackupScriptName" 
-backup_script_cron_log_dir="LogikProjektDirectories/LogikProjektDirectory/backup/backup_scripts/FlameWorkstationName/cron_log"
+backup_script_path="LogikProjektDirectories/LogikProjektDirectory/DOCS/BACKUPS/FlameWorkstationName/BackupScriptName" 
+backup_script_cron_log_dir="LogikProjektDirectories/LogikProjektDirectory/DOCS/BACKUPS/FlameWorkstationName/cron_log"
 
 # Inform the user about the shell script and log path
 echo -e "\n  Shell script to be scheduled:\n\n  $backup_script_path\n\n"

@@ -255,8 +255,8 @@ def create_projekt_backup_script(
     # Set the tgt_projekt_backup_dir preferences
     tgt_projekt_backup_dir = os.path.join(
         the_projekt_dir,
-        'backup',
-        'backup_scripts',
+        'DOCS',
+        'BACKUPS',
         f"{the_hostname}",
     )
 
@@ -271,8 +271,8 @@ def create_projekt_backup_script(
     # Set the tgt_workstation_projekt_backup_dir preferences
     tgt_workstation_projekt_backup_dir = os.path.join(
         the_projekt_dir,
-        'backup',
-        'backup_scripts',
+        'DOCS',
+        'BACKUPS',
         f"{the_hostname}",
     )
 

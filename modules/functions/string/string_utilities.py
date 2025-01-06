@@ -201,7 +201,7 @@ def validate_string(s, pattern):
     """Validate string against a regex pattern."""
     return re.match(pattern, s) is not None
 
-def string_clean(string):
+def string_clean_lower(string):
 
     '''
     Clean string: allow only lower case letters, numbers, and underscores.
@@ -270,6 +270,64 @@ def string_clean_upper(string):
     string = '_'.join(filter(None, string.split('_')))
 
     string = string.strip('_')
+
+    return string
+
+def string_clean_camel(string):
+    '''
+    Clean string and convert to CamelCase.
+
+        * Keep only letters, numbers, and underscores
+
+        * Replace whitespace characters with underscores
+
+        * Replace consecutive underscores with single underscore
+
+        * Remove leading and trailing underscores
+
+        * Convert to CamelCase
+
+    '''
+    string = ''.join(
+        character 
+        if character.isalnum() 
+        or character == '_' 
+        or character.isspace() 
+        else '_' for character in string)
+
+    string = string.replace(' ', '_')
+
+    string = '_'.join(filter(None, string.split('_')))
+
+    string = string.strip('_')
+
+    return ''.join(word.title() for word in string.split('_'))
+
+def string_clean_uc(string):
+    '''
+    Clean string: allow only upper and lower case letters, numbers, and hyphens.
+
+        * Keep only letters, numbers, hyphens, and replace other characters with hyphens
+
+        * Replace whitespace characters with hyphens
+
+        * Replace consecutive hyphens with single hyphen
+
+        * Remove leading and trailing hyphens
+
+    '''
+    string = ''.join(
+        character 
+        if character.isalnum() 
+        or character == '-' 
+        or character.isspace() 
+        else '-' for character in string)
+
+    string = string.replace(' ', '-')
+
+    string = '-'.join(filter(None, string.split('-')))
+
+    string = string.strip('-')
 
     return string
 

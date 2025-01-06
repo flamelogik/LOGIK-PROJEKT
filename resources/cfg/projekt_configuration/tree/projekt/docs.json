@@ -25,6 +25,42 @@
                 "object_type": "",
                 "object_color": "",
                 "link": "False",
+                "dir_name": "BACKUPS",
+                "filesystem_type": "folder",
+                "flame_type": "",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/",
+                "path": "/{projekts_dir}/{projekt_dir}/DOCS/BACKUPS",
+                "bookmark_name": "",
+                "bookmark_type": "",
+                "bookmark_parent": "",
+                "bookmark_visibility": ""
+            },
+            "item_02": {
+                "object_name": "",
+                "process_type": "",
+                "parent_object": "",
+                "display_name": "",
+                "object_type": "",
+                "object_color": "",
+                "link": "False",
+                "dir_name": "CFG",
+                "filesystem_type": "folder",
+                "flame_type": "",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/",
+                "path": "/{projekts_dir}/{projekt_dir}/DOCS/CFG",
+                "bookmark_name": "",
+                "bookmark_type": "",
+                "bookmark_parent": "",
+                "bookmark_visibility": ""
+            },
+            "item_03": {
+                "object_name": "",
+                "process_type": "",
+                "parent_object": "",
+                "display_name": "",
+                "object_type": "",
+                "object_color": "",
+                "link": "False",
                 "dir_name": "FLAME_ARCHIVE",
                 "filesystem_type": "folder",
                 "flame_type": "",
@@ -35,7 +71,7 @@
                 "bookmark_parent": "",
                 "bookmark_visibility": ""
             },
-            "item_02": {
+            "item_04": {
                 "object_name": "",
                 "process_type": "",
                 "parent_object": "",
@@ -53,7 +89,7 @@
                 "bookmark_parent": "",
                 "bookmark_visibility": ""
             },
-            "item_03": {
+            "item_05": {
                 "object_name": "",
                 "process_type": "",
                 "parent_object": "",
@@ -71,7 +107,7 @@
                 "bookmark_parent": "",
                 "bookmark_visibility": ""
             },
-            "item_04": {
+            "item_06": {
                 "object_name": "",
                 "process_type": "",
                 "parent_object": "",
@@ -89,7 +125,7 @@
                 "bookmark_parent": "",
                 "bookmark_visibility": ""
             },
-            "item_05": {
+            "item_07": {
                 "object_name": "",
                 "process_type": "",
                 "parent_object": "",
@@ -107,7 +143,7 @@
                 "bookmark_parent": "",
                 "bookmark_visibility": ""
             },
-            "item_06": {
+            "item_08": {
                 "object_name": "",
                 "process_type": "",
                 "parent_object": "",
@@ -125,7 +161,7 @@
                 "bookmark_parent": "",
                 "bookmark_visibility": ""
             },
-            "item_07": {
+            "item_09": {
                 "object_name": "",
                 "process_type": "",
                 "parent_object": "",

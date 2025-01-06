@@ -127,7 +127,10 @@ from functions.get.get_flame_software import (
 
 from functions.get.get_framestores import get_framestore_list
 
-from functions.string.string_utilities import string_clean
+from modules.functions.string.string_utilities import string_clean_camel
+from modules.functions.string.string_utilities import string_clean_lower
+from modules.functions.string.string_utilities import string_clean_uc
+from modules.functions.string.string_utilities import string_clean_upper
 
 from widgets.line_edit.flame_projekt_directory import WidgetFlameProjektDirectory
 from widgets.line_edit.flame_projekt_media_cache import WidgetFlameProjektMediaCache

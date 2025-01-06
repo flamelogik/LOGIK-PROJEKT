@@ -136,7 +136,9 @@ from modules.widgets.line_edit.flame_projekt_directory import WidgetFlameProjekt
 from modules.widgets.line_edit.flame_projekt_media_cache import WidgetFlameProjektMediaCache
 from modules.widgets.line_edit.flame_projekt_setups_dir import WidgetFlameProjektSetupsDir
 from modules.widgets.combo_box.ocio_config import WidgetOCIOConfig
-from modules.functions.string.string_utilities import string_clean
+from modules.functions.string.string_utilities import string_clean_camel
+from modules.functions.string.string_utilities import string_clean_lower
+from modules.functions.string.string_utilities import string_clean_uc
 from modules.functions.string.string_utilities import string_clean_upper
 from modules.functions.export.export_template import export_template_as_json
 from modules.widgets.style_sheet.projekt_style_sheet import (
@@ -409,8 +411,8 @@ class LayoutLeft(QWidget):
     def update_template_name(self):
         try:
             serial_number = string_clean_upper(self.widget_dict["template_serial_number"].text())
-            client_name = string_clean(self.widget_dict["template_client_name"].text())
-            campaign_name = string_clean(self.widget_dict["template_campaign_name"].text())
+            client_name = string_clean_uc(self.widget_dict["template_client_name"].text())
+            campaign_name = string_clean_uc(self.widget_dict["template_campaign_name"].text())
 
             if serial_number:
                 template_name = f"{serial_number}_{client_name}_{campaign_name}".strip('_')

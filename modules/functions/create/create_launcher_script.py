@@ -246,7 +246,8 @@ def create_projekt_flame_launcher_script(
     # Set the tgt_projekt_flame_launcher_dir preferences
     tgt_projekt_flame_launcher_dir = os.path.join(
         the_projekt_dir_path,
-        'cfg',
+        'DOCS',
+        'CFG',
         'workstation',
         the_hostname,
     )
@@ -266,7 +267,7 @@ def create_projekt_flame_launcher_script(
         f"{the_projekt_name}-flame_launcher-{the_hostname}.sh"
     )
 
-    # Archive the PROJEKT template
+    # Archive the PROJEKT flame launcher script
     print(f"  Creating PROJEKT flame launcher script.\n")
 
     backup_filename = generate_backup_filename(tgt_launcher_script)
@@ -284,7 +285,7 @@ def create_projekt_flame_launcher_script(
     print(f"  {os.path.basename(backup_filename)}")
     print("\n" + separator + "\n")
 
-    # Archive the PROJEKT template
+    # Archive the PROJEKT flame launcher script
     print(f"  Modifying PROJEKT launcher script.\n")
 
     # Add execution permissions to the new archiving shell script

@@ -221,7 +221,7 @@ echo -e "the_projekt_job_directory:"
 echo -e "  ${the_projekt_job_directory}"
 
 # set the path for the the_projekt_job_flame_archives_directory
-the_projekt_job_flame_archives_directory="${the_projekt_job_directory}/flame/archives"
+the_projekt_job_flame_archives_directory="${the_projekt_job_directory}/DOCS/FLAME_ARCHIVE"
 
 # echo ${the_projekt_job_flame_archives_directory} to the shell
 echo -e "the_projekt_job_flame_archives_directory:"

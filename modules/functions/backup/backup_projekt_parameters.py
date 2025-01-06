@@ -231,7 +231,8 @@ def backup_projekt_parameters_xml(
     # Set the tgt_cfg_hostname_dir preferences
     tgt_cfg_hostname_dir = os.path.join(
         the_projekt_dir,
-        'cfg',
+        'DOCS',
+        'CFG',
         'workstation',
         the_hostname
     )

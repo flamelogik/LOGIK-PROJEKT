@@ -266,8 +266,8 @@ def create_projekt_flame_archive_script(
     # Set the tgt_flame_archives_dir path
     tgt_flame_archives_dir = os.path.join(
         the_projekt_dir,
-        'flame',
-        'archives',
+        'DOCS',
+        'FLAME_ARCHIVE',
     )
 
     # Create the tgt_flame_archives_dir if it doesn't exist
@@ -281,8 +281,8 @@ def create_projekt_flame_archive_script(
     # Set the tgt_workstation_flame_archives_dir path
     tgt_workstation_flame_archives_dir = os.path.join(
         the_projekt_dir,
-        'flame',
-        'archives',
+        'DOCS',
+        'FLAME_ARCHIVE',
         the_hostname,
     )
 

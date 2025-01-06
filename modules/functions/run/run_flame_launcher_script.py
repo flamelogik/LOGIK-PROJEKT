@@ -286,7 +286,7 @@ def main():
         logger.log_and_print(f"{banner_head('Creating a custom flame launcher')}")
 
         # Path to the launcher script directory
-        the_projekt_flame_launcher_dir = f"{the_projekts_dir}/{the_projekt_name}/cfg/workstation/{the_hostname}"
+        the_projekt_flame_launcher_dir = f"{the_projekts_dir}/{the_projekt_name}/DOCS/CFG/workstation/{the_hostname}"
 
         # Path to the Bash script
         the_flame_launcher_script = f"{the_projekt_flame_launcher_dir}/{the_projekt_name}-flame_launcher-{the_hostname}.sh"
