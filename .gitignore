@@ -78,3 +78,19 @@ resources/utilities/scripts/bash/create_new_ssh_keys/scripts/create_ssh_keys-lin
 resources/utilities/scripts/bash/create_new_ssh_keys/scripts/create_ssh_keys-linux copy 2.sh
 
 .codegpt
+customization/directory_structure/jg/tree
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/assets.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/backup.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/cfg.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/docs.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/editorial.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/flame.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/masters.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/reference.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/scenes.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/shots.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/software.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/tmp.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/utilities.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/version.json
+customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/work_in_progress.json
