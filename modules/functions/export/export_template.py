@@ -205,7 +205,8 @@ def export_template_as_json(self):
 
     try:
         # Check if critical fields are empty
-        required_fields = ["template_client_name", "template_campaign_name", "template_name"]
+        # required_fields = ["template_client_name", "template_campaign_name", "template_name"]
+        required_fields = ["template_serial_number", "template_client_name", "template_name"]
         for field in required_fields:
             widget = self.widget_dict.get(field)
             if not widget or not widget.text().strip():

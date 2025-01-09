@@ -1,0 +1,47 @@
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-09 14:03:03 - Reading preference file:
+  2025-01-09 14:03:03 - /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/install/current_adsk_python_version.pref
+  2025-01-09 14:03:03 - 
+  2025-01-09 14:03:03 - Preference file loaded:
+  2025-01-09 14:03:03 - /opt/Autodesk/python/2026.pr213/bin/python
+  2025-01-09 14:03:03 - 
+  2025-01-09 14:03:03 - Analyzing directory: /opt/Autodesk/python
+  2025-01-09 14:03:03 - Sorted contents of /opt/Autodesk/python:
+  2025-01-09 14:03:03 - 2026.pr213
+  2025-01-09 14:03:03 - 2025.2.2
+  2025-01-09 14:03:03 - 2025.pr196
+  2025-01-09 14:03:03 - 2024.2.pr190
+  2025-01-09 14:03:03 - 2024.pr179
+  2025-01-09 14:03:03 - 2023.pr157
+  2025-01-09 14:03:03 - 
+  2025-01-09 14:03:03 - The highest version is: 2026.pr213
+  2025-01-09 14:03:03 - 
+  2025-01-09 14:03:03 - Python version 2026.pr213 is available and executable
+  2025-01-09 14:03:03 - 
+  2025-01-09 14:03:03 - No update needed.
+  2025-01-09 14:03:03 - 
+  2025-01-09 14:03:03 - Preference file already contains the latest version:
+  2025-01-09 14:03:03 - /opt/Autodesk/python/2026.pr213/bin/python
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-09 14:03:03 - Creating macOS application: LOGIK-PROJEKT.app
+  2025-01-09 14:03:03 - Creating the macOS application components
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-09 14:03:03 - Creating LOGIK-PROJEKT shell script for linux: run_logikprojekt_linux.sh
+  2025-01-09 14:03:03 - Making the file executable: run_logikprojekt_linux.sh
+  2025-01-09 14:03:03 - Creating macOS application shell script: run_logikprojekt_macos
+
++ --------------------------------------------------------------------------- +
+
+  2025-01-09 14:03:03 - Creating desktop entry file: LOGIK-PROJEKT.desktop
+  2025-01-09 14:03:03 - Making the file executable: LOGIK-PROJEKT.desktop
+  2025-01-09 14:03:03 - This script is not configured to move files on macOS (Darwin).
+  2025-01-09 14:03:03 - File 'LOGIK-PROJEKT.desktop' has been created and made executable.
+
++ --------------------------------------------------------------------------- +
+

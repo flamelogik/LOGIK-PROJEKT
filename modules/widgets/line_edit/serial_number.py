@@ -200,7 +200,7 @@ class WidgetSerialNumber(QLineEdit):
         self.setObjectName("template_serial_number")
 
         # Set default properties
-        self.setPlaceholderText("Projekt Serial Number (Optional)...")
+        self.setPlaceholderText("Projekt Serial Number...")
         self.setReadOnly(False)
 
         # Optionally, set additional properties based on widget_parameters
@@ -211,7 +211,7 @@ class WidgetSerialNumber(QLineEdit):
             "widget_type": "QLineEdit",
             "widget_label_name": "Serial Number: ",
             "widget_default_value": "",
-            "widget_placeholder_value": "Projekt Serial Number (Optional)...",
+            "widget_placeholder_value": "Projekt Serial Number...",
             "widget_item_values": "",
             "widget_read_only": False
         }

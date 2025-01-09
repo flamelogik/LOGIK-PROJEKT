@@ -200,7 +200,7 @@ class WidgetCampaignName(QLineEdit):
         self.setObjectName("template_campaign_name")
 
         # Set default properties
-        self.setPlaceholderText("Projekt Campaign Name...")
+        self.setPlaceholderText("Projekt Campaign Name...(Optional, but recommended)")
         self.setReadOnly(False)
 
         # Optionally, set additional properties based on widget_parameters
@@ -211,7 +211,7 @@ class WidgetCampaignName(QLineEdit):
             "widget_type": "QLineEdit",
             "widget_label_name": "Campaign Name: ",
             "widget_default_value": "",
-            "widget_placeholder_value": "Projekt Campaign Name...",
+            "widget_placeholder_value": "Projekt Campaign Name...(Optional, but recommended)",
             "widget_item_values": "",
             "widget_read_only": False
         }

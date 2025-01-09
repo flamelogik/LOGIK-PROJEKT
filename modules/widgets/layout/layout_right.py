@@ -768,9 +768,13 @@ class WidgetLayoutRight(QWidget):
         xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
         xml_setup_dir = f"{xml_project_dir}/setups"
         xml_media_dir = f"{xml_project_dir}/media"
+        # The next line is for ACES
         # xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
+        # The next line is for ADSK Legacy
         xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_legacy_config/config.ocio"
+        # this line is for Integer: DPX (Uncompressed) + Floating: EXR (DWAA)
         # xml_intermediates_profile = f"0:1120376"
+        # this line is for Integer: ProRes444 XQ + Floating: EXR (DWAA)
         xml_intermediates_profile = f"65541:1120376"
 
         return {
