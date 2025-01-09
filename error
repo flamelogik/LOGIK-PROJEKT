@@ -77,35 +77,35 @@ Looking for templates in: /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/r
 
 # --------------------------------------------------------------------------- #
 
-projekt: UC222222_test_test
+projekt: US123465_uppercut_south
 
 # --------------------------------------------------------------------------- #
 
 hostname: nyc-mpc-001
 
-host OS: 
+host OS: Darwin
 
 username: root
 
 groupname: staff
 
 flame ver: flame_2026.pr213
-
 framestore: N/A
 
-datestamp: 2025_01_07
+datestamp: 2025_01_09
 
-timestamp: 13_49_17
+timestamp: 10_00_27
+
 # ========================= THE PROJEKT INFORMATION ========================= #
 
 
-the_projekt_serial_number: uc222222
+the_projekt_serial_number: us123465
 
-the_projekt_client_name: test
+the_projekt_client_name: uppercut
 
-the_projekt_campaign_name: test
+the_projekt_campaign_name: south
 
-the_projekt_name: UC222222_test_test
+the_projekt_name: US123465_uppercut_south
 
 the_projekt_resolution: 1920 x 1080 | HD 1080 16:9
 
@@ -137,7 +137,7 @@ the_projekt_user_name: root
 
 the_projekt_primary_group: staff
 
-the_projekt_os: 
+the_projekt_os: Darwin
 
 the_hostname: nyc-mpc-001
 
@@ -153,13 +153,13 @@ the_sanitized_sw_ver:
 
 the_sanitized_version: 
 
-the_projekt_flame_name: UC222222_test_test_2026_nyc-mpc-001
+the_projekt_flame_name: US123465_uppercut_south_2026_nyc-mpc-001
 
-xml_project_dir: /opt/Autodesk/project/UC222222_test_test_2026_nyc-mpc-001
+xml_project_dir: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001
 
-xml_setup_dir: /opt/Autodesk/project/UC222222_test_test_2026_nyc-mpc-001/setups
+xml_setup_dir: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups
 
-xml_media_dir: /opt/Autodesk/project/UC222222_test_test_2026_nyc-mpc-001/media
+xml_media_dir: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/media
 
 xml_ocio_config: /opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio
 
@@ -199,7 +199,7 @@ umask 0
 # # Create a logik projekt flame project node using wiretap
 # /opt/Autodesk/wiretap/tools/current/wiretap_create_node \
 # -n /volumes/stonefs \
-# -d "UC222222_test_test_2026_nyc-mpc-001" \
+# -d "US123465_uppercut_south_2026_nyc-mpc-001" \
 # -s XML \
 # -f "resources/tmp/current_projekt_parameters.xml"
 # ---------------------------------------------------------------------- #
@@ -209,12 +209,12 @@ umask 0
 -h 127.0.0.1 \
 -n /projects \
 -t PROJECT \
--d "UC222222_test_test_2026_nyc-mpc-001" \
+-d "US123465_uppercut_south_2026_nyc-mpc-001" \
 -s XML \
 -f "resources/tmp/current_projekt_parameters.xml"
 # ---------------------------------------------------------------------- #
 Command output:
-Created node '/projects/DFDBEAE3-1A5C-4D04-9E36-ED39EB24EBB1'.
+Created node '/projects/E7925A3C-197A-4E5F-9610-BE7DFCF066E3'.
 # --------------------------------------------------------------------------- #
 
 # ====================== CREATING PROJEKT DIRECTORIES ======================= #
@@ -239,73 +239,1955 @@ Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/maste
 Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/shots.json
 
 Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/vendors.json
-Successfully created directory: /PROJEKTS/UC222222_test_test/AUDIO
-Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP
-Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP/GRAPHICS
-Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP/OFFLINE
-Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP/XML
-Successfully created directory: /PROJEKTS/UC222222_test_test/DELIVERABLES
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/BACKUPS
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/CFG
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/FLAME_ARCHIVE
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Fonts
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Inventory
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/PrePro
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Scripts_Boards
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Slates
-Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/VFX_Shot_list
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/AI
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/CLIENT_ELEMENTS
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/CLIENT_REF
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/COLOR_PREP
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/DAILIES
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/GRADE
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/PREVIOUS_MASTERS
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/RAW
-Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/UNIQUE_STOCK_ELEMENTS
-Successfully created directory: /PROJEKTS/UC222222_test_test/FROM_FLAME
-Successfully created directory: /PROJEKTS/UC222222_test_test/MASTERS
-Successfully created directory: /PROJEKTS/UC222222_test_test/SHOTS
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/CG
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/COMP
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/DESIGN
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/PAINT
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/ROTO
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/TRACKING
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/CG
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/COMP
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/DESIGN
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/PAINT
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/ROTO
-Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/TRACKING
-Bookmarks file updated successfully.
-Traceback (most recent call last):
-  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/create/create_projekt.py", line 1143, in <module>
-    main()
-  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/create/create_projekt.py", line 558, in main
-    create_the_projekt_directories(
-  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/create/create_projekt_dirs.py", line 417, in create_the_projekt_directories
-    return data  # Return the final bookmarks data
-UnboundLocalError: local variable 'data' referenced before assignment
-Error executing modules/functions/create/create_projekt.py. Exit code: 1
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/AUDIO
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/CONFORM_PREP
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/CONFORM_PREP/GRAPHICS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/CONFORM_PREP/OFFLINE
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/CONFORM_PREP/XML
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DELIVERABLES
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/BACKUPS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/CFG
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/FLAME_ARCHIVE
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/Fonts
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/Inventory
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/PrePro
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/Scripts_Boards
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/Slates
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/DOCS/VFX_Shot_list
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/AI
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/CLIENT_ELEMENTS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/CLIENT_REF
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/COLOR_PREP
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/DAILIES
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/GRADE
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/PREVIOUS_MASTERS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/RAW
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FOOTAGE/UNIQUE_STOCK_ELEMENTS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/FROM_FLAME
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/MASTERS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/SHOTS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/IN
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/IN/CG
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/IN/COMP
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/IN/DESIGN
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/IN/PAINT
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/IN/ROTO
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/IN/TRACKING
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/OUT
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/OUT/CG
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/OUT/COMP
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/OUT/DESIGN
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/OUT/PAINT
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/OUT/ROTO
+Successfully created directory: /PROJEKTS/US123465_uppercut_south/VENDORS/OUT/TRACKING
+# --------------------------------------------------------------------------- #
+
+# ======================= CREATING FLAME DIRECTORIES ======================== #
+
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/flame/flame_setup_dirs.json
+
+Successfully loaded JSON data.
+
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/2dtransform
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/2dtransform/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/2dtransform/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/2dtransform/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/3dblur
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/3dblur/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/3dblur/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/3dblur/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/aaf
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/action
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/action/contextmenu
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/action/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/action/ibl
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/action/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/action/transitions
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/audio
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/audio/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/audio/pref/ALSA
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/automatte
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/automatte/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/automatte/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/automatte/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/autostabilize
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/autostabilize/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/autostabilize/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/autostabilize/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/average
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/average/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/average/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/average/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/axis
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batch
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batch/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batch/log
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batch/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batchclip
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batchclip/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batchclip/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/batchclip/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blendComp
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blendComp/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blendComp/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blendComp/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blur
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blur/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blur/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blur/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/blur/presets/DEFOCUS
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/bumpDisplace
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/bumpDisplace/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/bumpDisplace/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/bumpDisplace/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_letterbox
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_letterbox/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_letterbox/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_letterbox/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_metadata
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_metadata/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_metadata/overlay
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_metadata/overlay/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_metadata/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/burn_metadata/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/ccurves
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/ccurves/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/ccurves/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/ccurves/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cfg
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cfg/linux
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cfg/linux/template
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/check
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/check/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/check/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/check/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/clamp
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/clamp/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/clamp/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/clamp/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colour_correct
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colour_correct/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colour_correct/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colour_correct/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colourwarper
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colourwarper/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colourwarper/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/colourwarper/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/combine
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/combine/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/combine/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/combine/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/comp
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/comp/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/compound
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/compound/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/compound/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/compound/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/comp/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/comp/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cryptoMatte
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cryptoMatte/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cryptoMatte/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cryptoMatte/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/damage
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/damage/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/damage/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/damage/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/damage/presets/ANALOG
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/damage/presets/DIGITAL
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/damage/presets/FILM
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deal
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deal/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deal/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deal/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deform
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deform/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deform/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deform/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/degrain
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/degrain/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/degrain/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/degrain/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deinterlace
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deinterlace/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deinterlace/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/deinterlace/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/denoise
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/denoise/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/denoise/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/denoise/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/depthOfField
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/depthOfField/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/depthOfField/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/depthOfField/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/difference
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/difference/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/difference/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/difference/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/dissolve
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/dissolve/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/dissolve/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/dissolve/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/distort
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/distort/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/distort/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/distort/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edge
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edgeDetect
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edgeDetect/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edgeDetect/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edgeDetect/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edge/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edge/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edge/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/edl
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file/AIFF
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file/AIFF-C
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file/AVR
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file/BICSF
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file/MP3
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file/NEXTSND
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/audio_file/WAVE
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/distribution_package
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/distribution_package/Dolby Vision
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Alias
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Cineon
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/DPX
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Jpeg
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Maya
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/OpenEXR
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Pict
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Pixar
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Png
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/SGI
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Softimage
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Targa
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Tiff
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/file_sequence/Wavefront
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/Apple Final Cut Pro
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/AVC-Intra
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/Avid Media Composer
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/Cinedeck
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/DVCPro HD
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/H.264
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/MP4
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/Panasonic
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/QuickTime
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/Sony XAVC
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/movie_file/Sony XDCAM
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Apple Final Cut Pro
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Avid Media Composer
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Avid Pro Tools
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/DaVinci Resolve
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/EDL Publish
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Filmlight Baselight
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Shot Publish
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Simple Publish
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Source Media Export
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/flame/sequence_publish/Source Media Publish
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/shotgun
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/shotgun/audio_file
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/shotgun/distribution_package
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/shotgun/file_sequence
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/shotgun/movie_file
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/export/presets/shotgun/sequence_publish
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/exposure
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/exposure/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/exposure/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/exposure/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/expressions
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/fieldmerge
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/fieldmerge/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/fieldmerge/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/fieldmerge/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/filmrestore
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/filmrestore/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/filmrestore/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/filter
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/filter/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/filter/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/filter/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/flip
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/flip/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/flip/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/flip/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gateway_import
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gateway_import/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gateway_import/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gateway_import/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/glow
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/glow/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/glow/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/glow/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gmask
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gmask/default
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gmask/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gmask/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gmask/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gmask/transitions
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gmask/transitions/SMPTE
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gradient
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gradient/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gradient/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/gradient/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hdr
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hdr/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hdr/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hdr/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/histo2d
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/histo2d/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/histo2d/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/histo2d/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hub
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hub/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hub/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/hub/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/image
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/image/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/image/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/images
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/import
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/import/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/import/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/import/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/interlace
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/interlace/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/interlace/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/interlace/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/key
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyer3d
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyer3d/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyer3d/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyer3d/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerChannel
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerChannel/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerChannel/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerChannel/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerHLS
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerHLS/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerHLS/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerHLS/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGB
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGBCMYL
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGBCMYL/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGBCMYL/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGBCMYL/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGB/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGB/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerRGB/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerYUV
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerYUV/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerYUV/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/keyerYUV/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/key/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/key/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/key/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lensDistort
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lensDistort/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lens_distortion
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lens_distortion/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lens_distortion/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lens_distortion/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lensDistort/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lensDistort/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/look
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/look/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/look/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/look/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lut
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lutfloat
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lut/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/lut/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mapConvert
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mapConvert/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mapConvert/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mapConvert/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mask
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mask/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mask/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mask/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/masterkey
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/masterkey/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/masterkey/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/masterkey/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/matchbox
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/matchbox/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/matchbox/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/matchGrain
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/matchGrain/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/matchGrain/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/matchGrain/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mattecurves
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mattecurves/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mattecurves/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mattecurves/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mediahub
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mediahub/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/media_import
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/media_import/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mediaImport
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mediaImport/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mediaImport/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mix
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mix/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mix/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mix/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/modularKeyer
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/modularKeyer/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/modularKeyer/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/modularKeyer/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mono
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mono/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mono/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/mono/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motif
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motif/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motif/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motif/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_analysis
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_analysis/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_analysis/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_analysis/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motionBlur
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motionBlur/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motionBlur/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motionBlur/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_convert
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_convert/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_convert/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/motion_convert/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/note
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/note/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/note/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/note/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/openfx
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/openfx/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/openfx/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/openfx/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/optics
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/optics/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/optics/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/optics/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/output
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/output/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/output/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/output/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/overlays
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/overlays/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/autopaint
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/brush
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/cutout
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/geometry
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/mask
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/palette
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/picture
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/paint/set
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/particules
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/path
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pixelspread
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pixelspread/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pixelspread/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pixelspread/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/posterize
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/posterize/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/posterize/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/posterize/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pulldown
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pulldown/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pulldown/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pulldown/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pybox
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pybox/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pybox/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/pybox/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/python
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/quickcomp
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/quickcomp/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/quickcomp/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/quickcomp/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/recursiveOps
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/recursiveOps/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/recursiveOps/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/recursiveOps/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/regrain
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/regrain/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/regrain/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/regrain/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/repeat
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/repeat/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/repeat/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/repeat/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/resize
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/resize/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/resize/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/resize/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/separate
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/separate/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/separate/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/separate/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/sparks
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/sparks/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stabilizer
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stabilizer/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stabilizer/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/status
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereo
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoAnaglyph
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoAnaglyph/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoAnaglyph/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoAnaglyph/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereo/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoInterlace
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoInterlace/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoInterlace/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoInterlace/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereo/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereo/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoToolbox
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoToolbox/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoToolbox/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stereoToolbox/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stmap
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stmap/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stmap/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stmap/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stylize
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stylize/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stylize/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/stylize/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/substance
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/substance/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/substance/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/substance/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/subtitle
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/subtitle/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/subtitle/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/subtitle/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/syncolor
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/syncolor/policy
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/syncolor/policy/user_color_spaces
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/syncolor/transforms
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/text
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/text/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/text/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/text/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/timewarp
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/timewarp/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/timewarp/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/timewarp/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/tmp
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/viewing
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/viewing/flame
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/viewing/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/viewing/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/warper
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/warper/magnet
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/warper/pref
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/warper/presets
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/wipe
+Successfully created directory: /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/xml
+# --------------------------------------------------------------------------- #
+
+# ================== COPYING INIT CONFIG TO FLAME PROJEKT =================== #
+
+Copying file from /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/resources/flame/presets/cfg/init.cfg/template/1920x1080@23976p.cfg to /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cfg/US123465_uppercut_south_2026_nyc-mpc-001.cfg
+
+# --------------------------------------------------------------------------- #
+
+# ========================== COPYING ARCHIVE PREFS ========================== #
+
+
+creating archive preferences.
+
+/opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/status/ArchiveCurrent.json
+
+/opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/status/project.json
+
+project archive prefs created.
+project archive cache prefs created.
+# --------------------------------------------------------------------------- #
+
+# ======================= COPYING BATCH PROJECT BINS ======================== #
+
+
+creating batch project bin.
+building file list ... done
+./
+_project.AP0_ARRI_LogC3.batch
+_project.AP0_ARRI_LogC4.batch
+_project.AP0_Apple_Log.batch
+_project.AP0_BMD.batch
+_project.AP0_Canon_D55.batch
+_project.AP0_Canon_TUNG.batch
+_project.AP0_Log3G10.batch
+_project.AP0_Panasonic_VLog.batch
+_project.AP0_Rec709.batch
+_project.AP0_S3SGamut3_Cine.batch
+_project.AP0_S3SGamut3_CineVenice.batch
+_project.AP0_S3SGamut3_Venice.batch
+_project.AP0_S3_SGamut3.batch
+_project.AP0_Scene_Linear.batch
+_project.AP1_ARRI_LogC3.batch
+_project.AP1_ARRI_LogC4.batch
+_project.AP1_Apple_Log.batch
+_project.AP1_BMD.batch
+_project.AP1_Canon_D55.batch
+_project.AP1_Canon_TUNG.batch
+_project.AP1_Log3G10.batch
+_project.AP1_Panasonic_VLog.batch
+_project.AP1_Rec709.batch
+_project.AP1_S3SGamut3_Cine.batch
+_project.AP1_S3SGamut3_CineVenice.batch
+_project.AP1_S3SGamut3_Venice.batch
+_project.AP1_S3_SGamut3.batch
+_project.AP1_Scene_Linear.batch
+_project.linux_color_toolkit.batch
+_project.macOS_color_toolkit.batch
+project_batch.bin
+_project.AP0_ARRI_LogC3/
+_project.AP0_ARRI_LogC3/AP0_to_ARRI_LogC3.lut_node
+_project.AP0_ARRI_LogC3/ARRI_LogC3_to_AP0.lut_node
+_project.AP0_ARRI_LogC3/WORKFLOW_AP0_ARRI_LogC3.compass_node
+_project.AP0_ARRI_LogC3/root.root_node
+_project.AP0_ARRI_LogC4/
+_project.AP0_ARRI_LogC4/AP0_to_ARRI_LogC4.lut_node
+_project.AP0_ARRI_LogC4/ARRI_LogC4_to_AP0.lut_node
+_project.AP0_ARRI_LogC4/WORKFLOW_AP0_ARRI_LogC4.compass_node
+_project.AP0_ARRI_LogC4/root.root_node
+_project.AP0_Apple_Log/
+_project.AP0_Apple_Log/AP0_to_Apple_Log.lut_node
+_project.AP0_Apple_Log/Apple_Log_to_AP0.lut_node
+_project.AP0_Apple_Log/WORKFLOW_AP0_Apple_Log.compass_node
+_project.AP0_Apple_Log/root.root_node
+_project.AP0_BMD/
+_project.AP0_BMD/AP0_to_BMD.lut_node
+_project.AP0_BMD/BMD_to_AP0.lut_node
+_project.AP0_BMD/WORKFLOW_AP0_BMD.compass_node
+_project.AP0_BMD/root.root_node
+_project.AP0_Canon_D55/
+_project.AP0_Canon_D55/AP0_to_Canon_Daylight.lut_node
+_project.AP0_Canon_D55/Canon_Daylight_to_AP0.lut_node
+_project.AP0_Canon_D55/WORKFLOW_AP0_Canon_Daylight.compass_node
+_project.AP0_Canon_D55/root.root_node
+_project.AP0_Canon_TUNG/
+_project.AP0_Canon_TUNG/AP0_to_Canon_Tungsten.lut_node
+_project.AP0_Canon_TUNG/Canon_Tungsten_to_AP0.lut_node
+_project.AP0_Canon_TUNG/WORKFLOW_AP0_Canon_Tungsten.compass_node
+_project.AP0_Canon_TUNG/root.root_node
+_project.AP0_Log3G10/
+_project.AP0_Log3G10/AP0_to_R3D_Log3G10.lut_node
+_project.AP0_Log3G10/R3D_Log3G10_to_AP0.lut_node
+_project.AP0_Log3G10/WORKFLOW_AP0_Log3G10.compass_node
+_project.AP0_Log3G10/root.root_node
+_project.AP0_Panasonic_VLog/
+_project.AP0_Panasonic_VLog/AP0_to_Panasonic_VLog.lut_node
+_project.AP0_Panasonic_VLog/Panasonic_VLog_to_AP0.lut_node
+_project.AP0_Panasonic_VLog/WORKFLOW_AP0_Panasonic_VLog.compass_node
+_project.AP0_Panasonic_VLog/root.root_node
+_project.AP0_Rec709/
+_project.AP0_Rec709/AP0_to_Rec709.lut_node
+_project.AP0_Rec709/Rec709_to_AP0.lut_node
+_project.AP0_Rec709/WORKFLOW_AP0_Rec709.compass_node
+_project.AP0_Rec709/root.root_node
+_project.AP0_S3SGamut3_Cine/
+_project.AP0_S3SGamut3_Cine/AP0_to_S3SGamut3_Cine.lut_node
+_project.AP0_S3SGamut3_Cine/S3SGamut3_Cine_to_AP0.lut_node
+_project.AP0_S3SGamut3_Cine/WORKFLOW_AP0_S3SGamut3_Cine.compass_node
+_project.AP0_S3SGamut3_Cine/root.root_node
+_project.AP0_S3SGamut3_CineVenice/
+_project.AP0_S3SGamut3_CineVenice/AP0_to_S3SGamut3_Cine_Venice.lut_node
+_project.AP0_S3SGamut3_CineVenice/S3SGamut3_Cine_Venice_to_AP0.lut_node
+_project.AP0_S3SGamut3_CineVenice/WORKFLOW_AP0_S3SGamut3_Cine_Venice.compass_node
+_project.AP0_S3SGamut3_CineVenice/root.root_node
+_project.AP0_S3SGamut3_Venice/
+_project.AP0_S3SGamut3_Venice/AP0_to_S3SGamut3_Venice.lut_node
+_project.AP0_S3SGamut3_Venice/S3SGamut3_Venice_to_AP0.lut_node
+_project.AP0_S3SGamut3_Venice/WORKFLOW_AP0_S3SGamut3_Venice.compass_node
+_project.AP0_S3SGamut3_Venice/root.root_node
+_project.AP0_S3_SGamut3/
+_project.AP0_S3_SGamut3/AP0_to_S3SGamut3.lut_node
+_project.AP0_S3_SGamut3/S3SGamut3_to_AP0.lut_node
+_project.AP0_S3_SGamut3/WORKFLOW_AP0_S3SGamut3.compass_node
+_project.AP0_S3_SGamut3/root.root_node
+_project.AP0_Scene_Linear/
+_project.AP0_Scene_Linear/AP0_to_LinearRec709_sRGB.lut_node
+_project.AP0_Scene_Linear/LinearRec709_sRGB_to_AP0.lut_node
+_project.AP0_Scene_Linear/WORKFLOW_AP0_Scene_Linear_Rec709_sRGB.compass_node
+_project.AP0_Scene_Linear/root.root_node
+_project.AP1_ARRI_LogC3/
+_project.AP1_ARRI_LogC3/AP1_to_ARRI_LogC3.lut_node
+_project.AP1_ARRI_LogC3/ARRI_LogC3_to_AP1.lut_node
+_project.AP1_ARRI_LogC3/WORKFLOW_AP1_ARRI_LogC3.compass_node
+_project.AP1_ARRI_LogC3/root.root_node
+_project.AP1_ARRI_LogC4/
+_project.AP1_ARRI_LogC4/AP1_to_ARRI_LogC4.lut_node
+_project.AP1_ARRI_LogC4/ARRI_LogC4_to_AP1.lut_node
+_project.AP1_ARRI_LogC4/WORKFLOW_AP1_ARRI_LogC4.compass_node
+_project.AP1_ARRI_LogC4/root.root_node
+_project.AP1_Apple_Log/
+_project.AP1_Apple_Log/AP1_to_Apple_Log.lut_node
+_project.AP1_Apple_Log/Apple_Log_to_AP1.lut_node
+_project.AP1_Apple_Log/WORKFLOW_AP1_Apple_Log.compass_node
+_project.AP1_Apple_Log/root.root_node
+_project.AP1_BMD/
+_project.AP1_BMD/AP1_to_BMD.lut_node
+_project.AP1_BMD/BMD_to_AP1.lut_node
+_project.AP1_BMD/WORKFLOW_AP1_BMD.compass_node
+_project.AP1_BMD/root.root_node
+_project.AP1_Canon_D55/
+_project.AP1_Canon_D55/AP1_to_Canon_Daylight.lut_node
+_project.AP1_Canon_D55/Canon_Daylight_to_AP1.lut_node
+_project.AP1_Canon_D55/WORKFLOW_AP1_Canon_Daylight.compass_node
+_project.AP1_Canon_D55/root.root_node
+_project.AP1_Canon_TUNG/
+_project.AP1_Canon_TUNG/AP1_to_Canon_Tungsten.lut_node
+_project.AP1_Canon_TUNG/Canon_Tungsten_to_AP1.lut_node
+_project.AP1_Canon_TUNG/WORKFLOW_AP1_Canon_Tungsten.compass_node
+_project.AP1_Canon_TUNG/root.root_node
+_project.AP1_Log3G10/
+_project.AP1_Log3G10/AP1_to_R3D_Log3G10.lut_node
+_project.AP1_Log3G10/R3D_Log3G10_to_AP1.lut_node
+_project.AP1_Log3G10/WORKFLOW_AP1_Log3G10.compass_node
+_project.AP1_Log3G10/root.root_node
+_project.AP1_Panasonic_VLog/
+_project.AP1_Panasonic_VLog/AP1_to_Panasonic_VLog.lut_node
+_project.AP1_Panasonic_VLog/Panasonic_VLog_to_AP1.lut_node
+_project.AP1_Panasonic_VLog/WORKFLOW_AP1_Panasonic_VLog.compass_node
+_project.AP1_Panasonic_VLog/root.root_node
+_project.AP1_Rec709/
+_project.AP1_Rec709/AP1_to_Rec709.lut_node
+_project.AP1_Rec709/Rec709_to_AP1.lut_node
+_project.AP1_Rec709/WORKFLOW_AP1_Rec709.compass_node
+_project.AP1_Rec709/root.root_node
+_project.AP1_S3SGamut3_Cine/
+_project.AP1_S3SGamut3_Cine/AP1_to_S3SGamut3_Cine.lut_node
+_project.AP1_S3SGamut3_Cine/S3SGamut3_Cine_to_AP1.lut_node
+_project.AP1_S3SGamut3_Cine/WORKFLOW_AP1_S3SGamut3_Cine.compass_node
+_project.AP1_S3SGamut3_Cine/root.root_node
+_project.AP1_S3SGamut3_CineVenice/
+_project.AP1_S3SGamut3_CineVenice/AP1_to_S3SGamut3_Cine_Venice.lut_node
+_project.AP1_S3SGamut3_CineVenice/S3SGamut3_Cine_Venice_to_AP1.lut_node
+_project.AP1_S3SGamut3_CineVenice/WORKFLOW_AP1_S3SGamut3_Cine_Venice.compass_node
+_project.AP1_S3SGamut3_CineVenice/root.root_node
+_project.AP1_S3SGamut3_Venice/
+_project.AP1_S3SGamut3_Venice/AP1_to_S3SGamut3_Venice.lut_node
+_project.AP1_S3SGamut3_Venice/S3SGamut3_Venice_to_AP1.lut_node
+_project.AP1_S3SGamut3_Venice/WORKFLOW_AP1_S3SGamut3_Venice.compass_node
+_project.AP1_S3SGamut3_Venice/root.root_node
+_project.AP1_S3_SGamut3/
+_project.AP1_S3_SGamut3/AP1_to_S3SGamut3.lut_node
+_project.AP1_S3_SGamut3/S3SGamut3_to_AP1.lut_node
+_project.AP1_S3_SGamut3/WORKFLOW_AP1_S3SGamut3.compass_node
+_project.AP1_S3_SGamut3/root.root_node
+_project.AP1_Scene_Linear/
+_project.AP1_Scene_Linear/AP1_to_LinearRec709_sRGB.lut_node
+_project.AP1_Scene_Linear/LinearRec709_sRGB_to_AP1.lut_node
+_project.AP1_Scene_Linear/WORKFLOW_AP1_Scene_Linear_Rec709_sRGB.compass_node
+_project.AP1_Scene_Linear/root.root_node
+_project.linux_color_toolkit/
+_project.linux_color_toolkit/AP0_to_AP1.lut_node
+_project.linux_color_toolkit/AP0_to_ARRI_LogC3.lut_node
+_project.linux_color_toolkit/AP0_to_ARRI_LogC4.lut_node
+_project.linux_color_toolkit/AP0_to_Apple_Log.lut_node
+_project.linux_color_toolkit/AP0_to_BMD.lut_node
+_project.linux_color_toolkit/AP0_to_Canon_Daylight.lut_node
+_project.linux_color_toolkit/AP0_to_Canon_Tungsten.lut_node
+_project.linux_color_toolkit/AP0_to_LinearRec709_sRGB.lut_node
+_project.linux_color_toolkit/AP0_to_Panasonic_VLog.lut_node
+_project.linux_color_toolkit/AP0_to_R3D_Log3G10.lut_node
+_project.linux_color_toolkit/AP0_to_Rec709.lut_node
+_project.linux_color_toolkit/AP0_to_S3SGamut3.lut_node
+_project.linux_color_toolkit/AP0_to_S3SGamut3_Cine_Venice.lut_node
+_project.linux_color_toolkit/AP0_to_S3SGamut3_Venice.lut_node
+_project.linux_color_toolkit/AP1_to_ARRI_LogC3.lut_node
+_project.linux_color_toolkit/AP1_to_ARRI_LogC4.lut_node
+_project.linux_color_toolkit/AP1_to_Apple_Log.lut_node
+_project.linux_color_toolkit/AP1_to_BMD.lut_node
+_project.linux_color_toolkit/AP1_to_Canon_Daylight.lut_node
+_project.linux_color_toolkit/AP1_to_Canon_Tungsten.lut_node
+_project.linux_color_toolkit/AP1_to_LinearRec709_sRGB.lut_node
+_project.linux_color_toolkit/AP1_to_Panasonic_VLog.lut_node
+_project.linux_color_toolkit/AP1_to_R3D_Log3G10.lut_node
+_project.linux_color_toolkit/AP1_to_Rec709.lut_node
+_project.linux_color_toolkit/AP1_to_S3SGamut3.lut_node
+_project.linux_color_toolkit/AP1_to_S3SGamut3_Cine_Venice.lut_node
+_project.linux_color_toolkit/AP1_to_S3SGamut3_Venice.lut_node
+_project.linux_color_toolkit/ARRI_LogC3_to_AP0.lut_node
+_project.linux_color_toolkit/ARRI_LogC3_to_AP1.lut_node
+_project.linux_color_toolkit/ARRI_LogC3_to_Rec709.lut_node
+_project.linux_color_toolkit/ARRI_LogC4_to_AP0.lut_node
+_project.linux_color_toolkit/ARRI_LogC4_to_AP1.lut_node
+_project.linux_color_toolkit/ARRI_LogC4_to_Rec709.lut_node
+_project.linux_color_toolkit/Apple_Log_to_AP0.lut_node
+_project.linux_color_toolkit/Apple_Log_to_AP1.lut_node
+_project.linux_color_toolkit/Apple_Log_to_Rec709.lut_node
+_project.linux_color_toolkit/BMD_to_AP0.lut_node
+_project.linux_color_toolkit/BMD_to_AP1.lut_node
+_project.linux_color_toolkit/BMD_to_Rec709.lut_node
+_project.linux_color_toolkit/Canon_Daylight_to_AP0.lut_node
+_project.linux_color_toolkit/Canon_Daylight_to_AP1.lut_node
+_project.linux_color_toolkit/Canon_Daylight_to_Rec709.lut_node
+_project.linux_color_toolkit/Canon_Tungsten_to_AP0.lut_node
+_project.linux_color_toolkit/Canon_Tungsten_to_AP1.lut_node
+_project.linux_color_toolkit/Canon_Tungsten_to_Rec709.lut_node
+_project.linux_color_toolkit/IDENTITY_ARRI_LogC3.mux_node
+_project.linux_color_toolkit/IDENTITY_ARRI_LogC4.mux_node
+_project.linux_color_toolkit/IDENTITY_Apple_Log.mux_node
+_project.linux_color_toolkit/IDENTITY_BMD.mux_node
+_project.linux_color_toolkit/IDENTITY_Canon_Daylight.mux_node
+_project.linux_color_toolkit/IDENTITY_Canon_Tungsten.mux_node
+_project.linux_color_toolkit/IDENTITY_Panasonic_VLog.mux_node
+_project.linux_color_toolkit/IDENTITY_R3D_Log3G10.mux_node
+_project.linux_color_toolkit/IDENTITY_S3SGamut3.mux_node
+_project.linux_color_toolkit/IDENTITY_S3SGamut3_Cine_Venice.mux_node
+_project.linux_color_toolkit/IDENTITY_S3SGamut3_Venice.mux_node
+_project.linux_color_toolkit/KODAK_Digital_LAD.compass_node
+_project.linux_color_toolkit/LinearRec709_sRGB_to_AP0.lut_node
+_project.linux_color_toolkit/LinearRec709_sRGB_to_Rec709.lut_node
+_project.linux_color_toolkit/Log_to_Lin__classic.lut_node
+_project.linux_color_toolkit/Log_to_Lin__classic_AP0.lut_node
+_project.linux_color_toolkit/Ls_Contacts218.1.glsl
+_project.linux_color_toolkit/Ls_Contacts218.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts218.xml
+_project.linux_color_toolkit/Ls_Contacts589.1.glsl
+_project.linux_color_toolkit/Ls_Contacts589.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts589.xml
+_project.linux_color_toolkit/Ls_Contacts590.1.glsl
+_project.linux_color_toolkit/Ls_Contacts590.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts590.xml
+_project.linux_color_toolkit/Ls_Contacts591.1.glsl
+_project.linux_color_toolkit/Ls_Contacts591.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts591.xml
+_project.linux_color_toolkit/Ls_Contacts592.1.glsl
+_project.linux_color_toolkit/Ls_Contacts592.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts592.xml
+_project.linux_color_toolkit/Ls_Contacts594.1.glsl
+_project.linux_color_toolkit/Ls_Contacts594.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts594.xml
+_project.linux_color_toolkit/Ls_Contacts595.1.glsl
+_project.linux_color_toolkit/Ls_Contacts595.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts595.xml
+_project.linux_color_toolkit/Ls_Contacts596.1.glsl
+_project.linux_color_toolkit/Ls_Contacts596.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts596.xml
+_project.linux_color_toolkit/Ls_Contacts597.1.glsl
+_project.linux_color_toolkit/Ls_Contacts597.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts597.xml
+_project.linux_color_toolkit/Ls_Contacts598.1.glsl
+_project.linux_color_toolkit/Ls_Contacts598.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts598.xml
+_project.linux_color_toolkit/Ls_Contacts599.1.glsl
+_project.linux_color_toolkit/Ls_Contacts599.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts599.xml
+_project.linux_color_toolkit/Panasonic_VLog_to_AP0.lut_node
+_project.linux_color_toolkit/Panasonic_VLog_to_AP1.lut_node
+_project.linux_color_toolkit/Panasonic_VLog_to_Rec709.lut_node
+_project.linux_color_toolkit/R3D_Log3G10_to_AP0.lut_node
+_project.linux_color_toolkit/R3D_Log3G10_to_AP1.lut_node
+_project.linux_color_toolkit/R3D_Log3G10_to_Rec709.lut_node
+_project.linux_color_toolkit/Rec709_to_AP0.lut_node
+_project.linux_color_toolkit/Rec709_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_Cine_Venice_to_AP0.lut_node
+_project.linux_color_toolkit/S3SGamut3_Cine_Venice_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_Cine_Venice_to_Rec709.lut_node
+_project.linux_color_toolkit/S3SGamut3_Venice_to_AP0.lut_node
+_project.linux_color_toolkit/S3SGamut3_Venice_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_Venice_to_Rec709.lut_node
+_project.linux_color_toolkit/S3SGamut3_to_AP0.lut_node
+_project.linux_color_toolkit/S3SGamut3_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_to_Rec709.lut_node
+_project.linux_color_toolkit/SOURCE_CLIP_ARRI_LogC3.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_ARRI_LogC4.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Apple_Log.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_BMD.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Canon_Daylight.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Canon_Tungsten.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Panasonic_VLog.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_R3D_Log3G10.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_S3SGamut3.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_S3SGamut3_Cine_Venice.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_S3SGamut3_Venice.mux_node
+_project.linux_color_toolkit/burnmetadata10004589.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004590.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004591.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004592.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004593.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004594.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004595.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004596.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004597.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004598.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004599.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004600.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004601.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004602.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004603.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004604.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004609.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004610.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004611.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004612.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004613.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004614.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004615.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004616.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004617.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004618.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004619.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004620.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004621.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004622.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004623.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004624.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004625.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004626.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004627.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004628.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004629.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004630.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004631.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004632.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata220.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata222.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata224.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata226.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_ARRI_LogC3.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_ARRI_LogC4.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Apple_Log.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_BMD.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Canon_Daylight.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Canon_Tungsten.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Panasonic_VLog.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_R3D_Log3G10.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_S3SGamut3.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_S3SGamut3_Cine_Venice.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_S3SGamut3_Venice.burnmetadata_node
+_project.linux_color_toolkit/clip591.clip_node
+_project.linux_color_toolkit/clip591.clip_node_clip
+_project.linux_color_toolkit/clip591.clip_node_format
+_project.linux_color_toolkit/clip591.lut_node
+_project.linux_color_toolkit/clip591.resize
+_project.linux_color_toolkit/clip591.resize_node
+_project.linux_color_toolkit/clrmgmt10002596.lut_node
+_project.linux_color_toolkit/clrmgmt10002603.lut_node
+_project.linux_color_toolkit/clrmgmt10002604.lut_node
+_project.linux_color_toolkit/clrmgmt10002605.lut_node
+_project.linux_color_toolkit/clrmgmt10002606.lut_node
+_project.linux_color_toolkit/clrmgmt10002607.lut_node
+_project.linux_color_toolkit/clrmgmt10002608.lut_node
+_project.linux_color_toolkit/clrmgmt10002609.lut_node
+_project.linux_color_toolkit/clrmgmt10002610.lut_node
+_project.linux_color_toolkit/clrmgmt10002611.lut_node
+_project.linux_color_toolkit/clrmgmt10002612.lut_node
+_project.linux_color_toolkit/clrmgmt10002613.lut_node
+_project.linux_color_toolkit/clrmgmt10002614.lut_node
+_project.linux_color_toolkit/clrmgmt10002615.lut_node
+_project.linux_color_toolkit/clrmgmt10002616.lut_node
+_project.linux_color_toolkit/clrmgmt10002617.lut_node
+_project.linux_color_toolkit/clrmgmt10002618.lut_node
+_project.linux_color_toolkit/clrmgmt10002624.lut_node
+_project.linux_color_toolkit/clrmgmt10002625.lut_node
+_project.linux_color_toolkit/clrmgmt10002626.lut_node
+_project.linux_color_toolkit/clrmgmt10002627.lut_node
+_project.linux_color_toolkit/clrmgmt10002634.lut_node
+_project.linux_color_toolkit/clrmgmt10002635.lut_node
+_project.linux_color_toolkit/clrmgmt10002636.lut_node
+_project.linux_color_toolkit/clrmgmt10002637.lut_node
+_project.linux_color_toolkit/clrmgmt10002639.lut_node
+_project.linux_color_toolkit/clrmgmt10002640.lut_node
+_project.linux_color_toolkit/clrmgmt10002641.lut_node
+_project.linux_color_toolkit/clrmgmt10002642.lut_node
+_project.linux_color_toolkit/clrmgmt10002643.lut_node
+_project.linux_color_toolkit/clrmgmt10002644.lut_node
+_project.linux_color_toolkit/clrmgmt10002645.lut_node
+_project.linux_color_toolkit/clrmgmt10002646.lut_node
+_project.linux_color_toolkit/clrmgmt10002647.lut_node
+_project.linux_color_toolkit/clrmgmt10002648.lut_node
+_project.linux_color_toolkit/clrmgmt10002649.lut_node
+_project.linux_color_toolkit/clrmgmt10002650.lut_node
+_project.linux_color_toolkit/clrmgmt10002651.lut_node
+_project.linux_color_toolkit/clrmgmt10002652.lut_node
+_project.linux_color_toolkit/clrmgmt10002653.lut_node
+_project.linux_color_toolkit/clrmgmt10002654.lut_node
+_project.linux_color_toolkit/clrmgmt219.lut_node
+_project.linux_color_toolkit/clrmgmt221.lut_node
+_project.linux_color_toolkit/clrmgmt223.lut_node
+_project.linux_color_toolkit/elbow1.elbow_node
+_project.linux_color_toolkit/elbow10.elbow_node
+_project.linux_color_toolkit/elbow11.elbow_node
+_project.linux_color_toolkit/elbow12.elbow_node
+_project.linux_color_toolkit/elbow13.elbow_node
+_project.linux_color_toolkit/elbow14.elbow_node
+_project.linux_color_toolkit/elbow15.elbow_node
+_project.linux_color_toolkit/elbow16.elbow_node
+_project.linux_color_toolkit/elbow17.elbow_node
+_project.linux_color_toolkit/elbow18.elbow_node
+_project.linux_color_toolkit/elbow19.elbow_node
+_project.linux_color_toolkit/elbow2.elbow_node
+_project.linux_color_toolkit/elbow20.elbow_node
+_project.linux_color_toolkit/elbow21.elbow_node
+_project.linux_color_toolkit/elbow22.elbow_node
+_project.linux_color_toolkit/elbow23.elbow_node
+_project.linux_color_toolkit/elbow24.elbow_node
+_project.linux_color_toolkit/elbow25.elbow_node
+_project.linux_color_toolkit/elbow26.elbow_node
+_project.linux_color_toolkit/elbow27.elbow_node
+_project.linux_color_toolkit/elbow28.elbow_node
+_project.linux_color_toolkit/elbow29.elbow_node
+_project.linux_color_toolkit/elbow3.elbow_node
+_project.linux_color_toolkit/elbow30.elbow_node
+_project.linux_color_toolkit/elbow31.elbow_node
+_project.linux_color_toolkit/elbow32.elbow_node
+_project.linux_color_toolkit/elbow33.elbow_node
+_project.linux_color_toolkit/elbow34.elbow_node
+_project.linux_color_toolkit/elbow35.elbow_node
+_project.linux_color_toolkit/elbow36.elbow_node
+_project.linux_color_toolkit/elbow37.elbow_node
+_project.linux_color_toolkit/elbow38.elbow_node
+_project.linux_color_toolkit/elbow39.elbow_node
+_project.linux_color_toolkit/elbow4.elbow_node
+_project.linux_color_toolkit/elbow40.elbow_node
+_project.linux_color_toolkit/elbow41.elbow_node
+_project.linux_color_toolkit/elbow42.elbow_node
+_project.linux_color_toolkit/elbow43.elbow_node
+_project.linux_color_toolkit/elbow44.elbow_node
+_project.linux_color_toolkit/elbow45.elbow_node
+_project.linux_color_toolkit/elbow46.elbow_node
+_project.linux_color_toolkit/elbow47.elbow_node
+_project.linux_color_toolkit/elbow48.elbow_node
+_project.linux_color_toolkit/elbow49.elbow_node
+_project.linux_color_toolkit/elbow5.elbow_node
+_project.linux_color_toolkit/elbow50.elbow_node
+_project.linux_color_toolkit/elbow51.elbow_node
+_project.linux_color_toolkit/elbow52.elbow_node
+_project.linux_color_toolkit/elbow53.elbow_node
+_project.linux_color_toolkit/elbow54.elbow_node
+_project.linux_color_toolkit/elbow55.elbow_node
+_project.linux_color_toolkit/elbow56.elbow_node
+_project.linux_color_toolkit/elbow57.elbow_node
+_project.linux_color_toolkit/elbow58.elbow_node
+_project.linux_color_toolkit/elbow59.elbow_node
+_project.linux_color_toolkit/elbow6.elbow_node
+_project.linux_color_toolkit/elbow60.elbow_node
+_project.linux_color_toolkit/elbow61.elbow_node
+_project.linux_color_toolkit/elbow62.elbow_node
+_project.linux_color_toolkit/elbow63.elbow_node
+_project.linux_color_toolkit/elbow64.elbow_node
+_project.linux_color_toolkit/elbow65.elbow_node
+_project.linux_color_toolkit/elbow66.elbow_node
+_project.linux_color_toolkit/elbow67.elbow_node
+_project.linux_color_toolkit/elbow68.elbow_node
+_project.linux_color_toolkit/elbow69.elbow_node
+_project.linux_color_toolkit/elbow7.elbow_node
+_project.linux_color_toolkit/elbow71.elbow_node
+_project.linux_color_toolkit/elbow72.elbow_node
+_project.linux_color_toolkit/elbow73.elbow_node
+_project.linux_color_toolkit/elbow74.elbow_node
+_project.linux_color_toolkit/elbow75.elbow_node
+_project.linux_color_toolkit/elbow76.elbow_node
+_project.linux_color_toolkit/elbow77.elbow_node
+_project.linux_color_toolkit/elbow78.elbow_node
+_project.linux_color_toolkit/elbow79.elbow_node
+_project.linux_color_toolkit/elbow80.elbow_node
+_project.linux_color_toolkit/elbow81.elbow_node
+_project.linux_color_toolkit/elbow82.elbow_node
+_project.linux_color_toolkit/elbow83.elbow_node
+_project.linux_color_toolkit/elbow9.elbow_node
+_project.linux_color_toolkit/flame_colortoolkit_ARRI_LogC3.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_ARRI_LogC4.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Apple_Log.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_BMD_Film5.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Canon_Daylight.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Canon_Tungsten.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Panasonic_VLog.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_R3D_Log3G10.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_SONY_S3SGamut3.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Cine_Venice.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Venice.compass_node
+_project.linux_color_toolkit/mux14.mux_node
+_project.linux_color_toolkit/note1.note_node
+_project.linux_color_toolkit/note2.note_node
+_project.linux_color_toolkit/root.root_node
+_project.macOS_color_toolkit/
+_project.macOS_color_toolkit/AP0_to_AP1.lut_node
+_project.macOS_color_toolkit/AP0_to_ARRI_LogC3.lut_node
+_project.macOS_color_toolkit/AP0_to_ARRI_LogC4.lut_node
+_project.macOS_color_toolkit/AP0_to_Apple_Log.lut_node
+_project.macOS_color_toolkit/AP0_to_BMD.lut_node
+_project.macOS_color_toolkit/AP0_to_Canon_Daylight.lut_node
+_project.macOS_color_toolkit/AP0_to_Canon_Tungsten.lut_node
+_project.macOS_color_toolkit/AP0_to_LinearRec709_sRGB.lut_node
+_project.macOS_color_toolkit/AP0_to_Panasonic_VLog.lut_node
+_project.macOS_color_toolkit/AP0_to_R3D_Log3G10.lut_node
+_project.macOS_color_toolkit/AP0_to_Rec709.lut_node
+_project.macOS_color_toolkit/AP0_to_S3SGamut3.lut_node
+_project.macOS_color_toolkit/AP0_to_S3SGamut3_Cine_Venice.lut_node
+_project.macOS_color_toolkit/AP0_to_S3SGamut3_Venice.lut_node
+_project.macOS_color_toolkit/AP1_to_ARRI_LogC3.lut_node
+_project.macOS_color_toolkit/AP1_to_ARRI_LogC4.lut_node
+_project.macOS_color_toolkit/AP1_to_Apple_Log.lut_node
+_project.macOS_color_toolkit/AP1_to_BMD.lut_node
+_project.macOS_color_toolkit/AP1_to_Canon_Daylight.lut_node
+_project.macOS_color_toolkit/AP1_to_Canon_Tungsten.lut_node
+_project.macOS_color_toolkit/AP1_to_LinearRec709_sRGB.lut_node
+_project.macOS_color_toolkit/AP1_to_Panasonic_VLog.lut_node
+_project.macOS_color_toolkit/AP1_to_R3D_Log3G10.lut_node
+_project.macOS_color_toolkit/AP1_to_Rec709.lut_node
+_project.macOS_color_toolkit/AP1_to_S3SGamut3.lut_node
+_project.macOS_color_toolkit/AP1_to_S3SGamut3_Cine_Venice.lut_node
+_project.macOS_color_toolkit/AP1_to_S3SGamut3_Venice.lut_node
+_project.macOS_color_toolkit/ARRI_LogC3_to_AP0.lut_node
+_project.macOS_color_toolkit/ARRI_LogC3_to_AP1.lut_node
+_project.macOS_color_toolkit/ARRI_LogC3_to_Rec709.lut_node
+_project.macOS_color_toolkit/ARRI_LogC4_to_AP0.lut_node
+_project.macOS_color_toolkit/ARRI_LogC4_to_AP1.lut_node
+_project.macOS_color_toolkit/ARRI_LogC4_to_Rec709.lut_node
+_project.macOS_color_toolkit/Apple_Log_to_AP0.lut_node
+_project.macOS_color_toolkit/Apple_Log_to_AP1.lut_node
+_project.macOS_color_toolkit/Apple_Log_to_Rec709.lut_node
+_project.macOS_color_toolkit/BMD_to_AP0.lut_node
+_project.macOS_color_toolkit/BMD_to_AP1.lut_node
+_project.macOS_color_toolkit/BMD_to_Rec709.lut_node
+_project.macOS_color_toolkit/Canon_Daylight_to_AP0.lut_node
+_project.macOS_color_toolkit/Canon_Daylight_to_AP1.lut_node
+_project.macOS_color_toolkit/Canon_Daylight_to_Rec709.lut_node
+_project.macOS_color_toolkit/Canon_Tungsten_to_AP0.lut_node
+_project.macOS_color_toolkit/Canon_Tungsten_to_AP1.lut_node
+_project.macOS_color_toolkit/Canon_Tungsten_to_Rec709.lut_node
+_project.macOS_color_toolkit/IDENTITY_ARRI_LogC3.mux_node
+_project.macOS_color_toolkit/IDENTITY_ARRI_LogC4.mux_node
+_project.macOS_color_toolkit/IDENTITY_Apple_Log.mux_node
+_project.macOS_color_toolkit/IDENTITY_BMD.mux_node
+_project.macOS_color_toolkit/IDENTITY_Canon_Daylight.mux_node
+_project.macOS_color_toolkit/IDENTITY_Canon_Tungsten.mux_node
+_project.macOS_color_toolkit/IDENTITY_Panasonic_VLog.mux_node
+_project.macOS_color_toolkit/IDENTITY_R3D_Log3G10.mux_node
+_project.macOS_color_toolkit/IDENTITY_S3SGamut3.mux_node
+_project.macOS_color_toolkit/IDENTITY_S3SGamut3_Cine_Venice.mux_node
+_project.macOS_color_toolkit/IDENTITY_S3SGamut3_Venice.mux_node
+_project.macOS_color_toolkit/KODAK_Digital_LAD.compass_node
+_project.macOS_color_toolkit/LinearRec709_sRGB_to_AP0.lut_node
+_project.macOS_color_toolkit/LinearRec709_sRGB_to_Rec709.lut_node
+_project.macOS_color_toolkit/Log_to_Lin__classic.lut_node
+_project.macOS_color_toolkit/Log_to_Lin__classic_AP0.lut_node
+_project.macOS_color_toolkit/Ls_Contacts218.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts218.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts218.xml
+_project.macOS_color_toolkit/Ls_Contacts589.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts589.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts589.xml
+_project.macOS_color_toolkit/Ls_Contacts590.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts590.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts590.xml
+_project.macOS_color_toolkit/Ls_Contacts591.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts591.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts591.xml
+_project.macOS_color_toolkit/Ls_Contacts592.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts592.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts592.xml
+_project.macOS_color_toolkit/Ls_Contacts594.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts594.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts594.xml
+_project.macOS_color_toolkit/Ls_Contacts595.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts595.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts595.xml
+_project.macOS_color_toolkit/Ls_Contacts596.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts596.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts596.xml
+_project.macOS_color_toolkit/Ls_Contacts597.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts597.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts597.xml
+_project.macOS_color_toolkit/Ls_Contacts598.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts598.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts598.xml
+_project.macOS_color_toolkit/Ls_Contacts599.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts599.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts599.xml
+_project.macOS_color_toolkit/Panasonic_VLog_to_AP0.lut_node
+_project.macOS_color_toolkit/Panasonic_VLog_to_AP1.lut_node
+_project.macOS_color_toolkit/Panasonic_VLog_to_Rec709.lut_node
+_project.macOS_color_toolkit/R3D_Log3G10_to_AP0.lut_node
+_project.macOS_color_toolkit/R3D_Log3G10_to_AP1.lut_node
+_project.macOS_color_toolkit/R3D_Log3G10_to_Rec709.lut_node
+_project.macOS_color_toolkit/Rec709_to_AP0.lut_node
+_project.macOS_color_toolkit/Rec709_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Cine_Venice_to_AP0.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Cine_Venice_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Cine_Venice_to_Rec709.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Venice_to_AP0.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Venice_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Venice_to_Rec709.lut_node
+_project.macOS_color_toolkit/S3SGamut3_to_AP0.lut_node
+_project.macOS_color_toolkit/S3SGamut3_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_to_Rec709.lut_node
+_project.macOS_color_toolkit/SOURCE_CLIP_ARRI_LogC3.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_ARRI_LogC4.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Apple_Log.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_BMD.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Canon_Daylight.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Canon_Tungsten.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Panasonic_VLog.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_R3D_Log3G10.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_S3SGamut3.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_S3SGamut3_Cine_Venice.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_S3SGamut3_Venice.mux_node
+_project.macOS_color_toolkit/burnmetadata10004589.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004590.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004591.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004592.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004593.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004594.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004595.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004596.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004597.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004598.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004599.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004600.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004601.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004602.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004603.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004604.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004609.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004610.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004611.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004612.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004613.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004614.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004615.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004616.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004617.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004618.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004619.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004620.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004621.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004622.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004623.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004624.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004625.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004626.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004627.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004628.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004629.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004630.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004631.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004632.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata220.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata222.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata224.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata226.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_ARRI_LogC3.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_ARRI_LogC4.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Apple_Log.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_BMD.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Canon_Daylight.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Canon_Tungsten.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Panasonic_VLog.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_R3D_Log3G10.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_S3SGamut3.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_S3SGamut3_Cine_Venice.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_S3SGamut3_Venice.burnmetadata_node
+_project.macOS_color_toolkit/clip591.clip_node
+_project.macOS_color_toolkit/clip591.clip_node_clip
+_project.macOS_color_toolkit/clip591.clip_node_format
+_project.macOS_color_toolkit/clip591.lut_node
+_project.macOS_color_toolkit/clip591.resize
+_project.macOS_color_toolkit/clip591.resize_node
+_project.macOS_color_toolkit/clrmgmt10002596.lut_node
+_project.macOS_color_toolkit/clrmgmt10002603.lut_node
+_project.macOS_color_toolkit/clrmgmt10002604.lut_node
+_project.macOS_color_toolkit/clrmgmt10002605.lut_node
+_project.macOS_color_toolkit/clrmgmt10002606.lut_node
+_project.macOS_color_toolkit/clrmgmt10002607.lut_node
+_project.macOS_color_toolkit/clrmgmt10002608.lut_node
+_project.macOS_color_toolkit/clrmgmt10002609.lut_node
+_project.macOS_color_toolkit/clrmgmt10002610.lut_node
+_project.macOS_color_toolkit/clrmgmt10002611.lut_node
+_project.macOS_color_toolkit/clrmgmt10002612.lut_node
+_project.macOS_color_toolkit/clrmgmt10002613.lut_node
+_project.macOS_color_toolkit/clrmgmt10002614.lut_node
+_project.macOS_color_toolkit/clrmgmt10002615.lut_node
+_project.macOS_color_toolkit/clrmgmt10002616.lut_node
+_project.macOS_color_toolkit/clrmgmt10002617.lut_node
+_project.macOS_color_toolkit/clrmgmt10002618.lut_node
+_project.macOS_color_toolkit/clrmgmt10002624.lut_node
+_project.macOS_color_toolkit/clrmgmt10002625.lut_node
+_project.macOS_color_toolkit/clrmgmt10002626.lut_node
+_project.macOS_color_toolkit/clrmgmt10002627.lut_node
+_project.macOS_color_toolkit/clrmgmt10002634.lut_node
+_project.macOS_color_toolkit/clrmgmt10002635.lut_node
+_project.macOS_color_toolkit/clrmgmt10002636.lut_node
+_project.macOS_color_toolkit/clrmgmt10002637.lut_node
+_project.macOS_color_toolkit/clrmgmt10002639.lut_node
+_project.macOS_color_toolkit/clrmgmt10002640.lut_node
+_project.macOS_color_toolkit/clrmgmt10002641.lut_node
+_project.macOS_color_toolkit/clrmgmt10002642.lut_node
+_project.macOS_color_toolkit/clrmgmt10002643.lut_node
+_project.macOS_color_toolkit/clrmgmt10002644.lut_node
+_project.macOS_color_toolkit/clrmgmt10002645.lut_node
+_project.macOS_color_toolkit/clrmgmt10002646.lut_node
+_project.macOS_color_toolkit/clrmgmt10002647.lut_node
+_project.macOS_color_toolkit/clrmgmt10002648.lut_node
+_project.macOS_color_toolkit/clrmgmt10002649.lut_node
+_project.macOS_color_toolkit/clrmgmt10002650.lut_node
+_project.macOS_color_toolkit/clrmgmt10002651.lut_node
+_project.macOS_color_toolkit/clrmgmt10002652.lut_node
+_project.macOS_color_toolkit/clrmgmt10002653.lut_node
+_project.macOS_color_toolkit/clrmgmt10002654.lut_node
+_project.macOS_color_toolkit/clrmgmt219.lut_node
+_project.macOS_color_toolkit/clrmgmt221.lut_node
+_project.macOS_color_toolkit/clrmgmt223.lut_node
+_project.macOS_color_toolkit/elbow1.elbow_node
+_project.macOS_color_toolkit/elbow10.elbow_node
+_project.macOS_color_toolkit/elbow11.elbow_node
+_project.macOS_color_toolkit/elbow12.elbow_node
+_project.macOS_color_toolkit/elbow13.elbow_node
+_project.macOS_color_toolkit/elbow14.elbow_node
+_project.macOS_color_toolkit/elbow15.elbow_node
+_project.macOS_color_toolkit/elbow16.elbow_node
+_project.macOS_color_toolkit/elbow17.elbow_node
+_project.macOS_color_toolkit/elbow18.elbow_node
+_project.macOS_color_toolkit/elbow19.elbow_node
+_project.macOS_color_toolkit/elbow2.elbow_node
+_project.macOS_color_toolkit/elbow20.elbow_node
+_project.macOS_color_toolkit/elbow21.elbow_node
+_project.macOS_color_toolkit/elbow22.elbow_node
+_project.macOS_color_toolkit/elbow23.elbow_node
+_project.macOS_color_toolkit/elbow24.elbow_node
+_project.macOS_color_toolkit/elbow25.elbow_node
+_project.macOS_color_toolkit/elbow26.elbow_node
+_project.macOS_color_toolkit/elbow27.elbow_node
+_project.macOS_color_toolkit/elbow28.elbow_node
+_project.macOS_color_toolkit/elbow29.elbow_node
+_project.macOS_color_toolkit/elbow3.elbow_node
+_project.macOS_color_toolkit/elbow30.elbow_node
+_project.macOS_color_toolkit/elbow31.elbow_node
+_project.macOS_color_toolkit/elbow32.elbow_node
+_project.macOS_color_toolkit/elbow33.elbow_node
+_project.macOS_color_toolkit/elbow34.elbow_node
+_project.macOS_color_toolkit/elbow35.elbow_node
+_project.macOS_color_toolkit/elbow36.elbow_node
+_project.macOS_color_toolkit/elbow37.elbow_node
+_project.macOS_color_toolkit/elbow38.elbow_node
+_project.macOS_color_toolkit/elbow39.elbow_node
+_project.macOS_color_toolkit/elbow4.elbow_node
+_project.macOS_color_toolkit/elbow40.elbow_node
+_project.macOS_color_toolkit/elbow41.elbow_node
+_project.macOS_color_toolkit/elbow42.elbow_node
+_project.macOS_color_toolkit/elbow43.elbow_node
+_project.macOS_color_toolkit/elbow44.elbow_node
+_project.macOS_color_toolkit/elbow45.elbow_node
+_project.macOS_color_toolkit/elbow46.elbow_node
+_project.macOS_color_toolkit/elbow47.elbow_node
+_project.macOS_color_toolkit/elbow48.elbow_node
+_project.macOS_color_toolkit/elbow49.elbow_node
+_project.macOS_color_toolkit/elbow5.elbow_node
+_project.macOS_color_toolkit/elbow50.elbow_node
+_project.macOS_color_toolkit/elbow51.elbow_node
+_project.macOS_color_toolkit/elbow52.elbow_node
+_project.macOS_color_toolkit/elbow53.elbow_node
+_project.macOS_color_toolkit/elbow54.elbow_node
+_project.macOS_color_toolkit/elbow55.elbow_node
+_project.macOS_color_toolkit/elbow56.elbow_node
+_project.macOS_color_toolkit/elbow57.elbow_node
+_project.macOS_color_toolkit/elbow58.elbow_node
+_project.macOS_color_toolkit/elbow59.elbow_node
+_project.macOS_color_toolkit/elbow6.elbow_node
+_project.macOS_color_toolkit/elbow60.elbow_node
+_project.macOS_color_toolkit/elbow61.elbow_node
+_project.macOS_color_toolkit/elbow62.elbow_node
+_project.macOS_color_toolkit/elbow63.elbow_node
+_project.macOS_color_toolkit/elbow64.elbow_node
+_project.macOS_color_toolkit/elbow65.elbow_node
+_project.macOS_color_toolkit/elbow66.elbow_node
+_project.macOS_color_toolkit/elbow67.elbow_node
+_project.macOS_color_toolkit/elbow68.elbow_node
+_project.macOS_color_toolkit/elbow69.elbow_node
+_project.macOS_color_toolkit/elbow7.elbow_node
+_project.macOS_color_toolkit/elbow71.elbow_node
+_project.macOS_color_toolkit/elbow72.elbow_node
+_project.macOS_color_toolkit/elbow73.elbow_node
+_project.macOS_color_toolkit/elbow74.elbow_node
+_project.macOS_color_toolkit/elbow75.elbow_node
+_project.macOS_color_toolkit/elbow76.elbow_node
+_project.macOS_color_toolkit/elbow77.elbow_node
+_project.macOS_color_toolkit/elbow78.elbow_node
+_project.macOS_color_toolkit/elbow79.elbow_node
+_project.macOS_color_toolkit/elbow80.elbow_node
+_project.macOS_color_toolkit/elbow81.elbow_node
+_project.macOS_color_toolkit/elbow82.elbow_node
+_project.macOS_color_toolkit/elbow83.elbow_node
+_project.macOS_color_toolkit/elbow9.elbow_node
+_project.macOS_color_toolkit/flame_colortoolkit_ARRI_LogC3.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_ARRI_LogC4.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Apple_Log.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_BMD_Film5.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Canon_Daylight.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Canon_Tungsten.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Panasonic_VLog.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_R3D_Log3G10.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_SONY_S3SGamut3.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Cine_Venice.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Venice.compass_node
+_project.macOS_color_toolkit/mux14.mux_node
+_project.macOS_color_toolkit/note1.note_node
+_project.macOS_color_toolkit/note2.note_node
+_project.macOS_color_toolkit/root.root_node
+sent 2513553 bytes
+received 17564 bytes
+5062234.00 bytes/sec
+total size is 2450904
+speedup is 0.97
+batch project bin created.
+# --------------------------------------------------------------------------- #
+
+# ===================== COPYING BURNIN METADATA PRESETS ===================== #
+
+
+synchronizing burn_metadata overlays.
+building file list ... done
+./
+overlay/
+sent 213 bytes
+received 32 bytes
+490.00 bytes/sec
+total size is 394371
+speedup is 1609.68
+
+media import preferences & rules synchronized.
+# --------------------------------------------------------------------------- #
+building file list ... done
+./
+overlay/
+overlay/burnin_info_HD.burnmetadata_node
+overlay/burnin_info_HD.burnmetadata_node.p
+overlay/burnin_info_UHD.burnmetadata_node
+overlay/burnin_info_UHD.burnmetadata_node.p
+sent 394808 bytes
+received 120 bytes
+789856.00 bytes/sec
+total size is 394371
+speedup is 1.00
+
+media import preferences & rules synchronized.
+# --------------------------------------------------------------------------- #
+# ===================== COPYING EXPORT / IMPORT PRESETS ===================== #
+
+
+synchronizing project export presets directories.
+building file list ... done
+./
+movie_file/
+movie_file/projekt-movie_file-color_grade.xml
+movie_file/projekt-movie_file-reference.xml
+movie_file/projekt-movie_file-wip-posting.xml
+sequence_publish/
+sequence_publish/projekt_sequence_publish-aaf.xml
+sequence_publish/projekt_sequence_publish-edl.xml
+sequence_publish/projekt_sequence_publish-xml.xml
+sequence_publish/projekt_shot_publish-ACEScg-v0000-batch_groups.xml
+sequence_publish/projekt_shot_publish-ACEScg-v0001-graded_pass.xml
+sent 34820 bytes
+received 214 bytes
+70068.00 bytes/sec
+total size is 34050
+speedup is 0.97
+Project export presets directories synchronized.
+# --------------------------------------------------------------------------- #
+
+synchronizing project import presets directories.
+building file list ... done
+./
+presets/
+presets/pattern.json
+sent 3266 bytes
+received 54 bytes
+6640.00 bytes/sec
+total size is 3093
+speedup is 0.93
+
+project import presets directories synchronized.
+# --------------------------------------------------------------------------- #
+
+# ======================= COPYING MEDIA IMPORT RULES ======================== #
+
+
+synchronizing media import preferences & rules.
+building file list ... done
+./
+pref/
+pref/ARRIMXF_1.fmt
+pref/ARRIRAW7_3.fmt
+pref/ARRIRAW_15.fmt
+pref/AVCHD_1.fmt
+pref/AudioIO_1.fmt
+pref/BMDRaw_2.fmt
+pref/Canon_13.fmt
+pref/ConformCurrent.json
+pref/Current.json
+pref/DPX_6.fmt
+pref/HDR_6.fmt
+pref/ImageIO_6.fmt
+pref/MIO Clip_2.fmt
+pref/MP4_9.fmt
+pref/MXF_13.fmt
+pref/OpenEXR_8.fmt
+pref/P2_13.fmt
+pref/PNG_6.fmt
+pref/PhotoShop_6.fmt
+pref/Quicktime_11.fmt
+pref/R3D_19.fmt
+pref/SonyMXF_13.fmt
+pref/SonyXAVC_2.fmt
+pref/XDCAMEX_9.fmt
+pref/XDCAM_13.fmt
+pref/conformResizeFormat
+pref/resizeFormat
+pref/resizeOptions
+sent 59335 bytes
+received 648 bytes
+119966.00 bytes/sec
+total size is 57393
+speedup is 0.96
+
+media import preferences & rules synchronized.
+# --------------------------------------------------------------------------- #
+
+# ========================= COPYING MEDIAHUB RULES ========================== #
+
+
+synchronizing mediahub preferences & rules.
+building file list ... done
+./
+pref/
+pref/ProjectsCurrent.json
+sent 303 bytes
+received 54 bytes
+714.00 bytes/sec
+total size is 125
+speedup is 0.35
+
+media import preferences & rules synchronized.
+# --------------------------------------------------------------------------- #
+# ======================== COPYING MEDIAIMPORT RULES ======================== #
+
+
+synchronizing mediaImport preferences & rules.
+building file list ... done
+./
+Project_Settings.ARRIMXF_1.0.rule
+Project_Settings.ARRIRAW7_3.0.rule
+Project_Settings.ARRIRAW_15.0.rule
+Project_Settings.AVCHD_1.0.rule
+Project_Settings.AudioIO_1.0.rule
+Project_Settings.BMDRaw_2.0.rule
+Project_Settings.Canon_13.0.rule
+Project_Settings.DPX_6.0.rule
+Project_Settings.HDR_6.0.rule
+Project_Settings.ImageIO_6.0.rule
+Project_Settings.MIO_Clip_2.0.rule
+Project_Settings.MP4_9.0.rule
+Project_Settings.MXF_13.0.rule
+Project_Settings.OpenEXR_8.0.rule
+Project_Settings.P2_13.0.rule
+Project_Settings.PNG_6.0.rule
+Project_Settings.PhotoShop_6.0.rule
+Project_Settings.Quicktime_11.0.rule
+Project_Settings.R3D_19.0.rule
+Project_Settings.SonyMXF_13.0.rule
+Project_Settings.SonyXAVC_2.0.rule
+Project_Settings.XDCAMEX_9.0.rule
+Project_Settings.XDCAM_13.0.rule
+pref/
+pref/ARRIMXF_1.fmt
+pref/ARRIRAW7_3.fmt
+pref/ARRIRAW_15.fmt
+pref/AVCHD_1.fmt
+pref/AudioIO_1.fmt
+pref/BMDRaw_2.fmt
+pref/Canon_13.fmt
+pref/ConformCurrent.json
+pref/Current.json
+pref/DPX_6.fmt
+pref/HDR_6.fmt
+pref/ImageIO_6.fmt
+pref/MIO Clip_2.fmt
+pref/MP4_9.fmt
+pref/MXF_13.fmt
+pref/OpenEXR_8.fmt
+pref/P2_13.fmt
+pref/PNG_6.fmt
+pref/PhotoShop_6.fmt
+pref/Quicktime_11.fmt
+pref/R3D_19.fmt
+pref/SonyMXF_13.fmt
+pref/SonyXAVC_2.fmt
+pref/XDCAMEX_9.fmt
+pref/XDCAM_13.fmt
+pref/conformResizeFormat
+pref/lutState
+pref/resizeFormat
+pref/resizeOptions
+sent 2259953 bytes
+received 1176 bytes
+4522258.00 bytes/sec
+total size is 2256082
+speedup is 1.00
+
+media import preferences & rules synchronized.
+# --------------------------------------------------------------------------- #
+
+# ========================= COPYING PYTHON SCRIPTS ========================== #
+
+
+synchronizing python directories.
+building file list ... done
+./
+sent 3314 bytes
+received 26 bytes
+6680.00 bytes/sec
+total size is 1181427
+speedup is 353.72
+Logik PROJEKT Python scripts synchronized.
+# --------------------------------------------------------------------------- #
+
+# ======================== COPYING SYNCOLOR POLICIES ======================== #
+
+
+Debug: the_projekt_os:
+Darwin
+Debug: the_projekts_dir:
+/PROJEKTS
+Debug: the_projekt_dir:
+/PROJEKTS/US123465_uppercut_south
+Debug: the_projekt_flame_dirs:
+/opt/Autodesk/project
+Debug: the_projekt_flame_dir:
+/opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001
+Debug: tgt_projekt_policies_dir:
+/PROJEKTS/US123465_uppercut_south/utilities/Synergy/SynColor/Shared/policies
+Debug: src_policies_dir:
+resources/flame/Syncolor/Shared/policies
+Debug: tgt_policies_dir:
+/Applications/Autodesk/Synergy/SynColor/Shared/policies
+synchronizing Syncolor policies directories.
+building file list ... done
+./
+sent 2134 bytes
+received 26 bytes
+4320.00 bytes/sec
+total size is 83315
+speedup is 38.57
+
+Syncolor policies synchronized.
+# --------------------------------------------------------------------------- #
+
+# --------------------------------------------------------------------------- #
+
+# ======================= COPYING SYNCOLOR TRANSFORMS ======================= #
+
+
+Debug: the_projekt_os:
+Darwin
+Debug: the_projekts_dir:
+/PROJEKTS
+Debug: the_projekt_dir:
+/PROJEKTS/US123465_uppercut_south
+Debug: the_projekt_flame_dirs:
+/opt/Autodesk/project
+Debug: the_projekt_flame_dir:
+/opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001
+Debug: tgt_projekt_transforms_dir:
+/PROJEKTS/US123465_uppercut_south/utilities/Synergy/SynColor/Shared/transforms
+Debug: src_transforms_dir:
+resources/flame/Syncolor/Shared/transforms
+Debug: tgt_transforms_dir:
+/Applications/Autodesk/Synergy/SynColor/Shared/transforms
+synchronizing Syncolor transforms directories.
+building file list ... done
+./
+sent 2355 bytes
+received 26 bytes
+4762.00 bytes/sec
+total size is 20245
+speedup is 8.50
+
+media import preferences & rules synchronized.
+# --------------------------------------------------------------------------- #
+# --------------------------------------------------------------------------- #
+
+# ==================== CREATING A FLAME ARCHIVING SCRIPT ==================== #
+
+
+Creating PROJEKT archive script.
+
+Successfully created PROJEKT flame archive template to:
+
+US123465_uppercut_south-archive_script-nyc-mpc-001.sh
+# --------------------------------------------------------------------------- #
+
+Creating PROJEKT archive crontab script.
+
+Successfully created PROJEKT flame archive crontab script to:
+
+US123465_uppercut_south-add_archive_script_to_crontab-nyc-mpc-001.sh
+# --------------------------------------------------------------------------- #
+
+Modifying PROJEKT archive scripts.
+
+Successfully modified script: US123465_uppercut_south-archive_script-nyc-mpc-001.sh
+
+Successfully modified script: US123465_uppercut_south-add_archive_script_to_crontab-nyc-mpc-001.sh
+
+# --------------------------------------------------------------------------- #
+
+Successfully modified PROJEKT flame archive scripts:
+
+US123465_uppercut_south-archive_script-nyc-mpc-001.sh
+
+US123465_uppercut_south-add_archive_script_to_crontab-nyc-mpc-001.sh
+
+# --------------------------------------------------------------------------- #
+
+# ===================== CREATING AN RSYNC BACKUP SCRIPT ===================== #
+
+
+Creating PROJEKT rsync script.
+Successfully copied PROJEKT flame rsync template to:
+
+US123465_uppercut_south-backup_script-nyc-mpc-001.sh
+# --------------------------------------------------------------------------- #
+
+Creating PROJEKT rsync script.
+
+Successfully copied PROJEKT flame rsync crontab script to:
+
+US123465_uppercut_south-add_backup_script_to_crontab-nyc-mpc-001.sh
+# --------------------------------------------------------------------------- #
+
+Modifying PROJEKT rsync script.
+
+Successfully modified script: US123465_uppercut_south-backup_script-nyc-mpc-001.sh
+Successfully modified script: US123465_uppercut_south-add_backup_script_to_crontab-nyc-mpc-001.sh
+# --------------------------------------------------------------------------- #
+
+Successfully modified PROJEKT flame archive:
+
+US123465_uppercut_south-backup_script-nyc-mpc-001.sh
+US123465_uppercut_south-add_backup_script_to_crontab-nyc-mpc-001.sh
+
+# --------------------------------------------------------------------------- #
+
+# ==================== CREATING A FLAME LAUNCHER SCRIPT ===================== #
+
+
+Creating PROJEKT flame launcher script.
+
+Successfully copied PROJEKT flame launcher template to:
+
+US123465_uppercut_south-flame_launcher-nyc-mpc-001-2025_01_09.bak
+# --------------------------------------------------------------------------- #
+
+Modifying PROJEKT launcher script.
+Successfully modified script: US123465_uppercut_south-flame_launcher-nyc-mpc-001.sh
+Successfully modified PROJEKT flame launcher:
+
+US123465_uppercut_south-flame_launcher-nyc-mpc-001.sh
+# --------------------------------------------------------------------------- #
+
+# ====================== BACKING UP PROJEKT FLAME XML ======================= #
+
+
+Archiving PROJEKT parameters XML.
+
+Successfully archived PROJEKT parameters XML to:
+
+projekt_parameters-2025_01_09-US123465_uppercut_south-nyc-mpc-001.xml
+# --------------------------------------------------------------------------- #
+
+# ======================= BACKING UP PROJEKT TEMPLATE ======================= #
+
+
+Archiving PROJEKT template JSON.
+
+Successfully archived PROJEKT template JSON to:
+
+projekt_template-2025_01_09-US123465_uppercut_south.json
+# --------------------------------------------------------------------------- #
+
+# ===================== BACKING UP PROJEKT CREATION LOG ===================== #
+
+
+Archiving PROJEKT creation log.
+
+Successfully archived PROJEKT creation log to:
+
+projekt_creation_log-2025_01_09-US123465_uppercut_south-nyc-mpc-001
+# --------------------------------------------------------------------------- #
+Successfully completed modules/functions/create/create_projekt.py
 Started execution of modules/functions/run/run_flame_launcher_script.py
 # ==================== CREATING A CUSTOM FLAME LAUNCHER ===================== #
+tee: /PROJEKTS/US123465_uppercut_south/cfg/log/US123465_uppercut_south-flame_first_run-nyc-mpc-001.log: No such file or directory
+  Flame can now be launched with the following options:
+
+
+
+  /opt/Autodesk/flame_2026.pr213/bin/startFlame
+   -J US123465_uppercut_south_2026_nyc-mpc-001
+   --start-workspace="nyc-mpc-001" --create-workspace
+   uc_projekt_starter.py
+Graphics : VULKAN
+
+---------------------------------------------------------------------------
+MP: Using 10 cpus (10 visible)
+Output log to: '/opt/Autodesk/log/flame2026pr213_nyc-mpc-001_app.log'.
+Parsing Tooltips XML
+Tooltips loaded
+---------------------------------------------------------------------------
+Autodesk(R) Flame(R) Version 2026.pr213 Build 2026.0.0.194
+Autodesk and Flame are registered trademarks or trademarks of Autodesk, Inc., and/or its subsidiaries and/or affiliates in the USA and/or other countries. All other brand names, product names, or trademarks belong to their respective holders.
+Autodesk reserves the right to alter product offerings and specifications at any time without notice, and is not responsible for typographical or graphical errors that may appear in this document. (C) 2024 Autodesk, Inc.
+Autodesk(R) Flame(R) 2026 PR213  BETA
+
+BUILD DATE : Wed Dec  4 06:17:48 2024
+EXEC DATE  : Thu Jan  9 10:00:33 2025 - (1736434833)
+SYS CONFIG : /opt/Autodesk/cfg/.2026.pr213/sysconfig.cfg
+CONFIG     : /opt/Autodesk/.flamefamily_2026.pr213/cfg/init.cfg
+POINTER    : Trying wacom
+AUDIO      : Core Audio
+CLIPMGT    : ArchiveLibrary = /opt/Autodesk/archive/.
+MENU       : /opt/Autodesk/.flamefamily_2026.pr213/menu/default.menu
+2025-01-09 10:00:33.702 flame[18300:120652] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+POINTER : Initialising.
+POINTER : Initialising Wacom UD.
+MEDIA : Initialising I/O...
+
+
+Python encountered ModuleNotFoundError("No module named 'classes'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/logik_projekt_openclip_precomp.py
+Python encountered ModuleNotFoundError("No module named 'classes'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/logik_projekt_openclip_neat_video.py
+Python encountered ModuleNotFoundError("No module named 'classes'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/logik_projekt_openclip_comp.py
+Python encountered ModuleNotFoundError("No module named 'classes'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/logik_projekt_openclip_mattes.py
+Python encountered ModuleNotFoundError("No module named 'classes'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/logik_projekt_openclip_multichannel.py
+Python encountered ModuleNotFoundError("No module named 'nuke'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_create_scripts/config/menu.py
+Python encountered ModuleNotFoundError("No module named 'define_job_structure'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_create_scripts/scripts/create_after_effects_script.py
+[PYTHON HOOK] Duplicate module name found uc_projekt_starter (/opt/Autodesk/shared/python/uc_project_starter/uc_projekt_starter.py vs /opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_layout/scripts/uc_projekt_starter.py). Python does not allow more than one module with a given name to be loaded at the same time. /opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_layout/scripts/uc_projekt_starter.py will be used.
+Python encountered ModuleNotFoundError("No module named 'uc_project_starter.py'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/uc_project_starter/uc_project_starter.py.bak.py
+
+
+PROJECT    : US123465_uppercut_south_2026_nyc-mpc-001
+USER DIR   : /Users/nyc-mpc-001/Library/Preferences/Autodesk/flame
+Locking target ...
+Options: LIMIT_PURGE_TIME
+      Initiating integrity check ...
+Extracting frames from /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/catalog/.#project.000.clib.
+            Extracted 0 frame.
+Extracting frames from /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/catalog/nyc-mpc-001.wksp/.#workspace.000.wks.
+            Extracted 0 frame.
+Adding references to proxies...
+         Verifying video stonefs frames ...
+Extracting audio waveforms ...
+Extracted 0 audio waveform from 0 audio frames (0 failed 0 had none).
+Verifying audio waveforms ...
+            Verified 0 active audio waveform
+            Verified 0 deleted audio waveform
+         Verifying audio stonefs frames ...
+      Recovering lost frames ...
+Recovered 0 lost frames ...
+         Processing unreferenced (leaked) media on target ...:
+{
+         }
+Integrity check successful in 0.033262 sec
+Purging unreferenced frames ...
+Unlocking target  ...
+Closing target ...
+CONFIG     : /opt/Autodesk/project/US123465_uppercut_south_2026_nyc-mpc-001/setups/cfg/US123465_uppercut_south_2026_nyc-mpc-001.cfg
+VIDEO WINDOW: no device matching (0,0,10-bit , YCrCb Rec.709 4:2:2, Normal)
+VIDEO WINDOW: video preview will be disabled.
+PROJECT VIDEO PREVIEW: Using the following parameters for the preview device:
+VIDEO PREVIEW : , channel -1, 0x0, +0, +0, ,  (none), 0-bit, None
+VIDEO      : width: 1920, height: 1080, pixelFormat = 10-bit, timing: 1920X1080_5994I
+MEMORY     : Bytes available: 58818 MB
+MEMORY     : Allocated 11796 MB at address 0x3d161c000 using mmap()
+VIDEO: Display refresh rate detected as: 60.00 Hz
+
+EDL Module: Portions Copyright 1991-1998 ALBA Editorial, Inc.,
+            All Rights Reserved.
+Output log to: '/opt/Autodesk/log/slateDiskCacheCleaner.log'.
+Flame Version: 2026.pr213
+Flame Python Packages Folder: /opt/Autodesk/python/2026.pr213/lib/python3.11/site-packages
+
+Python Packages Path: /opt/Autodesk/python/2026.pr213/lib/python3.11/site-packages
+
+Flame Version: 2026.0
+
+Checking for required python packages...
+
+    multidict: Ok
+    typing_extensions: Ok
+attr: Ok
+    yarl: Ok
+    async_timeout: Ok
+    idna: Ok
+    idna_ssl: Ok
+    attrs: Ok
+    charset_normalizer: Ok
+    aiosignal: Ok
+    pandas: Ok
+    aiohttp: Ok
+attr: Ok
+    frozenlist: Ok
+    openai: Ok
+    requests: Ok
+    frameioclient: Ok
+xxhash: Ok
+    xlsxwriter: Ok
+Shaders and Profiles have been installed.
 Traceback (most recent call last):
-  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/run/run_flame_launcher_script.py", line 307, in <module>
-main()
-  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/run/run_flame_launcher_script.py", line 295, in main
-    subprocess.run([the_flame_launcher_script])
-  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
-    with Popen(*popenargs, **kwargs) as process:
-  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
-    raise child_exception_type(errno_num, err_msg, err_filename)
-FileNotFoundError: [Errno 2] No such file or directory: '/PROJEKTS/UC222222_test_test/DOCS/CFG/workstation/nyc-mpc-001/UC222222_test_test-flame_launcher-nyc-mpc-001.sh'
-Error executing modules/functions/run/run_flame_launcher_script.py. Exit code: 1
+File "/opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_layout/scripts/uc_projekt_starter.py", line 336, in app_initialized
+    ProjectStarter(selection)
+  File "/opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_layout/scripts/uc_projekt_starter.py", line 59, in __init__
+    self.create_project_metadata_files()
+  File "/opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_layout/scripts/uc_projekt_starter.py", line 238, in create_project_metadata_files
+    "--nodeid", f"/projects/{project_name}",
+                             ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'project_name' where it is not associated with a value
+Python encountered ModuleNotFoundError("No module named 'nuke'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_create_scripts/config/menu.py
+[PYTHON HOOK] Duplicate module name found uc_projekt_starter (/opt/Autodesk/shared/python/uc_project_starter/uc_projekt_starter.py vs /opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_layout/scripts/uc_projekt_starter.py). Python does not allow more than one module with a given name to be loaded at the same time. /opt/Autodesk/shared/python/logik_projekt/projekt_tools/logik_projekt_layout/scripts/uc_projekt_starter.py will be used.
+Python encountered ModuleNotFoundError("No module named 'uc_project_starter.py'") in unknown code
+[PYTHON HOOK] An error occurred. Ignoring python hooks from /opt/Autodesk/shared/python/uc_project_starter/uc_project_starter.py.bak.py
+AUDIO: Uninitialisation complete.
+VIDEO: Display refresh rate detected as: 60.00 Hz
+LOG : Uninitialising.
+Stopping managed threads.
+Executing command: /bin/sh -p -c '/usr/sbin/system_profiler SPPCIDataType -xml > /var/tmp/tmpLwvChs'
+Uninitialisation complete.
+Disconnecting socket [fd:67]
+
+# --------------------------------------------------------------------------- #
+Successfully completed modules/functions/run/run_flame_launcher_script.py
 All processes completed.
