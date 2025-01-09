@@ -768,8 +768,10 @@ class WidgetLayoutRight(QWidget):
         xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
         xml_setup_dir = f"{xml_project_dir}/setups"
         xml_media_dir = f"{xml_project_dir}/media"
-        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
-        xml_intermediates_profile = f"0:1120376"
+        # xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
+        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_legacy_config/config.ocio"
+        # xml_intermediates_profile = f"0:1120376"
+        xml_intermediates_profile = f"65541:1120376"
 
         return {
             "the_projekt_serial_number": summary_dict.get("Serial Number", ""),

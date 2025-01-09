@@ -1,8 +1,8 @@
 {
-    "Serial Number: ": "us123465",
-    "Client Name: ": "uppercut",
-    "Campaign Name: ": "south3",
-    "Projekt Name: ": "US123465_uppercut_south3",
+    "Serial Number: ": "us456753",
+    "Client Name: ": "color",
+    "Campaign Name: ": "test",
+    "Projekt Name: ": "US456753_color_test",
     "Resolution: ": "1920 x 1080 | HD 1080 16:9",
     "Width: ": "1920",
     "Height: ": "1080",
@@ -12,6 +12,6 @@
     "Scan Mode: ": "PROGRESSIVE",
     "Start Frame: ": "1001",
     "Init Config: ": "1920x1080@23976p.cfg",
-    "Color Science: ": "ADSK_ACES_1.1",
+    "Color Science: ": "ADSK_Legacy",
     "OCIO Config: ": "OCIO_studio_config"
 }

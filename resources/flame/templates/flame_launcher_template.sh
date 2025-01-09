@@ -19,7 +19,7 @@ flame_workstation_name="FlameWorkstationName"
 # ========================================================================== #
 
 # Define the the_flame_first_run_log
-the_flame_first_run_log_dir="LogikProjektDirectory/cfg/log"
+the_flame_first_run_log_dir="LogikProjektDirectory/DOCS/CFG/workstation"
 the_flame_first_run_log_name="FlameFirstRunName"
 the_flame_first_run_log="$the_flame_first_run_log_dir/$the_flame_first_run_log_name"
 
@@ -51,7 +51,7 @@ launch_cmd="$launch_opt_1 $launch_opt_2 $launch_opt_3 $launch_opt_4"
 # -------------------------------------------------------------------------- #
 
 # Echo the commands to the shell
-echo -e "  Flame can now be launched with the following options:"
+echo -e "  Flame will now be launched with the following options:"
 echo -e "\n$separator\n"
 echo -e "  $launch_opt_1"
 echo -e "   $launch_opt_2"
