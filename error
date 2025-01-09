@@ -1,0 +1,311 @@
+Process Monitor initialized.
+
+Creating a PROJEKT will take a heartbeat.
+
+PROJEKT will process your parameters.
+
+PROJEKT will try to launch FLAME.
+
+Please be patient...
+
+Starting PROJEKT creation...
+Started execution of modules/functions/create/create_projekt.py
+Looking for templates in: /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/resources/flame/presets/cfg/init.cfg/template
+
+  Template directory found. Contents:
+
+  1280x720@5000p.cfg
+  1280x720@5994p.cfg
+  1280x720@6000p.cfg
+  1920x1080@23976p.cfg
+  1920x1080@23976psf.cfg
+  1920x1080@24000psf.cfg
+  1920x1080@25000p.cfg
+  1920x1080@25000psf.cfg
+  1920x1080@2997p.cfg
+  1920x1080@3000p.cfg
+  1920x1080@5000p.cfg
+  1920x1080@50i.cfg
+  1920x1080@5994i.cfg
+  1920x1080@5994p.cfg
+  1920x1080@6000i.cfg
+  1920x1080@6000p.cfg
+  2048x1080@23976p.cfg
+  2048x1080@23976psf.cfg
+  2048x1080@24000p.cfg
+  2048x1080@24000psf.cfg
+  2048x1080@25000p.cfg
+  2048x1080@25000psf.cfg
+  2048x1080@2997p.cfg
+  2048x1080@3000p.cfg
+  2048x1080@5000p.cfg
+  2048x1080@5994p.cfg
+  2048x1080@6000p.cfg
+  24p.cfg
+  24p_1280x720@5994p.cfg
+  24p_1280x720@6000p.cfg
+  24p_1920x1080@5994i.cfg
+  24p_ntsc.cfg
+  30i_1280x720@5994p.cfg
+  30i_1280x720@6000p.cfg
+  3840x2160@23976p.cfg
+  3840x2160@24000p.cfg
+  3840x2160@25000p.cfg
+  3840x2160@2997p.cfg
+  3840x2160@3000p.cfg
+  3840x2160@5000p.cfg
+  3840x2160@5994p.cfg
+  3840x2160@6000p.cfg
+  4096x2160@23976p.cfg
+  4096x2160@24000p.cfg
+  4096x2160@25000p.cfg
+  4096x2160@2997p.cfg
+  4096x2160@3000p.cfg
+  4096x2160@5000p.cfg
+  4096x2160@5994p.cfg
+  4096x2160@6000p.cfg
+  film.cfg
+  film_ntsc.cfg
+  ntsc.cfg
+  pal.cfg
+  readme
+
+  Found 54 template files
+  Error reading JSON configuration file: [Errno 2] No such file or directory: '/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/update/resources/cfg/projekt_configuration/roots/projekt_roots.json'
+
+# ============================ CREATING PROJEKT ============================= #
+
+# --------------------------------------------------------------------------- #
+
+projekt: UC222222_test_test
+
+# --------------------------------------------------------------------------- #
+
+hostname: nyc-mpc-001
+
+host OS: 
+
+username: root
+
+groupname: staff
+
+flame ver: flame_2026.pr213
+
+framestore: N/A
+
+datestamp: 2025_01_07
+
+timestamp: 13_49_17
+# ========================= THE PROJEKT INFORMATION ========================= #
+
+
+the_projekt_serial_number: uc222222
+
+the_projekt_client_name: test
+
+the_projekt_campaign_name: test
+
+the_projekt_name: UC222222_test_test
+
+the_projekt_resolution: 1920 x 1080 | HD 1080 16:9
+
+the_projekt_width: 1920
+
+the_projekt_height: 1080
+
+the_projekt_storage_aspect_ratio: 
+
+the_projekt_display_aspect_ratio: 
+
+the_projekt_pixel_aspect_ratio: 
+
+the_projekt_aspect_ratio: 1.7777778
+
+the_projekt_bit_depth: 16-bit fp
+
+the_projekt_frame_rate: 23.976 fps
+
+the_projekt_scan_mode: PROGRESSIVE
+
+the_projekt_start_frame: 1001
+
+the_projekt_init_config: 1920x1080@23976p.cfg
+
+the_projekt_color_science: ADSK_ACES_1.1
+
+the_projekt_user_name: root
+
+the_projekt_primary_group: staff
+
+the_projekt_os: 
+
+the_hostname: nyc-mpc-001
+
+the_projekt_localhostname: 
+
+the_projekt_computername: 
+
+the_software_version: flame_2026.pr213
+
+the_framestore: N/A
+
+the_sanitized_sw_ver: 
+
+the_sanitized_version: 
+
+the_projekt_flame_name: UC222222_test_test_2026_nyc-mpc-001
+
+xml_project_dir: /opt/Autodesk/project/UC222222_test_test_2026_nyc-mpc-001
+
+xml_setup_dir: /opt/Autodesk/project/UC222222_test_test_2026_nyc-mpc-001/setups
+
+xml_media_dir: /opt/Autodesk/project/UC222222_test_test_2026_nyc-mpc-001/media
+
+xml_ocio_config: /opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio
+
+xml_intermediates_profile: 0:1120376
+
+# --------------------------------------------------------------------------- #
+
+# ======================== CREATING PROJEKT XML FILE ======================== #
+
+
+XML file created at:
+resources/tmp/current_projekt_parameters.xml
+
+
+# --------------------------------------------------------------------------- #
+
+# ========================= CREATING FLAME PROJEKT ========================== #
+
+
+Running the following bash command:
+# set -ex
+# Set the umask to 0
+umask 0
+# ---------------------------------------------------------------------- #
+# echo -e "resources/tmp/current_projekt_parameters.xml"
+# ---------------------------------------------------------------------- #
+# Create the logik projekt flame project node using wiretap_create_node
+# -n <parent node ID>
+# -d <display name>
+# -t <server-specific node type string (default = NODE)>
+# [-h <host name or IP address> (default = 127.0.0.1)]
+# [-s <metadata stream name> (default = none]
+# [-f <file containing metadata> (default = none)]
+# [-g <effective group>] (assumes super-user privileges)
+# ---------------------------------------------------------------------- #
+# # THIS IS THE COMMAND FOR 2025
+# # Create a logik projekt flame project node using wiretap
+# /opt/Autodesk/wiretap/tools/current/wiretap_create_node \
+# -n /volumes/stonefs \
+# -d "UC222222_test_test_2026_nyc-mpc-001" \
+# -s XML \
+# -f "resources/tmp/current_projekt_parameters.xml"
+# ---------------------------------------------------------------------- #
+# THIS IS THE COMMAND FOR 2026
+# Create a logik projekt flame project node using wiretap
+/opt/Autodesk/wiretap/tools/current/wiretap_create_node \
+-h 127.0.0.1 \
+-n /projects \
+-t PROJECT \
+-d "UC222222_test_test_2026_nyc-mpc-001" \
+-s XML \
+-f "resources/tmp/current_projekt_parameters.xml"
+# ---------------------------------------------------------------------- #
+Command output:
+Created node '/projects/DFDBEAE3-1A5C-4D04-9E36-ED39EB24EBB1'.
+# --------------------------------------------------------------------------- #
+
+# ====================== CREATING PROJEKT DIRECTORIES ======================= #
+
+
+Bookmarks written to: resources/tmp/current_projekt_bookmarks.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/audio.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/conform_prep.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/deliverables.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/docs.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/footage.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/from_flame.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/masters.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/shots.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/vendors.json
+Successfully created directory: /PROJEKTS/UC222222_test_test/AUDIO
+Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP
+Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP/GRAPHICS
+Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP/OFFLINE
+Successfully created directory: /PROJEKTS/UC222222_test_test/CONFORM_PREP/XML
+Successfully created directory: /PROJEKTS/UC222222_test_test/DELIVERABLES
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/BACKUPS
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/CFG
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/FLAME_ARCHIVE
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Fonts
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Inventory
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/PrePro
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Scripts_Boards
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/Slates
+Successfully created directory: /PROJEKTS/UC222222_test_test/DOCS/VFX_Shot_list
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/AI
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/CLIENT_ELEMENTS
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/CLIENT_REF
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/COLOR_PREP
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/DAILIES
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/GRADE
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/PREVIOUS_MASTERS
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/RAW
+Successfully created directory: /PROJEKTS/UC222222_test_test/FOOTAGE/UNIQUE_STOCK_ELEMENTS
+Successfully created directory: /PROJEKTS/UC222222_test_test/FROM_FLAME
+Successfully created directory: /PROJEKTS/UC222222_test_test/MASTERS
+Successfully created directory: /PROJEKTS/UC222222_test_test/SHOTS
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/CG
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/COMP
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/DESIGN
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/PAINT
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/ROTO
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/IN/TRACKING
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/CG
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/COMP
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/DESIGN
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/PAINT
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/ROTO
+Successfully created directory: /PROJEKTS/UC222222_test_test/VENDORS/OUT/TRACKING
+Bookmarks file updated successfully.
+Traceback (most recent call last):
+  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/create/create_projekt.py", line 1143, in <module>
+    main()
+  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/create/create_projekt.py", line 558, in main
+    create_the_projekt_directories(
+  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/create/create_projekt_dirs.py", line 417, in create_the_projekt_directories
+    return data  # Return the final bookmarks data
+UnboundLocalError: local variable 'data' referenced before assignment
+Error executing modules/functions/create/create_projekt.py. Exit code: 1
+Started execution of modules/functions/run/run_flame_launcher_script.py
+# ==================== CREATING A CUSTOM FLAME LAUNCHER ===================== #
+Traceback (most recent call last):
+  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/run/run_flame_launcher_script.py", line 307, in <module>
+main()
+  File "/Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/modules/functions/run/run_flame_launcher_script.py", line 295, in main
+    subprocess.run([the_flame_launcher_script])
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/PROJEKTS/UC222222_test_test/DOCS/CFG/workstation/nyc-mpc-001/UC222222_test_test-flame_launcher-nyc-mpc-001.sh'
+Error executing modules/functions/run/run_flame_launcher_script.py. Exit code: 1
+All processes completed.

@@ -233,52 +233,6 @@ def create_the_projekt_directories(
         )
         return formatted.replace('//', '/')
 
-    # def _collect_keys_values(item, bookmarks_list, the_projekts_dir, the_projekt_name, the_projekts_flame_dir, current_folder_bookmarks=None):
-    #     if isinstance(item, dict):
-    #         path = _format_path(item.get('path', ''), the_projekts_dir, the_projekt_name, the_projekts_flame_dir)
-    #         # ... rest of the function ...
-    #         if path:
-    #             full_path = '/' + path.lstrip('/')
-    #             if not os.path.exists(full_path):
-    #                 os.makedirs(full_path)
-    #                 print(f"  Successfully created directory: {full_path}")
-
-    #             bookmark_name = item.get('bookmark_name', '')
-    #             if bookmark_name:
-    #                 bookmark_entry = {
-    #                     'Bookmark': bookmark_name,
-    #                     'Path': full_path,
-    #                     'Visibility': item.get('bookmark_visibility', 'Global')
-    #                 }
-
-    #                 if item.get('bookmark_type') == 'folder':
-    #                     folder_name = bookmark_name
-    #                     print(f"\n\n  Processing bookmarks: {folder_name}\n")
-    #                     folder_bookmarks = _find_bookmark_folder(bookmarks_list, folder_name)
-    #                     if folder_bookmarks is None:
-    #                         folder_entry = {
-    #                             'Folder': folder_name,
-    #                             'Bookmarks': [bookmark_entry]
-    #                         }
-    #                         bookmarks_list.append(folder_entry)
-    #                         current_folder_bookmarks = folder_entry['Bookmarks']
-    #                     else:
-    #                         folder_bookmarks.append(bookmark_entry)
-    #                         current_folder_bookmarks = folder_bookmarks
-    #                 else:
-    #                     if current_folder_bookmarks is not None:
-    #                         current_folder_bookmarks.append(bookmark_entry)
-    #                     else:
-    #                         bookmarks_list.append(bookmark_entry)
-
-    #         children = item.get('children', {})
-    #         if children:
-    #             for key, value in children.items():
-    #                 # _collect_keys_values(value, bookmarks_list, projekts_dir, projekt_dir, projekt_flame_dir, current_folder_bookmarks)
-
-    #                 # ... in the recursive call ...
-    #                 _collect_keys_values(value, bookmarks_list, the_projekts_dir, the_projekt_name, the_projekts_flame_dir, current_folder_bookmarks)
-
     def _collect_keys_values(item, bookmarks_list, the_projekts_dir, the_projekt_name, the_projekts_flame_dir, current_folder_bookmarks=None):
         if isinstance(item, dict):
             path = _format_path(item.get('path', ''), the_projekts_dir, the_projekt_name, the_projekts_flame_dir)
@@ -378,6 +332,11 @@ def create_the_projekt_directories(
             # _collect_keys_values(item, additional_bookmarks, projekts_dir, projekt_dir, projekt_flame_dir)
             _collect_keys_values(item, additional_bookmarks, the_projekts_dir, the_projekt_name, the_projekts_flame_dir)
 
+
+
+    # Initialize data variable outside the if block
+    data = None
+
     # Write additional bookmarks to tmp_bookmarks_file
     if additional_bookmarks:
         with open(tmp_bookmarks_file, 'w') as tmp_file:
@@ -412,7 +371,15 @@ def create_the_projekt_directories(
         with open(tmp_bookmarks_file, 'w') as tmp_file:
             tmp_file.write('{}')  # Write an empty dictionary to clear the file
 
-    print(f"  Bookmarks file updated successfully.")
+        print(f"  Bookmarks file updated successfully.")
+    else:
+        # If there are no additional bookmarks, read the existing bookmarks file
+        try:
+            with open(bookmarks_file, 'r') as f:
+                data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"* Error reading bookmarks file: {e}")
+            data = bookmarks_file_header  # Use the header as fallback
 
     return data  # Return the final bookmarks data
 

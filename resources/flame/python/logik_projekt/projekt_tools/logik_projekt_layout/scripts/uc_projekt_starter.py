@@ -4,7 +4,7 @@ Script Version: 0.1
 Flame Version: 2025.1
 Written by: John Geehreng
 Creation Date: 01.06.25
-Update Date: 
+Update Date: 01.08.25
 
 Custom Action Type: Projekt Launch
 
@@ -12,8 +12,11 @@ Description:
 
     Configure Projekt on Launch
 
-
 Updates:
+
+    v0.2 01.08.25
+
+        Made work for 2025 and 2026
 
     v0.1 01.06.25
 
@@ -26,12 +29,15 @@ Updates:
 import os
 import flame
 import datetime
-
+import subprocess
+from xml.dom.minidom import parse
+import json
+import platform
 #-------------------------------------#
 # Main Script
 
 SCRIPT_NAME = 'UC Projekt Starter'
-SCRIPT_VERSION = 'v0.1'
+SCRIPT_VERSION = 'v0.2'
 SCRIPT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 class ProjectStarter():
@@ -41,13 +47,16 @@ class ProjectStarter():
         # Define common variables
         self.project_name = flame.project.current_project.name
         self.project_nickname = flame.project.current_project.nickname
-        self.project_file = f"/opt/Autodesk/project/{self.project_name}/setups/tmp/project_starter.txt"
+        self.workstation = platform.node().casefold()
         self.wks = flame.project.current_project.current_workspace
         self.libs = flame.project.current_project.current_workspace.libraries
         self.dsk = flame.project.current_project.current_workspace.desktop
         dateandtime = datetime.datetime.now()
         self.today = (dateandtime.strftime("%Y-%m-%d"))
         self.time = (dateandtime.strftime("%H%M"))
+
+        # Create Project Metadata Files
+        self.create_project_metadata_files()
 
         # Create project file so UC Proect Starter does not run again.
         message = f"{SCRIPT_NAME} was not used for {self.project_name}."
@@ -59,8 +68,6 @@ class ProjectStarter():
         # Create Desktop, Libraries, Shared Libraries, and Subfolders
         self.create_libraries()
         self.new_conform_desktop()
-
-        
     
     def create_project_file(self,message):
             print ("Creating Project File.")
@@ -219,7 +226,109 @@ class ProjectStarter():
         except:
             print ('Cannot Find WIPS Libray')
 
+    def create_project_metadata_files(self):
+
+        temp_xml = "/tmp/temp_output.xml"
+        clean_xml = f"/PROJEKTS/{self.project_nickname}/DOCS/FLAME_ARCHIVE/flame_project_metadata_{self.workstation}.xml"
+        clean_json = f"/PROJEKTS/{self.project_nickname}/DOCS/FLAME_ARCHIVE/flame_project_metadata_{self.workstation}.json"
+
+        command = [
+            "/opt/Autodesk/wiretap/tools/current/wiretap_get_metadata",
+            "--host", "127.0.0.1:IFFFS",
+            "--nodeid", f"/projects/{project_name}",
+            "--stream", "xml",
+            "--output", temp_xml
+        ]
+
+        try:
+            # Run the command
+            result = subprocess.run(command, check=True, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             
+            # Print standard error if any
+            if result.stderr:
+                print("Command Error:")
+                print(result.stderr)
+                
+        except subprocess.CalledProcessError as e:
+            print(f"Command failed with return code {e.returncode}")
+            print(e.stderr)
+            
+        # XML Section
+        # Parse and pretty-print the XML
+        with open(temp_xml, "r") as file:
+            dom = parse(file)
+            pretty_xml = dom.toprettyxml(indent="  ")
+
+        # Write the formatted XML to a file
+        with open(clean_xml, "w") as file:
+            file.write(pretty_xml)
+
+        print(f"Formatted XML saved to {clean_xml}")
+
+        # JSON Section
+        # Helper function to convert XML DOM to dictionary
+        def dom_to_dict(node):
+            # If the node has child elements, process them recursively
+            if node.childNodes:
+                child_dict = {}
+                for child in node.childNodes:
+                    # Skip text nodes that are just whitespace
+                    if child.nodeType == child.TEXT_NODE and not child.data.strip():
+                        continue
+                    # If the tag already exists, convert to a list or append
+                    if child.nodeName in child_dict:
+                        if not isinstance(child_dict[child.nodeName], list):
+                            child_dict[child.nodeName] = [child_dict[child.nodeName]]
+                        child_dict[child.nodeName].append(dom_to_dict(child))
+                    else:
+                        child_dict[child.nodeName] = dom_to_dict(child)
+                return child_dict
+            # Handle text content of the node
+            return node.data.strip() if node.nodeType == node.TEXT_NODE else (node.firstChild.data.strip() if node.firstChild else "")
+
+        # # Parse the XML string
+        # dom = parseString(xml_string)
+
+        # Convert the DOM to a dictionary
+        data_dict = {dom.documentElement.tagName: dom_to_dict(dom.documentElement)}
+
+        # Convert the dictionary to JSON
+        json_string = json.dumps(data_dict, indent=4)
+
+        # Write the JSON to a file
+        with open(clean_json, "w") as file:
+            file.write(json_string)
+            
+        print(f"JSON output saved to {clean_json}")
+
+        # Load JSON data
+        with open(clean_json, "r") as file:
+            json_data = json.load(file)
+        # print(json_data)
+
+        # Extracting specific data
+        project_name = json_data["Project"]["Name"]["#text"]
+        project_directory = json_data["Project"].get("ProjectDir", {}).get("#text", "Unknown")
+        self.setup_directory = json_data["Project"].get("SetupDir", {}).get("#text", "Unknown")
+        self.project_file = f"{self.setup_directory}/tmp/project_starter.txt"
+        project_version = json_data["Project"].get("Version", {}).get("#text", "Unknown")
+        # creation_date = json_data["Project"]["CreationDate"]["#text"]
+        # frame_width = json_data["Project"]["FrameWidth"]["#text"]
+        # frame_height = json_data["Project"]["FrameHeight"]["#text"]
+        # aspect_ratio = json_data["Project"]["AspectRatio"]["#text"]
+        # frame_rate = json_data["Project"]["FrameRate"]["#text"]
+
+        # Printing extracted data
+        print(f"Project Name: {project_name}")
+        print(f"Project Version: {project_version}")
+        print(f"Project Directory: {project_directory}")
+        print(f"Setup Directory: {self.setup_directory}")
+        # print(f"Creation Date: {creation_date}")
+        # print(f"Frame Width: {frame_width}")
+        # print(f"Frame Height: {frame_height}")
+        # print(f"Aspect Ratio: {aspect_ratio}")
+        # print(f"Frame Rate: {frame_rate}")
+
 #-------------------------------------#
 # Flame Menus
 

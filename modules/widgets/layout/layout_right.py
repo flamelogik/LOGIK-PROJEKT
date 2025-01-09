@@ -510,16 +510,35 @@ class WidgetLayoutRight(QWidget):
             the_hostname = GetEnvironment.projekt_hostname() or 'N/A'
             # the_hostname = GetEnvironment.projekt_workstation_name() or 'N/A'
 
+            # =========================================================================== #
+
+            # Retrieve values from relevant widgets
+            projekt_flame_directory = self.get_widget_value("Projekt Flame Directory:")
+            setups_directory = self.get_widget_value("Setups Directory:")
+            media_cache_directory = self.get_widget_value("Media Cache:")
+
+            software_version = self.combo_box_software_version.currentText()
+            sanitized_sw_ver = sanitize_app_name(software_version)
+            sanitized_version = sanitize_app_version(software_version)
+
             # Calculate projekt_flame_name
             if the_projekt_name and sanitized_version and the_hostname != 'N/A':
                 the_projekt_flame_name = f"{the_projekt_name}_{sanitized_version}_{the_hostname}"
             else:
                 the_projekt_flame_name = "N/A"
 
+            # Calculate xml_project_dir, xml_setup_dir, and xml_media_dir
+            xml_project_dir = projekt_flame_directory or f"/opt/Autodesk/project/{the_projekt_flame_name}"
+            xml_setup_dir = setups_directory or f"{xml_project_dir}/setups"
+            xml_media_dir = media_cache_directory or f"{xml_project_dir}/media"
+
+            # =========================================================================== #
+
+            # Update the environment summary dictionary
             env_data = {
                 'Username': GetEnvironment.projekt_user_name() or 'N/A',
                 'Group': GetEnvironment.projekt_primary_group() or 'N/A',
-                # 'Operating System': GetEnvironment.projekt_os() or 'N/A',
+                'Operating System': GetEnvironment.projekt_os() or 'N/A',
                 'Hostname': the_hostname,
                 # 'Workstation Name': GetEnvironment.projekt_workstation_name() or 'N/A',
                 # 'FQDN': GetEnvironment.projekt_computername() or 'N/A',
@@ -528,13 +547,38 @@ class WidgetLayoutRight(QWidget):
                 'Software Version': software_version or 'N/A',
                 # 'Sanitized App Ver': sanitized_sw_ver or 'N/A',
                 # 'Sanitized Version#': sanitized_version or 'N/A',
-                'Projekt Flame Name': the_projekt_flame_name
+                'Projekt Flame Name': the_projekt_flame_name,
+                'Projekt Flame Directory': xml_project_dir,
+                'Setups Directory': xml_setup_dir,
+                'Media Cache': xml_media_dir,
             }
+
+            # Update environment summary text
             summary_text = '\n'.join(f"{key}: {value}" for key, value in env_data.items())
             self.environment_summary.setPlainText(summary_text)
         except Exception as e:
             print(f"Error loading environment data: {e}")
             QMessageBox.critical(self, "Error", f"An error occurred while loading environment data:\n{e}")
+
+    def get_widget_value(self, label_text):
+          """Retrieve the value of a widget based on its label text."""
+          for i in range(self.layout.count()):
+              item = self.layout.itemAt(i)
+              if isinstance(item, QHBoxLayout):
+                    label = item.itemAt(0).widget()
+                    widget = item.itemAt(1).widget()
+                    if isinstance(label, QLabel) and label.text() == label_text:
+                        return widget.text() if hasattr(widget, "text") else ""
+          return ""
+
+            # =========================================================================== #
+
+        #     # Update environment summary text
+        #     summary_text = '\n'.join(f"{key}: {value}" for key, value in env_data.items())
+        #     self.environment_summary.setPlainText(summary_text)
+        # except Exception as e:
+        #     print(f"Error loading environment data: {e}")
+        #     QMessageBox.critical(self, "Error", f"An error occurred while loading environment data:\n{e}")
 
     def get_projekt_summary_value(self, key):
         text = self.projekt_summary.toPlainText()

@@ -728,26 +728,26 @@ def main():
 
         # ------------------------------------------------------------------ #
 
-        # Print a banner head
-        logger.log_and_print(f"{banner_head('Copying Projekt Bookmarks')}")
+        # # Print a banner head
+        # logger.log_and_print(f"{banner_head('Copying Projekt Bookmarks')}")
 
-        # Function to copy projekt bookmarks
-        sync_bookmarks(
-            the_hostname,
-            the_projekt_os,
-            the_projekts_dir,
-            the_projekt_flame_dirs,
-            the_adsk_dir,
-            the_adsk_dir_linux,
-            the_adsk_dir_macos,
-            the_projekt_name,
-            the_projekt_flame_name,
-            the_sanitized_version,
-            separator,
-        )
+        # # Function to copy projekt bookmarks
+        # sync_bookmarks(
+        #     the_hostname,
+        #     the_projekt_os,
+        #     the_projekts_dir,
+        #     the_projekt_flame_dirs,
+        #     the_adsk_dir,
+        #     the_adsk_dir_linux,
+        #     the_adsk_dir_macos,
+        #     the_projekt_name,
+        #     the_projekt_flame_name,
+        #     the_sanitized_version,
+        #     separator,
+        # )
 
-        # Print a separator
-        logger.log_and_print(f"\n{separator}")
+        # # Print a separator
+        # logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
 
@@ -985,14 +985,14 @@ def main():
         # ------------------------------------------------------------------ #
         # DISABLE THIS SECTION FOR 2026 (OCIO)
         # Print a banner head
-        logger.log_and_print(f"{banner_head('Add Syncolor Policy')}")  # DISABLE FOR 2026
+        # logger.log_and_print(f"{banner_head('Add Syncolor Policy')}")  # DISABLE FOR 2026
 
-        # Function to add_syncolor_policy  # DISABLE FOR 2026
-        add_syncolor_policy(
-            the_projekt_color_science,
-            the_projekt_flame_name,
-            separator,
-        )
+        # # Function to add_syncolor_policy  # DISABLE FOR 2026
+        # add_syncolor_policy(
+        #     the_projekt_color_science,
+        #     the_projekt_flame_name,
+        #     separator,
+        # )
 
         # ------------------------------------------------------------------ #
 
