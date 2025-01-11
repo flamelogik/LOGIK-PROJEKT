@@ -197,11 +197,21 @@ def symlink_iterations_dir(
         the_sanitized_version,
     ):
 
-    # Define the projekt flame setups directory based on the flame version
-    if the_sanitized_version.startswith("2025"):
-        the_projekt_flame_setups_dir = the_projekt_flame_dir
-    else:
-        the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
+    # Define the projekt flame setups directory for flame 2025
+    the_projekt_flame_setups_dir = the_projekt_flame_dir
+
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
+
+    # # Define the projekt flame setups directory based on the flame version
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
+
+# -------------------------------------------------------------------------- #
 
     """
     Create a symbolic link from the flame iterations directory 
