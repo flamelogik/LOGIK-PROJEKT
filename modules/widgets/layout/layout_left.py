@@ -137,6 +137,10 @@ from modules.widgets.line_edit.flame_projekt_media_cache import WidgetFlameProje
 from modules.widgets.line_edit.flame_projekt_setups_dir import WidgetFlameProjektSetupsDir
 from modules.widgets.combo_box.ocio_config import WidgetOCIOConfig
 from modules.functions.string.string_utilities import string_clean
+from modules.functions.string.string_utilities import string_clean_camel
+from modules.functions.string.string_utilities import string_clean_lower
+from modules.functions.string.string_utilities import string_clean_uc
+from modules.functions.string.string_utilities import string_clean_upper
 from modules.functions.export.export_template import export_template_as_json
 from modules.widgets.style_sheet.projekt_style_sheet import (
     ProjektStyleSheet,
