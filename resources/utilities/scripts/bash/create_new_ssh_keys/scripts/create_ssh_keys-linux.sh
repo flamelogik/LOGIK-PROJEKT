@@ -151,8 +151,10 @@ ssh-keygen -t rsa -b 4096 -C "$today - $email_address" -f "$sshkey_path_rsa" -N 
 
 # Define the filepaths for the tar files
 tar_filepath="$ssh_keys_folder/ssh_keys_$today.tar"
-encrypted_tar_filepath="$ssh_keys_folder/encrypted_ssh_keys_$today.tar.enc"
-decrypted_tar_filepath="$ssh_keys_folder/decrypted_ssh_keys_$today.tar"
+encrypted_tar_filename="encrypted_ssh_keys_$today.tar.enc"
+encrypted_tar_filepath="$ssh_keys_folder/$encrypted_tar_filename"
+decrypted_tar_filename="decrypted_ssh_keys_$today.tar"
+decrypted_tar_filepath="$ssh_keys_folder/$decrypted_tar_filename"
 
 # Create a tar file of the private keys
 tar -cvf "$tar_filepath" "$sshkey_path_dsa" "$sshkey_path_ecdsa" "$sshkey_path_ed25519" "$sshkey_path_rsa"
@@ -189,6 +191,9 @@ rm -f "$decryption_script"
 cat <<EOF > "$decryption_script"
 #!/bin/bash
 
+# Change to the directory of the running script
+path_to_here="\$(cd "\$(dirname "\${BASH_SOURCE[0]}")" && pwd)" cd "\$path_to_here" || exit
+
 # Prompt user for password
 my_password=\$(zenity --password --title="Enter Password" --width=600)
 
@@ -199,7 +204,9 @@ if [ -z "\$my_password" ]; then
 fi
 
 # Decrypt the encrypted file
-openssl aes-256-cbc -d -pbkdf2 -in "$encrypted_tar_filepath" -out "$decrypted_tar_filepath" -k "\$my_password"
+# openssl aes-256-cbc -d -pbkdf2 -in "$encrypted_tar_filepath" -out "$decrypted_tar_filepath" -k "\$my_password"
+openssl aes-256-cbc -d -pbkdf2 -in "$encrypted_tar_filename" -out "$decrypted_tar_filename" -k "\$my_password"
+
 EOF
 
 # Make the decryption script executable
@@ -217,11 +224,14 @@ rm -f "$extraction_script"
 cat <<EOF > "$extraction_script"
 #!/bin/bash
 
+# Change to the directory of the running script
+path_to_here="\$(cd "\$(dirname "\${BASH_SOURCE[0]}")" && pwd)" cd "\$path_to_here" || exit
+
 # Extract the ssh keys from the tar file
-tar -xvf "$decrypted_tar_filepath"
+tar -xvf "$decrypted_tar_filename"
 
 # Remove the tar file
-rm -v "$decrypted_tar_filepath"
+rm -v "$decrypted_tar_filename"
 EOF
 
 # Make the extraction script executable
