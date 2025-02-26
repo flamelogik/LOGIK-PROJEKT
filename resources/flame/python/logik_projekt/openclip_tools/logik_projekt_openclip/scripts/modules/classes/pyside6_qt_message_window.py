@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_message_window.py
-# Version:          1.0.1
+# Version:          1.0.3
 # Created:          2024-01-19
-# Modified:         2024-11-16
+# Modified:         2025-02-25
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -61,11 +61,18 @@ import xml
 import xml.etree.ElementTree as ET
 
 # Third Party library imports
-from PySide6 import (
-    QtWidgets,
-    QtCore,
-    QtGui
-)
+try:
+    from PySide6 import (
+        QtWidgets,
+        QtCore,
+        QtGui,
+    )
+except ImportError:
+    from PySide2 import (
+        QtWidgets,
+        QtCore,
+        QtGui,
+    )
 
 from pyside6_qt_button import pyside6_qt_button
 from pyside6_qt_label import pyside6_qt_label
@@ -440,4 +447,12 @@ class pyside6_qt_message_window(QtWidgets.QDialog):
 # version:               1.0.1
 # modified:              2024-11-16 - 16:52:06
 # comments:              Fixed circular import statements
+# -------------------------------------------------------------------------- #
+# version:               1.0.2
+# modified:              2025-01-19 - 17:47:46
+# comments:              Changed import statements to fix shell errors.
+# -------------------------------------------------------------------------- #
+# version:               1.0.3
+# modified:              2025-02-25 - 07:01:18
+# comments:              Added legacy support for PySide2 imports
 # -------------------------------------------------------------------------- #
