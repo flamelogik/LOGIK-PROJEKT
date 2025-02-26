@@ -204,7 +204,8 @@ class GetEnvironment:
     def projekt_user_name():
         """Get the current username."""
         try:
-            return os.getlogin()
+            # return os.getlogin()
+            return getpass.getuser()  # This fix works on Linux and MacOS
         except Exception as e:
             return str(e)
 

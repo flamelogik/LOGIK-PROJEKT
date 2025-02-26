@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_flame_functions.py
-# Version:          1.0.1
+# Version:          1.0.3
 # Created:          2024-01-19
-# Modified:         2024-11-16
+# Modified:         2025-02-25
 
 # ========================================================================== #
 # This section imports the necessary modules and adds the functions directory
@@ -283,4 +283,12 @@ from functions.pyside6_qt_save_config import (
 # version:               1.0.1
 # modified:              2024-11-16 - 16:52:07
 # comments:              Fixed circular import statements
+# -------------------------------------------------------------------------- #
+# version:               1.0.2
+# modified:              2025-01-19 - 17:47:49
+# comments:              Changed import statements to fix shell errors.
+# -------------------------------------------------------------------------- #
+# version:               1.0.3
+# modified:              2025-02-25 - 07:01:22
+# comments:              Added legacy support for PySide2 imports
 # -------------------------------------------------------------------------- #
