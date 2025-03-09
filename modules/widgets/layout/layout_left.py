@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        layout_left.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -130,7 +132,15 @@ from modules.widgets.combo_box.scan_mode import WidgetScanMode
 from modules.widgets.combo_box.start_frame import WidgetStartFrame
 from modules.widgets.combo_box.init_config import WidgetInitConfig
 from modules.widgets.combo_box.color_science import WidgetColorScience
+from modules.widgets.line_edit.flame_projekt_directory import WidgetFlameProjektDirectory
+from modules.widgets.line_edit.flame_projekt_media_cache import WidgetFlameProjektMediaCache
+from modules.widgets.line_edit.flame_projekt_setups_dir import WidgetFlameProjektSetupsDir
+from modules.widgets.combo_box.ocio_config import WidgetOCIOConfig
 from modules.functions.string.string_utilities import string_clean
+from modules.functions.string.string_utilities import string_clean_camel
+from modules.functions.string.string_utilities import string_clean_lower
+from modules.functions.string.string_utilities import string_clean_uc
+from modules.functions.string.string_utilities import string_clean_upper
 from modules.functions.export.export_template import export_template_as_json
 from modules.widgets.style_sheet.projekt_style_sheet import (
     ProjektStyleSheet,
@@ -255,9 +265,9 @@ class LayoutLeft(QWidget):
             (WidgetResolution(), QLabel()),
             (WidgetWidth(), QLabel()),
             (WidgetHeight(), QLabel()),
-            (WidgetStorageAspectRatio(), QLabel()),
-            (WidgetDisplayAspectRatio(), QLabel()),
-            (WidgetPixelAspectRatio(), QLabel()),
+            # (WidgetStorageAspectRatio(), QLabel()),
+            # (WidgetDisplayAspectRatio(), QLabel()),
+            # (WidgetPixelAspectRatio(), QLabel()),
             (WidgetAspectRatio(), QLabel()),
             (WidgetBitDepth(), QLabel()),
             (WidgetFrameRate(), QLabel()),
@@ -265,6 +275,10 @@ class LayoutLeft(QWidget):
             (WidgetStartFrame(), QLabel()),
             (WidgetInitConfig(), QLabel()),
             (WidgetColorScience(), QLabel()),
+            # (WidgetFlameProjektDirectory(), QLabel()),
+            # (WidgetFlameProjektMediaCache(), QLabel()),
+            # (WidgetFlameProjektSetupsDir(), QLabel()),
+            (WidgetOCIOConfig(), QLabel()),
         ]
 
         # Set minimum height for each widget and align labels and widgets horizontally
@@ -457,4 +471,12 @@ class LayoutLeft(QWidget):
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:18
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:26
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

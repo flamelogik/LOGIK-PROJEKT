@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_nuke_source_script.py
-# Version:          2.2.7
+# Version:          2.2.9
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-11-09
 
 # ========================================================================== #
 # This section imports the necessary modules.
@@ -111,9 +111,10 @@ Root {{
  first_frame "{shot_source_version_start_frame}"
  last_frame "{shot_source_version_end_frame}"
  lock_range true
- format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
  proxy_type scale
  proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ render_mode top-down
  colorManagement OCIO
  OCIO_config aces_1.2
  defaultViewerLUT "OCIO LUTs"
@@ -138,7 +139,7 @@ Read {{
  origlast {shot_source_version_end_frame}
  origset true
  name Read1
- label "{shot_source_dir}"
+ label "\n<center><b>{shot_source_dir}\n\n<center><b>Frame range :</b></font> <font color = green>\[value first] - \[value last] </font></center>"
  xpos 0
  ypos 0
 }}
@@ -146,7 +147,7 @@ set Ndbbb980 [stack 0]
 Write {{
  file "{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.%08d.exr"
  file_type exr
- write_ACES_compliant_EXR true
+ write_ACES_compliant_EXR false
  metadata "all metadata"
  first_part rgba
  create_directories true
@@ -157,8 +158,8 @@ Write {{
  ocioColorspace "ACES - ACEScg"
  display ACES
  view sRGB
- name Write1
- label "{shot_source_dir}_{app_name}_{task_type}"
+ name Write_EXR
+ label "<b>{shot_source_dir}_{app_name}_{task_type}"
  xpos 0
  ypos 192
  postage_stamp true
@@ -209,7 +210,8 @@ Read {{
  origlast {shot_source_version_end_frame}
  origset true
  name Read1
- label "{shot_source_dir}"
+ label "\n<center><b>{shot_source_dir}\n\n<center><b>Frame range :</b></font> <font color = green>\[value first] - \[value last] </font></center>"
+
  xpos 0
  ypos 0
 }}
@@ -217,7 +219,7 @@ set Ndbbb980 [stack 0]
 Write {{
  file "{shot_sources_dir}/{shot_source_dir}_{app_name}_{task_type}_{version_name}/{shot_source_dir}_{app_name}_{task_type}_{version_name}.%08d.exr"
  file_type exr
- write_ACES_compliant_EXR true
+ write_ACES_compliant_EXR false
  metadata "all metadata"
  first_part rgba
  create_directories true
@@ -228,8 +230,9 @@ Write {{
  ocioColorspace "ACES - ACEScg"
  display ACES
  view sRGB
- name Write1
+ name Write_EXR_source
  label "{shot_source_dir}_{app_name}_{task_type}"
+
  xpos 0
  ypos 192
  postage_stamp true

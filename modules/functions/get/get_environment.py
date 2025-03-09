@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        get_environment.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -202,7 +204,8 @@ class GetEnvironment:
     def projekt_user_name():
         """Get the current username."""
         try:
-            return os.getlogin()
+            # return os.getlogin()
+            return getpass.getuser()  # This fix works on Linux and MacOS
         except Exception as e:
             return str(e)
 
@@ -224,11 +227,21 @@ class GetEnvironment:
 
     @staticmethod
     def projekt_hostname():
-        """Get the hostname of the current machine."""
+        """Get the first part of the computer name."""
         try:
-            return socket.gethostname()
+            computer_name = GetEnvironment.projekt_computername()
+            parts = computer_name.split('.')
+            return parts[0]
         except Exception as e:
             return str(e)
+
+    # @staticmethod
+    # def projekt_hostname():
+    #     """Get the hostname of the current machine."""
+    #     try:
+    #         return socket.gethostname()
+    #     except Exception as e:
+    #         return str(e)
 
     @staticmethod
     def projekt_localhostname():
@@ -256,6 +269,16 @@ class GetEnvironment:
         except Exception as e:
             return str(e)
 
+    # @staticmethod
+    # def projekt_workstation_name():
+    #     """Get the first part of the computer name."""
+    #     try:
+    #         computer_name = GetEnvironment.projekt_computername()
+    #         parts = computer_name.split('.')
+    #         return parts[0]
+    #     except Exception as e:
+    #         return str(e)
+
     @staticmethod
     def get_environment_summary():
         """Get a summary of the environment details."""
@@ -266,9 +289,12 @@ class GetEnvironment:
             "Primary Group": GetEnvironment.projekt_primary_group(),
             "Operating System": GetEnvironment.projekt_os(),
             "Hostname": GetEnvironment.projekt_hostname(),
-            "Local Hostname": GetEnvironment.projekt_localhostname(),
-            "Computer Name": GetEnvironment.projekt_computername(),
             "Workstation Name": GetEnvironment.projekt_workstation_name(),
+            "FQDN": GetEnvironment.projekt_computername(),
+            "Network Adress": GetEnvironment.projekt_localhostname(),
+            # "Hostname": GetEnvironment.projekt_hostname(),
+            # "Hostname": GetEnvironment.projekt_workstation_name(),
+            # "Local Hostname": GetEnvironment.projekt_localhostname(),
         }
         
         # Add JSON config data to the summary
@@ -315,4 +341,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:13
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:17
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

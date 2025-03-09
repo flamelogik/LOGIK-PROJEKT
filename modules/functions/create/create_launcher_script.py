@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        create_launch_script.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -189,6 +191,8 @@ separator = '# ' + '-' * 75 + ' #'
 
 # Function to create projekt flame archive script
 def create_projekt_flame_launcher_script(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -196,9 +200,9 @@ def create_projekt_flame_launcher_script(
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        the_hostname,
+        the_sanitized_version,
+        the_software_version,  # This is unique for this function
         separator,
-        the_software_version
     ):
     
     # Nested function to generate backup filename with current date
@@ -320,6 +324,8 @@ def main():
 
     # Call the functions to backup logs and files
     create_projekt_flame_launcher_script(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -327,9 +333,9 @@ def main():
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        the_hostname,
+        the_sanitized_version,
+        the_software_version,  # This is unique for this function
         separator,
-        the_software_version
     )
 
 if __name__ == "__main__":
@@ -365,4 +371,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:12
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:16
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

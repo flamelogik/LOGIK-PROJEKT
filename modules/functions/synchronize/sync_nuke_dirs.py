@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        sync_nuke_dirs.py
-# Version:          0.9.9
-# Created:          2024-01-19
-# Modified:         2024-08-31
+# Version:          2.0.0
+# Created:          2024-11-07
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -189,6 +191,8 @@ separator = '# ' + '-' * 75 + ' #'
 
 # Function to synchronize nuke directories
 def sync_nuke_dirs(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -196,7 +200,8 @@ def sync_nuke_dirs(
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     ):
     
     # Nested function to generate backup filename with current date
@@ -214,15 +219,84 @@ def sync_nuke_dirs(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+    # Define the projekt flame setups directory for flame 2025
+    the_projekt_flame_setups_dir = the_projekt_flame_dir
+
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
+
+    # # Define the projekt flame setups directory based on the flame version
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
+
+# -------------------------------------------------------------------------- #
+
+    # # Set the projekt_flame_setups_dir
+    # the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, "setups")  # Fix for flame 2026
+
+    # ------------------------------------------------------------------------- #
     # Set the source and target nuke directories
     src_nuke_dir = "resources/nuke"
     tgt_nuke_dir = f"{the_projekt_dir}/software/nuke"
+
 
     # Create the tgt_nuke_dir if it doesn't exist
     os.makedirs(
         tgt_nuke_dir,
         exist_ok=True
     )
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target bin directories
+    src_bin_dir = "resources/bin"
+    tgt_bin_dir = f"{the_projekt_dir}/software/bin"
+
+    # Create the tgt_ocio_dir if it doesn't exist
+    os.makedirs(
+        tgt_bin_dir,
+        exist_ok=True
+    )
+
+
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target ocio directories
+    src_ocio_dir = "resources/ocio"
+    tgt_ocio_dir = f"{the_projekt_dir}/software/ocio"
+
+    # Create the tgt_ocio_dir if it doesn't exist
+    os.makedirs(
+        tgt_ocio_dir,
+        exist_ok=True
+    )
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target etc directories
+    src_etc_dir = "resources/etc"
+    tgt_etc_dir = f"{the_projekt_dir}/software/etc"
+
+    # Create the tgt_etc_dir if it doesn't exist
+    os.makedirs(
+        tgt_etc_dir,
+        exist_ok=True
+    )   
+
+    # ------------------------------------------------------------------------- #
+    # Set the source and target templates directories
+    src_templates_dir = "resources/templates"
+    tgt_templates_dir = f"{the_projekt_dir}/software/templates"
+
+    # Create the tgt_templates_dir if it doesn't exist
+    os.makedirs(
+        tgt_templates_dir,
+        exist_ok=True
+    )  
+
+    # ------------------------------------------------------------------------- #
 
     print("  synchronizing nuke directories.\n")
 
@@ -232,6 +306,11 @@ def sync_nuke_dirs(
     # Set the rsync options
     sync_opts = ["-av"]
 
+    # ========================================================================== #
+    # This section uses rsync to synchronize the nuke/etc/ocio/templates folders.
+    # ========================================================================== #
+
+    # ------------------------------------------------------------------------- #
     # Use rsync to copy the nuke scripts
     result = subprocess.run(
         ["rsync"] + sync_opts + [f"{src_nuke_dir}/", f"{tgt_nuke_dir}/"],
@@ -244,8 +323,60 @@ def sync_nuke_dirs(
 
     print("\n  Logik PROJEKT Nuke directories synchronized.")
 
+    # ------------------------------------------------------------------------- #
+    # Use rsync to copy the bin folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_bin_dir}/", f"{tgt_bin_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+
+    # ------------------------------------------------------------------------- #
+    # Use rsync to copy the etc folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_etc_dir}/", f"{tgt_etc_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
+
+    print("\n  Logik PROJEKT etc directories synchronized.")
+
+    # ------------------------------------------------------------------------- #
+    # Use rsync to copy the ocio folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_ocio_dir}/", f"{tgt_ocio_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
+
+    print("\n  Logik PROJEKT ocio directories synchronized.")
+
+    # ------------------------------------------------------------------------- #
+    # use rsync to copy the templates folder
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_templates_dir}/", f"{tgt_templates_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
+    print("\n  Logik PROJEKT templates directories synchronized.")
+
+
+# ------------------------------------------------------------------------- #
+
+
+
 # ========================================================================== #
-# This section copies the envrc file
+# This section copies the envrc file to root of the projekt directory.
 # ========================================================================== #
 
     # Set the src_nuke_envrc path
@@ -271,6 +402,8 @@ def main():
 
     # Call the function to synchronize Python scripts
     sync_nuke_dirs(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -278,7 +411,8 @@ def main():
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     )
 
 if __name__ == "__main__":
@@ -314,4 +448,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:15
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:21
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

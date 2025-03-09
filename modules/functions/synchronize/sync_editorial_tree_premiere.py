@@ -6,6 +6,7 @@
 #                   Copyright © 2024 man-made-mekanyzms
                 
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
+#                   LOGIK-PROJEKT creates editorial_dirs_premiere, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
 #                   LOGIK-PROJEKT is free software.
@@ -31,10 +32,10 @@
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        sync_editorial_tree_premiere.py
-# Version:          0.9.0
+# File Name:        sync_editorial_tree_premiere_working.py
+# Version:          2.0.0
 # Created:          2024-10-31
-# Modified:         2024-10-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -74,8 +75,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -122,8 +125,9 @@ the_projekts_dir = config.get(
 # ========================================================================== #
 
 # These paths should be passed from the main app.
+
 the_projekt_name = "8888_new_job"
-the_projekt_editorial_name = f"{the_projekt_name}_{the_sanitized_version}"
+the_projekt_flame_name = f"{the_projekt_name}_{the_sanitized_version}"
 
 separator = '# ' + '-' * 75 + ' #'
 
@@ -131,30 +135,48 @@ separator = '# ' + '-' * 75 + ' #'
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-def sync_editorial_tree(
+def sync_editorial_tree_premiere(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
+        the_projekt_flame_dirs,
+        the_adsk_dir,
+        the_adsk_dir_linux,
+        the_adsk_dir_macos,
         the_projekt_name,
-        the_projekt_editorial_name,
-        separator
+        the_projekt_flame_name,
+        the_sanitized_version,
+        separator,
     ):
     """
-    Function to create the editorial directory structure for Premiere projects,
+    Function to create the directory structure for Premiere projects,
     set up symbolic links to asset directories, and copy template resources.
     """
     
-    # Nested function to generate backup name with current date
-    def generate_backup_name(path):
-        date_str = datetime.datetime.now().strftime("%Y_%m_%d")
-        return f"{path}.{date_str}.bak"
+    # # Nested function to generate backup name with current date
+    # def generate_backup_name(path):
+    #     date_str = datetime.datetime.now().strftime("%Y_%m_%d")
+    #     return f"{path}.{date_str}.bak"
 
     # Define the base paths
     projekt_base = os.path.join(the_projekts_dir, the_projekt_name)
     premiere_dir = os.path.join(projekt_base, 'editorial', 'adobe_premiere')
     resources_base = get_resource_path("resources")
 
+    # # Define the main directory structure
+    # premiere_folders = [
+    #     "01_projekts",
+    #     "02_footage",
+    #     "03_audio",
+    #     "04_gfx",
+    #     "05_stills",
+    #     "06_color",
+    #     "07_misc",
+    #     "08_postings"
+    # ]
+
     # Define the main directory structure
     premiere_folders = [
-        "01_projekts",
         "02_footage",
         "03_audio",
         "04_gfx",
@@ -176,7 +198,7 @@ def sync_editorial_tree(
         {"src": f"{projekt_base}/assets/audio/mix", "dst": f"{premiere_dir}/03_audio/01_mix"},
         {"src": f"{projekt_base}/assets/audio/music", "dst": f"{premiere_dir}/03_audio/02_music"},
         {"src": f"{projekt_base}/assets/audio/sound_effects", "dst": f"{premiere_dir}/03_audio/03_sfx"},
-        {"src": f"{projekt_base}/assets/audio/voiceovers", "dst": f"{premiere_dir}/03_audio/04_vo"},
+        {"src": f"{projekt_base}/assets/audio/voiceover", "dst": f"{premiere_dir}/03_audio/04_vo"},
         {"src": f"{projekt_base}/assets/audio/production", "dst": f"{premiere_dir}/03_audio/05_production"},
         # Graphics links
         {"src": f"{projekt_base}/assets/graphics", "dst": f"{premiere_dir}/04_gfx/01_aftereffects"},
@@ -188,27 +210,59 @@ def sync_editorial_tree(
         {"src": f"{projekt_base}/assets/supers", "dst": f"{premiere_dir}/05_stills/03_supers"},
         {"src": f"{projekt_base}/assets/legal", "dst": f"{premiere_dir}/05_stills/04_legal"},
         # Postings links
-        {"src": f"{projekt_base}/assets/work_in_progress/postings", "dst": f"{premiere_dir}/08_postings/01_postings"},
-        {"src": f"{projekt_base}/assets/masters", "dst": f"{premiere_dir}/08_postings/02_masters"}
+        {"src": f"{projekt_base}/work_in_progress/postings", "dst": f"{premiere_dir}/08_postings/01_postings"},
+        {"src": f"{projekt_base}/masters", "dst": f"{premiere_dir}/08_postings/02_masters"}
     ]
+
+    # # Define template directories to copy
+    # template_dirs = [
+    #     {
+    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/slates"),
+    #         "dst": f"{premiere_dir}/07_misc/04_slates"
+    #     },
+    #     {
+    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/aspect_ratio_masks"),
+    #         "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
+    #     },
+    #     {
+    #         "src": os.path.join(resources_base, "adobe/premiere/premiere_presets/premiere_export_presets"),
+    #         "dst": f"{premiere_dir}/07_misc/01_export_presets"
+    #     },
+    #     {
+    #         "src": os.path.join(resources_base, "adobe/premiere/fonts"),
+    #         "dst": f"{premiere_dir}/07_misc/02_fonts"
+    #     }
+    # ]
 
     # Define template directories to copy
     template_dirs = [
         {
-            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/slates"),
-            "dst": f"{premiere_dir}/07_misc/04_slates"
-        },
-        {
-            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/aspect_ratio_masks"),
-            "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_projekts"),
+            "dst": f"{premiere_dir}/01_projekts"
         },
         {
             "src": os.path.join(resources_base, "adobe/premiere/premiere_presets/premiere_export_presets"),
             "dst": f"{premiere_dir}/07_misc/01_export_presets"
         },
         {
-            "src": os.path.join(resources_base, "adobe/premiere/fonts"),
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_fonts"),
             "dst": f"{premiere_dir}/07_misc/02_fonts"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_scripts"),
+            "dst": f"{premiere_dir}/07_misc/03_scripts"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_slates"),
+            "dst": f"{premiere_dir}/07_misc/04_slates"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_notes"),
+            "dst": f"{premiere_dir}/07_misc/05_notes"
+        },
+        {
+            "src": os.path.join(resources_base, "adobe/premiere/premiere_templates/premiere_aspect_ratio_masks"),
+            "dst": f"{premiere_dir}/07_misc/06_aspect_ratio_masks"
         }
     ]
 
@@ -224,37 +278,42 @@ def sync_editorial_tree(
     for folder in premiere_folders:
         folder_path = os.path.join(premiere_dir, folder)
         
-        # If directory exists, back it up
-        if os.path.exists(folder_path):
-            backup_path = generate_backup_name(folder_path)
-            print(f"  * {folder_path} exists")
-            print(f"  * Backing up directory to:")
-            print(f"  *   {backup_path}")
-            shutil.move(folder_path, backup_path)
-            print()
+        # # If directory exists, back it up
+        # if os.path.exists(folder_path):
+        #     backup_path = generate_backup_name(folder_path)
+        #     print(f"  * {folder_path} exists")
+        #     print(f"  * Backing up directory to:")
+        #     print(f"  *   {backup_path}")
+        #     shutil.move(folder_path, backup_path)
+        #     print()
 
         # Create the directory
-        os.makedirs(folder_path)
+        os.makedirs(folder_path, exist_ok=True)  # Addendum: exist_ok=True
+
         print(f"  Created directory: {folder_path}")
 
     print("\n  Creating symbolic links...")
-    
+
     # Create symbolic links
     for link in symbolic_links:
         src_path = link["src"]
         dst_path = link["dst"]
-        
+
         # Create parent directory if it doesn't exist
         os.makedirs(os.path.dirname(dst_path), exist_ok=True)
-        
+
+        # # Remove existing symlink if it exists
+        # if os.path.islink(dst_path):
+        #     backup_path = generate_backup_name(dst_path)
+        #     print(f"  * Existing symlink found: {dst_path}")
+        #     print(f"  * Backing up to: {backup_path}")
+        #     os.rename(dst_path, backup_path)
+        #     print()
+
         # Remove existing symlink if it exists
         if os.path.islink(dst_path):
-            backup_path = generate_backup_name(dst_path)
-            print(f"  * Existing symlink found: {dst_path}")
-            print(f"  * Backing up to: {backup_path}")
-            os.rename(dst_path, backup_path)
-            print()
-        
+            os.unlink(dst_path)
+
         # Create the symbolic link
         try:
             if os.path.exists(src_path):
@@ -275,14 +334,18 @@ def sync_editorial_tree(
         # Create parent directory if it doesn't exist
         os.makedirs(os.path.dirname(dst_path), exist_ok=True)
 
-        # If destination exists, back it up
+        # # If destination exists, back it up
+        # if os.path.exists(dst_path):
+        #     backup_path = generate_backup_name(dst_path)
+        #     print(f"  * {dst_path} exists")
+        #     print(f"  * Backing up directory to:")
+        #     print(f"  *   {backup_path}")
+        #     shutil.move(dst_path, backup_path)
+        #     print()
+
+        # Remove existing directory if it exists
         if os.path.exists(dst_path):
-            backup_path = generate_backup_name(dst_path)
-            print(f"  * {dst_path} exists")
-            print(f"  * Backing up directory to:")
-            print(f"  *   {backup_path}")
-            shutil.move(dst_path, backup_path)
-            print()
+            shutil.rmtree(dst_path)
 
         # Copy the directory
         try:
@@ -305,11 +368,18 @@ def main():
     separator = "-" * 80
 
     # Call the main sync function
-    sync_editorial_tree(
+    sync_editorial_tree_premiere(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
+        the_projekt_flame_dirs,
+        the_adsk_dir,
+        the_adsk_dir_linux,
+        the_adsk_dir_macos,
         the_projekt_name,
-        the_projekt_editorial_name,
-        separator
+        the_projekt_flame_name,
+        the_sanitized_version,
+        separator,
     )
 
 if __name__ == "__main__":
@@ -345,4 +415,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:15
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:20
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

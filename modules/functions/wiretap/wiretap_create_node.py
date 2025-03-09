@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        wiretap_create_node.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -188,6 +190,77 @@ separator = '# ' + '-' * 75 + ' #'
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
+# def run_wiretap_create_node_legacy(projekt_xml_path, the_projekt_flame_name):
+def run_wiretap_create_node_legacy(the_projekt_flame_name, projekt_xml_path, separator):
+    """
+    Create the logik projekt flame project node using wiretap_create_node.
+    """
+
+    # separator = '# ' + '-' * 75 + ' #'
+
+    # Create the bash command
+    bash_command = f"""
+
+    # set -ex
+
+    # Set the umask to 0
+    umask 0
+
+    # ---------------------------------------------------------------------- #
+
+    # echo -e "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+
+    # Create the logik projekt flame project node using wiretap_create_node
+
+    # -n <parent node ID>
+    # -d <display name>
+    # -t <server-specific node type string (default = NODE)>
+    # [-h <host name or IP address> (default = 127.0.0.1)]
+    # [-s <metadata stream name> (default = none]
+    # [-f <file containing metadata> (default = none)]
+    # [-g <effective group>] (assumes super-user privileges)
+
+    # ---------------------------------------------------------------------- #
+
+    # THIS IS THE COMMAND FOR 2025
+
+    # Create a logik projekt flame project node using wiretap
+    /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
+    -n /volumes/stonefs \\
+    -d "{the_projekt_flame_name}" \\
+    -s XML \\
+    -f "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+
+    # # THIS IS THE COMMAND FOR 2026
+
+    # # Create a logik projekt flame project node using wiretap
+    # /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
+    # -h 127.0.0.1 \\
+    # -n /projects \\
+    # -t PROJECT \\
+    # -d "{the_projekt_flame_name}" \\
+    # -s XML \\
+    # -f "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+    """
+
+    print(f"  Running the following bash command:")
+    print(f"{bash_command}")
+
+    # Run the bash command
+    process = subprocess.Popen(bash_command, shell=True, executable='/bin/bash', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = process.communicate()
+
+    print(f"  Command output:\n")
+    print(stdout.decode())
+    # print(f"  Command errors:\n")
+    # print(stderr.decode())
+
 # def run_wiretap_create_node(projekt_xml_path, the_projekt_flame_name):
 def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator):
     """
@@ -222,9 +295,24 @@ def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
     # ---------------------------------------------------------------------- #
 
+    # # THIS IS THE COMMAND FOR 2025
+
+    # # Create a logik projekt flame project node using wiretap
+    # /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
+    # -n /volumes/stonefs \\
+    # -d "{the_projekt_flame_name}" \\
+    # -s XML \\
+    # -f "{projekt_xml_path}"
+
+    # ---------------------------------------------------------------------- #
+
+    # THIS IS THE COMMAND FOR 2026
+
     # Create a logik projekt flame project node using wiretap
     /opt/Autodesk/wiretap/tools/current/wiretap_create_node \\
-    -n /volumes/stonefs \\
+    -h 127.0.0.1 \\
+    -n /projects \\
+    -t PROJECT \\
     -d "{the_projekt_flame_name}" \\
     -s XML \\
     -f "{projekt_xml_path}"
@@ -250,7 +338,8 @@ def run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
 if __name__ == "__main__":
     # Example usage
-    # run_wiretap_create_node(projekt_xml_path, the_projekt_flame_name)
+    # run_wiretap_create_node_legacy(projekt_xml_path, the_projekt_flame_name)
+    run_wiretap_create_node_legacy(the_projekt_flame_name, projekt_xml_path, separator)
     run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
 
 # ========================================================================== #
@@ -283,4 +372,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:16
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:23
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

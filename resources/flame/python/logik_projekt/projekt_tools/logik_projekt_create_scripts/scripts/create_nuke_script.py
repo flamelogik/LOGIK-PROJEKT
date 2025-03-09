@@ -40,13 +40,67 @@
 # This section imports the necessary modules.
 # ========================================================================== #
 
-import flame
+# # Standard library imports
+# import flame
+# import os
+# # import pdb; pdb.set_trace() 
+# # import re
+# import fileinput
+# # import logging
+# from datetime import datetime
+
+# Standard library imports
+import ast
+import datetime
+import fileinput
+import functools
+import importlib.util
+# import logging
 import os
 # import pdb; pdb.set_trace() 
-# import re
-import fileinput
-# import logging
-from datetime import datetime
+import re
+import shutil
+import subprocess
+import sys
+import typing
+from typing import (
+    Union,
+    List,
+    Dict,
+    Optional,
+    Callable
+)
+import xml
+import xml.etree.ElementTree as ET
+
+# Third Party library imports
+from PySide6 import (
+    QtWidgets,
+    QtCore,
+    QtGui
+)
+
+import flame
+
+# Get the directory path of the currently executing script
+current_script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Print the current_script_dir
+print(f"current_script_dir: {current_script_dir}")
+
+# The current_script_dir should be 'resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts'
+# The modules directory should be 'resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/modules'
+# Check if this is true
+modules_dir = os.path.join(current_script_dir, 'modules')
+print(f"modules_dir: {modules_dir}")
+
+# Append the 'modules' directory to sys.path to access modules
+modules_dir = os.path.join(current_script_dir, 'modules')
+sys.path.append(modules_dir)
+
+# Append the 'modules/functions' directory to sys.path to access functions
+functions_dir = os.path.join(modules_dir, 'functions')
+sys.path.append(functions_dir)
 
 # ========================================================================== #
 # This section imports the external classes.
@@ -62,7 +116,7 @@ from datetime import datetime
 # ========================================================================== #
 
 # # EXAMPLE:
-# from modules.functions.example import (
+# from functions.example import (
 #     example_function as new_function_name
 # )
 
@@ -71,7 +125,7 @@ from datetime import datetime
 # ========================================================================== #
 
 # # Initiate script logging for debugging
-# from modules.functions.debugging_and_logging import (
+# from functions.debugging_and_logging import (
 #     debugging_and_logging as debugging_and_logging 
 # )
 
@@ -96,7 +150,7 @@ from datetime import datetime
 # ========================================================================== #
 
 # Define function to define job structure
-from modules.functions.define_job_structure import (
+from functions.define_job_structure import (
     define_job_structure as define_job_structure 
 )
 
@@ -105,35 +159,35 @@ from modules.functions.define_job_structure import (
 # ========================================================================== #
 
 # Define function to list shot directories
-from modules.functions.list_shots_dir import (
+from functions.list_shots_dir import (
     list_shots_dir as list_shots_dir 
 )
 
 # -------------------------------------------------------------------------- #
 
 # Define function to define shot structure
-from modules.functions.define_shot_structure import (
+from functions.define_shot_structure import (
     define_shot_structure as define_shot_structure 
 )
 
 # -------------------------------------------------------------------------- #
 
 # Define function to list shot sources directory
-from modules.functions.list_shot_sources_dir import (
+from functions.list_shot_sources_dir import (
     list_shot_sources_dir as list_shot_sources_dir 
 )
 
 # -------------------------------------------------------------------------- #
 
 # Define function to list the contents of each shot_source_dir
-from modules.functions.list_shot_source_dir import (
+from functions.list_shot_source_dir import (
     list_shot_source_dir as list_shot_source_dir 
 )
 
 # -------------------------------------------------------------------------- #
 
 # Define function to recursively search for OpenEXR image sequences
-from modules.functions.path_to_shot_source_openexr_sequences import (
+from functions.path_to_shot_source_openexr_sequences import (
     path_to_shot_source_openexr_sequences as path_to_shot_source_openexr_sequences 
 )
 
@@ -142,14 +196,14 @@ from modules.functions.path_to_shot_source_openexr_sequences import (
 # ========================================================================== #
 
 # Define function to create an openclip output clip for a nuke shot script
-from modules.functions.create_openclip_output_clip import (
+from functions.create_openclip_output_clip import (
     create_openclip_output_clip as create_openclip_output_clip 
 )
 
 # -------------------------------------------------------------------------- #
 
 # Define function to create an openclip segment clip for a nuke source script
-from modules.functions.create_openclip_segment_clip import (
+from functions.create_openclip_segment_clip import (
     create_openclip_segment_clip as create_openclip_segment_clip 
 )
 
@@ -158,14 +212,14 @@ from modules.functions.create_openclip_segment_clip import (
 # ========================================================================== #
 
 # Define function to create a shot script for nuke based on task
-from modules.functions.create_nuke_shot_script import (
+from functions.create_nuke_shot_script import (
     create_nuke_shot_script as create_nuke_shot_script 
 )
 
 # -------------------------------------------------------------------------- #
 
 # Define function to create a source script
-from modules.functions.create_nuke_source_script import (
+from functions.create_nuke_source_script import (
     create_nuke_source_script as create_nuke_source_script 
 )
 
@@ -174,7 +228,7 @@ from modules.functions.create_nuke_source_script import (
 # ========================================================================== #
 
 # Define function to process shot information
-from modules.functions.process_shot_info_nuke import (
+from functions.process_shot_info_nuke import (
     process_shot_info as process_shot_info
 )
 

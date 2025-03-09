@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        string_utilities.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -235,6 +237,137 @@ def string_clean(string):
 
     return string
 
+
+def string_clean_lower(string):
+
+    '''
+    Clean string: allow only lower case letters, numbers, and underscores.
+
+        * Convert to lowercase
+
+        * Keep only lowercase letters, numbers, underscores, and replace
+          other characters with underscores
+
+        * Replace whitespace characters with underscores
+
+        * Replace consecutive underscores with single underscore
+
+        * Remove leading and trailing underscores
+
+    '''
+
+    string = string.lower()
+
+    string = ''.join(
+        character 
+        if character.islower() 
+        or character.isdigit() 
+        or character == '_' 
+        or character.isspace() 
+        else '_' for character in string)
+
+    string = string.replace(' ', '_')
+
+    string = '_'.join(filter(None, string.split('_')))
+
+    string = string.strip('_')
+
+    return string
+
+def string_clean_upper(string):
+
+    '''
+    Clean string: allow only upper case letters, numbers, and underscores.
+
+        * Convert to lowercase
+
+        * Keep only lowercase letters, numbers, underscores, and replace
+          other characters with underscores
+
+        * Replace whitespace characters with underscores
+
+        * Replace consecutive underscores with single underscore
+
+        * Remove leading and trailing underscores
+
+    '''
+
+    string = string.upper()
+
+    string = ''.join(
+        character 
+        if character.isupper() 
+        or character.isdigit() 
+        or character == '_' 
+        or character.isspace() 
+        else '_' for character in string)
+
+    string = string.replace(' ', '_')
+
+    string = '_'.join(filter(None, string.split('_')))
+
+    string = string.strip('_')
+
+    return string
+
+def string_clean_camel(string):
+    '''
+    Clean string and convert to CamelCase.
+
+        * Keep only letters, numbers, and underscores
+
+        * Replace whitespace characters with underscores
+
+        * Replace consecutive underscores with single underscore
+
+        * Remove leading and trailing underscores
+
+        * Convert to CamelCase
+
+    '''
+    string = ''.join(
+        character 
+        if character.isalnum() 
+        or character == '_' 
+        or character.isspace() 
+        else '_' for character in string)
+
+    string = string.replace(' ', '_')
+
+    string = '_'.join(filter(None, string.split('_')))
+
+    string = string.strip('_')
+
+    return ''.join(word.title() for word in string.split('_'))
+
+def string_clean_uc(string):
+    '''
+    Clean string: allow only upper and lower case letters, numbers, and hyphens.
+
+        * Keep only letters, numbers, hyphens, and replace other characters with hyphens
+
+        * Replace whitespace characters with hyphens
+
+        * Replace consecutive hyphens with single hyphen
+
+        * Remove leading and trailing hyphens
+
+    '''
+    string = ''.join(
+        character 
+        if character.isalnum() 
+        or character == '-' 
+        or character.isspace() 
+        else '-' for character in string)
+
+    string = string.replace(' ', '-')
+
+    string = '-'.join(filter(None, string.split('-')))
+
+    string = string.strip('-')
+
+    return string
+
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
@@ -265,4 +398,12 @@ def string_clean(string):
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:14
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:19
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        sync_archive_prefs.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -189,6 +191,8 @@ separator = '# ' + '-' * 75 + ' #'
 
 # Function to create archive defaults for 'Convert to Local Path'
 def sync_archive_prefs(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -196,7 +200,8 @@ def sync_archive_prefs(
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     ):
     
     # Nested function to generate backup filename with current date
@@ -214,13 +219,34 @@ def sync_archive_prefs(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+    # Define the projekt flame setups directory for flame 2025
+    the_projekt_flame_setups_dir = the_projekt_flame_dir
+
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
+
+    # # Define the projekt flame setups directory based on the flame version
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
+
+# -------------------------------------------------------------------------- #
+
+    # # Set the projekt_flame_setups_dir
+    # the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, "setups")  # Fix for flame 2026
+
     # Set the source and target archive preferences
     src_project_archive_prefs = "resources/flame/presets/status/ArchiveCurrent.json"
-    tgt_project_archive_prefs = os.path.join(the_projekt_flame_dir, "status", "ArchiveCurrent.json")
+    # tgt_project_archive_prefs = os.path.join(the_projekt_flame_dir, "status", "ArchiveCurrent.json")  # Disable for flame 2026
+    tgt_project_archive_prefs = os.path.join(the_projekt_flame_setups_dir, "status", "ArchiveCurrent.json")  # Enable for flame 2026
 
     # Set the source and target archive cache preferences
     src_project_archive_cache_prefs = "resources/flame/presets/status/project.json"
-    tgt_project_archive_cache_prefs = os.path.join(the_projekt_flame_dir, "status", "project.json")
+    # tgt_project_archive_cache_prefs = os.path.join(the_projekt_flame_dir, "status", "project.json")  # Disable for flame 2026
+    tgt_project_archive_cache_prefs = os.path.join(the_projekt_flame_setups_dir, "status", "project.json") # Enable for flame 2026
 
     print("  creating archive preferences.\n")
 
@@ -265,6 +291,8 @@ def main():
 
     # Call the functions to create bookmarks and archive prefs
     sync_archive_prefs(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -272,7 +300,8 @@ def main():
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     )
 
 if __name__ == "__main__":
@@ -308,4 +337,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:14
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:20
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

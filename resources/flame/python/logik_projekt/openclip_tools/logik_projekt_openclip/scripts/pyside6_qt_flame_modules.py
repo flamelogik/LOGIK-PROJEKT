@@ -32,12 +32,12 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        pyside6_qt_flame_modules.py
-# Version:          1.0.0
+# Version:          1.0.3
 # Created:          2024-01-19
-# Modified:         2024-10-30
+# Modified:         2025-02-25
 
 # ========================================================================== #
-# This section imports the necessary modules.
+# This section imports the necessary modules and adds the modules directory
 # ========================================================================== #
 
 # Standard library imports
@@ -49,6 +49,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import typing
 from typing import (
     Union,
@@ -61,13 +62,38 @@ import xml
 import xml.etree.ElementTree as ET
 
 # Third Party library imports
-from PySide6 import (
-    QtWidgets,
-    QtCore,
-    QtGui
-)
+try:
+    from PySide6 import (
+        QtWidgets,
+        QtCore,
+        QtGui,
+    )
+except ImportError:
+    from PySide2 import (
+        QtWidgets,
+        QtCore,
+        QtGui,
+    )
 
-from pyside6_qt_flame_classes import (
+# Get the directory path of the currently executing script
+current_script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Print the current_script_dir
+print(f"current_script_dir: {current_script_dir}")
+
+# The current_script_dir should be 'resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts'
+# The modules directory should be 'resources/flame/python/logik_projekt/openclip_tools/logik_projekt_openclip/scripts/modules'
+# Check if this is true
+modules_dir = os.path.join(current_script_dir, 'modules')
+print(f"modules_dir: {modules_dir}")
+
+# Append the 'modules' directory to sys.path to access modules
+modules_dir = os.path.join(current_script_dir, 'modules')
+sys.path.append(modules_dir)
+
+# from pyside6_qt_flame_classes import (
+from modules.pyside6_qt_flame_classes import (
+# from modules.classes import (
     pyside6_qt_button,
     pyside6_qt_clickable_line_edit,
     pyside6_qt_label,
@@ -84,10 +110,12 @@ from pyside6_qt_flame_classes import (
     pyside6_qt_text_edit,
     pyside6_qt_token_push_button,
     pyside6_qt_tree_widget,
-    pyside6_qt_window
+    pyside6_qt_window,
 )
 
-from pyside6_qt_flame_functions import (
+# from pyside6_qt_flame_functions import (
+from modules.pyside6_qt_flame_functions import (
+# from modules.functions import (
     pyside6_qt_get_shot_name,
     pyside6_qt_print,
     pyside6_qt_get_flame_version,
@@ -98,15 +126,75 @@ from pyside6_qt_flame_functions import (
     pyside6_qt_open_in_finder,
     pyside6_qt_load_config,
     pyside6_qt_save_config,
-    pyside6_qt_output_config_ui
 )
+
+# from modules.functions.pyside6_qt_output_config_ui import (
+from modules.pyside6_qt_output_config_ui import (
+    pyside6_qt_output_config_ui as pyside6_qt_output_config_ui
+)
+
+# ============================== TEST ====================================== #
+
+# # Append the 'modules' directory to sys.path to access modules
+# if modules_dir not in sys.path:
+#     sys.path.append(modules_dir)
+
+# # Verify if the modules directory exists
+# if not os.path.exists(modules_dir):
+#     print(f"Error: modules_dir does not exist: {modules_dir}")
+# else:
+#     print(f"modules_dir exists: {modules_dir}")
+
+# # Import modules from the 'modules' directory
+# try:
+#     from modules.pyside6_qt_flame_classes import (
+#         pyside6_qt_button,
+#         pyside6_qt_clickable_line_edit,
+#         pyside6_qt_label,
+#         pyside6_qt_line_edit,
+#         pyside6_qt_list_widget,
+#         pyside6_qt_message_window,
+#         pyside6_qt_password_window,
+#         pyside6_qt_preset_window,
+#         pyside6_qt_progress_window,
+#         pyside6_qt_push_button,
+#         pyside6_qt_push_button_menu,
+#         pyside6_qt_qdialog,
+#         pyside6_qt_slider,
+#         pyside6_qt_text_edit,
+#         pyside6_qt_token_push_button,
+#         pyside6_qt_tree_widget,
+#         pyside6_qt_window,
+#     )
+
+#     from modules.pyside6_qt_flame_functions import (
+#         pyside6_qt_get_shot_name,
+#         pyside6_qt_print,
+#         pyside6_qt_get_flame_version,
+#         pyside6_qt_file_browser,
+#         pyside6_qt_resolve_shot_name,
+#         pyside6_qt_resolve_path_tokens,
+#         pyside6_qt_refresh_hooks,
+#         pyside6_qt_open_in_finder,
+#         pyside6_qt_load_config,
+#         pyside6_qt_save_config,
+#     )
+
+#     from modules.pyside6_qt_output_config_ui import (
+#         pyside6_qt_output_config_ui as pyside6_qt_output_config_ui
+#     )
+    
+# except ImportError as e:
+#     print(f"Error importing modules: {e}")
+
+# ============================== TEST ====================================== #
 
 # ========================================================================== #
 # This section defines how to handle the main script function.
 # ========================================================================== #
 
 # # If this script is executed as main:
-# # Call functions for immediate execution
+# # Call scripts for immediate execution
 # if __name__ == "__main__":
 
 # ========================================================================== #
@@ -287,4 +375,16 @@ from pyside6_qt_flame_functions import (
 # version:               1.0.0
 # modified:              2024-10-30 - 07:35:27
 # comments:              Refactored PySide6 Output Node Config UI.
+# -------------------------------------------------------------------------- #
+# version:               1.0.1
+# modified:              2024-11-16 - 16:52:07
+# comments:              Fixed circular import statements
+# -------------------------------------------------------------------------- #
+# version:               1.0.2
+# modified:              2025-01-19 - 17:47:49
+# comments:              Changed import statements to fix shell errors.
+# -------------------------------------------------------------------------- #
+# version:               1.0.3
+# modified:              2025-02-25 - 07:01:22
+# comments:              Added legacy support for PySide2 imports
 # -------------------------------------------------------------------------- #

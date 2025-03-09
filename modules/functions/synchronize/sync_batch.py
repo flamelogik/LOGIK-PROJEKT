@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        sync_batch.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -189,6 +191,8 @@ separator = '# ' + '-' * 75 + ' #'
 
 # Function to create batch project bin nodes
 def sync_batch_project_bins(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -196,7 +200,8 @@ def sync_batch_project_bins(
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     ):
     
     # Nested function to generate backup filename with current date
@@ -214,9 +219,29 @@ def sync_batch_project_bins(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+    # Define the projekt flame setups directory for flame 2025
+    the_projekt_flame_setups_dir = the_projekt_flame_dir
+
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
+
+    # # Define the projekt flame setups directory based on the flame version
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
+
+# -------------------------------------------------------------------------- #
+
+    # # Set the projekt_flame_setups_dir
+    # the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, "setups")  # Fix for flame 2026
+
     # Set the source and target directories for copying
     src_batch_pref_dir = "resources/flame/presets/batch/pref"
-    tgt_batch_pref_dir = os.path.join(the_projekt_flame_dir, "batch/pref")
+    # tgt_batch_pref_dir = os.path.join(the_projekt_flame_dir, "batch/pref")  # Disabled for flame 2026
+    tgt_batch_pref_dir = os.path.join(the_projekt_flame_setups_dir, "batch/pref")  # Enabled for flame 2026
 
     print("  creating batch project bin.\n")
 
@@ -250,6 +275,8 @@ def main():
 
     # Call the function to create batch project bins
     sync_batch_project_bins(
+        the_hostname,
+        the_projekt_os,
         the_projekts_dir,
         the_projekt_flame_dirs,
         the_adsk_dir,
@@ -257,7 +284,8 @@ def main():
         the_adsk_dir_macos,
         the_projekt_name,
         the_projekt_flame_name,
-        separator
+        the_sanitized_version,
+        separator,
     )
 
 if __name__ == "__main__":
@@ -293,4 +321,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:14
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:20
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

@@ -1,0 +1,195 @@
+customization/directory_structure/significant_others/default_folder_tree clean/default_folder_tree clean/
+.
+└── 0000_LogikProjekt_20241101
+    ├── assets
+    │   ├── audio
+    │   │   ├── dub
+    │   │   ├── mix
+    │   │   ├── music
+    │   │   ├── production
+    │   │   ├── sound_effects
+    │   │   ├── stems
+    │   │   └── voiceover
+    │   ├── font
+    │   ├── footage
+    │   │   ├── graded
+    │   │   ├── lut
+    │   │   ├── raw
+    │   │   ├── stock
+    │   │   ├── transcodes
+    │   │   └── video
+    │   ├── graphics
+    │   │   ├── artwork
+    │   │   ├── font
+    │   │   ├── images
+    │   │   ├── legal
+    │   │   ├── photoshop
+    │   │   ├── slates
+    │   │   ├── stringouts
+    │   │   ├── subtitles
+    │   │   └── titles
+    │   ├── matchmoving
+    │   │   ├── tracking_2d
+    │   │   └── tracking_3d
+    │   ├── miscellaneous
+    │   ├── paint
+    │   └── rotoscope
+    │       ├── gmasks
+    │       ├── raster
+    │       └── source
+    ├── backup
+    │   └── backup_scripts
+    ├── cfg
+    │   ├── log
+    │   ├── pref
+    │   ├── template
+    │   └── workstation
+    ├── docs
+    │   ├── agreements
+    │   │   ├── employment
+    │   │   ├── memoranda_of_understanding
+    │   │   ├── non_disclosure
+    │   │   └── service
+    │   ├── briefs
+    │   │   ├── design_briefs
+    │   │   ├── marketing_briefs
+    │   │   └── projekt_briefs
+    │   ├── contracts
+    │   │   ├── client_contracts
+    │   │   ├── lease_contracts
+    │   │   └── vendor_contracts
+    │   ├── designs
+    │   │   ├── mockups
+    │   │   ├── specifications
+    │   │   └── wireframes
+    │   ├── estimates
+    │   │   ├── cost_estimates
+    │   │   ├── projekt_estimates
+    │   │   └── time_estimates
+    │   ├── financial
+    │   │   ├── budgets
+    │   │   ├── invoices
+    │   │   ├── reports
+    │   │   └── statements
+    │   ├── guidelines
+    │   │   ├── branding
+    │   │   ├── compliance
+    │   │   ├── localization
+    │   │   └── styleguide
+    │   ├── handbooks
+    │   │   ├── employee
+    │   │   ├── policy
+    │   │   └── training
+    │   ├── invoices
+    │   │   ├── client
+    │   │   ├── paid
+    │   │   ├── unpaid
+    │   │   └── vendor
+    │   ├── job_description
+    │   │   ├── administrative_roles
+    │   │   ├── management_roles
+    │   │   └── technical_roles
+    │   ├── knowledge_base
+    │   │   ├── faqs
+    │   │   ├── how_to_guides
+    │   │   └── troubleshooting
+    │   ├── licenses
+    │   │   ├── product_licenses
+    │   │   ├── service_licenses
+    │   │   └── software_licenses
+    │   ├── memoranda
+    │   │   ├── external_memos
+    │   │   ├── internal_memos
+    │   │   └── meeting_memos
+    │   ├── non_disclosure
+    │   │   ├── client_ndas
+    │   │   ├── employee_ndas
+    │   │   └── vendor_ndas
+    │   ├── org_charts
+    │   │   ├── company_charts
+    │   │   ├── department_charts
+    │   │   └── team_charts
+    │   ├── policies
+    │   │   ├── hr_policies
+    │   │   ├── it_policies
+    │   │   └── operational_policies
+    │   ├── quotations
+    │   │   ├── client_quotations
+    │   │   ├── service_quotations
+    │   │   └── vendor_quotations
+    │   ├── reports
+    │   │   ├── annual_reports
+    │   │   ├── projekt_reports
+    │   │   └── quarterly_reports
+    │   ├── schedules
+    │   │   ├── meeting_schedules
+    │   │   ├── projekt_schedules
+    │   │   └── training_schedules
+    │   ├── technical
+    │   │   ├── technical_manuals
+    │   │   ├── technical_reports
+    │   │   └── technical_specifications
+    │   ├── user_guides
+    │   │   ├── product_user_guides
+    │   │   ├── service_user_guides
+    │   │   └── software_user_guides
+    │   ├── vendor_list
+    │   │   ├── approved_vendors
+    │   │   ├── blacklisted_vendors
+    │   │   └── preferred_vendors
+    │   ├── workflows
+    │   │   ├── approval_workflows
+    │   │   ├── operational_workflows
+    │   │   └── process_workflows
+    │   └── xml
+    │       ├── xml_templates
+    │       └── xslt_templates
+    ├── editorial
+    ├── flame
+    │   ├── archives
+    │   ├── iterations
+    │   └── setups
+    ├── reference
+    │   ├── reference_images
+    │   ├── reference_movies
+    │   └── reference_style_guide
+    ├── scenes
+    │   ├── 3ds
+    │   ├── alembic
+    │   ├── baselight
+    │   ├── blender
+    │   ├── c4d
+    │   ├── cut
+    │   ├── fbx
+    │   ├── geometry
+    │   ├── houdini
+    │   ├── maya
+    │   ├── resolve
+    │   ├── unity
+    │   ├── unreal_engine
+    │   └── usd
+    ├── shots
+    ├── software
+    │   ├── aftereffects
+    │   │   └── 01_GFX_Stringouts
+    │   ├── c4d
+    │   ├── houdini
+    │   ├── illustrator
+    │   ├── Indesign
+    │   ├── maya
+    │   ├── photoshop
+    │   ├── premiere
+    │   │   └── Adobe Premiere Pro Auto-Save
+    │   ├── resolve
+    │   ├── unity
+    │   └── unreal_engine
+    ├── tmp
+    ├── utilities
+    │   └── Synergy
+    │       └── SynColor
+    │           └── Shared
+    ├── version
+    ├── wip
+    └── z_deliverables
+
+177 directories, 1 file

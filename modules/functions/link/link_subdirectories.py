@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        link_subdirectories.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -193,7 +195,7 @@ def symlink_subdirectories(
         the_projekt_flame_dirs,
         the_projekt_flame_dir,
         the_sanitized_version,
-        the_hostname
+        the_hostname,
     ):
 
     source_setups_dir = os.path.abspath(
@@ -256,7 +258,7 @@ def main():
         args.the_projekt_flame_dirs,
         args.the_projekt_flame_dir,
         args.the_sanitized_version,
-        args.the_hostname
+        args.the_hostname,
     )
 
 # ========================================================================== #
@@ -296,4 +298,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:14
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:18
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

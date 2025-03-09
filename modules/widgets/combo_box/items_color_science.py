@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        items_color_science.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the primary functions for the script.
@@ -85,4 +85,12 @@ combo_box_items_color_science = [
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:16
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:24
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

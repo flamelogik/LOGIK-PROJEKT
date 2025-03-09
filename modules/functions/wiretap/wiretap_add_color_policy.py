@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        wiretap_add_color_policy.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -189,7 +191,11 @@ separator = '# ' + '-' * 75 + ' #'
 # ========================================================================== #
 
 # Function to add the logik projekt synColor policy
-def add_syncolor_policy(the_projekt_color_science, the_projekt_flame_name, separator):
+def add_syncolor_policy(
+        the_projekt_color_science,
+        the_projekt_flame_name,
+        separator,
+    ):
     """
     Add the synColor policy with wiretap_duplicate_node
     """
@@ -239,8 +245,12 @@ def add_syncolor_policy(the_projekt_color_science, the_projekt_flame_name, separ
 
 if __name__ == "__main__":
     # Example usage
-    add_syncolor_policy(the_projekt_color_science, the_projekt_flame_name, separator)
-
+    add_syncolor_policy(
+        the_projekt_color_science,
+        the_projekt_flame_name,
+        separator,
+    )
+    
 # ========================================================================== #
 # C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
 # ========================================================================== #
@@ -271,4 +281,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:16
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:23
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #

@@ -32,9 +32,9 @@
 # -------------------------------------------------------------------------- #
 
 # File Name:        link_iterations_dir.py
-# Version:          0.9.9
+# Version:          2.0.0
 # Created:          2024-01-19
-# Modified:         2024-08-31
+# Modified:         2024-12-31
 
 # ========================================================================== #
 # This section defines the import statements and directory paths.
@@ -86,8 +86,10 @@ def get_resource_path(relative_path):
 
 # Set the path to the 'modules' directory
 modules_dir = get_resource_path('modules')
+
 # Set the path to the 'resources' directory
 resources_dir = get_resource_path('resources')
+
 # Append the modules path to the system path
 if modules_dir not in sys.path:
     sys.path.append(modules_dir)
@@ -187,7 +189,30 @@ separator = '# ' + '-' * 75 + ' #'
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-def symlink_iterations_dir(the_projekts_dir, the_projekt_dir, the_projekt_flame_dirs, the_projekt_flame_dir):
+def symlink_iterations_dir(
+        the_projekts_dir,
+        the_projekt_dir,
+        the_projekt_flame_dirs,
+        the_projekt_flame_dir,
+        the_sanitized_version,
+    ):
+
+    # Define the projekt flame setups directory for flame 2025
+    the_projekt_flame_setups_dir = the_projekt_flame_dir
+
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
+
+    # # Define the projekt flame setups directory based on the flame version
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
+
+# -------------------------------------------------------------------------- #
+
     """
     Create a symbolic link from the flame iterations directory 
     to the projekt flame batch directory.
@@ -204,7 +229,7 @@ def symlink_iterations_dir(the_projekts_dir, the_projekt_dir, the_projekt_flame_
     target_path = os.path.abspath(
         os.path.join(
             the_projekt_flame_dirs,
-            the_projekt_flame_dir,
+            the_projekt_flame_setups_dir,
             "batch",
             "flame",
             "iterations"
@@ -280,4 +305,12 @@ if __name__ == "__main__":
 # version:          0.9.9
 # modified:         2024-08-31 - 16:51:09
 # comments:         prep for release - code appears to be functional
+# -------------------------------------------------------------------------- #
+# version:          1.9.9
+# modified:         2024-12-25 - 09:50:13
+# comments:         Preparation for future features
+# -------------------------------------------------------------------------- #
+# version:          2.0.0
+# modified:         2024-12-31 - 11:17:18
+# comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #
