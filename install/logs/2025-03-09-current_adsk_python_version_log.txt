@@ -1,0 +1,46 @@
+
++ --------------------------------------------------------------------------- +
+
+  2025-03-09 11:22:07 - Reading preference file:
+  2025-03-09 11:22:07 - /Users/Tradecraft_VFX/Documents/GitHub/LOGIK-PROJEKT-tradecraftvfx/install/current_adsk_python_version.pref
+  2025-03-09 11:22:07 - 
+  2025-03-09 11:22:07 - Preference file loaded:
+  2025-03-09 11:22:07 - /opt/Autodesk/python/2026.pr213/bin/python
+  2025-03-09 11:22:07 - 
+  2025-03-09 11:22:07 - Analyzing directory: /opt/Autodesk/python
+  2025-03-09 11:22:07 - Sorted contents of /opt/Autodesk/python:
+  2025-03-09 11:22:07 - 2025.2.1
+  2025-03-09 11:22:07 - 2025.2
+  2025-03-09 11:22:07 - 2025.1.1
+  2025-03-09 11:22:07 - 2025.1
+  2025-03-09 11:22:07 - 2025.1.pr201
+  2025-03-09 11:22:07 - 2025.0.1
+  2025-03-09 11:22:07 - 2025
+  2025-03-09 11:22:07 - 
+  2025-03-09 11:22:07 - The highest version is: 2025.2.1
+  2025-03-09 11:22:07 - 
+  2025-03-09 11:22:07 - Python version 2025.2.1 is available and executable
+  2025-03-09 11:22:07 - Updated preference file with:
+  2025-03-09 11:22:07 - /opt/Autodesk/python/2025.2.1/bin/python
+  2025-03-09 11:22:07 - 
+
++ --------------------------------------------------------------------------- +
+
+  2025-03-09 11:22:07 - Creating macOS application: LOGIK-PROJEKT.app
+  2025-03-09 11:22:07 - Creating the macOS application components
+
++ --------------------------------------------------------------------------- +
+
+  2025-03-09 11:22:07 - Creating LOGIK-PROJEKT shell script for linux: run_logikprojekt_linux.sh
+  2025-03-09 11:22:07 - Making the file executable: run_logikprojekt_linux.sh
+  2025-03-09 11:22:07 - Creating macOS application shell script: run_logikprojekt_macos
+
++ --------------------------------------------------------------------------- +
+
+  2025-03-09 11:22:07 - Creating desktop entry file: LOGIK-PROJEKT.desktop
+  2025-03-09 11:22:07 - Making the file executable: LOGIK-PROJEKT.desktop
+  2025-03-09 11:22:07 - This script is not configured to move files on macOS (Darwin).
+  2025-03-09 11:22:07 - File 'LOGIK-PROJEKT.desktop' has been created and made executable.
+
++ --------------------------------------------------------------------------- +
+
