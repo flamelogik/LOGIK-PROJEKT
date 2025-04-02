@@ -72,7 +72,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+   
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -110,6 +110,7 @@ the_projekt_os = "Linux"
 the_software_version = "flame_2025.1.pr199"
 the_sanitized_version = "2025_1"
 the_framestore = "stonefs"
+the_workstation = platform.node().casefold().split('.')[0]
 
 '''
 Print the variables for debugging
@@ -196,13 +197,18 @@ the_projekt_flame_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 class WidgetFlameProjektMediaCache(QLineEdit):
     def __init__(self, parent=None):
         super().__init__(parent)
-        
+       
         # Set object name if needed
         self.setObjectName("template_media_cache")
 
         # Set default properties
-        self.setPlaceholderText("Media Cache Will be Dynamically Calculated...")
-        self.setReadOnly(True)
+        # self.setPlaceholderText("Media Cache Will be Dynamically Calculated...")
+        if platform.system() == "Linux":
+            self.default_value = (f"/hosts/{the_workstation}/mnt/StorageMedia/flame/<project_name>")
+        elif platform.system() == "Darwin":
+            self.default_value = (f"/PROJEKTS/<project_nickname>/FOOTAGE/media")
+        self.setText(self.default_value)
+        self.setReadOnly(False)
 
         # Optionally, set additional properties based on widget_parameters
 
@@ -212,9 +218,9 @@ class WidgetFlameProjektMediaCache(QLineEdit):
             "widget_type": "QLineEdit",
             "widget_label_name": "Media Cache: ",
             "widget_default_value": "",
-            "widget_placeholder_value": "Media Cache Will be Dynamically Calculated...",
+            "widget_placeholder_value": "",
             "widget_item_values": "",
-            "widget_read_only": True
+            "widget_read_only": False
         }
         return widget_parameters
 

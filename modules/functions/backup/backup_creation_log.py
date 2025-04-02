@@ -256,7 +256,7 @@ def backup_projekt_creation_log(
     backup_filename = generate_backup_filename(tgt_projekt_creation_log)
 
     shutil.copy(src_projekt_creation_log, backup_filename)
-    
+   
     print(f"  Successfully archived PROJEKT creation log to:\n")
     print(f"  {os.path.basename(backup_filename)}")
     # print("\n" + separator + "\n")

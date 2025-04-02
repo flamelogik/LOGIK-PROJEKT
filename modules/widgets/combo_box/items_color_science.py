@@ -43,6 +43,7 @@
 combo_box_items_color_science = [
     "ADSK_ACES_1.0",
     "ADSK_ACES_1.1",
+    "ADSK_ACES_2.0",
     "ADSK_Legacy",
     "ADSK_Scene_Linear",
     "ARRI_LogC_V3",

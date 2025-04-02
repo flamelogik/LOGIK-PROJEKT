@@ -267,7 +267,7 @@ def create_projekt_flame_launcher_script(
         f"{the_projekt_name}-flame_launcher-{the_hostname}.sh"
     )
 
-    # Archive the PROJEKT flame launcher script
+    # Archive the PROJEKT template
     print(f"  Creating PROJEKT flame launcher script.\n")
 
     backup_filename = generate_backup_filename(tgt_launcher_script)
@@ -280,18 +280,31 @@ def create_projekt_flame_launcher_script(
         shutil.move(tgt_launcher_script, backup_filename)
 
     shutil.copy(src_launcher_template, tgt_launcher_script)
-    
+   
     print(f"  Successfully copied PROJEKT flame launcher template to:\n")
     print(f"  {os.path.basename(backup_filename)}")
     print("\n" + separator + "\n")
 
-    # Archive the PROJEKT flame launcher script
+    # Archive the PROJEKT template
     print(f"  Modifying PROJEKT launcher script.\n")
 
     # Add execution permissions to the new archiving shell script
     os.chmod(tgt_launcher_script, 0o755)
 
     # the_timestamp = f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+
+    # if the_software_version contains 'flame' set app_starter to 'startFlame',
+    if 'flame' in the_software_version:
+        app_starter = 'startFlame'
+    # if the_software_version contains 'flare' set app_starter to 'startFlare',
+    elif 'flare' in the_software_version:
+        app_starter = 'startFlare'
+    # if the_software_version contains 'assist' set app_starter to 'startFlameAssist'
+    elif 'assist' in the_software_version:
+        app_starter = 'startFlameAssist'
+    # if the_software_version contains 'project' set app_starter to 'startProjectServer'
+    elif 'project' in the_software_version:
+        app_starter = 'startProjectServer'
 
     # Set the search and replace strings
     search_replace = {
@@ -306,7 +319,8 @@ def create_projekt_flame_launcher_script(
         "LogikProjektFlameDirectories": f"{the_projekt_flame_dirs}",
         "LogikProjektFlameDirectory": f"{the_projekt_flame_dir_path}",
         "FlameFirstRunName": f"{the_projekt_name}-flame_first_run-{the_hostname}.log",
-        "FlameSoftwareVersion": f"{the_software_version}"
+        "FlameSoftwareVersion": f"{the_software_version}",
+        "ApplicationStarter": f"{app_starter}"
     }
 
     # Modify the script file with the search and replace dictionary

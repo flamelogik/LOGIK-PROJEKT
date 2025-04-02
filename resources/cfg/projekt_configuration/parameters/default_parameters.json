@@ -23,5 +23,5 @@
 
     "Init Config: ": "1920x1080@23976p.cfg",
 
-    "Color Science: ": "ADSK_Legacy"
+    "Color Science: ": "ADSK_ACES_2.0"
 }

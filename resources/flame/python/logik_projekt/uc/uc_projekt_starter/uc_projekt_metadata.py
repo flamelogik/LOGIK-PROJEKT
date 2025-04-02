@@ -123,9 +123,9 @@ class ProjektMetadata():
             "Name": root.find("Name").text,
             "Nickname": root.find("Nickname").text,
             "CreationDate": root.find("CreationDate").text,
-            # "ProjectDir": root.find("ProjectDir").text,
+            "ProjectDir": root.find("ProjectDir").text,
             "SetupDir": root.find("SetupDir").text,
-            # "MediaDir": root.find("MediaDir").text,
+            "MediaDir": root.find("MediaDir").text,
             "Version": root.find("Version").text,
         }
         print(f"JSON data extracted from {clean_xml}, {json_data}")

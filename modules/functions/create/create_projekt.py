@@ -273,7 +273,12 @@ from functions.synchronize.sync_syncolor_transforms import (
 
 # Import the add_syncolor_policy function
 from functions.wiretap.wiretap_add_color_policy import (
-    add_syncolor_policy
+    add_syncolor_policy,
+)
+
+# Import the sync_ocio_configs function
+from functions.synchronize.sync_ocio_configs import (
+    sync_ocio_configs,
 )
 
 # Import the add_syncolor_policy function
@@ -462,11 +467,25 @@ def main():
         the_projekt_dir = the_projekt_information.get('the_projekt_name')
         the_projekt_flame_dir = the_projekt_information.get('the_projekt_flame_name')
 
-        # Define the projekt flame setups directory based on the flame version
-        if the_sanitized_version.startswith("2025"):
-            the_projekt_flame_setups_dir = the_projekt_flame_dir
-        else:
-            the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
+
+        # ----------- ENABLE THIS FUNCTION FOR FLAME 2026 ------------------ #
+
+        # Define the projekt flame setups directory for flame 202
+        the_projekt_flame_setups_dir = os.path.join(
+            the_projekt_flame_dir,
+            'setups'
+        )
+
+        # # Define the projekt flame setups directory based on the flame version
+        # if the_sanitized_version.startswith("2025"):
+        #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+        # else:
+        #     the_projekt_flame_setups_dir = os.path.join(
+        #         the_projekt_flame_dir,
+        #         'setups'
+        #     )
+
+        # ------------------------------------------------------------------ #
 
         bookmarks_file = 'resources/tmp/current_projekt_bookmarks.json'
         tmp_bookmarks_file = 'resources/tmp/tmp_bookmarks.json'
@@ -516,16 +535,42 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Projekt XML File')}")
 
-        # Call the create_xml_file function based on the flame version
-        if the_sanitized_version.startswith("2025"):
+        # # Call the create_xml_file_legacy function for flame 2025
+        # create_xml_file_legacy(
+        #     the_projekt_information,
+        #     projekt_xml_path,
+        #     logger
+        # )
 
-            # Call the create_xml_file_legacy function
-            create_xml_file_legacy(the_projekt_information, projekt_xml_path, logger)
+        # Call the create_xml_file function for flame 2026
+        create_xml_file(
+            the_projekt_information,
+            projekt_xml_path,
+            logger
+        )
 
-        else:
+        # ----------- ENABLE THIS FUNCTION FOR FLAME 2026 ------------------ #
 
-            # Call the create_xml_file function
-            create_xml_file(the_projekt_information, projekt_xml_path, logger)
+        # # Call the create_xml_file function based on the flame version
+        # if the_sanitized_version.startswith("2025"):
+
+        #     # Call the create_xml_file_legacy function for flame 2025
+        #     create_xml_file_legacy(
+        #         the_projekt_information,
+        #         projekt_xml_path,
+        #         logger
+        #     )
+
+        # else:
+
+        #     # Call the create_xml_file function
+        #     create_xml_file(
+        #         the_projekt_information,
+        #         projekt_xml_path,
+        #         logger
+        #     )
+
+        # ------------------------------------------------------------------ #
 
         # Print a separator
         logger.log_and_print(f"\n{separator}")
@@ -535,16 +580,42 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Flame Projekt')}")
 
-        # Call the run_wiretap_create_node function based on the flame version
-        if the_sanitized_version.startswith("2025"):
+        # # Call the run_wiretap_create_node_legacy function for flame 2025
+        # run_wiretap_create_node_legacy(
+        #     the_projekt_flame_name,
+        #     projekt_xml_path,
+        #     separator
+        # )
 
-            # Call the run_wiretap_create_node_legacy function
-            run_wiretap_create_node_legacy(the_projekt_flame_name, projekt_xml_path, separator)
+        # Call the run_wiretap_create_node function for flame 2026
+        run_wiretap_create_node(
+            the_projekt_flame_name,
+            projekt_xml_path,
+            separator
+        )
 
-        else:
+        # ----------- ENABLE THIS FUNCTION FOR FLAME 2026 ------------------ #
 
-            # Call the run_wiretap_create_node function
-            run_wiretap_create_node(the_projekt_flame_name, projekt_xml_path, separator)
+        # # Call the run_wiretap_create_node function based on the flame version
+        # if the_sanitized_version.startswith("2025"):
+
+        #     # Call the run_wiretap_create_node_legacy function
+        #     run_wiretap_create_node_legacy(
+        #         the_projekt_flame_name,
+        #         projekt_xml_path,
+        #         separator
+        #     )
+
+        # else:
+
+        #     # Call the run_wiretap_create_node function
+        #     run_wiretap_create_node(
+        #         the_projekt_flame_name,
+        #         projekt_xml_path,
+        #         separator
+        #     )
+
+        # ------------------------------------------------------------------ #
 
         # Print a separator
         logger.log_and_print(f"\n{separator}")
@@ -589,38 +660,38 @@ def main():
 
         # ------------------------------------------------------------------ #
 
-        # # Print a banner head
-        # logger.log_and_print(f"\n{banner_head('Linking Batch Iterations Directory')}")
+        # Print a banner head
+        logger.log_and_print(f"\n{banner_head('Linking Batch Iterations Directory')}")
 
-        # # Link the batch iterations directory
-        # symlink_iterations_dir(
-        #     the_projekts_dir,
-        #     the_projekt_dir,
-        #     the_projekt_flame_dirs,
-        #     the_projekt_flame_dir,
-        #     the_sanitized_version,
-        # )
+        # Link the batch iterations directory
+        symlink_iterations_dir(
+            the_projekts_dir,
+            the_projekt_dir,
+            the_projekt_flame_dirs,
+            the_projekt_flame_dir,
+            the_sanitized_version,
+        )
 
-        # # Print a separator
-        # logger.log_and_print(f"\n{separator}")
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
 
-        # # Print a banner head
-        # logger.log_and_print(f"{banner_head('Linking Flame Setup Directories')}")
+        # Print a banner head
+        logger.log_and_print(f"{banner_head('Linking Flame Setup Directories')}")
 
-        # # Linking Flame Setup Directories
-        # symlink_subdirectories(
-        #     the_projekts_dir,
-        #     the_projekt_dir,
-        #     the_projekt_flame_dirs,
-        #     the_projekt_flame_dir,
-        #     the_sanitized_version,
-        #     the_hostname,
-        # )
+        # Linking Flame Setup Directories
+        symlink_subdirectories(
+            the_projekts_dir,
+            the_projekt_dir,
+            the_projekt_flame_dirs,
+            the_projekt_flame_dir,
+            the_sanitized_version,
+            the_hostname,
+        )
 
-        # # Print a separator
-        # logger.log_and_print(f"\n{separator}")
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
 
@@ -687,67 +758,67 @@ def main():
 
         # ------------------------------------------------------------------ #
 
-        # # Print a banner head
-        # logger.log_and_print(f"{banner_head('Updating Flame ColorToolkit Bookmarks')}")
+        # Print a banner head
+        logger.log_and_print(f"{banner_head('Updating Flame ColorToolkit Bookmarks')}")
 
-        # tgt_projekt_policies_dir = os.path.join(the_projekts_dir, the_projekt_dir, "utilities", "Synergy", "SynColor", "Shared", "policies")
-        # tgt_projekt_transforms_dir = os.path.join(the_projekts_dir, the_projekt_dir, "utilities", "Synergy", "SynColor", "Shared", "transforms")
+        tgt_projekt_policies_dir = os.path.join(the_projekts_dir, the_projekt_dir, "utilities", "Synergy", "SynColor", "Shared", "policies")
+        tgt_projekt_transforms_dir = os.path.join(the_projekts_dir, the_projekt_dir, "utilities", "Synergy", "SynColor", "Shared", "transforms")
+
+        # Define the new bookmarks to be added
+        flame_colortoolkit_bookmarks = [
+            {
+                "Bookmark": "flame_colortoolkit (linux)",
+                "Path": "/opt/Autodesk/Synergy/SynColor/Shared/transforms/flame_colortoolkit",
+                "Visibility": "Global"
+            },
+            {
+                "Bookmark": "flame_colortoolkit (macos)",
+                "Path": "/Applications/Autodesk/Synergy/SynColor/Shared/transforms/flame_colortoolkit",
+                "Visibility": "Global"
+            }
+        ]
 
         # # Define the new bookmarks to be added
         # flame_colortoolkit_bookmarks = [
         #     {
-        #         "Bookmark": "flame_colortoolkit (linux)",
-        #         "Path": "/opt/Autodesk/Synergy/SynColor/Shared/transforms/flame_colortoolkit",
-        #         "Visibility": "Global"
-        #     },
-        #     {
-        #         "Bookmark": "flame_colortoolkit (macos)",
-        #         "Path": "/Applications/Autodesk/Synergy/SynColor/Shared/transforms/flame_colortoolkit",
+        #         "Bookmark": "flame_colortoolkit",
+        #         "Path": f"{tgt_projekt_transforms_dir}/flame_colortoolkit",
         #         "Visibility": "Global"
         #     }
         # ]
 
-        # # # Define the new bookmarks to be added
-        # # flame_colortoolkit_bookmarks = [
-        # #     {
-        # #         "Bookmark": "flame_colortoolkit",
-        # #         "Path": f"{tgt_projekt_transforms_dir}/flame_colortoolkit",
-        # #         "Visibility": "Global"
-        # #     }
-        # # ]
+        # Function to copy batch project bins
+        update_flame_colortoolkit_bookmarks(
+            bookmarks_file,
+            flame_colortoolkit_bookmarks,
+            tgt_projekt_transforms_dir,
+        )
 
-        # # Function to copy batch project bins
-        # update_flame_colortoolkit_bookmarks(
-        #     bookmarks_file,
-        #     flame_colortoolkit_bookmarks,
-        #     tgt_projekt_transforms_dir,
-        # )
-
-        # # Print a separator
-        # logger.log_and_print(f"\n{separator}")
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
 
-        # # Print a banner head
-        # logger.log_and_print(f"{banner_head('Copying Projekt Bookmarks')}")
+        # Print a banner head
+        logger.log_and_print(f"{banner_head('Copying Projekt Bookmarks')}")
 
-        # # Function to copy projekt bookmarks
-        # sync_bookmarks(
-        #     the_hostname,
-        #     the_projekt_os,
-        #     the_projekts_dir,
-        #     the_projekt_flame_dirs,
-        #     the_adsk_dir,
-        #     the_adsk_dir_linux,
-        #     the_adsk_dir_macos,
-        #     the_projekt_name,
-        #     the_projekt_flame_name,
-        #     the_sanitized_version,
-        #     separator,
-        # )
+        # Function to copy projekt bookmarks
+        sync_bookmarks(
+            the_hostname,
+            the_projekt_os,
+            the_projekts_dir,
+            the_projekt_flame_dirs,
+            the_adsk_dir,
+            the_adsk_dir_linux,
+            the_adsk_dir_macos,
+            the_projekt_name,
+            the_projekt_flame_name,
+            the_sanitized_version,
+            separator,
+        )
 
-        # # Print a separator
-        # logger.log_and_print(f"\n{separator}")
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
 
@@ -866,26 +937,26 @@ def main():
 
         # ------------------------------------------------------------------ #
 
-        # # Print a banner head
-        # logger.log_and_print(f"{banner_head('Copying Nuke Directories')}")
+        # Print a banner head
+        logger.log_and_print(f"{banner_head('Copying Nuke Directories')}")
 
-        # # Function to copy nuke directories
-        # sync_nuke_dirs(
-        #     the_hostname,
-        #     the_projekt_os,
-        #     the_projekts_dir,
-        #     the_projekt_flame_dirs,
-        #     the_adsk_dir,
-        #     the_adsk_dir_linux,
-        #     the_adsk_dir_macos,
-        #     the_projekt_name,
-        #     the_projekt_flame_name,
-        #     the_sanitized_version,
-        #     separator,
-        # )
+        # Function to copy nuke directories
+        sync_nuke_dirs(
+            the_hostname,
+            the_projekt_os,
+            the_projekts_dir,
+            the_projekt_flame_dirs,
+            the_adsk_dir,
+            the_adsk_dir_linux,
+            the_adsk_dir_macos,
+            the_projekt_name,
+            the_projekt_flame_name,
+            the_sanitized_version,
+            separator,
+        )
 
-        # # Print a separator
-        # logger.log_and_print(f"\n{separator}")
+        # Print a separator
+        logger.log_and_print(f"\n{separator}")
 
         # ------------------------------------------------------------------ #
 

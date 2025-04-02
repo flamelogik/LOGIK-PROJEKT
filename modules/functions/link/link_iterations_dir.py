@@ -197,14 +197,32 @@ def symlink_iterations_dir(
         the_sanitized_version,
     ):
 
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2025 ---------------------- #
+
+    # # Define the projekt flame setups directory for flame 2025
+    # the_projekt_flame_setups_dir = the_projekt_flame_dir
+
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
+
     # Define the projekt flame setups directory based on the flame version
-    if the_sanitized_version.startswith("2025"):
-        the_projekt_flame_setups_dir = the_projekt_flame_dir
-    else:
-        the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
+    the_projekt_flame_setups_dir = os.path.join(
+        the_projekt_flame_dir,
+        'setups'
+    )
+
+    # # Experimental shit that keeps changing
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
+
+# -------------------------------------------------------------------------- #
 
     """
-    Create a symbolic link from the flame iterations directory 
+    Create a symbolic link from the flame iterations directory
     to the projekt flame batch directory.
     """
     source_path = os.path.abspath(
@@ -225,22 +243,22 @@ def symlink_iterations_dir(
             "iterations"
         )
     )
-    
+   
     print(f"  Linking batch iterations directory\n")
     print(f"  from: {source_path}")
     print(f"  to:   {target_path}\n")
-    
+   
     if not os.path.exists(source_path):
         print(f"  Source path does not exist: {os.path.basename(source_path)}")
         return
-    
+   
     os.makedirs(os.path.dirname(target_path), exist_ok=True)
-    
+   
     try:
         if os.path.lexists(target_path):
             print(f"  Removing existing link: {os.path.basename(target_path)}")
             os.remove(target_path)
-        
+       
         os.symlink(source_path, target_path)
         print(f"  Successfully linked: {os.path.basename(source_path)} -> {os.path.basename(target_path)}\n")
     except Exception as e:

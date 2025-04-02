@@ -1,8 +1,8 @@
 {
-    "Serial Number: ": "UC123456",
-    "Client Name: ": "AutoArchive",
-    "Campaign Name: ": "Test",
-    "Projekt Name: ": "UC123456_AutoArchive_Test",
+    "Serial Number: ": "UW250223",
+    "Client Name: ": "Xfinity",
+    "Campaign Name: ": "Launch",
+    "Projekt Name: ": "UW250223_Xfinity_Launch",
     "Resolution: ": "1920 x 1080 | HD 1080 16:9",
     "Width: ": "1920",
     "Height: ": "1080",
@@ -12,6 +12,6 @@
     "Scan Mode: ": "PROGRESSIVE",
     "Start Frame: ": "1001",
     "Init Config: ": "1920x1080@23976p.cfg",
-    "Color Science: ": "ADSK_Legacy",
+    "Color Science: ": "ADSK_ACES_2.0",
     "OCIO Config: ": "OCIO_studio_config"
 }

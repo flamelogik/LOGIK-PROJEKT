@@ -1,0 +1,109 @@
+
++ --------------------------------------------------------------------------- +
+
+  2025-04-02 10:26:53 - Reading preference file:
+  2025-04-02 10:26:53 - /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/install/current_adsk_python_version.pref
+  2025-04-02 10:26:53 - 
+  2025-04-02 10:26:53 - Preference file loaded:
+  2025-04-02 10:26:53 - /opt/Autodesk/python/2026.pr213/bin/python
+  2025-04-02 10:26:53 - 
+  2025-04-02 10:26:53 - Analyzing directory: /opt/Autodesk/python
+  2025-04-02 10:26:53 - Sorted contents of /opt/Autodesk/python:
+  2025-04-02 10:26:53 - 2026.pr215.2
+  2025-04-02 10:26:53 - 2026.pr218
+  2025-04-02 10:26:53 - 2026.pr217
+  2025-04-02 10:26:53 - 2026.pr216
+  2025-04-02 10:26:53 - 2026.pr215
+  2025-04-02 10:26:53 - 2026.pr214
+  2025-04-02 10:26:53 - 2026.pr213
+  2025-04-02 10:26:53 - 2025.2.2
+  2025-04-02 10:26:53 - 2025.pr196
+  2025-04-02 10:26:53 - 2024.2.pr190
+  2025-04-02 10:26:53 - 2024.pr179
+  2025-04-02 10:26:53 - 2023.pr157
+  2025-04-02 10:26:53 - 
+  2025-04-02 10:26:53 - The highest version is: 2026.pr215.2
+  2025-04-02 10:26:53 - 
+  2025-04-02 10:26:53 - Python version 2026.pr215.2 is available and executable
+  2025-04-02 10:26:53 - Updated preference file with:
+  2025-04-02 10:26:53 - /opt/Autodesk/python/2026.pr215.2/bin/python
+  2025-04-02 10:26:53 - 
+
++ --------------------------------------------------------------------------- +
+
+
++ --------------------------------------------------------------------------- +
+
+  2025-04-02 11:06:38 - Reading preference file:
+  2025-04-02 11:06:38 - /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/install/current_adsk_python_version.pref
+  2025-04-02 11:06:38 - 
+  2025-04-02 11:06:38 - Preference file loaded:
+  2025-04-02 11:06:38 - /opt/Autodesk/python/2026.pr215.2/bin/python
+  2025-04-02 11:06:38 - 
+  2025-04-02 11:06:38 - Analyzing directory: /opt/Autodesk/python
+  2025-04-02 11:06:38 - Sorted contents of /opt/Autodesk/python:
+  2025-04-02 11:06:38 - 2026.pr219
+  2025-04-02 11:06:38 - 2026.pr218
+  2025-04-02 11:06:38 - 2025.2.2
+  2025-04-02 11:06:38 - 2025.pr196
+  2025-04-02 11:06:38 - 2024.2.pr190
+  2025-04-02 11:06:38 - 2024.pr179
+  2025-04-02 11:06:38 - 2023.pr157
+  2025-04-02 11:06:38 - 
+  2025-04-02 11:06:38 - The highest version is: 2026.pr219
+  2025-04-02 11:06:38 - 
+  2025-04-02 11:06:38 - Python version 2026.pr219 is available and executable
+  2025-04-02 11:06:38 - Updated preference file with:
+  2025-04-02 11:06:38 - /opt/Autodesk/python/2026.pr219/bin/python
+  2025-04-02 11:06:38 - 
+
++ --------------------------------------------------------------------------- +
+
+
++ --------------------------------------------------------------------------- +
+
+  2025-04-02 11:06:48 - Reading preference file:
+  2025-04-02 11:06:48 - /Users/nyc-mpc-001/workspace/GitHub/LOGIK-PROJEKT-UC/install/current_adsk_python_version.pref
+  2025-04-02 11:06:48 - 
+  2025-04-02 11:06:49 - Preference file loaded:
+  2025-04-02 11:06:49 - /opt/Autodesk/python/2026.pr219/bin/python
+  2025-04-02 11:06:49 - 
+  2025-04-02 11:06:49 - Analyzing directory: /opt/Autodesk/python
+  2025-04-02 11:06:49 - Sorted contents of /opt/Autodesk/python:
+  2025-04-02 11:06:49 - 2026.pr219
+  2025-04-02 11:06:49 - 2026.pr218
+  2025-04-02 11:06:49 - 2025.2.2
+  2025-04-02 11:06:49 - 2025.pr196
+  2025-04-02 11:06:49 - 2024.2.pr190
+  2025-04-02 11:06:49 - 2024.pr179
+  2025-04-02 11:06:49 - 2023.pr157
+  2025-04-02 11:06:49 - 
+  2025-04-02 11:06:49 - The highest version is: 2026.pr219
+  2025-04-02 11:06:49 - 
+  2025-04-02 11:06:49 - Python version 2026.pr219 is available and executable
+  2025-04-02 11:06:49 - 
+  2025-04-02 11:06:49 - No update needed.
+  2025-04-02 11:06:49 - 
+  2025-04-02 11:06:49 - Preference file already contains the latest version:
+  2025-04-02 11:06:49 - /opt/Autodesk/python/2026.pr219/bin/python
+
++ --------------------------------------------------------------------------- +
+
+  2025-04-02 11:06:49 - Creating macOS application: LOGIK-PROJEKT.app
+  2025-04-02 11:06:49 - Creating the macOS application components
+
++ --------------------------------------------------------------------------- +
+
+  2025-04-02 11:06:49 - Creating LOGIK-PROJEKT shell script for linux: run_logikprojekt_linux.sh
+  2025-04-02 11:06:49 - Making the file executable: run_logikprojekt_linux.sh
+  2025-04-02 11:06:49 - Creating macOS application shell script: run_logikprojekt_macos
+
++ --------------------------------------------------------------------------- +
+
+  2025-04-02 11:06:49 - Creating desktop entry file: LOGIK-PROJEKT.desktop
+  2025-04-02 11:06:49 - Making the file executable: LOGIK-PROJEKT.desktop
+  2025-04-02 11:06:49 - This script is not configured to move files on macOS (Darwin).
+  2025-04-02 11:06:49 - File 'LOGIK-PROJEKT.desktop' has been created and made executable.
+
++ --------------------------------------------------------------------------- +
+

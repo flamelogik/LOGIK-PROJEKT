@@ -110,6 +110,8 @@ the_projekt_os = "Linux"
 the_software_version = "flame_2025.1.pr199"
 the_sanitized_version = "2025_1"
 the_framestore = "stonefs"
+the_workstation = platform.node().casefold().split('.')[0]
+
 
 '''
 Print the variables for debugging
@@ -196,13 +198,18 @@ the_projekt_flame_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 class WidgetFlameProjektDirectory(QLineEdit):
     def __init__(self, parent=None):
         super().__init__(parent)
-        
+       
         # Set object name if needed
         self.setObjectName("template_flame_projekt_directory")
 
-        # Set default properties
-        self.setPlaceholderText("/opt/Autodesk/project")
-        self.setReadOnly(True)
+        # Set a default value for the widget
+        if platform.system() == "Linux":
+            self.default_value = f"/hosts/{the_workstation}/opt/Autodesk/project/<project_name>"
+        elif platform.system() == "Darwin":
+            self.default_value = f"/opt/Autodesk/project/<project_name>"
+
+        self.setText(self.default_value)
+        self.setReadOnly(False)
 
         # Optionally, set additional properties based on widget_parameters
 
@@ -212,9 +219,9 @@ class WidgetFlameProjektDirectory(QLineEdit):
             "widget_type": "QLineEdit",
             "widget_label_name": "Projekt Flame Directory: ",
             "widget_default_value": "",
-            "widget_placeholder_value": "/opt/Autodesk/project",
+            "widget_placeholder_value": "",
             "widget_item_values": "",
-            "widget_read_only": True
+            "widget_read_only": False
         }
         return widget_parameters
 

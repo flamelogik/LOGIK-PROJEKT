@@ -203,7 +203,7 @@ def sync_color_policies(
         the_sanitized_version,
         separator,
     ):
-    
+   
     # Nested function to generate backup filename with current date
     def generate_backup_filename(filepath):
         # Get the current date
@@ -219,11 +219,29 @@ def sync_color_policies(
     # Set the projekt_flame_dir
     the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2025 ---------------------- #
+
+    # # Define the projekt flame setups directory for flame 2025
+    # the_projekt_flame_setups_dir = the_projekt_flame_dir
+
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
+
     # Define the projekt flame setups directory based on the flame version
-    if the_sanitized_version.startswith("2025"):
-        the_projekt_flame_setups_dir = the_projekt_flame_dir
-    else:
-        the_projekt_flame_setups_dir = os.path.join(the_projekt_flame_dir, 'setups')
+    the_projekt_flame_setups_dir = os.path.join(
+        the_projekt_flame_dir,
+        'setups'
+    )
+
+    # # Experimental shit that keeps changing
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
+
+# -------------------------------------------------------------------------- #
 
     # Set the source parent directory
     src_policies_dir = "resources/flame/Syncolor/Shared/policies"

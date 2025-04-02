@@ -43,11 +43,11 @@
 def adjust_color_brightness(color, factor):
     """
     Adjust the brightness of a hex color.
-    
+   
     Args:
         color (str): The hex color string (e.g., '#4D0000').
         factor (float): The factor by which to adjust the brightness (e.g., 1.1 for 10% brighter, 0.8 for 20% darker).
-    
+   
     Returns:
         str: The adjusted hex color string.
     """
@@ -245,12 +245,12 @@ QPushButton:pressed {{
 
 def apply_stylesheet(app, stylesheet):
     app.setStyleSheet(stylesheet)
-    
+   
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 C2 A9 32 30 32 35 #
 # ========================================================================== #
 
-# Changelist:       
+# Changelist:      
 
 # -------------------------------------------------------------------------- #
 # version:          0.0.1

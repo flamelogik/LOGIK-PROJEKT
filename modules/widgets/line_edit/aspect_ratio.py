@@ -72,7 +72,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+   
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -196,7 +196,7 @@ the_projekt_flame_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 class WidgetAspectRatio(QLineEdit):
     def __init__(self, parent=None):
         super().__init__(parent)
-        
+       
         # Set object name if needed
         self.setObjectName("template_aspect_ratio")
 
@@ -223,7 +223,7 @@ class WidgetAspectRatio(QLineEdit):
         json_file_path = get_resource_path(
             'resources/cfg/projekt_configuration/parameters/default_parameters.json'
         )
-        
+       
         try:
             with open(json_file_path, 'r') as file:
                 data = json.load(file)

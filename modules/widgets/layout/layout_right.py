@@ -255,7 +255,7 @@ class WidgetLayoutRight(QWidget):
         self.combo_box_software_version = self.add_combobox("Software Version:")
         self.combo_box_framestore = self.add_combobox("Framestore:")
         self.add_labeled_widget("Projekt Flame Directory:", WidgetFlameProjektDirectory())
-        self.add_labeled_widget("Setups Directory:", WidgetFlameProjektSetupsDir()) 
+        self.add_labeled_widget("Setups Directory:", WidgetFlameProjektSetupsDir())
         self.add_labeled_widget("Media Cache:", WidgetFlameProjektMediaCache())
         self.environment_summary = self.add_text_edit("Environment Summary:", True, fixed_height=220)
         # self.create_projekt_button = self.add_button("Create Projekt")
@@ -441,7 +441,7 @@ class WidgetLayoutRight(QWidget):
                     self.update_projekt_summary_from_imported(data)
             except Exception as e:
                 QMessageBox.critical(self, "Import Error", f"An error occurred while importing the template:\n{e}")
-                
+               
     def update_from_layout_left(self, data):
         self.update_projekt_summary(data)
 
@@ -526,11 +526,12 @@ class WidgetLayoutRight(QWidget):
                 the_projekt_flame_name = f"{the_projekt_name}_{sanitized_version}_{the_hostname}"
             else:
                 the_projekt_flame_name = "N/A"
+                the_projekt_name = "N/A"
 
             # Calculate xml_project_dir, xml_setup_dir, and xml_media_dir
-            xml_project_dir = projekt_flame_directory or f"/opt/Autodesk/project/{the_projekt_flame_name}"
-            xml_setup_dir = setups_directory or f"{xml_project_dir}/setups"
-            xml_media_dir = media_cache_directory or f"{xml_project_dir}/media"
+            xml_project_dir = projekt_flame_directory.replace("<project_name>",  the_projekt_flame_name) or f"/opt/Autodesk/project/{the_projekt_flame_name}"
+            xml_setup_dir = setups_directory.replace("<project_home>",  xml_project_dir) or f"{xml_project_dir}/setups"
+            xml_media_dir = media_cache_directory.replace("<project_nickname>", the_projekt_name).replace("<project_name>", the_projekt_flame_name) or f"{xml_project_dir}/media"
 
             # =========================================================================== #
 
@@ -613,12 +614,12 @@ class WidgetLayoutRight(QWidget):
     #         os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
 
     #         # Execute the script and capture output
-    #         result = subprocess.run([python_executable, projekt_creation_script_path], 
-    #                                 input=json.dumps(projekt_info), 
-    #                                 text=True, 
-    #                                 capture_output=True, 
+    #         result = subprocess.run([python_executable, projekt_creation_script_path],
+    #                                 input=json.dumps(projekt_info),
+    #                                 text=True,
+    #                                 capture_output=True,
     #                                 check=True)
-            
+           
     #         # Update Command Monitor with script output
     #         self.update_command_monitor(f"  Executed {projekt_creation_script_path}:\n{result.stdout}")
     #     except subprocess.CalledProcessError as e:
@@ -641,12 +642,12 @@ class WidgetLayoutRight(QWidget):
     #         os.environ["PATH"] += os.pathsep + os.path.dirname(python_executable)
 
     #         # Execute the script and capture output
-    #         result = subprocess.run([python_executable, flame_launcher_script_path], 
-    #                                 input=json.dumps(projekt_info), 
-    #                                 text=True, 
-    #                                 capture_output=True, 
+    #         result = subprocess.run([python_executable, flame_launcher_script_path],
+    #                                 input=json.dumps(projekt_info),
+    #                                 text=True,
+    #                                 capture_output=True,
     #                                 check=True)
-            
+           
     #         # Update Command Monitor with script output
     #         self.update_command_monitor(f"  Executed {flame_launcher_script_path}:\n{result.stdout}")
     #     except subprocess.CalledProcessError as e:
@@ -765,17 +766,18 @@ class WidgetLayoutRight(QWidget):
                 env_dict[key.strip()] = value.strip()
 
         the_projekt_flame_name = env_dict.get("Projekt Flame Name", "")
-        xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
-        xml_setup_dir = f"{xml_project_dir}/setups"
-        xml_media_dir = f"{xml_project_dir}/media"
-        # The next line is for ACES
+        # xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
+        # xml_setup_dir = f"{xml_project_dir}/setups"
+        # xml_media_dir = f"{xml_project_dir}/media"
+        xml_project_dir = env_dict.get("Projekt Flame Directory", f"{the_projekt_flame_dirs}/{the_projekt_flame_name}")
+        xml_setup_dir = env_dict.get("Setups Directory", f"{xml_project_dir}/setups_fail")
+        xml_media_dir = env_dict.get("Media Cache", f"{xml_project_dir}/media_fail")
         # xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
-        # The next line is for ADSK Legacy
-        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_legacy_config/config.ocio"
-        # this line is for Integer: DPX (Uncompressed) + Floating: EXR (DWAA)
-        # xml_intermediates_profile = f"0:1120376"
-        # this line is for Integer: ProRes444 XQ + Floating: EXR (DWAA)
-        xml_intermediates_profile = f"65541:1120376"
+        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/2026.0/aces2.0_config/config.ocio"
+        # Below line is for Uncompressed DPX and EXR PIZ
+        # xml_intermediates_profile = f"0:596088"
+        # The line below is for ProRes4444 and EXR DWAA
+        xml_intermediates_profile = f"65540:1120376"
 
         return {
             "the_projekt_serial_number": summary_dict.get("Serial Number", ""),

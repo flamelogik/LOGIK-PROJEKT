@@ -206,7 +206,7 @@ class LayoutMain(QMainWindow):
         super().__init__()
 
         # Set up the main window
-        self.setWindowTitle("LOGIK PROJEKT 2025")
+        self.setWindowTitle("LOGIK PROJEKT 2026")
         self.setGeometry(100, 100, 1728, 1080)  # Set window dimensions to 1728x1080
 
         # Center the window on the screen

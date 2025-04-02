@@ -1,10 +1,10 @@
 #
-
+# DEVELOPMENT
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
-                
+#                   Copyright Strength In Numbers © 2025
+               
 #                   LOGIK-PROJEKT creates directories, files, scripts & tools
 #                   for use with Autodesk Flame and other software.
 
@@ -14,7 +14,7 @@
 #                   of the GNU General Public License as published by the
 #                   Free Software Foundation, either version 3 of the License,
 #                   or any later version.
- 
+
 #                   This program is distributed in the hope that it will be
 #                   useful, but WITHOUT ANY WARRANTY; without even the
 #                   implied warranty of MERCHANTABILITY or FITNESS FOR A
@@ -26,12 +26,12 @@
 #                   Public License along with this program.
 
 #                   If not, see <https://www.gnu.org/licenses/>.
-                
+               
 #                   Contact: phil_man@mac.com
 
 # -------------------------------------------------------------------------- #
 
-# File Name:        get_environment.py
+# File Name:        sync_ocio_configs.py
 # Version:          2.0.0
 # Created:          2024-01-19
 # Modified:         2024-12-31
@@ -72,7 +72,7 @@ def get_base_path():
                 os.path.dirname(__file__), '..', '..', '..'
             )
         )
-    
+   
 # -------------------------------------------------------------------------- #
 
 def get_resource_path(relative_path):
@@ -189,133 +189,156 @@ separator = '# ' + '-' * 75 + ' #'
 # This section defines the primary functions for the script.
 # ========================================================================== #
 
-class GetEnvironment:
-    @staticmethod
-    def read_json_config(file_path):
-        """Read the JSON configuration file."""
-        try:
-            with open(file_path, 'r') as file:
-                return json.load(file)
-        except Exception as e:
-            print(f"Error reading JSON file: {e}")
-            return {}
+# Function to synchronize color management transforms
+def sync_ocio_configs(
+        the_projekt_os,
+        the_hostname,
+        the_projekts_dir,
+        the_projekt_flame_dirs,
+        the_adsk_dir,
+        the_adsk_dir_linux,
+        the_adsk_dir_macos,
+        the_projekt_name,
+        the_projekt_flame_name,
+        the_sanitized_version,
+        separator,
+    ):
+   
+    # Nested function to generate backup filename with current date
+    def generate_backup_filename(filepath):
+        # Get the current date
+        date_str = datetime.datetime.now().strftime("%Y_%m_%d")
+        # Split the file path into name and extension
+        base, ext = os.path.splitext(filepath)
+        # Create the backup filename with the date suffix
+        return f"{base}.{date_str}.bak"
 
-    @staticmethod
-    def projekt_user_name():
-        """Get the current username."""
-        try:
-            # return os.getlogin()
-            return getpass.getuser()  # This fix works on Linux and MacOS
-        except Exception as e:
-            return str(e)
+    # Set the projekt_dir
+    the_projekt_dir =f"{the_projekts_dir}/{the_projekt_name}"
 
-    @staticmethod
-    def projekt_primary_group():
-        """Get the primary group name of the current user."""
-        try:
-            username = getpass.getuser()
-            gid = os.getgid()
-            group_info = grp.getgrgid(gid)
-            return group_info.gr_name
-        except Exception as e:
-            return str(e)
+    # Set the projekt_flame_dir
+    the_projekt_flame_dir =f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
 
-    @staticmethod
-    def projekt_os():
-        """Get the current operating system."""
-        return platform.system()
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2025 ---------------------- #
 
-    @staticmethod
-    def projekt_hostname():
-        """Get the first part of the computer name."""
-        try:
-            computer_name = GetEnvironment.projekt_computername()
-            parts = computer_name.split('.')
-            return parts[0]
-        except Exception as e:
-            return str(e)
+    # # Define the projekt flame setups directory for flame 2025
+    # the_projekt_flame_setups_dir = the_projekt_flame_dir
 
-    # @staticmethod
-    # def projekt_hostname():
-    #     """Get the hostname of the current machine."""
-    #     try:
-    #         return socket.gethostname()
-    #     except Exception as e:
-    #         return str(e)
+# --------------- ENABLE THIS FUNCTION FOR FLAME 2026 ---------------------- #
 
-    @staticmethod
-    def projekt_localhostname():
-        """Get the local hostname."""
-        try:
-            return socket.gethostbyname(socket.gethostname())
-        except Exception as e:
-            return str(e)
+    # Define the projekt flame setups directory based on the flame version
+    the_projekt_flame_setups_dir = os.path.join(
+        the_projekt_flame_dir,
+        'setups'
+    )
 
-    @staticmethod
-    def projekt_computername():
-        """Get the computer name."""
-        try:
-            return platform.node()
-        except Exception as e:
-            return str(e)
+    # # Experimental shit that keeps changing
+    # if the_sanitized_version.startswith("2025"):
+    #     the_projekt_flame_setups_dir = the_projekt_flame_dir
+    # else:
+    #     the_projekt_flame_setups_dir = os.path.join(
+    #         the_projekt_flame_dir,
+    #         'setups'
+    #     )
 
-    @staticmethod
-    def projekt_workstation_name():
-        """Get the first part of the FQDN as the workstation name."""
-        try:
-            fqdn = socket.getfqdn()
-            parts = fqdn.split('.')
-            return parts[0]
-        except Exception as e:
-            return str(e)
+# -------------------------------------------------------------------------- #
 
-    # @staticmethod
-    # def projekt_workstation_name():
-    #     """Get the first part of the computer name."""
-    #     try:
-    #         computer_name = GetEnvironment.projekt_computername()
-    #         parts = computer_name.split('.')
-    #         return parts[0]
-    #     except Exception as e:
-    #         return str(e)
+    # Set the source parent directory
+    src_transforms_dir = "resources/flame/Syncolor/Shared/transforms"
+    tgt_projekt_transforms_dir = os.path.join(the_projekt_dir, "utilities", "Synergy", "SynColor", "Shared", "transforms")
 
-    @staticmethod
-    def get_environment_summary():
-        """Get a summary of the environment details."""
-        json_config = GetEnvironment.read_json_config('resources/cfg/projekt_configuration/roots/projekt_roots.json')
-        
-        summary = {
-            "Username": GetEnvironment.projekt_user_name(),
-            "Primary Group": GetEnvironment.projekt_primary_group(),
-            "Operating System": GetEnvironment.projekt_os(),
-            "Hostname": GetEnvironment.projekt_hostname(),
-            "Workstation Name": GetEnvironment.projekt_workstation_name(),
-            "FQDN": GetEnvironment.projekt_computername(),
-            "Network Adress": GetEnvironment.projekt_localhostname(),
-            # "Hostname": GetEnvironment.projekt_hostname(),
-            # "Hostname": GetEnvironment.projekt_workstation_name(),
-            # "Local Hostname": GetEnvironment.projekt_localhostname(),
-        }
-        
-        # Add JSON config data to the summary
-        summary.update(json_config)
-        
-        return summary
+    # Set the target parent directory based on the operating system
+    if the_projekt_os == "Linux":
+        tgt_synergy_dir = os.path.join(the_adsk_dir_linux, "Synergy")
+        tgt_transforms_dir = os.path.join(tgt_synergy_dir, "SynColor", "Shared", "transforms")
+    # elif the_projekt_os == "macOS":
+    elif the_projekt_os == "Darwin":
+        tgt_synergy_dir = os.path.join(the_adsk_dir_macos, "Synergy")
+        tgt_transforms_dir = os.path.join(tgt_synergy_dir, "SynColor", "Shared", "transforms")
+    else:
+        print("Unsupported operating system.")
+        return 1
+
+    # Print the variables for debugging
+    print(f"  Debug: the_projekt_os:              {the_projekt_os}")
+    print(f"  Debug: the_projekts_dir:            {the_projekts_dir}")
+    print(f"  Debug: the_projekt_dir:             {the_projekt_dir}")
+    print(f"  Debug: the_projekt_flame_dirs:      {the_projekt_flame_dirs}")
+    print(f"  Debug: the_projekt_flame_dir:       {the_projekt_flame_dir}")
+    print(f"  Debug: tgt_projekt_transforms_dir:  {tgt_projekt_transforms_dir}")
+    print(f"  Debug: src_transforms_dir:          {src_transforms_dir}")
+    print(f"  Debug: tgt_transforms_dir:          {tgt_transforms_dir}")
+
+    print("  synchronizing Syncolor transforms directories.\n")
+
+    # Set the umask to 0
+    os.umask(0)
+
+    # Set the rsync options
+    sync_opts = ["-av"]
+
+    # Use rsync to copy the transforms
+    result = subprocess.run(
+        ["rsync"] + sync_opts + [f"{src_transforms_dir}/", f"{tgt_transforms_dir}/"],
+        text=True,
+        capture_output=True
+    )
+
+    # Print rsync output
+    print(result.stdout.replace('\n', '\n  '))
+
+    print("\n  media import preferences & rules synchronized.")
+    print("\n" + separator + "\n")
+
+    # # Use rsync to copy the projekt policies
+    # result = subprocess.run(
+    #     ["rsync"] + sync_opts + [f"{src_transforms_dir}/", f"{tgt_projekt_transforms_dir}/"],
+    #     text=True,
+    #     capture_output=True
+    # )
+
+    # # Print rsync output
+    # print(result.stdout.replace('\n', '\n  '))
+
+    # # Symbolic link the policies directory
+    # os.symlink(tgt_transforms_dir, tgt_projekt_transforms_dir)
+
+    # print("\n  media import preferences & rules synchronized.")
+    # print("\n" + separator + "\n")
+
+def main():
+    # Example values for the function arguments
+    # the_projekt_os = "Linux"  # Update with actual value
+    # sync_opts = ["-av"]  # Update with actual rsync options
+    separator = "-" * 80
+
+    # Call the function to synchronize color management transforms
+    sync_ocio_configs(
+        the_projekt_os,
+        the_hostname,
+        the_projekts_dir,
+        the_projekt_flame_dirs,
+        the_adsk_dir,
+        the_adsk_dir_linux,
+        the_adsk_dir_macos,
+        the_projekt_name,
+        the_projekt_flame_name,
+        the_sanitized_version,
+        separator,
+    )
 
 # ========================================================================== #
 # This section defines how to handle the main script function.
 # ========================================================================== #
 
 if __name__ == "__main__":
-    environment_summary = GetEnvironment.get_environment_summary()
-    for key, value in environment_summary.items():
-        print(f"  {key}: {value}")
+    main()
 
 # ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 C2 A9 32 30 32 35 #
 # ========================================================================== #
 
-# Changelist:       
+# Changelist:      
 
 # -------------------------------------------------------------------------- #
 # version:          0.0.1
@@ -343,10 +366,10 @@ if __name__ == "__main__":
 # comments:         prep for release - code appears to be functional
 # -------------------------------------------------------------------------- #
 # version:          1.9.9
-# modified:         2024-12-25 - 09:50:13
+# modified:         2024-12-25 - 09:50:16
 # comments:         Preparation for future features
 # -------------------------------------------------------------------------- #
 # version:          2.0.0
-# modified:         2024-12-31 - 11:17:17
+# modified:         2024-12-31 - 10:35:37
 # comments:         Improved legibility and minor modifications
 # -------------------------------------------------------------------------- #
