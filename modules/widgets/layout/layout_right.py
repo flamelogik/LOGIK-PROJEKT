@@ -769,7 +769,8 @@ class WidgetLayoutRight(QWidget):
         xml_project_dir = f"{the_projekt_flame_dirs}/{the_projekt_flame_name}"
         xml_setup_dir = f"{xml_project_dir}/setups"
         xml_media_dir = f"{xml_project_dir}/media"
-        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
+        # xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/example_config/config.ocio"
+        xml_ocio_config = f"/opt/Autodesk/colour_mgmt/configs/flame_configs/2026.0/aces2.0_config/config.ocio"
         xml_intermediates_profile = f"0:596088"
 
         return {

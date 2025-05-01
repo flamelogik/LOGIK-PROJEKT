@@ -463,7 +463,10 @@ def main():
         the_projekt_flame_dir = the_projekt_information.get('the_projekt_flame_name')
 
         # Define the projekt flame setups directory for flame 2025
-        the_projekt_flame_setups_dir = the_projekt_flame_dir
+        the_projekt_flame_setups_dir = os.path.join(
+        the_projekt_flame_dir,
+        'setups'
+    )
 
         # ----------- ENABLE THIS FUNCTION FOR FLAME 2026 ------------------ #
 
@@ -523,15 +526,15 @@ def main():
 
         # ------------------------------------------------------------------ #
 
-        # Print a banner head
-        logger.log_and_print(f"{banner_head('Creating Projekt XML File')}")
+        # # Print a banner head
+        # logger.log_and_print(f"{banner_head('Creating Projekt XML File')}")
 
-        # Call the create_xml_file_legacy function for flame 2025
-        create_xml_file_legacy(
-            the_projekt_information,
-            projekt_xml_path,
-            logger
-        )
+        # # Call the create_xml_file_legacy function for flame 2025
+        # create_xml_file_legacy(
+        #     the_projekt_information,
+        #     projekt_xml_path,
+        #     logger
+        # )
 
         # ----------- ENABLE THIS FUNCTION FOR FLAME 2026 ------------------ #
 
@@ -547,12 +550,12 @@ def main():
 
         # else:
 
-        #     # Call the create_xml_file function
-        #     create_xml_file(
-        #         the_projekt_information,
-        #         projekt_xml_path,
-        #         logger
-        #     )
+        # Call the create_xml_file function
+        create_xml_file(
+            the_projekt_information,
+            projekt_xml_path,
+            logger
+        )
 
         # ------------------------------------------------------------------ #
 
@@ -564,12 +567,12 @@ def main():
         # Print a banner head
         logger.log_and_print(f"{banner_head('Creating Flame Projekt')}")
 
-        # Call the run_wiretap_create_node_legacy function for flame 2025
-        run_wiretap_create_node_legacy(
-            the_projekt_flame_name,
-            projekt_xml_path,
-            separator
-        )
+        # # Call the run_wiretap_create_node_legacy function for flame 2025
+        # run_wiretap_create_node_legacy(
+        #     the_projekt_flame_name,
+        #     projekt_xml_path,
+        #     separator
+        # )
 
         # ----------- ENABLE THIS FUNCTION FOR FLAME 2026 ------------------ #
 
@@ -585,12 +588,12 @@ def main():
 
         # else:
 
-        #     # Call the run_wiretap_create_node function
-        #     run_wiretap_create_node(
-        #         the_projekt_flame_name,
-        #         projekt_xml_path,
-        #         separator
-        #     )
+        # Call the run_wiretap_create_node function
+        run_wiretap_create_node(
+            the_projekt_flame_name,
+            projekt_xml_path,
+            separator
+        )
 
         # ------------------------------------------------------------------ #
 
