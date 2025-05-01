@@ -464,9 +464,9 @@ def main():
 
         # Define the projekt flame setups directory for flame 2025
         the_projekt_flame_setups_dir = os.path.join(
-        the_projekt_flame_dir,
-        'setups'
-    )
+            the_projekt_flame_dir,
+            'setups'
+        )
 
         # ----------- ENABLE THIS FUNCTION FOR FLAME 2026 ------------------ #
 
