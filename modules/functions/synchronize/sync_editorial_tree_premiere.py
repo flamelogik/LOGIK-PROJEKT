@@ -1,5 +1,5 @@
 #
-
+# LOGIK-PROJEKT-DXS
 # -------------------------------------------------------------------------- #
 
 # DISCLAIMER:       This file is part of LOGIK-PROJEKT.
@@ -49,6 +49,21 @@ import os
 import platform
 import shutil
 import sys
+import logging
+
+# -----------------------------------------------------------------------------#
+#protect this folder frrom being overwritten if it alreayd exists
+def safe_mkdir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
+        print(f"Created directory: {path}")
+    else:
+        print(f"Directory exists, skipping: {path}")
+
+def safe_rmtree(path):
+    if os.path.exists(path):
+        print(f"Skipping deletion: {path} already exists.")
+        return  # or raise an exception if this is not expected
 
 # -------------------------------------------------------------------------- #
 
@@ -272,7 +287,7 @@ def sync_editorial_tree_premiere(
     os.umask(0)
 
     # Create the base premiere directory if it doesn't exist
-    os.makedirs(premiere_dir, exist_ok=True)
+    safe_mkdir(premiere_dir)
 
     # Create main folders
     for folder in premiere_folders:
@@ -288,7 +303,7 @@ def sync_editorial_tree_premiere(
         #     print()
 
         # Create the directory
-        os.makedirs(folder_path, exist_ok=True)  # Addendum: exist_ok=True
+        safe_mkdir(folder_path)
 
         print(f"  Created directory: {folder_path}")
 
@@ -300,7 +315,7 @@ def sync_editorial_tree_premiere(
         dst_path = link["dst"]
 
         # Create parent directory if it doesn't exist
-        os.makedirs(os.path.dirname(dst_path), exist_ok=True)
+        safe_mkdir(os.path.dirname(dst_path))
 
         # # Remove existing symlink if it exists
         # if os.path.islink(dst_path):
@@ -332,7 +347,8 @@ def sync_editorial_tree_premiere(
         dst_path = template["dst"]
 
         # Create parent directory if it doesn't exist
-        os.makedirs(os.path.dirname(dst_path), exist_ok=True)
+        #os.makedirs(os.path.dirname(dst_path), exist_ok=True)
+        safe_mkdir(os.path.dirname(dst_path))
 
         # # If destination exists, back it up
         # if os.path.exists(dst_path):
@@ -345,7 +361,8 @@ def sync_editorial_tree_premiere(
 
         # Remove existing directory if it exists
         if os.path.exists(dst_path):
-            shutil.rmtree(dst_path)
+            #shutil.rmtree(dst_path)
+        safe_rmtree(dst_path)
 
         # Copy the directory
         try:
