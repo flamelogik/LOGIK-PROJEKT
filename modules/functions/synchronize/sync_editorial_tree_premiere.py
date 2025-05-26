@@ -362,7 +362,7 @@ def sync_editorial_tree_premiere(
         # Remove existing directory if it exists
         if os.path.exists(dst_path):
             #shutil.rmtree(dst_path)
-        safe_rmtree(dst_path)
+            safe_rmtree(dst_path)
 
         # Copy the directory
         try:
