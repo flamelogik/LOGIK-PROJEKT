@@ -1,0 +1,56 @@
+{
+    "group": "Broadcast Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- Standard Definition ---------------- +",
+            "items": [
+                {
+                    "resolution_name": "720 x 480 | NTSC DV 4:3",
+                    "width": 720,
+                    "height": 480,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.35,
+                    "pixel_aspect_ratio": 0.9,
+                    "aspect_ratio": 1.35
+                },
+                {
+                    "resolution_name": "720 x 486 | NTSC 4:3",
+                    "width": 720,
+                    "height": 486,
+                    "storage_aspect_ratio": 1.4814815,
+                    "display_aspect_ratio": 1.3333333,
+                    "pixel_aspect_ratio": 0.9,
+                    "aspect_ratio": 1.3333333
+                },
+                {
+                    "resolution_name": "720 x 486 | NTSC 16:9",
+                    "width": 720,
+                    "height": 486,
+                    "storage_aspect_ratio": 1.4814815,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.2,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "720 x 576 | PAL 4:3",
+                    "width": 720,
+                    "height": 576,
+                    "storage_aspect_ratio": 1.25,
+                    "display_aspect_ratio": 1.3333334,
+                    "pixel_aspect_ratio": 1.0666667,
+                    "aspect_ratio": 1.3333334
+                },
+                {
+                    "resolution_name": "720 x 576 | PAL 16:9",
+                    "width": 720,
+                    "height": 576,
+                    "storage_aspect_ratio": 1.25,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.4222222,
+                    "aspect_ratio": 1.7777778
+                }
+            ]
+        }
+    ]
+}

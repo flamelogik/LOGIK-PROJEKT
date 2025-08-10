@@ -1,0 +1,20 @@
+{
+    "item_00": {
+        "object_name": "tomadas_library",
+        "process_type": "create_or_validate_library",
+        "parent_object": "the_current_workspace",
+        "display_name": "'tomadas'",
+        "object_type": "library",
+        "object_color": "object_colors.get(\"Dark Purple\")",
+        "link": "True",
+        "dir_name": "tomadas",
+        "filesystem_type": "folder",
+        "flame_type": "",
+        "parent_dir": "/{projekts_dir}/{projekt_dir}",
+        "path": "/{projekts_dir}/{projekt_dir}/tomadas",
+        "bookmark_name": "tomadas",
+        "bookmark_type": "folder",
+        "bookmark_parent": "projekt directories",
+        "bookmark_visibility": "Global"
+    }
+}

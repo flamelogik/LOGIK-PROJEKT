@@ -1,0 +1,61 @@
+# ========================================================================== #
+# This section defines an exclusion list to stop files from being backed up.
+# (Uncomment directory names to exclude them from the backup)
+# ========================================================================== #
+
+# "${the_projekt_root_directory}/assets"
+
+# "${the_projekt_root_directory}/assets/audio"
+
+# "${the_projekt_root_directory}/assets/CGI"
+
+# "${the_projekt_root_directory}/assets/footage_graded"
+# "${the_projekt_root_directory}/assets/footage_raw"
+
+# "${the_projekt_root_directory}/assets/geometry"
+# "${the_projekt_root_directory}/assets/geometry/3ds"
+# "${the_projekt_root_directory}/assets/geometry/alembic"
+# "${the_projekt_root_directory}/assets/geometry/cache"
+# "${the_projekt_root_directory}/assets/geometry/dxf"
+# "${the_projekt_root_directory}/assets/geometry/fbx"
+# "${the_projekt_root_directory}/assets/geometry/obj"
+# "${the_projekt_root_directory}/assets/geometry/usd"
+
+# "${the_projekt_root_directory}/assets/graphics"
+
+# "${the_projekt_root_directory}/assets/matchmoving"
+
+# "${the_projekt_root_directory}/assets/miscellaneous"
+
+# "${the_projekt_root_directory}/assets/roto"
+
+# "${the_projekt_root_directory}/assets/slates"
+
+# "${the_projekt_root_directory}/assets/subtitles"
+
+# "${the_projekt_root_directory}/assets/tracking"
+
+# "${the_projekt_root_directory}/assets/video"
+
+# "${the_projekt_root_directory}/backup_scripts"
+
+# "${the_projekt_root_directory}/configs"
+
+# "${the_projekt_root_directory}/deliverables"
+# "${the_projekt_root_directory}/deliverables/finals"
+
+# "${the_projekt_root_directory}/editorial"
+# "${the_projekt_root_directory}/editorial/aaf"
+# "${the_projekt_root_directory}/editorial/edl"
+# "${the_projekt_root_directory}/editorial/xml"
+
+# "${the_projekt_root_directory}/flame"
+# "${the_projekt_root_directory}/flame/archives"
+# "${the_projekt_root_directory}/flame/setups"
+
+# "${the_projekt_root_directory}/reference"
+
+# "${the_projekt_root_directory}/shots"
+
+# "${the_projekt_root_directory}/work_in_progress"
+# "${the_projekt_root_directory}/work_in_progress/postings"

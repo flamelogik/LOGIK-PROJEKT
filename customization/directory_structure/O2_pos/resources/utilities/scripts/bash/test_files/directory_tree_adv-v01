@@ -1,0 +1,151 @@
+/mnt/Publicidade/ADV
+
+__FOLDER_TEMPLATE_2020
+
+├── 01_PROJETO                                      # Project Directory
+│   ├── ARTE                                        # Art Software
+│   │   ├── 01_AEP                                  # After Effects projects
+│   │   ├── 02_PSD                                  # Photoshop projects
+│   │   ├── 03_C4D                                  # Maxon Cinema4D projects
+│   │   ├── 04_AI                                   # Illustrator projects
+│   │   ├── 05_INDD                                 # InDesign projects
+│   │   ├── 06_OUT_COLLECT                          # Collection directory for Adobe?
+│   │   └── _ASSETS                                 # Assets
+│   │       ├── AUDIO                               # Audio
+│   │       ├── FONT                                # Font
+│   │       ├── MODEL                               # Model
+│   │       ├── PRE_RENDER                          # PreRenders
+│   │       │   ├── AE                              # After Effects
+│   │       │   └── C4D                             # Cinema 4D
+│   │       ├── STILL                               # Graphics - Still
+│   │       └── VIDEO                               # Graphics - Motion
+│   ├── COR                                         # Grading
+│   ├── EDIT                                        # Editorial projects
+│   │   └── Adobe Premiere Pro Auto-Save            # Backup files
+│   └── FINALIZADOR                                 # Bureaucracy
+├── 03_EDLs_XMLs_AAfs                               # Edit Decision Lists
+├── 04_OFFLINES                                     # Offline editorial
+│   ├── _APROVADOS                                  # Approved Editorial - Ready for conform
+│   └── DATA                                        # Work In Progress / Abandoned Versions
+├── 05_VFX                                          # Visual Effects
+│   ├── 3D                                          # 3D CGI
+│   │   ├── 00_IN                                   # Input
+│   │   │   └── sound                               # Audio
+│   │   ├── 01_PLATES                               # Plates
+│   │   │   └── SHOT_NAME                           # Shot name
+│   │   ├── 02_TRACKING                             # Tracking
+│   │   │   └── SHOT_NAME                           # Shot name
+│   │   ├── 03_ASSETS                               # Assets
+│   │   │   ├── ASS                                 # Ass
+│   │   │   ├── ASSET_NAME                          # Asset Name
+│   │   │   │   ├── MODEL                           # Model
+│   │   │   │   ├── RIGGING                         # Rigging
+│   │   │   │   └── TEXTURE                         # Texture
+│   │   │   └── OBJ_FBX                             # OBJ / FBX
+│   │   ├── 04_CACHE_RELEASE                        # Cache Release
+│   │   │   ├── alembic                             # Alembic
+│   │   │   ├── nCache                              # nCache
+│   │   │   │   └── fluid                           # Fluid Simulations
+│   │   │   ├── particles                           # Particle Simulations
+│   │   │   └── timeEditor                          # Time Editor
+│   │   ├── 05_SCENES                               # 
+│   │   │   └── SHOT_NAME                           # 
+│   │   │       └── publish                         # the final published versions of 3D scenes for a specific shot.
+│   │   ├── 06_TEXTURES                             # 
+│   │   │   ├── 3dPaintTextures                     # Textures created using 3D painting tools.
+│   │   │   └── fur                                 # 
+│   │   │       ├── furAttrMap                      # Attribute maps for fur simulations.
+│   │   │       ├── furEqualMap                     # Equalization maps for fur.
+│   │   │       ├── furFiles                        # Files related to fur simulations.
+│   │   │       ├── furImages                       # Image files used in fur simulations.
+│   │   │       └── furShadowMap                    # Shadow maps for fur simulations.
+│   │   ├── 07_COMP                                 # 
+│   │   │   └── SHOT_NAME                           # compositing files for a specific shot.
+│   │   ├── 08_RENDER_OUTPUT                        # the final rendered output files.
+│   │   ├── 09_PREVIEWS_OUT                         # preview renders or outputs.
+│   │   ├── 10_SHADER                               # shader files used in the project.
+│   │   └── 11_MAYA_FILES                           # 
+│   │       ├── 3dPaintTextures                     # Textures created using 3D painting tools within Maya.
+│   │       ├── autosave                            # Autosaved files from Maya.
+│   │       ├── Clip Exports                        # Exported clips from Maya.
+│   │       ├── data                                # 
+│   │       │   └── depth                           # Depth data files.
+│   │       ├── nCache                              # Cache files for simulations in Maya.
+│   │       ├── scripts                             # Scripts used in Maya.
+│   │       └── sound                               # Sound files used in Maya.
+│   ├── ARTE                                        # 
+│   │   ├── IN                                      # 
+│   │   │   ├── FONT                                # Fonts used in the project.
+│   │   │   ├── PRJ_EXTERNO                         # 
+│   │   │   │   ├── AEP                             # After Effects projects.
+│   │   │   │   ├── AI                              # Illustrator files.
+│   │   │   │   ├── C4D                             # Cinema 4D projects.
+│   │   │   │   ├── FCP                             # Final Cut Pro projects.
+│   │   │   │   ├── INDD                            # InDesign projects.
+│   │   │   │   ├── PSD                             # Photoshop projects.
+│   │   │   │   └── XML                             # XML files.
+│   │   │   ├── STILL                               # Still images.
+│   │   │   └── VIDEO                               # Video files.
+│   │   └── OUT                                     # Output files from the art department.
+│   ├── COMP                                        # 
+│   │   ├── IN                                      # Input files for compositing.
+│   │   └── OUT                                     # Output files from compositing.
+│   └── GRADING                                     # files related to color grading.
+├── 06_REFS                                         # Reference materials for the project.
+├── 07_DOCUMENTOS                                   # 
+│   ├── APs                                         # Possibly approvals or action points.
+│   ├── CLAQUETES                                   # 
+│   │   ├── FONT                                    # Fonts used in clapperboards.
+│   │   └── MIDIA                                   # Media files for clapperboards.
+│   ├── CRONO                                       # Chronological data or timelines.
+│   ├── FRAMES                                      # 
+│   │   ├── IN                                      # Input frames.
+│   │   └── OUT                                     # Output frames.
+│   ├── LISTA_VFX                                   # VFX shot list.
+│   ├── PLANO_DE_FILMAGEM                           # Shooting plan.
+│   ├── PPM                                         # Possibly pre-production meeting notes.
+│   ├── REPORTS                                     # 
+│   │   ├── BOLETINS_CONT                           # Continuity reports.
+│   │   ├── BOLETINS_SOM                            # Sound reports.
+│   │   └── LOGGER                                  # Logging reports.
+│   ├── ROTEIRO                                     # Script.
+│   ├── STORYBOARDS                                 # Storyboards.
+│   ├── TRATAMENTO                                  # Treatment documents.
+│   └── WORKFLOW                                    # Workflow documentation.
+├── 09_MASTER                                       # 
+│   └── BASE_LIMPA                                  # Clean base files for mastering.
+├── 10_AUDIO                                        # 
+│   ├── _COPIAS                                     # Copies of audio files.
+│   ├── IN                                          # Input audio files.
+│   └── OUT                                         # Output audio files.
+├── 11_CLAQUETES                                    # 
+│   ├── EXPORT                                      # 
+│   │   ├── IN                                      # Input files for clapperboard exports.
+│   │   └── OUT                                     # Output files for clapperboard exports.
+│   └── TEMPLATE_NOVA_CLAQUETE                      # 
+│       └── HD                                      # High-definition clapperboard templates.
+├── 12_TRABALHO                                     # 
+│   └── _APROVADOS                                  # Approved work files.
+├── 13_CC                                           # 
+│   ├── CHECK                                       # Files for checking closed captions.
+│   ├── IN                                          # Input closed caption files.
+│   ├── OUT                                         # Output closed caption files.
+│   ├── PROJETO                                     # Project files for closed captioning.
+│   ├── ROTEIRO                                     # Script files for closed captioning.
+│   └── SRT                                         # SubRip Subtitle files.
+├── 14_DELIVERIES                                   # 
+│   ├── APROVACAO                                   # Approval files.
+│   ├── COPIAS                                      # 
+│   │   └── _data                                   # 
+│   │       └── _roteiro                            # 
+│   │           └── _duracao                        # Duration data for copies.
+│   ├── ESPECIFICACOES                              # Specifications for deliveries.
+│   ├── PEDIDOS                                     # 
+│   │   └── _data                                   # 
+│   │       └── _roteiro                            # 
+│   │           └── _duracao                        # Duration data for orders.
+│   └── PROJETO                                     # Project files for deliveries.
+└── 15_REPERTORIO                                   # 
+    ├── ARTE                                        # Art files.
+    ├── COMP                                        # Compositing files.
+    └── COR                                         # Color grading files.

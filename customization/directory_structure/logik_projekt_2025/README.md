@@ -1,0 +1,3 @@
+modules/functions/synchronize/sync_editorial_tree_premiere.py
+resources/cfg/projekt_configuration/tree/projekt/assets.json
+resources/flame/python/logik_projekt/projekt_tools/logik_projekt_layout/config/library_template_04.json

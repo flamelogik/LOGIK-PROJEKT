@@ -1,0 +1,80 @@
+{
+    "item_00": {
+        "object_name": "",
+        "process_type": "",
+        "parent_object": "",
+        "display_name": "",
+        "object_type": "",
+        "object_color": "",
+        "link": "False",
+        "dir_name": "utilitários",
+        "filesystem_type": "folder",
+        "flame_type": "",
+        "parent_dir": "/{projekts_dir}/{projekt_dir}",
+        "path": "/{projekts_dir}/{projekt_dir}/utilitários",
+        "bookmark_name": "utilitários",
+        "bookmark_type": "folder",
+        "bookmark_parent": "projekt directories",
+        "bookmark_visibility": "Global",
+        "children": {
+            "item_01": {
+                "object_name": "",
+                "process_type": "",
+                "parent_object": "",
+                "display_name": "",
+                "object_type": "",
+                "object_color": "",
+                "link": "False",
+                "dir_name": "Synergy",
+                "filesystem_type": "folder",
+                "flame_type": "",
+                "parent_dir": "/{projekts_dir}/{projekt_dir}/utilitários",
+                "path": "/{projekts_dir}/{projekt_dir}/utilitários/Synergy",
+                "bookmark_name": "",
+                "bookmark_type": "",
+                "bookmark_parent": "",
+                "bookmark_visibility": "",
+                "children": {
+                    "item_02": {
+                        "object_name": "",
+                        "process_type": "",
+                        "parent_object": "",
+                        "display_name": "''",
+                        "object_type": "",
+                        "object_color": "",
+                        "link": "False",
+                        "dir_name": "SynColor",
+                        "filesystem_type": "folder",
+                        "flame_type": "",
+                        "parent_dir": "/{projekts_dir}/{projekt_dir}/utilitários/Synergy",
+                        "path": "/{projekts_dir}/{projekt_dir}/utilitários/Synergy/SynColor",
+                        "bookmark_name": "",
+                        "bookmark_type": "",
+                        "bookmark_parent": "",
+                        "bookmark_visibility": "",
+                        "children": {
+                            "item_03": {
+                                "object_name": "",
+                                "process_type": "",
+                                "parent_object": "",
+                                "display_name": "''",
+                                "object_type": "",
+                                "object_color": "",
+                                "link": "False",
+                                "dir_name": "Shared",
+                                "filesystem_type": "folder",
+                                "flame_type": "",
+                                "parent_dir": "/{projekts_dir}/{projekt_dir}/utilitários/Synergy/SynColor",
+                                "path": "/{projekts_dir}/{projekt_dir}/utilitários/Synergy/SynColor/Shared",
+                                "bookmark_name": "",
+                                "bookmark_type": "",
+                                "bookmark_parent": "",
+                                "bookmark_visibility": ""
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

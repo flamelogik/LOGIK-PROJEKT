@@ -1,0 +1,119 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 2K - Spherical ----------------- +",
+            "items": [
+                {
+                    "resolution_name": "1296 x 1080 | RED 2K 6:5",
+                    "width": 1296,
+                    "height": 1080,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.2
+                },
+                {
+                    "resolution_name": "1920 x 1080 | RED HD 16:9",
+                    "width": 1920,
+                    "height": 1080,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "1920 x 1280 | RED 2K 3:2",
+                    "width": 1920,
+                    "height": 1280,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.5
+                },
+                {
+                    "resolution_name": "1920 x 1440 | RED 2K 4:3",
+                    "width": 1920,
+                    "height": 1440,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 1.3333333,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3333333
+                },
+                {
+                    "resolution_name": "1920 x 1536 | RED 2K 5:4",
+                    "width": 1920,
+                    "height": 1536,
+                    "storage_aspect_ratio": 1.25,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.25
+                },
+                {
+                    "resolution_name": "2048 x 256 | RED 2K 8:1",
+                    "width": 2048,
+                    "height": 256,
+                    "storage_aspect_ratio": 8.0,
+                    "display_aspect_ratio": 8.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 8.0
+                },
+                {
+                    "resolution_name": "2048 x 512 | RED 2K 4:1",
+                    "width": 2048,
+                    "height": 512,
+                    "storage_aspect_ratio": 4.0,
+                    "display_aspect_ratio": 4.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 4.0
+                },
+                {
+                    "resolution_name": "2048 x 854 | RED 2K 2.39 WS",
+                    "width": 2048,
+                    "height": 854,
+                    "storage_aspect_ratio": 2.3981265,
+                    "display_aspect_ratio": 2.3981265,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3981265
+                },
+                {
+                    "resolution_name": "2048 x 864 | RED 2K 2.37 WS",
+                    "width": 2048,
+                    "height": 864,
+                    "storage_aspect_ratio": 2.3703704,
+                    "display_aspect_ratio": 2.3703704,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3703704
+                },
+                {
+                    "resolution_name": "2048 x 1024 | RED 2K 2:1",
+                    "width": 2048,
+                    "height": 1024,
+                    "storage_aspect_ratio": 2.0,
+                    "display_aspect_ratio": 2.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.0
+                },
+                {
+                    "resolution_name": "2048 x 1080 | RED 2K Full 17:9",
+                    "width": 2048,
+                    "height": 1080,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                },
+                {
+                    "resolution_name": "2048 x 1152 | RED 2K 16:9",
+                    "width": 2048,
+                    "height": 1152,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                }
+            ]
+        }
+    ]
+}

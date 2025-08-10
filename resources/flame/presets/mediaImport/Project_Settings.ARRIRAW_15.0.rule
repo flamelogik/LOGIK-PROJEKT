@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule>
+	<header>
+		<version>1</version>
+		<name>Project_Settings</name>
+		<type>0</type>
+	</header>
+	<data>
+		<name>ARRIRAW</name>
+		<version>15</version>
+		<longName>ARRIRAW</longName>
+		<options type="dict">
+			<ADA5_Blue type="int">50</ADA5_Blue>
+			<ADA5_Green type="int">100</ADA5_Green>
+			<ADA5_Red type="int">100</ADA5_Red>
+			<AnamorphVariant type="bool">false</AnamorphVariant>
+			<AspectMode type="string">Header</AspectMode>
+			<AspectRatioValue type="float">1</AspectRatioValue>
+			<CCT type="float">4000</CCT>
+			<CameraMode type="int">-1</CameraMode>
+			<ClipNameMode type="string">FileName</ClipNameMode>
+			<ClipNameValue type="string">Untitled</ClipNameValue>
+			<ColorBlend type="float">1</ColorBlend>
+			<ColorProcessing type="double">-1</ColorProcessing>
+			<ColorRange type="int">0</ColorRange>
+			<ColorSettingsMode type="string">Camera</ColorSettingsMode>
+			<ColorSpace type="string">header</ColorSpace>
+			<ColorTempMode type="string">NoAdjust</ColorTempMode>
+			<Crop type="string">Full</Crop>
+			<DebayerMode type="int" label="ADA-5 SW">5</DebayerMode>
+			<Detail type="float">0</Detail>
+			<DownscaleFactor type="string">Full</DownscaleFactor>
+			<ExposureMode type="string">Header</ExposureMode>
+			<FileSequence type="bool">true</FileSequence>
+			<FlipSettings type="string">Camera</FlipSettings>
+			<From2868 type="bool">false</From2868>
+			<GreenMagentaTint type="float">0</GreenMagentaTint>
+			<ISO type="int">125</ISO>
+			<InputColourSpace type="string">Unknown</InputColourSpace>
+			<MiniInputMode type="string">Header</MiniInputMode>
+			<ProcessingUnit type="string">GPUWhenAvailable</ProcessingUnit>
+			<SaveColorSettings type="bool">false</SaveColorSettings>
+			<Sharpness type="float">0</Sharpness>
+			<SourceNameDirLevelUp type="uint32">1</SourceNameDirLevelUp>
+			<SourceNameMode type="string">Header</SourceNameMode>
+			<SourceNameValue type="string">IMPORT</SourceNameValue>
+			<TimecodeMode type="string">Master</TimecodeMode>
+			<TimecodeValue type="time" label="0">
+				<rate/>
+				<nbTicks>0</nbTicks>
+				<dropMode>NDF</dropMode>
+			</TimecodeValue>
+			<UseLUT type="bool">false</UseLUT>
+			<UseLook type="string" label="Look File or Header">FileOrHeader</UseLook>
+			<WhiteBalanceBlue type="float">2.06876</WhiteBalanceBlue>
+			<WhiteBalanceGreen type="float">1</WhiteBalanceGreen>
+			<WhiteBalanceRed type="float">1.1282</WhiteBalanceRed>
+		</options>
+	</data>
+</rule>

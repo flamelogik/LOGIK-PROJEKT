@@ -1,0 +1,100 @@
+2024-05-24
+
+phil_man@mac.com
+
++ -------------------------------------------------------------------------- +
+
+Use this directory structure in combination with the included batch group to
+manufacture flame compatible color transform (.ctf) files that simplify the 
+integration of media from different cameras and virtual sources.
+
+1.  Import 'projekt_template-2024_05-24-flame_colortoolkit.json' to create the
+    flame_colortoolkit projekt.
+2.  Add the flame_colortoolkit setup from the Batch Project Bin
+3.  Export the concatenated .ctf files to the following structure:
+    (This will ensure that your .ctf files get copied to every new projekt)
+    
+resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/flame_colortoolkit/
+   │
+   ├── APPLE/
+   │   ├── AP0_to_Apple_Log.ctf
+   │   ├── AP1_to_Apple_Log.ctf
+   │   ├── Apple_log_to_AP0.ctf
+   │   └── Apple_log_to_AP1.ctf
+   │
+   ├── ARRI/
+   │   ├── ARRI_LogC3/
+   │   │   ├── AP0_to_ARRI_LogC3.ctf
+   │   │   ├── AP1_to_ARRI_LogC3.ctf
+   │   │   ├── ARRI_LogC3_to_AP0.ctf
+   │   │   └── ARRI_LogC3_to_AP1.ctf
+   │   │
+   │   └── ARRI_LogC4/
+   │       ├── AP0_to_ARRI_LogC4.ctf
+   │       ├── AP1_to_ARRI_LogC4.ctf
+   │       ├── ARRI_LogC4_to_AP0.ctf
+   │       └── ARRI_LogC4_to_AP1.ctf
+   │
+   ├── BLACKMAGIC_DESIGN/
+   │   ├── AP0_to_BMD.ctf
+   │   ├── AP1_to_BMD.ctf
+   │   ├── BMD_to_AP0.ctf
+   │   └── BMD_to_AP1.ctf
+   │
+   ├── CANON/
+   │   ├── CanonLog3_Daylight/
+   │   │   ├── AP0_to_Canon_Daylight.ctf
+   │   │   ├── AP1_to_Canon_Daylight.ctf
+   │   │   ├── Canon_Daylight_to_AP0.ctf
+   │   │   └── Canon_Daylight_to_AP1.ctf
+   │   │
+   │   └── CanonLog3_Tungsten/
+   │       ├── AP0_to_Canon_Tungsten.ctf
+   │       ├── AP1_to_Canon_Tungsten.ctf
+   │       ├── Canon_Tungsten_to_AP0.ctf
+   │       └── Canon_Tungsten_to_AP1.ctf
+   │
+   ├── PANASONIC/
+   │   ├── AP0_to_Panasonic_VLog.ctf
+   │   ├── AP1_to_Panasonic_VLog.ctf
+   │   ├── Panasonic_VLog_to_AP0.ctf
+   │   └── Panasonic_VLog_to_AP1.ctf
+   │
+   ├── R3D/
+   │   ├── AP0_to_R3D_Log3G10.ctf
+   │   ├── AP1_to_R3D_Log3G10.ctf
+   │   ├── R3D_Log3G10_to_AP0.ctf
+   │   └── R3D_Log3G10_to_AP1.ctf
+   │
+   ├── REC709/
+   │   ├── AP0_to_Rec709.ctf
+   │   ├── AP1_to_Rec709.ctf
+   │   ├── Rec709_to_AP0.ctf
+   │   └── Rec709_to_AP1.ctf
+   │
+   ├── SCENE_LINEAR/
+   │   ├── AP0_to_LinearRec709_sRGB.ctf
+   │   ├── AP1_to_LinearRec709_sRGB.ctf
+   │   ├── LinearRec709_sRGB_to_AP0.ctf
+   │   └── LinearRec709_sRGB_to_Rec709.ctf
+   │
+   └── SONY/
+      ├── S3SGamut3/
+      │   ├── AP0_to_S3SGamut3.ctf
+      │   ├── AP1_to_S3SGamut3.ctf
+      │   ├── S3SGamut3_to_AP0.ctf
+      │   └── S3SGamut3_to_AP1.ctf
+      │
+      ├── S3SGamut3_Cine_Venice/
+      │   ├── AP0_to_S3SGamut3_Cine_Venice.ctf
+      │   ├── AP1_to_S3SGamut3_Cine_Venice.ctf
+      │   ├── S3SGamut3_Cine_Venice_to_AP0.ctf
+      │   └── S3SGamut3_Cine_Venice_to_AP1.ctf
+      │
+      └── S3SGamut3_Venice/
+         ├── AP0_to_S3SGamut3_Venice.ctf
+         ├── AP1_to_S3SGamut3_Venice.ctf
+         ├── S3SGamut3_Venice_to_AP0.ctf
+         └── S3SGamut3_Venice_to_AP1.ctf
+
++ -------------------------------------------------------------------------- +

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewingRules version="1.0">
+	<default viewTransform="Raw" />
+	<ViewingRule name="Untagged warning" viewTransform="inverted-magenta_view" allowedColorSpaces="Unknown" allowedCSContext="Specific" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="Off" />
+	<ViewingRule name="Log (low contrast)" viewTransform="log_raw_view" allowedColorSpaces="Any Log" allowedCSContext="Family" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Log (gamma-corrected)" viewTransform="gamma-corrected_view" allowedColorSpaces="Any Log" allowedCSContext="Family" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Linear (low contrast)" viewTransform="low-contrast_view" allowedColorSpaces="Any Scene-linear" allowedCSContext="Family" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Linear (PhotoMapLC)" viewTransform="Linear (PhotoMapLC)" allowedColorSpaces="Any Scene-linear" allowedCSContext="Family" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Linear (gamma-corrected)" viewTransform="gamma-corrected_view" allowedColorSpaces="Any Scene-linear" allowedCSContext="Family" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Video (colorimetric)" viewTransform="colorimetric_view" allowedColorSpaces="Any Video" allowedCSContext="Family" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Matte" viewTransform="matte_view" allowedColorSpaces="Any Data" allowedCSContext="Family" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+	<ViewingRule name="Normals" viewTransform="normals_view" allowedColorSpaces="Normals_201605" allowedCSContext="Specific" allowedDisplays="Any" allowedDisplaysContext="Family" isActive="On" />
+</viewingRules>

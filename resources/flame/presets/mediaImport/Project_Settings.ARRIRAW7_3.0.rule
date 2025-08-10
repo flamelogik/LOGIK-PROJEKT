@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule>
+	<header>
+		<version>1</version>
+		<name>Project_Settings</name>
+		<type>0</type>
+	</header>
+	<data>
+		<name>ARRIRAW7</name>
+		<version>3</version>
+		<longName>ARRIRAW7</longName>
+		<options type="dict">
+			<ADA5_Blue type="int">50</ADA5_Blue>
+			<ADA5_Green type="int">100</ADA5_Green>
+			<ADA5_Red type="int">100</ADA5_Red>
+			<AspectMode type="string">Header</AspectMode>
+			<AspectRatioValue type="float">1</AspectRatioValue>
+			<BW type="int">-1</BW>
+			<CCT type="float">4000</CCT>
+			<ClipNameMode type="string" label="Clip Name from File Header">Header</ClipNameMode>
+			<ClipNameValue type="string">Untitled</ClipNameValue>
+			<ColorSettingsMode type="string">Custom</ColorSettingsMode>
+			<ColorSpace type="int">-1</ColorSpace>
+			<ColorTempMode type="string">NoAdjust</ColorTempMode>
+			<DebayerMode type="int" label="ADA-5 SW">5</DebayerMode>
+			<Detail type="float">0</Detail>
+			<ExposureMode type="string">Header</ExposureMode>
+			<FileSequence type="bool">true</FileSequence>
+			<FlipSettings type="string">Camera</FlipSettings>
+			<GreenMagentaTint type="float">0</GreenMagentaTint>
+			<ISO type="int">500</ISO>
+			<InputColourSpace type="string">Unknown</InputColourSpace>
+			<NRMode type="string">off</NRMode>
+			<NRStrength type="float">1</NRStrength>
+			<ProcessingUnit type="string">GPUWhenAvailable</ProcessingUnit>
+			<Sharpness type="float">0</Sharpness>
+			<SharpnessMode type="string">Header</SharpnessMode>
+			<SourceNameDirLevelUp type="uint32">1</SourceNameDirLevelUp>
+			<SourceNameMode type="string">Header</SourceNameMode>
+			<SourceNameValue type="string">IMPORT</SourceNameValue>
+			<SourceWindow type="string">Display</SourceWindow>
+			<TimecodeMode type="string">Master</TimecodeMode>
+		</options>
+	</data>
+</rule>

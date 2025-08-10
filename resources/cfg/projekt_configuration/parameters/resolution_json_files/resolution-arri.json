@@ -1,0 +1,308 @@
+{
+    "group": "ARRI Camera Definitions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- ARRI Cameras ----------------------- +",
+            "items": [
+                {
+                    "resolution_name": "1920 x 2160 | ARRI HD WS 16:9 ProRes",
+                    "width": 1920,
+                    "height": 2160,
+                    "storage_aspect_ratio": 0.8888889,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "2048 x 858 | ARRI 2K WS 2.39 ProRes",
+                    "width": 2048,
+                    "height": 858,
+                    "storage_aspect_ratio": 2.3869464,
+                    "display_aspect_ratio": 2.3869464,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3869464
+                },
+                {
+                    "resolution_name": "2048 x 1152 | ARRI 2K 16:9 ProRes",
+                    "width": 2048,
+                    "height": 1152,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "2048 x 1536 | ARRI 2K 4:3",
+                    "width": 2048,
+                    "height": 1536,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 1.3333333,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3333333
+                },
+                {
+                    "resolution_name": "2048 x 1536 | ARRI 2K Ana 2.0x",
+                    "width": 2048,
+                    "height": 1536,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 2.6666667,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.6666667
+                },
+                {
+                    "resolution_name": "2560 x 2145 | ARRI 2.6K WS 2.39",
+                    "width": 2560,
+                    "height": 2145,
+                    "storage_aspect_ratio": 1.1934732,
+                    "display_aspect_ratio": 2.3869464,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.3869464
+                },
+                {
+                    "resolution_name": "2578 x 2160 | ARRI 2.6K 6:5",
+                    "width": 2578,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.1935185,
+                    "display_aspect_ratio": 1.1935185,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.1935185
+                },
+                {
+                    "resolution_name": "2578 x 2160 | ARRI 2.6K WS 2.39",
+                    "width": 2578,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.1935185,
+                    "display_aspect_ratio": 2.387037,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.387037
+                },
+                {
+                    "resolution_name": "2880 x 1620 | ARRI 2.8K 16:9",
+                    "width": 2880,
+                    "height": 1620,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "2880 x 2160 | ARRI 2.8K 4:3 Full",
+                    "width": 2880,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 1.3333333,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3333333
+                },
+                {
+                    "resolution_name": "2880 x 2160 | ARRI 2.8K Ana 2.0x",
+                    "width": 2880,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 2.6666667,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.6666667
+                },
+                {
+                    "resolution_name": "2880 x 2880 | ARRI 2.8K LF 2:1",
+                    "width": 2880,
+                    "height": 2880,
+                    "storage_aspect_ratio": 1.0,
+                    "display_aspect_ratio": 2.0,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.0
+                },
+                {
+                    "resolution_name": "3072 x 3072 | ARRI 3K 1:1",
+                    "width": 3072,
+                    "height": 3072,
+                    "storage_aspect_ratio": 1.0,
+                    "display_aspect_ratio": 1.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.0
+                },
+                {
+                    "resolution_name": "3164 x 1778 | ARRI 3.2K 16:9 ProRes",
+                    "width": 3164,
+                    "height": 1778,
+                    "storage_aspect_ratio": 1.7795276,
+                    "display_aspect_ratio": 1.7795276,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7795276
+                },
+                {
+                    "resolution_name": "3168 x 1782 | ARRI 3.2K 16:9",
+                    "width": 3168,
+                    "height": 1782,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "3200 x 1800 | ARRI 3.2K 16:9 ProRes",
+                    "width": 3200,
+                    "height": 1800,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "3328 x 2790 | ARRI 3.3K 6:5",
+                    "width": 3328,
+                    "height": 2790,
+                    "storage_aspect_ratio": 1.1928315,
+                    "display_aspect_ratio": 1.1928315,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.1928315
+                },
+                {
+                    "resolution_name": "3414 x 2198 | ARRI 3.4K Open Gate",
+                    "width": 3414,
+                    "height": 2198,
+                    "storage_aspect_ratio": 1.5532302,
+                    "display_aspect_ratio": 1.5532302,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.5532302
+                },
+                {
+                    "resolution_name": "3424 x 2202 | ARRI 3.4K Open Gate ProRes",
+                    "width": 3424,
+                    "height": 2202,
+                    "storage_aspect_ratio": 1.55495,
+                    "display_aspect_ratio": 1.55495,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.55495
+                },
+                {
+                    "resolution_name": "3840 x 1920 | ARRI UHD 2:1 ProRes",
+                    "width": 3840,
+                    "height": 1920,
+                    "storage_aspect_ratio": 2.0,
+                    "display_aspect_ratio": 2.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.0
+                },
+                {
+                    "resolution_name": "3840 x 2160 | ARRI UHD 16:9 ProRes",
+                    "width": 3840,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "3840 x 2160 | ARRI UHD Ana 2.0x",
+                    "width": 3840,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 3.5555556,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 3.5555556
+                },
+                {
+                    "resolution_name": "4096 x 1716 | ARRI 4K WS 2.39 ProRes",
+                    "width": 4096,
+                    "height": 1716,
+                    "storage_aspect_ratio": 2.3869464,
+                    "display_aspect_ratio": 2.3869464,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3869464
+                },
+                {
+                    "resolution_name": "4096 x 2048 | ARRI 4K 2:1",
+                    "width": 4096,
+                    "height": 2048,
+                    "storage_aspect_ratio": 2.0,
+                    "display_aspect_ratio": 2.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.0
+                },
+                {
+                    "resolution_name": "4096 x 2304 | ARRI 4K 16:9",
+                    "width": 4096,
+                    "height": 2304,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "4096 x 2636 | ARRI 4K Cine Open Gate ProRes",
+                    "width": 4096,
+                    "height": 2636,
+                    "storage_aspect_ratio": 1.5538695,
+                    "display_aspect_ratio": 1.5538695,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.5538695
+                },
+                {
+                    "resolution_name": "4320 x 2880 | ARRI 4.3K 3:2",
+                    "width": 4320,
+                    "height": 2880,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.5
+                },
+                {
+                    "resolution_name": "4448 x 1856 | ARRI 4.5K WS 2.39 ProRes",
+                    "width": 4448,
+                    "height": 1856,
+                    "storage_aspect_ratio": 2.3965517,
+                    "display_aspect_ratio": 2.3965517,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3965517
+                },
+                {
+                    "resolution_name": "4448 x 3096 | ARRI 4.5K LF Open Gate ProRes",
+                    "width": 4448,
+                    "height": 3096,
+                    "storage_aspect_ratio": 1.4366925,
+                    "display_aspect_ratio": 1.4366925,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.4366925
+                },
+                {
+                    "resolution_name": "4608 x 2592 | ARRI 4.6K 16:9",
+                    "width": 4608,
+                    "height": 2592,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "4608 x 3164 | ARRI 4.6K 3:2 Open Gate",
+                    "width": 4608,
+                    "height": 3164,
+                    "storage_aspect_ratio": 1.4563843,
+                    "display_aspect_ratio": 1.4563843,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.4563843
+                },
+                {
+                    "resolution_name": "5120 x 2880 | ARRI 5K 16:9",
+                    "width": 5120,
+                    "height": 2880,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "6560 x 3100 | ARRI 6.5K Open Gate",
+                    "width": 6560,
+                    "height": 3100,
+                    "storage_aspect_ratio": 2.116129,
+                    "display_aspect_ratio": 2.116129,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.116129
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "Settings": [
+        {
+            "name": "MediaImportTimelineResSelection",
+            "value": 1
+        },
+        {
+            "name": "MediaImportLinkToFiles",
+            "value": true
+        },
+        {
+            "name": "MediaImportSearchImportFiles",
+            "value": true
+        },
+        {
+            "name": "MediaImportSaveSources",
+            "value": true
+        },
+        {
+            "name": "MediaImportKeepClipName",
+            "value": false
+        },
+        {
+            "name": "MediaImportKeepSourceSettings",
+            "value": false
+        },
+        {
+            "name": "MediaImportSearchDirUpLevels",
+            "value": 0
+        },
+        {
+            "name": "MediaImportConsolidateOnImport",
+            "value": false
+        },
+        {
+            "name": "MediaImportConsolidateOnImportHandles",
+            "value": 60
+        },
+        {
+            "name": "MediaImportPreferIntermediates",
+            "value": false
+        },
+        {
+            "name": "MediaImportEDLLinkToFiles",
+            "value": true
+        },
+        {
+            "name": "MediaImportEDLResSelection",
+            "value": 0
+        },
+        {
+            "name": "MediaImportEDLConsolidateOnImport",
+            "value": false
+        },
+        {
+            "name": "MediaImportEDLConsolidateOnImportHandles",
+            "value": 60
+        },
+        {
+            "name": "MediaImportEDLSaveSources",
+            "value": true
+        },
+        {
+            "name": "MediaImportEDLKeepClipName",
+            "value": false
+        },
+        {
+            "name": "MediaImportEDLFcm",
+            "value": 7
+        },
+        {
+            "name": "MediaImportEDLFixTWMatchFrames",
+            "value": false
+        },
+        {
+            "name": "MediaImportEDLMultiAssemble",
+            "value": true
+        },
+        {
+            "name": "MediaImportEDLMultipleSequencesDetectionMode",
+            "value": 1
+        },
+        {
+            "name": "MediaImportEDLHybrid24pMasteringBool",
+            "value": false
+        },
+        {
+            "name": "MediaImportEDLPulldownFcm",
+            "value": 3
+        },
+        {
+            "name": "MediaImportEDLConversion",
+            "value": false
+        },
+        {
+            "name": "MediaImportEDLConversionMode",
+            "value": 0
+        },
+        {
+            "name": "MediaImportEDLVaricamBool",
+            "value": false
+        },
+        {
+            "name": "MediaImportEDLVaricamFcm",
+            "value": 0
+        },
+        {
+            "name": "CanConsolidateOnImport",
+            "value": true
+        }
+    ]
+}
