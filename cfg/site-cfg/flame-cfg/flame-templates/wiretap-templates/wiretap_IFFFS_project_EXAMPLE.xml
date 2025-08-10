@@ -2,7 +2,7 @@
   <Name>flame_projekt_name</Name>
   <Nickname>flame_projekt_nickname</Nickname>
   <ShotgunProjectName>flame_projekt_shotgun_name</ShotgunProjectName>
-  <!-- <Description>flame_projekt_description</Description> -->
+  <Description>flame_projekt_description</Description>
   <CatalogDir>flame_projekt_catalog_dir</CatalogDir>
   <ProjectDir>flame_projekt_home</ProjectDir>
   <SetupDir>flame_projekt_setups_dir</SetupDir>
