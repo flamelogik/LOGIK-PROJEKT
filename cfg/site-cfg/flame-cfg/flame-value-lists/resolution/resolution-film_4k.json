@@ -1,0 +1,173 @@
+{
+    "group": "Film Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- 4K Film ---------------------------- +",
+            "items": [
+                {
+                    "resolution_name": "3656 x 2664 x 2.0 | Film 4K Academy",
+                    "width": 3656,
+                    "height": 2664,
+                    "storage_aspect_ratio": 1.3723724,
+                    "display_aspect_ratio": 2.7447447,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.7447447
+                },
+                {
+                    "resolution_name": "3656 x 3112 x 2.0 | Film 4K Scope 2.35",
+                    "width": 3656,
+                    "height": 3112,
+                    "storage_aspect_ratio": 1.1748072,
+                    "display_aspect_ratio": 2.3496144,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.3496144
+                },
+                {
+                    "resolution_name": "4096 x 2304 x 1.0 | Film 4K 16:9",
+                    "width": 4096,
+                    "height": 2304,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "4096 x 3072 x 1.0 | Film 4K 4:3",
+                    "width": 4096,
+                    "height": 3072,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 1.3333333,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3333333
+                },
+                {
+                    "resolution_name": "4096 x 1708 x 1.0 | Film 35MM 4K Super35",
+                    "width": 4096,
+                    "height": 1708,
+                    "storage_aspect_ratio": 2.3981265,
+                    "display_aspect_ratio": 2.3981265,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3981265
+                },
+                {
+                    "resolution_name": "4096 x 1796 x 1.0 | Film 65MM 4K 5perf",
+                    "width": 4096,
+                    "height": 1796,
+                    "storage_aspect_ratio": 2.2806236,
+                    "display_aspect_ratio": 2.2806236,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.2806236
+                },
+                {
+                    "resolution_name": "4096 x 2212 x 1.0 | Film 35MM 4K Academy 1.85",
+                    "width": 4096,
+                    "height": 2212,
+                    "storage_aspect_ratio": 1.8517179,
+                    "display_aspect_ratio": 1.8517179,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8517179
+                },
+                {
+                    "resolution_name": "4096 x 2214 x 1.0 | Film 4K 1.85",
+                    "width": 4096,
+                    "height": 2214,
+                    "storage_aspect_ratio": 1.8500452,
+                    "display_aspect_ratio": 1.8500452,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8500452
+                },
+                {
+                    "resolution_name": "4096 x 2300 x 1.0 | Film 35MM 4K Academy 1.78",
+                    "width": 4096,
+                    "height": 2300,
+                    "storage_aspect_ratio": 1.7808696,
+                    "display_aspect_ratio": 1.7808696,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7808696
+                },
+                {
+                    "resolution_name": "4096 x 2464 x 1.0 | Film 35MM 4K Academy 1.66",
+                    "width": 4096,
+                    "height": 2464,
+                    "storage_aspect_ratio": 1.6623377,
+                    "display_aspect_ratio": 1.6623377,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.6623377
+                },
+                {
+                    "resolution_name": "4096 x 2732 x 1.0 | Film 35MM 4K VistaVision",
+                    "width": 4096,
+                    "height": 2732,
+                    "storage_aspect_ratio": 1.4992679,
+                    "display_aspect_ratio": 1.4992679,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.4992679
+                },
+                {
+                    "resolution_name": "4096 x 2936 x 1.0 | Film 65MM 4K 8perf",
+                    "width": 4096,
+                    "height": 2936,
+                    "storage_aspect_ratio": 1.3950954,
+                    "display_aspect_ratio": 1.3950954,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3950954
+                },
+                {
+                    "resolution_name": "4096 x 2988 x 1.0 | Film 4K Full",
+                    "width": 4096,
+                    "height": 2988,
+                    "storage_aspect_ratio": 1.3708166,
+                    "display_aspect_ratio": 1.3708166,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3708166
+                },
+                {
+                    "resolution_name": "4096 x 3060 x 1.0 | Film 65MM 4K 15perf",
+                    "width": 4096,
+                    "height": 3060,
+                    "storage_aspect_ratio": 1.3385621,
+                    "display_aspect_ratio": 1.3385621,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3385621
+                },
+                {
+                    "resolution_name": "4096 x 3112 x 1.0 | Film Super35 4K",
+                    "width": 4096,
+                    "height": 3112,
+                    "storage_aspect_ratio": 1.3161954,
+                    "display_aspect_ratio": 1.3161954,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3161954
+                },
+                {
+                    "resolution_name": "4096 x 3112 x 1.0 | Film 4K Full",
+                    "width": 4096,
+                    "height": 3112,
+                    "storage_aspect_ratio": 1.3161954,
+                    "display_aspect_ratio": 1.3161954,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3161954
+                },
+                {
+                    "resolution_name": "4096 x 3472 x 2.0 | Film 35MM 4K Academy CinemaScope",
+                    "width": 4096,
+                    "height": 3472,
+                    "storage_aspect_ratio": 1.1797235,
+                    "display_aspect_ratio": 2.359447,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.359447
+                },
+                {
+                    "resolution_name": "4096 x 6144 x 1.0 | Film 4K VistaVision",
+                    "width": 4096,
+                    "height": 3112,
+                    "storage_aspect_ratio": 1.3161954,
+                    "display_aspect_ratio": 1.3161954,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3161954
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+scripts
+├── common
+│   ├── create
+│   │   ├── create-banners.sh
+│   │   ├── create-helper-scripts.sh
+│   │   ├── create-logs.sh
+│   │   ├── create-separators.sh
+│   │   ├── create-timestamp.sh
+│   │   ├── create-ui.sh
+│   │   ├── create-venv-symlinks.sh
+│   │   └── create-virtual-environment.sh
+│   ├── modify
+│   ├── obtain
+│   │   ├── directory-structure-analysis.sh
+│   │   ├── directory-structure-to-bookmarks.sh
+│   │   ├── directory-structure-to-json.sh
+│   │   ├── gather-adsk-py-packages.sh
+│   │   └── gather-adsk-py-version.sh
+│   └── remove
+│       ├── delete-init-py-files.sh
+│       └── remove-pycache-files.sh
+├── cvs
+│   └── github
+│       ├── docs
+│       │   └── knowledge_base
+│       │       └── insights
+│       │           ├── github_issue_workflow.md
+│       │           └── task_management_strategy.md
+│       ├── gh_tasks
+│       │   └── users
+│       ├── gh_utils
+│       │   ├── delete_gh_delete_repo.sh
+│       │   ├── get_gh_list_issues.sh
+│       │   ├── get_gh_view_repo.sh
+│       │   ├── get_username.sh
+│       │   ├── github_actions.sh
+│       │   ├── patch_gh_close_issue.sh
+│       │   ├── popular_gh_commands.sh
+│       │   ├── post_gh_comment_issue.sh
+│       │   ├── post_gh_create_issue.sh
+│       │   ├── post_new_issue.sh
+│       │   ├── put_solve_issue.sh
+│       │   └── test_gh_issue_list.sh
+│       └── github_help
+│           ├── gh_alias.md
+│           ├── gh_api.md
+│           ├── gh_attestation.md
+│           ├── gh_auth_login.md
+│           ├── gh_auth_logout.md
+│           ├── gh_auth.md
+│           ├── gh_auth_refresh.md
+│           ├── gh_auth_setup-git.md
+│           ├── gh_auth_status.md
+│           ├── gh_auth_switch.md
+│           ├── gh_auth_token.md
+│           ├── gh_browse.md
+│           ├── gh_cache.md
+│           ├── gh_codespace.md
+│           ├── gh_completion.md
+│           ├── gh_config.md
+│           ├── gh_extension.md
+│           ├── gh_gist.md
+│           ├── gh_gpg-key.md
+│           ├── gh_issue.md
+│           ├── gh_label.md
+│           ├── gh_org.md
+│           ├── gh_pr_checkout.md
+│           ├── gh_preview.md
+│           ├── gh_pr.md
+│           ├── gh_project.md
+│           ├── gh_release.md
+│           ├── gh_repo.md
+│           ├── gh_ruleset.md
+│           ├── gh_run.md
+│           ├── gh_search.md
+│           ├── gh_secret.md
+│           ├── gh_ssh-key.md
+│           ├── gh_status.md
+│           ├── gh_top_level_options.md
+│           ├── gh_variable.md
+│           ├── gh_workflow.md
+│           ├── README.md
+│           └── TABLE_OF_CONTENTS.md
+├── utilities
+│   └── create_ssh_keys_linux.py
+└── validate-downloads.sh
+
+15 directories, 70 files

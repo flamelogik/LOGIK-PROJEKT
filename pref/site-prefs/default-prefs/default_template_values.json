@@ -1,0 +1,19 @@
+{
+    "Default Resolution: ": "3840 x 2160 x 1.0 | UHDTV 4K 16:9",
+    "Default Width: ": "3840",
+    "Default Height: ": "2160",
+    "Default Aspect Ratio: ": "1.77777778",
+    "Default Bit Depth: ": "16-bit fp",
+    "Default Framerate: ": "23.976 fps",
+    "Default Scan Mode: ": "PROGRESSIVE",
+    "Default Start Frame: ": "1001",
+    "Default Init Config: ": "3840x2160@23976p.cfg",
+    "Default OCIO Config: ": "flame_configs/2026.0/aces2.0_config",
+    "Default OCIO Path: ": "/opt/Autodesk/colour_mgmt/configs/flame_configs/2026.0/aces2.0_config/config.ocio",
+    "Default OCIO Name: ": "ACES 2.0",
+    "Default Cache Integer: ": "Uncompressed (DPX)",
+    "Default Cache Integer ID: ": "2",
+    "Default Cache Float: ": "OpenEXR (DWAB)",
+    "Default Cache Float ID: ": "1185912",
+    "Default Logik Projekt Config": "logik-projekt"
+}

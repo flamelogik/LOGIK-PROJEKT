@@ -1,0 +1,28 @@
+{
+  "PROJEKT Configurations": [
+    {
+      "PROJEKT Configuration Name": "logik-projekt",
+      "PROJEKT Filesystem Tree": "pref/site-prefs/default-prefs/logik-projekt-prefs/filesystem-tree.json",
+      "PROJEKT Flame Workspace": "pref/site-prefs/default-prefs/logik-projekt-prefs/flame-workspace.json",
+      "PROJEKT Flame Bookmarks": "pref/site-prefs/default-prefs/logik-projekt-prefs/cf_bookmarks.json"
+    },
+    {
+      "PROJEKT Configuration Name": "123-projekt-template",
+      "PROJEKT Filesystem Tree": "pref/site-prefs/custom-prefs/123-projekt-template/filesystem-tree.json",
+      "PROJEKT Flame Workspace": "pref/site-prefs/custom-prefs/123-projekt-template/flame-workspace.json",
+      "PROJEKT Flame Bookmarks": "pref/site-prefs/custom-prefs/123-projekt-template/cf_bookmarks.json"
+    },
+    {
+      "PROJEKT Configuration Name": "laurence-creative",
+      "PROJEKT Filesystem Tree": "pref/site-prefs/custom-prefs/laurence-creative/filesystem-tree.json",
+      "PROJEKT Flame Workspace": "pref/site-prefs/custom-prefs/laurence-creative/flame-workspace.json",
+      "PROJEKT Flame Bookmarks": "pref/site-prefs/custom-prefs/laurence-creative/cf_bookmarks.json"
+    },
+    {
+      "PROJEKT Configuration Name": "789-projekt-template",
+      "PROJEKT Filesystem Tree": "pref/site-prefs/custom-prefs/789-projekt-template/filesystem-tree.json",
+      "PROJEKT Flame Workspace": "pref/site-prefs/custom-prefs/789-projekt-template/flame-workspace.json",
+      "PROJEKT Flame Bookmarks": "pref/site-prefs/custom-prefs/789-projekt-template/cf_bookmarks.json"
+    }
+  ]
+}

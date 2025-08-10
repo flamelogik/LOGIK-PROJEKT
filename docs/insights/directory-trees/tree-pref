@@ -1,0 +1,29 @@
+pref
+├── session-preferences
+│   ├── current_session-adsk.json
+│   ├── current_session-flame_launcher.sh
+│   ├── current_session-template.json
+│   ├── current_session-variables.json
+│   └── current_session-wiretap_template.xml
+└── site-prefs
+    ├── custom-prefs
+    │   └── 123-projekt-template
+    │       ├── cf_bookmarks.json
+    │       ├── filesystem-tree.json
+    │       ├── flame-workspace.json
+    │       └── json-bak
+    ├── default-prefs
+    │   ├── default_template_values.json
+    │   ├── logik-projekt-prefs
+    │   │   ├── alt-flame-workspace-template.json
+    │   │   ├── cf_bookmarks.json
+    │   │   ├── filesystem-tree.json
+    │   │   ├── flame_colortoolkit_bookmarks.json
+    │   │   ├── flame_setup_dirs.json
+    │   │   ├── flame_startup_template.py
+    │   │   └── flame-workspace.json
+    │   └── roots
+    │       └── projekt_roots.json
+    └── logik-projekt-site-prefs.json
+
+8 directories, 18 files

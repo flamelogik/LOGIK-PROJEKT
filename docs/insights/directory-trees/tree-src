@@ -1,0 +1,153 @@
+src
+├── app.py
+├── core
+│   ├── app_logic.py
+│   ├── functions
+│   │   ├── copy
+│   │   │   ├── copy_current_session_files.py
+│   │   │   ├── copy_flame_bookmarks.py
+│   │   │   ├── copy_flame_presets.py
+│   │   │   ├── copy_flame_python_scripts.py
+│   │   │   └── __init__.py
+│   │   ├── create
+│   │   │   ├── create_flame_archive_script.py
+│   │   │   ├── create_flame_launcher_script.py
+│   │   │   ├── create_flame_setup_dirs.py
+│   │   │   ├── create_flame_startup_script.py
+│   │   │   ├── create_flame_symbolic_links.py
+│   │   │   ├── create_flame_wiretap_node.py
+│   │   │   ├── create_projekt_backup_script.py
+│   │   │   ├── create_projekt_filesystem_dirs.py
+│   │   │   ├── create_projekt_launcher_alias.py
+│   │   │   ├── create_projekt_pgsql_db.py
+│   │   │   └── __init__.py
+│   │   ├── get
+│   │   │   ├── get_application_paths.py
+│   │   │   ├── get_bit_depth_values.py
+│   │   │   ├── get_cache_float_values.py
+│   │   │   ├── get_cache_integers_values.py
+│   │   │   ├── get_default_template_values.py
+│   │   │   ├── get_flame_bookmarks_path.py
+│   │   │   ├── get_flame_software_versions.py
+│   │   │   ├── get_frame_rate_values.py
+│   │   │   ├── get_init_config_values.py
+│   │   │   ├── get_json_data.py
+│   │   │   ├── get_logik_projekt_config_values.py
+│   │   │   ├── get_ocio_config_values.py
+│   │   │   ├── get_projekt_summary_data.py
+│   │   │   ├── get_resolution_values.py
+│   │   │   ├── get_scan_mode_values.py
+│   │   │   ├── get_start_frame_values.py
+│   │   │   ├── get_sysconfig_flame_catalog_dir.py
+│   │   │   ├── get_sysconfig_flame_home_dir.py
+│   │   │   ├── get_sysconfig_flame_media_dir.py
+│   │   │   ├── get_sysconfig_flame_setups_dir.py
+│   │   │   └── __init__.py
+│   │   ├── __init__.py
+│   │   └── io
+│   │       ├── export_logik_projekt_template.py
+│   │       ├── export_session_adsk_json.py
+│   │       ├── export_session_variables.py
+│   │       ├── export_session_xml.py
+│   │       ├── import_logik_projekt_template.py
+│   │       └── __init__.py
+│   ├── __init__.py
+│   ├── projekt_manager
+│   │   ├── __init__.py
+│   │   ├── projekt_creator.py
+│   │   └── projekt_models.py
+│   ├── template_manager
+│   │   ├── __init__.py
+│   │   ├── template_handler.py
+│   │   ├── template_models.py
+│   │   └── template_serializers.py
+│   ├── unused
+│   │   ├── config_utils.py
+│   │   ├── __init__.py
+│   │   ├── logik_projekt_dark_theme.py
+│   │   ├── script_utils.py
+│   │   └── string_utils.py
+│   └── utils
+│       ├── backup_utils.py
+│       ├── calculated_name_utils.py
+│       ├── flame_software_utils.py
+│       ├── __init__.py
+│       ├── logik_projekt_utils.py
+│       ├── ocio_utils.py
+│       ├── path_utils.py
+│       ├── system_info_utils.py
+│       ├── threaded_logging_utils.py
+│       └── validation_utils.py
+├── __init__.py
+├── ui
+│   ├── app_window.py
+│   ├── __init__.py
+│   ├── panels
+│   │   ├── flame_options_panel.py
+│   │   ├── __init__.py
+│   │   ├── projekt_summary_panel.py
+│   │   ├── projekt_template_panel.py
+│   │   ├── template_info_panel.py
+│   │   ├── template_parameters_panel.py
+│   │   └── template_summary_panel.py
+│   ├── themes
+│   │   ├── __init__.py
+│   │   ├── logik_projekt_spectrum_color.py
+│   │   └── modular_dark_theme.py
+│   ├── ui_config.py
+│   └── widgets
+│       ├── button
+│       │   ├── create_projekt_widget.py
+│       │   ├── export_template_widget.py
+│       │   ├── flame_catalog_dir_widget.py
+│       │   ├── flame_home_dir_widget.py
+│       │   ├── flame_media_dir_widget.py
+│       │   ├── flame_setups_dir_widget.py
+│       │   ├── import_template_widget.py
+│       │   └── __init__.py
+│       ├── combobox
+│       │   ├── bit_depth_widget.py
+│       │   ├── cache_float_widget.py
+│       │   ├── cache_integer_widget.py
+│       │   ├── flame_software_choice_widget.py
+│       │   ├── frame_rate_widget.py
+│       │   ├── init_config_widget.py
+│       │   ├── __init__.py
+│       │   ├── ocio_config_widget.py
+│       │   ├── projekt_config_widget.py
+│       │   ├── resolution_widget.py
+│       │   ├── scan_mode_widget.py
+│       │   └── start_frame_widget.py
+│       ├── display
+│       │   ├── __init__.py
+│       │   ├── projekt_summary_widget.py
+│       │   ├── projekt_template_widget.py
+│       │   └── template_summary_widget.py
+│       ├── entry
+│       │   ├── aspect_ratio_widget.py
+│       │   ├── calculated_name_widget.py
+│       │   ├── campaign_name_widget.py
+│       │   ├── client_name_widget.py
+│       │   ├── description_widget.py
+│       │   ├── __init__.py
+│       │   ├── resolution_height_widget.py
+│       │   ├── resolution_width_widget.py
+│       │   └── serial_number_widget.py
+│       └── __init__.py
+└── utils
+    ├── common
+    │   ├── create
+    │   │   ├── create_banners.py
+    │   │   ├── create_customized_filesystem_template copy.py
+    │   │   ├── create_customized_filesystem_template.py
+    │   │   ├── create_logs.py
+    │   │   ├── create_separators.py
+    │   │   ├── create_timestamp.py
+    │   │   ├── directory_structure_analysis.py
+    │   │   ├── directory_structure_to_bookmarks.py
+    │   │   ├── directory_structure_to_json.py
+    │   │   └── __init__.py
+    │   └── __init__.py
+    └── __init__.py
+
+21 directories, 129 files

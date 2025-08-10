@@ -1,0 +1,263 @@
+{
+    "group": "Blackmagic Design Camera Definitions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- BMD Cameras ------------------------ +",
+            "items": [
+                {
+                    "resolution_name": "1920 x 1080 x 1.0 | BMD HDTV 16:9",
+                    "width": 1920,
+                    "height": 1080,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "2400 x 1340 x 1.0 | BMD 2.5K",
+                    "width": 2400,
+                    "height": 1340,
+                    "storage_aspect_ratio": 1.7910448,
+                    "display_aspect_ratio": 1.7910448,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7910448
+                },
+                {
+                    "resolution_name": "2048 x 1080 x 1.0 | BMD 2K 17:9",
+                    "width": 2048,
+                    "height": 1080,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                },
+                {
+                    "resolution_name": "2048 x 1152 x 1.0 | BMD 2.K 16:9",
+                    "width": 2048,
+                    "height": 1152,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "2560 x 2136 x 1.3 | BMD 4K 4:3 Ana 1.3x",
+                    "width": 2560,
+                    "height": 2136,
+                    "storage_aspect_ratio": 1.1985019,
+                    "display_aspect_ratio": 1.5580524,
+                    "pixel_aspect_ratio": 1.3,
+                    "aspect_ratio": 1.5580524
+                },
+                {
+                    "resolution_name": "2560 x 2136 x 2.0 | BMD 4K 4:3 Ana 2.0x",
+                    "width": 2560,
+                    "height": 2136,
+                    "storage_aspect_ratio": 1.1985019,
+                    "display_aspect_ratio": 2.3970037,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.3970037
+                },
+                {
+                    "resolution_name": "3072 x 2560 x 1.0 | BMD 3K 4:3",
+                    "width": 3072,
+                    "height": 2560,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.2
+                },
+                {
+                    "resolution_name": "3072 x 2560 x 1.3 | BMD 3K 4:3 Ana 1.3x",
+                    "width": 3072,
+                    "height": 2560,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.56,
+                    "pixel_aspect_ratio": 1.3,
+                    "aspect_ratio": 1.56
+                },
+                {
+                    "resolution_name": "3072 x 2560 x 2.0 | BMD 3K 4:3 Ana 2.0x",
+                    "width": 3072,
+                    "height": 2560,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.4
+                },
+                {
+                    "resolution_name": "3840 x 2160 x 1.0 | BMD UHDTV 16:9",
+                    "width": 3840,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "4000 x 2160 x 1.0 | BMD 4K 16:9",
+                    "width": 4000,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.8518519,
+                    "display_aspect_ratio": 1.8518519,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8518519
+                },
+                {
+                    "resolution_name": "4096 x 1704 x 1.0 | BMD 4K 2.4",
+                    "width": 4096,
+                    "height": 1704,
+                    "storage_aspect_ratio": 2.4037559,
+                    "display_aspect_ratio": 2.4037559,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.4037559
+                },
+                {
+                    "resolution_name": "4096 x 2160 x 1.0 | BMD 4K 17:9",
+                    "width": 4096,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                },
+                {
+                    "resolution_name": "4096 x 2304 x 1.0 | BMD 4K 16:9",
+                    "width": 4096,
+                    "height": 2304,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "4608 x 1920 x 1.0 | BMD 4.6K 2.4",
+                    "width": 4608,
+                    "height": 1920,
+                    "storage_aspect_ratio": 2.4,
+                    "display_aspect_ratio": 2.4,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.4
+                },
+                {
+                    "resolution_name": "4608 x 2592 x 1.0 | BMD 4.6K 16:9",
+                    "width": 4608,
+                    "height": 2592,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "4656 x 2624 x 1.0 | BMD 4.6K 16:9",
+                    "width": 4656,
+                    "height": 2624,
+                    "storage_aspect_ratio": 1.7743902,
+                    "display_aspect_ratio": 1.7743902,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7743902
+                },
+                {
+                    "resolution_name": "6144 x 3240 x 1.0 | BMD 6K 17:9",
+                    "width": 6144,
+                    "height": 3240,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                },
+                {
+                    "resolution_name": "5120 x 4272 x 1.3 | BMD 8K 4:3 Ana 1.3x",
+                    "width": 5120,
+                    "height": 4272,
+                    "storage_aspect_ratio": 1.1985019,
+                    "display_aspect_ratio": 1.5580524,
+                    "pixel_aspect_ratio": 1.3,
+                    "aspect_ratio": 1.5580524
+                },
+                {
+                    "resolution_name": "5120 x 4272 x 2.0 | BMD 8K 4:3 Ana 2.0x",
+                    "width": 5120,
+                    "height": 4272,
+                    "storage_aspect_ratio": 1.1985019,
+                    "display_aspect_ratio": 2.3970037,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.3970037
+                },
+                {
+                    "resolution_name": "7680 x 4320 x 1.0 | BMD 8K 16:9",
+                    "width": 7680,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "8192 x 3408 x 1.0 | BMD 8K 2.4",
+                    "width": 8192,
+                    "height": 3408,
+                    "storage_aspect_ratio": 2.4037559,
+                    "display_aspect_ratio": 2.4037559,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.4037559
+                },
+                {
+                    "resolution_name": "8192 x 4320 x 1.0 | BMD 8K 17:9",
+                    "width": 8192,
+                    "height": 4320,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                },
+                {
+                    "resolution_name": "7620 x 6408 x 1.3 | BMD 12K 4:3 Ana 1.3x",
+                    "width": 7620,
+                    "height": 6408,
+                    "storage_aspect_ratio": 1.1891386,
+                    "display_aspect_ratio": 1.5458801,
+                    "pixel_aspect_ratio": 1.3,
+                    "aspect_ratio": 1.5458801
+                },
+                {
+                    "resolution_name": "7620 x 6408 x 2.0 | BMD 12K 4:3 Ana 2.0x",
+                    "width": 7620,
+                    "height": 6408,
+                    "storage_aspect_ratio": 1.1891386,
+                    "display_aspect_ratio": 2.3782772,
+                    "pixel_aspect_ratio": 2.0,
+                    "aspect_ratio": 2.3782772
+                },
+                {
+                    "resolution_name": "11520 x 6480 x 1.0 | BMD 12K 16:9",
+                    "width": 11520,
+                    "height": 6480,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "12288 x 5112 x 1.0 | BMD 12K 2.4",
+                    "width": 12288,
+                    "height": 5112,
+                    "storage_aspect_ratio": 2.4037559,
+                    "display_aspect_ratio": 2.4037559,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.4037559
+                },
+                {
+                    "resolution_name": "12288 x 6480 x 1.0 | BMD 12K 17:9",
+                    "width": 12288,
+                    "height": 6480,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                }
+            ]
+        }
+    ]
+}

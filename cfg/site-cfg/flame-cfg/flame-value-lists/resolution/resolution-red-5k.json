@@ -1,0 +1,83 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 5K - Spherical ----------------- +",
+            "items": [
+                {
+                    "resolution_name": "3240 x 2700 x 1.0 | RED 5K 6:5",
+                    "width": 3240,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.2
+                },
+                {
+                    "resolution_name": "3300 x 2700 x 1.0 | RED 5K 1.2",
+                    "width": 3300,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.2222222,
+                    "display_aspect_ratio": 1.2222222,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.2222222
+                },
+                {
+                    "resolution_name": "4800 x 2700 x 1.0 | RED 5K 16:9",
+                    "width": 4800,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "5120 x 640 x 1.0 | RED 5K 8:1",
+                    "width": 5120,
+                    "height": 640,
+                    "storage_aspect_ratio": 8.0,
+                    "display_aspect_ratio": 8.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 8.0
+                },
+                {
+                    "resolution_name": "5120 x 1280 x 1.0 | RED 5K 4:1",
+                    "width": 5120,
+                    "height": 1280,
+                    "storage_aspect_ratio": 4.0,
+                    "display_aspect_ratio": 4.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 4.0
+                },
+                {
+                    "resolution_name": "5120 x 2160 x 1.0 | RED 5K 2.37 WS",
+                    "width": 5120,
+                    "height": 2160,
+                    "storage_aspect_ratio": 2.3703704,
+                    "display_aspect_ratio": 2.3703704,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3703704
+                },
+                {
+                    "resolution_name": "5120 x 2560 x 1.0 | RED 5K 2:1",
+                    "width": 5120,
+                    "height": 2560,
+                    "storage_aspect_ratio": 2.0,
+                    "display_aspect_ratio": 2.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.0
+                },
+                {
+                    "resolution_name": "5120 x 2700 x 1.0 | RED 5K Full 17:9",
+                    "width": 5120,
+                    "height": 2700,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                }
+            ]
+        }
+    ]
+}

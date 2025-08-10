@@ -1,0 +1,97 @@
+{
+    "DlBookmark": {
+        "Version": 1,
+        "Sections": [
+            {
+                "Section": "Project",
+                "Bookmarks": [
+                    {
+                        "Bookmark": "flame setups",
+                        "Path": "<project home>",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "PROJEKTS",
+                        "Path": "/PROJEKTS/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "projekt home",
+                        "Path": "/PROJEKTS/<project nickname>/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Folder": "projekt directories",
+                        "Bookmarks": [
+                            {
+                                "Folder": "first-sandwich-a",
+                                "Bookmarks": [
+                                    {
+                                        "Folder": "second-filling-a",
+                                        "Bookmarks": [
+                                            {
+                                                "Folder": "third-level-a",
+                                                "Bookmarks": [
+                                                    {
+                                                        "Folder": "fourth-level-a",
+                                                        "Bookmarks": [
+                                                            {
+                                                                "Bookmark": "fifth-level-a",
+                                                                "Path": "/PROJEKTS/<project nickname>/first-sandwich-a/second-filling-a/third-level-a/fourth-level-a/fifth-level-a",
+                                                                "Visibility": "Global"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "first-sandwich-b",
+                                "Bookmarks": [
+                                    {
+                                        "Folder": "second-filling-b",
+                                        "Bookmarks": [
+                                            {
+                                                "Folder": "third-level-b",
+                                                "Bookmarks": [
+                                                    {
+                                                        "Folder": "fourth-level-b",
+                                                        "Bookmarks": [
+                                                            {
+                                                                "Bookmark": "fifth-level-b",
+                                                                "Path": "/PROJEKTS/<project nickname>/first-sandwich-b/second-filling-b/third-level-b/fourth-level-b/fifth-level-b",
+                                                                "Visibility": "Global"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "first-sandwich-c",
+                                "Bookmarks": [
+                                    {
+                                        "Folder": "second-filling-c",
+                                        "Bookmarks": [
+                                            {
+                                                "Bookmark": "third-level-c",
+                                                "Path": "/PROJEKTS/<project nickname>/first-sandwich-c/second-filling-c/third-level-c",
+                                                "Visibility": "Global"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

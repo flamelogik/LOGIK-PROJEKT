@@ -1,0 +1,1781 @@
+cfg
+└── site-cfg
+    ├── dcc-software-cfg
+    │   └── dcc-software-templates
+    │       └── placeholder
+    ├── flame-cfg
+    │   ├── flame-presets
+    │   │   ├── batch
+    │   │   │   └── pref
+    │   │   │       ├── _project.AP0_Apple_Log
+    │   │   │       │   ├── AP0_to_Apple_Log.lut_node
+    │   │   │       │   ├── Apple_Log_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_Apple_Log.compass_node
+    │   │   │       ├── _project.AP0_Apple_Log.batch
+    │   │   │       ├── _project.AP0_ARRI_LogC3
+    │   │   │       │   ├── AP0_to_ARRI_LogC3.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_ARRI_LogC3.compass_node
+    │   │   │       ├── _project.AP0_ARRI_LogC3.batch
+    │   │   │       ├── _project.AP0_ARRI_LogC4
+    │   │   │       │   ├── AP0_to_ARRI_LogC4.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_ARRI_LogC4.compass_node
+    │   │   │       ├── _project.AP0_ARRI_LogC4.batch
+    │   │   │       ├── _project.AP0_BMD
+    │   │   │       │   ├── AP0_to_BMD.lut_node
+    │   │   │       │   ├── BMD_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_BMD.compass_node
+    │   │   │       ├── _project.AP0_BMD.batch
+    │   │   │       ├── _project.AP0_Canon_D55
+    │   │   │       │   ├── AP0_to_Canon_Daylight.lut_node
+    │   │   │       │   ├── Canon_Daylight_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_Canon_Daylight.compass_node
+    │   │   │       ├── _project.AP0_Canon_D55.batch
+    │   │   │       ├── _project.AP0_Canon_TUNG
+    │   │   │       │   ├── AP0_to_Canon_Tungsten.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_Canon_Tungsten.compass_node
+    │   │   │       ├── _project.AP0_Canon_TUNG.batch
+    │   │   │       ├── _project.AP0_Log3G10
+    │   │   │       │   ├── AP0_to_R3D_Log3G10.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_Log3G10.compass_node
+    │   │   │       ├── _project.AP0_Log3G10.batch
+    │   │   │       ├── _project.AP0_Panasonic_VLog
+    │   │   │       │   ├── AP0_to_Panasonic_VLog.lut_node
+    │   │   │       │   ├── Panasonic_VLog_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_Panasonic_VLog.compass_node
+    │   │   │       ├── _project.AP0_Panasonic_VLog.batch
+    │   │   │       ├── _project.AP0_Rec709
+    │   │   │       │   ├── AP0_to_Rec709.lut_node
+    │   │   │       │   ├── Rec709_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_Rec709.compass_node
+    │   │   │       ├── _project.AP0_Rec709.batch
+    │   │   │       ├── _project.AP0_S3_SGamut3
+    │   │   │       │   ├── AP0_to_S3SGamut3.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_to_AP0.lut_node
+    │   │   │       │   └── WORKFLOW_AP0_S3SGamut3.compass_node
+    │   │   │       ├── _project.AP0_S3_SGamut3.batch
+    │   │   │       ├── _project.AP0_S3SGamut3_Cine
+    │   │   │       │   ├── AP0_to_S3SGamut3_Cine.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Cine_to_AP0.lut_node
+    │   │   │       │   └── WORKFLOW_AP0_S3SGamut3_Cine.compass_node
+    │   │   │       ├── _project.AP0_S3SGamut3_Cine.batch
+    │   │   │       ├── _project.AP0_S3SGamut3_CineVenice
+    │   │   │       │   ├── AP0_to_S3SGamut3_Cine_Venice.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_AP0.lut_node
+    │   │   │       │   └── WORKFLOW_AP0_S3SGamut3_Cine_Venice.compass_node
+    │   │   │       ├── _project.AP0_S3SGamut3_CineVenice.batch
+    │   │   │       ├── _project.AP0_S3SGamut3_Venice
+    │   │   │       │   ├── AP0_to_S3SGamut3_Venice.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_AP0.lut_node
+    │   │   │       │   └── WORKFLOW_AP0_S3SGamut3_Venice.compass_node
+    │   │   │       ├── _project.AP0_S3SGamut3_Venice.batch
+    │   │   │       ├── _project.AP0_Scene_Linear
+    │   │   │       │   ├── AP0_to_LinearRec709_sRGB.lut_node
+    │   │   │       │   ├── LinearRec709_sRGB_to_AP0.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP0_Scene_Linear_Rec709_sRGB.compass_node
+    │   │   │       ├── _project.AP0_Scene_Linear.batch
+    │   │   │       ├── _project.AP1_Apple_Log
+    │   │   │       │   ├── AP1_to_Apple_Log.lut_node
+    │   │   │       │   ├── Apple_Log_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_Apple_Log.compass_node
+    │   │   │       ├── _project.AP1_Apple_Log.batch
+    │   │   │       ├── _project.AP1_ARRI_LogC3
+    │   │   │       │   ├── AP1_to_ARRI_LogC3.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_ARRI_LogC3.compass_node
+    │   │   │       ├── _project.AP1_ARRI_LogC3.batch
+    │   │   │       ├── _project.AP1_ARRI_LogC4
+    │   │   │       │   ├── AP1_to_ARRI_LogC4.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_ARRI_LogC4.compass_node
+    │   │   │       ├── _project.AP1_ARRI_LogC4.batch
+    │   │   │       ├── _project.AP1_BMD
+    │   │   │       │   ├── AP1_to_BMD.lut_node
+    │   │   │       │   ├── BMD_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_BMD.compass_node
+    │   │   │       ├── _project.AP1_BMD.batch
+    │   │   │       ├── _project.AP1_Canon_D55
+    │   │   │       │   ├── AP1_to_Canon_Daylight.lut_node
+    │   │   │       │   ├── Canon_Daylight_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_Canon_Daylight.compass_node
+    │   │   │       ├── _project.AP1_Canon_D55.batch
+    │   │   │       ├── _project.AP1_Canon_TUNG
+    │   │   │       │   ├── AP1_to_Canon_Tungsten.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_Canon_Tungsten.compass_node
+    │   │   │       ├── _project.AP1_Canon_TUNG.batch
+    │   │   │       ├── _project.AP1_Log3G10
+    │   │   │       │   ├── AP1_to_R3D_Log3G10.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_Log3G10.compass_node
+    │   │   │       ├── _project.AP1_Log3G10.batch
+    │   │   │       ├── _project.AP1_Panasonic_VLog
+    │   │   │       │   ├── AP1_to_Panasonic_VLog.lut_node
+    │   │   │       │   ├── Panasonic_VLog_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_Panasonic_VLog.compass_node
+    │   │   │       ├── _project.AP1_Panasonic_VLog.batch
+    │   │   │       ├── _project.AP1_Rec709
+    │   │   │       │   ├── AP1_to_Rec709.lut_node
+    │   │   │       │   ├── Rec709_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_Rec709.compass_node
+    │   │   │       ├── _project.AP1_Rec709.batch
+    │   │   │       ├── _project.AP1_S3_SGamut3
+    │   │   │       │   ├── AP1_to_S3SGamut3.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_to_AP1.lut_node
+    │   │   │       │   └── WORKFLOW_AP1_S3SGamut3.compass_node
+    │   │   │       ├── _project.AP1_S3_SGamut3.batch
+    │   │   │       ├── _project.AP1_S3SGamut3_Cine
+    │   │   │       │   ├── AP1_to_S3SGamut3_Cine.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Cine_to_AP1.lut_node
+    │   │   │       │   └── WORKFLOW_AP1_S3SGamut3_Cine.compass_node
+    │   │   │       ├── _project.AP1_S3SGamut3_Cine.batch
+    │   │   │       ├── _project.AP1_S3SGamut3_CineVenice
+    │   │   │       │   ├── AP1_to_S3SGamut3_Cine_Venice.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_AP1.lut_node
+    │   │   │       │   └── WORKFLOW_AP1_S3SGamut3_Cine_Venice.compass_node
+    │   │   │       ├── _project.AP1_S3SGamut3_CineVenice.batch
+    │   │   │       ├── _project.AP1_S3SGamut3_Venice
+    │   │   │       │   ├── AP1_to_S3SGamut3_Venice.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_AP1.lut_node
+    │   │   │       │   └── WORKFLOW_AP1_S3SGamut3_Venice.compass_node
+    │   │   │       ├── _project.AP1_S3SGamut3_Venice.batch
+    │   │   │       ├── _project.AP1_Scene_Linear
+    │   │   │       │   ├── AP1_to_LinearRec709_sRGB.lut_node
+    │   │   │       │   ├── LinearRec709_sRGB_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   └── WORKFLOW_AP1_Scene_Linear_Rec709_sRGB.compass_node
+    │   │   │       ├── _project.AP1_Scene_Linear.batch
+    │   │   │       ├── project_batch.bin
+    │   │   │       ├── _project.linux_color_toolkit
+    │   │   │       │   ├── AP0_to_AP1.lut_node
+    │   │   │       │   ├── AP0_to_Apple_Log.lut_node
+    │   │   │       │   ├── AP0_to_ARRI_LogC3.lut_node
+    │   │   │       │   ├── AP0_to_ARRI_LogC4.lut_node
+    │   │   │       │   ├── AP0_to_BMD.lut_node
+    │   │   │       │   ├── AP0_to_Canon_Daylight.lut_node
+    │   │   │       │   ├── AP0_to_Canon_Tungsten.lut_node
+    │   │   │       │   ├── AP0_to_LinearRec709_sRGB.lut_node
+    │   │   │       │   ├── AP0_to_Panasonic_VLog.lut_node
+    │   │   │       │   ├── AP0_to_R3D_Log3G10.lut_node
+    │   │   │       │   ├── AP0_to_Rec709.lut_node
+    │   │   │       │   ├── AP0_to_S3SGamut3_Cine_Venice.lut_node
+    │   │   │       │   ├── AP0_to_S3SGamut3.lut_node
+    │   │   │       │   ├── AP0_to_S3SGamut3_Venice.lut_node
+    │   │   │       │   ├── AP1_to_Apple_Log.lut_node
+    │   │   │       │   ├── AP1_to_ARRI_LogC3.lut_node
+    │   │   │       │   ├── AP1_to_ARRI_LogC4.lut_node
+    │   │   │       │   ├── AP1_to_BMD.lut_node
+    │   │   │       │   ├── AP1_to_Canon_Daylight.lut_node
+    │   │   │       │   ├── AP1_to_Canon_Tungsten.lut_node
+    │   │   │       │   ├── AP1_to_LinearRec709_sRGB.lut_node
+    │   │   │       │   ├── AP1_to_Panasonic_VLog.lut_node
+    │   │   │       │   ├── AP1_to_R3D_Log3G10.lut_node
+    │   │   │       │   ├── AP1_to_Rec709.lut_node
+    │   │   │       │   ├── AP1_to_S3SGamut3_Cine_Venice.lut_node
+    │   │   │       │   ├── AP1_to_S3SGamut3.lut_node
+    │   │   │       │   ├── AP1_to_S3SGamut3_Venice.lut_node
+    │   │   │       │   ├── Apple_Log_to_AP0.lut_node
+    │   │   │       │   ├── Apple_Log_to_AP1.lut_node
+    │   │   │       │   ├── Apple_Log_to_Rec709.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_AP0.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_AP1.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_Rec709.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_AP0.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_AP1.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_Rec709.lut_node
+    │   │   │       │   ├── BMD_to_AP0.lut_node
+    │   │   │       │   ├── BMD_to_AP1.lut_node
+    │   │   │       │   ├── BMD_to_Rec709.lut_node
+    │   │   │       │   ├── burnmetadata10004589.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004590.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004591.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004592.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004593.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004594.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004595.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004596.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004597.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004598.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004599.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004600.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004601.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004602.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004603.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004604.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004609.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004610.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004611.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004612.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004613.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004614.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004615.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004616.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004617.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004618.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004619.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004620.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004621.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004622.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004623.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004624.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004625.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004626.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004627.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004628.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004629.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004630.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004631.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004632.burnmetadata_node
+    │   │   │       │   ├── burnmetadata220.burnmetadata_node
+    │   │   │       │   ├── burnmetadata222.burnmetadata_node
+    │   │   │       │   ├── burnmetadata224.burnmetadata_node
+    │   │   │       │   ├── burnmetadata226.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Apple_Log.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_ARRI_LogC3.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_ARRI_LogC4.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_BMD.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Canon_Daylight.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Canon_Tungsten.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Panasonic_VLog.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_R3D_Log3G10.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_S3SGamut3.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_S3SGamut3_Cine_Venice.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_S3SGamut3_Venice.burnmetadata_node
+    │   │   │       │   ├── Canon_Daylight_to_AP0.lut_node
+    │   │   │       │   ├── Canon_Daylight_to_AP1.lut_node
+    │   │   │       │   ├── Canon_Daylight_to_Rec709.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_AP0.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_AP1.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_Rec709.lut_node
+    │   │   │       │   ├── clip591.clip_node
+    │   │   │       │   ├── clip591.clip_node_clip
+    │   │   │       │   ├── clip591.clip_node_format
+    │   │   │       │   ├── clip591.lut_node
+    │   │   │       │   ├── clip591.resize
+    │   │   │       │   ├── clip591.resize_node
+    │   │   │       │   ├── clrmgmt10002596.lut_node
+    │   │   │       │   ├── clrmgmt10002603.lut_node
+    │   │   │       │   ├── clrmgmt10002604.lut_node
+    │   │   │       │   ├── clrmgmt10002605.lut_node
+    │   │   │       │   ├── clrmgmt10002606.lut_node
+    │   │   │       │   ├── clrmgmt10002607.lut_node
+    │   │   │       │   ├── clrmgmt10002608.lut_node
+    │   │   │       │   ├── clrmgmt10002609.lut_node
+    │   │   │       │   ├── clrmgmt10002610.lut_node
+    │   │   │       │   ├── clrmgmt10002611.lut_node
+    │   │   │       │   ├── clrmgmt10002612.lut_node
+    │   │   │       │   ├── clrmgmt10002613.lut_node
+    │   │   │       │   ├── clrmgmt10002614.lut_node
+    │   │   │       │   ├── clrmgmt10002615.lut_node
+    │   │   │       │   ├── clrmgmt10002616.lut_node
+    │   │   │       │   ├── clrmgmt10002617.lut_node
+    │   │   │       │   ├── clrmgmt10002618.lut_node
+    │   │   │       │   ├── clrmgmt10002624.lut_node
+    │   │   │       │   ├── clrmgmt10002625.lut_node
+    │   │   │       │   ├── clrmgmt10002626.lut_node
+    │   │   │       │   ├── clrmgmt10002627.lut_node
+    │   │   │       │   ├── clrmgmt10002634.lut_node
+    │   │   │       │   ├── clrmgmt10002635.lut_node
+    │   │   │       │   ├── clrmgmt10002636.lut_node
+    │   │   │       │   ├── clrmgmt10002637.lut_node
+    │   │   │       │   ├── clrmgmt10002639.lut_node
+    │   │   │       │   ├── clrmgmt10002640.lut_node
+    │   │   │       │   ├── clrmgmt10002641.lut_node
+    │   │   │       │   ├── clrmgmt10002642.lut_node
+    │   │   │       │   ├── clrmgmt10002643.lut_node
+    │   │   │       │   ├── clrmgmt10002644.lut_node
+    │   │   │       │   ├── clrmgmt10002645.lut_node
+    │   │   │       │   ├── clrmgmt10002646.lut_node
+    │   │   │       │   ├── clrmgmt10002647.lut_node
+    │   │   │       │   ├── clrmgmt10002648.lut_node
+    │   │   │       │   ├── clrmgmt10002649.lut_node
+    │   │   │       │   ├── clrmgmt10002650.lut_node
+    │   │   │       │   ├── clrmgmt10002651.lut_node
+    │   │   │       │   ├── clrmgmt10002652.lut_node
+    │   │   │       │   ├── clrmgmt10002653.lut_node
+    │   │   │       │   ├── clrmgmt10002654.lut_node
+    │   │   │       │   ├── clrmgmt219.lut_node
+    │   │   │       │   ├── clrmgmt221.lut_node
+    │   │   │       │   ├── clrmgmt223.lut_node
+    │   │   │       │   ├── elbow10.elbow_node
+    │   │   │       │   ├── elbow11.elbow_node
+    │   │   │       │   ├── elbow12.elbow_node
+    │   │   │       │   ├── elbow13.elbow_node
+    │   │   │       │   ├── elbow14.elbow_node
+    │   │   │       │   ├── elbow15.elbow_node
+    │   │   │       │   ├── elbow16.elbow_node
+    │   │   │       │   ├── elbow17.elbow_node
+    │   │   │       │   ├── elbow18.elbow_node
+    │   │   │       │   ├── elbow19.elbow_node
+    │   │   │       │   ├── elbow1.elbow_node
+    │   │   │       │   ├── elbow20.elbow_node
+    │   │   │       │   ├── elbow21.elbow_node
+    │   │   │       │   ├── elbow22.elbow_node
+    │   │   │       │   ├── elbow23.elbow_node
+    │   │   │       │   ├── elbow24.elbow_node
+    │   │   │       │   ├── elbow25.elbow_node
+    │   │   │       │   ├── elbow26.elbow_node
+    │   │   │       │   ├── elbow27.elbow_node
+    │   │   │       │   ├── elbow28.elbow_node
+    │   │   │       │   ├── elbow29.elbow_node
+    │   │   │       │   ├── elbow2.elbow_node
+    │   │   │       │   ├── elbow30.elbow_node
+    │   │   │       │   ├── elbow31.elbow_node
+    │   │   │       │   ├── elbow32.elbow_node
+    │   │   │       │   ├── elbow33.elbow_node
+    │   │   │       │   ├── elbow34.elbow_node
+    │   │   │       │   ├── elbow35.elbow_node
+    │   │   │       │   ├── elbow36.elbow_node
+    │   │   │       │   ├── elbow37.elbow_node
+    │   │   │       │   ├── elbow38.elbow_node
+    │   │   │       │   ├── elbow39.elbow_node
+    │   │   │       │   ├── elbow3.elbow_node
+    │   │   │       │   ├── elbow40.elbow_node
+    │   │   │       │   ├── elbow41.elbow_node
+    │   │   │       │   ├── elbow42.elbow_node
+    │   │   │       │   ├── elbow43.elbow_node
+    │   │   │       │   ├── elbow44.elbow_node
+    │   │   │       │   ├── elbow45.elbow_node
+    │   │   │       │   ├── elbow46.elbow_node
+    │   │   │       │   ├── elbow47.elbow_node
+    │   │   │       │   ├── elbow48.elbow_node
+    │   │   │       │   ├── elbow49.elbow_node
+    │   │   │       │   ├── elbow4.elbow_node
+    │   │   │       │   ├── elbow50.elbow_node
+    │   │   │       │   ├── elbow51.elbow_node
+    │   │   │       │   ├── elbow52.elbow_node
+    │   │   │       │   ├── elbow53.elbow_node
+    │   │   │       │   ├── elbow54.elbow_node
+    │   │   │       │   ├── elbow55.elbow_node
+    │   │   │       │   ├── elbow56.elbow_node
+    │   │   │       │   ├── elbow57.elbow_node
+    │   │   │       │   ├── elbow58.elbow_node
+    │   │   │       │   ├── elbow59.elbow_node
+    │   │   │       │   ├── elbow5.elbow_node
+    │   │   │       │   ├── elbow60.elbow_node
+    │   │   │       │   ├── elbow61.elbow_node
+    │   │   │       │   ├── elbow62.elbow_node
+    │   │   │       │   ├── elbow63.elbow_node
+    │   │   │       │   ├── elbow64.elbow_node
+    │   │   │       │   ├── elbow65.elbow_node
+    │   │   │       │   ├── elbow66.elbow_node
+    │   │   │       │   ├── elbow67.elbow_node
+    │   │   │       │   ├── elbow68.elbow_node
+    │   │   │       │   ├── elbow69.elbow_node
+    │   │   │       │   ├── elbow6.elbow_node
+    │   │   │       │   ├── elbow71.elbow_node
+    │   │   │       │   ├── elbow72.elbow_node
+    │   │   │       │   ├── elbow73.elbow_node
+    │   │   │       │   ├── elbow74.elbow_node
+    │   │   │       │   ├── elbow75.elbow_node
+    │   │   │       │   ├── elbow76.elbow_node
+    │   │   │       │   ├── elbow77.elbow_node
+    │   │   │       │   ├── elbow78.elbow_node
+    │   │   │       │   ├── elbow79.elbow_node
+    │   │   │       │   ├── elbow7.elbow_node
+    │   │   │       │   ├── elbow80.elbow_node
+    │   │   │       │   ├── elbow81.elbow_node
+    │   │   │       │   ├── elbow82.elbow_node
+    │   │   │       │   ├── elbow83.elbow_node
+    │   │   │       │   ├── elbow9.elbow_node
+    │   │   │       │   ├── flame_colortoolkit_Apple_Log.compass_node
+    │   │   │       │   ├── flame_colortoolkit_ARRI_LogC3.compass_node
+    │   │   │       │   ├── flame_colortoolkit_ARRI_LogC4.compass_node
+    │   │   │       │   ├── flame_colortoolkit_BMD_Film5.compass_node
+    │   │   │       │   ├── flame_colortoolkit_Canon_Daylight.compass_node
+    │   │   │       │   ├── flame_colortoolkit_Canon_Tungsten.compass_node
+    │   │   │       │   ├── flame_colortoolkit_Panasonic_VLog.compass_node
+    │   │   │       │   ├── flame_colortoolkit_R3D_Log3G10.compass_node
+    │   │   │       │   ├── flame_colortoolkit_SONY_S3SGamut3_Cine_Venice.compass_node
+    │   │   │       │   ├── flame_colortoolkit_SONY_S3SGamut3.compass_node
+    │   │   │       │   ├── flame_colortoolkit_SONY_S3SGamut3_Venice.compass_node
+    │   │   │       │   ├── IDENTITY_Apple_Log.mux_node
+    │   │   │       │   ├── IDENTITY_ARRI_LogC3.mux_node
+    │   │   │       │   ├── IDENTITY_ARRI_LogC4.mux_node
+    │   │   │       │   ├── IDENTITY_BMD.mux_node
+    │   │   │       │   ├── IDENTITY_Canon_Daylight.mux_node
+    │   │   │       │   ├── IDENTITY_Canon_Tungsten.mux_node
+    │   │   │       │   ├── IDENTITY_Panasonic_VLog.mux_node
+    │   │   │       │   ├── IDENTITY_R3D_Log3G10.mux_node
+    │   │   │       │   ├── IDENTITY_S3SGamut3_Cine_Venice.mux_node
+    │   │   │       │   ├── IDENTITY_S3SGamut3.mux_node
+    │   │   │       │   ├── IDENTITY_S3SGamut3_Venice.mux_node
+    │   │   │       │   ├── KODAK_Digital_LAD.compass_node
+    │   │   │       │   ├── LinearRec709_sRGB_to_AP0.lut_node
+    │   │   │       │   ├── LinearRec709_sRGB_to_Rec709.lut_node
+    │   │   │       │   ├── Log_to_Lin__classic_AP0.lut_node
+    │   │   │       │   ├── Log_to_Lin__classic.lut_node
+    │   │   │       │   ├── Ls_Contacts218.1.glsl
+    │   │   │       │   ├── Ls_Contacts218.matchbox_node
+    │   │   │       │   ├── Ls_Contacts218.xml
+    │   │   │       │   ├── Ls_Contacts589.1.glsl
+    │   │   │       │   ├── Ls_Contacts589.matchbox_node
+    │   │   │       │   ├── Ls_Contacts589.xml
+    │   │   │       │   ├── Ls_Contacts590.1.glsl
+    │   │   │       │   ├── Ls_Contacts590.matchbox_node
+    │   │   │       │   ├── Ls_Contacts590.xml
+    │   │   │       │   ├── Ls_Contacts591.1.glsl
+    │   │   │       │   ├── Ls_Contacts591.matchbox_node
+    │   │   │       │   ├── Ls_Contacts591.xml
+    │   │   │       │   ├── Ls_Contacts592.1.glsl
+    │   │   │       │   ├── Ls_Contacts592.matchbox_node
+    │   │   │       │   ├── Ls_Contacts592.xml
+    │   │   │       │   ├── Ls_Contacts594.1.glsl
+    │   │   │       │   ├── Ls_Contacts594.matchbox_node
+    │   │   │       │   ├── Ls_Contacts594.xml
+    │   │   │       │   ├── Ls_Contacts595.1.glsl
+    │   │   │       │   ├── Ls_Contacts595.matchbox_node
+    │   │   │       │   ├── Ls_Contacts595.xml
+    │   │   │       │   ├── Ls_Contacts596.1.glsl
+    │   │   │       │   ├── Ls_Contacts596.matchbox_node
+    │   │   │       │   ├── Ls_Contacts596.xml
+    │   │   │       │   ├── Ls_Contacts597.1.glsl
+    │   │   │       │   ├── Ls_Contacts597.matchbox_node
+    │   │   │       │   ├── Ls_Contacts597.xml
+    │   │   │       │   ├── Ls_Contacts598.1.glsl
+    │   │   │       │   ├── Ls_Contacts598.matchbox_node
+    │   │   │       │   ├── Ls_Contacts598.xml
+    │   │   │       │   ├── Ls_Contacts599.1.glsl
+    │   │   │       │   ├── Ls_Contacts599.matchbox_node
+    │   │   │       │   ├── Ls_Contacts599.xml
+    │   │   │       │   ├── mux14.mux_node
+    │   │   │       │   ├── note1.note_node
+    │   │   │       │   ├── note2.note_node
+    │   │   │       │   ├── Panasonic_VLog_to_AP0.lut_node
+    │   │   │       │   ├── Panasonic_VLog_to_AP1.lut_node
+    │   │   │       │   ├── Panasonic_VLog_to_Rec709.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_AP0.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_AP1.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_Rec709.lut_node
+    │   │   │       │   ├── Rec709_to_AP0.lut_node
+    │   │   │       │   ├── Rec709_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_AP0.lut_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_AP1.lut_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_Rec709.lut_node
+    │   │   │       │   ├── S3SGamut3_to_AP0.lut_node
+    │   │   │       │   ├── S3SGamut3_to_AP1.lut_node
+    │   │   │       │   ├── S3SGamut3_to_Rec709.lut_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_AP0.lut_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_AP1.lut_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_Rec709.lut_node
+    │   │   │       │   ├── SOURCE_CLIP_Apple_Log.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_ARRI_LogC3.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_ARRI_LogC4.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_BMD.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_Canon_Daylight.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_Canon_Tungsten.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_Panasonic_VLog.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_R3D_Log3G10.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_S3SGamut3_Cine_Venice.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_S3SGamut3.mux_node
+    │   │   │       │   └── SOURCE_CLIP_S3SGamut3_Venice.mux_node
+    │   │   │       ├── _project.linux_color_toolkit.batch
+    │   │   │       ├── _project.macOS_color_toolkit
+    │   │   │       │   ├── AP0_to_AP1.lut_node
+    │   │   │       │   ├── AP0_to_Apple_Log.lut_node
+    │   │   │       │   ├── AP0_to_ARRI_LogC3.lut_node
+    │   │   │       │   ├── AP0_to_ARRI_LogC4.lut_node
+    │   │   │       │   ├── AP0_to_BMD.lut_node
+    │   │   │       │   ├── AP0_to_Canon_Daylight.lut_node
+    │   │   │       │   ├── AP0_to_Canon_Tungsten.lut_node
+    │   │   │       │   ├── AP0_to_LinearRec709_sRGB.lut_node
+    │   │   │       │   ├── AP0_to_Panasonic_VLog.lut_node
+    │   │   │       │   ├── AP0_to_R3D_Log3G10.lut_node
+    │   │   │       │   ├── AP0_to_Rec709.lut_node
+    │   │   │       │   ├── AP0_to_S3SGamut3_Cine_Venice.lut_node
+    │   │   │       │   ├── AP0_to_S3SGamut3.lut_node
+    │   │   │       │   ├── AP0_to_S3SGamut3_Venice.lut_node
+    │   │   │       │   ├── AP1_to_Apple_Log.lut_node
+    │   │   │       │   ├── AP1_to_ARRI_LogC3.lut_node
+    │   │   │       │   ├── AP1_to_ARRI_LogC4.lut_node
+    │   │   │       │   ├── AP1_to_BMD.lut_node
+    │   │   │       │   ├── AP1_to_Canon_Daylight.lut_node
+    │   │   │       │   ├── AP1_to_Canon_Tungsten.lut_node
+    │   │   │       │   ├── AP1_to_LinearRec709_sRGB.lut_node
+    │   │   │       │   ├── AP1_to_Panasonic_VLog.lut_node
+    │   │   │       │   ├── AP1_to_R3D_Log3G10.lut_node
+    │   │   │       │   ├── AP1_to_Rec709.lut_node
+    │   │   │       │   ├── AP1_to_S3SGamut3_Cine_Venice.lut_node
+    │   │   │       │   ├── AP1_to_S3SGamut3.lut_node
+    │   │   │       │   ├── AP1_to_S3SGamut3_Venice.lut_node
+    │   │   │       │   ├── Apple_Log_to_AP0.lut_node
+    │   │   │       │   ├── Apple_Log_to_AP1.lut_node
+    │   │   │       │   ├── Apple_Log_to_Rec709.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_AP0.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_AP1.lut_node
+    │   │   │       │   ├── ARRI_LogC3_to_Rec709.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_AP0.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_AP1.lut_node
+    │   │   │       │   ├── ARRI_LogC4_to_Rec709.lut_node
+    │   │   │       │   ├── BMD_to_AP0.lut_node
+    │   │   │       │   ├── BMD_to_AP1.lut_node
+    │   │   │       │   ├── BMD_to_Rec709.lut_node
+    │   │   │       │   ├── burnmetadata10004589.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004590.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004591.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004592.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004593.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004594.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004595.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004596.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004597.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004598.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004599.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004600.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004601.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004602.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004603.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004604.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004609.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004610.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004611.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004612.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004613.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004614.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004615.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004616.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004617.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004618.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004619.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004620.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004621.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004622.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004623.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004624.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004625.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004626.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004627.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004628.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004629.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004630.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004631.burnmetadata_node
+    │   │   │       │   ├── burnmetadata10004632.burnmetadata_node
+    │   │   │       │   ├── burnmetadata220.burnmetadata_node
+    │   │   │       │   ├── burnmetadata222.burnmetadata_node
+    │   │   │       │   ├── burnmetadata224.burnmetadata_node
+    │   │   │       │   ├── burnmetadata226.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Apple_Log.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_ARRI_LogC3.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_ARRI_LogC4.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_BMD.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Canon_Daylight.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Canon_Tungsten.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_Panasonic_VLog.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_R3D_Log3G10.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_S3SGamut3.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_S3SGamut3_Cine_Venice.burnmetadata_node
+    │   │   │       │   ├── burnmetadata_S3SGamut3_Venice.burnmetadata_node
+    │   │   │       │   ├── Canon_Daylight_to_AP0.lut_node
+    │   │   │       │   ├── Canon_Daylight_to_AP1.lut_node
+    │   │   │       │   ├── Canon_Daylight_to_Rec709.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_AP0.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_AP1.lut_node
+    │   │   │       │   ├── Canon_Tungsten_to_Rec709.lut_node
+    │   │   │       │   ├── clip591.clip_node
+    │   │   │       │   ├── clip591.clip_node_clip
+    │   │   │       │   ├── clip591.clip_node_format
+    │   │   │       │   ├── clip591.lut_node
+    │   │   │       │   ├── clip591.resize
+    │   │   │       │   ├── clip591.resize_node
+    │   │   │       │   ├── clrmgmt10002596.lut_node
+    │   │   │       │   ├── clrmgmt10002603.lut_node
+    │   │   │       │   ├── clrmgmt10002604.lut_node
+    │   │   │       │   ├── clrmgmt10002605.lut_node
+    │   │   │       │   ├── clrmgmt10002606.lut_node
+    │   │   │       │   ├── clrmgmt10002607.lut_node
+    │   │   │       │   ├── clrmgmt10002608.lut_node
+    │   │   │       │   ├── clrmgmt10002609.lut_node
+    │   │   │       │   ├── clrmgmt10002610.lut_node
+    │   │   │       │   ├── clrmgmt10002611.lut_node
+    │   │   │       │   ├── clrmgmt10002612.lut_node
+    │   │   │       │   ├── clrmgmt10002613.lut_node
+    │   │   │       │   ├── clrmgmt10002614.lut_node
+    │   │   │       │   ├── clrmgmt10002615.lut_node
+    │   │   │       │   ├── clrmgmt10002616.lut_node
+    │   │   │       │   ├── clrmgmt10002617.lut_node
+    │   │   │       │   ├── clrmgmt10002618.lut_node
+    │   │   │       │   ├── clrmgmt10002624.lut_node
+    │   │   │       │   ├── clrmgmt10002625.lut_node
+    │   │   │       │   ├── clrmgmt10002626.lut_node
+    │   │   │       │   ├── clrmgmt10002627.lut_node
+    │   │   │       │   ├── clrmgmt10002634.lut_node
+    │   │   │       │   ├── clrmgmt10002635.lut_node
+    │   │   │       │   ├── clrmgmt10002636.lut_node
+    │   │   │       │   ├── clrmgmt10002637.lut_node
+    │   │   │       │   ├── clrmgmt10002639.lut_node
+    │   │   │       │   ├── clrmgmt10002640.lut_node
+    │   │   │       │   ├── clrmgmt10002641.lut_node
+    │   │   │       │   ├── clrmgmt10002642.lut_node
+    │   │   │       │   ├── clrmgmt10002643.lut_node
+    │   │   │       │   ├── clrmgmt10002644.lut_node
+    │   │   │       │   ├── clrmgmt10002645.lut_node
+    │   │   │       │   ├── clrmgmt10002646.lut_node
+    │   │   │       │   ├── clrmgmt10002647.lut_node
+    │   │   │       │   ├── clrmgmt10002648.lut_node
+    │   │   │       │   ├── clrmgmt10002649.lut_node
+    │   │   │       │   ├── clrmgmt10002650.lut_node
+    │   │   │       │   ├── clrmgmt10002651.lut_node
+    │   │   │       │   ├── clrmgmt10002652.lut_node
+    │   │   │       │   ├── clrmgmt10002653.lut_node
+    │   │   │       │   ├── clrmgmt10002654.lut_node
+    │   │   │       │   ├── clrmgmt219.lut_node
+    │   │   │       │   ├── clrmgmt221.lut_node
+    │   │   │       │   ├── clrmgmt223.lut_node
+    │   │   │       │   ├── elbow10.elbow_node
+    │   │   │       │   ├── elbow11.elbow_node
+    │   │   │       │   ├── elbow12.elbow_node
+    │   │   │       │   ├── elbow13.elbow_node
+    │   │   │       │   ├── elbow14.elbow_node
+    │   │   │       │   ├── elbow15.elbow_node
+    │   │   │       │   ├── elbow16.elbow_node
+    │   │   │       │   ├── elbow17.elbow_node
+    │   │   │       │   ├── elbow18.elbow_node
+    │   │   │       │   ├── elbow19.elbow_node
+    │   │   │       │   ├── elbow1.elbow_node
+    │   │   │       │   ├── elbow20.elbow_node
+    │   │   │       │   ├── elbow21.elbow_node
+    │   │   │       │   ├── elbow22.elbow_node
+    │   │   │       │   ├── elbow23.elbow_node
+    │   │   │       │   ├── elbow24.elbow_node
+    │   │   │       │   ├── elbow25.elbow_node
+    │   │   │       │   ├── elbow26.elbow_node
+    │   │   │       │   ├── elbow27.elbow_node
+    │   │   │       │   ├── elbow28.elbow_node
+    │   │   │       │   ├── elbow29.elbow_node
+    │   │   │       │   ├── elbow2.elbow_node
+    │   │   │       │   ├── elbow30.elbow_node
+    │   │   │       │   ├── elbow31.elbow_node
+    │   │   │       │   ├── elbow32.elbow_node
+    │   │   │       │   ├── elbow33.elbow_node
+    │   │   │       │   ├── elbow34.elbow_node
+    │   │   │       │   ├── elbow35.elbow_node
+    │   │   │       │   ├── elbow36.elbow_node
+    │   │   │       │   ├── elbow37.elbow_node
+    │   │   │       │   ├── elbow38.elbow_node
+    │   │   │       │   ├── elbow39.elbow_node
+    │   │   │       │   ├── elbow3.elbow_node
+    │   │   │       │   ├── elbow40.elbow_node
+    │   │   │       │   ├── elbow41.elbow_node
+    │   │   │       │   ├── elbow42.elbow_node
+    │   │   │       │   ├── elbow43.elbow_node
+    │   │   │       │   ├── elbow44.elbow_node
+    │   │   │       │   ├── elbow45.elbow_node
+    │   │   │       │   ├── elbow46.elbow_node
+    │   │   │       │   ├── elbow47.elbow_node
+    │   │   │       │   ├── elbow48.elbow_node
+    │   │   │       │   ├── elbow49.elbow_node
+    │   │   │       │   ├── elbow4.elbow_node
+    │   │   │       │   ├── elbow50.elbow_node
+    │   │   │       │   ├── elbow51.elbow_node
+    │   │   │       │   ├── elbow52.elbow_node
+    │   │   │       │   ├── elbow53.elbow_node
+    │   │   │       │   ├── elbow54.elbow_node
+    │   │   │       │   ├── elbow55.elbow_node
+    │   │   │       │   ├── elbow56.elbow_node
+    │   │   │       │   ├── elbow57.elbow_node
+    │   │   │       │   ├── elbow58.elbow_node
+    │   │   │       │   ├── elbow59.elbow_node
+    │   │   │       │   ├── elbow5.elbow_node
+    │   │   │       │   ├── elbow60.elbow_node
+    │   │   │       │   ├── elbow61.elbow_node
+    │   │   │       │   ├── elbow62.elbow_node
+    │   │   │       │   ├── elbow63.elbow_node
+    │   │   │       │   ├── elbow64.elbow_node
+    │   │   │       │   ├── elbow65.elbow_node
+    │   │   │       │   ├── elbow66.elbow_node
+    │   │   │       │   ├── elbow67.elbow_node
+    │   │   │       │   ├── elbow68.elbow_node
+    │   │   │       │   ├── elbow69.elbow_node
+    │   │   │       │   ├── elbow6.elbow_node
+    │   │   │       │   ├── elbow71.elbow_node
+    │   │   │       │   ├── elbow72.elbow_node
+    │   │   │       │   ├── elbow73.elbow_node
+    │   │   │       │   ├── elbow74.elbow_node
+    │   │   │       │   ├── elbow75.elbow_node
+    │   │   │       │   ├── elbow76.elbow_node
+    │   │   │       │   ├── elbow77.elbow_node
+    │   │   │       │   ├── elbow78.elbow_node
+    │   │   │       │   ├── elbow79.elbow_node
+    │   │   │       │   ├── elbow7.elbow_node
+    │   │   │       │   ├── elbow80.elbow_node
+    │   │   │       │   ├── elbow81.elbow_node
+    │   │   │       │   ├── elbow82.elbow_node
+    │   │   │       │   ├── elbow83.elbow_node
+    │   │   │       │   ├── elbow9.elbow_node
+    │   │   │       │   ├── flame_colortoolkit_Apple_Log.compass_node
+    │   │   │       │   ├── flame_colortoolkit_ARRI_LogC3.compass_node
+    │   │   │       │   ├── flame_colortoolkit_ARRI_LogC4.compass_node
+    │   │   │       │   ├── flame_colortoolkit_BMD_Film5.compass_node
+    │   │   │       │   ├── flame_colortoolkit_Canon_Daylight.compass_node
+    │   │   │       │   ├── flame_colortoolkit_Canon_Tungsten.compass_node
+    │   │   │       │   ├── flame_colortoolkit_Panasonic_VLog.compass_node
+    │   │   │       │   ├── flame_colortoolkit_R3D_Log3G10.compass_node
+    │   │   │       │   ├── flame_colortoolkit_SONY_S3SGamut3_Cine_Venice.compass_node
+    │   │   │       │   ├── flame_colortoolkit_SONY_S3SGamut3.compass_node
+    │   │   │       │   ├── flame_colortoolkit_SONY_S3SGamut3_Venice.compass_node
+    │   │   │       │   ├── IDENTITY_Apple_Log.mux_node
+    │   │   │       │   ├── IDENTITY_ARRI_LogC3.mux_node
+    │   │   │       │   ├── IDENTITY_ARRI_LogC4.mux_node
+    │   │   │       │   ├── IDENTITY_BMD.mux_node
+    │   │   │       │   ├── IDENTITY_Canon_Daylight.mux_node
+    │   │   │       │   ├── IDENTITY_Canon_Tungsten.mux_node
+    │   │   │       │   ├── IDENTITY_Panasonic_VLog.mux_node
+    │   │   │       │   ├── IDENTITY_R3D_Log3G10.mux_node
+    │   │   │       │   ├── IDENTITY_S3SGamut3_Cine_Venice.mux_node
+    │   │   │       │   ├── IDENTITY_S3SGamut3.mux_node
+    │   │   │       │   ├── IDENTITY_S3SGamut3_Venice.mux_node
+    │   │   │       │   ├── KODAK_Digital_LAD.compass_node
+    │   │   │       │   ├── LinearRec709_sRGB_to_AP0.lut_node
+    │   │   │       │   ├── LinearRec709_sRGB_to_Rec709.lut_node
+    │   │   │       │   ├── Log_to_Lin__classic_AP0.lut_node
+    │   │   │       │   ├── Log_to_Lin__classic.lut_node
+    │   │   │       │   ├── Ls_Contacts218.1.glsl
+    │   │   │       │   ├── Ls_Contacts218.matchbox_node
+    │   │   │       │   ├── Ls_Contacts218.xml
+    │   │   │       │   ├── Ls_Contacts589.1.glsl
+    │   │   │       │   ├── Ls_Contacts589.matchbox_node
+    │   │   │       │   ├── Ls_Contacts589.xml
+    │   │   │       │   ├── Ls_Contacts590.1.glsl
+    │   │   │       │   ├── Ls_Contacts590.matchbox_node
+    │   │   │       │   ├── Ls_Contacts590.xml
+    │   │   │       │   ├── Ls_Contacts591.1.glsl
+    │   │   │       │   ├── Ls_Contacts591.matchbox_node
+    │   │   │       │   ├── Ls_Contacts591.xml
+    │   │   │       │   ├── Ls_Contacts592.1.glsl
+    │   │   │       │   ├── Ls_Contacts592.matchbox_node
+    │   │   │       │   ├── Ls_Contacts592.xml
+    │   │   │       │   ├── Ls_Contacts594.1.glsl
+    │   │   │       │   ├── Ls_Contacts594.matchbox_node
+    │   │   │       │   ├── Ls_Contacts594.xml
+    │   │   │       │   ├── Ls_Contacts595.1.glsl
+    │   │   │       │   ├── Ls_Contacts595.matchbox_node
+    │   │   │       │   ├── Ls_Contacts595.xml
+    │   │   │       │   ├── Ls_Contacts596.1.glsl
+    │   │   │       │   ├── Ls_Contacts596.matchbox_node
+    │   │   │       │   ├── Ls_Contacts596.xml
+    │   │   │       │   ├── Ls_Contacts597.1.glsl
+    │   │   │       │   ├── Ls_Contacts597.matchbox_node
+    │   │   │       │   ├── Ls_Contacts597.xml
+    │   │   │       │   ├── Ls_Contacts598.1.glsl
+    │   │   │       │   ├── Ls_Contacts598.matchbox_node
+    │   │   │       │   ├── Ls_Contacts598.xml
+    │   │   │       │   ├── Ls_Contacts599.1.glsl
+    │   │   │       │   ├── Ls_Contacts599.matchbox_node
+    │   │   │       │   ├── Ls_Contacts599.xml
+    │   │   │       │   ├── mux14.mux_node
+    │   │   │       │   ├── note1.note_node
+    │   │   │       │   ├── note2.note_node
+    │   │   │       │   ├── Panasonic_VLog_to_AP0.lut_node
+    │   │   │       │   ├── Panasonic_VLog_to_AP1.lut_node
+    │   │   │       │   ├── Panasonic_VLog_to_Rec709.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_AP0.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_AP1.lut_node
+    │   │   │       │   ├── R3D_Log3G10_to_Rec709.lut_node
+    │   │   │       │   ├── Rec709_to_AP0.lut_node
+    │   │   │       │   ├── Rec709_to_AP1.lut_node
+    │   │   │       │   ├── root.root_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_AP0.lut_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_AP1.lut_node
+    │   │   │       │   ├── S3SGamut3_Cine_Venice_to_Rec709.lut_node
+    │   │   │       │   ├── S3SGamut3_to_AP0.lut_node
+    │   │   │       │   ├── S3SGamut3_to_AP1.lut_node
+    │   │   │       │   ├── S3SGamut3_to_Rec709.lut_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_AP0.lut_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_AP1.lut_node
+    │   │   │       │   ├── S3SGamut3_Venice_to_Rec709.lut_node
+    │   │   │       │   ├── SOURCE_CLIP_Apple_Log.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_ARRI_LogC3.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_ARRI_LogC4.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_BMD.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_Canon_Daylight.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_Canon_Tungsten.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_Panasonic_VLog.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_R3D_Log3G10.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_S3SGamut3_Cine_Venice.mux_node
+    │   │   │       │   ├── SOURCE_CLIP_S3SGamut3.mux_node
+    │   │   │       │   └── SOURCE_CLIP_S3SGamut3_Venice.mux_node
+    │   │   │       └── _project.macOS_color_toolkit.batch
+    │   │   ├── burn_metadata
+    │   │   │   └── overlay
+    │   │   ├── color_coding
+    │   │   │   ├── color_coding.json
+    │   │   │   └── colour_coding.cfg
+    │   │   ├── export
+    │   │   │   └── presets
+    │   │   │       ├── movie_file
+    │   │   │       │   ├── projekt-movie_file-color_grade.xml
+    │   │   │       │   ├── projekt-movie_file-reference.xml
+    │   │   │       │   └── projekt-movie_file-wip-posting.xml
+    │   │   │       └── sequence_publish
+    │   │   │           ├── projekt_sequence_publish-aaf.xml
+    │   │   │           ├── projekt_sequence_publish-edl.xml
+    │   │   │           ├── projekt_sequence_publish-xml.xml
+    │   │   │           ├── projekt_shot_publish-ACEScg-v0000-batch_groups.xml
+    │   │   │           └── projekt_shot_publish-ACEScg-v0001-graded_pass.xml
+    │   │   ├── import
+    │   │   │   └── presets
+    │   │   │       └── pattern.json
+    │   │   ├── mediahub
+    │   │   │   └── pref
+    │   │   │       └── ProjectsCurrent.json
+    │   │   ├── media_import
+    │   │   │   └── pref
+    │   │   │       ├── ARRIMXF_1.fmt
+    │   │   │       ├── ARRIRAW_15.fmt
+    │   │   │       ├── ARRIRAW7_3.fmt
+    │   │   │       ├── AudioIO_1.fmt
+    │   │   │       ├── AVCHD_1.fmt
+    │   │   │       ├── BMDRaw_2.fmt
+    │   │   │       ├── Canon_13.fmt
+    │   │   │       ├── ConformCurrent.json
+    │   │   │       ├── conformResizeFormat
+    │   │   │       ├── Current.json
+    │   │   │       ├── DPX_6.fmt
+    │   │   │       ├── HDR_6.fmt
+    │   │   │       ├── ImageIO_6.fmt
+    │   │   │       ├── MIO Clip_2.fmt
+    │   │   │       ├── MP4_9.fmt
+    │   │   │       ├── MXF_13.fmt
+    │   │   │       ├── OpenEXR_8.fmt
+    │   │   │       ├── P2_13.fmt
+    │   │   │       ├── PhotoShop_6.fmt
+    │   │   │       ├── PNG_6.fmt
+    │   │   │       ├── Quicktime_11.fmt
+    │   │   │       ├── R3D_19.fmt
+    │   │   │       ├── resizeFormat
+    │   │   │       ├── resizeOptions
+    │   │   │       ├── SonyMXF_13.fmt
+    │   │   │       ├── SonyXAVC_2.fmt
+    │   │   │       ├── XDCAM_13.fmt
+    │   │   │       └── XDCAMEX_9.fmt
+    │   │   ├── mediaImport
+    │   │   │   ├── pref
+    │   │   │   │   ├── ARRIMXF_1.fmt
+    │   │   │   │   ├── ARRIRAW_15.fmt
+    │   │   │   │   ├── ARRIRAW7_3.fmt
+    │   │   │   │   ├── AudioIO_1.fmt
+    │   │   │   │   ├── AVCHD_1.fmt
+    │   │   │   │   ├── BMDRaw_2.fmt
+    │   │   │   │   ├── Canon_13.fmt
+    │   │   │   │   ├── ConformCurrent.json
+    │   │   │   │   ├── conformResizeFormat
+    │   │   │   │   ├── Current.json
+    │   │   │   │   ├── DPX_6.fmt
+    │   │   │   │   ├── HDR_6.fmt
+    │   │   │   │   ├── ImageIO_6.fmt
+    │   │   │   │   ├── lutState
+    │   │   │   │   ├── MIO Clip_2.fmt
+    │   │   │   │   ├── MP4_9.fmt
+    │   │   │   │   ├── MXF_13.fmt
+    │   │   │   │   ├── OpenEXR_8.fmt
+    │   │   │   │   ├── P2_13.fmt
+    │   │   │   │   ├── PhotoShop_6.fmt
+    │   │   │   │   ├── PNG_6.fmt
+    │   │   │   │   ├── Quicktime_11.fmt
+    │   │   │   │   ├── R3D_19.fmt
+    │   │   │   │   ├── resizeFormat
+    │   │   │   │   ├── resizeOptions
+    │   │   │   │   ├── SonyMXF_13.fmt
+    │   │   │   │   ├── SonyXAVC_2.fmt
+    │   │   │   │   ├── XDCAM_13.fmt
+    │   │   │   │   └── XDCAMEX_9.fmt
+    │   │   │   ├── Project_Settings.ARRIMXF_1.0.rule
+    │   │   │   ├── Project_Settings.ARRIRAW_15.0.rule
+    │   │   │   ├── Project_Settings.ARRIRAW7_3.0.rule
+    │   │   │   ├── Project_Settings.AudioIO_1.0.rule
+    │   │   │   ├── Project_Settings.AVCHD_1.0.rule
+    │   │   │   ├── Project_Settings.BMDRaw_2.0.rule
+    │   │   │   ├── Project_Settings.Canon_13.0.rule
+    │   │   │   ├── Project_Settings.DPX_6.0.rule
+    │   │   │   ├── Project_Settings.HDR_6.0.rule
+    │   │   │   ├── Project_Settings.ImageIO_6.0.rule
+    │   │   │   ├── Project_Settings.MIO_Clip_2.0.rule
+    │   │   │   ├── Project_Settings.MP4_9.0.rule
+    │   │   │   ├── Project_Settings.MXF_13.0.rule
+    │   │   │   ├── Project_Settings.OpenEXR_8.0.rule
+    │   │   │   ├── Project_Settings.P2_13.0.rule
+    │   │   │   ├── Project_Settings.PhotoShop_6.0.rule
+    │   │   │   ├── Project_Settings.PNG_6.0.rule
+    │   │   │   ├── Project_Settings.Quicktime_11.0.rule
+    │   │   │   ├── Project_Settings.R3D_19.0.rule
+    │   │   │   ├── Project_Settings.SonyMXF_13.0.rule
+    │   │   │   ├── Project_Settings.SonyXAVC_2.0.rule
+    │   │   │   ├── Project_Settings.XDCAM_13.0.rule
+    │   │   │   └── Project_Settings.XDCAMEX_9.0.rule
+    │   │   ├── overlays
+    │   │   │   └── grid_96.json
+    │   │   └── status
+    │   │       ├── ArchiveCurrent.json
+    │   │       └── project.json
+    │   ├── flame-python
+    │   │   └── logik_projekt
+    │   │       └── openclip_tools
+    │   │           └── logik_projekt_openclip
+    │   │               ├── config
+    │   │               │   ├── LOGIK-PROJEKT-default-config.xml
+    │   │               │   ├── logik_projekt_openclip_comp
+    │   │               │   │   └── config.xml
+    │   │               │   ├── logik_projekt_openclip_mattes
+    │   │               │   │   └── config.xml
+    │   │               │   ├── logik_projekt_openclip_multichannel
+    │   │               │   │   └── config.xml
+    │   │               │   ├── logik_projekt_openclip_neat_video
+    │   │               │   │   └── config.xml
+    │   │               │   ├── logik_projekt_openclip_precomp
+    │   │               │   │   └── config.xml
+    │   │               │   └── update_changelist_comments.sh
+    │   │               ├── scripts
+    │   │               │   ├── logik_projekt_openclip_comp.py
+    │   │               │   ├── logik_projekt_openclip_mattes.py
+    │   │               │   ├── logik_projekt_openclip_multichannel.py
+    │   │               │   ├── logik_projekt_openclip_neat_video.py
+    │   │               │   ├── logik_projekt_openclip_precomp.py
+    │   │               │   ├── modules
+    │   │               │   │   ├── classes
+    │   │               │   │   │   ├── pyside6_qt_button.py
+    │   │               │   │   │   ├── pyside6_qt_clickable_line_edit.py
+    │   │               │   │   │   ├── pyside6_qt_label.py
+    │   │               │   │   │   ├── pyside6_qt_line_edit.py
+    │   │               │   │   │   ├── pyside6_qt_list_widget.py
+    │   │               │   │   │   ├── pyside6_qt_message_window.py
+    │   │               │   │   │   ├── pyside6_qt_password_window.py
+    │   │               │   │   │   ├── pyside6_qt_preset_window.py
+    │   │               │   │   │   ├── pyside6_qt_progress_window.py
+    │   │               │   │   │   ├── pyside6_qt_push_button_menu.py
+    │   │               │   │   │   ├── pyside6_qt_push_button.py
+    │   │               │   │   │   ├── pyside6_qt_qdialog.py
+    │   │               │   │   │   ├── pyside6_qt_slider.py
+    │   │               │   │   │   ├── pyside6_qt_text_edit.py
+    │   │               │   │   │   ├── pyside6_qt_token_push_button.py
+    │   │               │   │   │   ├── pyside6_qt_tree_widget.py
+    │   │               │   │   │   └── pyside6_qt_window.py
+    │   │               │   │   ├── functions
+    │   │               │   │   │   ├── pyside6_qt_file_browser.py
+    │   │               │   │   │   ├── pyside6_qt_get_flame_version.py
+    │   │               │   │   │   ├── pyside6_qt_get_shot_name.py
+    │   │               │   │   │   ├── pyside6_qt_load_config.py
+    │   │               │   │   │   ├── pyside6_qt_open_in_finder.py
+    │   │               │   │   │   ├── pyside6_qt_print.py
+    │   │               │   │   │   ├── pyside6_qt_refresh_hooks.py
+    │   │               │   │   │   ├── pyside6_qt_resolve_path_tokens.py
+    │   │               │   │   │   ├── pyside6_qt_resolve_shot_name.py
+    │   │               │   │   │   └── pyside6_qt_save_config.py
+    │   │               │   │   ├── pyside6_qt_flame_classes.py
+    │   │               │   │   ├── pyside6_qt_flame_functions.py
+    │   │               │   │   └── pyside6_qt_output_config_ui.py
+    │   │               │   └── pyside6_qt_flame_modules.py
+    │   │               └── version
+    │   │                   └── version.json
+    │   ├── flame-scripts
+    │   │   ├── flame-startup-scripts
+    │   │   │   ├── create_folder.py
+    │   │   │   ├── create_library.py
+    │   │   │   ├── create_reel.py
+    │   │   │   ├── flame_startup_template.py
+    │   │   │   └── flame_startup_script_template.py
+    │   │   └── opencolorio
+    │   │       ├── ocio_scripts
+    │   │       │   ├── color_tagging_example.py
+    │   │       │   ├── concatenate_2_files.py
+    │   │       │   ├── concatenate_3_files.py
+    │   │       │   ├── concatenate_3_files_with_inversion.py
+    │   │       │   ├── copyright_example.py
+    │   │       │   └── test.py
+    │   │       └── Syncolor
+    │   │           ├── bookmarks
+    │   │           │   ├── cf_bookmarks.json
+    │   │           │   └── cf_bookmarks.xml
+    │   │           └── Shared
+    │   │               ├── policies
+    │   │               │   ├── ADSK_ACES_1.0
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── ADSK_ACES_1.1
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── ADSK_Legacy
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── ADSK_Scene_Linear
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── ARRI_LogC_V3
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── ARRI_LogC_V4
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── Canon_log2_cine
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── Canon_log3_cine
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── Sony_Cine_709
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── Sony_LC_709
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   ├── Sony_LCA_709
+    │   │               │   │   ├── policy.cfg
+    │   │               │   │   ├── synColorFileRules.xml
+    │   │               │   │   ├── synColorViewingRules.xml
+    │   │               │   │   └── user_color_spaces
+    │   │               │   │       └── shared_catalog.cat
+    │   │               │   └── Sony_SLog2_709
+    │   │               │       ├── policy.cfg
+    │   │               │       ├── synColorFileRules.xml
+    │   │               │       ├── synColorViewingRules.xml
+    │   │               │       └── user_color_spaces
+    │   │               │           └── shared_catalog.cat
+    │   │               └── transforms
+    │   │                   ├── camera_manufacturer_luts
+    │   │                   │   ├── arri
+    │   │                   │   │   ├── ARRI-LUT_Download_links.htm
+    │   │                   │   │   └── download_arri_lut_files.py
+    │   │                   │   ├── camera_lut_links.htm
+    │   │                   │   ├── dji
+    │   │                   │   │   └── download_dji_lut_files.py
+    │   │                   │   ├── r3d
+    │   │                   │   │   └── R3D-LUT_Download_links.htm
+    │   │                   │   └── sony
+    │   │                   │       └── SONY-LUT_Download_links.htm
+    │   │                   └── flame_colortoolkit
+    │   │                       ├── APPLE
+    │   │                       │   ├── AP0_to_Apple_Log.ctf
+    │   │                       │   ├── AP1_to_Apple_Log.ctf
+    │   │                       │   ├── Apple_log_to_AP0.ctf
+    │   │                       │   └── Apple_log_to_AP1.ctf
+    │   │                       ├── ARRI
+    │   │                       │   ├── ARRI_LogC3
+    │   │                       │   │   ├── AP0_to_ARRI_LogC3.ctf
+    │   │                       │   │   ├── AP1_to_ARRI_LogC3.ctf
+    │   │                       │   │   ├── ARRI_LogC3_to_AP0.ctf
+    │   │                       │   │   └── ARRI_LogC3_to_AP1.ctf
+    │   │                       │   └── ARRI_LogC4
+    │   │                       │       ├── AP0_to_ARRI_LogC4.ctf
+    │   │                       │       ├── AP1_to_ARRI_LogC4.ctf
+    │   │                       │       ├── ARRI_LogC4_to_AP0.ctf
+    │   │                       │       └── ARRI_LogC4_to_AP1.ctf
+    │   │                       ├── BLACKMAGIC_DESIGN
+    │   │                       │   ├── AP0_to_BMD.ctf
+    │   │                       │   ├── AP1_to_BMD.ctf
+    │   │                       │   ├── BMD_to_AP0.ctf
+    │   │                       │   └── BMD_to_AP1.ctf
+    │   │                       ├── CANON
+    │   │                       │   ├── CanonLog3_Daylight
+    │   │                       │   │   ├── AP0_to_Canon_Daylight.ctf
+    │   │                       │   │   ├── AP1_to_Canon_Daylight.ctf
+    │   │                       │   │   ├── Canon_Daylight_to_AP0.ctf
+    │   │                       │   │   └── Canon_Daylight_to_AP1.ctf
+    │   │                       │   └── CanonLog3_Tungsten
+    │   │                       │       ├── AP0_to_Canon_Tungsten.ctf
+    │   │                       │       ├── AP1_to_Canon_Tungsten.ctf
+    │   │                       │       ├── Canon_Tungsten_to_AP0.ctf
+    │   │                       │       └── Canon_Tungsten_to_AP1.ctf
+    │   │                       ├── download_kodak_lad_files.py
+    │   │                       ├── PANASONIC
+    │   │                       │   ├── AP0_to_Panasonic_VLog.ctf
+    │   │                       │   ├── AP1_to_Panasonic_VLog.ctf
+    │   │                       │   ├── Panasonic_VLog_to_AP0.ctf
+    │   │                       │   └── Panasonic_VLog_to_AP1.ctf
+    │   │                       ├── projekt_template-2024_05-24-flame_colortoolkit.json
+    │   │                       ├── R3D
+    │   │                       │   ├── AP0_to_R3D_Log3G10.ctf
+    │   │                       │   ├── AP1_to_R3D_Log3G10.ctf
+    │   │                       │   ├── R3D_Log3G10_to_AP0.ctf
+    │   │                       │   └── R3D_Log3G10_to_AP1.ctf
+    │   │                       ├── read-me-flame_colortoolkit-pipeline-ctf.txt
+    │   │                       ├── REC709
+    │   │                       │   ├── AP0_to_Rec709.ctf
+    │   │                       │   ├── AP1_to_Rec709.ctf
+    │   │                       │   ├── Rec709_to_AP0.ctf
+    │   │                       │   └── Rec709_to_AP1.ctf
+    │   │                       ├── SCENE_LINEAR
+    │   │                       │   ├── AP0_to_LinearRec709_sRGB.ctf
+    │   │                       │   ├── AP1_to_LinearRec709_sRGB.ctf
+    │   │                       │   ├── LinearRec709_sRGB_to_AP0.ctf
+    │   │                       │   └── LinearRec709_sRGB_to_Rec709.ctf
+    │   │                       └── SONY
+    │   │                           ├── S3SGamut3
+    │   │                           │   ├── AP0_to_S3SGamut3.ctf
+    │   │                           │   ├── AP1_to_S3SGamut3.ctf
+    │   │                           │   ├── S3SGamut3_to_AP0.ctf
+    │   │                           │   └── S3SGamut3_to_AP1.ctf
+    │   │                           ├── S3SGamut3_Cine_Venice
+    │   │                           │   ├── AP0_to_S3SGamut3_Cine_Venice.ctf
+    │   │                           │   ├── AP1_to_S3SGamut3_Cine_Venice.ctf
+    │   │                           │   ├── S3SGamut3_Cine_Venice_to_AP0.ctf
+    │   │                           │   └── S3SGamut3_Cine_Venice_to_AP1.ctf
+    │   │                           └── S3SGamut3_Venice
+    │   │                               ├── AP0_to_S3SGamut3_Venice.ctf
+    │   │                               ├── AP1_to_S3SGamut3_Venice.ctf
+    │   │                               ├── S3SGamut3_Venice_to_AP0.ctf
+    │   │                               └── S3SGamut3_Venice_to_AP1.ctf
+    │   ├── flame-templates
+    │   │   ├── flame-archive-templates
+    │   │   │   ├── archive_script_template
+    │   │   │   ├── archive_script_to_crontab_template.sh
+    │   │   │   └── flame_archive-options
+    │   │   ├── flame-launcher-templates
+    │   │   │   └── flame_launcher_template.sh
+    │   │   ├── flame-project-templates
+    │   │   │   ├── default_projekt_settings.cfg
+    │   │   │   ├── flame_setup_dirs.json
+    │   │   │   ├── project_templates.cfg
+    │   │   │   ├── project_templates.cfg.sample
+    │   │   │   └── projekt_template.json
+    │   │   ├── flame-workspace-templates
+    │   │   │   └── flame-workspace-template.json
+    │   │   └── wiretap-templates
+    │   │       └── wiretap_IFFFS_project_EXAMPLE.xml
+    │   ├── flame-value-lists
+    │   │   ├── bit_depth
+    │   │   │   └── bit_depth_list_values.json
+    │   │   ├── cache_format
+    │   │   │   ├── cache_float_list_values.json
+    │   │   │   └── cache_integer_list_values.json
+    │   │   ├── frame_rate
+    │   │   │   └── frame_rate_list_values.json
+    │   │   ├── init_config
+    │   │   │   ├── 1280x720@5000p.cfg
+    │   │   │   ├── 1280x720@5994p.cfg
+    │   │   │   ├── 1280x720@6000p.cfg
+    │   │   │   ├── 1920x1080@23976p.cfg
+    │   │   │   ├── 1920x1080@23976psf.cfg
+    │   │   │   ├── 1920x1080@24000psf.cfg
+    │   │   │   ├── 1920x1080@25000p.cfg
+    │   │   │   ├── 1920x1080@25000psf.cfg
+    │   │   │   ├── 1920x1080@2997p.cfg
+    │   │   │   ├── 1920x1080@3000p.cfg
+    │   │   │   ├── 1920x1080@5000p.cfg
+    │   │   │   ├── 1920x1080@50i.cfg
+    │   │   │   ├── 1920x1080@5994i.cfg
+    │   │   │   ├── 1920x1080@5994p.cfg
+    │   │   │   ├── 1920x1080@6000i.cfg
+    │   │   │   ├── 1920x1080@6000p.cfg
+    │   │   │   ├── 2048x1080@23976p.cfg
+    │   │   │   ├── 2048x1080@23976psf.cfg
+    │   │   │   ├── 2048x1080@24000p.cfg
+    │   │   │   ├── 2048x1080@24000psf.cfg
+    │   │   │   ├── 2048x1080@25000p.cfg
+    │   │   │   ├── 2048x1080@25000psf.cfg
+    │   │   │   ├── 2048x1080@2997p.cfg
+    │   │   │   ├── 2048x1080@3000p.cfg
+    │   │   │   ├── 2048x1080@5000p.cfg
+    │   │   │   ├── 2048x1080@5994p.cfg
+    │   │   │   ├── 2048x1080@6000p.cfg
+    │   │   │   ├── 24p_1280x720@5994p.cfg
+    │   │   │   ├── 24p_1280x720@6000p.cfg
+    │   │   │   ├── 24p_1920x1080@5994i.cfg
+    │   │   │   ├── 24p.cfg
+    │   │   │   ├── 24p_ntsc.cfg
+    │   │   │   ├── 30i_1280x720@5994p.cfg
+    │   │   │   ├── 30i_1280x720@6000p.cfg
+    │   │   │   ├── 3840x2160@23976p.cfg
+    │   │   │   ├── 3840x2160@24000p.cfg
+    │   │   │   ├── 3840x2160@25000p.cfg
+    │   │   │   ├── 3840x2160@2997p.cfg
+    │   │   │   ├── 3840x2160@3000p.cfg
+    │   │   │   ├── 3840x2160@5000p.cfg
+    │   │   │   ├── 3840x2160@5994p.cfg
+    │   │   │   ├── 3840x2160@6000p.cfg
+    │   │   │   ├── 4096x2160@23976p.cfg
+    │   │   │   ├── 4096x2160@24000p.cfg
+    │   │   │   ├── 4096x2160@25000p.cfg
+    │   │   │   ├── 4096x2160@2997p.cfg
+    │   │   │   ├── 4096x2160@3000p.cfg
+    │   │   │   ├── 4096x2160@5000p.cfg
+    │   │   │   ├── 4096x2160@5994p.cfg
+    │   │   │   ├── 4096x2160@6000p.cfg
+    │   │   │   ├── film.cfg
+    │   │   │   ├── film_ntsc.cfg
+    │   │   │   ├── ntsc.cfg
+    │   │   │   ├── pal.cfg
+    │   │   │   └── readme
+    │   │   ├── resolution
+    │   │   │   ├── create_new_resolution_json_files.py
+    │   │   │   ├── resolution-aja.json
+    │   │   │   ├── resolution-arri.json
+    │   │   │   ├── resolution-bmd.json
+    │   │   │   ├── resolution-broadcast_high.json
+    │   │   │   ├── resolution-broadcast_standard.json
+    │   │   │   ├── resolution-canon.json
+    │   │   │   ├── resolution-dcp.json
+    │   │   │   ├── resolution-film_2k.json
+    │   │   │   ├── resolution-film_3k.json
+    │   │   │   ├── resolution-film_4k.json
+    │   │   │   ├── resolution-film_8k.json
+    │   │   │   ├── resolution_load_order.json
+    │   │   │   ├── resolution-miscellaneous.json
+    │   │   │   ├── resolution-panasonic.json
+    │   │   │   ├── resolution-red-1k.json
+    │   │   │   ├── resolution-red-2.5k_ana.json
+    │   │   │   ├── resolution-red-2.5k.json
+    │   │   │   ├── resolution-red-2k_ana.json
+    │   │   │   ├── resolution-red-2k.json
+    │   │   │   ├── resolution-red-3.5k_ana.json
+    │   │   │   ├── resolution-red-3.5k.json
+    │   │   │   ├── resolution-red-3k_ana.json
+    │   │   │   ├── resolution-red-3k.json
+    │   │   │   ├── resolution-red-4.5k_ana.json
+    │   │   │   ├── resolution-red-4.5k.json
+    │   │   │   ├── resolution-red-4k_ana.json
+    │   │   │   ├── resolution-red-4k.json
+    │   │   │   ├── resolution-red-5.5k_ana.json
+    │   │   │   ├── resolution-red-5.5k.json
+    │   │   │   ├── resolution-red-5k_ana.json
+    │   │   │   ├── resolution-red-5k.json
+    │   │   │   ├── resolution-red-6.5k_ana.json
+    │   │   │   ├── resolution-red-6.5k.json
+    │   │   │   ├── resolution-red-6k_ana.json
+    │   │   │   ├── resolution-red-6k.json
+    │   │   │   ├── resolution-red-7.5k_ana.json
+    │   │   │   ├── resolution-red-7.5k.json
+    │   │   │   ├── resolution-red-7k_ana.json
+    │   │   │   ├── resolution-red-7k.json
+    │   │   │   ├── resolution-red-8k_ana.json
+    │   │   │   ├── resolution-red-8k.json
+    │   │   │   ├── resolution-sony_ana.json
+    │   │   │   ├── resolution-sony.json
+    │   │   │   ├── resolution-zcam.json
+    │   │   │   └── resolution-zip-json-old.zip
+    │   │   ├── scan_mode
+    │   │   │   └── scan_mode_list_values.json
+    │   │   ├── start_frame
+    │   │   │   └── start_frame_list_values.json
+    │   │   └── sysconfig
+    │   │       └── sysconfig.cfg
+    │   └── shared-presets
+    │       ├── burn_metadata
+    │       │   └── overlay
+    │       │       ├── burnin_info_HD.burnmetadata_node
+    │       │       ├── burnin_info_HD.burnmetadata_node.p
+    │       │       ├── burnin_info_UHD.burnmetadata_node
+    │       │       └── burnin_info_UHD.burnmetadata_node.p
+    │       └── python
+    │           └── logik_projekt
+    │               └── projekt_tools
+    │                   ├── logik_projekt_create_scripts
+    │                   │   ├── config
+    │                   │   │   ├── menu.py
+    │                   │   │   └── update_changelist.sh
+    │                   │   ├── scripts
+    │                   │   │   ├── create_after_effects_script.py
+    │                   │   │   ├── create_nuke_script.py
+    │                   │   │   └── modules
+    │                   │   │       └── functions
+    │                   │   │           ├── create_after_effects_shot_script.py
+    │                   │   │           ├── create_after_effects_source_script.py
+    │                   │   │           ├── create_nuke_shot_script.py
+    │                   │   │           ├── create_nuke_source_script.py
+    │                   │   │           ├── create_openclip_output_clip.py
+    │                   │   │           ├── create_openclip_segment_clip.py
+    │                   │   │           ├── create_shot_bookmarks.py
+    │                   │   │           ├── debugging_and_logging.py
+    │                   │   │           ├── define_job_structure.py
+    │                   │   │           ├── define_shot_structure.py
+    │                   │   │           ├── import_functions.py
+    │                   │   │           ├── list_shots_dir.py
+    │                   │   │           ├── list_shot_source_dir.py
+    │                   │   │           ├── list_shot_sources_dir.py
+    │                   │   │           ├── path_to_shot_source_openexr_sequences.py
+    │                   │   │           ├── process_shot_info_after_effects.py
+    │                   │   │           └── process_shot_info_nuke.py
+    │                   │   └── version
+    │                   │       └── version.json
+    │                   ├── logik_projekt_dated_objects
+    │                   │   ├── config
+    │                   │   │   └── update_changelist.sh
+    │                   │   ├── scripts
+    │                   │   │   └── create_dated_objects.py
+    │                   │   └── version
+    │                   │       └── version.json
+    │                   └── logik_projekt_layout
+    │                       ├── config
+    │                       │   ├── library_template_01.json
+    │                       │   ├── library_template_02.json
+    │                       │   ├── library_template_03.json
+    │                       │   ├── library_template_04.json
+    │                       │   ├── library_template_05.json
+    │                       │   ├── library_template_06.json
+    │                       │   ├── object_colors.json
+    │                       │   └── update_changelist.sh
+    │                       ├── scripts
+    │                       │   ├── create_projekt_layout.py
+    │                       │   └── modules
+    │                       │       ├── classes
+    │                       │       │   ├── pathfinder_abs.py
+    │                       │       │   ├── pathfinder_information.py
+    │                       │       │   └── pathfinder_rel.py
+    │                       │       └── functions
+    │                       │           ├── create_or_validate_library.py
+    │                       │           ├── create_or_validate_object.py
+    │                       │           ├── object_colors.py
+    │                       │           └── separators.py
+    │                       └── version
+    │                           └── version.json
+    └── logik-projekt-cfg
+        ├── icons
+        │   ├── create_icns_cross_platform.py
+        │   ├── create_icns.py
+        │   ├── logik_projekt_icon_01.png
+        │   ├── logik_projekt_icon_2026.png
+        │   ├── logik_projekt_icon.icns
+        │   └── logik_projekt_icon.iconset
+        │       ├── icon_128x128@2x.png
+        │       ├── icon_128x128.png
+        │       ├── icon_16x16@2x.png
+        │       ├── icon_16x16.png
+        │       ├── icon_256x256@2x.png
+        │       ├── icon_256x256.png
+        │       ├── icon_32x32@2x.png
+        │       ├── icon_32x32.png
+        │       ├── icon_512x512@2x.png
+        │       └── icon_512x512.png
+        └── logik-projekt-templates
+            ├── filesystem-templates
+            │   ├── custom-filesystem-templates
+            │   │   ├── 012-projekt-template
+            │   │   │   ├── first-level-a
+            │   │   │   │   └── second-level-a
+            │   │   │   │       └── third-level-a
+            │   │   │   │           └── fourth-level-a
+            │   │   │   │               └── fifth-level-a
+            │   │   │   ├── first-level-b
+            │   │   │   │   └── second-level-b
+            │   │   │   │       └── third-level-b
+            │   │   │   │           └── fourth-level-b
+            │   │   │   │               └── fifth-level-b
+            │   │   │   └── first-level-c
+            │   │   │       └── second-level-c
+            │   │   │           └── third-level-c
+            │   │   ├── 123-projekt-template
+            │   │   │   ├── first-level-a
+            │   │   │   │   └── second-level-a
+            │   │   │   │       └── third-level-a
+            │   │   │   │           └── fourth-level-a
+            │   │   │   │               └── fifth-level-a
+            │   │   │   ├── first-level-b
+            │   │   │   │   └── second-level-b
+            │   │   │   │       └── third-level-b
+            │   │   │   │           └── fourth-level-b
+            │   │   │   │               └── fifth-level-b
+            │   │   │   └── first-level-c
+            │   │   │       └── second-level-c
+            │   │   │           └── third-level-c
+            │   │   ├── 456-projekt-template
+            │   │   │   ├── first-level-a
+            │   │   │   │   └── second-level-a
+            │   │   │   │       └── third-level-a
+            │   │   │   │           └── fourth-level-a
+            │   │   │   │               └── fifth-level-a
+            │   │   │   ├── first-level-b
+            │   │   │   │   └── second-level-b
+            │   │   │   │       └── third-level-b
+            │   │   │   │           └── fourth-level-b
+            │   │   │   │               └── fifth-level-b
+            │   │   │   └── first-level-c
+            │   │   │       └── second-level-c
+            │   │   │           └── third-level-c
+            │   │   ├── 789-projekt-template
+            │   │   │   ├── first-level-a
+            │   │   │   │   └── second-level-a
+            │   │   │   │       └── third-level-a
+            │   │   │   │           └── fourth-level-a
+            │   │   │   │               └── fifth-level-a
+            │   │   │   ├── first-level-b
+            │   │   │   │   └── second-level-b
+            │   │   │   │       └── third-level-b
+            │   │   │   │           └── fourth-level-b
+            │   │   │   │               └── fifth-level-b
+            │   │   │   └── first-level-c
+            │   │   │       └── second-level-c
+            │   │   │           └── third-level-c
+            │   │   ├── cheese-sandwich
+            │   │   │   ├── first-wrapper-a
+            │   │   │   │   └── second-sandwich-a
+            │   │   │   │       └── third-cheese-a
+            │   │   │   │           └── fourth-salad-a
+            │   │   │   │               └── fifth-mustard-a
+            │   │   │   ├── first-wrapper-b
+            │   │   │   │   └── second-sandwich-b
+            │   │   │   │       └── third-cheese-b
+            │   │   │   │           └── fourth-salad-b
+            │   │   │   │               └── fifth-mustard-b
+            │   │   │   └── first-wrapper-c
+            │   │   │       └── second-sandwich-c
+            │   │   │           └── third-cheese-c
+            │   │   ├── hecat-studio
+            │   │   │   ├── first-level-a
+            │   │   │   │   └── second-level-a
+            │   │   │   │       └── third-level-a
+            │   │   │   │           └── fourth-level-a
+            │   │   │   │               └── fifth-level-a
+            │   │   │   ├── first-level-b
+            │   │   │   │   └── second-level-b
+            │   │   │   │       └── third-level-b
+            │   │   │   │           └── fourth-level-b
+            │   │   │   │               └── fifth-level-b
+            │   │   │   └── first-level-c
+            │   │   │       └── second-level-c
+            │   │   │           └── third-level-c
+            │   │   ├── laurence-creative
+            │   │   │   ├── first-sandwich-a
+            │   │   │   │   └── second-filling-a
+            │   │   │   │       └── third-level-a
+            │   │   │   │           └── fourth-level-a
+            │   │   │   │               └── fifth-level-a
+            │   │   │   ├── first-sandwich-b
+            │   │   │   │   └── second-filling-b
+            │   │   │   │       └── third-level-b
+            │   │   │   │           └── fourth-level-b
+            │   │   │   │               └── fifth-level-b
+            │   │   │   └── first-sandwich-c
+            │   │   │       └── second-filling-c
+            │   │   │           └── third-level-c
+            │   │   └── silo-84
+            │   │       ├── first-level-a
+            │   │       │   └── second-level-a
+            │   │       │       └── third-level-a
+            │   │       │           └── fourth-level-a
+            │   │       │               └── fifth-level-a
+            │   │       ├── first-level-b
+            │   │       │   └── second-level-b
+            │   │       │       └── third-level-b
+            │   │       │           └── fourth-level-b
+            │   │       │               └── fifth-level-b
+            │   │       └── first-level-c
+            │   │           └── second-level-c
+            │   │               └── third-level-c
+            │   └── default-filesystem-templates
+            │       └── logik-projekt
+            │           ├── assets
+            │           │   ├── audio
+            │           │   │   ├── dub
+            │           │   │   ├── mix
+            │           │   │   ├── music
+            │           │   │   ├── production
+            │           │   │   ├── sound_effects
+            │           │   │   ├── stems
+            │           │   │   └── voiceover
+            │           │   ├── fonts
+            │           │   ├── graphics
+            │           │   │   ├── artwork
+            │           │   │   ├── cgi
+            │           │   │   ├── images
+            │           │   │   ├── legal
+            │           │   │   ├── paint
+            │           │   │   ├── photoshop
+            │           │   │   ├── slates
+            │           │   │   ├── subtitles
+            │           │   │   ├── supers
+            │           │   │   └── titles
+            │           │   ├── miscellaneous
+            │           │   └── video
+            │           │       └── footage
+            │           │           ├── graded
+            │           │           ├── lut
+            │           │           ├── raw
+            │           │           ├── stock
+            │           │           └── transcodes
+            │           ├── backup
+            │           │   └── backup_scripts
+            │           ├── cfg
+            │           │   ├── pref
+            │           │   ├── template
+            │           │   └── workstation
+            │           │       └── juliet
+            │           │           ├── 000_abc_def-flame_launcher-juliet.sh
+            │           │           ├── projekt_creation_log-2025_05_05-000_abc_def-juliet
+            │           │           └── projekt_parameters-2025_05_05-000_abc_def-juliet.xml
+            │           ├── directory_structure.json
+            │           ├── docs
+            │           │   ├── agreements
+            │           │   │   ├── employment
+            │           │   │   ├── memoranda_of_understanding
+            │           │   │   ├── non_disclosure
+            │           │   │   └── service
+            │           │   ├── briefs
+            │           │   │   ├── design_briefs
+            │           │   │   ├── marketing_briefs
+            │           │   │   └── projekt_briefs
+            │           │   ├── contracts
+            │           │   │   ├── client_contracts
+            │           │   │   ├── lease_contracts
+            │           │   │   └── vendor_contracts
+            │           │   ├── designs
+            │           │   │   ├── mockups
+            │           │   │   ├── specifications
+            │           │   │   └── wireframes
+            │           │   ├── estimates
+            │           │   │   ├── cost_estimates
+            │           │   │   ├── projekt_estimates
+            │           │   │   └── time_estimates
+            │           │   ├── financial
+            │           │   │   ├── budgets
+            │           │   │   ├── invoices
+            │           │   │   ├── reports
+            │           │   │   └── statements
+            │           │   ├── guidelines
+            │           │   │   ├── branding
+            │           │   │   ├── compliance
+            │           │   │   ├── localization
+            │           │   │   └── styleguide
+            │           │   ├── handbooks
+            │           │   │   ├── employee
+            │           │   │   ├── policy
+            │           │   │   └── training
+            │           │   ├── invoices
+            │           │   │   ├── client
+            │           │   │   ├── paid
+            │           │   │   ├── unpaid
+            │           │   │   └── vendor
+            │           │   ├── job_description
+            │           │   │   ├── administrative_roles
+            │           │   │   ├── management_roles
+            │           │   │   └── technical_roles
+            │           │   ├── knowledge_base
+            │           │   │   ├── faqs
+            │           │   │   ├── how_to_guides
+            │           │   │   └── troubleshooting
+            │           │   ├── licenses
+            │           │   │   ├── product_licenses
+            │           │   │   ├── service_licenses
+            │           │   │   └── software_licenses
+            │           │   ├── memoranda
+            │           │   │   ├── external_memos
+            │           │   │   ├── internal_memos
+            │           │   │   └── meeting_memos
+            │           │   ├── non_disclosure
+            │           │   │   ├── client_ndas
+            │           │   │   ├── employee_ndas
+            │           │   │   └── vendor_ndas
+            │           │   ├── org_charts
+            │           │   │   ├── company_charts
+            │           │   │   ├── department_charts
+            │           │   │   └── team_charts
+            │           │   ├── policies
+            │           │   │   ├── hr_policies
+            │           │   │   ├── it_policies
+            │           │   │   └── operational_policies
+            │           │   ├── quotations
+            │           │   │   ├── client_quotations
+            │           │   │   ├── service_quotations
+            │           │   │   └── vendor_quotations
+            │           │   ├── reports
+            │           │   │   ├── annual_reports
+            │           │   │   ├── projekt_reports
+            │           │   │   └── quarterly_reports
+            │           │   ├── schedules
+            │           │   │   ├── meeting_schedules
+            │           │   │   ├── projekt_schedules
+            │           │   │   └── training_schedules
+            │           │   ├── technical
+            │           │   │   ├── technical_manuals
+            │           │   │   ├── technical_reports
+            │           │   │   └── technical_specifications
+            │           │   ├── user_guides
+            │           │   │   ├── product_user_guides
+            │           │   │   ├── service_user_guides
+            │           │   │   └── software_user_guides
+            │           │   ├── vendor_list
+            │           │   │   ├── approved_vendors
+            │           │   │   ├── blacklisted_vendors
+            │           │   │   └── preferred_vendors
+            │           │   ├── workflows
+            │           │   │   ├── approval_workflows
+            │           │   │   ├── operational_workflows
+            │           │   │   └── process_workflows
+            │           │   └── xml
+            │           │       ├── xml_templates
+            │           │       └── xslt_templates
+            │           ├── editorial
+            │           │   ├── aaf
+            │           │   ├── editorial-projekt-files
+            │           │   │   ├── adobe_premiere
+            │           │   │   ├── avid_media_composer
+            │           │   │   ├── davinci_resolve
+            │           │   │   └── final_cut_pro
+            │           │   ├── edl
+            │           │   ├── prep
+            │           │   └── xml
+            │           ├── flame
+            │           │   ├── archive
+            │           │   │   └── scripts
+            │           │   ├── iterations
+            │           │   └── setups
+            │           ├── logs
+            │           │   └── 000_abc_def-flame_first_run-juliet.log
+            │           ├── masters
+            │           │   ├── master_edits
+            │           │   ├── slated_masters
+            │           │   └── versioned_masters
+            │           ├── processes
+            │           │   ├── machine-learning
+            │           │   ├── matchmoving
+            │           │   │   ├── tracking_2d
+            │           │   │   └── tracking_3d
+            │           │   └── rotoscope
+            │           │       ├── gmasks
+            │           │       └── raster
+            │           ├── reference
+            │           │   ├── reference_images
+            │           │   ├── reference_movies
+            │           │   └── reference_style_guide
+            │           ├── scenes
+            │           │   ├── 3ds
+            │           │   ├── alembic
+            │           │   ├── baselight
+            │           │   ├── blender
+            │           │   ├── c4d
+            │           │   ├── cut
+            │           │   ├── fbx
+            │           │   ├── geometry
+            │           │   ├── houdini
+            │           │   ├── maya
+            │           │   ├── resolve
+            │           │   ├── unity
+            │           │   ├── unreal_engine
+            │           │   └── usd
+            │           ├── shots
+            │           ├── software
+            │           │   ├── applications
+            │           │   ├── bin
+            │           │   │   ├── flame
+            │           │   │   ├── nuke
+            │           │   │   ├── nukex
+            │           │   │   └── studio
+            │           │   ├── etc
+            │           │   │   ├── flame_version
+            │           │   │   └── nuke_version
+            │           │   ├── nuke
+            │           │   │   ├── gizmos
+            │           │   │   │   └── AlphaOps
+            │           │   │   │       ├── AA_Curve.nk
+            │           │   │   │       ├── AA_Grade.nk
+            │           │   │   │       ├── AA_Keymix.nk
+            │           │   │   │       ├── AA_Mask.nk
+            │           │   │   │       ├── AA_Screen.nk
+            │           │   │   │       └── AA_Stencil.nk
+            │           │   │   ├── init.py
+            │           │   │   ├── menu.py
+            │           │   │   ├── pyScripts
+            │           │   │   │   ├── colorspace
+            │           │   │   │   │   ├── change_colorspace_to_raw.py
+            │           │   │   │   │   ├── change_colorspace_to_scene_linear.py
+            │           │   │   │   │   ├── change_colorspace_to_texture_paint.py
+            │           │   │   │   │   └── __init__.py
+            │           │   │   │   ├── dev
+            │           │   │   │   │   ├── __init__.py
+            │           │   │   │   │   ├── print_environment_variables.py
+            │           │   │   │   │   └── print_nuke_environment.py
+            │           │   │   │   ├── gpu
+            │           │   │   │   │   ├── disableGPUAcceleration.py
+            │           │   │   │   │   ├── enableGPUAcceleration.py
+            │           │   │   │   │   └── __init__.py
+            │           │   │   │   ├── __init__.py
+            │           │   │   │   └── projekt
+            │           │   │   │       ├── hello_from_pyside2.py
+            │           │   │   │       ├── __init__.py
+            │           │   │   │       └── unpack_direnv_diff.py
+            │           │   │   ├── repo
+            │           │   │   │   ├── download_tools.py
+            │           │   │   │   └── projekt_core_v0.0.1
+            │           │   │   │       ├── __init__.py
+            │           │   │   │       └── projekt_core
+            │           │   │   │           ├── defaults.py
+            │           │   │   │           ├── favoritesRedux.py
+            │           │   │   │           ├── gizmoUtilities.py
+            │           │   │   │           ├── __init__.py
+            │           │   │   │           ├── settings.py
+            │           │   │   │           ├── setupScripts.py
+            │           │   │   │           ├── toolsetUtilities.py
+            │           │   │   │           ├── utilities.py
+            │           │   │   │           ├── version_up.py
+            │           │   │   │           └── vfxtools.py
+            │           │   │   └── toolsets
+            │           │   │       └── color
+            │           │   │           └── LogConvert_ACESLog.nk
+            │           │   ├── ocio
+            │           │   │   ├── download_aces_1_2_config.py
+            │           │   │   └── download_aces_1_3_configs.py
+            │           │   └── templates
+            │           │       └── nuke
+            │           ├── tmp
+            │           ├── utilities
+            │           │   └── Synergy
+            │           │       └── SynColor
+            │           │           └── Shared
+            │           │               └── transforms
+            │           ├── version
+            │           └── work_in_progress
+            │               └── postings
+            └── rsync-backup-templates
+                ├── backup_crontab_template.sh
+                ├── backup_template
+                └── exclusion_list.txt
+
+496 directories, 1282 files

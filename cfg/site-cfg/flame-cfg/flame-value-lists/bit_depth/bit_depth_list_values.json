@@ -1,0 +1,9 @@
+{
+    "bit_depth_list_values": [
+        "32-bit fp",
+        "16-bit fp",
+        "12-bit",
+        "10-bit",
+        "8-bit"
+    ]
+}

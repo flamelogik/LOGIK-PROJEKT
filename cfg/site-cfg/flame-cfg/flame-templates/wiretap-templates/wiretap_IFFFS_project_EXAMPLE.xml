@@ -1,0 +1,22 @@
+<Project>
+  <Name>flame_projekt_name</Name>
+  <Nickname>flame_projekt_nickname</Nickname>
+  <ShotgunProjectName>flame_projekt_shotgun_name</ShotgunProjectName>
+  <!-- <Description>flame_projekt_description</Description> -->
+  <CatalogDir>flame_projekt_catalog_dir</CatalogDir>
+  <ProjectDir>flame_projekt_home</ProjectDir>
+  <SetupDir>flame_projekt_setups_dir</SetupDir>
+  <MediaDir>flame_projekt_media_dir</MediaDir>
+  <Version>flame_software_version</Version>
+  <FrameWidth>flame_projekt_width</FrameWidth>
+  <FrameHeight>flame_projekt_height</FrameHeight>
+  <FrameDepth>flame_projekt_depth</FrameDepth>
+  <AspectRatio>flame_projekt_ratio</AspectRatio>
+  <FieldDominance>flame_projekt_mode</FieldDominance>
+  <ColourPolicyName>flame_projekt_ocio_name</ColourPolicyName>
+  <OCIOConfigFile>flame_projekt_ocio_path</OCIOConfigFile>
+  <IntermediatesProfile>flame_projekt_cachei_id:flame_projekt_cachef_id</IntermediatesProfile>
+  <FrameRate>flame_projekt_rate</FrameRate>
+  <DefaultStartFrame>flame_projekt_start</DefaultStartFrame>
+</Project>
+<!-- https://help.autodesk.com/view/FLAME/2026/ENU/?guid=wiretap_ifffs_project_xml -->

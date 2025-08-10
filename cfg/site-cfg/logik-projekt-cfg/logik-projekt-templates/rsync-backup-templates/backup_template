@@ -1,0 +1,180 @@
+#!/bin/bash
+
+# ========================================================================== #
+# This section echoes stderr to the shell or quits on error.
+# ========================================================================== #
+
+# Write stderr to shell (-x) & exit upon failure (-e).
+# set -ex
+
+# Set the umask to 0
+umask 0
+
+# ========================================================================== #
+# This section defines a variable for the path to the running program.
+# ========================================================================== #
+
+# Define the path to the current script in a variable called 'path_to_here'
+path_to_here=$(cd $(dirname "$0") && pwd)
+
+# change directory to path_to_here
+cd $path_to_here
+
+# ========================================================================== #
+# This section defines script info, job info & software details.
+# ========================================================================== #
+
+# Backup Script Name:   %%BACKUP_SCRIPT_NAME%%
+# Backup Script for:    %%BACKUP_SCRIPT_PROJEKT%%
+# Script Creation Date: %%SCRIPT_CREATION_DATE%%
+
+the_projekt_name="%%LOGIK_PROJEKT_NAME%%"
+
+the_projekt_flame_name="%%FLAME_PROJEKT_NAME%%"
+
+flame_workstation_name="%%CURRENT_WORKSTATION%%"
+
+# ========================================================================== #
+# This section creates decorative separators for blocks of text.
+# ========================================================================== #
+
+# Define a variable called 'separator'
+separator=$(printf '+ %s +' "$(printf -- '-%.0s' {1..75})")
+
+# ========================================================================== #
+# This section defines variables based on the date.
+# ========================================================================== #
+
+# Current Date & Time Options
+current_datetime=$(date "+%Y-%m-%d %H:%M:%S")
+today=$(date "+%Y-%m-%d")
+
+# Custom Date & Time Options
+today_now=$(date "+%F_%H-%M")
+
+# ========================================================================== #
+# This section detects which file browser to use for Linux or macOS.
+# ========================================================================== #
+
+# Function to choose directory using Zenity or osascript
+choose_directory() {
+    if command -v zenity &> /dev/null; then
+        directory_path=$(zenity --file-selection --directory --title="Select directory")
+    elif command -v osascript &> /dev/null; then
+        directory_path=$(osascript -e 'POSIX path of (choose folder with prompt "Select directory")')
+    else
+        echo -e "Error: Zenity or osascript not found."
+        echo -e "Please install either tool."
+        exit 1
+    fi
+}
+
+# ========================================================================== #
+# This section defines path info for the_projekt_job directories.
+# ========================================================================== #
+
+# set the path for the the_projekt_root_directory
+the_projekt_root_directory="%%LOGIK_PROJEKT_DIRECTORIES%%"
+
+# set the path for the the_projekt_job_directory
+the_projekt_job_directory="${the_projekt_root_directory}/${the_projekt_name}"
+
+# set the path for the the_projekt_job_rsync_directory
+the_projekt_job_rsync_directory="${the_projekt_job_directory}/backup/backup-scripts/%%CURRENT_WORKSTATION%%"
+
+# Make ${the_projekt_job_rsync_directory} if it doesn't exist
+mkdir -p -m 777 "${the_projekt_job_rsync_directory}"
+
+echo -e "\n$separator\n"
+echo -e "  Date:             ${today}"
+echo -e "  Backing up:       ${the_projekt_name}"
+echo -e "\n$separator\n"
+
+# ========================================================================== #
+# This section defines an exclusion list to stop files from being backed up.
+# ========================================================================== #
+
+# set the path for the the_projekt_job_rsync_exclusion_list
+the_projekt_job_rsync_exclusion_list="${the_projekt_job_rsync_directory}/backup-%%LOGIK_PROJEKT_NAME%%-%%CURRENT_WORKSTATION%%-exclusion_list.txt"
+
+# ========================================================================== #
+# This section sets the source directory to be backed up.
+# ========================================================================== #
+
+# Set the source directory
+src_rsync_dir="${the_projekt_job_directory}"
+echo -e "  Source Directory: ${the_projekt_job_directory}"
+echo -e "\n$separator\n"
+
+# ========================================================================== #
+# This section prompts the user to choose a target directory.
+# ========================================================================== #
+
+# Set the path for the backup_prefs file
+backup_prefs_file="${path_to_here}/backup_prefs_%%CURRENT_WORKSTATION%%"
+echo -e "  Backup Prefs:     ${backup_prefs_file}"
+echo -e "\n$separator\n"
+
+# Check if backup_prefs file exists
+if [ -f "$backup_prefs_file" ]; then
+    # Read tgt_rsync_dir from backup_prefs file
+    tgt_rsync_dir=$(<"$backup_prefs_file")
+else
+    # Prompt user to choose destination path
+    echo -e "\n$separator\n"
+    echo -e "  Choose the Backup Directory:"
+    choose_directory
+    tgt_rsync_dir="${directory_path%/}"
+
+    # Store tgt_rsync_dir in backup_prefs file
+    echo "$tgt_rsync_dir" > "$backup_prefs_file"
+fi
+
+tgt_dir_name=$(basename "$tgt_rsync_dir")
+echo -e "\n$separator\n"
+echo -e "  Backup Directory: ${tgt_rsync_dir}"
+echo -e "\n$separator\n"
+
+# ========================================================================== #
+# This section backs up the source to the target directory & creates a log.
+# ========================================================================== #
+
+# Create a directory for rsync log files
+rsync_log_files="$tgt_rsync_dir/rsync_logs"
+mkdir -p $rsync_log_files
+echo -e "  Log folder:       ${rsync_log_files}"
+echo -e "\n$separator\n"
+
+# Rsync options with log file
+log_file="${rsync_log_files}/${today_now}-backup-${the_projekt_name}.log"
+touch $log_file
+echo -e "  Log file:         ${today_now}-backup-${the_projekt_name}.log"
+echo -e "\n$separator\n"
+
+# ========================================================================== #
+# This section creates a variable to store rsync options.
+# ========================================================================== #
+
+# Wrap the rsync options as an array into the variable 'sync_opts_1'
+sync_opts_1=(-av)
+
+# Wrap more rsync options as an array into the variable 'sync_opts_2'
+sync_opts_2=(--copy-links --exclude='.DS_Store' --log-file=$log_file)
+
+# ========================================================================== #
+# This section backs up the source to the target directory.
+# ========================================================================== #
+
+rsync "${sync_opts_1[@]}" \
+      "${sync_opts_2[@]}" \
+      "${src_rsync_dir}" \
+      "${tgt_rsync_dir}/" \
+      --exclude-from="${the_projekt_job_rsync_exclusion_list}" \
+      | sed 's/^/  /'
+
+echo -e "  Backup of ${src_rsync_dir} completed."
+echo -e "\n$separator\n"
+
+# ========================================================================== #
+# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
+# ========================================================================== #

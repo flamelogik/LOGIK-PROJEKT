@@ -1,0 +1,1503 @@
+{
+  "original_path": "/home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT/cfg/site-cfg/logik-projekt-cfg/logik-projekt-templates/filesystem-templates/default-logik-projekt-templates/filesystem-templates/logik-projekt",
+  "original_name": "logik-projekt",
+  "original_depth": 0,
+  "analysis": {
+    "timestamp": "2025_07_27-14_25_36",
+    "root_directory": "logik-projekt",
+    "total_subdirectories": 212
+  },
+  "subdirectories": [
+    {
+      "path": "assets",
+      "name": "assets",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "assets/audio",
+      "name": "audio",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "assets"
+    },
+    {
+      "path": "assets/audio/dub",
+      "name": "dub",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "audio"
+    },
+    {
+      "path": "assets/audio/mix",
+      "name": "mix",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "audio"
+    },
+    {
+      "path": "assets/audio/music",
+      "name": "music",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "audio"
+    },
+    {
+      "path": "assets/audio/production",
+      "name": "production",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "audio"
+    },
+    {
+      "path": "assets/audio/sound_effects",
+      "name": "sound_effects",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "audio"
+    },
+    {
+      "path": "assets/audio/stems",
+      "name": "stems",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "audio"
+    },
+    {
+      "path": "assets/audio/voiceover",
+      "name": "voiceover",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "audio"
+    },
+    {
+      "path": "assets/fonts",
+      "name": "fonts",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "assets"
+    },
+    {
+      "path": "assets/graphics",
+      "name": "graphics",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "assets"
+    },
+    {
+      "path": "assets/graphics/artwork",
+      "name": "artwork",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/cgi",
+      "name": "cgi",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/images",
+      "name": "images",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/legal",
+      "name": "legal",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/paint",
+      "name": "paint",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/photoshop",
+      "name": "photoshop",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/slates",
+      "name": "slates",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/subtitles",
+      "name": "subtitles",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/supers",
+      "name": "supers",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/graphics/titles",
+      "name": "titles",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "graphics"
+    },
+    {
+      "path": "assets/miscellaneous",
+      "name": "miscellaneous",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "assets"
+    },
+    {
+      "path": "assets/video",
+      "name": "video",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "assets"
+    },
+    {
+      "path": "assets/video/footage",
+      "name": "footage",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "video"
+    },
+    {
+      "path": "assets/video/footage/graded",
+      "name": "graded",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "footage"
+    },
+    {
+      "path": "assets/video/footage/lut",
+      "name": "lut",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "footage"
+    },
+    {
+      "path": "assets/video/footage/raw",
+      "name": "raw",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "footage"
+    },
+    {
+      "path": "assets/video/footage/stock",
+      "name": "stock",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "footage"
+    },
+    {
+      "path": "assets/video/footage/transcodes",
+      "name": "transcodes",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "footage"
+    },
+    {
+      "path": "backup",
+      "name": "backup",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "backup/backup-scripts",
+      "name": "backup-scripts",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "backup"
+    },
+    {
+      "path": "cfg",
+      "name": "cfg",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "cfg/pref",
+      "name": "pref",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "cfg"
+    },
+    {
+      "path": "cfg/template",
+      "name": "template",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "cfg"
+    },
+    {
+      "path": "cfg/workstation",
+      "name": "workstation",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "cfg"
+    },
+    {
+      "path": "cfg/workstation/juliet",
+      "name": "juliet",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "workstation"
+    },
+    {
+      "path": "docs",
+      "name": "docs",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "docs/agreements",
+      "name": "agreements",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/agreements/employment",
+      "name": "employment",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "agreements"
+    },
+    {
+      "path": "docs/agreements/memoranda_of_understanding",
+      "name": "memoranda_of_understanding",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "agreements"
+    },
+    {
+      "path": "docs/agreements/non_disclosure",
+      "name": "non_disclosure",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "agreements"
+    },
+    {
+      "path": "docs/agreements/service",
+      "name": "service",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "agreements"
+    },
+    {
+      "path": "docs/briefs",
+      "name": "briefs",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/briefs/design_briefs",
+      "name": "design_briefs",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "briefs"
+    },
+    {
+      "path": "docs/briefs/marketing_briefs",
+      "name": "marketing_briefs",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "briefs"
+    },
+    {
+      "path": "docs/briefs/projekt_briefs",
+      "name": "projekt_briefs",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "briefs"
+    },
+    {
+      "path": "docs/contracts",
+      "name": "contracts",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/contracts/client_contracts",
+      "name": "client_contracts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "contracts"
+    },
+    {
+      "path": "docs/contracts/lease_contracts",
+      "name": "lease_contracts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "contracts"
+    },
+    {
+      "path": "docs/contracts/vendor_contracts",
+      "name": "vendor_contracts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "contracts"
+    },
+    {
+      "path": "docs/designs",
+      "name": "designs",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/designs/mockups",
+      "name": "mockups",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "designs"
+    },
+    {
+      "path": "docs/designs/specifications",
+      "name": "specifications",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "designs"
+    },
+    {
+      "path": "docs/designs/wireframes",
+      "name": "wireframes",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "designs"
+    },
+    {
+      "path": "docs/estimates",
+      "name": "estimates",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/estimates/cost_estimates",
+      "name": "cost_estimates",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "estimates"
+    },
+    {
+      "path": "docs/estimates/projekt_estimates",
+      "name": "projekt_estimates",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "estimates"
+    },
+    {
+      "path": "docs/estimates/time_estimates",
+      "name": "time_estimates",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "estimates"
+    },
+    {
+      "path": "docs/financial",
+      "name": "financial",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/financial/budgets",
+      "name": "budgets",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "financial"
+    },
+    {
+      "path": "docs/financial/invoices",
+      "name": "invoices",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "financial"
+    },
+    {
+      "path": "docs/financial/reports",
+      "name": "reports",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "financial"
+    },
+    {
+      "path": "docs/financial/statements",
+      "name": "statements",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "financial"
+    },
+    {
+      "path": "docs/guidelines",
+      "name": "guidelines",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/guidelines/branding",
+      "name": "branding",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "guidelines"
+    },
+    {
+      "path": "docs/guidelines/compliance",
+      "name": "compliance",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "guidelines"
+    },
+    {
+      "path": "docs/guidelines/localization",
+      "name": "localization",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "guidelines"
+    },
+    {
+      "path": "docs/guidelines/styleguide",
+      "name": "styleguide",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "guidelines"
+    },
+    {
+      "path": "docs/handbooks",
+      "name": "handbooks",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/handbooks/employee",
+      "name": "employee",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "handbooks"
+    },
+    {
+      "path": "docs/handbooks/policy",
+      "name": "policy",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "handbooks"
+    },
+    {
+      "path": "docs/handbooks/training",
+      "name": "training",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "handbooks"
+    },
+    {
+      "path": "docs/invoices",
+      "name": "invoices",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/invoices/client",
+      "name": "client",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "invoices"
+    },
+    {
+      "path": "docs/invoices/paid",
+      "name": "paid",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "invoices"
+    },
+    {
+      "path": "docs/invoices/unpaid",
+      "name": "unpaid",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "invoices"
+    },
+    {
+      "path": "docs/invoices/vendor",
+      "name": "vendor",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "invoices"
+    },
+    {
+      "path": "docs/job_description",
+      "name": "job_description",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/job_description/administrative_roles",
+      "name": "administrative_roles",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "job_description"
+    },
+    {
+      "path": "docs/job_description/management_roles",
+      "name": "management_roles",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "job_description"
+    },
+    {
+      "path": "docs/job_description/technical_roles",
+      "name": "technical_roles",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "job_description"
+    },
+    {
+      "path": "docs/knowledge_base",
+      "name": "knowledge_base",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/knowledge_base/faqs",
+      "name": "faqs",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "knowledge_base"
+    },
+    {
+      "path": "docs/knowledge_base/how_to_guides",
+      "name": "how_to_guides",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "knowledge_base"
+    },
+    {
+      "path": "docs/knowledge_base/troubleshooting",
+      "name": "troubleshooting",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "knowledge_base"
+    },
+    {
+      "path": "docs/licenses",
+      "name": "licenses",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/licenses/product_licenses",
+      "name": "product_licenses",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "licenses"
+    },
+    {
+      "path": "docs/licenses/service_licenses",
+      "name": "service_licenses",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "licenses"
+    },
+    {
+      "path": "docs/licenses/software_licenses",
+      "name": "software_licenses",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "licenses"
+    },
+    {
+      "path": "docs/memoranda",
+      "name": "memoranda",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/memoranda/external_memos",
+      "name": "external_memos",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "memoranda"
+    },
+    {
+      "path": "docs/memoranda/internal_memos",
+      "name": "internal_memos",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "memoranda"
+    },
+    {
+      "path": "docs/memoranda/meeting_memos",
+      "name": "meeting_memos",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "memoranda"
+    },
+    {
+      "path": "docs/non_disclosure",
+      "name": "non_disclosure",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/non_disclosure/client_ndas",
+      "name": "client_ndas",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "non_disclosure"
+    },
+    {
+      "path": "docs/non_disclosure/employee_ndas",
+      "name": "employee_ndas",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "non_disclosure"
+    },
+    {
+      "path": "docs/non_disclosure/vendor_ndas",
+      "name": "vendor_ndas",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "non_disclosure"
+    },
+    {
+      "path": "docs/org_charts",
+      "name": "org_charts",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/org_charts/company_charts",
+      "name": "company_charts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "org_charts"
+    },
+    {
+      "path": "docs/org_charts/department_charts",
+      "name": "department_charts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "org_charts"
+    },
+    {
+      "path": "docs/org_charts/team_charts",
+      "name": "team_charts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "org_charts"
+    },
+    {
+      "path": "docs/policies",
+      "name": "policies",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/policies/hr_policies",
+      "name": "hr_policies",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "policies"
+    },
+    {
+      "path": "docs/policies/it_policies",
+      "name": "it_policies",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "policies"
+    },
+    {
+      "path": "docs/policies/operational_policies",
+      "name": "operational_policies",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "policies"
+    },
+    {
+      "path": "docs/quotations",
+      "name": "quotations",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/quotations/client_quotations",
+      "name": "client_quotations",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "quotations"
+    },
+    {
+      "path": "docs/quotations/service_quotations",
+      "name": "service_quotations",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "quotations"
+    },
+    {
+      "path": "docs/quotations/vendor_quotations",
+      "name": "vendor_quotations",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "quotations"
+    },
+    {
+      "path": "docs/reports",
+      "name": "reports",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/reports/annual_reports",
+      "name": "annual_reports",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "reports"
+    },
+    {
+      "path": "docs/reports/projekt_reports",
+      "name": "projekt_reports",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "reports"
+    },
+    {
+      "path": "docs/reports/quarterly_reports",
+      "name": "quarterly_reports",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "reports"
+    },
+    {
+      "path": "docs/schedules",
+      "name": "schedules",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/schedules/meeting_schedules",
+      "name": "meeting_schedules",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "schedules"
+    },
+    {
+      "path": "docs/schedules/projekt_schedules",
+      "name": "projekt_schedules",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "schedules"
+    },
+    {
+      "path": "docs/schedules/training_schedules",
+      "name": "training_schedules",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "schedules"
+    },
+    {
+      "path": "docs/technical",
+      "name": "technical",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/technical/technical_manuals",
+      "name": "technical_manuals",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "technical"
+    },
+    {
+      "path": "docs/technical/technical_reports",
+      "name": "technical_reports",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "technical"
+    },
+    {
+      "path": "docs/technical/technical_specifications",
+      "name": "technical_specifications",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "technical"
+    },
+    {
+      "path": "docs/user_guides",
+      "name": "user_guides",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/user_guides/product_user_guides",
+      "name": "product_user_guides",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "user_guides"
+    },
+    {
+      "path": "docs/user_guides/service_user_guides",
+      "name": "service_user_guides",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "user_guides"
+    },
+    {
+      "path": "docs/user_guides/software_user_guides",
+      "name": "software_user_guides",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "user_guides"
+    },
+    {
+      "path": "docs/vendor_list",
+      "name": "vendor_list",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/vendor_list/approved_vendors",
+      "name": "approved_vendors",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "vendor_list"
+    },
+    {
+      "path": "docs/vendor_list/blacklisted_vendors",
+      "name": "blacklisted_vendors",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "vendor_list"
+    },
+    {
+      "path": "docs/vendor_list/preferred_vendors",
+      "name": "preferred_vendors",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "vendor_list"
+    },
+    {
+      "path": "docs/workflows",
+      "name": "workflows",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/workflows/approval_workflows",
+      "name": "approval_workflows",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "workflows"
+    },
+    {
+      "path": "docs/workflows/operational_workflows",
+      "name": "operational_workflows",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "workflows"
+    },
+    {
+      "path": "docs/workflows/process_workflows",
+      "name": "process_workflows",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "workflows"
+    },
+    {
+      "path": "docs/xml",
+      "name": "xml",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "docs"
+    },
+    {
+      "path": "docs/xml/xml_templates",
+      "name": "xml_templates",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "xml"
+    },
+    {
+      "path": "docs/xml/xslt_templates",
+      "name": "xslt_templates",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "xml"
+    },
+    {
+      "path": "editorial",
+      "name": "editorial",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "editorial/aaf",
+      "name": "aaf",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "editorial"
+    },
+    {
+      "path": "editorial/editorial-projekt-files",
+      "name": "editorial-projekt-files",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "editorial"
+    },
+    {
+      "path": "editorial/editorial-projekt-files/adobe_premiere",
+      "name": "adobe_premiere",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "editorial-projekt-files"
+    },
+    {
+      "path": "editorial/editorial-projekt-files/avid_media_composer",
+      "name": "avid_media_composer",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "editorial-projekt-files"
+    },
+    {
+      "path": "editorial/editorial-projekt-files/davinci_resolve",
+      "name": "davinci_resolve",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "editorial-projekt-files"
+    },
+    {
+      "path": "editorial/editorial-projekt-files/final_cut_pro",
+      "name": "final_cut_pro",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "editorial-projekt-files"
+    },
+    {
+      "path": "editorial/edl",
+      "name": "edl",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "editorial"
+    },
+    {
+      "path": "editorial/prep",
+      "name": "prep",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "editorial"
+    },
+    {
+      "path": "editorial/xml",
+      "name": "xml",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "editorial"
+    },
+    {
+      "path": "flame",
+      "name": "flame",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "flame/archive",
+      "name": "archive",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "flame"
+    },
+    {
+      "path": "flame/archive/scripts",
+      "name": "scripts",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "archive"
+    },
+    {
+      "path": "flame/iterations",
+      "name": "iterations",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "flame"
+    },
+    {
+      "path": "flame/setups",
+      "name": "setups",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "flame"
+    },
+    {
+      "path": "logs",
+      "name": "logs",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "masters",
+      "name": "masters",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "masters/master_edits",
+      "name": "master_edits",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "masters"
+    },
+    {
+      "path": "masters/slated_masters",
+      "name": "slated_masters",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "masters"
+    },
+    {
+      "path": "masters/versioned_masters",
+      "name": "versioned_masters",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "masters"
+    },
+    {
+      "path": "processes",
+      "name": "processes",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "processes/machine-learning",
+      "name": "machine-learning",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "processes"
+    },
+    {
+      "path": "processes/matchmoving",
+      "name": "matchmoving",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "processes"
+    },
+    {
+      "path": "processes/matchmoving/tracking_2d",
+      "name": "tracking_2d",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "matchmoving"
+    },
+    {
+      "path": "processes/matchmoving/tracking_3d",
+      "name": "tracking_3d",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "matchmoving"
+    },
+    {
+      "path": "processes/rotoscope",
+      "name": "rotoscope",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "processes"
+    },
+    {
+      "path": "processes/rotoscope/gmasks",
+      "name": "gmasks",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "rotoscope"
+    },
+    {
+      "path": "processes/rotoscope/raster",
+      "name": "raster",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "rotoscope"
+    },
+    {
+      "path": "reference",
+      "name": "reference",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "reference/reference_images",
+      "name": "reference_images",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "reference"
+    },
+    {
+      "path": "reference/reference_movies",
+      "name": "reference_movies",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "reference"
+    },
+    {
+      "path": "reference/reference_style_guide",
+      "name": "reference_style_guide",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "reference"
+    },
+    {
+      "path": "scenes",
+      "name": "scenes",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "scenes/3ds",
+      "name": "3ds",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/alembic",
+      "name": "alembic",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/baselight",
+      "name": "baselight",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/blender",
+      "name": "blender",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/c4d",
+      "name": "c4d",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/cut",
+      "name": "cut",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/fbx",
+      "name": "fbx",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/geometry",
+      "name": "geometry",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/houdini",
+      "name": "houdini",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/maya",
+      "name": "maya",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/resolve",
+      "name": "resolve",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/unity",
+      "name": "unity",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/unreal_engine",
+      "name": "unreal_engine",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "scenes/usd",
+      "name": "usd",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "scenes"
+    },
+    {
+      "path": "shots",
+      "name": "shots",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "software",
+      "name": "software",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "software/applications",
+      "name": "applications",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "software"
+    },
+    {
+      "path": "software/bin",
+      "name": "bin",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "software"
+    },
+    {
+      "path": "software/etc",
+      "name": "etc",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "software"
+    },
+    {
+      "path": "software/nuke",
+      "name": "nuke",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "software"
+    },
+    {
+      "path": "software/nuke/gizmos",
+      "name": "gizmos",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "nuke"
+    },
+    {
+      "path": "software/nuke/gizmos/AlphaOps",
+      "name": "AlphaOps",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "gizmos"
+    },
+    {
+      "path": "software/nuke/pyScripts",
+      "name": "pyScripts",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "nuke"
+    },
+    {
+      "path": "software/nuke/pyScripts/colorspace",
+      "name": "colorspace",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "pyScripts"
+    },
+    {
+      "path": "software/nuke/pyScripts/dev",
+      "name": "dev",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "pyScripts"
+    },
+    {
+      "path": "software/nuke/pyScripts/gpu",
+      "name": "gpu",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "pyScripts"
+    },
+    {
+      "path": "software/nuke/pyScripts/projekt",
+      "name": "projekt",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "pyScripts"
+    },
+    {
+      "path": "software/nuke/repo",
+      "name": "repo",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "nuke"
+    },
+    {
+      "path": "software/nuke/repo/projekt_core_v0.0.1",
+      "name": "projekt_core_v0.0.1",
+      "depth": 4,
+      "hasChildren": true,
+      "parent": "repo"
+    },
+    {
+      "path": "software/nuke/repo/projekt_core_v0.0.1/projekt_core",
+      "name": "projekt_core",
+      "depth": 5,
+      "hasChildren": false,
+      "parent": "projekt_core_v0.0.1"
+    },
+    {
+      "path": "software/nuke/toolsets",
+      "name": "toolsets",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "nuke"
+    },
+    {
+      "path": "software/nuke/toolsets/color",
+      "name": "color",
+      "depth": 4,
+      "hasChildren": false,
+      "parent": "toolsets"
+    },
+    {
+      "path": "software/ocio",
+      "name": "ocio",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "software"
+    },
+    {
+      "path": "software/templates",
+      "name": "templates",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "software"
+    },
+    {
+      "path": "software/templates/nuke",
+      "name": "nuke",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "templates"
+    },
+    {
+      "path": "tmp",
+      "name": "tmp",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "utilities",
+      "name": "utilities",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "utilities/Synergy",
+      "name": "Synergy",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "utilities"
+    },
+    {
+      "path": "utilities/Synergy/SynColor",
+      "name": "SynColor",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "Synergy"
+    },
+    {
+      "path": "utilities/Synergy/SynColor/Shared",
+      "name": "Shared",
+      "depth": 4,
+      "hasChildren": true,
+      "parent": "SynColor"
+    },
+    {
+      "path": "utilities/Synergy/SynColor/Shared/transforms",
+      "name": "transforms",
+      "depth": 5,
+      "hasChildren": false,
+      "parent": "Shared"
+    },
+    {
+      "path": "version",
+      "name": "version",
+      "depth": 1,
+      "hasChildren": false,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "work_in_progress",
+      "name": "work_in_progress",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories"
+    },
+    {
+      "path": "work_in_progress/postings",
+      "name": "postings",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "work_in_progress"
+    }
+  ]
+}

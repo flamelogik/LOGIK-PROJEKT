@@ -1,0 +1,14 @@
+[
+    { "format": "Uncompressed (DPX)", "code": 2 },
+    { "format": "Packed (DPX)", "code": 4 },
+    { "format": "DNxHR/DNxHD 444", "code": 512 },
+    { "format": "DNxHR/DNxHD HQ", "code": 513 },
+    { "format": "DNxHR/DNxHD SQ", "code": 514 },
+    { "format": "DNxHR/DNxHD LB", "code": 515 },
+    { "format": "Apple ProRes 422 Proxy", "code": 65792 },
+    { "format": "Apple ProRes 422 LT", "code": 65793 },
+    { "format": "Apple ProRes 422", "code": 65794 },
+    { "format": "Apple ProRes 422 HQ", "code": 65795 },
+    { "format": "Apple ProRes 4444", "code": 65796 },
+    { "format": "Apple ProRes 4444 XQ", "code": 65797 }
+]

@@ -1,96 +1,180 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
-.DS_Store
-.env
-resources/tmp/current_projekt_bookmarks.json
-resources/tmp/current_projekt_creation_log
-resources/tmp/current_projekt_parameters.xml
-resources/tmp/current_projekt_template.json
-resources/tmp/current_projekt_template.json.bak
-run_logikprojekt_linux.sh
-install/current_adsk_python_version.pref
-LOGIK-PROJEKT.app/Contents/Info.plist
-LOGIK-PROJEKT.app/Contents/MacOS/run_logikprojekt_macos
-LOGIK-PROJEKT.app/Contents/Resources/logik_projekt_icon.icns
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/APPLE/AP0_to_Apple_Log.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/APPLE/AP1_to_Apple_Log.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/APPLE/Apple_log_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/APPLE/Apple_log_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC3/AP0_to_ARRI_LogC3.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC3/AP1_to_ARRI_LogC3.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC3/ARRI_LogC3_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC3/ARRI_LogC3_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC4/AP0_to_ARRI_LogC4.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC4/AP1_to_ARRI_LogC4.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC4/ARRI_LogC4_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/ARRI/ARRI_LogC4/ARRI_LogC4_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/BLACKMAGIC_DESIGN/AP0_to_BMD.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/BLACKMAGIC_DESIGN/AP1_to_BMD.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/BLACKMAGIC_DESIGN/BMD_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/BLACKMAGIC_DESIGN/BMD_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Daylight/AP0_to_Canon_Daylight.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Daylight/AP1_to_Canon_Daylight.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Daylight/Canon_Daylight_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Daylight/Canon_Daylight_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Tungsten/AP0_to_Canon_Tungsten.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Tungsten/AP1_to_Canon_Tungsten.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Tungsten/Canon_Tungsten_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/CANON/CanonLog3_Tungsten/Canon_Tungsten_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/PANASONIC/AP0_to_Panasonic_VLog.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/PANASONIC/AP1_to_Panasonic_VLog.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/PANASONIC/Panasonic_VLog_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/PANASONIC/Panasonic_VLog_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/R3D/AP0_to_R3D_Log3G10.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/R3D/AP1_to_R3D_Log3G10.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/R3D/R3D_Log3G10_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/R3D/R3D_Log3G10_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/REC709/AP0_to_Rec709.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/REC709/AP1_to_Rec709.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/REC709/Rec709_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/REC709/Rec709_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SCENE_LINEAR/AP0_to_LinearRec709_sRGB.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SCENE_LINEAR/AP1_to_LinearRec709_sRGB.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SCENE_LINEAR/LinearRec709_sRGB_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SCENE_LINEAR/LinearRec709_sRGB_to_Rec709.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3/AP0_to_S3SGamut3.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3/AP1_to_S3SGamut3.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3/S3SGamut3_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3/S3SGamut3_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Cine_Venice/AP0_to_S3SGamut3_Cine_Venice.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Cine_Venice/AP1_to_S3SGamut3_Cine_Venice.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Cine_Venice/S3SGamut3_Cine_Venice_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Cine_Venice/S3SGamut3_Cine_Venice_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Venice/AP0_to_S3SGamut3_Venice.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Venice/AP1_to_S3SGamut3_Venice.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Venice/S3SGamut3_Venice_to_AP0.ctf
-resources/flame/Syncolor/Shared/transforms/flame_colortoolkit/SONY/S3SGamut3_Venice/S3SGamut3_Venice_to_AP1.ctf
-resources/flame/Syncolor/Shared/transforms.tar.xz
-development/send_webhook.sh
-customization/testing/premiere_directories.py
-customization/branding/rocky-fonts/rocky-fonts-master
-resources/flame/python/logik_projekt/openclip_tools/scratch_comp.py
-resources/flame/python/logik_projekt/openclip_tools/scratch_mattes.py
-resources/flame/python/logik_projekt/openclip_tools/scratch_multichannel.py
-resources/flame/python/logik_projekt/openclip_tools/scratch_neat_video.py
-resources/flame/python/logik_projekt/openclip_tools/scratch_precomp.py
-error
-resources/utilities/scripts/bash/create_new_ssh_keys/scripts/create_ssh_keys-linux copy.sh
-resources/utilities/scripts/bash/create_new_ssh_keys/scripts/create_ssh_keys-linux copy 2.sh
+*.pyo
+*.pyd
 
-.codegpt
-customization/directory_structure/jg/tree
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/assets.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/backup.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/cfg.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/docs.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/editorial.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/flame.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/masters.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/reference.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/scenes.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/shots.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/software.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/tmp.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/utilities.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/version.json
-customization/directory_structure/jg/resources/cfg/projekt_configuration/tree/projekt/work_in_progress.json
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are created by a PyInstaller script from a 'spec' file
+#  often using '--onefile' option.
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   from different sources is a concern, you may want to ignore the Pipfile.lock file.
+# Pipfile.lock
+
+# PEP 582; used by PDM, PEP 582 proposal
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyderworkspace
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Editor-specific files
+.idea/
+.project
+.pydevproject
+.settings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Project-specific
+zzzz-for-eventual-deletion
+docs/design_documents/learning/2025-07-21-08-02-16-unexpected_display_widget_appearance.png
+docs/design_documents/learning/2025-07-21-08-23-23-template_summary_widget_improvements.png
+docs/design_documents/learning/2025-07-21-09-01-04-columnar_layout_progress.png
+docs/design_documents/learning/2025-07-21-11-21-18-new_pyside6_gui_spacing_and_sizing_issues.png
+src/ui/themes/modular_dark_theme copy.py
+docs/design_documents/learning/2025-07-21-12-13-33-reference_tkinter_gui.png
+docs/design_documents/learning/2025-07-21-12-14-35-current_pyside_gui.png
+docs/design_documents/learning/2025-07-21-12-28-26-pyside_gui_improvements.png
+docs/design_documents/learning/2025-07-21-13-30-25-pyside_gui_progress_2.png
+docs/design_documents/learning/2025-07-21-16-03-27-pyside_gui_progress_3_vertical_sizes_and_spacing.png
+docs/design_documents/learning/2025-07-21-16-12-50-pyside_gui_small_improvements.png
+docs/design_documents/learning/2025-07-21-16-22-32-pyside-gui-regression.png
+docs/design_documents/learning/2025-07-22-06-08-38-pyside_gui_progress_5.png
+docs/design_documents/learning/2025-07-23-12-57-55-pyside_gui_left_panel_last_fixes.png
+scratch
+docs/design_documents/learning/2025-07-24-06-58-33-flame_info_projekt_summary_update_problem.png
+docs/design_documents/learning/2025-07-24-07-09-03-projekt_summary_not_updating.png
+docs/design_documents/learning/2025-07-24-08-09-51_projekt_summary_update_problems.png
+.gemini/gemini_commit_message.txt
+
+# Temporary session files
+pref/session-preferences/
+scratch

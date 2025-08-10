@@ -1,0 +1,29 @@
+{
+    "group": "Film Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- 3K Film ---------------------------- +",
+            "items": [
+                {
+                    "resolution_name": "3072 x 858 x 1.0 | Film VistaVision",
+                    "width": 3072,
+                    "height": 858,
+                    "storage_aspect_ratio": 3.5804196,
+                    "display_aspect_ratio": 3.5804196,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 3.5804196
+                },
+                {
+                    "resolution_name": "3072 x 2048 x 1.0 | Film VistaVision",
+                    "width": 3072,
+                    "height": 2048,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.5
+                }
+            ]
+        }
+    ]
+}

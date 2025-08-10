@@ -1,0 +1,2360 @@
+
+# ============================ CREATING PROJEKT ============================= #
+
+# -------------------------------------------------------------------------- #
+
+projekt: 000_abc_def
+
+# -------------------------------------------------------------------------- #
+
+hostname: juliet
+
+host OS: Linux
+
+username: pman
+
+groupname: flame
+
+flame ver: flame_2026.pr219
+
+framestore: N/A
+
+datestamp: 2025_05_05
+
+timestamp: 21_42_38
+
+# ========================= THE PROJEKT INFORMATION ========================= #
+
+
+the_projekt_serial_number: 000
+
+the_projekt_client_name: abc
+
+the_projekt_campaign_name: def
+
+the_projekt_name: 000_abc_def
+
+the_projekt_resolution: 1920 x 1080 | HD 1080 16:9
+
+the_projekt_width: 1920
+
+the_projekt_height: 1080
+
+the_projekt_storage_aspect_ratio:
+
+the_projekt_display_aspect_ratio:
+
+the_projekt_pixel_aspect_ratio:
+
+the_projekt_aspect_ratio: 1.7777778
+
+the_projekt_bit_depth: 16-bit fp
+
+the_projekt_frame_rate: 23.976 fps
+
+the_projekt_scan_mode: PROGRESSIVE
+
+the_projekt_start_frame: 1001
+
+the_projekt_init_config: 1920x1080@23976p.cfg
+
+the_projekt_color_science: ADSK_ACES_1.1
+
+the_projekt_user_name: pman
+
+the_projekt_primary_group: flame
+
+the_projekt_os: Linux
+
+the_hostname: juliet
+
+the_projekt_localhostname:
+
+the_projekt_computername:
+
+the_software_version: flame_2026.pr219
+
+the_framestore: N/A
+
+the_sanitized_sw_ver:
+
+the_sanitized_version:
+
+the_projekt_flame_name: 000_abc_def_2026_juliet
+
+xml_project_dir: /opt/Autodesk/project/000_abc_def_2026_juliet
+
+xml_setup_dir: /opt/Autodesk/project/000_abc_def_2026_juliet/setups
+
+xml_media_dir: /opt/Autodesk/project/000_abc_def_2026_juliet/media
+
+xml_ocio_config: /opt/Autodesk/colour_mgmt/configs/flame_configs/2026.0/aces2.0_config/config.ocio
+
+xml_intermediates_profile: 0:596088
+
+# -------------------------------------------------------------------------- #
+
+# ======================== CREATING PROJEKT XML FILE ======================== #
+
+
+XML file created at:
+resources/tmp/current_projekt_parameters.xml
+
+
+# -------------------------------------------------------------------------- #
+
+# ========================= CREATING FLAME PROJEKT ========================== #
+
+
+Running the following bash command:
+# set -ex
+# Set the umask to 0
+umask 0
+# ---------------------------------------------------------------------- #
+# echo -e "resources/tmp/current_projekt_parameters.xml"
+# ---------------------------------------------------------------------- #
+# Create the logik projekt flame project node using wiretap_create_node
+# -n <parent node ID>
+# -d <display name>
+# -t <server-specific node type string (default = NODE)>
+# [-h <host name or IP address> (default = 127.0.0.1)]
+# [-s <metadata stream name> (default = none]
+# [-f <file containing metadata> (default = none)]
+# [-g <effective group>] (assumes super-user privileges)
+# ---------------------------------------------------------------------- #
+# THIS IS THE COMMAND FOR 2026
+# Create a logik projekt flame project node using wiretap
+/opt/Autodesk/wiretap/tools/current/wiretap_create_node \
+-h 127.0.0.1:IFFFS \
+-n /projects \
+-t PROJECT \
+-d "000_abc_def_2026_juliet" \
+-s XML \
+-f "resources/tmp/current_projekt_parameters.xml"
+# ---------------------------------------------------------------------- #
+
+Command output:
+Created node '/projects/C0660CDF-093C-4D7E-BF46-D58BE3E7BC91'.
+
+# -------------------------------------------------------------------------- #
+
+# ====================== CREATING PROJEKT DIRECTORIES ======================= #
+
+
+Bookmarks written to: resources/tmp/current_projekt_bookmarks.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/assets.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/backup.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/cfg.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/docs.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/editorial.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/flame.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/masters.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/reference.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/scenes.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/shots.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/software.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/tmp.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/utilities.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/version.json
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/projekt/work_in_progress.json
+
+Successfully created directory: /PROJEKTS/000_abc_def/assets
+Processing bookmarks: assets
+
+Successfully created directory: /PROJEKTS/000_abc_def/assets/artwork
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio
+Processing bookmarks: audio
+
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio/dub
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio/mix
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio/music
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio/production
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio/sound_effects
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio/stems
+Successfully created directory: /PROJEKTS/000_abc_def/assets/audio/voiceover
+Successfully created directory: /PROJEKTS/000_abc_def/assets/cgi
+Successfully created directory: /PROJEKTS/000_abc_def/assets/font
+Successfully created directory: /PROJEKTS/000_abc_def/assets/footage
+Processing bookmarks: footage
+
+Successfully created directory: /PROJEKTS/000_abc_def/assets/footage/graded
+Successfully created directory: /PROJEKTS/000_abc_def/assets/footage/raw
+Successfully created directory: /PROJEKTS/000_abc_def/assets/footage/stock
+Successfully created directory: /PROJEKTS/000_abc_def/assets/footage/transcodes
+Successfully created directory: /PROJEKTS/000_abc_def/assets/graphics
+Successfully created directory: /PROJEKTS/000_abc_def/assets/images
+Successfully created directory: /PROJEKTS/000_abc_def/assets/legal
+Successfully created directory: /PROJEKTS/000_abc_def/assets/matchmoving
+Successfully created directory: /PROJEKTS/000_abc_def/assets/miscellaneous
+Successfully created directory: /PROJEKTS/000_abc_def/assets/paint
+Successfully created directory: /PROJEKTS/000_abc_def/assets/photoshop
+Successfully created directory: /PROJEKTS/000_abc_def/assets/roto
+Successfully created directory: /PROJEKTS/000_abc_def/assets/slates
+Successfully created directory: /PROJEKTS/000_abc_def/assets/subtitles
+Successfully created directory: /PROJEKTS/000_abc_def/assets/supers
+Successfully created directory: /PROJEKTS/000_abc_def/assets/titles
+Successfully created directory: /PROJEKTS/000_abc_def/assets/tracking
+Successfully created directory: /PROJEKTS/000_abc_def/assets/video
+Successfully created directory: /PROJEKTS/000_abc_def/backup
+Successfully created directory: /PROJEKTS/000_abc_def/backup/backup-scripts
+Successfully created directory: /PROJEKTS/000_abc_def/cfg
+Successfully created directory: /PROJEKTS/000_abc_def/cfg/log
+Successfully created directory: /PROJEKTS/000_abc_def/cfg/pref
+Successfully created directory: /PROJEKTS/000_abc_def/cfg/template
+Successfully created directory: /PROJEKTS/000_abc_def/cfg/workstation
+Successfully created directory: /PROJEKTS/000_abc_def/docs
+Successfully created directory: /PROJEKTS/000_abc_def/docs/agreements
+Successfully created directory: /PROJEKTS/000_abc_def/docs/agreements/employment
+Successfully created directory: /PROJEKTS/000_abc_def/docs/agreements/memoranda_of_understanding
+Successfully created directory: /PROJEKTS/000_abc_def/docs/agreements/non_disclosure
+Successfully created directory: /PROJEKTS/000_abc_def/docs/agreements/service
+Successfully created directory: /PROJEKTS/000_abc_def/docs/briefs
+Successfully created directory: /PROJEKTS/000_abc_def/docs/briefs/design_briefs
+Successfully created directory: /PROJEKTS/000_abc_def/docs/briefs/marketing_briefs
+Successfully created directory: /PROJEKTS/000_abc_def/docs/briefs/projekt_briefs
+Successfully created directory: /PROJEKTS/000_abc_def/docs/contracts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/contracts/client_contracts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/contracts/lease_contracts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/contracts/vendor_contracts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/designs
+Successfully created directory: /PROJEKTS/000_abc_def/docs/designs/mockups
+Successfully created directory: /PROJEKTS/000_abc_def/docs/designs/specifications
+Successfully created directory: /PROJEKTS/000_abc_def/docs/designs/wireframes
+Successfully created directory: /PROJEKTS/000_abc_def/docs/estimates
+Successfully created directory: /PROJEKTS/000_abc_def/docs/estimates/cost_estimates
+Successfully created directory: /PROJEKTS/000_abc_def/docs/estimates/projekt_estimates
+Successfully created directory: /PROJEKTS/000_abc_def/docs/estimates/time_estimates
+Successfully created directory: /PROJEKTS/000_abc_def/docs/financial
+Successfully created directory: /PROJEKTS/000_abc_def/docs/financial/budgets
+Successfully created directory: /PROJEKTS/000_abc_def/docs/financial/invoices
+Successfully created directory: /PROJEKTS/000_abc_def/docs/financial/reports
+Successfully created directory: /PROJEKTS/000_abc_def/docs/financial/statements
+Successfully created directory: /PROJEKTS/000_abc_def/docs/guidelines
+Successfully created directory: /PROJEKTS/000_abc_def/docs/guidelines/branding
+Successfully created directory: /PROJEKTS/000_abc_def/docs/guidelines/compliance
+Successfully created directory: /PROJEKTS/000_abc_def/docs/guidelines/localization
+Successfully created directory: /PROJEKTS/000_abc_def/docs/guidelines/styleguide
+Successfully created directory: /PROJEKTS/000_abc_def/docs/handbooks
+Successfully created directory: /PROJEKTS/000_abc_def/docs/handbooks/employee
+Successfully created directory: /PROJEKTS/000_abc_def/docs/handbooks/policy
+Successfully created directory: /PROJEKTS/000_abc_def/docs/handbooks/training
+Successfully created directory: /PROJEKTS/000_abc_def/docs/invoices
+Successfully created directory: /PROJEKTS/000_abc_def/docs/invoices/client
+Successfully created directory: /PROJEKTS/000_abc_def/docs/invoices/paid
+Successfully created directory: /PROJEKTS/000_abc_def/docs/invoices/unpaid
+Successfully created directory: /PROJEKTS/000_abc_def/docs/invoices/vendor
+Successfully created directory: /PROJEKTS/000_abc_def/docs/job_description
+Successfully created directory: /PROJEKTS/000_abc_def/docs/job_description/administrative_roles
+Successfully created directory: /PROJEKTS/000_abc_def/docs/job_description/management_roles
+Successfully created directory: /PROJEKTS/000_abc_def/docs/job_description/technical_roles
+Successfully created directory: /PROJEKTS/000_abc_def/docs/knowledge_base
+Successfully created directory: /PROJEKTS/000_abc_def/docs/knowledge_base/faqs
+Successfully created directory: /PROJEKTS/000_abc_def/docs/knowledge_base/how_to_guides
+Successfully created directory: /PROJEKTS/000_abc_def/docs/knowledge_base/troubleshooting
+Successfully created directory: /PROJEKTS/000_abc_def/docs/licenses
+Successfully created directory: /PROJEKTS/000_abc_def/docs/licenses/product_licenses
+Successfully created directory: /PROJEKTS/000_abc_def/docs/licenses/service_licenses
+Successfully created directory: /PROJEKTS/000_abc_def/docs/licenses/software_licenses
+Successfully created directory: /PROJEKTS/000_abc_def/docs/memoranda
+Successfully created directory: /PROJEKTS/000_abc_def/docs/memoranda/external_memos
+Successfully created directory: /PROJEKTS/000_abc_def/docs/memoranda/internal_memos
+Successfully created directory: /PROJEKTS/000_abc_def/docs/memoranda/meeting_memos
+Successfully created directory: /PROJEKTS/000_abc_def/docs/non_disclosure
+Successfully created directory: /PROJEKTS/000_abc_def/docs/non_disclosure/client_ndas
+Successfully created directory: /PROJEKTS/000_abc_def/docs/non_disclosure/employee_ndas
+Successfully created directory: /PROJEKTS/000_abc_def/docs/non_disclosure/vendor_ndas
+Successfully created directory: /PROJEKTS/000_abc_def/docs/org_charts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/org_charts/company_charts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/org_charts/department_charts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/org_charts/team_charts
+Successfully created directory: /PROJEKTS/000_abc_def/docs/policies
+Successfully created directory: /PROJEKTS/000_abc_def/docs/policies/hr_policies
+Successfully created directory: /PROJEKTS/000_abc_def/docs/policies/it_policies
+Successfully created directory: /PROJEKTS/000_abc_def/docs/policies/operational_policies
+Successfully created directory: /PROJEKTS/000_abc_def/docs/quotations
+Successfully created directory: /PROJEKTS/000_abc_def/docs/quotations/client_quotations
+Successfully created directory: /PROJEKTS/000_abc_def/docs/quotations/service_quotations
+Successfully created directory: /PROJEKTS/000_abc_def/docs/quotations/vendor_quotations
+Successfully created directory: /PROJEKTS/000_abc_def/docs/reports
+Successfully created directory: /PROJEKTS/000_abc_def/docs/reports/annual_reports
+Successfully created directory: /PROJEKTS/000_abc_def/docs/reports/projekt_reports
+Successfully created directory: /PROJEKTS/000_abc_def/docs/reports/quarterly_reports
+Successfully created directory: /PROJEKTS/000_abc_def/docs/schedules
+Successfully created directory: /PROJEKTS/000_abc_def/docs/schedules/meeting_schedules
+Successfully created directory: /PROJEKTS/000_abc_def/docs/schedules/projekt_schedules
+Successfully created directory: /PROJEKTS/000_abc_def/docs/schedules/training_schedules
+Successfully created directory: /PROJEKTS/000_abc_def/docs/technical
+Successfully created directory: /PROJEKTS/000_abc_def/docs/technical/technical_manuals
+Successfully created directory: /PROJEKTS/000_abc_def/docs/technical/technical_reports
+Successfully created directory: /PROJEKTS/000_abc_def/docs/technical/technical_specifications
+Successfully created directory: /PROJEKTS/000_abc_def/docs/user_guides
+Successfully created directory: /PROJEKTS/000_abc_def/docs/user_guides/product_user_guides
+Successfully created directory: /PROJEKTS/000_abc_def/docs/user_guides/service_user_guides
+Successfully created directory: /PROJEKTS/000_abc_def/docs/user_guides/software_user_guides
+Successfully created directory: /PROJEKTS/000_abc_def/docs/vendor_list
+Successfully created directory: /PROJEKTS/000_abc_def/docs/vendor_list/approved_vendors
+Successfully created directory: /PROJEKTS/000_abc_def/docs/vendor_list/blacklisted_vendors
+Successfully created directory: /PROJEKTS/000_abc_def/docs/vendor_list/preferred_vendors
+Successfully created directory: /PROJEKTS/000_abc_def/docs/workflows
+Successfully created directory: /PROJEKTS/000_abc_def/docs/workflows/approval_workflows
+Successfully created directory: /PROJEKTS/000_abc_def/docs/workflows/operational_workflows
+Successfully created directory: /PROJEKTS/000_abc_def/docs/workflows/process_workflows
+Successfully created directory: /PROJEKTS/000_abc_def/docs/xml
+Successfully created directory: /PROJEKTS/000_abc_def/docs/xml/xml_templates
+Successfully created directory: /PROJEKTS/000_abc_def/docs/xml/xslt_templates
+Successfully created directory: /PROJEKTS/000_abc_def/editorial
+Processing bookmarks: editorial
+
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/aaf
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/avid_media_composer
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/davinci_resolve
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/edl
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/final_cut_pro
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/prep
+Successfully created directory: /PROJEKTS/000_abc_def/editorial/xml
+Successfully created directory: /PROJEKTS/000_abc_def/flame
+Processing bookmarks: flame
+
+Successfully created directory: /PROJEKTS/000_abc_def/flame/archives
+Successfully created directory: /PROJEKTS/000_abc_def/flame/iterations
+Successfully created directory: /PROJEKTS/000_abc_def/flame/setups
+Successfully created directory: /PROJEKTS/000_abc_def/masters
+Processing bookmarks: masters
+
+Successfully created directory: /PROJEKTS/000_abc_def/masters/master_edits
+Successfully created directory: /PROJEKTS/000_abc_def/masters/slated_masters
+Successfully created directory: /PROJEKTS/000_abc_def/masters/versioned_masters
+Successfully created directory: /PROJEKTS/000_abc_def/reference
+Processing bookmarks: reference
+
+Successfully created directory: /PROJEKTS/000_abc_def/reference/reference_images
+Successfully created directory: /PROJEKTS/000_abc_def/reference/reference_movies
+Successfully created directory: /PROJEKTS/000_abc_def/reference/reference_style_guide
+Successfully created directory: /PROJEKTS/000_abc_def/scenes
+Processing bookmarks: scenes
+
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/3ds
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/alembic
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/baselight
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/blender
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/c4d
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/cut
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/fbx
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/geometry
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/houdini
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/maya
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/resolve
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/unity
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/unreal_engine
+Successfully created directory: /PROJEKTS/000_abc_def/scenes/usd
+Successfully created directory: /PROJEKTS/000_abc_def/shots
+Processing bookmarks: shots
+
+Successfully created directory: /PROJEKTS/000_abc_def/software
+Successfully created directory: /PROJEKTS/000_abc_def/software/applications
+Successfully created directory: /PROJEKTS/000_abc_def/tmp
+Processing bookmarks: tmp
+
+Successfully created directory: /PROJEKTS/000_abc_def/utilities
+Processing bookmarks: utilities
+
+Successfully created directory: /PROJEKTS/000_abc_def/utilities/Synergy
+Successfully created directory: /PROJEKTS/000_abc_def/utilities/Synergy/SynColor
+Successfully created directory: /PROJEKTS/000_abc_def/utilities/Synergy/SynColor/Shared
+Successfully created directory: /PROJEKTS/000_abc_def/version
+Processing bookmarks: version
+
+Successfully created directory: /PROJEKTS/000_abc_def/work_in_progress
+Processing bookmarks: work_in_progress
+
+Successfully created directory: /PROJEKTS/000_abc_def/work_in_progress/postings
+Additional bookmarks written to resources/tmp/tmp_bookmarks.json
+
+Bookmarks file updated successfully.
+# -------------------------------------------------------------------------- #
+
+# ======================= CREATING FLAME DIRECTORIES ======================== #
+
+
+Reading JSON config file: resources/cfg/projekt_configuration/tree/flame/flame_setup_dirs.json
+
+Successfully loaded JSON data.
+
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/2dtransform
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/2dtransform/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/2dtransform/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/2dtransform/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/3dblur
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/3dblur/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/3dblur/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/3dblur/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/aaf
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/action
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/action/contextmenu
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/action/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/action/ibl
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/action/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/action/transitions
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/audio
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/audio/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/audio/pref/ALSA
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/automatte
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/automatte/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/automatte/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/automatte/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/autostabilize
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/autostabilize/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/autostabilize/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/autostabilize/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/average
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/average/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/average/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/average/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/axis
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batch
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batch/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batch/log
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batch/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batchclip
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batchclip/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batchclip/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/batchclip/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blendComp
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blendComp/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blendComp/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blendComp/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blur
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blur/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blur/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blur/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/blur/presets/DEFOCUS
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/bumpDisplace
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/bumpDisplace/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/bumpDisplace/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/bumpDisplace/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_letterbox
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_letterbox/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_letterbox/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_letterbox/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_metadata
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_metadata/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_metadata/overlay
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_metadata/overlay/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_metadata/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/burn_metadata/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/ccurves
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/ccurves/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/ccurves/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/ccurves/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cfg
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cfg/linux
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cfg/linux/template
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/check
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/check/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/check/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/check/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/clamp
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/clamp/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/clamp/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/clamp/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colour_correct
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colour_correct/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colour_correct/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colour_correct/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colourwarper
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colourwarper/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colourwarper/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/colourwarper/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/combine
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/combine/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/combine/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/combine/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/comp
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/comp/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/compound
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/compound/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/compound/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/compound/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/comp/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/comp/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cryptoMatte
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cryptoMatte/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cryptoMatte/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cryptoMatte/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/damage
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/damage/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/damage/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/damage/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/damage/presets/ANALOG
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/damage/presets/DIGITAL
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/damage/presets/FILM
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deal
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deal/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deal/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deal/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deform
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deform/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deform/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deform/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/degrain
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/degrain/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/degrain/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/degrain/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deinterlace
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deinterlace/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deinterlace/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/deinterlace/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/denoise
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/denoise/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/denoise/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/denoise/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/depthOfField
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/depthOfField/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/depthOfField/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/depthOfField/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/difference
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/difference/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/difference/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/difference/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/dissolve
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/dissolve/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/dissolve/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/dissolve/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/distort
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/distort/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/distort/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/distort/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edge
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edgeDetect
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edgeDetect/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edgeDetect/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edgeDetect/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edge/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edge/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edge/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/edl
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file/AIFF
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file/AIFF-C
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file/AVR
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file/BICSF
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file/MP3
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file/NEXTSND
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/audio_file/WAVE
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/distribution_package
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/distribution_package/Dolby Vision
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Alias
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Cineon
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/DPX
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Jpeg
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Maya
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/OpenEXR
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Pict
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Pixar
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Png
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/SGI
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Softimage
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Targa
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Tiff
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/file_sequence/Wavefront
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/Apple Final Cut Pro
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/AVC-Intra
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/Avid Media Composer
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/Cinedeck
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/DVCPro HD
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/H.264
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/MP4
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/Panasonic
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/QuickTime
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/Sony XAVC
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/movie_file/Sony XDCAM
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Apple Final Cut Pro
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Avid Media Composer
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Avid Pro Tools
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/DaVinci Resolve
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/EDL Publish
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Filmlight Baselight
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Shot Publish
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Simple Publish
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Source Media Export
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/flame/sequence_publish/Source Media Publish
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/shotgun
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/shotgun/audio_file
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/shotgun/distribution_package
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/shotgun/file_sequence
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/shotgun/movie_file
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/export/presets/shotgun/sequence_publish
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/exposure
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/exposure/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/exposure/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/exposure/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/expressions
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/fieldmerge
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/fieldmerge/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/fieldmerge/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/fieldmerge/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/filmrestore
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/filmrestore/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/filmrestore/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/filter
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/filter/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/filter/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/filter/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/flip
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/flip/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/flip/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/flip/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gateway_import
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gateway_import/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gateway_import/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gateway_import/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/glow
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/glow/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/glow/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/glow/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gmask
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gmask/default
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gmask/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gmask/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gmask/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gmask/transitions
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gmask/transitions/SMPTE
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gradient
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gradient/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gradient/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/gradient/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hdr
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hdr/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hdr/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hdr/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/histo2d
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/histo2d/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/histo2d/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/histo2d/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hub
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hub/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hub/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/hub/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/image
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/image/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/image/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/images
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/import
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/import/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/import/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/import/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/interlace
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/interlace/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/interlace/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/interlace/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/key
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyer3d
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyer3d/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyer3d/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyer3d/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerChannel
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerChannel/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerChannel/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerChannel/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerHLS
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerHLS/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerHLS/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerHLS/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGB
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGBCMYL
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGBCMYL/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGBCMYL/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGBCMYL/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGB/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGB/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerRGB/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerYUV
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerYUV/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerYUV/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/keyerYUV/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/key/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/key/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/key/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lensDistort
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lensDistort/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lens_distortion
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lens_distortion/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lens_distortion/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lens_distortion/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lensDistort/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lensDistort/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/look
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/look/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/look/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/look/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lut
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lutfloat
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lut/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/lut/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mapConvert
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mapConvert/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mapConvert/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mapConvert/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mask
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mask/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mask/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mask/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/masterkey
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/masterkey/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/masterkey/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/masterkey/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/matchbox
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/matchbox/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/matchbox/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/matchGrain
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/matchGrain/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/matchGrain/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/matchGrain/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mattecurves
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mattecurves/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mattecurves/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mattecurves/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mediahub
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mediahub/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/media_import
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/media_import/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mediaImport
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mediaImport/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mediaImport/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mix
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mix/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mix/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mix/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/modularKeyer
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/modularKeyer/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/modularKeyer/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/modularKeyer/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mono
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mono/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mono/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/mono/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motif
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motif/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motif/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motif/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_analysis
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_analysis/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_analysis/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_analysis/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motionBlur
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motionBlur/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motionBlur/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motionBlur/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_convert
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_convert/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_convert/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/motion_convert/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/note
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/note/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/note/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/note/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/openfx
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/openfx/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/openfx/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/openfx/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/optics
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/optics/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/optics/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/optics/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/output
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/output/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/output/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/output/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/overlays
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/overlays/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/autopaint
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/brush
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/cutout
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/geometry
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/mask
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/palette
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/picture
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/paint/set
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/particules
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/path
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pixelspread
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pixelspread/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pixelspread/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pixelspread/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/posterize
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/posterize/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/posterize/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/posterize/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pulldown
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pulldown/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pulldown/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pulldown/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pybox
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pybox/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pybox/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/pybox/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/python
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/quickcomp
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/quickcomp/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/quickcomp/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/quickcomp/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/recursiveOps
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/recursiveOps/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/recursiveOps/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/recursiveOps/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/regrain
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/regrain/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/regrain/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/regrain/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/repeat
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/repeat/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/repeat/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/repeat/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/resize
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/resize/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/resize/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/resize/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/separate
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/separate/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/separate/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/separate/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/sparks
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/sparks/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stabilizer
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stabilizer/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stabilizer/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/status
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereo
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoAnaglyph
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoAnaglyph/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoAnaglyph/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoAnaglyph/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereo/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoInterlace
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoInterlace/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoInterlace/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoInterlace/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereo/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereo/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoToolbox
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoToolbox/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoToolbox/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stereoToolbox/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stmap
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stmap/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stmap/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stmap/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stylize
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stylize/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stylize/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/stylize/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/substance
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/substance/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/substance/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/substance/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/subtitle
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/subtitle/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/subtitle/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/subtitle/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/syncolor
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/syncolor/policy
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/syncolor/policy/user_color_spaces
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/syncolor/transforms
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/text
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/text/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/text/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/text/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/timewarp
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/timewarp/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/timewarp/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/timewarp/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/tmp
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/viewing
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/viewing/flame
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/viewing/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/viewing/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/warper
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/warper/magnet
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/warper/pref
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/warper/presets
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/wipe
+Successfully created directory: /opt/Autodesk/project/000_abc_def_2026_juliet/setups/xml
+# -------------------------------------------------------------------------- #
+
+# =================== LINKING BATCH ITERATIONS DIRECTORY ==================== #
+
+
+Linking batch iterations directory
+
+from: /PROJEKTS/000_abc_def/flame/iterations
+to:
+/opt/Autodesk/project/000_abc_def_2026_juliet/setups/batch/flame/iterations
+
+Successfully linked: iterations -> iterations
+
+# -------------------------------------------------------------------------- #
+
+# ===================== LINKING FLAME SETUP DIRECTORIES ===================== #
+
+
+Linking flame setup directories
+
+from: /opt/Autodesk/project/000_abc_def_2026_juliet
+to:
+/PROJEKTS/000_abc_def/flame/setups/juliet
+
+Successfully linked: media -> media
+Successfully linked: catalog -> catalog
+Successfully linked: setups -> setups
+# -------------------------------------------------------------------------- #
+
+# ================== COPYING INIT CONFIG TO FLAME PROJEKT =================== #
+
+Copying file from /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/flame/presets/cfg/init.cfg/template/1920x1080@23976p.cfg to /opt/Autodesk/project/000_abc_def_2026_juliet/setups/cfg/000_abc_def_2026_juliet.cfg
+
+# -------------------------------------------------------------------------- #
+
+# ========================== COPYING ARCHIVE PREFS ========================== #
+
+
+creating archive preferences.
+
+/opt/Autodesk/project/000_abc_def_2026_juliet/setups/status/ArchiveCurrent.json
+
+/opt/Autodesk/project/000_abc_def_2026_juliet/setups/status/project.json
+
+project archive prefs created.
+project archive cache prefs created.
+# -------------------------------------------------------------------------- #
+
+# ======================= COPYING BATCH PROJECT BINS ======================== #
+
+
+creating batch project bin.
+sending incremental file list
+./
+_project.AP0_ARRI_LogC3.batch
+_project.AP0_ARRI_LogC4.batch
+_project.AP0_Apple_Log.batch
+_project.AP0_BMD.batch
+_project.AP0_Canon_D55.batch
+_project.AP0_Canon_TUNG.batch
+_project.AP0_Log3G10.batch
+_project.AP0_Panasonic_VLog.batch
+_project.AP0_Rec709.batch
+_project.AP0_S3SGamut3_Cine.batch
+_project.AP0_S3SGamut3_CineVenice.batch
+_project.AP0_S3SGamut3_Venice.batch
+_project.AP0_S3_SGamut3.batch
+_project.AP0_Scene_Linear.batch
+_project.AP1_ARRI_LogC3.batch
+_project.AP1_ARRI_LogC4.batch
+_project.AP1_Apple_Log.batch
+_project.AP1_BMD.batch
+_project.AP1_Canon_D55.batch
+_project.AP1_Canon_TUNG.batch
+_project.AP1_Log3G10.batch
+_project.AP1_Panasonic_VLog.batch
+_project.AP1_Rec709.batch
+_project.AP1_S3SGamut3_Cine.batch
+_project.AP1_S3SGamut3_CineVenice.batch
+_project.AP1_S3SGamut3_Venice.batch
+_project.AP1_S3_SGamut3.batch
+_project.AP1_Scene_Linear.batch
+_project.linux_color_toolkit.batch
+_project.macOS_color_toolkit.batch
+project_batch.bin
+_project.AP0_ARRI_LogC3/
+_project.AP0_ARRI_LogC3/AP0_to_ARRI_LogC3.lut_node
+_project.AP0_ARRI_LogC3/ARRI_LogC3_to_AP0.lut_node
+_project.AP0_ARRI_LogC3/WORKFLOW_AP0_ARRI_LogC3.compass_node
+_project.AP0_ARRI_LogC3/root.root_node
+_project.AP0_ARRI_LogC4/
+_project.AP0_ARRI_LogC4/AP0_to_ARRI_LogC4.lut_node
+_project.AP0_ARRI_LogC4/ARRI_LogC4_to_AP0.lut_node
+_project.AP0_ARRI_LogC4/WORKFLOW_AP0_ARRI_LogC4.compass_node
+_project.AP0_ARRI_LogC4/root.root_node
+_project.AP0_Apple_Log/
+_project.AP0_Apple_Log/AP0_to_Apple_Log.lut_node
+_project.AP0_Apple_Log/Apple_Log_to_AP0.lut_node
+_project.AP0_Apple_Log/WORKFLOW_AP0_Apple_Log.compass_node
+_project.AP0_Apple_Log/root.root_node
+_project.AP0_BMD/
+_project.AP0_BMD/AP0_to_BMD.lut_node
+_project.AP0_BMD/BMD_to_AP0.lut_node
+_project.AP0_BMD/WORKFLOW_AP0_BMD.compass_node
+_project.AP0_BMD/root.root_node
+_project.AP0_Canon_D55/
+_project.AP0_Canon_D55/AP0_to_Canon_Daylight.lut_node
+_project.AP0_Canon_D55/Canon_Daylight_to_AP0.lut_node
+_project.AP0_Canon_D55/WORKFLOW_AP0_Canon_Daylight.compass_node
+_project.AP0_Canon_D55/root.root_node
+_project.AP0_Canon_TUNG/
+_project.AP0_Canon_TUNG/AP0_to_Canon_Tungsten.lut_node
+_project.AP0_Canon_TUNG/Canon_Tungsten_to_AP0.lut_node
+_project.AP0_Canon_TUNG/WORKFLOW_AP0_Canon_Tungsten.compass_node
+_project.AP0_Canon_TUNG/root.root_node
+_project.AP0_Log3G10/
+_project.AP0_Log3G10/AP0_to_R3D_Log3G10.lut_node
+_project.AP0_Log3G10/R3D_Log3G10_to_AP0.lut_node
+_project.AP0_Log3G10/WORKFLOW_AP0_Log3G10.compass_node
+_project.AP0_Log3G10/root.root_node
+_project.AP0_Panasonic_VLog/
+_project.AP0_Panasonic_VLog/AP0_to_Panasonic_VLog.lut_node
+_project.AP0_Panasonic_VLog/Panasonic_VLog_to_AP0.lut_node
+_project.AP0_Panasonic_VLog/WORKFLOW_AP0_Panasonic_VLog.compass_node
+_project.AP0_Panasonic_VLog/root.root_node
+_project.AP0_Rec709/
+_project.AP0_Rec709/AP0_to_Rec709.lut_node
+_project.AP0_Rec709/Rec709_to_AP0.lut_node
+_project.AP0_Rec709/WORKFLOW_AP0_Rec709.compass_node
+_project.AP0_Rec709/root.root_node
+_project.AP0_S3SGamut3_Cine/
+_project.AP0_S3SGamut3_Cine/AP0_to_S3SGamut3_Cine.lut_node
+_project.AP0_S3SGamut3_Cine/S3SGamut3_Cine_to_AP0.lut_node
+_project.AP0_S3SGamut3_Cine/WORKFLOW_AP0_S3SGamut3_Cine.compass_node
+_project.AP0_S3SGamut3_Cine/root.root_node
+_project.AP0_S3SGamut3_CineVenice/
+_project.AP0_S3SGamut3_CineVenice/AP0_to_S3SGamut3_Cine_Venice.lut_node
+_project.AP0_S3SGamut3_CineVenice/S3SGamut3_Cine_Venice_to_AP0.lut_node
+_project.AP0_S3SGamut3_CineVenice/WORKFLOW_AP0_S3SGamut3_Cine_Venice.compass_node
+_project.AP0_S3SGamut3_CineVenice/root.root_node
+_project.AP0_S3SGamut3_Venice/
+_project.AP0_S3SGamut3_Venice/AP0_to_S3SGamut3_Venice.lut_node
+_project.AP0_S3SGamut3_Venice/S3SGamut3_Venice_to_AP0.lut_node
+_project.AP0_S3SGamut3_Venice/WORKFLOW_AP0_S3SGamut3_Venice.compass_node
+_project.AP0_S3SGamut3_Venice/root.root_node
+_project.AP0_S3_SGamut3/
+_project.AP0_S3_SGamut3/AP0_to_S3SGamut3.lut_node
+_project.AP0_S3_SGamut3/S3SGamut3_to_AP0.lut_node
+_project.AP0_S3_SGamut3/WORKFLOW_AP0_S3SGamut3.compass_node
+_project.AP0_S3_SGamut3/root.root_node
+_project.AP0_Scene_Linear/
+_project.AP0_Scene_Linear/AP0_to_LinearRec709_sRGB.lut_node
+_project.AP0_Scene_Linear/LinearRec709_sRGB_to_AP0.lut_node
+_project.AP0_Scene_Linear/WORKFLOW_AP0_Scene_Linear_Rec709_sRGB.compass_node
+_project.AP0_Scene_Linear/root.root_node
+_project.AP1_ARRI_LogC3/
+_project.AP1_ARRI_LogC3/AP1_to_ARRI_LogC3.lut_node
+_project.AP1_ARRI_LogC3/ARRI_LogC3_to_AP1.lut_node
+_project.AP1_ARRI_LogC3/WORKFLOW_AP1_ARRI_LogC3.compass_node
+_project.AP1_ARRI_LogC3/root.root_node
+_project.AP1_ARRI_LogC4/
+_project.AP1_ARRI_LogC4/AP1_to_ARRI_LogC4.lut_node
+_project.AP1_ARRI_LogC4/ARRI_LogC4_to_AP1.lut_node
+_project.AP1_ARRI_LogC4/WORKFLOW_AP1_ARRI_LogC4.compass_node
+_project.AP1_ARRI_LogC4/root.root_node
+_project.AP1_Apple_Log/
+_project.AP1_Apple_Log/AP1_to_Apple_Log.lut_node
+_project.AP1_Apple_Log/Apple_Log_to_AP1.lut_node
+_project.AP1_Apple_Log/WORKFLOW_AP1_Apple_Log.compass_node
+_project.AP1_Apple_Log/root.root_node
+_project.AP1_BMD/
+_project.AP1_BMD/AP1_to_BMD.lut_node
+_project.AP1_BMD/BMD_to_AP1.lut_node
+_project.AP1_BMD/WORKFLOW_AP1_BMD.compass_node
+_project.AP1_BMD/root.root_node
+_project.AP1_Canon_D55/
+_project.AP1_Canon_D55/AP1_to_Canon_Daylight.lut_node
+_project.AP1_Canon_D55/Canon_Daylight_to_AP1.lut_node
+_project.AP1_Canon_D55/WORKFLOW_AP1_Canon_Daylight.compass_node
+_project.AP1_Canon_D55/root.root_node
+_project.AP1_Canon_TUNG/
+_project.AP1_Canon_TUNG/AP1_to_Canon_Tungsten.lut_node
+_project.AP1_Canon_TUNG/Canon_Tungsten_to_AP1.lut_node
+_project.AP1_Canon_TUNG/WORKFLOW_AP1_Canon_Tungsten.compass_node
+_project.AP1_Canon_TUNG/root.root_node
+_project.AP1_Log3G10/
+_project.AP1_Log3G10/AP1_to_R3D_Log3G10.lut_node
+_project.AP1_Log3G10/R3D_Log3G10_to_AP1.lut_node
+_project.AP1_Log3G10/WORKFLOW_AP1_Log3G10.compass_node
+_project.AP1_Log3G10/root.root_node
+_project.AP1_Panasonic_VLog/
+_project.AP1_Panasonic_VLog/AP1_to_Panasonic_VLog.lut_node
+_project.AP1_Panasonic_VLog/Panasonic_VLog_to_AP1.lut_node
+_project.AP1_Panasonic_VLog/WORKFLOW_AP1_Panasonic_VLog.compass_node
+_project.AP1_Panasonic_VLog/root.root_node
+_project.AP1_Rec709/
+_project.AP1_Rec709/AP1_to_Rec709.lut_node
+_project.AP1_Rec709/Rec709_to_AP1.lut_node
+_project.AP1_Rec709/WORKFLOW_AP1_Rec709.compass_node
+_project.AP1_Rec709/root.root_node
+_project.AP1_S3SGamut3_Cine/
+_project.AP1_S3SGamut3_Cine/AP1_to_S3SGamut3_Cine.lut_node
+_project.AP1_S3SGamut3_Cine/S3SGamut3_Cine_to_AP1.lut_node
+_project.AP1_S3SGamut3_Cine/WORKFLOW_AP1_S3SGamut3_Cine.compass_node
+_project.AP1_S3SGamut3_Cine/root.root_node
+_project.AP1_S3SGamut3_CineVenice/
+_project.AP1_S3SGamut3_CineVenice/AP1_to_S3SGamut3_Cine_Venice.lut_node
+_project.AP1_S3SGamut3_CineVenice/S3SGamut3_Cine_Venice_to_AP1.lut_node
+_project.AP1_S3SGamut3_CineVenice/WORKFLOW_AP1_S3SGamut3_Cine_Venice.compass_node
+_project.AP1_S3SGamut3_CineVenice/root.root_node
+_project.AP1_S3SGamut3_Venice/
+_project.AP1_S3SGamut3_Venice/AP1_to_S3SGamut3_Venice.lut_node
+_project.AP1_S3SGamut3_Venice/S3SGamut3_Venice_to_AP1.lut_node
+_project.AP1_S3SGamut3_Venice/WORKFLOW_AP1_S3SGamut3_Venice.compass_node
+_project.AP1_S3SGamut3_Venice/root.root_node
+_project.AP1_S3_SGamut3/
+_project.AP1_S3_SGamut3/AP1_to_S3SGamut3.lut_node
+_project.AP1_S3_SGamut3/S3SGamut3_to_AP1.lut_node
+_project.AP1_S3_SGamut3/WORKFLOW_AP1_S3SGamut3.compass_node
+_project.AP1_S3_SGamut3/root.root_node
+_project.AP1_Scene_Linear/
+_project.AP1_Scene_Linear/AP1_to_LinearRec709_sRGB.lut_node
+_project.AP1_Scene_Linear/LinearRec709_sRGB_to_AP1.lut_node
+_project.AP1_Scene_Linear/WORKFLOW_AP1_Scene_Linear_Rec709_sRGB.compass_node
+_project.AP1_Scene_Linear/root.root_node
+_project.linux_color_toolkit/
+_project.linux_color_toolkit/AP0_to_AP1.lut_node
+_project.linux_color_toolkit/AP0_to_ARRI_LogC3.lut_node
+_project.linux_color_toolkit/AP0_to_ARRI_LogC4.lut_node
+_project.linux_color_toolkit/AP0_to_Apple_Log.lut_node
+_project.linux_color_toolkit/AP0_to_BMD.lut_node
+_project.linux_color_toolkit/AP0_to_Canon_Daylight.lut_node
+_project.linux_color_toolkit/AP0_to_Canon_Tungsten.lut_node
+_project.linux_color_toolkit/AP0_to_LinearRec709_sRGB.lut_node
+_project.linux_color_toolkit/AP0_to_Panasonic_VLog.lut_node
+_project.linux_color_toolkit/AP0_to_R3D_Log3G10.lut_node
+_project.linux_color_toolkit/AP0_to_Rec709.lut_node
+_project.linux_color_toolkit/AP0_to_S3SGamut3.lut_node
+_project.linux_color_toolkit/AP0_to_S3SGamut3_Cine_Venice.lut_node
+_project.linux_color_toolkit/AP0_to_S3SGamut3_Venice.lut_node
+_project.linux_color_toolkit/AP1_to_ARRI_LogC3.lut_node
+_project.linux_color_toolkit/AP1_to_ARRI_LogC4.lut_node
+_project.linux_color_toolkit/AP1_to_Apple_Log.lut_node
+_project.linux_color_toolkit/AP1_to_BMD.lut_node
+_project.linux_color_toolkit/AP1_to_Canon_Daylight.lut_node
+_project.linux_color_toolkit/AP1_to_Canon_Tungsten.lut_node
+_project.linux_color_toolkit/AP1_to_LinearRec709_sRGB.lut_node
+_project.linux_color_toolkit/AP1_to_Panasonic_VLog.lut_node
+_project.linux_color_toolkit/AP1_to_R3D_Log3G10.lut_node
+_project.linux_color_toolkit/AP1_to_Rec709.lut_node
+_project.linux_color_toolkit/AP1_to_S3SGamut3.lut_node
+_project.linux_color_toolkit/AP1_to_S3SGamut3_Cine_Venice.lut_node
+_project.linux_color_toolkit/AP1_to_S3SGamut3_Venice.lut_node
+_project.linux_color_toolkit/ARRI_LogC3_to_AP0.lut_node
+_project.linux_color_toolkit/ARRI_LogC3_to_AP1.lut_node
+_project.linux_color_toolkit/ARRI_LogC3_to_Rec709.lut_node
+_project.linux_color_toolkit/ARRI_LogC4_to_AP0.lut_node
+_project.linux_color_toolkit/ARRI_LogC4_to_AP1.lut_node
+_project.linux_color_toolkit/ARRI_LogC4_to_Rec709.lut_node
+_project.linux_color_toolkit/Apple_Log_to_AP0.lut_node
+_project.linux_color_toolkit/Apple_Log_to_AP1.lut_node
+_project.linux_color_toolkit/Apple_Log_to_Rec709.lut_node
+_project.linux_color_toolkit/BMD_to_AP0.lut_node
+_project.linux_color_toolkit/BMD_to_AP1.lut_node
+_project.linux_color_toolkit/BMD_to_Rec709.lut_node
+_project.linux_color_toolkit/Canon_Daylight_to_AP0.lut_node
+_project.linux_color_toolkit/Canon_Daylight_to_AP1.lut_node
+_project.linux_color_toolkit/Canon_Daylight_to_Rec709.lut_node
+_project.linux_color_toolkit/Canon_Tungsten_to_AP0.lut_node
+_project.linux_color_toolkit/Canon_Tungsten_to_AP1.lut_node
+_project.linux_color_toolkit/Canon_Tungsten_to_Rec709.lut_node
+_project.linux_color_toolkit/IDENTITY_ARRI_LogC3.mux_node
+_project.linux_color_toolkit/IDENTITY_ARRI_LogC4.mux_node
+_project.linux_color_toolkit/IDENTITY_Apple_Log.mux_node
+_project.linux_color_toolkit/IDENTITY_BMD.mux_node
+_project.linux_color_toolkit/IDENTITY_Canon_Daylight.mux_node
+_project.linux_color_toolkit/IDENTITY_Canon_Tungsten.mux_node
+_project.linux_color_toolkit/IDENTITY_Panasonic_VLog.mux_node
+_project.linux_color_toolkit/IDENTITY_R3D_Log3G10.mux_node
+_project.linux_color_toolkit/IDENTITY_S3SGamut3.mux_node
+_project.linux_color_toolkit/IDENTITY_S3SGamut3_Cine_Venice.mux_node
+_project.linux_color_toolkit/IDENTITY_S3SGamut3_Venice.mux_node
+_project.linux_color_toolkit/KODAK_Digital_LAD.compass_node
+_project.linux_color_toolkit/LinearRec709_sRGB_to_AP0.lut_node
+_project.linux_color_toolkit/LinearRec709_sRGB_to_Rec709.lut_node
+_project.linux_color_toolkit/Log_to_Lin__classic.lut_node
+_project.linux_color_toolkit/Log_to_Lin__classic_AP0.lut_node
+_project.linux_color_toolkit/Ls_Contacts218.1.glsl
+_project.linux_color_toolkit/Ls_Contacts218.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts218.xml
+_project.linux_color_toolkit/Ls_Contacts589.1.glsl
+_project.linux_color_toolkit/Ls_Contacts589.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts589.xml
+_project.linux_color_toolkit/Ls_Contacts590.1.glsl
+_project.linux_color_toolkit/Ls_Contacts590.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts590.xml
+_project.linux_color_toolkit/Ls_Contacts591.1.glsl
+_project.linux_color_toolkit/Ls_Contacts591.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts591.xml
+_project.linux_color_toolkit/Ls_Contacts592.1.glsl
+_project.linux_color_toolkit/Ls_Contacts592.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts592.xml
+_project.linux_color_toolkit/Ls_Contacts594.1.glsl
+_project.linux_color_toolkit/Ls_Contacts594.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts594.xml
+_project.linux_color_toolkit/Ls_Contacts595.1.glsl
+_project.linux_color_toolkit/Ls_Contacts595.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts595.xml
+_project.linux_color_toolkit/Ls_Contacts596.1.glsl
+_project.linux_color_toolkit/Ls_Contacts596.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts596.xml
+_project.linux_color_toolkit/Ls_Contacts597.1.glsl
+_project.linux_color_toolkit/Ls_Contacts597.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts597.xml
+_project.linux_color_toolkit/Ls_Contacts598.1.glsl
+_project.linux_color_toolkit/Ls_Contacts598.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts598.xml
+_project.linux_color_toolkit/Ls_Contacts599.1.glsl
+_project.linux_color_toolkit/Ls_Contacts599.matchbox_node
+_project.linux_color_toolkit/Ls_Contacts599.xml
+_project.linux_color_toolkit/Panasonic_VLog_to_AP0.lut_node
+_project.linux_color_toolkit/Panasonic_VLog_to_AP1.lut_node
+_project.linux_color_toolkit/Panasonic_VLog_to_Rec709.lut_node
+_project.linux_color_toolkit/R3D_Log3G10_to_AP0.lut_node
+_project.linux_color_toolkit/R3D_Log3G10_to_AP1.lut_node
+_project.linux_color_toolkit/R3D_Log3G10_to_Rec709.lut_node
+_project.linux_color_toolkit/Rec709_to_AP0.lut_node
+_project.linux_color_toolkit/Rec709_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_Cine_Venice_to_AP0.lut_node
+_project.linux_color_toolkit/S3SGamut3_Cine_Venice_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_Cine_Venice_to_Rec709.lut_node
+_project.linux_color_toolkit/S3SGamut3_Venice_to_AP0.lut_node
+_project.linux_color_toolkit/S3SGamut3_Venice_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_Venice_to_Rec709.lut_node
+_project.linux_color_toolkit/S3SGamut3_to_AP0.lut_node
+_project.linux_color_toolkit/S3SGamut3_to_AP1.lut_node
+_project.linux_color_toolkit/S3SGamut3_to_Rec709.lut_node
+_project.linux_color_toolkit/SOURCE_CLIP_ARRI_LogC3.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_ARRI_LogC4.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Apple_Log.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_BMD.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Canon_Daylight.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Canon_Tungsten.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_Panasonic_VLog.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_R3D_Log3G10.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_S3SGamut3.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_S3SGamut3_Cine_Venice.mux_node
+_project.linux_color_toolkit/SOURCE_CLIP_S3SGamut3_Venice.mux_node
+_project.linux_color_toolkit/burnmetadata10004589.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004590.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004591.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004592.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004593.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004594.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004595.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004596.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004597.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004598.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004599.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004600.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004601.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004602.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004603.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004604.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004609.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004610.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004611.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004612.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004613.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004614.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004615.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004616.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004617.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004618.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004619.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004620.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004621.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004622.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004623.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004624.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004625.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004626.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004627.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004628.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004629.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004630.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004631.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata10004632.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata220.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata222.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata224.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata226.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_ARRI_LogC3.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_ARRI_LogC4.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Apple_Log.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_BMD.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Canon_Daylight.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Canon_Tungsten.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_Panasonic_VLog.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_R3D_Log3G10.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_S3SGamut3.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_S3SGamut3_Cine_Venice.burnmetadata_node
+_project.linux_color_toolkit/burnmetadata_S3SGamut3_Venice.burnmetadata_node
+_project.linux_color_toolkit/clip591.clip_node
+_project.linux_color_toolkit/clip591.clip_node_clip
+_project.linux_color_toolkit/clip591.clip_node_format
+_project.linux_color_toolkit/clip591.lut_node
+_project.linux_color_toolkit/clip591.resize
+_project.linux_color_toolkit/clip591.resize_node
+_project.linux_color_toolkit/clrmgmt10002596.lut_node
+_project.linux_color_toolkit/clrmgmt10002603.lut_node
+_project.linux_color_toolkit/clrmgmt10002604.lut_node
+_project.linux_color_toolkit/clrmgmt10002605.lut_node
+_project.linux_color_toolkit/clrmgmt10002606.lut_node
+_project.linux_color_toolkit/clrmgmt10002607.lut_node
+_project.linux_color_toolkit/clrmgmt10002608.lut_node
+_project.linux_color_toolkit/clrmgmt10002609.lut_node
+_project.linux_color_toolkit/clrmgmt10002610.lut_node
+_project.linux_color_toolkit/clrmgmt10002611.lut_node
+_project.linux_color_toolkit/clrmgmt10002612.lut_node
+_project.linux_color_toolkit/clrmgmt10002613.lut_node
+_project.linux_color_toolkit/clrmgmt10002614.lut_node
+_project.linux_color_toolkit/clrmgmt10002615.lut_node
+_project.linux_color_toolkit/clrmgmt10002616.lut_node
+_project.linux_color_toolkit/clrmgmt10002617.lut_node
+_project.linux_color_toolkit/clrmgmt10002618.lut_node
+_project.linux_color_toolkit/clrmgmt10002624.lut_node
+_project.linux_color_toolkit/clrmgmt10002625.lut_node
+_project.linux_color_toolkit/clrmgmt10002626.lut_node
+_project.linux_color_toolkit/clrmgmt10002627.lut_node
+_project.linux_color_toolkit/clrmgmt10002634.lut_node
+_project.linux_color_toolkit/clrmgmt10002635.lut_node
+_project.linux_color_toolkit/clrmgmt10002636.lut_node
+_project.linux_color_toolkit/clrmgmt10002637.lut_node
+_project.linux_color_toolkit/clrmgmt10002639.lut_node
+_project.linux_color_toolkit/clrmgmt10002640.lut_node
+_project.linux_color_toolkit/clrmgmt10002641.lut_node
+_project.linux_color_toolkit/clrmgmt10002642.lut_node
+_project.linux_color_toolkit/clrmgmt10002643.lut_node
+_project.linux_color_toolkit/clrmgmt10002644.lut_node
+_project.linux_color_toolkit/clrmgmt10002645.lut_node
+_project.linux_color_toolkit/clrmgmt10002646.lut_node
+_project.linux_color_toolkit/clrmgmt10002647.lut_node
+_project.linux_color_toolkit/clrmgmt10002648.lut_node
+_project.linux_color_toolkit/clrmgmt10002649.lut_node
+_project.linux_color_toolkit/clrmgmt10002650.lut_node
+_project.linux_color_toolkit/clrmgmt10002651.lut_node
+_project.linux_color_toolkit/clrmgmt10002652.lut_node
+_project.linux_color_toolkit/clrmgmt10002653.lut_node
+_project.linux_color_toolkit/clrmgmt10002654.lut_node
+_project.linux_color_toolkit/clrmgmt219.lut_node
+_project.linux_color_toolkit/clrmgmt221.lut_node
+_project.linux_color_toolkit/clrmgmt223.lut_node
+_project.linux_color_toolkit/elbow1.elbow_node
+_project.linux_color_toolkit/elbow10.elbow_node
+_project.linux_color_toolkit/elbow11.elbow_node
+_project.linux_color_toolkit/elbow12.elbow_node
+_project.linux_color_toolkit/elbow13.elbow_node
+_project.linux_color_toolkit/elbow14.elbow_node
+_project.linux_color_toolkit/elbow15.elbow_node
+_project.linux_color_toolkit/elbow16.elbow_node
+_project.linux_color_toolkit/elbow17.elbow_node
+_project.linux_color_toolkit/elbow18.elbow_node
+_project.linux_color_toolkit/elbow19.elbow_node
+_project.linux_color_toolkit/elbow2.elbow_node
+_project.linux_color_toolkit/elbow20.elbow_node
+_project.linux_color_toolkit/elbow21.elbow_node
+_project.linux_color_toolkit/elbow22.elbow_node
+_project.linux_color_toolkit/elbow23.elbow_node
+_project.linux_color_toolkit/elbow24.elbow_node
+_project.linux_color_toolkit/elbow25.elbow_node
+_project.linux_color_toolkit/elbow26.elbow_node
+_project.linux_color_toolkit/elbow27.elbow_node
+_project.linux_color_toolkit/elbow28.elbow_node
+_project.linux_color_toolkit/elbow29.elbow_node
+_project.linux_color_toolkit/elbow3.elbow_node
+_project.linux_color_toolkit/elbow30.elbow_node
+_project.linux_color_toolkit/elbow31.elbow_node
+_project.linux_color_toolkit/elbow32.elbow_node
+_project.linux_color_toolkit/elbow33.elbow_node
+_project.linux_color_toolkit/elbow34.elbow_node
+_project.linux_color_toolkit/elbow35.elbow_node
+_project.linux_color_toolkit/elbow36.elbow_node
+_project.linux_color_toolkit/elbow37.elbow_node
+_project.linux_color_toolkit/elbow38.elbow_node
+_project.linux_color_toolkit/elbow39.elbow_node
+_project.linux_color_toolkit/elbow4.elbow_node
+_project.linux_color_toolkit/elbow40.elbow_node
+_project.linux_color_toolkit/elbow41.elbow_node
+_project.linux_color_toolkit/elbow42.elbow_node
+_project.linux_color_toolkit/elbow43.elbow_node
+_project.linux_color_toolkit/elbow44.elbow_node
+_project.linux_color_toolkit/elbow45.elbow_node
+_project.linux_color_toolkit/elbow46.elbow_node
+_project.linux_color_toolkit/elbow47.elbow_node
+_project.linux_color_toolkit/elbow48.elbow_node
+_project.linux_color_toolkit/elbow49.elbow_node
+_project.linux_color_toolkit/elbow5.elbow_node
+_project.linux_color_toolkit/elbow50.elbow_node
+_project.linux_color_toolkit/elbow51.elbow_node
+_project.linux_color_toolkit/elbow52.elbow_node
+_project.linux_color_toolkit/elbow53.elbow_node
+_project.linux_color_toolkit/elbow54.elbow_node
+_project.linux_color_toolkit/elbow55.elbow_node
+_project.linux_color_toolkit/elbow56.elbow_node
+_project.linux_color_toolkit/elbow57.elbow_node
+_project.linux_color_toolkit/elbow58.elbow_node
+_project.linux_color_toolkit/elbow59.elbow_node
+_project.linux_color_toolkit/elbow6.elbow_node
+_project.linux_color_toolkit/elbow60.elbow_node
+_project.linux_color_toolkit/elbow61.elbow_node
+_project.linux_color_toolkit/elbow62.elbow_node
+_project.linux_color_toolkit/elbow63.elbow_node
+_project.linux_color_toolkit/elbow64.elbow_node
+_project.linux_color_toolkit/elbow65.elbow_node
+_project.linux_color_toolkit/elbow66.elbow_node
+_project.linux_color_toolkit/elbow67.elbow_node
+_project.linux_color_toolkit/elbow68.elbow_node
+_project.linux_color_toolkit/elbow69.elbow_node
+_project.linux_color_toolkit/elbow7.elbow_node
+_project.linux_color_toolkit/elbow71.elbow_node
+_project.linux_color_toolkit/elbow72.elbow_node
+_project.linux_color_toolkit/elbow73.elbow_node
+_project.linux_color_toolkit/elbow74.elbow_node
+_project.linux_color_toolkit/elbow75.elbow_node
+_project.linux_color_toolkit/elbow76.elbow_node
+_project.linux_color_toolkit/elbow77.elbow_node
+_project.linux_color_toolkit/elbow78.elbow_node
+_project.linux_color_toolkit/elbow79.elbow_node
+_project.linux_color_toolkit/elbow80.elbow_node
+_project.linux_color_toolkit/elbow81.elbow_node
+_project.linux_color_toolkit/elbow82.elbow_node
+_project.linux_color_toolkit/elbow83.elbow_node
+_project.linux_color_toolkit/elbow9.elbow_node
+_project.linux_color_toolkit/flame_colortoolkit_ARRI_LogC3.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_ARRI_LogC4.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Apple_Log.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_BMD_Film5.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Canon_Daylight.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Canon_Tungsten.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_Panasonic_VLog.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_R3D_Log3G10.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_SONY_S3SGamut3.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Cine_Venice.compass_node
+_project.linux_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Venice.compass_node
+_project.linux_color_toolkit/mux14.mux_node
+_project.linux_color_toolkit/note1.note_node
+_project.linux_color_toolkit/note2.note_node
+_project.linux_color_toolkit/root.root_node
+_project.macOS_color_toolkit/
+_project.macOS_color_toolkit/AP0_to_AP1.lut_node
+_project.macOS_color_toolkit/AP0_to_ARRI_LogC3.lut_node
+_project.macOS_color_toolkit/AP0_to_ARRI_LogC4.lut_node
+_project.macOS_color_toolkit/AP0_to_Apple_Log.lut_node
+_project.macOS_color_toolkit/AP0_to_BMD.lut_node
+_project.macOS_color_toolkit/AP0_to_Canon_Daylight.lut_node
+_project.macOS_color_toolkit/AP0_to_Canon_Tungsten.lut_node
+_project.macOS_color_toolkit/AP0_to_LinearRec709_sRGB.lut_node
+_project.macOS_color_toolkit/AP0_to_Panasonic_VLog.lut_node
+_project.macOS_color_toolkit/AP0_to_R3D_Log3G10.lut_node
+_project.macOS_color_toolkit/AP0_to_Rec709.lut_node
+_project.macOS_color_toolkit/AP0_to_S3SGamut3.lut_node
+_project.macOS_color_toolkit/AP0_to_S3SGamut3_Cine_Venice.lut_node
+_project.macOS_color_toolkit/AP0_to_S3SGamut3_Venice.lut_node
+_project.macOS_color_toolkit/AP1_to_ARRI_LogC3.lut_node
+_project.macOS_color_toolkit/AP1_to_ARRI_LogC4.lut_node
+_project.macOS_color_toolkit/AP1_to_Apple_Log.lut_node
+_project.macOS_color_toolkit/AP1_to_BMD.lut_node
+_project.macOS_color_toolkit/AP1_to_Canon_Daylight.lut_node
+_project.macOS_color_toolkit/AP1_to_Canon_Tungsten.lut_node
+_project.macOS_color_toolkit/AP1_to_LinearRec709_sRGB.lut_node
+_project.macOS_color_toolkit/AP1_to_Panasonic_VLog.lut_node
+_project.macOS_color_toolkit/AP1_to_R3D_Log3G10.lut_node
+_project.macOS_color_toolkit/AP1_to_Rec709.lut_node
+_project.macOS_color_toolkit/AP1_to_S3SGamut3.lut_node
+_project.macOS_color_toolkit/AP1_to_S3SGamut3_Cine_Venice.lut_node
+_project.macOS_color_toolkit/AP1_to_S3SGamut3_Venice.lut_node
+_project.macOS_color_toolkit/ARRI_LogC3_to_AP0.lut_node
+_project.macOS_color_toolkit/ARRI_LogC3_to_AP1.lut_node
+_project.macOS_color_toolkit/ARRI_LogC3_to_Rec709.lut_node
+_project.macOS_color_toolkit/ARRI_LogC4_to_AP0.lut_node
+_project.macOS_color_toolkit/ARRI_LogC4_to_AP1.lut_node
+_project.macOS_color_toolkit/ARRI_LogC4_to_Rec709.lut_node
+_project.macOS_color_toolkit/Apple_Log_to_AP0.lut_node
+_project.macOS_color_toolkit/Apple_Log_to_AP1.lut_node
+_project.macOS_color_toolkit/Apple_Log_to_Rec709.lut_node
+_project.macOS_color_toolkit/BMD_to_AP0.lut_node
+_project.macOS_color_toolkit/BMD_to_AP1.lut_node
+_project.macOS_color_toolkit/BMD_to_Rec709.lut_node
+_project.macOS_color_toolkit/Canon_Daylight_to_AP0.lut_node
+_project.macOS_color_toolkit/Canon_Daylight_to_AP1.lut_node
+_project.macOS_color_toolkit/Canon_Daylight_to_Rec709.lut_node
+_project.macOS_color_toolkit/Canon_Tungsten_to_AP0.lut_node
+_project.macOS_color_toolkit/Canon_Tungsten_to_AP1.lut_node
+_project.macOS_color_toolkit/Canon_Tungsten_to_Rec709.lut_node
+_project.macOS_color_toolkit/IDENTITY_ARRI_LogC3.mux_node
+_project.macOS_color_toolkit/IDENTITY_ARRI_LogC4.mux_node
+_project.macOS_color_toolkit/IDENTITY_Apple_Log.mux_node
+_project.macOS_color_toolkit/IDENTITY_BMD.mux_node
+_project.macOS_color_toolkit/IDENTITY_Canon_Daylight.mux_node
+_project.macOS_color_toolkit/IDENTITY_Canon_Tungsten.mux_node
+_project.macOS_color_toolkit/IDENTITY_Panasonic_VLog.mux_node
+_project.macOS_color_toolkit/IDENTITY_R3D_Log3G10.mux_node
+_project.macOS_color_toolkit/IDENTITY_S3SGamut3.mux_node
+_project.macOS_color_toolkit/IDENTITY_S3SGamut3_Cine_Venice.mux_node
+_project.macOS_color_toolkit/IDENTITY_S3SGamut3_Venice.mux_node
+_project.macOS_color_toolkit/KODAK_Digital_LAD.compass_node
+_project.macOS_color_toolkit/LinearRec709_sRGB_to_AP0.lut_node
+_project.macOS_color_toolkit/LinearRec709_sRGB_to_Rec709.lut_node
+_project.macOS_color_toolkit/Log_to_Lin__classic.lut_node
+_project.macOS_color_toolkit/Log_to_Lin__classic_AP0.lut_node
+_project.macOS_color_toolkit/Ls_Contacts218.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts218.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts218.xml
+_project.macOS_color_toolkit/Ls_Contacts589.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts589.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts589.xml
+_project.macOS_color_toolkit/Ls_Contacts590.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts590.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts590.xml
+_project.macOS_color_toolkit/Ls_Contacts591.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts591.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts591.xml
+_project.macOS_color_toolkit/Ls_Contacts592.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts592.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts592.xml
+_project.macOS_color_toolkit/Ls_Contacts594.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts594.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts594.xml
+_project.macOS_color_toolkit/Ls_Contacts595.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts595.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts595.xml
+_project.macOS_color_toolkit/Ls_Contacts596.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts596.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts596.xml
+_project.macOS_color_toolkit/Ls_Contacts597.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts597.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts597.xml
+_project.macOS_color_toolkit/Ls_Contacts598.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts598.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts598.xml
+_project.macOS_color_toolkit/Ls_Contacts599.1.glsl
+_project.macOS_color_toolkit/Ls_Contacts599.matchbox_node
+_project.macOS_color_toolkit/Ls_Contacts599.xml
+_project.macOS_color_toolkit/Panasonic_VLog_to_AP0.lut_node
+_project.macOS_color_toolkit/Panasonic_VLog_to_AP1.lut_node
+_project.macOS_color_toolkit/Panasonic_VLog_to_Rec709.lut_node
+_project.macOS_color_toolkit/R3D_Log3G10_to_AP0.lut_node
+_project.macOS_color_toolkit/R3D_Log3G10_to_AP1.lut_node
+_project.macOS_color_toolkit/R3D_Log3G10_to_Rec709.lut_node
+_project.macOS_color_toolkit/Rec709_to_AP0.lut_node
+_project.macOS_color_toolkit/Rec709_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Cine_Venice_to_AP0.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Cine_Venice_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Cine_Venice_to_Rec709.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Venice_to_AP0.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Venice_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_Venice_to_Rec709.lut_node
+_project.macOS_color_toolkit/S3SGamut3_to_AP0.lut_node
+_project.macOS_color_toolkit/S3SGamut3_to_AP1.lut_node
+_project.macOS_color_toolkit/S3SGamut3_to_Rec709.lut_node
+_project.macOS_color_toolkit/SOURCE_CLIP_ARRI_LogC3.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_ARRI_LogC4.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Apple_Log.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_BMD.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Canon_Daylight.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Canon_Tungsten.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_Panasonic_VLog.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_R3D_Log3G10.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_S3SGamut3.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_S3SGamut3_Cine_Venice.mux_node
+_project.macOS_color_toolkit/SOURCE_CLIP_S3SGamut3_Venice.mux_node
+_project.macOS_color_toolkit/burnmetadata10004589.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004590.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004591.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004592.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004593.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004594.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004595.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004596.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004597.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004598.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004599.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004600.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004601.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004602.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004603.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004604.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004609.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004610.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004611.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004612.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004613.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004614.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004615.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004616.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004617.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004618.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004619.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004620.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004621.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004622.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004623.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004624.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004625.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004626.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004627.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004628.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004629.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004630.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004631.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata10004632.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata220.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata222.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata224.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata226.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_ARRI_LogC3.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_ARRI_LogC4.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Apple_Log.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_BMD.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Canon_Daylight.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Canon_Tungsten.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_Panasonic_VLog.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_R3D_Log3G10.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_S3SGamut3.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_S3SGamut3_Cine_Venice.burnmetadata_node
+_project.macOS_color_toolkit/burnmetadata_S3SGamut3_Venice.burnmetadata_node
+_project.macOS_color_toolkit/clip591.clip_node
+_project.macOS_color_toolkit/clip591.clip_node_clip
+_project.macOS_color_toolkit/clip591.clip_node_format
+_project.macOS_color_toolkit/clip591.lut_node
+_project.macOS_color_toolkit/clip591.resize
+_project.macOS_color_toolkit/clip591.resize_node
+_project.macOS_color_toolkit/clrmgmt10002596.lut_node
+_project.macOS_color_toolkit/clrmgmt10002603.lut_node
+_project.macOS_color_toolkit/clrmgmt10002604.lut_node
+_project.macOS_color_toolkit/clrmgmt10002605.lut_node
+_project.macOS_color_toolkit/clrmgmt10002606.lut_node
+_project.macOS_color_toolkit/clrmgmt10002607.lut_node
+_project.macOS_color_toolkit/clrmgmt10002608.lut_node
+_project.macOS_color_toolkit/clrmgmt10002609.lut_node
+_project.macOS_color_toolkit/clrmgmt10002610.lut_node
+_project.macOS_color_toolkit/clrmgmt10002611.lut_node
+_project.macOS_color_toolkit/clrmgmt10002612.lut_node
+_project.macOS_color_toolkit/clrmgmt10002613.lut_node
+_project.macOS_color_toolkit/clrmgmt10002614.lut_node
+_project.macOS_color_toolkit/clrmgmt10002615.lut_node
+_project.macOS_color_toolkit/clrmgmt10002616.lut_node
+_project.macOS_color_toolkit/clrmgmt10002617.lut_node
+_project.macOS_color_toolkit/clrmgmt10002618.lut_node
+_project.macOS_color_toolkit/clrmgmt10002624.lut_node
+_project.macOS_color_toolkit/clrmgmt10002625.lut_node
+_project.macOS_color_toolkit/clrmgmt10002626.lut_node
+_project.macOS_color_toolkit/clrmgmt10002627.lut_node
+_project.macOS_color_toolkit/clrmgmt10002634.lut_node
+_project.macOS_color_toolkit/clrmgmt10002635.lut_node
+_project.macOS_color_toolkit/clrmgmt10002636.lut_node
+_project.macOS_color_toolkit/clrmgmt10002637.lut_node
+_project.macOS_color_toolkit/clrmgmt10002639.lut_node
+_project.macOS_color_toolkit/clrmgmt10002640.lut_node
+_project.macOS_color_toolkit/clrmgmt10002641.lut_node
+_project.macOS_color_toolkit/clrmgmt10002642.lut_node
+_project.macOS_color_toolkit/clrmgmt10002643.lut_node
+_project.macOS_color_toolkit/clrmgmt10002644.lut_node
+_project.macOS_color_toolkit/clrmgmt10002645.lut_node
+_project.macOS_color_toolkit/clrmgmt10002646.lut_node
+_project.macOS_color_toolkit/clrmgmt10002647.lut_node
+_project.macOS_color_toolkit/clrmgmt10002648.lut_node
+_project.macOS_color_toolkit/clrmgmt10002649.lut_node
+_project.macOS_color_toolkit/clrmgmt10002650.lut_node
+_project.macOS_color_toolkit/clrmgmt10002651.lut_node
+_project.macOS_color_toolkit/clrmgmt10002652.lut_node
+_project.macOS_color_toolkit/clrmgmt10002653.lut_node
+_project.macOS_color_toolkit/clrmgmt10002654.lut_node
+_project.macOS_color_toolkit/clrmgmt219.lut_node
+_project.macOS_color_toolkit/clrmgmt221.lut_node
+_project.macOS_color_toolkit/clrmgmt223.lut_node
+_project.macOS_color_toolkit/elbow1.elbow_node
+_project.macOS_color_toolkit/elbow10.elbow_node
+_project.macOS_color_toolkit/elbow11.elbow_node
+_project.macOS_color_toolkit/elbow12.elbow_node
+_project.macOS_color_toolkit/elbow13.elbow_node
+_project.macOS_color_toolkit/elbow14.elbow_node
+_project.macOS_color_toolkit/elbow15.elbow_node
+_project.macOS_color_toolkit/elbow16.elbow_node
+_project.macOS_color_toolkit/elbow17.elbow_node
+_project.macOS_color_toolkit/elbow18.elbow_node
+_project.macOS_color_toolkit/elbow19.elbow_node
+_project.macOS_color_toolkit/elbow2.elbow_node
+_project.macOS_color_toolkit/elbow20.elbow_node
+_project.macOS_color_toolkit/elbow21.elbow_node
+_project.macOS_color_toolkit/elbow22.elbow_node
+_project.macOS_color_toolkit/elbow23.elbow_node
+_project.macOS_color_toolkit/elbow24.elbow_node
+_project.macOS_color_toolkit/elbow25.elbow_node
+_project.macOS_color_toolkit/elbow26.elbow_node
+_project.macOS_color_toolkit/elbow27.elbow_node
+_project.macOS_color_toolkit/elbow28.elbow_node
+_project.macOS_color_toolkit/elbow29.elbow_node
+_project.macOS_color_toolkit/elbow3.elbow_node
+_project.macOS_color_toolkit/elbow30.elbow_node
+_project.macOS_color_toolkit/elbow31.elbow_node
+_project.macOS_color_toolkit/elbow32.elbow_node
+_project.macOS_color_toolkit/elbow33.elbow_node
+_project.macOS_color_toolkit/elbow34.elbow_node
+_project.macOS_color_toolkit/elbow35.elbow_node
+_project.macOS_color_toolkit/elbow36.elbow_node
+_project.macOS_color_toolkit/elbow37.elbow_node
+_project.macOS_color_toolkit/elbow38.elbow_node
+_project.macOS_color_toolkit/elbow39.elbow_node
+_project.macOS_color_toolkit/elbow4.elbow_node
+_project.macOS_color_toolkit/elbow40.elbow_node
+_project.macOS_color_toolkit/elbow41.elbow_node
+_project.macOS_color_toolkit/elbow42.elbow_node
+_project.macOS_color_toolkit/elbow43.elbow_node
+_project.macOS_color_toolkit/elbow44.elbow_node
+_project.macOS_color_toolkit/elbow45.elbow_node
+_project.macOS_color_toolkit/elbow46.elbow_node
+_project.macOS_color_toolkit/elbow47.elbow_node
+_project.macOS_color_toolkit/elbow48.elbow_node
+_project.macOS_color_toolkit/elbow49.elbow_node
+_project.macOS_color_toolkit/elbow5.elbow_node
+_project.macOS_color_toolkit/elbow50.elbow_node
+_project.macOS_color_toolkit/elbow51.elbow_node
+_project.macOS_color_toolkit/elbow52.elbow_node
+_project.macOS_color_toolkit/elbow53.elbow_node
+_project.macOS_color_toolkit/elbow54.elbow_node
+_project.macOS_color_toolkit/elbow55.elbow_node
+_project.macOS_color_toolkit/elbow56.elbow_node
+_project.macOS_color_toolkit/elbow57.elbow_node
+_project.macOS_color_toolkit/elbow58.elbow_node
+_project.macOS_color_toolkit/elbow59.elbow_node
+_project.macOS_color_toolkit/elbow6.elbow_node
+_project.macOS_color_toolkit/elbow60.elbow_node
+_project.macOS_color_toolkit/elbow61.elbow_node
+_project.macOS_color_toolkit/elbow62.elbow_node
+_project.macOS_color_toolkit/elbow63.elbow_node
+_project.macOS_color_toolkit/elbow64.elbow_node
+_project.macOS_color_toolkit/elbow65.elbow_node
+_project.macOS_color_toolkit/elbow66.elbow_node
+_project.macOS_color_toolkit/elbow67.elbow_node
+_project.macOS_color_toolkit/elbow68.elbow_node
+_project.macOS_color_toolkit/elbow69.elbow_node
+_project.macOS_color_toolkit/elbow7.elbow_node
+_project.macOS_color_toolkit/elbow71.elbow_node
+_project.macOS_color_toolkit/elbow72.elbow_node
+_project.macOS_color_toolkit/elbow73.elbow_node
+_project.macOS_color_toolkit/elbow74.elbow_node
+_project.macOS_color_toolkit/elbow75.elbow_node
+_project.macOS_color_toolkit/elbow76.elbow_node
+_project.macOS_color_toolkit/elbow77.elbow_node
+_project.macOS_color_toolkit/elbow78.elbow_node
+_project.macOS_color_toolkit/elbow79.elbow_node
+_project.macOS_color_toolkit/elbow80.elbow_node
+_project.macOS_color_toolkit/elbow81.elbow_node
+_project.macOS_color_toolkit/elbow82.elbow_node
+_project.macOS_color_toolkit/elbow83.elbow_node
+_project.macOS_color_toolkit/elbow9.elbow_node
+_project.macOS_color_toolkit/flame_colortoolkit_ARRI_LogC3.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_ARRI_LogC4.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Apple_Log.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_BMD_Film5.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Canon_Daylight.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Canon_Tungsten.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_Panasonic_VLog.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_R3D_Log3G10.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_SONY_S3SGamut3.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Cine_Venice.compass_node
+_project.macOS_color_toolkit/flame_colortoolkit_SONY_S3SGamut3_Venice.compass_node
+_project.macOS_color_toolkit/mux14.mux_node
+_project.macOS_color_toolkit/note1.note_node
+_project.macOS_color_toolkit/note2.note_node
+_project.macOS_color_toolkit/root.root_node
+sent 2,518,275 bytes
+received 15,182 bytes
+1,688,971.33 bytes/sec
+total size is 2,450,904
+speedup is 0.97
+
+batch project bin created.
+# -------------------------------------------------------------------------- #
+
+# ================== UPDATING FLAME COLORTOOLKIT BOOKMARKS ================== #
+
+Bookmarks added successfully.
+# -------------------------------------------------------------------------- #
+
+# ======================== COPYING PROJEKT BOOKMARKS ======================== #
+
+
+Creating PROJEKT bookmarks.
+
+Successfully created PROJEKT bookmarks JSON in:
+
+cf_bookmarks.json
+# -------------------------------------------------------------------------- #
+
+# ===================== COPYING BURNIN METADATA PRESETS ===================== #
+
+
+synchronizing burn_metadata overlays.
+sending incremental file list
+./
+overlay/
+sent 227 bytes
+received 23 bytes
+500.00 bytes/sec
+total size is 394,371
+speedup is 1,577.48
+
+media import preferences & rules synchronized.
+# -------------------------------------------------------------------------- #
+sending incremental file list
+./
+overlay/
+overlay/burnin_info_HD.burnmetadata_node
+overlay/burnin_info_HD.burnmetadata_node.p
+overlay/burnin_info_UHD.burnmetadata_node
+overlay/burnin_info_UHD.burnmetadata_node.p
+sent 394,850 bytes
+received 103 bytes
+789,906.00 bytes/sec
+total size is 394,371
+speedup is 1.00
+
+media import preferences & rules synchronized.
+# -------------------------------------------------------------------------- #
+
+# ===================== COPYING EXPORT / IMPORT PRESETS ===================== #
+
+
+synchronizing project export presets directories.
+sending incremental file list
+./
+movie_file/
+movie_file/projekt-movie_file-color_grade.xml
+movie_file/projekt-movie_file-reference.xml
+movie_file/projekt-movie_file-wip-posting.xml
+sequence_publish/
+sequence_publish/projekt_sequence_publish-aaf.xml
+sequence_publish/projekt_sequence_publish-edl.xml
+sequence_publish/projekt_sequence_publish-xml.xml
+sequence_publish/projekt_shot_publish-ACEScg-v0000-batch_groups.xml
+sequence_publish/projekt_shot_publish-ACEScg-v0001-graded_pass.xml
+sent 34,877 bytes
+received 187 bytes
+70,128.00 bytes/sec
+total size is 34,048
+speedup is 0.97
+
+Project export presets directories synchronized.
+# -------------------------------------------------------------------------- #
+
+synchronizing project import presets directories.
+sending incremental file list
+./
+presets/
+presets/pattern.json
+sent 3,263 bytes
+received 46 bytes
+6,618.00 bytes/sec
+total size is 3,093
+speedup is 0.93
+
+project import presets directories synchronized.
+# -------------------------------------------------------------------------- #
+
+# ======================= COPYING MEDIA IMPORT RULES ======================== #
+
+
+synchronizing media import preferences & rules.
+sending incremental file list
+./
+pref/
+pref/ARRIMXF_1.fmt
+pref/ARRIRAW7_3.fmt
+pref/ARRIRAW_15.fmt
+pref/AVCHD_1.fmt
+pref/AudioIO_1.fmt
+pref/BMDRaw_2.fmt
+pref/Canon_13.fmt
+pref/ConformCurrent.json
+pref/Current.json
+pref/DPX_6.fmt
+pref/HDR_6.fmt
+pref/ImageIO_6.fmt
+pref/MIO Clip_2.fmt
+pref/MP4_9.fmt
+pref/MXF_13.fmt
+pref/OpenEXR_8.fmt
+pref/P2_13.fmt
+pref/PNG_6.fmt
+pref/PhotoShop_6.fmt
+pref/Quicktime_11.fmt
+pref/R3D_19.fmt
+pref/SonyMXF_13.fmt
+pref/SonyXAVC_2.fmt
+pref/XDCAMEX_9.fmt
+pref/XDCAM_13.fmt
+pref/conformResizeFormat
+pref/resizeFormat
+pref/resizeOptions
+sent 59,389 bytes
+received 559 bytes
+119,896.00 bytes/sec
+total size is 57,393
+speedup is 0.96
+
+media import preferences & rules synchronized.
+# -------------------------------------------------------------------------- #
+
+# ========================= COPYING MEDIAHUB RULES ========================== #
+
+
+synchronizing mediahub preferences & rules.
+sending incremental file list
+./
+pref/
+pref/ProjectsCurrent.json
+sent 303 bytes
+received 46 bytes
+698.00 bytes/sec
+total size is 125
+speedup is 0.36
+
+media import preferences & rules synchronized.
+# -------------------------------------------------------------------------- #
+
+# ======================== COPYING MEDIAIMPORT RULES ======================== #
+
+
+synchronizing mediaImport preferences & rules.
+sending incremental file list
+./
+Project_Settings.ARRIMXF_1.0.rule
+Project_Settings.ARRIRAW7_3.0.rule
+Project_Settings.ARRIRAW_15.0.rule
+Project_Settings.AVCHD_1.0.rule
+Project_Settings.AudioIO_1.0.rule
+Project_Settings.BMDRaw_2.0.rule
+Project_Settings.Canon_13.0.rule
+Project_Settings.DPX_6.0.rule
+Project_Settings.HDR_6.0.rule
+Project_Settings.ImageIO_6.0.rule
+Project_Settings.MIO_Clip_2.0.rule
+Project_Settings.MP4_9.0.rule
+Project_Settings.MXF_13.0.rule
+Project_Settings.OpenEXR_8.0.rule
+Project_Settings.P2_13.0.rule
+Project_Settings.PNG_6.0.rule
+Project_Settings.PhotoShop_6.0.rule
+Project_Settings.Quicktime_11.0.rule
+Project_Settings.R3D_19.0.rule
+Project_Settings.SonyMXF_13.0.rule
+Project_Settings.SonyXAVC_2.0.rule
+Project_Settings.XDCAMEX_9.0.rule
+Project_Settings.XDCAM_13.0.rule
+pref/
+pref/ARRIMXF_1.fmt
+pref/ARRIRAW7_3.fmt
+pref/ARRIRAW_15.fmt
+pref/AVCHD_1.fmt
+pref/AudioIO_1.fmt
+pref/BMDRaw_2.fmt
+pref/Canon_13.fmt
+pref/ConformCurrent.json
+pref/Current.json
+pref/DPX_6.fmt
+pref/HDR_6.fmt
+pref/ImageIO_6.fmt
+pref/MIO Clip_2.fmt
+pref/MP4_9.fmt
+pref/MXF_13.fmt
+pref/OpenEXR_8.fmt
+pref/P2_13.fmt
+pref/PNG_6.fmt
+pref/PhotoShop_6.fmt
+pref/Quicktime_11.fmt
+pref/R3D_19.fmt
+pref/SonyMXF_13.fmt
+pref/SonyXAVC_2.fmt
+pref/XDCAMEX_9.fmt
+pref/XDCAM_13.fmt
+pref/conformResizeFormat
+pref/lutState
+pref/resizeFormat
+pref/resizeOptions
+sent 2,260,318 bytes
+received 1,019 bytes
+4,522,674.00 bytes/sec
+total size is 2,256,081
+speedup is 1.00
+
+media import preferences & rules synchronized.
+# -------------------------------------------------------------------------- #
+
+# ======================== COPYING NUKE DIRECTORIES ========================= #
+
+
+synchronizing nuke directories.
+sending incremental file list
+./
+init.py
+menu.py
+gizmos/
+gizmos/AlphaOps/
+gizmos/AlphaOps/AA_Curve.nk
+gizmos/AlphaOps/AA_Grade.nk
+gizmos/AlphaOps/AA_Keymix.nk
+gizmos/AlphaOps/AA_Mask.nk
+gizmos/AlphaOps/AA_Screen.nk
+gizmos/AlphaOps/AA_Stencil.nk
+pyScripts/
+pyScripts/__init__.py
+pyScripts/colorspace/
+pyScripts/colorspace/__init__.py
+pyScripts/colorspace/change_colorspace_to_raw.py
+pyScripts/colorspace/change_colorspace_to_scene_linear.py
+pyScripts/colorspace/change_colorspace_to_texture_paint.py
+pyScripts/dev/
+pyScripts/dev/__init__.py
+pyScripts/dev/print_environment_variables.py
+pyScripts/dev/print_nuke_environment.py
+pyScripts/gpu/
+pyScripts/gpu/__init__.py
+pyScripts/gpu/disableGPUAcceleration.py
+pyScripts/gpu/enableGPUAcceleration.py
+pyScripts/projekt/
+pyScripts/projekt/__init__.py
+pyScripts/projekt/hello_from_pyside2.py
+pyScripts/projekt/unpack_direnv_diff.py
+repo/
+repo/download_tools.py
+repo/projekt_core_v0.0.1/
+repo/projekt_core_v0.0.1/__init__.py
+repo/projekt_core_v0.0.1/projekt_core/
+repo/projekt_core_v0.0.1/projekt_core/__init__.py
+repo/projekt_core_v0.0.1/projekt_core/defaults.py
+repo/projekt_core_v0.0.1/projekt_core/favoritesRedux.py
+repo/projekt_core_v0.0.1/projekt_core/gizmoUtilities.py
+repo/projekt_core_v0.0.1/projekt_core/settings.py
+repo/projekt_core_v0.0.1/projekt_core/setupScripts.py
+repo/projekt_core_v0.0.1/projekt_core/toolsetUtilities.py
+repo/projekt_core_v0.0.1/projekt_core/utilities.py
+repo/projekt_core_v0.0.1/projekt_core/version_up.py
+repo/projekt_core_v0.0.1/projekt_core/vfxtools.py
+toolsets/
+toolsets/color/
+toolsets/color/LogConvert_ACESLog.nk
+sent 182,637 bytes
+received 748 bytes
+366,770.00 bytes/sec
+total size is 179,596
+speedup is 0.98
+
+Logik PROJEKT Nuke directories synchronized.sending incremental file list
+./
+flame_version
+nuke_version
+sent 207 bytes
+received 57 bytes
+528.00 bytes/sec
+total size is 7
+speedup is 0.03
+
+Logik PROJEKT etc directories synchronized.sending incremental file list
+./
+download_aces_1_2_config.py
+download_aces_1_3_configs.py
+sent 19,793 bytes
+received 57 bytes
+39,700.00 bytes/sec
+total size is 19,571
+speedup is 0.99
+
+Logik PROJEKT ocio directories synchronized.sending incremental file list
+./
+nuke/
+nuke/ING_LogConvert_ACESLog2.nk
+nuke/00_script-start/
+nuke/00_script-start/00_2d-start_v001.nk
+nuke/99_tasks/
+nuke/99_tasks/task-comp.nk
+nuke/99_tasks/task-roto.nk
+sent 284,862 bytes
+received 115 bytes
+569,954.00 bytes/sec
+total size is 284,323
+speedup is 1.00
+
+Logik PROJEKT templates directories synchronized.
+Logik PROJEKT .envrc file created.
+# -------------------------------------------------------------------------- #
+
+# ================= CREATING EDITORIAL STRUCTURE - PREMIERE ================= #
+
+
+Creating Premiere project directory structure.
+
+Created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere/02_footage
+Created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere/03_audio
+Created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere/04_gfx
+Created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere/05_stills
+Created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere/06_color
+Created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere/07_misc
+Created directory: /PROJEKTS/000_abc_def/editorial/adobe_premiere/08_postings
+Creating symbolic links...
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/02_footage/03_misc -> /PROJEKTS/000_abc_def/assets/footage
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/02_footage/05_graded -> /PROJEKTS/000_abc_def/assets/footage/graded
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/02_footage/04_raw -> /PROJEKTS/000_abc_def/assets/footage/raw
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/02_footage/02_stock -> /PROJEKTS/000_abc_def/assets/footage/stock
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/02_footage/01_transcodes -> /PROJEKTS/000_abc_def/assets/footage/transcodes
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/03_audio/01_mix -> /PROJEKTS/000_abc_def/assets/audio/mix
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/03_audio/02_music -> /PROJEKTS/000_abc_def/assets/audio/music
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/03_audio/03_sfx -> /PROJEKTS/000_abc_def/assets/audio/sound_effects
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/03_audio/04_vo -> /PROJEKTS/000_abc_def/assets/audio/voiceover
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/03_audio/05_production -> /PROJEKTS/000_abc_def/assets/audio/production
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/04_gfx/01_aftereffects -> /PROJEKTS/000_abc_def/assets/graphics
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/04_gfx/02_input -> /PROJEKTS/000_abc_def/assets/graphics
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/04_gfx/03_output -> /PROJEKTS/000_abc_def/assets/graphics
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/05_stills/01_photoshop -> /PROJEKTS/000_abc_def/assets/photoshop
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/05_stills/02_images -> /PROJEKTS/000_abc_def/assets/images
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/05_stills/03_supers -> /PROJEKTS/000_abc_def/assets/supers
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/05_stills/04_legal -> /PROJEKTS/000_abc_def/assets/legal
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/08_postings/01_postings -> /PROJEKTS/000_abc_def/work_in_progress/postings
+Created symlink: /PROJEKTS/000_abc_def/editorial/adobe_premiere/08_postings/02_masters -> /PROJEKTS/000_abc_def/masters
+Copying template directories...
+Copied directory: /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/adobe/premiere/premiere_templates/premiere_projekts -> /PROJEKTS/000_abc_def/editorial/adobe_premiere/01_projekts
+Copied directory: /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/adobe/premiere/premiere_presets/premiere_export_presets -> /PROJEKTS/000_abc_def/editorial/adobe_premiere/07_misc/01_export_presets
+Copied directory: /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/adobe/premiere/premiere_fonts -> /PROJEKTS/000_abc_def/editorial/adobe_premiere/07_misc/02_fonts
+Copied directory: /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/adobe/premiere/premiere_scripts -> /PROJEKTS/000_abc_def/editorial/adobe_premiere/07_misc/03_scripts
+Copied directory: /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/adobe/premiere/premiere_templates/premiere_slates -> /PROJEKTS/000_abc_def/editorial/adobe_premiere/07_misc/04_slates
+Copied directory: /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/adobe/premiere/premiere_notes -> /PROJEKTS/000_abc_def/editorial/adobe_premiere/07_misc/05_notes
+Copied directory: /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT-DEVELOPMENT/resources/adobe/premiere/premiere_templates/premiere_aspect_ratio_masks -> /PROJEKTS/000_abc_def/editorial/adobe_premiere/07_misc/06_aspect_ratio_masks
+Premiere project directory structure, symbolic links, and templates created successfully.
+Location: /PROJEKTS/000_abc_def/editorial/adobe_premiere
+# -------------------------------------------------------------------------- #
+
+# ========================= COPYING PYTHON SCRIPTS ========================== #
+
+
+synchronizing python directories.
+sending incremental file list
+./
+src/openclip_tools/logik_projekt_openclip/scripts/__pycache__/
+src/openclip_tools/logik_projekt_openclip/scripts/__pycache__/pyside6_qt_flame_modules.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/__pycache__/
+src/openclip_tools/logik_projekt_openclip/scripts/modules/__pycache__/pyside6_qt_flame_classes.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_button.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_clickable_line_edit.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_label.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_line_edit.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_list_widget.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_message_window.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_password_window.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_preset_window.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_progress_window.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_push_button.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_push_button_menu.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_qdialog.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_slider.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_text_edit.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_token_push_button.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_tree_widget.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/classes/__pycache__/pyside6_qt_window.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/functions/__pycache__/
+src/openclip_tools/logik_projekt_openclip/scripts/modules/functions/__pycache__/pyside6_qt_file_browser.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/functions/__pycache__/pyside6_qt_get_flame_version.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/functions/__pycache__/pyside6_qt_get_shot_name.cpython-311.pyc
+src/openclip_tools/logik_projekt_openclip/scripts/modules/functions/__pycache__/pyside6_qt_print.cpython-311.pyc
+sent 189,821 bytes
+received 516 bytes
+380,674.00 bytes/sec
+total size is 1,711,746
+speedup is 8.99
+
+Logik PROJEKT Python scripts synchronized.
+# -------------------------------------------------------------------------- #
+
+# ======================== COPYING SYNCOLOR POLICIES ======================== #
+
+
+Debug: the_projekt_os:
+Linux
+Debug: the_projekts_dir:
+/PROJEKTS
+Debug: the_projekt_dir:
+/PROJEKTS/000_abc_def
+Debug: the_projekt_flame_dirs:
+/opt/Autodesk/project
+Debug: the_projekt_flame_dir:
+/opt/Autodesk/project/000_abc_def_2026_juliet
+Debug: tgt_projekt_policies_dir:
+/PROJEKTS/000_abc_def/utilities/Synergy/SynColor/Shared/policies
+Debug: src_policies_dir:
+resources/flame/Syncolor/Shared/policies
+Debug: tgt_policies_dir:
+/opt/Autodesk/Synergy/SynColor/Shared/policies
+synchronizing Syncolor policies directories.
+sending incremental file list
+./
+sent 2,674 bytes
+received 43 bytes
+5,434.00 bytes/sec
+total size is 83,315
+speedup is 30.66
+
+Syncolor policies synchronized.
+# -------------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------------- #
+
+# ======================= COPYING SYNCOLOR TRANSFORMS ======================= #
+
+
+Debug: the_projekt_os:
+Linux
+Debug: the_projekts_dir:
+/PROJEKTS
+Debug: the_projekt_dir:
+/PROJEKTS/000_abc_def
+Debug: the_projekt_flame_dirs:
+/opt/Autodesk/project
+Debug: the_projekt_flame_dir:
+/opt/Autodesk/project/000_abc_def_2026_juliet
+Debug: tgt_projekt_transforms_dir:
+/PROJEKTS/000_abc_def/utilities/Synergy/SynColor/Shared/transforms
+Debug: src_transforms_dir:
+resources/flame/Syncolor/Shared/transforms
+Debug: tgt_transforms_dir:
+/opt/Autodesk/Synergy/SynColor/Shared/transforms
+synchronizing Syncolor transforms directories.
+sending incremental file list
+./
+sent 2,862 bytes
+received 41 bytes
+5,806.00 bytes/sec
+total size is 10,112,841
+speedup is 3,483.58
+
+media import preferences & rules synchronized.
+# -------------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------------- #
+
+# ==================== CREATING A FLAME ARCHIVING SCRIPT ==================== #
+
+
+Creating PROJEKT archive script.
+
+Successfully created PROJEKT flame archive template to:
+
+000_abc_def-archive_script-juliet.sh
+# -------------------------------------------------------------------------- #
+
+Creating PROJEKT archive crontab script.
+
+Successfully created PROJEKT flame archive crontab script to:
+
+000_abc_def-add_archive_script_to_crontab-juliet.sh
+# -------------------------------------------------------------------------- #
+
+Modifying PROJEKT archive scripts.
+
+Successfully modified script: 000_abc_def-archive_script-juliet.sh
+
+Successfully modified script: 000_abc_def-add_archive_script_to_crontab-juliet.sh
+
+# -------------------------------------------------------------------------- #
+
+Successfully modified PROJEKT flame archive scripts:
+
+000_abc_def-archive_script-juliet.sh
+
+000_abc_def-add_archive_script_to_crontab-juliet.sh
+
+# -------------------------------------------------------------------------- #
+
+# ===================== CREATING AN RSYNC BACKUP SCRIPT ===================== #
+
+
+Creating PROJEKT rsync script.
+
+Successfully copied PROJEKT flame rsync template to:
+
+000_abc_def-backup_script-juliet.sh
+# -------------------------------------------------------------------------- #
+
+Creating PROJEKT rsync script.
+
+Successfully copied PROJEKT flame rsync crontab script to:
+
+000_abc_def-add_backup_script_to_crontab-juliet.sh
+# -------------------------------------------------------------------------- #
+
+Modifying PROJEKT rsync script.
+
+Successfully modified script: 000_abc_def-backup_script-juliet.sh
+Successfully modified script: 000_abc_def-add_backup_script_to_crontab-juliet.sh
+# -------------------------------------------------------------------------- #
+
+Successfully modified PROJEKT flame archive:
+
+000_abc_def-backup_script-juliet.sh
+000_abc_def-add_backup_script_to_crontab-juliet.sh
+
+# -------------------------------------------------------------------------- #
+
+# ==================== CREATING A FLAME LAUNCHER SCRIPT ===================== #
+
+
+Creating PROJEKT flame launcher script.
+
+Successfully copied PROJEKT flame launcher template to:
+
+000_abc_def-flame_launcher-juliet-2025_05_05.bak
+# -------------------------------------------------------------------------- #
+
+Modifying PROJEKT launcher script.
+
+Successfully modified script: 000_abc_def-flame_launcher-juliet.sh
+Successfully modified PROJEKT flame launcher:
+
+000_abc_def-flame_launcher-juliet.sh
+# -------------------------------------------------------------------------- #
+
+# ====================== BACKING UP PROJEKT FLAME XML ======================= #
+
+
+Archiving PROJEKT parameters XML.
+
+Successfully archived PROJEKT parameters XML to:
+
+projekt_parameters-2025_05_05-000_abc_def-juliet.xml
+# -------------------------------------------------------------------------- #
+
+# ======================= BACKING UP PROJEKT TEMPLATE ======================= #
+
+
+Archiving PROJEKT template JSON.
+
+Successfully archived PROJEKT template JSON to:
+
+projekt_template-2025_05_05-000_abc_def.json
+# -------------------------------------------------------------------------- #
+
+# ===================== BACKING UP PROJEKT CREATION LOG ===================== #
+
+
+Archiving PROJEKT creation log.

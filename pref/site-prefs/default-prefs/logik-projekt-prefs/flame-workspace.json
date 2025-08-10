@@ -1,0 +1,534 @@
+[
+
+    {
+        "type": "desktop",
+        "name_template": "{date}-{user}"
+    },
+    {
+        "type": "desktop_contents",
+        "items": [
+            {
+                "type": "reel_group",
+                "name": "{date}-conform",
+                "colour": [0.194, 0.159, 0.270],
+                "reels": [
+                    {
+                        "type": "reel",
+                        "name": "ref",
+                        "colour": [0.094, 0.131, 0.200]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "Sources",
+                        "colour": [0.057, 0.131, 0.088]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "Sequences",
+                        "colour": [0.188, 0.023, 0.023]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "Published-Sequences",
+                        "colour": [0.376, 0.047, 0.047]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "Published-Versions",
+                        "colour": [0.114, 0.263, 0.176]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "{date}-postings",
+                        "colour": [0.188, 0.263, 0.400]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "library",
+        "name": "desktops",
+        "colour": [
+            0.188,
+            0.023,
+            0.023
+        ],
+        "tags": [
+            "Custom"
+        ],
+        "expanded": true,
+        "children": [
+            {
+                "type": "folder",
+                "name": "common",
+                "colour": [
+                    0.197,
+                    0.024,
+                    0.024
+                ]
+            }
+        ]
+    },
+    {
+        "type": "library",
+        "name": "reference",
+        "colour": [
+            0.3,
+            0.172,
+            0.082
+        ],
+        "tags": [
+            "Custom"
+        ],
+        "expanded": true,
+        "children": [
+            {
+                "type": "folder",
+                "name": "reference_images",
+                "colour": [
+                    0.315,
+                    0.181,
+                    0.086
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "reference_movies",
+                "colour": [
+                    0.315,
+                    0.181,
+                    0.086
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "reference_style_guide",
+                "colour": [
+                    0.315,
+                    0.181,
+                    0.086
+                ]
+            }
+        ]
+    },
+    {
+        "type": "library",
+        "name": "editorial",
+        "colour": [
+            0.239,
+            0.239,
+            0.135
+        ],
+        "tags": [
+            "Custom"
+        ],
+        "expanded": true,
+        "children": [
+            {
+                "type": "folder",
+                "name": "conforms",
+                "colour": [
+                    0.251,
+                    0.251,
+                    0.142
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "work_in_progress",
+                "colour": [
+                    0.251,
+                    0.251,
+                    0.142
+                ],
+                "children": [
+                    {
+                        "type": "folder",
+                        "name": "postings",
+                        "colour": [
+                            0.264,
+                            0.264,
+                            0.149
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "library",
+        "name": "assets",
+        "colour": [
+            0.057,
+            0.131,
+            0.088
+        ],
+        "tags": [
+            "Custom"
+        ],
+        "expanded": true,
+        "children": [
+            {
+                "type": "folder",
+                "name": "artwork",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "audio",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ],
+                "children": [
+                    {
+                        "type": "folder",
+                        "name": "dub",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "mix",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "music",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "production",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "sound_effects",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "stems",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "voiceover",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "CGI",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "font",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "footage",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ],
+                "children": [
+                    {
+                        "type": "folder",
+                        "name": "graded",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "raw",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "stock",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "transcodes",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "graphics",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "images",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "legal",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "matchmoving",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "miscellaneous",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "paint",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "photoshop",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "roto",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "slates",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "subtitles",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "supers",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "titles",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "tracking",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            },
+            {
+                "type": "folder",
+                "name": "video",
+                "colour": [
+                    0.06,
+                    0.138,
+                    0.092
+                ]
+            }
+        ]
+    },
+    {
+        "type": "library",
+        "name": "masters",
+        "colour": [
+            0.094,
+            0.131,
+            0.2
+        ],
+        "tags": [
+            "Custom"
+        ],
+        "expanded": true,
+        "children": [
+            {
+                "type": "folder",
+                "name": "final_masters",
+                "colour": [
+                    0.099,
+                    0.138,
+                    0.21
+                ],
+                "children": [
+                    {
+                        "type": "reel",
+                        "name": "final_masters",
+                        "colour": [
+                            0.104,
+                            0.145,
+                            0.221
+                        ]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "versions",
+                        "colour": [
+                            0.104,
+                            0.145,
+                            0.221
+                        ]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "slates",
+                        "colour": [
+                            0.104,
+                            0.145,
+                            0.221
+                        ]
+                    },
+                    {
+                        "type": "reel",
+                        "name": "slated_masters",
+                        "colour": [
+                            0.104,
+                            0.145,
+                            0.221
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "library",
+        "name": "shots",
+        "colour": [
+            0.194,
+            0.159,
+            0.27
+        ],
+        "tags": [
+            "Custom"
+        ],
+        "expanded": true,
+        "children": [
+            {
+                "type": "folder",
+                "name": "batch_groups",
+                "colour": [
+                    0.204,
+                    0.167,
+                    0.284
+                ]
+            }
+        ]
+    }
+]

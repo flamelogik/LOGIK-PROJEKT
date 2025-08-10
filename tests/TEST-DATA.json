@@ -1,0 +1,23 @@
+{
+    "Template Serial Number: ": "2026_1",
+    "Template Client Name: ": "logik_projekt",
+    "Template Campaign Name: ": "release_version",
+    "Template Name: ": "2026_1_logik_projekt_release_version",
+    "Template Description: ": "2026.1 logik_projekt release_version",
+    "Template Resolution: ": "3840 x 2160 x 1.0 | UHDTV 4K 16:9",
+    "Template Width: ": "3840",
+    "Template Height: ": "2160",
+    "Template Aspect Ratio: ": "1.7777778",
+    "Template Bit Depth: ": "16-bit fp",
+    "Template Framerate: ": "23.976 fps",
+    "Template Scan Mode: ": "PROGRESSIVE",
+    "Template Start Frame: ": "1001",
+    "Template Init Config: ": "3840x2160@23976p.cfg",
+    "Template OCIO Config: ": "flame_configs/2026.0/aces2.0_config",
+    "Template OCIO Path: ": "/opt/Autodesk/colour_mgmt/configs/flame_configs/2026.0/aces2.0_config/config.ocio",
+    "Template OCIO Name: ": "ACES 2.0",
+    "Template Cache Integer: ": "Uncompressed (DPX)",
+    "Template Cache Integer ID: ": 2,
+    "Template Cache Float: ": "OpenEXR (DWAB)",
+    "Template Cache Float ID: ": 1185912
+}

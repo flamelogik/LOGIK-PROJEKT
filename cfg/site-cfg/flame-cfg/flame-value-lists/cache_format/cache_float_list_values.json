@@ -1,0 +1,13 @@
+[
+    { "format": "Raw", "code": 64704 },
+    { "format": "OpenEXR (uncompressed)", "code": 6264 },
+    { "format": "OpenEXR (RLE)", "code": 333944 },
+    { "format": "OpenEXR (B44)", "code": 465016 },
+    { "format": "OpenEXR (B44A)", "code": 530552 },
+    { "format": "OpenEXR (PIZ)", "code": 596088 },
+    { "format": "OpenEXR (ZIP scanline)", "code": 661624 },
+    { "format": "OpenEXR (ZIP multi-scanline)", "code": 727160 },
+    { "format": "OpenEXR (PXR24)", "code": 792696 },
+    { "format": "OpenEXR (DWAA)", "code": 1120376 },
+    { "format": "OpenEXR (DWAB)", "code": 1185912 }
+]

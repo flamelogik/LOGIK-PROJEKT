@@ -1,0 +1,307 @@
+docs
+├── goals
+├── help
+│   ├── LOGIK-PROJEKT_help_for_devs.md
+│   ├── LOGIK-PROJEKT_help_for_junior_artists_producers.md
+│   ├── LOGIK-PROJEKT_help_for_teens.md
+│   └── readme_serial_numbers.md
+├── history
+├── insights
+│   ├── data-maps
+│   │   ├── data_map_and_process_flow_analysis.md
+│   │   ├── data_map-flame_options.md
+│   │   ├── data_map-projekt_summary.md
+│   │   ├── data_map-projekt_template.md
+│   │   ├── data_map-template_info.md
+│   │   ├── data_map-template_parameters.md
+│   │   ├── data_map-template_summary.md
+│   │   └── LOGIK-PROJEKT_data_flow_analysis.md
+│   ├── directory-trees
+│   │   ├── tree-cfg
+│   │   ├── tree-docs
+│   │   ├── tree-pref
+│   │   ├── tree-scripts
+│   │   └── tree-src
+│   ├── process_flow
+│   │   └── app_py_process_flow_analysis.md
+│   ├── README.md
+│   ├── script-analysis
+│   │   └── src
+│   │       ├── core
+│   │       │   ├── functions
+│   │       │   │   ├── copy
+│   │       │   │   ├── create
+│   │       │   │   │   ├── insight-create_flame_archive_script.md
+│   │       │   │   │   ├── insight-create_flame_launcher_script.md
+│   │       │   │   │   ├── insight-create_flame_setup_dirs.md
+│   │       │   │   │   ├── insight-create_flame_startup_script.md
+│   │       │   │   │   ├── insight-create_flame_symbolic_links.md
+│   │       │   │   │   ├── insight-create_flame_wiretap_node.md
+│   │       │   │   │   ├── insight-create_projekt_backup_script.md
+│   │       │   │   │   ├── insight-create_projekt_filesystem_dirs.md
+│   │       │   │   │   ├── insight-create_projekt_launcher_alias.md
+│   │       │   │   │   └── insight-create_projekt_pgsql_db.md
+│   │       │   │   ├── get
+│   │       │   │   │   ├── insight-get_application_paths.md
+│   │       │   │   │   ├── insight-get_bit_depth_values.md
+│   │       │   │   │   ├── insight-get_cache_float_values.md
+│   │       │   │   │   ├── insight-get_cache_integers_values.md
+│   │       │   │   │   ├── insight-get_default_template_values.md
+│   │       │   │   │   ├── insight-get_flame_bookmarks_path.md
+│   │       │   │   │   ├── insight-get_flame_software_versions.md
+│   │       │   │   │   ├── insight-get_frame_rate_values.md
+│   │       │   │   │   ├── insight-get_init_config_values.md
+│   │       │   │   │   ├── insight-get_json_data.md
+│   │       │   │   │   ├── insight-get_logik_projekt_config_values.md
+│   │       │   │   │   ├── insight-get_ocio_config_values.md
+│   │       │   │   │   ├── insight-get_projekt_summary_data.md
+│   │       │   │   │   ├── insight-get_resolution_values.md
+│   │       │   │   │   ├── insight-get_scan_mode_values.md
+│   │       │   │   │   ├── insight-get_start_frame_values.md
+│   │       │   │   │   ├── insight-get_sysconfig_flame_catalog_dir.md
+│   │       │   │   │   ├── insight-get_sysconfig_flame_home_dir.md
+│   │       │   │   │   ├── insight-get_sysconfig_flame_media_dir.md
+│   │       │   │   │   └── insight-get_sysconfig_flame_setups_dir.md
+│   │       │   │   └── io
+│   │       │   │       ├── insight-export_logik_projekt_template.md
+│   │       │   │       ├── insight-export_session_adsk_json.md
+│   │       │   │       ├── insight-export_session_variables.md
+│   │       │   │       ├── insight-export_session_xml.md
+│   │       │   │       └── insight-import_logik_projekt_template.md
+│   │       │   ├── insight-app_logic.md
+│   │       │   ├── projekt_manager
+│   │       │   │   ├── insight-projekt_creator.md
+│   │       │   │   └── insight-projekt_models.md
+│   │       │   ├── template_manager
+│   │       │   │   ├── insight-template_handler.md
+│   │       │   │   ├── insight-template_models.md
+│   │       │   │   └── insight-template_serializers.md
+│   │       │   └── utils
+│   │       │       ├── insight-backup_utils.md
+│   │       │       ├── insight-calculated_name_utils.md
+│   │       │       ├── insight-flame_software_utils.md
+│   │       │       ├── insight-logik_projekt_utils.md
+│   │       │       ├── insight-ocio_utils.md
+│   │       │       ├── insight-path_utils.md
+│   │       │       ├── insight-system_info_utils.md
+│   │       │       ├── insight-threaded_logging_utils.md
+│   │       │       └── insight-validation_utils.md
+│   │       ├── insight-app.md
+│   │       ├── ui
+│   │       │   ├── insight-app_window.md
+│   │       │   ├── insight-ui_config.md
+│   │       │   ├── panels
+│   │       │   │   ├── insight-flame_options_panel.md
+│   │       │   │   ├── insight-projekt_summary_panel.md
+│   │       │   │   ├── insight-projekt_template_panel.md
+│   │       │   │   ├── insight-template_info_panel.md
+│   │       │   │   ├── insight-template_parameters_panel.md
+│   │       │   │   └── insight-template_summary_panel.md
+│   │       │   ├── themes
+│   │       │   │   ├── insight-logik_projekt_spectrum_color.md
+│   │       │   │   └── insight-modular_dark_theme.md
+│   │       │   └── widgets
+│   │       │       ├── button
+│   │       │       │   ├── insight-create_projekt_widget.md
+│   │       │       │   ├── insight-export_template_widget.md
+│   │       │       │   ├── insight-flame_catalog_dir_widget.md
+│   │       │       │   ├── insight-flame_home_dir_widget.md
+│   │       │       │   ├── insight-flame_media_dir_widget.md
+│   │       │       │   ├── insight-flame_setups_dir_widget.md
+│   │       │       │   └── insight-import_template_widget.md
+│   │       │       ├── combobox
+│   │       │       │   ├── insight-bit_depth_widget.md
+│   │       │       │   ├── insight-cache_float_widget.md
+│   │       │       │   ├── insight-cache_integer_widget.md
+│   │       │       │   ├── insight-flame_software_choice_widget.md
+│   │       │       │   ├── insight-frame_rate_widget.md
+│   │       │       │   ├── insight-init_config_widget.md
+│   │       │       │   ├── insight-ocio_config_widget.md
+│   │       │       │   ├── insight-projekt_config_widget.md
+│   │       │       │   ├── insight-resolution_widget.md
+│   │       │       │   ├── insight-scan_mode_widget.md
+│   │       │       │   └── insight-start_frame_widget.md
+│   │       │       ├── display
+│   │       │       │   ├── insight-projekt_summary_widget.md
+│   │       │       │   ├── insight-projekt_template_widget.md
+│   │       │       │   └── insight-template_summary_widget.md
+│   │       │       └── entry
+│   │       │           ├── insight-aspect_ratio_widget.md
+│   │       │           ├── insight-calculated_name_widget.md
+│   │       │           ├── insight-campaign_name_widget.md
+│   │       │           ├── insight-client_name_widget.md
+│   │       │           ├── insight-description_widget.md
+│   │       │           ├── insight-resolution_height_widget.md
+│   │       │           ├── insight-resolution_width_widget.md
+│   │       │           └── insight-serial_number_widget.md
+│   │       └── utils
+│   │           └── common
+│   │               └── create
+│   │                   ├── insight-create_banners.md
+│   │                   ├── insight-create_customized_filesystem_template.md
+│   │                   ├── insight-create_logs.md
+│   │                   ├── insight-create_separators.md
+│   │                   ├── insight-create_timestamp.md
+│   │                   ├── insight-directory_structure_analysis.md
+│   │                   ├── insight-directory_structure_to_bookmarks.md
+│   │                   └── insight-directory_structure_to_json.md
+│   └── static-analysis
+│       ├── app_analysis.md
+│       ├── core
+│       │   ├── app_logic_analysis.md
+│       │   ├── functions
+│       │   │   ├── copy
+│       │   │   │   ├── copy_current_session_files_analysis.md
+│       │   │   │   ├── copy_flame_bookmarks_analysis.md
+│       │   │   │   ├── copy_flame_presets_analysis.md
+│       │   │   │   ├── copy_flame_python_scripts_analysis.md
+│       │   │   │   └── __init__analysis.md
+│       │   │   ├── create
+│       │   │   │   ├── create_flame_archive_script_analysis.md
+│       │   │   │   ├── create_flame_launcher_script_analysis.md
+│       │   │   │   ├── create_flame_setup_dirs_analysis.md
+│       │   │   │   ├── create_flame_startup_script_analysis.md
+│       │   │   │   ├── create_flame_symbolic_links_analysis.md
+│       │   │   │   ├── create_flame_wiretap_node_analysis.md
+│       │   │   │   ├── create_projekt_analysis.md
+│       │   │   │   ├── create_projekt_backup_script_analysis.md
+│       │   │   │   ├── create_projekt_filesystem_dirs_analysis.md
+│       │   │   │   ├── create_projekt_launcher_alias_analysis.md
+│       │   │   │   ├── create_projekt_pgsql_db_analysis.md
+│       │   │   │   └── __init__analysis.md
+│       │   │   ├── get
+│       │   │   │   ├── get_application_paths_analysis.md
+│       │   │   │   ├── get_bit_depth_values_analysis.md
+│       │   │   │   ├── get_cache_float_values_analysis.md
+│       │   │   │   ├── get_cache_integer_values_analysis.md
+│       │   │   │   ├── get_default_template_values_analysis.md
+│       │   │   │   ├── get_flame_bookmarks_path_analysis.md
+│       │   │   │   ├── get_flame_software_versions_analysis.md
+│       │   │   │   ├── get_frame_rate_values_analysis.md
+│       │   │   │   ├── get_init_config_values_analysis.md
+│       │   │   │   ├── get_json_data_analysis.md
+│       │   │   │   ├── get_logik_projekt_config_values_analysis.md
+│       │   │   │   ├── get_ocio_config_values_analysis.md
+│       │   │   │   ├── get_projekt_summary_data_analysis.md
+│       │   │   │   ├── get_resolution_values_analysis.md
+│       │   │   │   ├── get_scan_mode_values_analysis.md
+│       │   │   │   ├── get_start_frame_values_analysis.md
+│       │   │   │   ├── get_sysconfig_flame_catalog_dir_analysis.md
+│       │   │   │   ├── get_sysconfig_flame_home_dir_analysis.md
+│       │   │   │   ├── get_sysconfig_flame_media_dir_analysis.md
+│       │   │   │   ├── get_sysconfig_flame_setups_dir_analysis.md
+│       │   │   │   └── __init__analysis.md
+│       │   │   ├── io
+│       │   │   │   ├── export_logik_projekt_template_analysis.md
+│       │   │   │   ├── export_session_adsk_json_analysis.md
+│       │   │   │   ├── export_session_variables_analysis.md
+│       │   │   │   ├── export_session_xml_analysis.md
+│       │   │   │   ├── import_logik_projekt_template_analysis.md
+│       │   │   │   └── __init__analysis.md
+│       │   │   └── loaders
+│       │   │       ├── load_bit_depth_values_analysis.md
+│       │   │       ├── load_cache_float_values_analysis.md
+│       │   │       ├── load_cache_integer_values_analysis.md
+│       │   │       ├── load_default_flame_catalog_directory_analysis.md
+│       │   │       ├── load_default_flame_home_directory_analysis.md
+│       │   │       ├── load_default_flame_media_directory_analysis.md
+│       │   │       ├── load_default_flame_setups_directory_analysis.md
+│       │   │       ├── load_default_template_parameters_analysis.md
+│       │   │       ├── load_flame_software_versions_analysis.md
+│       │   │       ├── load_frame_rate_values_analysis.md
+│       │   │       ├── load_init_config_values_analysis.md
+│       │   │       ├── load_json_data_analysis.md
+│       │   │       ├── load_logik_projekt_config_values_analysis.md
+│       │   │       ├── load_ocio_config_values_analysis.md
+│       │   │       ├── load_resolution_values_analysis.md
+│       │   │       ├── load_scan_mode_values_analysis.md
+│       │   │       └── load_start_frame_values_analysis.md
+│       │   ├── projekt_manager
+│       │   │   ├── __init__analysis.md
+│       │   │   ├── projekt_creator_analysis.md
+│       │   │   └── projekt_models_analysis.md
+│       │   ├── template_manager
+│       │   │   ├── __init__analysis.md
+│       │   │   ├── template_handler_analysis.md
+│       │   │   ├── template_models_analysis.md
+│       │   │   └── template_serializers_analysis.md
+│       │   └── utils
+│       │       ├── backup_utils_analysis.md
+│       │       ├── calculated_name_utils_analysis.md
+│       │       ├── config_utils_analysis.md
+│       │       ├── custom_filesystem_tools
+│       │       │   ├── directory_structure_analysis_analysis.md
+│       │       │   ├── directory_structure_to_bookmarks_analysis.md
+│       │       │   └── directory_structure_to_json_analysis.md
+│       │       ├── data_transformers_analysis.md
+│       │       ├── flame_config_parser_analysis.md
+│       │       ├── flame_software_utils_analysis.md
+│       │       ├── __init__analysis.md
+│       │       ├── logik_projekt_utils_analysis.md
+│       │       ├── ocio_utils_analysis.md
+│       │       ├── path_utils_analysis.md
+│       │       ├── placeholder_utils_analysis.md
+│       │       ├── session_log_utils_analysis.md
+│       │       ├── system_info_utils_analysis.md
+│       │       ├── threaded_logging_utils_analysis.md
+│       │       └── validation_utils_analysis.md
+│       └── ui
+│           ├── app_window_analysis.md
+│           ├── panels
+│           │   ├── flame_options_panel_analysis.md
+│           │   ├── __init__analysis.md
+│           │   ├── projekt_summary_panel_analysis.md
+│           │   ├── projekt_template_panel_analysis.md
+│           │   ├── template_info_panel_analysis.md
+│           │   ├── template_parameters_panel_analysis.md
+│           │   └── template_summary_panel_analysis.md
+│           ├── ui_config_analysis.md
+│           └── widgets
+│               ├── button
+│               │   ├── create_projekt_widget_analysis.md
+│               │   ├── export_template_widget_analysis.md
+│               │   └── __init__analysis.md
+│               ├── buttons
+│               │   ├── create_projekt_widget_analysis.md
+│               │   ├── export_template_widget_analysis.md
+│               │   ├── flame_catalog_dir_widget_analysis.md
+│               │   ├── flame_home_dir_widget_analysis.md
+│               │   ├── flame_media_dir_widget_analysis.md
+│               │   ├── flame_setups_dir_widget_analysis.md
+│               │   └── import_template_widget_analysis.md
+│               ├── combobox
+│               │   ├── bit_depth_widget_analysis.md
+│               │   ├── cache_float_widget_analysis.md
+│               │   ├── cache_integer_widget_analysis.md
+│               │   ├── flame_software_choice_widget_analysis.md
+│               │   ├── frame_rate_widget_analysis.md
+│               │   ├── __init__analysis.md
+│               │   ├── init_config_widget_analysis.md
+│               │   ├── ocio_config_widget_analysis.md
+│               │   ├── projekt_config_widget_analysis.md
+│               │   ├── resolution_widget_analysis.md
+│               │   ├── scan_mode_widget_analysis.md
+│               │   └── start_frame_widget_analysis.md
+│               ├── display
+│               │   ├── __init__analysis.md
+│               │   ├── projekt_summary_widget_analysis.md
+│               │   ├── projekt_template_widget_analysis.md
+│               │   └── template_summary_widget_analysis.md
+│               └── entry
+│                   ├── aspect_ratio_widget_analysis.md
+│                   ├── calculated_name_widget_analysis.md
+│                   ├── campaign_name_widget_analysis.md
+│                   ├── client_name_widget_analysis.md
+│                   ├── description_widget_analysis.md
+│                   ├── __init__analysis.md
+│                   ├── resolution_height_widget_analysis.md
+│                   ├── resolution_width_widget_analysis.md
+│                   └── serial_number_widget_analysis.md
+├── learning
+├── research
+│   ├── README.md
+│   └── topics.md
+├── sessions
+└── tasks
+
+53 directories, 251 files

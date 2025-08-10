@@ -1,0 +1,110 @@
+{
+    "group": "RED Camera Resolutions",
+    "items": [
+        {
+            "separator": true,
+            "separator_name": "+ ----------- RED 3K - Spherical ----------------- +",
+            "items": [
+                {
+                    "resolution_name": "1944 x 1620 x 1.0 | RED 3K 6:5",
+                    "width": 1944,
+                    "height": 1620,
+                    "storage_aspect_ratio": 1.2,
+                    "display_aspect_ratio": 1.2,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.2
+                },
+                {
+                    "resolution_name": "2880 x 1620 x 1.0 | RED 3K 16:9",
+                    "width": 2880,
+                    "height": 1620,
+                    "storage_aspect_ratio": 1.7777778,
+                    "display_aspect_ratio": 1.7777778,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.7777778
+                },
+                {
+                    "resolution_name": "2880 x 1920 x 1.0 | RED 3K 3:2",
+                    "width": 2880,
+                    "height": 1920,
+                    "storage_aspect_ratio": 1.5,
+                    "display_aspect_ratio": 1.5,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.5
+                },
+                {
+                    "resolution_name": "2880 x 2160 x 1.0 | RED 3K 4:3",
+                    "width": 2880,
+                    "height": 2160,
+                    "storage_aspect_ratio": 1.3333333,
+                    "display_aspect_ratio": 1.3333333,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.3333333
+                },
+                {
+                    "resolution_name": "2880 x 2304 x 1.0 | RED 3K 5:4",
+                    "width": 2880,
+                    "height": 2304,
+                    "storage_aspect_ratio": 1.25,
+                    "display_aspect_ratio": 1.25,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.25
+                },
+                {
+                    "resolution_name": "3072 x 384 x 1.0 | RED 3K 8:1",
+                    "width": 3072,
+                    "height": 384,
+                    "storage_aspect_ratio": 8.0,
+                    "display_aspect_ratio": 8.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 8.0
+                },
+                {
+                    "resolution_name": "3072 x 768 x 1.0 | RED 3K 4:1",
+                    "width": 3072,
+                    "height": 768,
+                    "storage_aspect_ratio": 4.0,
+                    "display_aspect_ratio": 4.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 4.0
+                },
+                {
+                    "resolution_name": "3072 x 1284 x 1.0 | RED 3K 2.39 WS",
+                    "width": 3072,
+                    "height": 1284,
+                    "storage_aspect_ratio": 2.3925234,
+                    "display_aspect_ratio": 2.3925234,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3925234
+                },
+                {
+                    "resolution_name": "3072 x 1296 x 1.0 | RED 3K 2.37 WS",
+                    "width": 3072,
+                    "height": 1296,
+                    "storage_aspect_ratio": 2.3703704,
+                    "display_aspect_ratio": 2.3703704,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.3703704
+                },
+                {
+                    "resolution_name": "3072 x 1536 x 1.0 | RED 3K 2:1",
+                    "width": 3072,
+                    "height": 1536,
+                    "storage_aspect_ratio": 2.0,
+                    "display_aspect_ratio": 2.0,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 2.0
+                },
+                {
+                    "resolution_name": "3072 x 1620 x 1.0 | RED 3K Full 17:9",
+                    "width": 3072,
+                    "height": 1620,
+                    "storage_aspect_ratio": 1.8962963,
+                    "display_aspect_ratio": 1.8962963,
+                    "pixel_aspect_ratio": 1.0,
+                    "aspect_ratio": 1.8962963
+                }
+            ]
+        }
+    ]
+}

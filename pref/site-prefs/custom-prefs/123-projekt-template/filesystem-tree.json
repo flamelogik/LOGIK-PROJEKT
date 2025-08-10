@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "created_at": "2025-08-07T17:34:13.203273",
+    "created_by": "directory_structure_to_json",
+    "version": "1.0"
+  },
+  "source": {
+    "original_path": "/home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT/cfg/site-cfg/logik-projekt-cfg/logik-projekt-templates/filesystem-templates/custom-filesystem-templates/123-projekt-template",
+    "original_name": "123-projekt-template",
+    "original_depth": 13,
+    "root_directory": "123-projekt-template"
+  },
+  "analysis": {
+    "timestamp": "2025_08_07-17_34_13",
+    "total_subdirectories": 13,
+    "processed_subdirectories": 13
+  },
+  "subdirectories": [
+    {
+      "path": "first-level-a",
+      "name": "first-level-a",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-a/second-level-a",
+      "name": "second-level-a",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "first-level-a",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-a/second-level-a/third-level-a",
+      "name": "third-level-a",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "second-level-a",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-a/second-level-a/third-level-a/fourth-level-a",
+      "name": "fourth-level-a",
+      "depth": 4,
+      "hasChildren": true,
+      "parent": "third-level-a",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-a/second-level-a/third-level-a/fourth-level-a/fifth-level-a",
+      "name": "fifth-level-a",
+      "depth": 5,
+      "hasChildren": false,
+      "parent": "fourth-level-a",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-b",
+      "name": "first-level-b",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-b/second-level-b",
+      "name": "second-level-b",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "first-level-b",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-b/second-level-b/third-level-b",
+      "name": "third-level-b",
+      "depth": 3,
+      "hasChildren": true,
+      "parent": "second-level-b",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-b/second-level-b/third-level-b/fourth-level-b",
+      "name": "fourth-level-b",
+      "depth": 4,
+      "hasChildren": true,
+      "parent": "third-level-b",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-b/second-level-b/third-level-b/fourth-level-b/fifth-level-b",
+      "name": "fifth-level-b",
+      "depth": 5,
+      "hasChildren": false,
+      "parent": "fourth-level-b",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-c",
+      "name": "first-level-c",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-c/second-level-c",
+      "name": "second-level-c",
+      "depth": 2,
+      "hasChildren": true,
+      "parent": "first-level-c",
+      "type": "directory"
+    },
+    {
+      "path": "first-level-c/second-level-c/third-level-c",
+      "name": "third-level-c",
+      "depth": 3,
+      "hasChildren": false,
+      "parent": "second-level-c",
+      "type": "directory"
+    }
+  ]
+}

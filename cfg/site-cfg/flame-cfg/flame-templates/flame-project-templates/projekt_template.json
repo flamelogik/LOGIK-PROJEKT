@@ -1,0 +1,29 @@
+{
+    "DefaultWorkspaceName": "",
+    "Default": {
+        "Name": "Default",
+        "ProjectDir": "/var/opt/Autodesk/flame/projects/<project name>",
+        "SetupDir": "<project home>/setups",
+        "MediaDir": "<project home>/media",
+        "Resolution": {
+            "Name" : "3840 x 2160 x 1.0 | UHDTV 4K 16:9",
+            "FrameWidth": 3840,
+            "FrameHeight": 2160,
+            "FrameDepth": "16-bit fp",
+            "AspectRatio": 1.77778,
+            "FieldDominance": "PROGRESSIVE"
+        },
+        "StartFrame": 1001,
+        "ConfigTemplate": "3840x2160@23976p.cfg",
+        "FrameRate": "23.976 fps",
+        "IntermediatesProfile": 2,
+        "FloatIntermediates": 1185912,
+        "ProxySettings": {
+            "ProxyMinFrameSize": 1920,
+            "ProxyWidthHint": 0.5,
+            "ProxyQuality": "lanczos",
+            "ProxyGeneratedByDefault": false
+        },
+        "ColourPolicyName": "ACES 2.0"
+    }
+}

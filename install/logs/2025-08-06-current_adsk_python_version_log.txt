@@ -1,0 +1,35 @@
+  Analyzing directory: /opt/Autodesk/python
+  Sorted contents of /opt/Autodesk/python:
+  2026.1.pr224
+  2026.1.pr222
+  2026.1.pr221
+  2026.1.pr220
+  2026.pr219
+  
+  The highest version is: 2026.1.pr224
+  
+  Python version 2026.1.pr224 is available and executable
+  Reading preference file:
+  /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT/install/current_adsk_python_version.pref
+  Preference file loaded:
+  /opt/Autodesk/python/2026.1.pr224/bin/python
+  No update needed.
+  Preference file already contains the latest version:
+  /opt/Autodesk/python/2026.1.pr224/bin/python
+
++ --------------------------------------------------------------------------- +
+  Creating macOS application: LOGIK-PROJEKT-2026.1.0.app
+  Creating the macOS application components
+
++ --------------------------------------------------------------------------- +
+  Creating LOGIK-PROJEKT shell script for linux: run_logikprojekt_linux.sh
+  Making the file executable: run_logikprojekt_linux.sh
+  Creating macOS application shell script: run_logikprojekt_macos
+
++ --------------------------------------------------------------------------- +
+  Creating desktop entry file: LOGIK-PROJEKT.desktop
+  Making the file executable: LOGIK-PROJEKT.desktop
+  Moving the file to ~/.local/share/applications/
+  File 'LOGIK-PROJEKT.desktop' has been created and made executable.
+
++ --------------------------------------------------------------------------- +

@@ -1,0 +1,44 @@
+{
+    "DefaultWorkspaceName": "{current_workstation}",
+    "Default": {
+        "Name": "Default",
+        "Resolution": {
+            "Name" : "",
+            "FrameWidth": 1920,
+            "FrameHeight": 1080,
+            "FrameDepth": "8-bit",
+            "AspectRatio": 1.77778,
+            "FieldDominance": "PROGRESSIVE"
+        },
+        "StartFrame": 1,
+        "ConfigTemplate": "",
+        "FrameRate": "23.976 fps",
+        "IntermediatesProfile": -1,
+        "ProxySettings": {
+            "ProxyMinFrameSize": 720,
+            "ProxyWidthHint": 0.5,
+            "ProxyQuality": "lanczos",
+            "ProxyGeneratedByDefault": false
+        },
+        "ColourPolicyName": ""
+    }
+}
+{
+    "Name": "{flame_software_name}",
+    "ProjectDir": "{flame_projekt_home}",
+    "SetupDir": "{flame_projekt_setups_dir}",
+    "MediaDir": "{flame_projekt_media_dir}",
+    "Resolution": {
+        "FrameWidth": {flame_projekt_width},
+        "FrameHeight": {flame_projekt_height},
+        "FrameDepth": "{flame_projekt_depth}",
+        "AspectRatio": {flame_projekt_ratio},
+        "FieldDominance": "{flame_projekt_mode}"
+    },
+    "StartFrame": {flame_projekt_start},
+    "ConfigTemplate": "{flame_projekt_init}",
+    "FrameRate": "{flame_projekt_rate}",
+    "IntermediatesProfile": {flame_projekt_cachei_id},
+    "FloatIntermediates": {flame_projekt_cachef_id},
+    "ColourPolicyName": "{flame_projekt_ocio_name}"
+}
