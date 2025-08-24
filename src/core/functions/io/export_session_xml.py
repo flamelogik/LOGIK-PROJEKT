@@ -43,9 +43,15 @@ def export_session_xml(data: dict, template_path: str, output_path: str):
         root = tree.getroot()
 
         def replace_placeholders(element, data_dict):
+            # Sort keys by length in descending order to avoid partial replacements
+            sorted_keys = sorted(data_dict.keys(), key=len, reverse=True)
             for child in element:
-                if child.text and child.text.strip() in data_dict:
-                    child.text = str(data_dict[child.text.strip()])
+                if child.text:
+                    for key in sorted_keys:
+                        value = data_dict[key]
+                        placeholder = f"{key}"
+                        if placeholder in child.text:
+                            child.text = child.text.replace(placeholder, str(value))
                 replace_placeholders(child, data_dict)
 
         replace_placeholders(root, data)
