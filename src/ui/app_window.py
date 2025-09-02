@@ -107,15 +107,23 @@ class Worker(QObject):
         self,
         template_info_data,
         template_params_data,
-        user_chosen_path # New parameter
+        user_chosen_path
     ):
         try:
+            # First, save the current data to the session file
             export_message = self.app_logic.export_logik_projekt_template(
                 template_info_data,
                 template_params_data
             )
             logging.info(export_message)
-            self.template_exported.emit(export_message, user_chosen_path) # Emit both messages
+
+            # Now that the session file is updated, copy it to the user's chosen path
+            if user_chosen_path:
+                source_file_path = "pref/session-preferences/current_session-template.json"
+                shutil.copy(source_file_path, user_chosen_path)
+                logging.info(f"Template also saved to: {user_chosen_path} (User-chosen path)")
+
+            self.template_exported.emit(export_message, user_chosen_path)
         except Exception as e:
             self.error.emit(str(e))
         finally:
@@ -508,8 +516,8 @@ class AppWindow(QWidget):
             source_file_path = "pref/session-preferences/current_session-template.json"
 
             # Define the default target directory (~/Documents/LOGIK-PROJEKT-exported-templates)
-            documents_path = os.path.expanduser("~/Documents")
-            default_target_dir = os.path.join(documents_path, "LOGIK-PROJEKT-exported-templates")
+            documents_path = os.path.expanduser("~/")
+            default_target_dir = os.path.join(documents_path, "Documents/LOGIK-PROJEKT-exported-templates")
 
             # Ensure the default target directory exists
             os.makedirs(default_target_dir, exist_ok=True)

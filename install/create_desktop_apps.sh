@@ -115,9 +115,8 @@ custom_sort() {
         # Format for numeric sorting: major, minor, patch, type, original string
         return sprintf("%04d%03d%03d%s %s", major, minor, patch, type, str)
     }
-    {
-        print parse_version($0)
-    }' | sort -r | cut -d' ' -f2-
+    { print parse_version($0) }
+' | sort -r | cut -d' ' -f2-
 }
 
 # Function to get the highest version
@@ -261,20 +260,7 @@ log_message "Creating $app_name shell script for linux: $projekt_script_runner_l
 PYTHON_EXECUTABLE=$(cat "$install_dir/current_adsk_python_version.pref")
 
 # Create the file and add the block of text
-cat <<EOF > "$projekt_script_runner_linux"
-#!/bin/bash
-# Get the directory where the script is located, which is the project root
-SCRIPT_DIR=\$(cd "\\\$(dirname "\\\$\\{BASH_SOURCE[0]}\\\)" && pwd)
-
-# Change to the project root directory
-cd "\$SCRIPT_DIR" || exit
-
-# Set PYTHONPATH to the project root
-export PYTHONPATH="\$SCRIPT_DIR"
-
-# Run the python application as a module
-"$PYTHON_EXECUTABLE" -m src.app
-EOF
+sed "s|__PYTHON_EXECUTABLE__|$PYTHON_EXECUTABLE|" "$install_dir/run_logikprojekt_linux.sh.template" > "$projekt_script_runner_linux"
 
 # Echo progress to the shell and log to the log file
 log_message "Making the file executable: $projekt_script_runner_linux"
@@ -317,7 +303,7 @@ log_message "Making the file executable: $desktop_entry_file"
 chmod +x $desktop_entry_file
 
 # Check the operating system and log the appropriate message
-if [[ "	$(uname)" == "Linux" ]]; then
+if [[ "$(uname)" == "Linux" ]]; then
     log_message "Moving the file to ~/.local/share/applications/"
     mv $desktop_entry_file ~/.local/share/applications/
 elif [[ "	$(uname)" == "Darwin" ]]; then
