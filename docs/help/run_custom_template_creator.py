@@ -28,6 +28,7 @@ import os
 import subprocess
 from pathlib import Path
 
+
 def get_repository_root_dir():
     """
     Finds the repository root directory by searching for a marker file.
@@ -38,6 +39,7 @@ def get_repository_root_dir():
             return current_dir
         current_dir = current_dir.parent
     raise FileNotFoundError("Repository root marker '.repository_root.dir' not found.")
+
 
 def main():
     try:
@@ -74,9 +76,18 @@ def main():
 
     # Execute the target Python script using the Autodesk Python executable
     try:
+        # Get the current environment and set PYTHONPATH
+        env = os.environ.copy()
+        env['PYTHONPATH'] = str(repo_dir) + os.pathsep + env.get('PYTHONPATH', '')
+
         # Use subprocess.run to execute the script with the specified interpreter
         # capture_output=False allows the child process's stdout/stderr to go directly to the console
-        result = subprocess.run([adsk_python_exec, str(target_script)], check=False, capture_output=False)
+        result = subprocess.run(
+            [adsk_python_exec, str(target_script)],
+            check=False,
+            capture_output=False,
+            env=env
+        )
         if result.returncode != 0:
             print(f"Script exited with error code {result.returncode}")
             sys.exit(result.returncode)
@@ -86,6 +97,7 @@ def main():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

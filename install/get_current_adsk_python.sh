@@ -1,40 +1,27 @@
 #!/bin/bash
-
 # -------------------------------------------------------------------------- #
+# Filename:     get_adsk_python.sh
+# Purpose:      Wrapper script to run create_customized_filesystem_template.py
+#               with the Autodesk Python interpreter specified in a .pref file.
+# Description:  Reads the path to the Autodesk Python executable from
+#               install/current_adsk_python_version.pref and then executes
+#               src/utils/common/create/create_customized_filesystem_template.py
+#               using that specific Python version.
 
-# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
+# Author:       phil_man@mac.com
+# Copyright:    Copyright (c) 2025
+# Disclaimer:   Disclaimer at bottom of script.
+# License:      GNU General Public License v3.0 (GPL-3.0).
+#               https://www.gnu.org/licenses/gpl-3.0.en.html
 
-#                   LOGIK-PROJEKT creates directories, files, scripts & tools
-#                   for use with Autodesk Flame and other software.
+# Version:      2026.1.0
+# Status:       Development
+# Type:         Utility
+# Created:      2024-01-19
+# Modified:     2025-08-07
 
-#                   LOGIK-PROJEKT is free software.
-
-#                   You can redistribute it and/or modify it under the terms
-#                   of the GNU General Public License as published by the
-#                   Free Software Foundation, either version 3 of the License,
-#                   or any later version.
-
-#                   This program is distributed in the hope that it will be
-#                   useful, but WITHOUT ANY WARRANTY; without even the
-#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
-#                   PARTICULAR PURPOSE.
-
-#                   See the GNU General Public License for more details.
-
-#                   You should have received a copy of the GNU General
-#                   Public License along with this program.
-
-#                   If not, see <https://www.gnu.org/licenses/>.
-
-#                   Contact: phil_man@mac.com
-
+# Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
-
-# File Name:        get_adsk_python.sh
-# Version:          0.0.4
-# Created:          2024-01-19
-# Modified:         2024-09-07
 
 # ========================================================================== #
 # This section defines paths for the script.
@@ -154,13 +141,22 @@ update_adsk_python_preference() {
     fi
 }
 
-# Manage the preferences (now handled by update_adsk_python_preference after version detection)
-
 # -------------------------------------------------------------------------- #
 
-# Check if the directory to analyze exists
+# Check if the base directory exists
 if [ ! -d "$adsk_python_dir" ]; then
-    log_message "Directory $adsk_python_dir does not exist"
+    log_message "Error: Base directory for Autodesk Python not found at '$adsk_python_dir'."
+    if [[ "$(uname)" == "Darwin" ]]; then
+        log_message "On macOS, the path might be different. Please check your Autodesk installation."
+        log_message "You can specify a different base directory as an argument to this script."
+    fi
+    printf "\n%s\n" "$separator"
+    exit 1
+fi
+
+# Check if any version directories are found
+if ! ls -1d "$adsk_python_dir"/*/ >/dev/null 2>&1; then
+    log_message "Error: No version directories found in '$adsk_python_dir'."
     printf "\n%s\n" "$separator"
     exit 1
 fi
@@ -190,14 +186,41 @@ else
     # You might want to add fallback logic here
 fi
 
-# Ensure current_adsk_python_version is set (no longer needed, handled by update_adsk_python_preference)
 
-# ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
-# ========================================================================== #
+# -------------------------------------------------------------------------- #
 
-# Changelist:      
+# DISCLAIMER:   This file is part of LOGIK-PROJEKT.
 
+#               Copyright © 2025 STRENGTH IN NUMBERS
+
+#               LOGIK-PROJEKT creates directories, files, scripts & tools
+#               for use with Autodesk Flame and other software.
+
+#               LOGIK-PROJEKT is free software.
+
+#               You can redistribute it and/or modify it under the terms
+#               of the GNU General Public License as published by the
+#               Free Software Foundation, either version 3 of the License,
+#               or any later version.
+
+#               This program is distributed in the hope that it will be
+#               useful, but WITHOUT ANY WARRANTY; without even the
+
+#               implied warranty of MERCHANTABILITY or
+#               FITNESS FOR A PARTICULAR PURPOSE.
+
+#               See the GNU General Public License for more details.
+#               You should have received a copy of the GNU General
+#               Public License along with this program.
+
+#               If not, see <https://www.gnu.org/licenses/gpl-3.0.en.html>.
+
+#               Contact: phil_man@mac.com
+
+# -------------------------------------------------------------------------- #
+# C2 A9 32 30 32 35 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 #
+# -------------------------------------------------------------------------- #
+# Changelog:
 # -------------------------------------------------------------------------- #
 # version:          0.0.1
 # created:          2024-08-31 - 12:34:56
@@ -214,4 +237,8 @@ fi
 # version:          0.0.4
 # created:          2024-09-07 - 10:38:56
 # comments:         Fixed the issue where the pref file does not get updated.
+# -------------------------------------------------------------------------- #
+# version:          0.0.5
+# created:          2024-09-07 - 11:15:00
+# comments:         Added checks for base directory and version subdirectories.
 # -------------------------------------------------------------------------- #

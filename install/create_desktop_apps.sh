@@ -1,40 +1,27 @@
 #!/bin/bash
-
 # -------------------------------------------------------------------------- #
+# Filename:     create_desktop_apps.sh
+# Purpose:      Wrapper script to run create_customized_filesystem_template.py
+#               with the Autodesk Python interpreter specified in a .pref file.
+# Description:  Reads the path to the Autodesk Python executable from
+#               install/current_adsk_python_version.pref and then executes
+#               src/utils/common/create/create_customized_filesystem_template.py
+#               using that specific Python version.
 
-# DISCLAIMER:       This file is part of LOGIK-PROJEKT.
-#                   Copyright © 2024 man-made-mekanyzms
+# Author:       phil_man@mac.com
+# Copyright:    Copyright (c) 2025
+# Disclaimer:   Disclaimer at bottom of script.
+# License:      GNU General Public License v3.0 (GPL-3.0).
+#               https://www.gnu.org/licenses/gpl-3.0.en.html
 
-#                   LOGIK-PROJEKT creates directories, files, scripts & tools
-#                   for use with Autodesk Flame and other software.
+# Version:      2026.1.0
+# Status:       Development
+# Type:         Utility
+# Created:      2024-01-19
+# Modified:     2025-08-07
 
-#                   LOGIK-PROJEKT is free software.
-
-#                   You can redistribute it and/or modify it under the terms
-#                   of the GNU General Public License as published by the
-#                   Free Software Foundation, either version 3 of the License,
-#                   or any later version.
-
-#                   This program is distributed in the hope that it will be
-#                   useful, but WITHOUT ANY WARRANTY; without even the
-#                   implied warranty of MERCHANTABILITY or FITNESS FOR A
-#                   PARTICULAR PURPOSE.
-
-#                   See the GNU General Public License for more details.
-
-#                   You should have received a copy of the GNU General
-#                   Public License along with this program.
-
-#                   If not, see <https://www.gnu.org/licenses/>.
-
-#                   Contact: phil_man@mac.com
-
+# Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
-
-# File Name:        create_desktop_apps.sh
-# Version:          0.0.4
-# Created:          2024-01-19
-# Modified:         2024-09-02
 
 # ========================================================================== #
 # This section defines paths for the script.
@@ -276,9 +263,17 @@ PYTHON_EXECUTABLE=$(cat "$install_dir/current_adsk_python_version.pref")
 # Create the file and add the block of text
 cat <<EOF > "$projekt_script_runner_linux"
 #!/bin/bash
-cd $parent_dir
-export PYTHONPATH=$parent_dir:$PYTHONPATH
-$PYTHON_EXECUTABLE $parent_dir/src/app.py
+# Get the directory where the script is located, which is the project root
+SCRIPT_DIR=\$(cd "\\\$(dirname "\\\$\\{BASH_SOURCE[0]}\\\)" && pwd)
+
+# Change to the project root directory
+cd "\$SCRIPT_DIR" || exit
+
+# Set PYTHONPATH to the project root
+export PYTHONPATH="\$SCRIPT_DIR"
+
+# Run the python application as a module
+"$PYTHON_EXECUTABLE" -m src.app
 EOF
 
 # Echo progress to the shell and log to the log file
@@ -322,10 +317,10 @@ log_message "Making the file executable: $desktop_entry_file"
 chmod +x $desktop_entry_file
 
 # Check the operating system and log the appropriate message
-if [[ "$(uname)" == "Linux" ]]; then
+if [[ "	$(uname)" == "Linux" ]]; then
     log_message "Moving the file to ~/.local/share/applications/"
     mv $desktop_entry_file ~/.local/share/applications/
-elif [[ "$(uname)" == "Darwin" ]]; then
+elif [[ "	$(uname)" == "Darwin" ]]; then
     log_message "This script is not configured to move files on macOS (Darwin)."
 else
     log_message "Unsupported operating system: $(uname)"
@@ -336,12 +331,41 @@ log_message "File '$desktop_entry_file' has been created and made executable."
 
 printf "\n%s\n" "$separator"
 
-# ========================================================================== #
-# C2 A9 32 30 32 34 2D 4D 41 4E 2D 4D 41 44 45 2D 4D 45 4B 41 4E 59 5A 4D 53 #
-# ========================================================================== #
 
-# Changelist:      
+# -------------------------------------------------------------------------- #
 
+# DISCLAIMER:   This file is part of LOGIK-PROJEKT.
+
+#               Copyright © 2025 STRENGTH IN NUMBERS
+
+#               LOGIK-PROJEKT creates directories, files, scripts & tools
+#               for use with Autodesk Flame and other software.
+
+#               LOGIK-PROJEKT is free software.
+
+#               You can redistribute it and/or modify it under the terms
+#               of the GNU General Public License as published by the
+#               Free Software Foundation, either version 3 of the License,
+#               or any later version.
+
+#               This program is distributed in the hope that it will be
+#               useful, but WITHOUT ANY WARRANTY; without even the
+
+#               implied warranty of MERCHANTABILITY or
+#               FITNESS FOR A PARTICULAR PURPOSE.
+
+#               See the GNU General Public License for more details.
+#               You should have received a copy of the GNU General
+#               Public License along with this program.
+
+#               If not, see <https://www.gnu.org/licenses/gpl-3.0.en.html>.
+
+#               Contact: phil_man@mac.com
+
+# -------------------------------------------------------------------------- #
+# C2 A9 32 30 32 35 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 #
+# -------------------------------------------------------------------------- #
+# Changelog:
 # -------------------------------------------------------------------------- #
 # version:          0.0.1
 # created:          2024-08-31 - 12:34:56
