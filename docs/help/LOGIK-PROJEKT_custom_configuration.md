@@ -1,10 +1,10 @@
 # LOGIK-PROJEKT: Custom Configuration Guide
 
-This guide explains how to use the `create_customized_filesystem_template.py` script to generate custom project configurations for LOGIK-PROJEKT. This script allows you to define a new project structure based on an existing directory, and then integrate it into the application's template system.
+This guide explains how to use the [`run_custom_template_creator.py`](./run_custom_template_creator.py) script to generate custom projekt configurations for LOGIK-PROJEKT. This script allows you to define a new projekt structure based on an existing directory tree, and then integrate it into the LOGIK-PROJEKTS's template system.
 
 ## Purpose of the Script
 
-The `create_customized_filesystem_template.py` script automates the process of:
+The [`run_custom_template_creator.py`](./run_custom_template_creator.py) script is a wrapper for the [`create_customized_filesystem_template.py`](../src/utils/common/create/create_customized_filesystem_template.py) script, which automates the process of:
 1.  Analyzing a user-provided directory structure.
 2.  Generating a JSON representation of this directory structure.
 3.  Creating corresponding Autodesk Flame bookmarks based on the structure.

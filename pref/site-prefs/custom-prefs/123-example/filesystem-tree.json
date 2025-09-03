@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "created_at": "2025-09-03T13:16:31.664846",
+    "created_by": "directory_structure_to_json",
+    "version": "1.0"
+  },
+  "source": {
+    "original_path": "/home/pman/workspace/GitHub/flamelogik/LOGIK-PROJEKT/cfg/site-cfg/logik-projekt-cfg/logik-projekt-templates/filesystem-templates/custom-filesystem-templates/123-example",
+    "original_name": "123-example",
+    "original_depth": 13,
+    "root_directory": "123-example"
+  },
+  "analysis": {
+    "timestamp": "2025_09_03-13_16_31",
+    "total_subdirectories": 10,
+    "processed_subdirectories": 10
+  },
+  "subdirectories": [
+    {
+      "path": "animals",
+      "name": "animals",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "animals/cat",
+      "name": "cat",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "animals",
+      "type": "directory"
+    },
+    {
+      "path": "animals/dog",
+      "name": "dog",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "animals",
+      "type": "directory"
+    },
+    {
+      "path": "animals/elephant",
+      "name": "elephant",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "animals",
+      "type": "directory"
+    },
+    {
+      "path": "bicycles",
+      "name": "bicycles",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "bicycles/mountain",
+      "name": "mountain",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "bicycles",
+      "type": "directory"
+    },
+    {
+      "path": "bicycles/street",
+      "name": "street",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "bicycles",
+      "type": "directory"
+    },
+    {
+      "path": "candy",
+      "name": "candy",
+      "depth": 1,
+      "hasChildren": true,
+      "parent": "projekt directories",
+      "type": "directory"
+    },
+    {
+      "path": "candy/chocolate",
+      "name": "chocolate",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "candy",
+      "type": "directory"
+    },
+    {
+      "path": "candy/gum",
+      "name": "gum",
+      "depth": 2,
+      "hasChildren": false,
+      "parent": "candy",
+      "type": "directory"
+    }
+  ]
+}
