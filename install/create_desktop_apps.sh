@@ -271,8 +271,27 @@ chmod +x "$projekt_script_runner_linux"
 # Echo progress to the shell and log to the log file
 log_message "Creating macOS application shell script: $projekt_script_runner_macos"
 
-# Copy the shell script to the macOS application
-cp "$projekt_script_runner_linux" "$macos_app_name/Contents/MacOS/$projekt_script_runner_macos"
+# Create the macOS runner script
+cat <<EOF > "$macos_app_name/Contents/MacOS/$projekt_script_runner_macos"
+#!/bin/bash
+# Get the project root directory from the script's location within the app bundle
+SCRIPT_DIR=\$(cd "\$(dirname "\${BASH_SOURCE[0]}")/../../.." && pwd)
+
+# Change to the project root directory
+cd "\$SCRIPT_DIR" || exit
+
+# Set PYTHONPATH to the project root
+export PYTHONPATH="\$SCRIPT_DIR"
+
+# Workaround for performance issues on macOS 15
+export QT_QUICK_BACKEND=software
+
+# Run the python application as a module
+"$PYTHON_EXECUTABLE" -m src.app
+EOF
+
+# Make the macOS runner executable
+chmod +x "$macos_app_name/Contents/MacOS/$projekt_script_runner_macos"
 
 printf "\n%s\n" "$separator"
 
