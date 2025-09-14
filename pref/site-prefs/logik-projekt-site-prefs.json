@@ -11,6 +11,12 @@
       "PROJEKT Filesystem Tree": "pref/site-prefs/custom-prefs/123-example/filesystem-tree.json",
       "PROJEKT Flame Workspace": "pref/site-prefs/custom-prefs/123-example/flame-workspace.json",
       "PROJEKT Flame Bookmarks": "pref/site-prefs/custom-prefs/123-example/cf_bookmarks.json"
+    },
+    {
+      "PROJEKT Configuration Name": "banana-banana",
+      "PROJEKT Filesystem Tree": "pref/site-prefs/custom-prefs/banana-banana/filesystem-tree.json",
+      "PROJEKT Flame Workspace": "pref/site-prefs/custom-prefs/banana-banana/flame-workspace.json",
+      "PROJEKT Flame Bookmarks": "pref/site-prefs/custom-prefs/banana-banana/cf_bookmarks.json"
     }
   ]
 }
