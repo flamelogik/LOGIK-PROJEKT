@@ -3,7 +3,7 @@
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
 # Change to the project root directory
-cd "$SCRIPT__DIR" || exit
+cd "$SCRIPT_DIR" || exit
 
 # Set PYTHONPATH to the project root
 export PYTHONPATH="$SCRIPT_DIR"
