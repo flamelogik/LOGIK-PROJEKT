@@ -1,1 +1,19 @@
-
+{
+    "Name": "modon_animation_2026_1_rome",
+    "ProjectDir": "/Volumes/flame_projekts/modon_animation_2026_1_rome",
+    "SetupDir": "/Volumes/flame_projekts/modon_animation_2026_1_rome/setups",
+    "MediaDir": "/Volumes/flame_projekts/modon_animation_2026_1_rome/media",
+    "Resolution": {
+        "FrameWidth": 3840,
+        "FrameHeight": 2160,
+        "FrameDepth": "16-bit fp",
+        "AspectRatio": 1.7777778,
+        "FieldDominance": "PROGRESSIVE"
+    },
+    "StartFrame": 1001,
+    "ConfigTemplate": "3840x2160@25000p.cfg",
+    "FrameRate": "25 fps",
+    "IntermediatesProfile": 2,
+    "FloatIntermediates": 1185912,
+    "ColourPolicyName": "ACES 2.0"
+}
