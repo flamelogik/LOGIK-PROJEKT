@@ -25,8 +25,7 @@ from datetime import (
     datetime
 )
 from PySide6.QtWidgets import (
-    QApplication,
-    QMainWindow
+    QApplication
 )
 from src.ui.app_window import (
     AppWindow
@@ -97,9 +96,7 @@ def main():
         LogikProjektModularTheme.get_stylesheet()
     )
 
-    main_window = (
-        QMainWindow()
-    )
+    main_window = AppWindow()
     main_window.setWindowTitle(
         "LOGIK-PROJEKT 2026.1"
     )
@@ -134,11 +131,6 @@ def main():
             ui_config.WINDOW_WIDTH,
             ui_config.WINDOW_HEIGHT
         )
-
-    app_widget = (
-        AppWindow(main_window)
-    )
-    main_window.setCentralWidget(app_widget)
 
     main_window.show()
     sys.exit(app.exec())

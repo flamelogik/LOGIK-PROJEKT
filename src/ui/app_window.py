@@ -30,6 +30,7 @@ from PySide6.QtCore import (
 
 from PySide6.QtWidgets import (
     QWidget,
+    QMainWindow,
     QVBoxLayout,
     QHBoxLayout,
     QFileDialog,
@@ -149,19 +150,22 @@ class Worker(QObject):
             self.finished.emit()
 
 
-class AppWindow(QWidget):
+class AppWindow(QMainWindow):
     create_projekt_requested = Signal(dict)
     export_template_requested = Signal(dict, dict, str)
     import_template_requested = Signal(str)
 
-    def __init__(self, master=None):
-        super().__init__(master)
+    def __init__(self):
+        super().__init__()
 
         self.app_logic = AppLogic()
 
         logging.debug("AppWindow initialized.")
 
-        self.main_layout = QHBoxLayout(self)
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget)
+
+        self.main_layout = QHBoxLayout(central_widget)
         self.main_layout.setContentsMargins(
             *ui_config.MAIN_LAYOUT_MARGINS
         )
@@ -541,9 +545,8 @@ class AppWindow(QWidget):
                 save_file_path = file_dialog.selectedFiles()[0]
 
             if save_file_path: # If user didn't cancel the dialog
-                # Copy the file to the user-selected location
-                shutil.copy(source_file_path, save_file_path)
-                logging.info(f"Template also saved to: {save_file_path} (User-chosen path) and {source_file_path} (Automatic path)")
+                # The worker will handle the file copy
+                pass
 
             self.export_template_requested.emit(
                 template_info_data,
@@ -610,6 +613,24 @@ class AppWindow(QWidget):
             logging.warning(
                 "LOGIK-PROJEKT creation aborted due to validation failure."
             )
+
+    def closeEvent(self, event):
+        """
+        Handles the window close event to ensure the worker thread is
+        properly terminated.
+        """
+        logging.info("Close event triggered. Shutting down worker thread...")
+
+        if self.thread.isRunning():
+            self.thread.quit()
+            # Wait for the thread to finish. Give it a reasonable timeout.
+            if not self.thread.wait(5000):  # 5 seconds
+                logging.warning("Worker thread did not quit in time. Terminating...")
+                self.thread.terminate()
+                self.thread.wait()  # Wait for termination to complete
+
+        logging.info("Worker thread stopped. Accepting close event.")
+        event.accept()
 
 
 # -------------------------------------------------------------------------- #

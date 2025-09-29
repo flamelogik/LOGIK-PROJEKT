@@ -111,10 +111,10 @@ prefs_dir="$repo_dir/prefs"
 # Imports - common
 # -------------------------------------------------------------------------- #
 
-source "$repo_dir/src/common/create/create-banners.sh"
-source "$repo_dir/src/common/create/create-logs.sh"
-source "$repo_dir/src/common/create/create-separators.sh"
-source "$repo_dir/src/common/create/create-timestamp.sh"
+source "$repo_dir/scripts/common/create/create-banners.sh"
+source "$repo_dir/scripts/common/create/create-logs.sh"
+source "$repo_dir/scripts/common/create/create-separators.sh"
+source "$repo_dir/scripts/common/create/create-timestamp.sh"
 
 # -------------------------------------------------------------------------- #
 # Imports - lib
