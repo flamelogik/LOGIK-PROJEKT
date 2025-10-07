@@ -1,0 +1,11 @@
+{
+  "output_file": "F65-Raw-tungsten_to_ACES-AP0.ctf",
+  "source_json": "F65-Raw-tungsten_to_ACES-AP0.json",
+  "transform_direction": "forward",
+  "source_transforms": [
+    {
+      "file": "F65-Raw-tungsten_to_ACES.ctf",
+      "direction": "forward"
+    }
+  ]
+}

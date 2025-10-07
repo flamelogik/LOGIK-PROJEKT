@@ -1,0 +1,12 @@
+{
+  "name": "LinearREDWideGamutRGB_to_ACES-AP1",
+  "output_clf": "LinearREDWideGamutRGB_to_ACES-AP1.clf",
+  "input_space": "Linear REDWideGamutRGB",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Red/LinearREDWideGamutRGB_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

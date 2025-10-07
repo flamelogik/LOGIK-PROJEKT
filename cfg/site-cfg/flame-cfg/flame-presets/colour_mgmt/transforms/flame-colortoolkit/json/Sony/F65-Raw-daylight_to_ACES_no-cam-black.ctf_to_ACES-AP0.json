@@ -1,0 +1,12 @@
+{
+  "name": "F65-Raw-daylight_to_ACES_no-cam-black.ctf_to_ACES-AP0",
+  "output_clf": "F65-Raw-daylight_to_ACES_no-cam-black.ctf_to_ACES-AP0.clf",
+  "input_space": "Raw",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Sony/F65-Raw-daylight_to_ACES_no-cam-black.ctf",
+      "inverse": false
+    }
+  ]
+}

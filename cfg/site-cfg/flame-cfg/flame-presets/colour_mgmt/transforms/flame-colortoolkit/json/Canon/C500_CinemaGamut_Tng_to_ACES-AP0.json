@@ -1,0 +1,12 @@
+{
+  "name": "C500_CinemaGamut_Tng_to_ACES-AP0",
+  "output_clf": "C500_CinemaGamut_Tng_to_ACES-AP0.clf",
+  "input_space": "CanonLog2 CinemaGamut D55",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Canon/C500_CinemaGamut_Tng_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

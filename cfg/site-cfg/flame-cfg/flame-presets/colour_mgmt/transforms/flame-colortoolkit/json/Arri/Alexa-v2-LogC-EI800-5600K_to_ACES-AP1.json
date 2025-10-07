@@ -1,0 +1,12 @@
+{
+  "name": "Alexa-v2-LogC-EI800-5600K_to_ACES-AP1",
+  "output_clf": "Alexa-v2-LogC-EI800-5600K_to_ACES-AP1.clf",
+  "input_space": "ARRI LogC3 (EI800)",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Arri/Alexa-v2-LogC-EI800-5600K_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "output_file": "ACES-AP0_to_Alexa-v2-LogC-EI800-3200K.ctf",
+  "source_json": "Alexa-v2-LogC-EI800-3200K_to_ACES-AP0.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "Alexa-v2-LogC-EI800-3200K_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

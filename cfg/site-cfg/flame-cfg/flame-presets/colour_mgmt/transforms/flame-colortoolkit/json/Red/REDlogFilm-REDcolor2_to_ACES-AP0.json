@@ -1,0 +1,12 @@
+{
+  "name": "REDlogFilm-REDcolor2_to_ACES-AP0",
+  "output_clf": "REDlogFilm-REDcolor2_to_ACES-AP0.clf",
+  "input_space": "Log3G10 REDWideGamutRGB",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Red/REDlogFilm-REDcolor2_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

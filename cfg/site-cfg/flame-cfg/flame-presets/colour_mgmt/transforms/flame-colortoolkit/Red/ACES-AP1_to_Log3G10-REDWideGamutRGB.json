@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_Log3G10-REDWideGamutRGB.ctf",
+  "source_json": "Log3G10-REDWideGamutRGB_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "Log3G10-REDWideGamutRGB_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

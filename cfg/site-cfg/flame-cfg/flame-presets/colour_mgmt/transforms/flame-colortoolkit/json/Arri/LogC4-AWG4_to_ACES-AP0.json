@@ -1,0 +1,12 @@
+{
+  "name": "LogC4-AWG4_to_ACES-AP0",
+  "output_clf": "LogC4-AWG4_to_ACES-AP0.clf",
+  "input_space": "ARRI LogC4",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Arri/LogC4-AWG4_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

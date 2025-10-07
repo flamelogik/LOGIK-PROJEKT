@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_F65-Raw-tungsten.ctf",
+  "source_json": "F65-Raw-tungsten_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "F65-Raw-tungsten_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

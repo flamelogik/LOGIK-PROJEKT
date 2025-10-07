@@ -1,0 +1,12 @@
+{
+  "name": "VLog-VGamut_to_ACES-AP0",
+  "output_clf": "VLog-VGamut_to_ACES-AP0.clf",
+  "input_space": "V-Log V-Gamut",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Panasonic/VLog-VGamut_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

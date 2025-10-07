@@ -1,0 +1,12 @@
+{
+  "name": "LinearBMDWideGamut_to_ACES-AP1",
+  "output_clf": "LinearBMDWideGamut_to_ACES-AP1.clf",
+  "input_space": "Linear BMD WideGamut Gen5",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/BlackmagicDesign/LinearBMDWideGamut_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}
