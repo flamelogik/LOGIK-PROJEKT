@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_LogC4-AWG4.ctf",
+  "source_json": "LogC4-AWG4_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "LogC4-AWG4_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

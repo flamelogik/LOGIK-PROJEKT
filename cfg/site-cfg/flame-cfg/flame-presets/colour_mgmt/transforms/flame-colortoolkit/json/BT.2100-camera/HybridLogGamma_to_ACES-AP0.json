@@ -1,0 +1,12 @@
+{
+  "name": "HybridLogGamma_to_ACES-AP0",
+  "output_clf": "HybridLogGamma_to_ACES-AP0.clf",
+  "input_space": "Camera Rec.2100-HLG",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/BT.2100-camera/HybridLogGamma_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

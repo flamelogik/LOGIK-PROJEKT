@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_LinearDaVinciWideGamut.ctf",
+  "source_json": "LinearDaVinciWideGamut_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "LinearDaVinciWideGamut_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

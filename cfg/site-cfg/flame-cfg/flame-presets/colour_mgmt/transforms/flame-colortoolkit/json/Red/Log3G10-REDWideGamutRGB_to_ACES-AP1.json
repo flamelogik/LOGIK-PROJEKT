@@ -1,0 +1,12 @@
+{
+  "name": "Log3G10-REDWideGamutRGB_to_ACES-AP1",
+  "output_clf": "Log3G10-REDWideGamutRGB_to_ACES-AP1.clf",
+  "input_space": "Log3G10 REDWideGamutRGB",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Red/Log3G10-REDWideGamutRGB_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

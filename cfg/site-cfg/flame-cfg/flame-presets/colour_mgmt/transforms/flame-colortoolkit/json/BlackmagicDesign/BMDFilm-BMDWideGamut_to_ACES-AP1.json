@@ -1,0 +1,12 @@
+{
+  "name": "BMDFilm-BMDWideGamut_to_ACES-AP1",
+  "output_clf": "BMDFilm-BMDWideGamut_to_ACES-AP1.clf",
+  "input_space": "BMDFilm WideGamut Gen5",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/BlackmagicDesign/BMDFilm-BMDWideGamut_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

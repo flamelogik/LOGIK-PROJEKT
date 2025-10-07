@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_HybridLogGamma.ctf",
+  "source_json": "HybridLogGamma_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "HybridLogGamma_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

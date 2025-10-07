@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_DaVinciIntermediate-DaVinciWideGamut.ctf",
+  "source_json": "DaVinciIntermediate-DaVinciWideGamut_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "DaVinciIntermediate-DaVinciWideGamut_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

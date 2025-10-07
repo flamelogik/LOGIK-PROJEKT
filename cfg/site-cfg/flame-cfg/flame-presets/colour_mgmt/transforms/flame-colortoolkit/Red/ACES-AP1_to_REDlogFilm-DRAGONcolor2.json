@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_REDlogFilm-DRAGONcolor2.ctf",
+  "source_json": "REDlogFilm-DRAGONcolor2_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "REDlogFilm-DRAGONcolor2_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

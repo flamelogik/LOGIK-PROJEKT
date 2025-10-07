@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProcessList version="1.3" id="4648c1e1610a02119032d88dd4fe79d2">
+    <Gamma inBitDepth="32f" outBitDepth="16f" style="monCurveFwd">
+        <GammaParams gamma="2.22222222222222" offset="0.099" />
+    </Gamma>
+    <Matrix inBitDepth="16f" outBitDepth="16f">
+        <Description>sRGB to ACES matrix</Description>
+        <Array dim="3 3 3">
+     0.439632981919      0.382988698152      0.177378319929
+     0.089776442959      0.813439428749      0.096784128292
+     0.017541170383      0.111546553302      0.870912276314
+        </Array>
+    </Matrix>
+</ProcessList>

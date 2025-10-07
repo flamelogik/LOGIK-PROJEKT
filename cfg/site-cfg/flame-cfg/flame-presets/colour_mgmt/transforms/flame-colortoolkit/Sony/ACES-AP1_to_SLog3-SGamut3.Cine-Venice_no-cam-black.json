@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_SLog3-SGamut3.Cine-Venice_no-cam-black.ctf",
+  "source_json": "SLog3-SGamut3.Cine-Venice_no-cam-black_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "SLog3-SGamut3.Cine-Venice_no-cam-black_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

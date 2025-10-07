@@ -1,0 +1,12 @@
+{
+  "name": "C500_DCI-P3+_D55_to_ACES-AP1",
+  "output_clf": "C500_DCI-P3+_D55_to_ACES-AP1.clf",
+  "input_space": "CanonLog2 CinemaGamut D55",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Canon/C500_DCI-P3+_D55_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}
