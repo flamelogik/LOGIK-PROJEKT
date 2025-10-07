@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Project>
-  <Name>modon_animation_2026_1_rome</Name>
-  <Nickname>modon_animation</Nickname>
-  <ShotgunProjectName>modon_animation</ShotgunProjectName>
-  <Description>test</Description>
-  <CatalogDir>/Volumes/flame_projekts/modon_animation_2026_1_rome/catalog</CatalogDir>
-  <ProjectDir>/Volumes/flame_projekts/modon_animation_2026_1_rome</ProjectDir>
-  <SetupDir>/Volumes/flame_projekts/modon_animation_2026_1_rome/setups</SetupDir>
-  <MediaDir>/Volumes/flame_projekts/modon_animation_2026_1_rome/media</MediaDir>
+  <Name>modon_anim_2026_1_rome</Name>
+  <Nickname>modon_anim</Nickname>
+  <ShotgunProjectName>modon_anim</ShotgunProjectName>
+  <Description />
+  <CatalogDir>/Volumes/flame_projekts/modon_anim_2026_1_rome/catalog</CatalogDir>
+  <ProjectDir>/Volumes/flame_projekts/modon_anim_2026_1_rome</ProjectDir>
+  <SetupDir>/Volumes/flame_projekts/modon_anim_2026_1_rome/setups</SetupDir>
+  <MediaDir>/Volumes/flame_projekts/modon_anim_2026_1_rome/media</MediaDir>
   <Version>2026.1</Version>
   <FrameWidth>3840</FrameWidth>
   <FrameHeight>2160</FrameHeight>

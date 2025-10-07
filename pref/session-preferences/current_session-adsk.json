@@ -1,8 +1,8 @@
 {
-    "Name": "modon_animation_2026_1_rome",
-    "ProjectDir": "/Volumes/flame_projekts/modon_animation_2026_1_rome",
-    "SetupDir": "/Volumes/flame_projekts/modon_animation_2026_1_rome/setups",
-    "MediaDir": "/Volumes/flame_projekts/modon_animation_2026_1_rome/media",
+    "Name": "modon_anim_2026_1_rome",
+    "ProjectDir": "/Volumes/flame_projekts/modon_anim_2026_1_rome",
+    "SetupDir": "/Volumes/flame_projekts/modon_anim_2026_1_rome/setups",
+    "MediaDir": "/Volumes/flame_projekts/modon_anim_2026_1_rome/media",
     "Resolution": {
         "FrameWidth": 3840,
         "FrameHeight": 2160,
