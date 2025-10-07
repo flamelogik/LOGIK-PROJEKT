@@ -1047,24 +1047,10 @@
                                 "Folder": "utilities",
                                 "Bookmarks": [
                                     {
-                                        "Folder": "Synergy",
-                                        "Bookmarks": [
-                                            {
-                                                "Folder": "SynColor",
-                                                "Bookmarks": [
-                                                    {
-                                                        "Folder": "Shared",
-                                                        "Bookmarks": [
-                                                            {
-                                                                "Bookmark": "transforms",
-                                                                "Path": "/PROJEKTS/<project nickname>/utilities/Synergy/SynColor/Shared/transforms",
-                                                                "Visibility": "Global"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
+                                        "Bookmark": "flame_colortoolkit",
+                                        "Path": "<project setups>/colour_mgmt/transforms/flame_colortoolkit",
+
+                                        "Visibility": "Global"
                                     }
                                 ]
                             },

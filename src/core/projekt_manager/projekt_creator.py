@@ -65,6 +65,9 @@ from src.core.functions.get.get_flame_bookmarks_path import (
 from src.core.functions.copy.copy_flame_bookmarks import (
     copy_flame_bookmarks
 )
+from src.core.functions.copy.copy_init_config import (
+    copy_init_config
+)
 from src.core.functions.create.create_flame_archive_script import (
     create_flame_archive_script
 )
@@ -196,10 +199,23 @@ class ProjektCreator:
         except Exception as e:
             logger.error(f"Failed to copy Flame bookmarks: {e}")
 
-        # 12. Create Archive Script
+        # 12. Copy Flame Init Config
+        if config.flame_projekt_init:
+            try:
+                copy_init_config(
+                    os.path.basename(config.flame_projekt_init),
+                    config.flame_projekt_setups_dir,
+                    config.flame_projekt_name
+                )
+            except Exception as e:
+                logger.error(f"Failed to copy Flame init config: {e}")
+        else:
+            logger.info("No Flame init config file specified. Skipping copy.")
+
+        # 13. Create Archive Script
         create_flame_archive_script(config.__dict__)
 
-        # 13. Create Backup Script
+        # 14. Create Backup Script
         template_dir = os.path.join(
             path_utils.get_repository_root_dir(),
             "cfg",
@@ -226,7 +242,10 @@ class ProjektCreator:
         )
 
         # 15. Create Flame Startup Script
-        create_flame_startup_script(config.flame_projekt_setups_dir, config.logik_projekt_config_workspace)
+        create_flame_startup_script(
+            config.flame_projekt_setups_dir,
+            config.logik_projekt_config_workspace
+        )
 
         # 16. Create Flame Launcher Script
         launcher_script_path = create_flame_launcher_script(
@@ -279,13 +298,19 @@ class ProjektCreator:
                 process.stdout.close()
                 return_code = process.wait()
                 if return_code:
-                    raise subprocess.CalledProcessError(return_code, launcher_script_path)
+                    raise subprocess.CalledProcessError(
+                        return_code,
+                        launcher_script_path
+                    )
                 logger.info("Flame launched successfully.")
             except (subprocess.CalledProcessError, FileNotFoundError) as e:
                 logger.error(f"Failed to launch Flame: {e}")
 
         # 20. Copy Current Session Files
-        copy_current_session_files(config.logik_projekt_path, config.current_workstation)
+        copy_current_session_files(
+            config.logik_projekt_path,
+            config.current_workstation
+        )
 
         logger.info("PROJEKT creation logic executed.")
 
