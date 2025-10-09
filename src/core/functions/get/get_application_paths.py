@@ -3,7 +3,8 @@
 # Filename:     get_application_paths.py
 # Purpose:      Defines centralized paths for application resources.
 # Description:  This module provides a single source of truth for various file
-#               and directory paths used throughout the LOGIK-PROJEKT application.
+#               and directory paths used throughout the LOGIK-PROJEKT
+#               application.
 
 # Author:       phil_man@mac.com
 # Copyright:    Copyright (c) 2025
@@ -15,7 +16,7 @@
 # Status:       Production
 # Type:         Module
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #

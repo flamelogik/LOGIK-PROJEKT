@@ -30,20 +30,22 @@ logger = logging.getLogger(__name__)
 
 def export_session_xml(data: dict, template_path: str, output_path: str):
     """
-    Processes an XML template, replacing placeholders with values from a dictionary,
-    and writes the result to an output XML file.
+    Processes an XML template, replacing placeholders with values from
+    a dictionary, and writes the result to an output XML file.
 
     Args:
         data (dict): The dictionary containing data to populate the template.
         template_path (str): The absolute path to the XML template file.
-        output_path (str): The absolute path where the processed XML file will be saved.
+        output_path (str): The absolute path where the processed XML file
+        will be saved.
     """
     try:
         tree = ET.parse(GetApplicationPaths.WIRETAP_XML_TEMPLATE)
         root = tree.getroot()
 
         def replace_placeholders(element, data_dict):
-            # Sort keys by length in descending order to avoid partial replacements
+            # Sort keys by length in descending order to avoid
+            # partial replacements
             sorted_keys = sorted(data_dict.keys(), key=len, reverse=True)
             for child in element:
                 if child.text:
@@ -51,14 +53,19 @@ def export_session_xml(data: dict, template_path: str, output_path: str):
                         value = data_dict[key]
                         placeholder = f"{key}"
                         if placeholder in child.text:
-                            child.text = child.text.replace(placeholder, str(value))
+                            child.text = child.text.replace(
+                                placeholder,
+                                str(value)
+                            )
                 replace_placeholders(child, data_dict)
 
         replace_placeholders(root, data)
 
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         tree.write(output_path, encoding="utf-8", xml_declaration=True)
-        logging.info(f"XML generated successfully from template and saved to {output_path}")
+        logging.info(
+            f"XML generated successfully from template "
+            f"and saved to {output_path}")
 
     except FileNotFoundError:
         logging.error(f"Error: Template file not found at {template_path}")

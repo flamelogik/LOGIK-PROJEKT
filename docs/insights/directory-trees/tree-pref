@@ -7,23 +7,24 @@ pref
 │   └── current_session-wiretap_template.xml
 └── site-prefs
     ├── custom-prefs
-    │   └── 123-projekt-template
+    │   └── 123-example
     │       ├── cf_bookmarks.json
     │       ├── filesystem-tree.json
     │       ├── flame-workspace.json
     │       └── json-bak
+    │           ├── 2025_10_03-13_14_02.cf_bookmarks.json.bak
+    │           └── 2025_10_03-13_14_02.filesystem-tree.json.bak
     ├── default-prefs
     │   ├── default_template_values.json
-    │   ├── logik-projekt-prefs
-    │   │   ├── alt-flame-workspace-template.json
-    │   │   ├── cf_bookmarks.json
-    │   │   ├── filesystem-tree.json
-    │   │   ├── flame_colortoolkit_bookmarks.json
-    │   │   ├── flame_setup_dirs.json
-    │   │   ├── flame_startup_template.py
-    │   │   └── flame-workspace.json
-    │   └── roots
-    │       └── projekt_roots.json
+    │   └── logik-projekt-prefs
+    │       ├── cf_bookmarks.json
+    │       ├── filesystem-tree.json
+    │       ├── flame_colortoolkit_bookmarks.json
+    │       ├── flame_setup_dirs.json
+    │       ├── flame_startup_script_template.py
+    │       ├── flame_startup_template.py
+    │       ├── flame-workspace.json
+    │       └── logik_projekt_roots.json
     └── logik-projekt-site-prefs.json
 
-8 directories, 18 files
+7 directories, 20 files

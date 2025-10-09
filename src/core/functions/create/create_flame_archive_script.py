@@ -15,7 +15,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -108,13 +108,21 @@ def create_flame_archive_script(projekt_summary_data: dict):
 
     replacements = {
         "%%ARCHIVE_SCRIPT_NAME%%": archive_script_name,
-        "%%ARCHIVE_SCRIPT_PROJEKT%%": projekt_summary_data['flame_projekt_name'],
+        "%%ARCHIVE_SCRIPT_PROJEKT%%": projekt_summary_data[
+            'flame_projekt_name'
+        ],
         "%%SCRIPT_CREATION_DATE%%": datetime.datetime.now().strftime(
             '%Y-%m-%d %H:%M:%S'
         ),
-        "%%LOGIK_PROJEKT_NAME%%": projekt_summary_data['logik_projekt_name'],
-        "%%FLAME_PROJEKT_NAME%%": projekt_summary_data['flame_projekt_name'],
-        "%%CURRENT_WORKSTATION%%": projekt_summary_data['current_workstation'],
+        "%%LOGIK_PROJEKT_NAME%%": projekt_summary_data[
+            'logik_projekt_name'
+        ],
+        "%%FLAME_PROJEKT_NAME%%": projekt_summary_data[
+            'flame_projekt_name'
+        ],
+        "%%CURRENT_WORKSTATION%%": projekt_summary_data[
+            'current_workstation'
+        ],
         "%%LOGIK_PROJEKT_DIRECTORIES%%": os.path.dirname(
             projekt_summary_data['logik_projekt_path']
         ),

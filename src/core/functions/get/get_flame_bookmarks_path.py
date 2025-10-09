@@ -25,7 +25,9 @@ import os
 from pathlib import Path
 import logging
 
-from src.core.functions.get.get_application_paths import GetApplicationPaths
+from src.core.functions.get.get_application_paths import (
+    GetApplicationPaths
+)
 from src.core.utils.path_utils import get_repository_root_dir
 
 logger = logging.getLogger(__name__)
@@ -50,26 +52,50 @@ def get_flame_bookmarks_path(logik_projekt_config_name: str) -> str:
     """
     try:
         repository_root_dir = get_repository_root_dir()
-        site_prefs_file = repository_root_dir / GetApplicationPaths.LOGIK_PROJEKT_SITE_PREFS
+        site_prefs_file = (
+            repository_root_dir / GetApplicationPaths.LOGIK_PROJEKT_SITE_PREFS
+        )
 
         if not site_prefs_file.exists():
-            raise FileNotFoundError(f"Site preferences file not found: {site_prefs_file}")
+            error_message = (
+                f"Site preferences file not found: {site_prefs_file}"
+            )
+            raise FileNotFoundError(error_message)
 
         with open(site_prefs_file, 'r') as f:
             site_prefs_data = json.load(f)
 
         for config_entry in site_prefs_data.get("PROJEKT Configurations", []):
-            if config_entry.get("PROJEKT Configuration Name") == logik_projekt_config_name:
-                relative_bookmarks_path = config_entry.get("PROJEKT Flame Bookmarks")
+            if (
+                config_entry.get("PROJEKT Configuration Name")
+                == logik_projekt_config_name
+            ):
+                relative_bookmarks_path = config_entry.get(
+                    "PROJEKT Flame Bookmarks"
+                )
                 if relative_bookmarks_path:
-                    absolute_bookmarks_path = repository_root_dir / relative_bookmarks_path
+                    absolute_bookmarks_path = (
+                        repository_root_dir / relative_bookmarks_path
+                    )
                     if not absolute_bookmarks_path.exists():
-                        raise FileNotFoundError(f"Flame bookmarks file not found: {absolute_bookmarks_path}")
+                        error_message = (
+                            "Flame bookmarks file not found: "
+                            f"{absolute_bookmarks_path}"
+                        )
+                        raise FileNotFoundError(error_message)
                     return str(absolute_bookmarks_path)
                 else:
-                    raise ValueError(f"'PROJEKT Flame Bookmarks' path not found for configuration: {logik_projekt_config_name}")
+                    error_message = (
+                        f"'PROJEKT Flame Bookmarks' path not found for "
+                        f"configuration: {logik_projekt_config_name}"
+                    )
+                    raise ValueError(error_message)
 
-        raise ValueError(f"LOGIK-PROJEKT configuration not found: {logik_projekt_config_name}")
+        error_message = (
+            f"LOGIK-PROJEKT configuration not found: "
+            f"{logik_projekt_config_name}"
+        )
+        raise ValueError(error_message)
 
     except Exception as e:
         logger.error(f"Error getting Flame bookmarks path: {e}")

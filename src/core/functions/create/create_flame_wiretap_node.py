@@ -3,7 +3,8 @@
 # Filename:     create_flame_wiretap_node.py
 # Purpose:      Creates a Flame project node using wiretap_create_node.
 # Description:  This script executes a bash command to create a new Autodesk
-#               Flame project node via the Wiretap API, using a provided XML configuration.
+#               Flame project node via the Wiretap API, using a provided
+#               XML configuration.
 
 # Author:       phil_man@mac.com
 # Copyright:    Copyright (c) 2025
@@ -15,7 +16,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -24,6 +25,7 @@ import subprocess
 import logging
 
 logger = logging.getLogger(__name__)
+
 
 def create_flame_wiretap_node(flame_projekt_name, projekt_xml_path):
     """

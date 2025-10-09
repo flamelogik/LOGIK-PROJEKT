@@ -4,9 +4,20 @@
 # Purpose:      Copy a Flame init.cfg file to the projekt setups directory
 # Description:  This script copies a specified init.cfg file to the 'cfg'
 #               subdirectory of a Flame project's setup directory.
+
 # Author:       phil_man@mac.com
 # Copyright:    Copyright (c) 2025
+# Disclaimer:   Disclaimer at bottom of script.
 # License:      GNU General Public License v3.0 (GPL-3.0).
+#               https://www.gnu.org/licenses/gpl-3.0.en.html
+
+# Version:      2026.1.0
+# Status:       Production
+# Type:         Utility
+# Created:      2025-07-01
+# Modified:     2025-10-08
+
+# Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
 
 import os
@@ -18,7 +29,10 @@ from src.core.utils.path_utils import get_repository_root_dir
 
 logger = logging.getLogger(__name__)
 
-def copy_init_config(init_config_filename: str, setups_dir: str, flame_projekt_name: str):
+
+def copy_init_config(
+    init_config_filename: str, setups_dir: str, flame_projekt_name: str
+):
     """
     Copies the Flame init.cfg file to the project's setup directory and
     renames it to <flame_projekt_name>.cfg.
@@ -38,7 +52,10 @@ def copy_init_config(init_config_filename: str, setups_dir: str, flame_projekt_n
 
     try:
         repo_root = Path(get_repository_root_dir())
-        source_path = repo_root / 'cfg/site-cfg/flame-cfg/flame-value-lists/init_config' / init_config_filename
+        source_path = (
+            repo_root / 'cfg/site-cfg/flame-cfg/flame-value-lists/init_config'
+            / init_config_filename
+        )
 
         if not source_path.is_file():
             logger.warning(f"Source init.cfg file not found: {source_path}")
@@ -47,7 +64,9 @@ def copy_init_config(init_config_filename: str, setups_dir: str, flame_projekt_n
         destination_dir = Path(setups_dir) / 'cfg'
         destination_path = destination_dir / f"{flame_projekt_name}.cfg"
 
-        logger.info(f"Copying init.cfg from '{source_path}' to '{destination_path}'")
+        logger.info(
+            f"Copying init.cfg from '{source_path}' to '{destination_path}'"
+        )
         destination_dir.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source_path, destination_path)
         logger.info("Successfully copied and renamed init.cfg.")

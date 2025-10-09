@@ -1,3 +1,25 @@
+#!/usr/bin/env python3
+# -------------------------------------------------------------------------- #
+# Filename:     flame_startup_template.py
+# Purpose:      
+# Description:  
+
+# Author:       phil_man@mac.com
+# Copyright:    Copyright (c) 2025
+# Disclaimer:   Disclaimer at bottom of script.
+# License:      GNU General Public License v3.0 (GPL-3.0).
+#               https://www.gnu.org/licenses/gpl-3.0.en.html
+
+# Version:      2026.1.0
+# Status:       Development
+# Type:         Application
+# Created:      2025-07-01
+# Modified:     2025-10-07
+
+# Changelog:    Changelog at bottom of script.
+# -------------------------------------------------------------------------- #
+
+
 import flame
 import json
 import os
@@ -8,7 +30,10 @@ from create_folder import create_folder
 from create_reel import create_reel
 
 # Config file path
-CONFIG_FILE_PATH = "/home/pman/workspace/GitHub/phil-man-git-hub/FLAME-API-TOOLS/src/config/layout.json"
+CONFIG_FILE_PATH = (
+    "/home/pman/workspace/GitHub/phil-man-git-hub/FLAME-API-TOOLS/src/"
+    "config/layout.json"
+)
 
 
 # --- Functions from sin_menus.py ---
@@ -178,7 +203,6 @@ def get_action_custom_ui_actions():
     ]
 
 
-# --- Original create_flame_structure_from_config from main.py ---
 def create_flame_structure_from_config():
     """
     Reads 'layout.json' and creates Flame structures based on its content.
@@ -190,14 +214,18 @@ def create_flame_structure_from_config():
         print("Error: No Flame project is currently open. Aborting.")
         return
 
-    current_parent_container = None # This will hold the last created container (library or folder)
+    # This will hold the last created container (library or folder)
+    current_parent_container = None
 
     try:
         with open(CONFIG_FILE_PATH, 'r') as f:
             layout_data = json.load(f)
 
         if not isinstance(layout_data, list):
-            print(f"Error: JSON file '{CONFIG_FILE_PATH}' does not contain a list. Aborting.")
+            print(
+                f"Error: JSON file '{CONFIG_FILE_PATH}' does not contain a "
+                f"list. Aborting."
+            )
             return
 
         for item in layout_data:
@@ -205,7 +233,10 @@ def create_flame_structure_from_config():
             item_name = item.get("name")
 
             if not item_type or not item_name:
-                print(f"Warning: Skipping item with missing 'type' or 'name': {item}")
+                print(
+                    f"Warning: Skipping item with missing 'type' or "
+                    f"'name': {item}"
+                )
                 continue
 
             if item_type == "library":
@@ -213,33 +244,57 @@ def create_flame_structure_from_config():
                 if new_container:
                     current_parent_container = new_container
                 else:
-                    print(f"Error: Failed to create library '{item_name}'. Subsequent nested items might fail.")
-                    current_parent_container = None # Reset parent if creation fails
+                    print(
+                        f"Error: Failed to create library '{item_name}'. "
+                        f"Subsequent nested items might fail."
+                    )
+                    # Reset parent if creation fails
+                    current_parent_container = None
 
             elif item_type == "folder":
                 if current_parent_container:
-                    new_container = create_folder(current_parent_container, item_name)
+                    new_container = create_folder(
+                        current_parent_container, item_name
+                    )
                     if new_container:
-                        current_parent_container = new_container # Folder can also be a parent
+                        # Folder can also be a parent
+                        current_parent_container = new_container
                     else:
-                        print(f"Error: Failed to create folder '{item_name}'. Subsequent nested items might fail.")
+                        print(
+                            f"Error: Failed to create folder "
+                            f"'{item_name}'. Subsequent nested items "
+                            f"might fail."
+                        )
                         current_parent_container = None
                 else:
-                    print(f"Warning: Cannot create folder '{item_name}'. No parent container available.")
+                    print(
+                        f"Warning: Cannot create folder '{item_name}'. "
+                        f"No parent container available."
+                    )
 
             elif item_type == "reel":
                 if current_parent_container:
                     create_reel(current_parent_container, item_name)
                 else:
-                    print(f"Warning: Cannot create reel '{item_name}'. No parent container available.")
+                    print(
+                        f"Warning: Cannot create reel '{item_name}'. "
+                        f"No parent container available."
+                    )
 
             else:
-                print(f"Warning: Unknown item type '{item_type}' in config. Skipping.")
+                print(
+                    f"Warning: Unknown item type '{item_type}' in config. "
+                    f"Skipping."
+                )
 
     except FileNotFoundError:
-        print(f"Error: Config file not found at '{CONFIG_FILE_PATH}'.")
+        print(
+            f"Error: Config file not found at '{CONFIG_FILE_PATH}'."
+        )
     except json.JSONDecodeError as e:
-        print(f"Error: Could not decode JSON from '{CONFIG_FILE_PATH}': {e}")
+        print(
+            f"Error: Could not decode JSON from '{CONFIG_FILE_PATH}': {e}"
+        )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
@@ -248,3 +303,40 @@ def create_flame_structure_from_config():
 
 if __name__ == '__main__':
     create_flame_structure_from_config()
+
+
+# -------------------------------------------------------------------------- #
+
+# DISCLAIMER:   This file is part of LOGIK-PROJEKT.
+
+#               Copyright © 2025 STRENGTH IN NUMBERS
+
+#               LOGIK-PROJEKT creates directories, files, scripts & tools
+#               for use with Autodesk Flame and other software.
+
+#               LOGIK-PROJEKT is free software.
+
+#               You can redistribute it and/or modify it under the terms
+#               of the GNU General Public License as published by the
+#               Free Software Foundation, either version 3 of the License,
+#               or any later version.
+
+#               This program is distributed in the hope that it will be
+#               useful, but WITHOUT ANY WARRANTY; without even the
+
+#               implied warranty of MERCHANTABILITY or
+#               FITNESS FOR A PARTICULAR PURPOSE.
+
+#               See the GNU General Public License for more details.
+#               You should have received a copy of the GNU General
+#               Public License along with this program.
+
+#               If not, see <https://www.gnu.org/licenses/gpl-3.0.en.html>.
+
+#               Contact: phil_man@mac.com
+
+# -------------------------------------------------------------------------- #
+# C2 A9 32 30 32 35 53 54 52 45 4E 47 54 48 2D 49 4E 2D 4E 55 4D 42 45 52 53 #
+# -------------------------------------------------------------------------- #
+# Changelog:
+# -------------------------------------------------------------------------- #

@@ -27,17 +27,17 @@ from src.core.functions.get.get_application_paths import GetApplicationPaths
 def get_sysconfig_flame_setups_dir() -> str:
     """
     Load default Flame setups directory from configuration.
-  
+
     Returns:
         Default setups directory path string
     """
     sysconfig_cfg_path = GetApplicationPaths.SYSCONFIG_CFG
     default_path = "<project home>/setups"
-  
+
     try:
         with open(sysconfig_cfg_path, 'r') as f:
             config_data = json.load(f)
-      
+
         return (
             config_data.get("configuration", {})
             .get("settings", {})

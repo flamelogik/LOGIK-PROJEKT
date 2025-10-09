@@ -81,7 +81,7 @@
         "tags": [
             "Custom"
         ],
-        "expanded": true,
+        "expanded": false,
         "children": [
             {
                 "type": "folder",
@@ -167,7 +167,7 @@
         "tags": [
             "Custom"
         ],
-        "expanded": true,
+        "expanded": false,
         "children": [
             {
                 "type": "folder",
@@ -518,7 +518,7 @@
         "tags": [
             "Custom"
         ],
-        "expanded": true,
+        "expanded": false,
         "children": [
             {
                 "type": "folder",

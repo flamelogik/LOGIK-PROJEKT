@@ -15,7 +15,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -48,13 +48,13 @@ def create_flame_launcher_script(
     Creates a Flame launcher script for the project.
 
     Args:
-        repository_root_dir (str): The root directory of the LOGIK-PROJEKT application.
-        logik_projekt_path (str): The full path to the created PROJEKT directory.
-        current_workstation (str): The hostname of the workstation.
-        current_os (str): The operating system of the project.
-        the_projekts_dir (str): The root directory for all projects.
-        the_projekt_flame_dirs (str): The root directory for Flame projects.
-        the_adsk_dir (str): The Autodesk installation directory.
+        repository_root_dir (str): Root directory of the application.
+        logik_projekt_path (str): Full path to the created PROJEKT directory.
+        current_workstation (str): Hostname of the workstation.
+        current_os (str): Operating system of the project.
+        the_projekts_dir (str): Root directory for all projects.
+        the_projekt_flame_dirs (str): Root directory for Flame projects.
+        the_adsk_dir (str): Autodesk installation directory.
         the_adsk_dir_linux (str): The Autodesk install dir for Linux.
         the_adsk_dir_macos (str): The Autodesk install dir for macOS.
         logik_projekt_name (str): The name of the project.
@@ -111,22 +111,23 @@ def create_flame_launcher_script(
         app_starter = 'startFlare'
     elif 'assist' in software_choice_lower:
         app_starter = 'startFlameAssist'
-
-    replacements = {
-        "%%FLAME_STARTUP_SCRIPT_PY%%": "scripts/startup/flame_startup_script.py",
-        "%%LAUNCHER_SCRIPT_PROJEKT%%": the_projekt_flame_name,
-        "%%SCRIPT_CREATION_DATE%%": datetime.datetime.now().strftime(
-            '%Y-%m-%d %H:%M:%S'
-        ),
-        "%%LOGIK_PROJEKT_PATH%%": logik_projekt_path,
-        "%%LOGIK_PROJEKT_NAME%%": logik_projekt_name,
-        "%%FLAME_PROJEKT_NAME%%": the_projekt_flame_name,
-        "%%CURRENT_WORKSTATION%%": current_workstation,
-        "%%FLAME_FIRST_RUN_NAME%%": "current_session-flame_launcher.log",
-        "%%FLAME_SOFTWARE_CHOICE%%": flame_software_choice,
-        "%%APPLICATION_STARTER%%": app_starter,
-        "%%FLAME_PROJEKT_SETUPS_DIR%%": flame_projekt_setups_dir,
-    }
+        replacements = {
+            "%%FLAME_STARTUP_SCRIPT_PY%%": (
+                "scripts/startup/flame_startup_script.py"
+            ),
+            "%%LAUNCHER_SCRIPT_PROJEKT%%": the_projekt_flame_name,
+            "%%SCRIPT_CREATION_DATE%%": datetime.datetime.now().strftime(
+                "%Y-%m-%d %H:%M:%S"
+            ),
+            "%%LOGIK_PROJEKT_PATH%%": logik_projekt_path,
+            "%%LOGIK_PROJEKT_NAME%%": logik_projekt_name,
+            "%%FLAME_PROJEKT_NAME%%": the_projekt_flame_name,
+            "%%CURRENT_WORKSTATION%%": current_workstation,
+            "%%FLAME_FIRST_RUN_NAME%%": "current_session-flame_launcher.log",
+            "%%FLAME_SOFTWARE_CHOICE%%": flame_software_choice,
+            "%%APPLICATION_STARTER%%": app_starter,
+            "%%FLAME_PROJEKT_SETUPS_DIR%%": flame_projekt_setups_dir,
+        }
 
     for placeholder, value in replacements.items():
         template_content = (
@@ -158,7 +159,7 @@ def create_flame_launcher_script(
 
     # Copy the launcher script to the additional target
     shutil.copy2(tgt_launcher_script, additional_target_path)
-    os.chmod(additional_target_path, 0o755) # Ensure execute permissions for the copied script
+    os.chmod(additional_target_path, 0o755)  # Ensure it's executable
 
     logger.info(
         f"Copied Flame launcher script to: {additional_target_path}"

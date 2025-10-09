@@ -15,7 +15,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -28,7 +28,11 @@ from datetime import datetime
 logger = logging.getLogger(__name__)
 
 
-def create_projekt_backup_script(projekt_summary_data: dict, backup_template_path: str, backup_script_dir: str):
+def create_projekt_backup_script(
+        projekt_summary_data: dict,
+        backup_template_path: str,
+        backup_script_dir: str
+):
     """
     Creates a backup script and a crontab entry for a project.
 
@@ -66,11 +70,19 @@ def create_projekt_backup_script(projekt_summary_data: dict, backup_template_pat
 
     replacements = {
         "%%BACKUP_SCRIPT_NAME%%": backup_script_name,
-        "%%BACKUP_SCRIPT_PROJEKT%%": projekt_summary_data['logik_projekt_name'],
+        "%%BACKUP_SCRIPT_PROJEKT%%": projekt_summary_data[
+            'logik_projekt_name'
+        ],
         "%%SCRIPT_CREATION_DATE%%": script_creation_date,
-        "%%LOGIK_PROJEKT_NAME%%": projekt_summary_data['logik_projekt_name'],
-        "%%FLAME_PROJEKT_NAME%%": projekt_summary_data['flame_projekt_name'],
-        "%%CURRENT_WORKSTATION%%": projekt_summary_data['current_workstation'],
+        "%%LOGIK_PROJEKT_NAME%%": projekt_summary_data[
+            'logik_projekt_name'
+        ],
+        "%%FLAME_PROJEKT_NAME%%": projekt_summary_data[
+            'flame_projekt_name'
+        ],
+        "%%CURRENT_WORKSTATION%%": projekt_summary_data[
+            'current_workstation'
+        ],
         "%%LOGIK_PROJEKT_DIRECTORIES%%": os.path.dirname(
             projekt_summary_data['logik_projekt_path']
         ),
@@ -132,7 +144,10 @@ def create_projekt_backup_script(projekt_summary_data: dict, backup_template_pat
         f"{projekt_summary_data['logik_projekt_name']}-"
         f"{projekt_summary_data['current_workstation']}.sh"
     )
-    tgt_projekt_crontab_script = os.path.join(backup_script_dir, crontab_script_name)
+    tgt_projekt_crontab_script = os.path.join(
+        backup_script_dir,
+        crontab_script_name
+    )
 
     with open(crontab_template_path, 'r') as f:
         crontab_template_content = f.read()
@@ -158,7 +173,9 @@ def create_projekt_backup_script(projekt_summary_data: dict, backup_template_pat
 
     os.chmod(tgt_projekt_crontab_script, 0o755)
 
-    logger.info(f"Backup crontab script created at: {tgt_projekt_crontab_script}")
+    logger.info(
+        f"Backup crontab script created at: {tgt_projekt_crontab_script}"
+    )
 
 
 # -------------------------------------------------------------------------- #

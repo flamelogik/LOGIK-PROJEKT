@@ -8,6 +8,7 @@ src
 │   │   │   ├── copy_flame_bookmarks.py
 │   │   │   ├── copy_flame_presets.py
 │   │   │   ├── copy_flame_python_scripts.py
+│   │   │   ├── copy_init_config.py
 │   │   │   └── __init__.py
 │   │   ├── create
 │   │   │   ├── create_flame_archive_script.py
@@ -138,16 +139,23 @@ src
     ├── common
     │   ├── create
     │   │   ├── create_banners.py
-    │   │   ├── create_customized_filesystem_template copy.py
     │   │   ├── create_customized_filesystem_template.py
+    │   │   ├── create_customized_filesystem_template-safety.py
     │   │   ├── create_logs.py
+    │   │   ├── create_ocio_config_json_file.py
+    │   │   ├── create_ocio_conversion_tasks.py
+    │   │   ├── create_ocio_flame_colortoolkit.py
     │   │   ├── create_separators.py
     │   │   ├── create_timestamp.py
     │   │   ├── directory_structure_analysis.py
     │   │   ├── directory_structure_to_bookmarks.py
     │   │   ├── directory_structure_to_json.py
+    │   │   ├── directory_structure_to_workspace.py
     │   │   └── __init__.py
-    │   └── __init__.py
+    │   ├── __init__.py
+    │   └── modify
+    │       ├── __init__.py
+    │       └── modify_flame_workspace_colors.py
     └── __init__.py
 
-21 directories, 129 files
+22 directories, 136 files

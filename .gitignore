@@ -154,27 +154,6 @@ Thumbs.db
 *.log
 
 # Project-specific
-zzzz-for-eventual-deletion
-docs/design_documents/learning/2025-07-21-08-02-16-unexpected_display_widget_appearance.png
-docs/design_documents/learning/2025-07-21-08-23-23-template_summary_widget_improvements.png
-docs/design_documents/learning/2025-07-21-09-01-04-columnar_layout_progress.png
-docs/design_documents/learning/2025-07-21-11-21-18-new_pyside6_gui_spacing_and_sizing_issues.png
-src/ui/themes/modular_dark_theme copy.py
-docs/design_documents/learning/2025-07-21-12-13-33-reference_tkinter_gui.png
-docs/design_documents/learning/2025-07-21-12-14-35-current_pyside_gui.png
-docs/design_documents/learning/2025-07-21-12-28-26-pyside_gui_improvements.png
-docs/design_documents/learning/2025-07-21-13-30-25-pyside_gui_progress_2.png
-docs/design_documents/learning/2025-07-21-16-03-27-pyside_gui_progress_3_vertical_sizes_and_spacing.png
-docs/design_documents/learning/2025-07-21-16-12-50-pyside_gui_small_improvements.png
-docs/design_documents/learning/2025-07-21-16-22-32-pyside-gui-regression.png
-docs/design_documents/learning/2025-07-22-06-08-38-pyside_gui_progress_5.png
-docs/design_documents/learning/2025-07-23-12-57-55-pyside_gui_left_panel_last_fixes.png
-scratch
-docs/design_documents/learning/2025-07-24-06-58-33-flame_info_projekt_summary_update_problem.png
-docs/design_documents/learning/2025-07-24-07-09-03-projekt_summary_not_updating.png
-docs/design_documents/learning/2025-07-24-08-09-51_projekt_summary_update_problems.png
-.gemini/gemini_commit_message.txt
 
 # Temporary session files
-pref/session-preferences/
 scratch
