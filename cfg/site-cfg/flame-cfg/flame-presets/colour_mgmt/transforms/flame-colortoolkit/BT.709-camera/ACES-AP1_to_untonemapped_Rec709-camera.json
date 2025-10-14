@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_untonemapped_Rec709-camera.ctf",
+  "source_json": "untonemapped_Rec709-camera_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "untonemapped_Rec709-camera_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

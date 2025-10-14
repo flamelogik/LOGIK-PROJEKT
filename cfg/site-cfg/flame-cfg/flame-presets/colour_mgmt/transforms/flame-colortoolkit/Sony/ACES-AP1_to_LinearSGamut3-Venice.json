@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_LinearSGamut3-Venice.ctf",
+  "source_json": "LinearSGamut3-Venice_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "LinearSGamut3-Venice_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

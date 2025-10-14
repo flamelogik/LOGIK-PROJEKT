@@ -1,0 +1,15 @@
+{
+  "output_file": "C300mk2-CanonLog2-CinemaGamut-Tng_to_ACES-AP1.ctf",
+  "source_json": "C300mk2-CanonLog2-CinemaGamut-Tng_to_ACES-AP1.json",
+  "transform_direction": "forward",
+  "source_transforms": [
+    {
+      "file": "C300mk2-CanonLog2-CinemaGamut-Tng_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "ACES_to_ACEScg.ctf",
+      "direction": "forward"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "output_file": "ACES-AP0_to_LinearBMDWideGamut.ctf",
+  "source_json": "LinearBMDWideGamut_to_ACES-AP0.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "LinearBMDWideGamut_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

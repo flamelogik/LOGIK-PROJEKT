@@ -1,0 +1,12 @@
+{
+  "name": "DaVinciIntermediate-DaVinciWideGamut_to_ACES-AP1",
+  "output_clf": "DaVinciIntermediate-DaVinciWideGamut_to_ACES-AP1.clf",
+  "input_space": "DaVinci Intermediate WideGamut",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/BlackmagicDesign/DaVinciIntermediate-DaVinciWideGamut_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

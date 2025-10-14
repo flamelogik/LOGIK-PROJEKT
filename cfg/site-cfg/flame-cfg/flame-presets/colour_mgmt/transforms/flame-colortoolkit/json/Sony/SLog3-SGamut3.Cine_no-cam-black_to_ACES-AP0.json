@@ -1,0 +1,12 @@
+{
+  "name": "SLog3-SGamut3.Cine_no-cam-black_to_ACES-AP0",
+  "output_clf": "SLog3-SGamut3.Cine_no-cam-black_to_ACES-AP0.clf",
+  "input_space": "S-Log3 S-Gamut3",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Sony/SLog3-SGamut3.Cine_no-cam-black_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

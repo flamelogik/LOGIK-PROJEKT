@@ -1,0 +1,15 @@
+{
+  "output_file": "INVERSE_F65-Raw-daylight_to_ACES_no-cam-black.ctf_to_ACES-AP1.ctf",
+  "source_json": "F65-Raw-daylight_to_ACES_no-cam-black.ctf_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "F65-Raw-daylight_to_ACES_no-cam-black.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

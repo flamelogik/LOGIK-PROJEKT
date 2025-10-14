@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_CanonLog3-CinemaGamut-D55.ctf",
+  "source_json": "CanonLog3-CinemaGamut-D55_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "CanonLog3-CinemaGamut-D55_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

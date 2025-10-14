@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_C500_CinemaGamut_D55.ctf",
+  "source_json": "C500_CinemaGamut_D55_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "C500_CinemaGamut_D55_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}
