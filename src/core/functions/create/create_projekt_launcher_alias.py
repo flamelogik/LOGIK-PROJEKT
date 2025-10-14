@@ -15,7 +15,7 @@
 # Status:       Development
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -26,7 +26,11 @@ import sys
 from pathlib import Path
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
 
 def create_projekt_launcher_alias(alias_name: str, launcher_script_path: str):
     """
@@ -34,12 +38,18 @@ def create_projekt_launcher_alias(alias_name: str, launcher_script_path: str):
 
     Args:
         alias_name (str): The name for the alias (e.g., 'start_my_projekt').
-        launcher_script_path (str): The absolute path to the launcher script to be aliased.
+        launcher_script_path (str): The absolute path to the launcher 
+        script to be aliased.
     """
-    logging.info(f"Attempting to create project launcher alias '{alias_name}'...")
+    logging.info(
+        f"Attempting to create project launcher alias '{alias_name}'..."
+    )
+
+# -------------------------------------------------------------------------- #
 
     # This is a placeholder for the alias creation logic.
-    # The following is a commented-out example of how this could be implemented.
+    # The following is a commented-out example of how this could 
+    # be implemented.
 
     # try:
     #     shell_path = os.environ.get('SHELL', '')
@@ -51,20 +61,33 @@ def create_projekt_launcher_alias(alias_name: str, launcher_script_path: str):
     #     elif 'zsh' in shell_path:
     #         rc_file_path = home_dir / '.zshrc'
     #     else:
-    #         logging.warning(f"Unsupported shell detected: {shell_path}. Alias creation skipped.")
+    #         logging.warning(
+    #             f"Unsupported shell detected: {shell_path}. "
+    #             "Alias creation skipped."
+    #         )
     #         return
 
     #     if not rc_file_path.exists():
-    #         logging.warning(f"Shell configuration file not found: {rc_file_path}. Alias creation skipped.")
+    #         logging.warning(
+    #             f"Shell configuration file not found: {rc_file_path}. "
+    #             "Alias creation skipped."
+    #         )
     #         return
 
-    #     alias_command = f'\nalias {alias_name}="bash {launcher_script_path}"\n'
-    #     alias_comment = f'# Alias for LOGIK-PROJEKT: {alias_name}\n'
+    #     alias_command = (
+    #         f'\nalias {alias_name}="bash {launcher_script_path}"\n'
+    #     )
+    #     alias_comment = (
+    #         f'# Alias for LOGIK-PROJEKT: {alias_name}\n'
+    #     )
 
     #     # Check if the alias already exists to avoid duplicates
     #     with open(rc_file_path, 'r', encoding='utf-8') as f:
     #         if alias_command in f.read():
-    #             logging.info(f"Alias '{alias_name}' already exists in {rc_file_path}. Skipping.")
+    #             logging.info(
+    #                 f"Alias '{alias_name}' already exists in "
+    #                 f"{rc_file_path}. Skipping."
+    #             )
     #             return
 
     #     # Append the alias to the rc file
@@ -72,20 +95,33 @@ def create_projekt_launcher_alias(alias_name: str, launcher_script_path: str):
     #         f.write('\n')
     #         f.write(alias_comment)
     #         f.write(alias_command)
-      
-    #     logging.info(f"Successfully added alias '{alias_name}' to {rc_file_path}.")
-    #     logging.info("Please restart your terminal or source the config file (e.g., 'source ~/.bashrc') to use the new alias.")
+
+    #     logging.info(
+    #         f"Successfully added alias '{alias_name}' to {rc_file_path}."
+    #     )
+    #     logging.info(
+    #         "Please restart your terminal or source the config file "
+    #         "(e.g., 'source ~/.bashrc') to use the new alias."
+    #     )
 
     # except Exception as e:
-    #     logging.error(f"An unexpected error occurred during alias creation: {e}")
+    #     logging.error(
+    #         f"An unexpected error occurred during alias creation: {e}"
+    #     )
 
-    logging.info("Alias creation step is currently a placeholder and has been skipped.")
+# -------------------------------------------------------------------------- #
+
+    logging.info(
+        "Alias creation step is currently a placeholder "
+        "and has been skipped.")
 
 
 if __name__ == "__main__":
     # Example usage for direct script execution and testing
     if len(sys.argv) != 3:
-        print("Usage: python create_projekt_launcher_alias.py <alias_name> <launcher_script_path>")
+        print(
+            "Usage: python create_projekt_launcher_alias.py "
+            "<alias_name> <launcher_script_path>")
         sys.exit(1)
 
     alias = sys.argv[1]

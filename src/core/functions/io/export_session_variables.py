@@ -3,7 +3,8 @@
 # Filename:     export_session_variables.py
 # Purpose:      Exports session variables to a JSON file.
 # Description:  This script takes a dictionary of project summary data and
-#               saves it as a JSON file, representing the current session's variables.
+#               saves it as a JSON file, representing the current session's 
+#               variables.
 
 # Author:       phil_man@mac.com
 # Copyright:    Copyright (c) 2025
@@ -15,7 +16,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -26,7 +27,7 @@ import os
 
 def export_session_variables(
         projekt_summary_data: dict
-    ):
+):
     output_dir = (
         "pref/"
         "session-preferences"

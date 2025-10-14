@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -------------------------------------------------------------------------- #
 # Filename:     create_flame_setup_dirs.py
-# Purpose:      Creates a predefined set of subdirectories within the Flame project's setup directory.
+# Purpose:      Creates a predefined set of subdirectories within the 
+#               Flame project's setup directory.
 # Description:  This script reads a JSON configuration to create a standardized
 #               directory structure for Flame project setups.
 
@@ -15,7 +16,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -28,20 +29,28 @@ from pathlib import Path
 
 from src.core.utils.path_utils import get_repository_root_dir
 
-# Configure logging
 
+# Configure logging
 def create_flame_setup_dirs(setups_dir_path: str):
     """
-    Creates a predefined set of subdirectories within the Flame project's setup directory.
+    Creates a predefined set of subdirectories within the Flame project's
+    setup directory.
 
     Args:
-        setups_dir_path (str): The absolute path to the Flame project's 'setups' directory.
+        setups_dir_path (str): The absolute path to the Flame project's
+        'setups' directory.
     """
     os.makedirs(setups_dir_path, exist_ok=True)
 
     try:
         repository_root_dir = get_repository_root_dir()
-        json_config_path = repository_root_dir / "pref/site-prefs/default-prefs/logik-projekt-prefs/flame_setup_dirs.json"
+        json_config_path = (
+            repository_root_dir /
+            (
+                "pref/site-prefs/default-prefs/"
+                "logik-projekt-prefs/flame_setup_dirs.json"
+            )
+        )
 
         with open(json_config_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -49,10 +58,14 @@ def create_flame_setup_dirs(setups_dir_path: str):
         subdirectories = data.get("flame_setup_dirs.json", [])
 
         if not subdirectories:
-            logging.warning("No subdirectories found in the JSON configuration file.")
+            logging.warning(
+                "No subdirectories found in the JSON configuration file."
+            )
             return
 
-        logging.info(f"Creating Flame setup subdirectories in: {setups_dir_path}")
+        logging.info(
+            f"Creating Flame setup subdirectories in: {setups_dir_path}"
+        )
         created_count = 0
         for subdir in subdirectories:
             full_path = os.path.join(setups_dir_path, subdir)
@@ -63,7 +76,9 @@ def create_flame_setup_dirs(setups_dir_path: str):
             except OSError as e:
                 logging.error(f"Error creating directory {full_path}: {e}")
 
-        logging.info(f"Successfully created {created_count} setup directories.")
+        logging.info(
+            f"Successfully created {created_count} setup directories."
+        )
 
     except FileNotFoundError:
         logging.error(f"Configuration file not found at: {json_config_path}")
@@ -76,7 +91,12 @@ def create_flame_setup_dirs(setups_dir_path: str):
 if __name__ == "__main__":
     # Example usage for direct script execution and testing
     if len(sys.argv) != 2:
-        print("Usage: python create_flame_setup_dirs.py <path_to_flame_setups_dir>")
+        print(
+            (
+                "Usage: python create_flame_setup_dirs.py "
+                "<path_to_flame_setups_dir>"
+            )
+        )
         sys.exit(1)
 
     target_setups_dir = sys.argv[1]

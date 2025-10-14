@@ -7,7 +7,7 @@
                 "Bookmarks": [
                     {
                         "Bookmark": "flame setups",
-                        "Path": "<project home>",
+                        "Path": "<project setups>",
                         "Visibility": "Global"
                     },
                     {
@@ -1047,8 +1047,8 @@
                                 "Folder": "utilities",
                                 "Bookmarks": [
                                     {
-                                        "Bookmark": "flame_colortoolkit",
-                                        "Path": "<project setups>/colour_mgmt/transforms/flame_colortoolkit",
+                                        "Bookmark": "flame-colortoolkit",
+                                        "Path": "<project setups>/colour_mgmt/transforms/flame-colortoolkit",
 
                                         "Visibility": "Global"
                                     }

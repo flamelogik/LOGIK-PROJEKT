@@ -218,6 +218,22 @@ The LOGIK-PROJEKT application is a GUI that streamlines the decision-making proc
 
 -------------------------------------------------------------------------------
 
+- **`Modify ownership and permissions (macOS 26)`**
+
+    ```bash
+    # It may be necessary to change ownership and permissions under macOS 26:
+
+    # Change ownership of /etc/synthetic.conf:
+    sudo chown root:wheel /etc/synthetic.conf
+
+    # Change permissions of /etc/synthetic.conf:
+    sudo chmod 644 /etc/synthetic.conf
+
+    # (The whitespace between PROJEKTS and the path MUST BE A TAB, NOT WHITESPACE)
+    ```
+
+-------------------------------------------------------------------------------
+
 - **`Reboot workstation`**
 
     ```bash

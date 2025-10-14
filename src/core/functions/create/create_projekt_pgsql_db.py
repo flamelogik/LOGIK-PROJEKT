@@ -15,7 +15,7 @@
 # Status:       Development
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -25,22 +25,34 @@ import logging
 import sys
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s')
 
-def create_projekt_pgsql_db(logik_projekt_name: str, logik_projekt_path: str):
+
+def create_projekt_pgsql_db(
+        logik_projekt_name: str,
+        logik_projekt_path: str
+    ):
     """
     Initializes a PostgreSQL database for the project.
 
     Args:
-        logik_projekt_name (str): The name of the project, to be used as the database name.
-        logik_projekt_path (str): The path to the LOGIK-PROJEKT directory where the DB data could be stored.
+        logik_projekt_name (str): The name of the project, to be used as 
+        the database name.
+        logik_projekt_path (str): The path to the LOGIK-PROJEKT directory 
+        where the DB data could be stored.
     """
-    logging.info(f"Attempting to create PostgreSQL database for project '{logik_projekt_name}'...")
+    logging.info(
+        f"""Attempting to create PostgreSQL database
+        for project '{logik_projekt_name}'...""")
 
     # This is a placeholder for the database creation logic.
-    # PostgreSQL typically runs as a system-wide service, and creating a new database
+    # PostgreSQL typically runs as a system-wide service, and creating 
+    # a new database
     # requires connecting to that service with appropriate credentials.
-    # An alternative for a self-contained project is to initialize a new database cluster
+    # An alternative for a self-contained project is to initialize 
+    # a new database cluster
     # within the project path, but this is less common and more complex.
 
     # --- Example 1: Connecting to an existing PostgreSQL service (most common) ---
@@ -95,13 +107,19 @@ def create_projekt_pgsql_db(logik_projekt_name: str, logik_projekt_path: str):
     # else:
     #     logging.warning(f"Database cluster path already exists: {db_data_path}. Skipping initialization.")
 
-    logging.info("Database creation step is currently a placeholder and has been skipped.")
+    logging.info(
+        "Database creation step is currently a placeholder "
+        "and has been skipped."
+    )
 
 
 if __name__ == "__main__":
     # Example usage for direct script execution and testing
     if len(sys.argv) != 3:
-        print("Usage: python create_projekt_pgsql_db.py <logik_projekt_name> <logik_projekt_path>")
+        print(
+            "Usage: python create_projekt_pgsql_db.py "
+            "<logik_projekt_name> <logik_projekt_path>"
+        )
         sys.exit(1)
 
     projekt_name = sys.argv[1]

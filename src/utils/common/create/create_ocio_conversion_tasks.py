@@ -54,10 +54,9 @@ json_output_dir = os.path.abspath(
         'cfg',
         'site-cfg',
         'flame-cfg',
-        'flame-presets',
-        'colour_mgmt',
-        'transforms',
-        'flame-colortoolkit',
+        'flame-scripts',
+        'opencolorio',
+        'flame_colortoolkit_files',
         'json'
     )
 )
@@ -100,7 +99,8 @@ logging.basicConfig(
     handlers=[
         logging.FileHandler(log_filename),
         logging.StreamHandler()
-    ]
+    ],
+    force=True
 )
 
 
@@ -209,7 +209,10 @@ def get_latest_ocio_config_file():
             '..',
             'cfg',
             'site-cfg',
-            'ocio'
+            'flame-cfg',
+            'flame-scripts',
+            'opencolorio',
+            'flame_colortoolkit_files'
         )
     )
     if not os.path.isdir(json_dir):

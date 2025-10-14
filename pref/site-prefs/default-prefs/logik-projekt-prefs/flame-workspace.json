@@ -81,7 +81,7 @@
         "tags": [
             "Custom"
         ],
-        "expanded": true,
+        "expanded": false,
         "children": [
             {
                 "type": "folder",
@@ -167,17 +167,8 @@
         "tags": [
             "Custom"
         ],
-        "expanded": true,
+        "expanded": false,
         "children": [
-            {
-                "type": "folder",
-                "name": "artwork",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
             {
                 "type": "folder",
                 "name": "audio",
@@ -254,67 +245,11 @@
             },
             {
                 "type": "folder",
-                "name": "CGI",
+                "name": "fonts",
                 "colour": [
                     0.06,
                     0.138,
                     0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "font",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "footage",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ],
-                "children": [
-                    {
-                        "type": "folder",
-                        "name": "graded",
-                        "colour": [
-                            0.063,
-                            0.145,
-                            0.097
-                        ]
-                    },
-                    {
-                        "type": "folder",
-                        "name": "raw",
-                        "colour": [
-                            0.063,
-                            0.145,
-                            0.097
-                        ]
-                    },
-                    {
-                        "type": "folder",
-                        "name": "stock",
-                        "colour": [
-                            0.063,
-                            0.145,
-                            0.097
-                        ]
-                    },
-                    {
-                        "type": "folder",
-                        "name": "transcodes",
-                        "colour": [
-                            0.063,
-                            0.145,
-                            0.097
-                        ]
-                    }
                 ]
             },
             {
@@ -324,33 +259,98 @@
                     0.06,
                     0.138,
                     0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "images",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "legal",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "matchmoving",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
+                ],
+                "children": [
+                    {
+                        "type": "folder",
+                        "name": "artwork",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "cgi",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "images",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "legal",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "paint",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "photoshop",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "slates",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "subtitles",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "supers",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    },
+                    {
+                        "type": "folder",
+                        "name": "titles",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ]
+                    }
                 ]
             },
             {
@@ -364,83 +364,69 @@
             },
             {
                 "type": "folder",
-                "name": "paint",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "photoshop",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "roto",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "slates",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "subtitles",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "supers",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "titles",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
-                "name": "tracking",
-                "colour": [
-                    0.06,
-                    0.138,
-                    0.092
-                ]
-            },
-            {
-                "type": "folder",
                 "name": "video",
                 "colour": [
                     0.06,
                     0.138,
                     0.092
+                ],
+                "children": [
+                    {
+                        "type": "folder",
+                        "name": "footage",
+                        "colour": [
+                            0.063,
+                            0.145,
+                            0.097
+                        ],
+                        "children": [
+                            {
+                                "type": "folder",
+                                "name": "graded",
+                                "colour": [
+                                    0.063,
+                                    0.145,
+                                    0.097
+                                ]
+                            },
+                            {
+                                "type": "folder",
+                                "name": "lut",
+                                "colour": [
+                                    0.063,
+                                    0.145,
+                                    0.097
+                                ]
+                            },
+                            {
+                                "type": "folder",
+                                "name": "raw",
+                                "colour": [
+                                    0.063,
+                                    0.145,
+                                    0.097
+                                ]
+                            },
+                            {
+                                "type": "folder",
+                                "name": "stock",
+                                "colour": [
+                                    0.063,
+                                    0.145,
+                                    0.097
+                                ]
+                            },
+                            {
+                                "type": "folder",
+                                "name": "transcodes",
+                                "colour": [
+                                    0.063,
+                                    0.145,
+                                    0.097
+                                ]
+                            }
+                        ]
+                    }
                 ]
             }
         ]
@@ -518,7 +504,7 @@
         "tags": [
             "Custom"
         ],
-        "expanded": true,
+        "expanded": false,
         "children": [
             {
                 "type": "folder",

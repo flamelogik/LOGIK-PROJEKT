@@ -1,11 +1,14 @@
 docs
 ├── goals
 ├── help
+│   ├── FLAME-COLORTOOLKIT_configuration.md
+│   ├── LOGIK-PROJEKT_custom_configuration.md
+│   ├── LOGIK-PROJEKT_help_for_artists_and_producers.md
 │   ├── LOGIK-PROJEKT_help_for_devs.md
 │   ├── LOGIK-PROJEKT_help_for_junior_artists_producers.md
 │   ├── LOGIK-PROJEKT_help_for_teens.md
-│   └── readme_serial_numbers.md
-├── history
+│   ├── readme_serial_numbers.md
+│   └── run_custom_template_creator.py
 ├── insights
 │   ├── data-maps
 │   │   ├── data_map_and_process_flow_analysis.md
@@ -30,6 +33,7 @@ docs
 │   │       ├── core
 │   │       │   ├── functions
 │   │       │   │   ├── copy
+│   │       │   │   │   └── copy_flame_python_scripts.md
 │   │       │   │   ├── create
 │   │       │   │   │   ├── insight-create_flame_archive_script.md
 │   │       │   │   │   ├── insight-create_flame_launcher_script.md
@@ -298,10 +302,17 @@ docs
 │                   ├── resolution_width_widget_analysis.md
 │                   └── serial_number_widget_analysis.md
 ├── learning
-├── research
-│   ├── README.md
-│   └── topics.md
-├── sessions
-└── tasks
+│   ├── 2025-08-08-07-45-37-Flame_media_panel.png
+│   ├── 2025-08-08-08-13-49-Flame_media_panel_progress.png
+│   ├── Python_API_autodesk_flame_python_api_PyFolder_html.md
+│   ├── Python_API_autodesk_flame_python_api_PyLibrary_html.md
+│   ├── Python_API_autodesk_flame_python_api_PyReelGroup_html.md
+│   ├── Python_API_autodesk_flame_python_api_PyReel_html.md
+│   └── Python_API_autodesk_flame_python_api_PyWorkspace_html.md
+├── release_notes
+│   └── release_notes.md
+└── research
+    ├── README.md
+    └── topics.md
 
-53 directories, 251 files
+50 directories, 263 files

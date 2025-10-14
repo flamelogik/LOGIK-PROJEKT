@@ -38,30 +38,51 @@ The process of generating Flame ColorToolKit configurations follows these sequen
 
 ## How to Run the Scripts
 
-The scripts should be run in the following order to ensure proper dependency resolution.
+A master installer script, `install_flame_colortoolkit.py`, is the recommended method for generating the ColorToolKit as it runs all necessary components in the correct order.
 
-### Step 1: Generate OCIO Config JSON
+**Important Note on Python Interpreter:**
+The scripts rely on specific Python packages (e.g., `PyOpenColorIO`) that are typically installed with Autodesk Flame's Python environment. To ensure compatibility, the path to the correct Python interpreter is read from the `current_adsk_python_version.pref` file.
+
+### Recommended Method: Run the Master Installer
+
+1.  **Retrieve the Autodesk Python Path:**
+    ```bash
+    ADSK_PYTHON_PATH=$(cat /home/pman/workspace/GitHub/phil-man-git-hub/LOGIK-PROJEKT/install/current_adsk_python_version.pref)
+    ```
+
+2.  **Execute the Installer Script:**
+    ```bash
+    "$ADSK_PYTHON_PATH" src/utils/common/create/install_flame_colortoolkit.py
+    ```
+
+This single command executes the entire workflow.
+
+### Manual Execution (for Debugging)
+
+If you need to run each step individually, you can execute the scripts in the following order. First, retrieve the Python path as shown above, then run each script:
+
+#### Step 1: Generate OCIO Config JSON
 
 Execute `create_ocio_config_json_file.py` to extract OCIO color space information.
 
 ```bash
-python3 src/utils/common/create/create_ocio_config_json_file.py
+"$ADSK_PYTHON_PATH" src/utils/common/create/create_ocio_config_json_file.py
 ```
 
-### Step 2: Generate OCIO Conversion Tasks
+#### Step 2: Generate OCIO Conversion Tasks
 
 Execute `create_ocio_conversion_tasks.py` to define color conversion tasks based on existing CTFs and the generated OCIO config.
 
 ```bash
-python3 src/utils/common/create/create_ocio_conversion_tasks.py
+"$ADSK_PYTHON_PATH" src/utils/common/create/create_ocio_conversion_tasks.py
 ```
 
-### Step 3: Generate Flame ColorToolKit CTFs
+#### Step 3: Generate Flame ColorToolKit CTFs
 
 Execute `create_ocio_flame_colortoolkit.py` to create the final Flame-compatible CTF files.
 
 ```bash
-python3 src/utils/common/create/create_ocio_flame_colortoolkit.py
+"$ADSK_PYTHON_PATH" src/utils/common/create/create_ocio_flame_colortoolkit.py
 ```
 
 [back to top](#toc)

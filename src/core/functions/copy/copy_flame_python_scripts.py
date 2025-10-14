@@ -15,7 +15,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -34,10 +34,13 @@ def modify_openclip_python_config_paths(scripts_destination: Path):
     Modifies the base_python_path in copied Python scripts.
 
     Args:
-        scripts_destination (Path): The directory containing the Python scripts.
+        scripts_destination (Path): The directory containing the Python
+            scripts.
     """
     logging.info("Modifying Python script paths in copied scripts...")
-    old_path_string = "base_python_path = Path('/opt/Autodesk/shared/python')"
+    old_path_string = (
+        "base_python_path = Path('/opt/Autodesk/shared/python')"
+    )
     new_path_string = f"base_python_path = Path('{scripts_destination}')"
 
     if not scripts_destination.is_dir():
@@ -101,7 +104,9 @@ def copy_flame_python_scripts(flame_projekt_setups_dir: str):
     except FileNotFoundError as e:
         logging.error("Error finding project root: %s", e)
     except Exception as e:
-        logging.error("An unexpected error occurred during script copy: %s", e)
+        logging.error(
+            "An unexpected error occurred during script copy: %s", e
+        )
 
 
 if __name__ == "__main__":

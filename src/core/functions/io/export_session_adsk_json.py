@@ -2,8 +2,9 @@
 # -------------------------------------------------------------------------- #
 # Filename:     export_session_adsk_json.py
 # Purpose:      Exports a JSON file with project data for Autodesk software.
-# Description:  This script generates a JSON file containing a subset of project
-#               data, formatted specifically for consumption by Autodesk applications.
+# Description:  This script generates a JSON file containing a subset of
+#               project data, formatted specifically for consumption by
+#               Autodesk applications.
 
 # Author:       phil_man@mac.com
 # Copyright:    Copyright (c) 2025
@@ -15,7 +16,7 @@
 # Status:       Production
 # Type:         Utility
 # Created:      2025-07-01
-# Modified:     2025-08-03
+# Modified:     2025-10-08
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #
@@ -56,31 +57,82 @@ def export_session_adsk_json(projekt_summary_data: dict):
             return value
 
     adsk_data = {
-        "Name": projekt_summary_data.get("flame_projekt_name", ""),
-        "ProjectDir": projekt_summary_data.get("flame_projekt_home", ""),
-        "SetupDir": projekt_summary_data.get("flame_projekt_setups_dir", ""),
-        "MediaDir": projekt_summary_data.get("flame_projekt_media_dir", ""),
+        "Name": projekt_summary_data.get(
+            "flame_projekt_name",
+            ""
+        ),
+        "ProjectDir": projekt_summary_data.get(
+            "flame_projekt_home",
+            ""
+        ),
+        "SetupDir": projekt_summary_data.get(
+            "flame_projekt_setups_dir", ""),
+        "MediaDir": projekt_summary_data.get(
+            "flame_projekt_media_dir", ""),
         "Resolution": {
-            "FrameWidth": to_int(projekt_summary_data.get("flame_projekt_width")),
-            "FrameHeight": to_int(projekt_summary_data.get("flame_projekt_height")),
-            "FrameDepth": projekt_summary_data.get("flame_projekt_depth", ""),
-            "AspectRatio": to_float(projekt_summary_data.get("flame_projekt_ratio")),
-            "FieldDominance": projekt_summary_data.get("flame_projekt_mode", "")
+            "FrameWidth": to_int(
+                projekt_summary_data.get(
+                    "flame_projekt_width"
+                )
+            ),
+            "FrameHeight": to_int(
+                projekt_summary_data.get(
+                    "flame_projekt_height"
+                )
+            ),
+            "FrameDepth": projekt_summary_data.get(
+                "flame_projekt_depth",
+                ""
+            ),
+            "AspectRatio": to_float(
+                projekt_summary_data.get(
+                    "flame_projekt_ratio"
+                )
+            ),
+            "FieldDominance": projekt_summary_data.get(
+                "flame_projekt_mode",
+                ""
+            )
         },
-        "StartFrame": to_int(projekt_summary_data.get("flame_projekt_start")),
-        "ConfigTemplate": projekt_summary_data.get("flame_projekt_init", ""),
-        "FrameRate": projekt_summary_data.get("flame_projekt_rate", ""),
-        "IntermediatesProfile": to_int(projekt_summary_data.get("flame_projekt_cachei_id")),
-        "FloatIntermediates": to_int(projekt_summary_data.get("flame_projekt_cachef_id")),
-        "ColourPolicyName": projekt_summary_data.get("flame_projekt_ocio_name", "")
+        "StartFrame": to_int(
+            projekt_summary_data.get(
+                "flame_projekt_start"
+            )
+        ),
+        "ConfigTemplate": projekt_summary_data.get(
+            "flame_projekt_init",
+            ""
+        ),
+        "FrameRate": projekt_summary_data.get(
+            "flame_projekt_rate",
+            ""
+        ),
+        "IntermediatesProfile": to_int(
+            projekt_summary_data.get(
+                "flame_projekt_cachei_id"
+            )
+        ),
+        "FloatIntermediates": to_int(
+            projekt_summary_data.get(
+                "flame_projekt_cachef_id"
+                )
+            ),
+        "ColourPolicyName": projekt_summary_data.get(
+            "flame_projekt_ocio_name",
+            ""
+        )
     }
 
     try:
         with open(output_path, 'w') as f:
             json.dump(adsk_data, f, indent=4)
-        logging.info(f"ADSK session data exported successfully to {output_path}")
+        logging.info(
+            f"ADSK session data exported successfully "
+            f"to {output_path}")
     except Exception as e:
-        logging.error(f"Error exporting ADSK session data to {output_path}: {e}")
+        logging.error(
+            f"Error exporting ADSK session data "
+            f"to {output_path}: {e}")
 
 
 # -------------------------------------------------------------------------- #

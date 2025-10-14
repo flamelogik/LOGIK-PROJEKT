@@ -831,18 +831,41 @@ cfg
     │   │   ├── color_coding
     │   │   │   ├── color_coding.json
     │   │   │   └── colour_coding.cfg
+    │   │   ├── colour_mgmt
+    │   │   │   └── transforms
+    │   │   │       └── flame-colortoolkit
+    │   │   │           ├── Apple
+    │   │   │           ├── Arri
+    │   │   │           ├── BlackmagicDesign
+    │   │   │           ├── BT.2100-camera
+    │   │   │           ├── BT.709-camera
+    │   │   │           ├── Canon
+    │   │   │           ├── json
+    │   │   │           │   ├── Apple
+    │   │   │           │   ├── Arri
+    │   │   │           │   ├── BlackmagicDesign
+    │   │   │           │   ├── BT.2100-camera
+    │   │   │           │   ├── BT.709-camera
+    │   │   │           │   ├── Canon
+    │   │   │           │   ├── Panasonic
+    │   │   │           │   ├── Red
+    │   │   │           │   └── Sony
+    │   │   │           ├── Panasonic
+    │   │   │           ├── Red
+    │   │   │           └── Sony
     │   │   ├── export
     │   │   │   └── presets
-    │   │   │       ├── movie_file
-    │   │   │       │   ├── projekt-movie_file-color_grade.xml
-    │   │   │       │   ├── projekt-movie_file-reference.xml
-    │   │   │       │   └── projekt-movie_file-wip-posting.xml
-    │   │   │       └── sequence_publish
-    │   │   │           ├── projekt_sequence_publish-aaf.xml
-    │   │   │           ├── projekt_sequence_publish-edl.xml
-    │   │   │           ├── projekt_sequence_publish-xml.xml
-    │   │   │           ├── projekt_shot_publish-ACEScg-v0000-batch_groups.xml
-    │   │   │           └── projekt_shot_publish-ACEScg-v0001-graded_pass.xml
+    │   │   │       └── flame
+    │   │   │           ├── movie_file
+    │   │   │           │   ├── projekt-movie_file-color_grade.xml
+    │   │   │           │   ├── projekt-movie_file-reference.xml
+    │   │   │           │   └── projekt-movie_file-wip-posting.xml
+    │   │   │           └── sequence_publish
+    │   │   │               ├── projekt_sequence_publish-aaf.xml
+    │   │   │               ├── projekt_sequence_publish-edl.xml
+    │   │   │               ├── projekt_sequence_publish-xml.xml
+    │   │   │               ├── projekt_shot_publish-ACEScg-v0000-batch_groups.xml
+    │   │   │               └── projekt_shot_publish-ACEScg-v0001-graded_pass.xml
     │   │   ├── import
     │   │   │   └── presets
     │   │   │       └── pattern.json
@@ -940,61 +963,121 @@ cfg
     │   │       └── project.json
     │   ├── flame-python
     │   │   └── logik_projekt
-    │   │       └── openclip_tools
-    │   │           └── logik_projekt_openclip
+    │   │       ├── openclip_tools
+    │   │       │   └── logik_projekt_openclip
+    │   │       │       ├── config
+    │   │       │       │   ├── LOGIK-PROJEKT-default-config.xml
+    │   │       │       │   ├── logik_projekt_openclip_comp
+    │   │       │       │   │   └── config.xml
+    │   │       │       │   ├── logik_projekt_openclip_mattes
+    │   │       │       │   │   └── config.xml
+    │   │       │       │   ├── logik_projekt_openclip_multichannel
+    │   │       │       │   │   └── config.xml
+    │   │       │       │   ├── logik_projekt_openclip_neat_video
+    │   │       │       │   │   └── config.xml
+    │   │       │       │   ├── logik_projekt_openclip_precomp
+    │   │       │       │   │   └── config.xml
+    │   │       │       │   └── update_changelist_comments.sh
+    │   │       │       ├── scripts
+    │   │       │       │   ├── logik_projekt_openclip_comp.py
+    │   │       │       │   ├── logik_projekt_openclip_mattes.py
+    │   │       │       │   ├── logik_projekt_openclip_multichannel.py
+    │   │       │       │   ├── logik_projekt_openclip_neat_video.py
+    │   │       │       │   ├── logik_projekt_openclip_precomp.py
+    │   │       │       │   ├── modules
+    │   │       │       │   │   ├── classes
+    │   │       │       │   │   │   ├── pyside6_qt_button.py
+    │   │       │       │   │   │   ├── pyside6_qt_clickable_line_edit.py
+    │   │       │       │   │   │   ├── pyside6_qt_label.py
+    │   │       │       │   │   │   ├── pyside6_qt_line_edit.py
+    │   │       │       │   │   │   ├── pyside6_qt_list_widget.py
+    │   │       │       │   │   │   ├── pyside6_qt_message_window.py
+    │   │       │       │   │   │   ├── pyside6_qt_password_window.py
+    │   │       │       │   │   │   ├── pyside6_qt_preset_window.py
+    │   │       │       │   │   │   ├── pyside6_qt_progress_window.py
+    │   │       │       │   │   │   ├── pyside6_qt_push_button_menu.py
+    │   │       │       │   │   │   ├── pyside6_qt_push_button.py
+    │   │       │       │   │   │   ├── pyside6_qt_qdialog.py
+    │   │       │       │   │   │   ├── pyside6_qt_slider.py
+    │   │       │       │   │   │   ├── pyside6_qt_text_edit.py
+    │   │       │       │   │   │   ├── pyside6_qt_token_push_button.py
+    │   │       │       │   │   │   ├── pyside6_qt_tree_widget.py
+    │   │       │       │   │   │   └── pyside6_qt_window.py
+    │   │       │       │   │   ├── functions
+    │   │       │       │   │   │   ├── pyside6_qt_file_browser.py
+    │   │       │       │   │   │   ├── pyside6_qt_get_flame_version.py
+    │   │       │       │   │   │   ├── pyside6_qt_get_shot_name.py
+    │   │       │       │   │   │   ├── pyside6_qt_load_config.py
+    │   │       │       │   │   │   ├── pyside6_qt_open_in_finder.py
+    │   │       │       │   │   │   ├── pyside6_qt_print.py
+    │   │       │       │   │   │   ├── pyside6_qt_refresh_hooks.py
+    │   │       │       │   │   │   ├── pyside6_qt_resolve_path_tokens.py
+    │   │       │       │   │   │   ├── pyside6_qt_resolve_shot_name.py
+    │   │       │       │   │   │   └── pyside6_qt_save_config.py
+    │   │       │       │   │   ├── pyside6_qt_flame_classes.py
+    │   │       │       │   │   ├── pyside6_qt_flame_functions.py
+    │   │       │       │   │   └── pyside6_qt_output_config_ui.py
+    │   │       │       │   └── pyside6_qt_flame_modules.py
+    │   │       │       └── version
+    │   │       │           └── version.json
+    │   │       └── projekt_tools
+    │   │           ├── logik_projekt_create_scripts
+    │   │           │   ├── config
+    │   │           │   │   ├── menu.py
+    │   │           │   │   └── update_changelist.sh
+    │   │           │   ├── scripts
+    │   │           │   │   ├── create_after_effects_script.py
+    │   │           │   │   ├── create_nuke_script.py
+    │   │           │   │   └── modules
+    │   │           │   │       └── functions
+    │   │           │   │           ├── create_after_effects_shot_script.py
+    │   │           │   │           ├── create_after_effects_source_script.py
+    │   │           │   │           ├── create_nuke_shot_script.py
+    │   │           │   │           ├── create_nuke_source_script.py
+    │   │           │   │           ├── create_openclip_output_clip.py
+    │   │           │   │           ├── create_openclip_segment_clip.py
+    │   │           │   │           ├── create_shot_bookmarks.py
+    │   │           │   │           ├── debugging_and_logging.py
+    │   │           │   │           ├── define_job_structure.py
+    │   │           │   │           ├── define_shot_structure.py
+    │   │           │   │           ├── import_functions.py
+    │   │           │   │           ├── list_shots_dir.py
+    │   │           │   │           ├── list_shot_source_dir.py
+    │   │           │   │           ├── list_shot_sources_dir.py
+    │   │           │   │           ├── path_to_shot_source_openexr_sequences.py
+    │   │           │   │           ├── process_shot_info_after_effects.py
+    │   │           │   │           └── process_shot_info_nuke.py
+    │   │           │   └── version
+    │   │           │       └── version.json
+    │   │           ├── logik_projekt_dated_objects
+    │   │           │   ├── config
+    │   │           │   │   └── update_changelist.sh
+    │   │           │   ├── scripts
+    │   │           │   │   └── create_dated_objects.py
+    │   │           │   └── version
+    │   │           │       └── version.json
+    │   │           └── logik_projekt_layout
     │   │               ├── config
-    │   │               │   ├── LOGIK-PROJEKT-default-config.xml
-    │   │               │   ├── logik_projekt_openclip_comp
-    │   │               │   │   └── config.xml
-    │   │               │   ├── logik_projekt_openclip_mattes
-    │   │               │   │   └── config.xml
-    │   │               │   ├── logik_projekt_openclip_multichannel
-    │   │               │   │   └── config.xml
-    │   │               │   ├── logik_projekt_openclip_neat_video
-    │   │               │   │   └── config.xml
-    │   │               │   ├── logik_projekt_openclip_precomp
-    │   │               │   │   └── config.xml
-    │   │               │   └── update_changelist_comments.sh
+    │   │               │   ├── library_template_01.json
+    │   │               │   ├── library_template_02.json
+    │   │               │   ├── library_template_03.json
+    │   │               │   ├── library_template_04.json
+    │   │               │   ├── library_template_05.json
+    │   │               │   ├── library_template_06.json
+    │   │               │   ├── object_colors.json
+    │   │               │   └── update_changelist.sh
     │   │               ├── scripts
-    │   │               │   ├── logik_projekt_openclip_comp.py
-    │   │               │   ├── logik_projekt_openclip_mattes.py
-    │   │               │   ├── logik_projekt_openclip_multichannel.py
-    │   │               │   ├── logik_projekt_openclip_neat_video.py
-    │   │               │   ├── logik_projekt_openclip_precomp.py
-    │   │               │   ├── modules
-    │   │               │   │   ├── classes
-    │   │               │   │   │   ├── pyside6_qt_button.py
-    │   │               │   │   │   ├── pyside6_qt_clickable_line_edit.py
-    │   │               │   │   │   ├── pyside6_qt_label.py
-    │   │               │   │   │   ├── pyside6_qt_line_edit.py
-    │   │               │   │   │   ├── pyside6_qt_list_widget.py
-    │   │               │   │   │   ├── pyside6_qt_message_window.py
-    │   │               │   │   │   ├── pyside6_qt_password_window.py
-    │   │               │   │   │   ├── pyside6_qt_preset_window.py
-    │   │               │   │   │   ├── pyside6_qt_progress_window.py
-    │   │               │   │   │   ├── pyside6_qt_push_button_menu.py
-    │   │               │   │   │   ├── pyside6_qt_push_button.py
-    │   │               │   │   │   ├── pyside6_qt_qdialog.py
-    │   │               │   │   │   ├── pyside6_qt_slider.py
-    │   │               │   │   │   ├── pyside6_qt_text_edit.py
-    │   │               │   │   │   ├── pyside6_qt_token_push_button.py
-    │   │               │   │   │   ├── pyside6_qt_tree_widget.py
-    │   │               │   │   │   └── pyside6_qt_window.py
-    │   │               │   │   ├── functions
-    │   │               │   │   │   ├── pyside6_qt_file_browser.py
-    │   │               │   │   │   ├── pyside6_qt_get_flame_version.py
-    │   │               │   │   │   ├── pyside6_qt_get_shot_name.py
-    │   │               │   │   │   ├── pyside6_qt_load_config.py
-    │   │               │   │   │   ├── pyside6_qt_open_in_finder.py
-    │   │               │   │   │   ├── pyside6_qt_print.py
-    │   │               │   │   │   ├── pyside6_qt_refresh_hooks.py
-    │   │               │   │   │   ├── pyside6_qt_resolve_path_tokens.py
-    │   │               │   │   │   ├── pyside6_qt_resolve_shot_name.py
-    │   │               │   │   │   └── pyside6_qt_save_config.py
-    │   │               │   │   ├── pyside6_qt_flame_classes.py
-    │   │               │   │   ├── pyside6_qt_flame_functions.py
-    │   │               │   │   └── pyside6_qt_output_config_ui.py
-    │   │               │   └── pyside6_qt_flame_modules.py
+    │   │               │   ├── create_projekt_layout.py
+    │   │               │   └── modules
+    │   │               │       ├── classes
+    │   │               │       │   ├── pathfinder_abs.py
+    │   │               │       │   ├── pathfinder_information.py
+    │   │               │       │   └── pathfinder_rel.py
+    │   │               │       └── functions
+    │   │               │           ├── create_or_validate_library.py
+    │   │               │           ├── create_or_validate_object.py
+    │   │               │           ├── object_colors.py
+    │   │               │           └── separators.py
     │   │               └── version
     │   │                   └── version.json
     │   ├── flame-scripts
@@ -1002,8 +1085,8 @@ cfg
     │   │   │   ├── create_folder.py
     │   │   │   ├── create_library.py
     │   │   │   ├── create_reel.py
-    │   │   │   ├── flame_startup_template.py
-    │   │   │   └── flame_startup_script_template.py
+    │   │   │   ├── flame_startup_script_template.py
+    │   │   │   └── flame_startup_template.py
     │   │   └── opencolorio
     │   │       ├── ocio_scripts
     │   │       │   ├── color_tagging_example.py
@@ -1309,473 +1392,398 @@ cfg
     │   │   └── sysconfig
     │   │       └── sysconfig.cfg
     │   └── shared-presets
-    │       ├── burn_metadata
-    │       │   └── overlay
-    │       │       ├── burnin_info_HD.burnmetadata_node
-    │       │       ├── burnin_info_HD.burnmetadata_node.p
-    │       │       ├── burnin_info_UHD.burnmetadata_node
-    │       │       └── burnin_info_UHD.burnmetadata_node.p
-    │       └── python
-    │           └── logik_projekt
-    │               └── projekt_tools
-    │                   ├── logik_projekt_create_scripts
-    │                   │   ├── config
-    │                   │   │   ├── menu.py
-    │                   │   │   └── update_changelist.sh
-    │                   │   ├── scripts
-    │                   │   │   ├── create_after_effects_script.py
-    │                   │   │   ├── create_nuke_script.py
-    │                   │   │   └── modules
-    │                   │   │       └── functions
-    │                   │   │           ├── create_after_effects_shot_script.py
-    │                   │   │           ├── create_after_effects_source_script.py
-    │                   │   │           ├── create_nuke_shot_script.py
-    │                   │   │           ├── create_nuke_source_script.py
-    │                   │   │           ├── create_openclip_output_clip.py
-    │                   │   │           ├── create_openclip_segment_clip.py
-    │                   │   │           ├── create_shot_bookmarks.py
-    │                   │   │           ├── debugging_and_logging.py
-    │                   │   │           ├── define_job_structure.py
-    │                   │   │           ├── define_shot_structure.py
-    │                   │   │           ├── import_functions.py
-    │                   │   │           ├── list_shots_dir.py
-    │                   │   │           ├── list_shot_source_dir.py
-    │                   │   │           ├── list_shot_sources_dir.py
-    │                   │   │           ├── path_to_shot_source_openexr_sequences.py
-    │                   │   │           ├── process_shot_info_after_effects.py
-    │                   │   │           └── process_shot_info_nuke.py
-    │                   │   └── version
-    │                   │       └── version.json
-    │                   ├── logik_projekt_dated_objects
-    │                   │   ├── config
-    │                   │   │   └── update_changelist.sh
-    │                   │   ├── scripts
-    │                   │   │   └── create_dated_objects.py
-    │                   │   └── version
-    │                   │       └── version.json
-    │                   └── logik_projekt_layout
-    │                       ├── config
-    │                       │   ├── library_template_01.json
-    │                       │   ├── library_template_02.json
-    │                       │   ├── library_template_03.json
-    │                       │   ├── library_template_04.json
-    │                       │   ├── library_template_05.json
-    │                       │   ├── library_template_06.json
-    │                       │   ├── object_colors.json
-    │                       │   └── update_changelist.sh
-    │                       ├── scripts
-    │                       │   ├── create_projekt_layout.py
-    │                       │   └── modules
-    │                       │       ├── classes
-    │                       │       │   ├── pathfinder_abs.py
-    │                       │       │   ├── pathfinder_information.py
-    │                       │       │   └── pathfinder_rel.py
-    │                       │       └── functions
-    │                       │           ├── create_or_validate_library.py
-    │                       │           ├── create_or_validate_object.py
-    │                       │           ├── object_colors.py
-    │                       │           └── separators.py
-    │                       └── version
-    │                           └── version.json
-    └── logik-projekt-cfg
-        ├── icons
-        │   ├── create_icns_cross_platform.py
-        │   ├── create_icns.py
-        │   ├── logik_projekt_icon_01.png
-        │   ├── logik_projekt_icon_2026.png
-        │   ├── logik_projekt_icon.icns
-        │   └── logik_projekt_icon.iconset
-        │       ├── icon_128x128@2x.png
-        │       ├── icon_128x128.png
-        │       ├── icon_16x16@2x.png
-        │       ├── icon_16x16.png
-        │       ├── icon_256x256@2x.png
-        │       ├── icon_256x256.png
-        │       ├── icon_32x32@2x.png
-        │       ├── icon_32x32.png
-        │       ├── icon_512x512@2x.png
-        │       └── icon_512x512.png
-        └── logik-projekt-templates
-            ├── filesystem-templates
-            │   ├── custom-filesystem-templates
-            │   │   ├── 012-projekt-template
-            │   │   │   ├── first-level-a
-            │   │   │   │   └── second-level-a
-            │   │   │   │       └── third-level-a
-            │   │   │   │           └── fourth-level-a
-            │   │   │   │               └── fifth-level-a
-            │   │   │   ├── first-level-b
-            │   │   │   │   └── second-level-b
-            │   │   │   │       └── third-level-b
-            │   │   │   │           └── fourth-level-b
-            │   │   │   │               └── fifth-level-b
-            │   │   │   └── first-level-c
-            │   │   │       └── second-level-c
-            │   │   │           └── third-level-c
-            │   │   ├── 123-projekt-template
-            │   │   │   ├── first-level-a
-            │   │   │   │   └── second-level-a
-            │   │   │   │       └── third-level-a
-            │   │   │   │           └── fourth-level-a
-            │   │   │   │               └── fifth-level-a
-            │   │   │   ├── first-level-b
-            │   │   │   │   └── second-level-b
-            │   │   │   │       └── third-level-b
-            │   │   │   │           └── fourth-level-b
-            │   │   │   │               └── fifth-level-b
-            │   │   │   └── first-level-c
-            │   │   │       └── second-level-c
-            │   │   │           └── third-level-c
-            │   │   ├── 456-projekt-template
-            │   │   │   ├── first-level-a
-            │   │   │   │   └── second-level-a
-            │   │   │   │       └── third-level-a
-            │   │   │   │           └── fourth-level-a
-            │   │   │   │               └── fifth-level-a
-            │   │   │   ├── first-level-b
-            │   │   │   │   └── second-level-b
-            │   │   │   │       └── third-level-b
-            │   │   │   │           └── fourth-level-b
-            │   │   │   │               └── fifth-level-b
-            │   │   │   └── first-level-c
-            │   │   │       └── second-level-c
-            │   │   │           └── third-level-c
-            │   │   ├── 789-projekt-template
-            │   │   │   ├── first-level-a
-            │   │   │   │   └── second-level-a
-            │   │   │   │       └── third-level-a
-            │   │   │   │           └── fourth-level-a
-            │   │   │   │               └── fifth-level-a
-            │   │   │   ├── first-level-b
-            │   │   │   │   └── second-level-b
-            │   │   │   │       └── third-level-b
-            │   │   │   │           └── fourth-level-b
-            │   │   │   │               └── fifth-level-b
-            │   │   │   └── first-level-c
-            │   │   │       └── second-level-c
-            │   │   │           └── third-level-c
-            │   │   ├── cheese-sandwich
-            │   │   │   ├── first-wrapper-a
-            │   │   │   │   └── second-sandwich-a
-            │   │   │   │       └── third-cheese-a
-            │   │   │   │           └── fourth-salad-a
-            │   │   │   │               └── fifth-mustard-a
-            │   │   │   ├── first-wrapper-b
-            │   │   │   │   └── second-sandwich-b
-            │   │   │   │       └── third-cheese-b
-            │   │   │   │           └── fourth-salad-b
-            │   │   │   │               └── fifth-mustard-b
-            │   │   │   └── first-wrapper-c
-            │   │   │       └── second-sandwich-c
-            │   │   │           └── third-cheese-c
-            │   │   ├── hecat-studio
-            │   │   │   ├── first-level-a
-            │   │   │   │   └── second-level-a
-            │   │   │   │       └── third-level-a
-            │   │   │   │           └── fourth-level-a
-            │   │   │   │               └── fifth-level-a
-            │   │   │   ├── first-level-b
-            │   │   │   │   └── second-level-b
-            │   │   │   │       └── third-level-b
-            │   │   │   │           └── fourth-level-b
-            │   │   │   │               └── fifth-level-b
-            │   │   │   └── first-level-c
-            │   │   │       └── second-level-c
-            │   │   │           └── third-level-c
-            │   │   ├── laurence-creative
-            │   │   │   ├── first-sandwich-a
-            │   │   │   │   └── second-filling-a
-            │   │   │   │       └── third-level-a
-            │   │   │   │           └── fourth-level-a
-            │   │   │   │               └── fifth-level-a
-            │   │   │   ├── first-sandwich-b
-            │   │   │   │   └── second-filling-b
-            │   │   │   │       └── third-level-b
-            │   │   │   │           └── fourth-level-b
-            │   │   │   │               └── fifth-level-b
-            │   │   │   └── first-sandwich-c
-            │   │   │       └── second-filling-c
-            │   │   │           └── third-level-c
-            │   │   └── silo-84
-            │   │       ├── first-level-a
-            │   │       │   └── second-level-a
-            │   │       │       └── third-level-a
-            │   │       │           └── fourth-level-a
-            │   │       │               └── fifth-level-a
-            │   │       ├── first-level-b
-            │   │       │   └── second-level-b
-            │   │       │       └── third-level-b
-            │   │       │           └── fourth-level-b
-            │   │       │               └── fifth-level-b
-            │   │       └── first-level-c
-            │   │           └── second-level-c
-            │   │               └── third-level-c
-            │   └── default-filesystem-templates
-            │       └── logik-projekt
-            │           ├── assets
-            │           │   ├── audio
-            │           │   │   ├── dub
-            │           │   │   ├── mix
-            │           │   │   ├── music
-            │           │   │   ├── production
-            │           │   │   ├── sound_effects
-            │           │   │   ├── stems
-            │           │   │   └── voiceover
-            │           │   ├── fonts
-            │           │   ├── graphics
-            │           │   │   ├── artwork
-            │           │   │   ├── cgi
-            │           │   │   ├── images
-            │           │   │   ├── legal
-            │           │   │   ├── paint
-            │           │   │   ├── photoshop
-            │           │   │   ├── slates
-            │           │   │   ├── subtitles
-            │           │   │   ├── supers
-            │           │   │   └── titles
-            │           │   ├── miscellaneous
-            │           │   └── video
-            │           │       └── footage
-            │           │           ├── graded
-            │           │           ├── lut
-            │           │           ├── raw
-            │           │           ├── stock
-            │           │           └── transcodes
-            │           ├── backup
-            │           │   └── backup_scripts
-            │           ├── cfg
-            │           │   ├── pref
-            │           │   ├── template
-            │           │   └── workstation
-            │           │       └── juliet
-            │           │           ├── 000_abc_def-flame_launcher-juliet.sh
-            │           │           ├── projekt_creation_log-2025_05_05-000_abc_def-juliet
-            │           │           └── projekt_parameters-2025_05_05-000_abc_def-juliet.xml
-            │           ├── directory_structure.json
-            │           ├── docs
-            │           │   ├── agreements
-            │           │   │   ├── employment
-            │           │   │   ├── memoranda_of_understanding
-            │           │   │   ├── non_disclosure
-            │           │   │   └── service
-            │           │   ├── briefs
-            │           │   │   ├── design_briefs
-            │           │   │   ├── marketing_briefs
-            │           │   │   └── projekt_briefs
-            │           │   ├── contracts
-            │           │   │   ├── client_contracts
-            │           │   │   ├── lease_contracts
-            │           │   │   └── vendor_contracts
-            │           │   ├── designs
-            │           │   │   ├── mockups
-            │           │   │   ├── specifications
-            │           │   │   └── wireframes
-            │           │   ├── estimates
-            │           │   │   ├── cost_estimates
-            │           │   │   ├── projekt_estimates
-            │           │   │   └── time_estimates
-            │           │   ├── financial
-            │           │   │   ├── budgets
-            │           │   │   ├── invoices
-            │           │   │   ├── reports
-            │           │   │   └── statements
-            │           │   ├── guidelines
-            │           │   │   ├── branding
-            │           │   │   ├── compliance
-            │           │   │   ├── localization
-            │           │   │   └── styleguide
-            │           │   ├── handbooks
-            │           │   │   ├── employee
-            │           │   │   ├── policy
-            │           │   │   └── training
-            │           │   ├── invoices
-            │           │   │   ├── client
-            │           │   │   ├── paid
-            │           │   │   ├── unpaid
-            │           │   │   └── vendor
-            │           │   ├── job_description
-            │           │   │   ├── administrative_roles
-            │           │   │   ├── management_roles
-            │           │   │   └── technical_roles
-            │           │   ├── knowledge_base
-            │           │   │   ├── faqs
-            │           │   │   ├── how_to_guides
-            │           │   │   └── troubleshooting
-            │           │   ├── licenses
-            │           │   │   ├── product_licenses
-            │           │   │   ├── service_licenses
-            │           │   │   └── software_licenses
-            │           │   ├── memoranda
-            │           │   │   ├── external_memos
-            │           │   │   ├── internal_memos
-            │           │   │   └── meeting_memos
-            │           │   ├── non_disclosure
-            │           │   │   ├── client_ndas
-            │           │   │   ├── employee_ndas
-            │           │   │   └── vendor_ndas
-            │           │   ├── org_charts
-            │           │   │   ├── company_charts
-            │           │   │   ├── department_charts
-            │           │   │   └── team_charts
-            │           │   ├── policies
-            │           │   │   ├── hr_policies
-            │           │   │   ├── it_policies
-            │           │   │   └── operational_policies
-            │           │   ├── quotations
-            │           │   │   ├── client_quotations
-            │           │   │   ├── service_quotations
-            │           │   │   └── vendor_quotations
-            │           │   ├── reports
-            │           │   │   ├── annual_reports
-            │           │   │   ├── projekt_reports
-            │           │   │   └── quarterly_reports
-            │           │   ├── schedules
-            │           │   │   ├── meeting_schedules
-            │           │   │   ├── projekt_schedules
-            │           │   │   └── training_schedules
-            │           │   ├── technical
-            │           │   │   ├── technical_manuals
-            │           │   │   ├── technical_reports
-            │           │   │   └── technical_specifications
-            │           │   ├── user_guides
-            │           │   │   ├── product_user_guides
-            │           │   │   ├── service_user_guides
-            │           │   │   └── software_user_guides
-            │           │   ├── vendor_list
-            │           │   │   ├── approved_vendors
-            │           │   │   ├── blacklisted_vendors
-            │           │   │   └── preferred_vendors
-            │           │   ├── workflows
-            │           │   │   ├── approval_workflows
-            │           │   │   ├── operational_workflows
-            │           │   │   └── process_workflows
-            │           │   └── xml
-            │           │       ├── xml_templates
-            │           │       └── xslt_templates
-            │           ├── editorial
-            │           │   ├── aaf
-            │           │   ├── editorial-projekt-files
-            │           │   │   ├── adobe_premiere
-            │           │   │   ├── avid_media_composer
-            │           │   │   ├── davinci_resolve
-            │           │   │   └── final_cut_pro
-            │           │   ├── edl
-            │           │   ├── prep
-            │           │   └── xml
-            │           ├── flame
-            │           │   ├── archive
-            │           │   │   └── scripts
-            │           │   ├── iterations
-            │           │   └── setups
-            │           ├── logs
-            │           │   └── 000_abc_def-flame_first_run-juliet.log
-            │           ├── masters
-            │           │   ├── master_edits
-            │           │   ├── slated_masters
-            │           │   └── versioned_masters
-            │           ├── processes
-            │           │   ├── machine-learning
-            │           │   ├── matchmoving
-            │           │   │   ├── tracking_2d
-            │           │   │   └── tracking_3d
-            │           │   └── rotoscope
-            │           │       ├── gmasks
-            │           │       └── raster
-            │           ├── reference
-            │           │   ├── reference_images
-            │           │   ├── reference_movies
-            │           │   └── reference_style_guide
-            │           ├── scenes
-            │           │   ├── 3ds
-            │           │   ├── alembic
-            │           │   ├── baselight
-            │           │   ├── blender
-            │           │   ├── c4d
-            │           │   ├── cut
-            │           │   ├── fbx
-            │           │   ├── geometry
-            │           │   ├── houdini
-            │           │   ├── maya
-            │           │   ├── resolve
-            │           │   ├── unity
-            │           │   ├── unreal_engine
-            │           │   └── usd
-            │           ├── shots
-            │           ├── software
-            │           │   ├── applications
-            │           │   ├── bin
-            │           │   │   ├── flame
-            │           │   │   ├── nuke
-            │           │   │   ├── nukex
-            │           │   │   └── studio
-            │           │   ├── etc
-            │           │   │   ├── flame_version
-            │           │   │   └── nuke_version
-            │           │   ├── nuke
-            │           │   │   ├── gizmos
-            │           │   │   │   └── AlphaOps
-            │           │   │   │       ├── AA_Curve.nk
-            │           │   │   │       ├── AA_Grade.nk
-            │           │   │   │       ├── AA_Keymix.nk
-            │           │   │   │       ├── AA_Mask.nk
-            │           │   │   │       ├── AA_Screen.nk
-            │           │   │   │       └── AA_Stencil.nk
-            │           │   │   ├── init.py
-            │           │   │   ├── menu.py
-            │           │   │   ├── pyScripts
-            │           │   │   │   ├── colorspace
-            │           │   │   │   │   ├── change_colorspace_to_raw.py
-            │           │   │   │   │   ├── change_colorspace_to_scene_linear.py
-            │           │   │   │   │   ├── change_colorspace_to_texture_paint.py
-            │           │   │   │   │   └── __init__.py
-            │           │   │   │   ├── dev
-            │           │   │   │   │   ├── __init__.py
-            │           │   │   │   │   ├── print_environment_variables.py
-            │           │   │   │   │   └── print_nuke_environment.py
-            │           │   │   │   ├── gpu
-            │           │   │   │   │   ├── disableGPUAcceleration.py
-            │           │   │   │   │   ├── enableGPUAcceleration.py
-            │           │   │   │   │   └── __init__.py
-            │           │   │   │   ├── __init__.py
-            │           │   │   │   └── projekt
-            │           │   │   │       ├── hello_from_pyside2.py
-            │           │   │   │       ├── __init__.py
-            │           │   │   │       └── unpack_direnv_diff.py
-            │           │   │   ├── repo
-            │           │   │   │   ├── download_tools.py
-            │           │   │   │   └── projekt_core_v0.0.1
-            │           │   │   │       ├── __init__.py
-            │           │   │   │       └── projekt_core
-            │           │   │   │           ├── defaults.py
-            │           │   │   │           ├── favoritesRedux.py
-            │           │   │   │           ├── gizmoUtilities.py
-            │           │   │   │           ├── __init__.py
-            │           │   │   │           ├── settings.py
-            │           │   │   │           ├── setupScripts.py
-            │           │   │   │           ├── toolsetUtilities.py
-            │           │   │   │           ├── utilities.py
-            │           │   │   │           ├── version_up.py
-            │           │   │   │           └── vfxtools.py
-            │           │   │   └── toolsets
-            │           │   │       └── color
-            │           │   │           └── LogConvert_ACESLog.nk
-            │           │   ├── ocio
-            │           │   │   ├── download_aces_1_2_config.py
-            │           │   │   └── download_aces_1_3_configs.py
-            │           │   └── templates
-            │           │       └── nuke
-            │           ├── tmp
-            │           ├── utilities
-            │           │   └── Synergy
-            │           │       └── SynColor
-            │           │           └── Shared
-            │           │               └── transforms
-            │           ├── version
-            │           └── work_in_progress
-            │               └── postings
-            └── rsync-backup-templates
-                ├── backup_crontab_template.sh
-                ├── backup_template
-                └── exclusion_list.txt
+    │       └── burn_metadata
+    │           └── overlay
+    │               ├── burnin_info_HD.burnmetadata_node
+    │               ├── burnin_info_HD.burnmetadata_node.p
+    │               ├── burnin_info_UHD.burnmetadata_node
+    │               └── burnin_info_UHD.burnmetadata_node.p
+    ├── logik-projekt-cfg
+    │   ├── branding
+    │   │   ├── download_rocky_fonts.py
+    │   │   └── wallpaper
+    │   │       └── LOGIK-PROJEKT-DESKTOP
+    │   │           ├── batch_setups
+    │   │           │   ├── LOGIK-PROJEKT-DESKTOP_comp_v0001_delta_pman
+    │   │           │   │   ├── action1.action
+    │   │           │   │   ├── action1.action.0.comp
+    │   │           │   │   ├── action1.action.0.Front.source
+    │   │           │   │   ├── action1.action.0.Matte.source
+    │   │           │   │   ├── action1.action.1.comp
+    │   │           │   │   ├── action1.action.1.Front.source
+    │   │           │   │   ├── action1.action.1.Matte.source
+    │   │           │   │   ├── action1.action.2.comp
+    │   │           │   │   ├── action1.action.2.Front.source
+    │   │           │   │   ├── action1.action.2.Matte.source
+    │   │           │   │   ├── action1.action.fbx
+    │   │           │   │   ├── action1.action_node
+    │   │           │   │   ├── blur1.blur_node
+    │   │           │   │   ├── cc1.correct_node
+    │   │           │   │   ├── cc2.correct_node
+    │   │           │   │   ├── clip1.clip_node
+    │   │           │   │   ├── clip1.clip_node_clip
+    │   │           │   │   ├── clip1.clip_node_format
+    │   │           │   │   ├── clip1.lut_node
+    │   │           │   │   ├── clip1.resize
+    │   │           │   │   ├── clip1.resize_node
+    │   │           │   │   ├── clip2.clip_node
+    │   │           │   │   ├── clip2.clip_node_clip
+    │   │           │   │   ├── clip2.clip_node_format
+    │   │           │   │   ├── clip2.lut_node
+    │   │           │   │   ├── clip2.resize
+    │   │           │   │   ├── clip2.resize_node
+    │   │           │   │   ├── clip3.clip_node
+    │   │           │   │   ├── clip3.clip_node_clip
+    │   │           │   │   ├── clip3.clip_node_format
+    │   │           │   │   ├── clip3.lut_node
+    │   │           │   │   ├── clip3.resize
+    │   │           │   │   ├── clip3.resize_node
+    │   │           │   │   ├── col1.col_node
+    │   │           │   │   ├── comp1.comp_node
+    │   │           │   │   ├── Dots97.matchbox_node
+    │   │           │   │   ├── Dots97.mx
+    │   │           │   │   ├── layer1.layer_node
+    │   │           │   │   ├── layer2.layer_node
+    │   │           │   │   ├── mask1.mask
+    │   │           │   │   ├── mask1.mask.0.comp
+    │   │           │   │   ├── mask1.mask.0.Front.source
+    │   │           │   │   ├── mask1.mask.0.Matte.source
+    │   │           │   │   ├── mask1.mask_node
+    │   │           │   │   ├── matteedge1.edge_node
+    │   │           │   │   ├── mux1.mux_node
+    │   │           │   │   ├── mux2.mux_node
+    │   │           │   │   ├── neg1.neg_node
+    │   │           │   │   ├── root.root_node
+    │   │           │   │   ├── transform2d1.2dtransform_node
+    │   │           │   │   ├── writefile2_alpha.lut
+    │   │           │   │   ├── writefile2_alpha.lut_node
+    │   │           │   │   ├── writefile2.export_node
+    │   │           │   │   ├── writefile2.lut
+    │   │           │   │   ├── writefile2.lut_node
+    │   │           │   │   ├── writefile2.resize
+    │   │           │   │   └── writefile2.resize_node
+    │   │           │   ├── LOGIK-PROJEKT-DESKTOP_comp_v0001_delta_pman.batch
+    │   │           │   ├── LOGIK-PROJEKT-DESKTOP_comp_v0002_delta_pman
+    │   │           │   │   ├── action1.action
+    │   │           │   │   ├── action1.action.0.comp
+    │   │           │   │   ├── action1.action.0.Front.source
+    │   │           │   │   ├── action1.action.0.Matte.source
+    │   │           │   │   ├── action1.action.1.comp
+    │   │           │   │   ├── action1.action.1.Front.source
+    │   │           │   │   ├── action1.action.1.Matte.source
+    │   │           │   │   ├── action1.action.2.comp
+    │   │           │   │   ├── action1.action.2.Front.source
+    │   │           │   │   ├── action1.action.2.Matte.source
+    │   │           │   │   ├── action1.action.fbx
+    │   │           │   │   ├── action1.action_node
+    │   │           │   │   ├── blur1.blur_node
+    │   │           │   │   ├── cc1.correct_node
+    │   │           │   │   ├── cc2.correct_node
+    │   │           │   │   ├── clip1.clip_node
+    │   │           │   │   ├── clip1.clip_node_clip
+    │   │           │   │   ├── clip1.clip_node_format
+    │   │           │   │   ├── clip1.lut_node
+    │   │           │   │   ├── clip1.resize
+    │   │           │   │   ├── clip1.resize_node
+    │   │           │   │   ├── clip2.clip_node
+    │   │           │   │   ├── clip2.clip_node_clip
+    │   │           │   │   ├── clip2.clip_node_format
+    │   │           │   │   ├── clip2.lut_node
+    │   │           │   │   ├── clip2.resize
+    │   │           │   │   ├── clip2.resize_node
+    │   │           │   │   ├── clip3.clip_node
+    │   │           │   │   ├── clip3.clip_node_clip
+    │   │           │   │   ├── clip3.clip_node_format
+    │   │           │   │   ├── clip3.lut_node
+    │   │           │   │   ├── clip3.resize
+    │   │           │   │   ├── clip3.resize_node
+    │   │           │   │   ├── clip4.clip_node
+    │   │           │   │   ├── clip4.clip_node_clip
+    │   │           │   │   ├── clip4.clip_node_format
+    │   │           │   │   ├── clip4.lut_node
+    │   │           │   │   ├── clip4.resize
+    │   │           │   │   ├── clip4.resize_node
+    │   │           │   │   ├── col1.col_node
+    │   │           │   │   ├── comp1.comp_node
+    │   │           │   │   ├── Dots97.matchbox_node
+    │   │           │   │   ├── Dots97.mx
+    │   │           │   │   ├── layer1.layer_node
+    │   │           │   │   ├── layer2.layer_node
+    │   │           │   │   ├── mask1.mask
+    │   │           │   │   ├── mask1.mask.0.comp
+    │   │           │   │   ├── mask1.mask.0.Front.source
+    │   │           │   │   ├── mask1.mask.0.Matte.source
+    │   │           │   │   ├── mask1.mask_node
+    │   │           │   │   ├── matteedge1.edge_node
+    │   │           │   │   ├── mux1.mux_node
+    │   │           │   │   ├── mux2.mux_node
+    │   │           │   │   ├── neg1.neg_node
+    │   │           │   │   ├── root.root_node
+    │   │           │   │   ├── transform2d1.2dtransform_node
+    │   │           │   │   ├── writefile2_alpha.lut
+    │   │           │   │   ├── writefile2_alpha.lut_node
+    │   │           │   │   ├── writefile2.export_node
+    │   │           │   │   ├── writefile2.lut
+    │   │           │   │   ├── writefile2.lut_node
+    │   │           │   │   ├── writefile2.resize
+    │   │           │   │   └── writefile2.resize_node
+    │   │           │   ├── LOGIK-PROJEKT-DESKTOP_comp_v0002_delta_pman.batch
+    │   │           │   ├── LOGIK-PROJEKT-DESKTOP_comp_v0003_delta_pman
+    │   │           │   │   ├── action1.action
+    │   │           │   │   ├── action1.action.0.comp
+    │   │           │   │   ├── action1.action.0.Front.source
+    │   │           │   │   ├── action1.action.0.Matte.source
+    │   │           │   │   ├── action1.action.1.comp
+    │   │           │   │   ├── action1.action.1.Front.source
+    │   │           │   │   ├── action1.action.1.Matte.source
+    │   │           │   │   ├── action1.action.2.comp
+    │   │           │   │   ├── action1.action.2.Front.source
+    │   │           │   │   ├── action1.action.2.Matte.source
+    │   │           │   │   ├── action1.action.fbx
+    │   │           │   │   ├── action1.action_node
+    │   │           │   │   ├── blur1.blur_node
+    │   │           │   │   ├── cc1.correct_node
+    │   │           │   │   ├── cc2.correct_node
+    │   │           │   │   ├── clip1.clip_node
+    │   │           │   │   ├── clip1.clip_node_clip
+    │   │           │   │   ├── clip1.clip_node_format
+    │   │           │   │   ├── clip1.lut_node
+    │   │           │   │   ├── clip1.resize
+    │   │           │   │   ├── clip1.resize_node
+    │   │           │   │   ├── clip2.clip_node
+    │   │           │   │   ├── clip2.clip_node_clip
+    │   │           │   │   ├── clip2.clip_node_format
+    │   │           │   │   ├── clip2.lut_node
+    │   │           │   │   ├── clip2.resize
+    │   │           │   │   ├── clip2.resize_node
+    │   │           │   │   ├── clip3.clip_node
+    │   │           │   │   ├── clip3.clip_node_clip
+    │   │           │   │   ├── clip3.clip_node_format
+    │   │           │   │   ├── clip3.lut_node
+    │   │           │   │   ├── clip3.resize
+    │   │           │   │   ├── clip3.resize_node
+    │   │           │   │   ├── clip4.clip_node
+    │   │           │   │   ├── clip4.clip_node_clip
+    │   │           │   │   ├── clip4.clip_node_format
+    │   │           │   │   ├── clip4.lut_node
+    │   │           │   │   ├── clip4.resize
+    │   │           │   │   ├── clip4.resize_node
+    │   │           │   │   ├── col1.col_node
+    │   │           │   │   ├── comp1.comp_node
+    │   │           │   │   ├── Dots97.matchbox_node
+    │   │           │   │   ├── Dots97.mx
+    │   │           │   │   ├── layer1.layer_node
+    │   │           │   │   ├── layer2.layer_node
+    │   │           │   │   ├── mask1.mask
+    │   │           │   │   ├── mask1.mask.0.comp
+    │   │           │   │   ├── mask1.mask.0.Front.source
+    │   │           │   │   ├── mask1.mask.0.Matte.source
+    │   │           │   │   ├── mask1.mask_node
+    │   │           │   │   ├── matteedge1.edge_node
+    │   │           │   │   ├── mux1.mux_node
+    │   │           │   │   ├── mux2.mux_node
+    │   │           │   │   ├── neg1.neg_node
+    │   │           │   │   ├── root.root_node
+    │   │           │   │   ├── transform2d1.2dtransform_node
+    │   │           │   │   ├── writefile2_alpha.lut
+    │   │           │   │   ├── writefile2_alpha.lut_node
+    │   │           │   │   ├── writefile2.export_node
+    │   │           │   │   ├── writefile2.lut
+    │   │           │   │   ├── writefile2.lut_node
+    │   │           │   │   ├── writefile2.resize
+    │   │           │   │   └── writefile2.resize_node
+    │   │           │   ├── LOGIK-PROJEKT-DESKTOP_comp_v0003_delta_pman.batch
+    │   │           │   ├── LOGIK-PROJEKT-DESKTOP_comp_v0004_delta_pman
+    │   │           │   │   ├── action1.action
+    │   │           │   │   ├── action1.action.0.comp
+    │   │           │   │   ├── action1.action.0.Front.source
+    │   │           │   │   ├── action1.action.0.Matte.source
+    │   │           │   │   ├── action1.action.1.comp
+    │   │           │   │   ├── action1.action.1.Front.source
+    │   │           │   │   ├── action1.action.1.Matte.source
+    │   │           │   │   ├── action1.action.2.comp
+    │   │           │   │   ├── action1.action.2.Front.source
+    │   │           │   │   ├── action1.action.2.Matte.source
+    │   │           │   │   ├── action1.action.fbx
+    │   │           │   │   ├── action1.action_node
+    │   │           │   │   ├── blur1.blur_node
+    │   │           │   │   ├── cc1.correct_node
+    │   │           │   │   ├── cc2.correct_node
+    │   │           │   │   ├── clip1.clip_node
+    │   │           │   │   ├── clip1.clip_node_clip
+    │   │           │   │   ├── clip1.clip_node_format
+    │   │           │   │   ├── clip1.lut_node
+    │   │           │   │   ├── clip1.resize
+    │   │           │   │   ├── clip1.resize_node
+    │   │           │   │   ├── clip2.clip_node
+    │   │           │   │   ├── clip2.clip_node_clip
+    │   │           │   │   ├── clip2.clip_node_format
+    │   │           │   │   ├── clip2.lut_node
+    │   │           │   │   ├── clip2.resize
+    │   │           │   │   ├── clip2.resize_node
+    │   │           │   │   ├── clip3.clip_node
+    │   │           │   │   ├── clip3.clip_node_clip
+    │   │           │   │   ├── clip3.clip_node_format
+    │   │           │   │   ├── clip3.lut_node
+    │   │           │   │   ├── clip3.resize
+    │   │           │   │   ├── clip3.resize_node
+    │   │           │   │   ├── clip4.clip_node
+    │   │           │   │   ├── clip4.clip_node_clip
+    │   │           │   │   ├── clip4.clip_node_format
+    │   │           │   │   ├── clip4.lut_node
+    │   │           │   │   ├── clip4.resize
+    │   │           │   │   ├── clip4.resize_node
+    │   │           │   │   ├── col1.col_node
+    │   │           │   │   ├── comp1.comp_node
+    │   │           │   │   ├── Dots97.matchbox_node
+    │   │           │   │   ├── Dots97.mx
+    │   │           │   │   ├── layer1.layer_node
+    │   │           │   │   ├── layer2.layer_node
+    │   │           │   │   ├── mask1.mask
+    │   │           │   │   ├── mask1.mask.0.comp
+    │   │           │   │   ├── mask1.mask.0.Front.source
+    │   │           │   │   ├── mask1.mask.0.Matte.source
+    │   │           │   │   ├── mask1.mask_node
+    │   │           │   │   ├── matteedge1.edge_node
+    │   │           │   │   ├── mux1.mux_node
+    │   │           │   │   ├── mux2.mux_node
+    │   │           │   │   ├── neg1.neg_node
+    │   │           │   │   ├── root.root_node
+    │   │           │   │   ├── transform2d1.2dtransform_node
+    │   │           │   │   ├── writefile2_alpha.lut
+    │   │           │   │   ├── writefile2_alpha.lut_node
+    │   │           │   │   ├── writefile2.export_node
+    │   │           │   │   ├── writefile2.lut
+    │   │           │   │   ├── writefile2.lut_node
+    │   │           │   │   ├── writefile2.resize
+    │   │           │   │   └── writefile2.resize_node
+    │   │           │   └── LOGIK-PROJEKT-DESKTOP_comp_v0004_delta_pman.batch
+    │   │           ├── media
+    │   │           │   └── renders
+    │   │           │       ├── LOGIK-PROJEKT-DESKTOP_comp_v0001
+    │   │           │       │   └── LOGIK-PROJEKT-DESKTOP_comp_v0001.00001001.exr
+    │   │           │       ├── LOGIK-PROJEKT-DESKTOP_comp_v0002
+    │   │           │       │   └── LOGIK-PROJEKT-DESKTOP_comp_v0002.00001001.exr
+    │   │           │       ├── LOGIK-PROJEKT-DESKTOP_comp_v0003
+    │   │           │       │   └── LOGIK-PROJEKT-DESKTOP_comp_v0003.00001001.png
+    │   │           │       └── LOGIK-PROJEKT-DESKTOP_comp_v0004
+    │   │           │           ├── LOGIK-PROJEKT-DESKTOP_comp_v0004.00001001.png
+    │   │           │           └── LOGIK-PROJEKT-DESKTOP_comp_v0004_crop.png
+    │   │           └── openclip
+    │   │               └── output_clips
+    │   │                   └── flame
+    │   │                       └── LOGIK-PROJEKT-DESKTOP_comp.clip
+    │   ├── icons
+    │   │   ├── create_icns_cross_platform.py
+    │   │   ├── create_icns.py
+    │   │   ├── logik_projekt_icon_01.png
+    │   │   ├── logik_projekt_icon_2026.png
+    │   │   ├── logik_projekt_icon.icns
+    │   │   └── logik_projekt_icon.iconset
+    │   │       ├── icon_128x128@2x.png
+    │   │       ├── icon_128x128.png
+    │   │       ├── icon_16x16@2x.png
+    │   │       ├── icon_16x16.png
+    │   │       ├── icon_256x256@2x.png
+    │   │       ├── icon_256x256.png
+    │   │       ├── icon_32x32@2x.png
+    │   │       ├── icon_32x32.png
+    │   │       ├── icon_512x512@2x.png
+    │   │       └── icon_512x512.png
+    │   └── logik-projekt-templates
+    │       ├── filesystem-templates
+    │       │   ├── custom-filesystem-templates
+    │       │   │   └── 123-example
+    │       │   │       ├── animals
+    │       │   │       │   ├── cat
+    │       │   │       │   │   └── placeholder
+    │       │   │       │   ├── dog
+    │       │   │       │   │   └── placeholder
+    │       │   │       │   └── elephant
+    │       │   │       │       └── placeholder
+    │       │   │       ├── bicycles
+    │       │   │       │   ├── mountain
+    │       │   │       │   │   └── placeholder
+    │       │   │       │   └── street
+    │       │   │       │       └── placeholder
+    │       │   │       └── candy
+    │       │   │           ├── chocolate
+    │       │   │           │   └── placeholder
+    │       │   │           └── gum
+    │       │   │               └── placeholder
+    │       │   └── default-filesystem-templates
+    │       │       └── logik-projekt
+    │       │           ├── cfg
+    │       │           │   └── workstation
+    │       │           │       └── juliet
+    │       │           │           ├── 000_abc_def-flame_launcher-juliet.sh
+    │       │           │           ├── projekt_creation_log-2025_05_05-000_abc_def-juliet
+    │       │           │           └── projekt_parameters-2025_05_05-000_abc_def-juliet.xml
+    │       │           ├── directory_structure.json
+    │       │           └── software
+    │       │               ├── bin
+    │       │               │   ├── flame
+    │       │               │   ├── nuke
+    │       │               │   ├── nukex
+    │       │               │   └── studio
+    │       │               ├── etc
+    │       │               │   ├── flame_version
+    │       │               │   └── nuke_version
+    │       │               ├── nuke
+    │       │               │   ├── gizmos
+    │       │               │   │   └── AlphaOps
+    │       │               │   │       ├── AA_Curve.nk
+    │       │               │   │       ├── AA_Grade.nk
+    │       │               │   │       ├── AA_Keymix.nk
+    │       │               │   │       ├── AA_Mask.nk
+    │       │               │   │       ├── AA_Screen.nk
+    │       │               │   │       └── AA_Stencil.nk
+    │       │               │   ├── init.py
+    │       │               │   ├── menu.py
+    │       │               │   ├── pyScripts
+    │       │               │   │   ├── colorspace
+    │       │               │   │   │   ├── change_colorspace_to_raw.py
+    │       │               │   │   │   ├── change_colorspace_to_scene_linear.py
+    │       │               │   │   │   ├── change_colorspace_to_texture_paint.py
+    │       │               │   │   │   └── __init__.py
+    │       │               │   │   ├── dev
+    │       │               │   │   │   ├── __init__.py
+    │       │               │   │   │   ├── print_environment_variables.py
+    │       │               │   │   │   └── print_nuke_environment.py
+    │       │               │   │   ├── gpu
+    │       │               │   │   │   ├── disableGPUAcceleration.py
+    │       │               │   │   │   ├── enableGPUAcceleration.py
+    │       │               │   │   │   └── __init__.py
+    │       │               │   │   ├── __init__.py
+    │       │               │   │   └── projekt
+    │       │               │   │       ├── hello_from_pyside2.py
+    │       │               │   │       ├── __init__.py
+    │       │               │   │       └── unpack_direnv_diff.py
+    │       │               │   ├── repo
+    │       │               │   │   ├── download_tools.py
+    │       │               │   │   └── projekt_core_v0.0.1
+    │       │               │   │       ├── __init__.py
+    │       │               │   │       └── projekt_core
+    │       │               │   │           ├── defaults.py
+    │       │               │   │           ├── favoritesRedux.py
+    │       │               │   │           ├── gizmoUtilities.py
+    │       │               │   │           ├── __init__.py
+    │       │               │   │           ├── settings.py
+    │       │               │   │           ├── setupScripts.py
+    │       │               │   │           ├── toolsetUtilities.py
+    │       │               │   │           ├── utilities.py
+    │       │               │   │           ├── version_up.py
+    │       │               │   │           └── vfxtools.py
+    │       │               │   └── toolsets
+    │       │               │       └── color
+    │       │               │           └── LogConvert_ACESLog.nk
+    │       │               └── ocio
+    │       │                   ├── download_aces_1_2_config.py
+    │       │                   └── download_aces_1_3_configs.py
+    │       └── rsync-backup-templates
+    │           ├── backup_crontab_template.sh
+    │           ├── backup_template
+    │           └── exclusion_list.txt
+    └── ocio
 
-496 directories, 1282 files
+239 directories, 1545 files

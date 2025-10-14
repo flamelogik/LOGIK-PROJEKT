@@ -9,7 +9,6 @@ scripts
 │   │   ├── create-ui.sh
 │   │   ├── create-venv-symlinks.sh
 │   │   └── create-virtual-environment.sh
-│   ├── modify
 │   ├── obtain
 │   │   ├── directory-structure-analysis.sh
 │   │   ├── directory-structure-to-bookmarks.sh
@@ -26,8 +25,6 @@ scripts
 │       │       └── insights
 │       │           ├── github_issue_workflow.md
 │       │           └── task_management_strategy.md
-│       ├── gh_tasks
-│       │   └── users
 │       ├── gh_utils
 │       │   ├── delete_gh_delete_repo.sh
 │       │   ├── get_gh_list_issues.sh
@@ -85,4 +82,4 @@ scripts
 │   └── create_ssh_keys_linux.py
 └── validate-downloads.sh
 
-15 directories, 70 files
+12 directories, 70 files
