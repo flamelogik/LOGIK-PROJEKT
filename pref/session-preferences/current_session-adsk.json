@@ -1,8 +1,8 @@
 {
-    "Name": "modon_anim_2026_1_rome",
-    "ProjectDir": "/Volumes/flame_projekts/modon_anim_2026_1_rome",
-    "SetupDir": "/Volumes/flame_projekts/modon_anim_2026_1_rome/setups",
-    "MediaDir": "/Volumes/flame_projekts/modon_anim_2026_1_rome/media",
+    "Name": "baseer_film_2026_1_rome",
+    "ProjectDir": "/Volumes/flame_projekts/baseer_film_2026_1_rome",
+    "SetupDir": "/Volumes/flame_projekts/baseer_film_2026_1_rome/setups",
+    "MediaDir": "/Volumes/flame_projekts/baseer_film_2026_1_rome/media",
     "Resolution": {
         "FrameWidth": 3840,
         "FrameHeight": 2160,
@@ -11,8 +11,8 @@
         "FieldDominance": "PROGRESSIVE"
     },
     "StartFrame": 1001,
-    "ConfigTemplate": "3840x2160@25000p.cfg",
-    "FrameRate": "25 fps",
+    "ConfigTemplate": "3840x2160@24000p.cfg",
+    "FrameRate": "24 fps",
     "IntermediatesProfile": 2,
     "FloatIntermediates": 1185912,
     "ColourPolicyName": "ACES 2.0"

@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Project>
-  <Name>modon_anim_2026_1_rome</Name>
-  <Nickname>modon_anim</Nickname>
-  <ShotgunProjectName>modon_anim</ShotgunProjectName>
+  <Name>baseer_film_2026_1_rome</Name>
+  <Nickname>baseer_film</Nickname>
+  <ShotgunProjectName>baseer_film</ShotgunProjectName>
   <Description />
-  <CatalogDir>/Volumes/flame_projekts/modon_anim_2026_1_rome/catalog</CatalogDir>
-  <ProjectDir>/Volumes/flame_projekts/modon_anim_2026_1_rome</ProjectDir>
-  <SetupDir>/Volumes/flame_projekts/modon_anim_2026_1_rome/setups</SetupDir>
-  <MediaDir>/Volumes/flame_projekts/modon_anim_2026_1_rome/media</MediaDir>
+  <CatalogDir>/Volumes/flame_projekts/baseer_film_2026_1_rome/catalog</CatalogDir>
+  <ProjectDir>/Volumes/flame_projekts/baseer_film_2026_1_rome</ProjectDir>
+  <SetupDir>/Volumes/flame_projekts/baseer_film_2026_1_rome/setups</SetupDir>
+  <MediaDir>/Volumes/flame_projekts/baseer_film_2026_1_rome/media</MediaDir>
   <Version>2026.1</Version>
   <FrameWidth>3840</FrameWidth>
   <FrameHeight>2160</FrameHeight>
@@ -17,6 +17,6 @@
   <ColourPolicyName>ACES 2.0</ColourPolicyName>
   <OCIOConfigFile>/opt/Autodesk/colour_mgmt/configs/flame_configs/2026.0/aces2.0_config/config.ocio</OCIOConfigFile>
   <IntermediatesProfile>2:1185912</IntermediatesProfile>
-  <FrameRate>25 fps</FrameRate>
+  <FrameRate>24 fps</FrameRate>
   <DefaultStartFrame>1001</DefaultStartFrame>
 </Project>

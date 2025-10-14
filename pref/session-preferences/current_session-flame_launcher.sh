@@ -5,12 +5,12 @@
 # ========================================================================== #
 
 # Launcher Script Name:  %%LAUNCHER_SCRIPT_NAME%%
-# Launcher Script for:   modon_anim_2026_1_rome
-# Script Creation Date:  2025-10-01 12:00:02
+# Launcher Script for:   baseer_film_2026_1_rome
+# Script Creation Date:  2025-10-13 13:37:09
 
-the_projekt_name="modon_anim"
+the_projekt_name="baseer_film"
 
-the_projekt_flame_name="modon_anim_2026_1_rome"
+the_projekt_flame_name="baseer_film_2026_1_rome"
 
 flame_workstation_name="rome"
 
@@ -19,7 +19,7 @@ flame_workstation_name="rome"
 # ========================================================================== #
 
 # Define the the_flame_first_run_log
-the_flame_first_run_log_dir="/PROJEKTS/modon_anim/cfg/log"
+the_flame_first_run_log_dir="/PROJEKTS/baseer_film/cfg/log"
 mkdir -p "$the_flame_first_run_log_dir"
 the_flame_first_run_log_name="current_session-flame_launcher.log"
 the_flame_first_run_log="$the_flame_first_run_log_dir/$the_flame_first_run_log_name"
@@ -35,7 +35,7 @@ execute_command() {
 
 # Construct the flame launch command.
 launch_opt_1="/opt/Autodesk/flame_2026.1/bin/startFlame"
-launch_opt_2="-J modon_anim_2026_1_rome"
+launch_opt_2="-J baseer_film_2026_1_rome"
 launch_opt_3="--start-workspace=\"rome\" --create-workspace"
 # logik_projekt_python_dir="/opt/Autodesk/shared/python/logik_projekt"
 # projekt_tool_dir="projekt_tools/logik_projekt_layout/scripts"
@@ -43,7 +43,7 @@ launch_opt_3="--start-workspace=\"rome\" --create-workspace"
 # launch_script="create_projekt_layout.py"
 # launch_opt_4="--execute-python-script=$projekt_tool_path/$launch_script"
 
-flame_startup_script_dir="/Volumes/flame_projekts/modon_anim_2026_1_rome/setups"
+flame_startup_script_dir="/Volumes/flame_projekts/baseer_film_2026_1_rome/setups"
 launch_script="scripts/startup/flame_startup_script.py"
 launch_opt_4="--execute-python-script=$flame_startup_script_dir/$launch_script"
 launch_opt_5="--debug"
