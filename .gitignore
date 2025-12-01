@@ -158,3 +158,4 @@ cfg/site-cfg/flame-cfg/flame-presets/colour_mgmt
 
 # Temporary session files
 scratch
+._.DS_Store
