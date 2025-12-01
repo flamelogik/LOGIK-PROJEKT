@@ -1,0 +1,12 @@
+{
+  "name": "LinearSGamut3-Venice_to_ACES-AP0",
+  "output_clf": "LinearSGamut3-Venice_to_ACES-AP0.clf",
+  "input_space": "Linear Venice S-Gamut3",
+  "target_space": "ACES2065-1",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Sony/LinearSGamut3-Venice_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

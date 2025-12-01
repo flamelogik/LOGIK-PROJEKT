@@ -1,0 +1,12 @@
+{
+  "name": "AppleLog_to_ACES-AP1",
+  "output_clf": "AppleLog_to_ACES-AP1.clf",
+  "input_space": "Apple Log",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Apple/AppleLog_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

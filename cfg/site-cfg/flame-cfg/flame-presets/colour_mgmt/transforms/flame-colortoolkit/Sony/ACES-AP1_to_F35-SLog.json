@@ -1,0 +1,15 @@
+{
+  "output_file": "ACES-AP1_to_F35-SLog.ctf",
+  "source_json": "F35-SLog_to_ACES-AP1.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "ACEScg_to_ACES.ctf",
+      "direction": "forward"
+    },
+    {
+      "file": "F35-SLog_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

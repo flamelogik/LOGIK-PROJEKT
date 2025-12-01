@@ -1,0 +1,98 @@
+# Flame 2026.1 ACES 2.0 config. : OCIO Color Spaces
+
+```bash
++ --------------------------------------------------------------------------- +
+  OCIO Configuration Details
++ --------------------------------------------------------------------------- +
+  Colour_Mgmt Dir:         /opt/Autodesk/colour_mgmt
+  Config Filepath:         configs/flame_configs/2026.0/aces2.0_config/
+  Config Filename:         config.ocio
+
++ --------------------------------------------------------------------------- +
+  OCIO Profile Version:    2.4
+  Config Name:             ACES 2.0
+  Description:             Flame 2026.1 ACES 2.0 config.
+
++ --------------------------------------------------------------------------- +  Available Color Spaces
++ --------------------------------------------------------------------------- +
+- Rec.1886 Rec.709 - Display
+- sRGB - Display
+- Gamma 2.2 Rec.709 - Display
+- AdobeRGB - Display
+- Display P3 - Display
+- Display P3 HDR - Display
+- DCDM G2.6-XYZ-D65 - Display
+- P3-D65 - Display
+- CIE XYZ-D65 - Display-referred
+- ProPhotoRGB
+- ST2084-P3-D65 - Display
+- ST2084-Rec.709 - Display
+- Rec.2100-PQ - Display
+- Rec.2100-HLG - Display
+- DCDM ST2084-XYZ-D65 - Display
+- Rec.601 - Display
+- Rec.601 (PAL) - Display
+- Rec.2020 - Display
+- 3D-Motion
+- AO
+- Data
+- Matte
+- Motion
+- Normals
+- ObjectID
+- Position
+- Roughness
+- Shadows
+- UV
+- Z-Depth
+- Unknown
+- ACES2065-1
+- ACEScct
+- ACEScg
+- ADX10
+- ADX16
+- ACEScc
+- Apple Log
+- ARRI LogC3 (EI800)
+- Linear ARRI Wide Gamut 3
+- ARRI LogC4
+- Linear ARRI Wide Gamut 4
+- BMDFilm WideGamut Gen5
+- Linear BMD WideGamut Gen5
+- DaVinci Intermediate WideGamut
+- Linear DaVinci WideGamut
+- CanonLog2 CinemaGamut D55
+- CanonLog3 CinemaGamut D55
+- Linear CinemaGamut D55
+- D-Log D-Gamut
+- Linear D-Gamut
+- Camera Rec.2100-HLG
+- Camera Rec.709
+- V-Log V-Gamut
+- Linear V-Gamut
+- Log3G10 REDWideGamutRGB
+- Linear REDWideGamutRGB
+- S-Log3 S-Gamut3
+- Linear S-Gamut3
+- S-Log3 S-Gamut3.Cine
+- Linear S-Gamut3.Cine
+- S-Log3 Venice S-Gamut3
+- Linear Venice S-Gamut3
+- S-Log3 Venice S-Gamut3.Cine
+- Linear Venice S-Gamut3.Cine
+- CIE XYZ-D65 - Scene-referred
+- Linear AdobeRGB
+- Linear P3-D65
+- Linear Rec.709 (sRGB)
+- Linear Rec.2020
+- sRGB Encoded Rec.709 (sRGB)
+- Gamma 1.8 Encoded Rec.709
+- Gamma 2.2 Encoded Rec.709
+- Gamma 2.4 Encoded Rec.709
+- sRGB Encoded P3-D65
+- Gamma 2.2 Encoded AdobeRGB
+- sRGB Encoded AP1
+- Gamma 2.2 Encoded AP1
+- Raw
+
++ --------------------------------------------------------------------------- +```

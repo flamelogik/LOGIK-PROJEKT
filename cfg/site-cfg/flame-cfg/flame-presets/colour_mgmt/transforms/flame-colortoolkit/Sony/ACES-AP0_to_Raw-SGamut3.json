@@ -1,0 +1,11 @@
+{
+  "output_file": "ACES-AP0_to_Raw-SGamut3.ctf",
+  "source_json": "Raw-SGamut3_to_ACES-AP0.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "Raw-SGamut3_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

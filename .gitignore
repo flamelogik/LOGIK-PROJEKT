@@ -154,7 +154,6 @@ Thumbs.db
 *.log
 
 # Project-specific
-cfg/site-cfg/flame-cfg/flame-presets/colour_mgmt
 
 # Temporary session files
 scratch

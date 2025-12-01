@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProcessList version="2" id="8e2e1cc0ed2f8d5b871ef38fe1bc19a1">
+    <Log inBitDepth="32f" outBitDepth="16f" style="logToLin">
+        <LogParams base="10" linSideSlope="0.989202248376723" linSideOffset="0.010797751623277" logSideSlope="0.293255131964809" logSideOffset="0.669599217986315" />
+    </Log>
+    <Matrix inBitDepth="16f" outBitDepth="16f">
+        <Array dim="3 3">
+      0.48099699616       0.40228900313        0.1167140007
+     -0.00493799988       1.00014996529       0.00478099985
+     -0.10525699705       0.02531999908        1.0799100399
+        </Array>
+    </Matrix>
+</ProcessList>

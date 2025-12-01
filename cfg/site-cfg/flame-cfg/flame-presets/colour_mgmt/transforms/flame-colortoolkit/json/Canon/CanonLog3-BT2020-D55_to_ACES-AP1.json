@@ -1,0 +1,12 @@
+{
+  "name": "CanonLog3-BT2020-D55_to_ACES-AP1",
+  "output_clf": "CanonLog3-BT2020-D55_to_ACES-AP1.clf",
+  "input_space": "CanonLog3 CinemaGamut D55",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/Canon/CanonLog3-BT2020-D55_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

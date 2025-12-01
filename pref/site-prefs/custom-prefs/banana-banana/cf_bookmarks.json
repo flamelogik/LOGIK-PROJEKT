@@ -1,0 +1,82 @@
+{
+    "DlBookmark": {
+        "Version": 1,
+        "Sections": [
+            {
+                "Section": "Project",
+                "Bookmarks": [
+                    {
+                        "Bookmark": "flame setups",
+                        "Path": "<project home>",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "PROJEKTS",
+                        "Path": "/PROJEKTS/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Bookmark": "projekt home",
+                        "Path": "/PROJEKTS/<project nickname>/",
+                        "Visibility": "Global"
+                    },
+                    {
+                        "Folder": "projekt directories",
+                        "Bookmarks": [
+                            {
+                                "Folder": "animals",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "cat",
+                                        "Path": "/PROJEKTS/<project nickname>/animals/cat",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "dog",
+                                        "Path": "/PROJEKTS/<project nickname>/animals/dog",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "elephant",
+                                        "Path": "/PROJEKTS/<project nickname>/animals/elephant",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "bicycles",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "mountain",
+                                        "Path": "/PROJEKTS/<project nickname>/bicycles/mountain",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "street",
+                                        "Path": "/PROJEKTS/<project nickname>/bicycles/street",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            },
+                            {
+                                "Folder": "candy",
+                                "Bookmarks": [
+                                    {
+                                        "Bookmark": "chocolate",
+                                        "Path": "/PROJEKTS/<project nickname>/candy/chocolate",
+                                        "Visibility": "Global"
+                                    },
+                                    {
+                                        "Bookmark": "gum",
+                                        "Path": "/PROJEKTS/<project nickname>/candy/gum",
+                                        "Visibility": "Global"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

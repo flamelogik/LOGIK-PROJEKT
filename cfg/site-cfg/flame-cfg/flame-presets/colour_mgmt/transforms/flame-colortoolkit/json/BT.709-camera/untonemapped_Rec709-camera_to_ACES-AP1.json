@@ -1,0 +1,12 @@
+{
+  "name": "untonemapped_Rec709-camera_to_ACES-AP1",
+  "output_clf": "untonemapped_Rec709-camera_to_ACES-AP1.clf",
+  "input_space": "Camera Rec.709",
+  "target_space": "ACEScg",
+  "inputs": [
+    {
+      "file": "/opt/Autodesk/colour_mgmt/configs/legacy_configs/syncolor_ctfs/camera/BT.709-camera/untonemapped_Rec709-camera_to_ACES.ctf",
+      "inverse": false
+    }
+  ]
+}

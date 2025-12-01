@@ -1,0 +1,11 @@
+{
+  "output_file": "ACES-AP0_to_Alexa-v3-LogC-EI800-Film_no-cam-black.ctf",
+  "source_json": "Alexa-v3-LogC-EI800-Film_no-cam-black_to_ACES-AP0.json",
+  "transform_direction": "inverse",
+  "source_transforms": [
+    {
+      "file": "Alexa-v3-LogC-EI800-Film_no-cam-black_to_ACES.ctf",
+      "direction": "inverse"
+    }
+  ]
+}

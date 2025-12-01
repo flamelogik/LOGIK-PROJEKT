@@ -1,0 +1,15 @@
+#!/bin/bash
+# Get the project root directory from the script's location within the app bundle
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)
+
+# Change to the project root directory
+cd "$SCRIPT_DIR" || exit
+
+# Set PYTHONPATH to the project root
+export PYTHONPATH="$SCRIPT_DIR"
+
+# Workaround for performance issues on macOS 15
+export QT_QUICK_BACKEND=software
+
+# Run the python application as a module
+"/opt/Autodesk/python/2026.1/bin/python" -m src.app

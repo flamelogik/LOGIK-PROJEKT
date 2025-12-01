@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProcessList version="1.3" id="731857eaab387786a67a974220643a26">
+    <Matrix inBitDepth="16f" outBitDepth="16f">
+        <Array dim="3 3 3">
+      0.69545221329       0.14067870378       0.16386906803
+       0.0447945632       0.85967111588        0.0955343172
+     -0.00552588236       0.00402521016       1.00150072575
+        </Array>
+    </Matrix>
+    <Matrix inBitDepth="16f" outBitDepth="16f">
+        <Description>sRGB to ACES matrix</Description>
+        <Array dim="3 3 3">
+   2.52168618674764    -1.1341309882429  -0.387555198505134
+ -0.276479914230872    1.37271908766872 -0.0962391734379477
+-0.0153780649656188  -0.152975335867087    1.16835340083387
+        </Array>
+    </Matrix>
+    <Gamma inBitDepth="16f" outBitDepth="32f" style="monCurveRev">
+        <GammaParams gamma="2.22222222222222" offset="0.099" />
+    </Gamma>
+</ProcessList>
