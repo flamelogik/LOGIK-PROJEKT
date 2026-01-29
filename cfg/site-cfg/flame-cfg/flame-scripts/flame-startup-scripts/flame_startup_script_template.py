@@ -20,8 +20,8 @@
 # -------------------------------------------------------------------------- #
 # Modified:     2025-01-29
 # Version:      2026.2.1
-#               Updated version to 2026.2.0.
-#               Verified compatibility with Autodesk Flame 2026.2.0.
+#               Updated version to 2026.2.1.
+#               Verified compatibility with Autodesk Flame 2026.2.1.
 #               No code changes required.
 # -------------------------------------------------------------------------- #
 
@@ -1000,7 +1000,7 @@ if __name__ == '__main__':
 # -------------------------------------------------------------------------- #
 # Modified:     2025-01-29
 # Version:      2026.2.1
-#               Updated version to 2026.2.0.
-#               Verified compatibility with Autodesk Flame 2026.2.0.
+#               Updated version to 2026.2.1.
+#               Verified compatibility with Autodesk Flame 2026.2.1.
 #               No code changes required.
 # -------------------------------------------------------------------------- #

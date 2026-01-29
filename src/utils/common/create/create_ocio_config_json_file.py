@@ -13,7 +13,7 @@
 # License:       GNU General Public License v3.0 (GPL-3.0) .
 #                https://www.gnu.org/licenses/gpl-3.0.en.html
 
-# Version:       2026.2.0
+# Version:       2026.2.1
 # Status:        Production
 # Type:          Application
 # Created:       2025-07-01
@@ -292,8 +292,8 @@ except Exception as e:
 # ------------------------------------------------------------------------- #
 # Version:      2026.2.1
 # Modified:     2025-01-29
-# Changelist:   Updated version to 2026.2.0.
-#               Verified compatibility with Autodesk Flame 2026.2.0.
+# Changelist:   Updated version to 2026.2.1.
+#               Verified compatibility with Autodesk Flame 2026.2.1.
 #               No code changes required.
 # -------------------------------------------------------------------------- #
 #

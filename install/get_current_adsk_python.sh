@@ -239,7 +239,7 @@ fi
 # comments:         Fixed the issue where the pref file does not get updated.
 # -------------------------------------------------------------------------- #
 
-# version:          2026.2.0
+# version:          2026.2.1
 # created:          2025-10-30
-# comments:         Updated version to 2026.2.0. Verified compatibility with Autodesk Flame 2026.2.0. No code changes required.
+# comments:         Updated version to 2026.2.1. Verified compatibility with Autodesk Flame 2026.2.1. No code changes required.
 # -------------------------------------------------------------------------- #

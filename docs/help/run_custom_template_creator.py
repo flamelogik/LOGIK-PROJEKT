@@ -138,7 +138,7 @@ if __name__ == "__main__":
 # Version:      2026.2.1
 # Modification: 2025-10-30
 # Changelist:
-#   - Updated version to 2026.2.0.
-#   - Verified compatibility with Autodesk Flame 2026.2.0.
+#   - Updated version to 2026.2.1.
+#   - Verified compatibility with Autodesk Flame 2026.2.1.
 #   - No code changes required.
 # -------------------------------------------------------------------------- #
