@@ -1,0 +1,59 @@
+# LOGIK-PROJEKT Nuke Source Script
+# Task Name: ${SHOT_SOURCE_DIR}_${APP_NAME}_${TASK_TYPE}
+Root {
+ inputs 0
+ name "${SHOT_SOURCE_DIR}_${APP_NAME}_${TASK_TYPE}_${VERSION_NAME}.nk"
+ frame "${SHOT_SOURCE_VERSION_START_FRAME}"
+ first_frame "${SHOT_SOURCE_VERSION_START_FRAME}"
+ last_frame "${SHOT_SOURCE_VERSION_END_FRAME}"
+ lock_range true
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ render_mode top-down
+ colorManagement OCIO
+ OCIO_config aces_1.2
+ defaultViewerLUT "OCIO LUTs"
+ workingSpaceLUT "ACES - ACEScg"
+ monitorLut "Rec.709 (ACES)"
+ monitorOutLUT "Rec.709 (ACES)"
+ int8Lut matte_paint
+ int16Lut "ACES - ACEScct"
+ logLut "ACES - ACEScct"
+ floatLut "ACES - ACEScg"
+}
+Read {
+ inputs 0
+ file_type exr
+ file "${SHOT_SOURCE_VERSION_SEQUENCE_DIR}/${SHOT_SOURCE_DIR}_${VERSION_NAME}.########.exr"
+ first ${SHOT_SOURCE_VERSION_START_FRAME}
+ last ${SHOT_SOURCE_VERSION_END_FRAME}
+ origfirst ${SHOT_SOURCE_VERSION_START_FRAME}
+ origlast ${SHOT_SOURCE_VERSION_END_FRAME}
+ origset true
+ name Read1
+ label "\n<center><b>${SHOT_SOURCE_DIR}\n\n<center><b>Frame range :</b></font> <font color = green>[value first] - [value last] </font></center>"
+ xpos 0
+ ypos 0
+}
+set Ndbbb980 [stack 0]
+Write {
+ file "${SHOT_SOURCES_DIR}/${SHOT_SOURCE_DIR}_${APP_NAME}_${TASK_TYPE}_${VERSION_NAME}/${SHOT_SOURCE_DIR}_${APP_NAME}_${TASK_TYPE}_${VERSION_NAME}.%08d.exr"
+ file_type exr
+ write_ACES_compliant_EXR false
+ metadata "all metadata"
+ first_part rgba
+ create_directories true
+ first "${SHOT_SOURCE_VERSION_START_FRAME}"
+ last "${SHOT_SOURCE_VERSION_END_FRAME}"
+ use_limit true
+ version 0
+ ocioColorspace "ACES - ACEScg"
+ display ACES
+ view sRGB
+ name Write_EXR
+ label "<b>${SHOT_SOURCE_DIR}_${APP_NAME}_${TASK_TYPE}"
+ xpos 0
+ ypos 192
+ postage_stamp true
+}

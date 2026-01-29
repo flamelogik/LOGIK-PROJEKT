@@ -14,11 +14,11 @@
 # License:      GNU General Public License v3.0 (GPL-3.0).
 #               https://www.gnu.org/licenses/gpl-3.0.en.html
 
-# Version:      2026.2.0
+# Version:      2026.2.1
 # Status:       Development
 # Type:         Utility
 # Created:      2024-01-19
-# Modified:     2025-10-30
+# Modified:     2025-01-29
 
 # Changelog:    Changelog at bottom of script.
 # -------------------------------------------------------------------------- #

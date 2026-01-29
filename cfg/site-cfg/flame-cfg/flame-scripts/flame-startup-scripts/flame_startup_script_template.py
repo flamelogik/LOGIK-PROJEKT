@@ -10,16 +10,16 @@
 # License:      GNU General Public License v3.0 (GPL-3.0).
 #               https://www.gnu.org/licenses/gpl-3.0.en.html
 
-# Version:      2026.2.0
+# Version:      2026.2.1
 # Status:       Development
 # Type:         Application
 # Created:      2025-07-01
-# Modified:     2025-10-30
+# Modified:     2025-01-29
 
 # Changelog:
 # -------------------------------------------------------------------------- #
-# Modified:     2025-10-30
-# Version:      2026.2.0
+# Modified:     2025-01-29
+# Version:      2026.2.1
 #               Updated version to 2026.2.0.
 #               Verified compatibility with Autodesk Flame 2026.2.0.
 #               No code changes required.
@@ -998,8 +998,8 @@ if __name__ == '__main__':
 
 # Changelog:
 # -------------------------------------------------------------------------- #
-# Modified:     2025-10-30
-# Version:      2026.2.0
+# Modified:     2025-01-29
+# Version:      2026.2.1
 #               Updated version to 2026.2.0.
 #               Verified compatibility with Autodesk Flame 2026.2.0.
 #               No code changes required.

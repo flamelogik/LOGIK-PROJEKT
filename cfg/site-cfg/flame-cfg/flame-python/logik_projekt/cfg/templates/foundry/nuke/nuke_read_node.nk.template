@@ -1,0 +1,13 @@
+
+Read {
+ file "@@SHOT_SOURCE_VERSION_SEQUENCE_DIR@@"
+ first @@SHOT_SOURCE_VERSION_START_FRAME@@
+ last @@SHOT_SOURCE_VERSION_END_FRAME@@
+ origfirst @@SHOT_SOURCE_VERSION_START_FRAME@@
+ origlast @@SHOT_SOURCE_VERSION_END_FRAME@@
+ colorspace "ACES - ACEScg"
+ name "@@SHOT_SOURCE_DIR@@_@@TASK_TYPE@@_@@VERSION_NAME@@"
+ xpos 0
+ ypos -120
+ postage_stamp true
+}
