@@ -202,7 +202,7 @@ The LOGIK-PROJEKT application is a GUI that streamlines the decision-making proc
 
     ```bash
     # Create a test directory for LOGIK-PROJEKTS:
-    sudo mkdir -p -m 777 /home/shared/PROJEKTS
+    sudo mkdir -p -m 777 /Users/Shared/PROJEKTS
     ```
 
 -------------------------------------------------------------------------------
@@ -311,19 +311,19 @@ The LOGIK-PROJEKT application is a GUI that streamlines the decision-making proc
 - **`Configure Flame Preferences`**
 
     ```bash
-    User Tokens tab
+    User Tokens tab (in Flame 2027.x this is in the USER tab of Preferences)
         ├── set User Name
         └── set User Nickname
 
-    Timeline tab
+    Timeline tab (in Flame 2027.x this is in the USER tab of Preferences)
         ├── set Default Shot Name to:
         └── <name>_<background segment###>0
 
-    Batch/BFX Tab
+    Batch/BFX Tab (in Flame 2027.x this is in the SYSTEM tab of Preferences)
         ├── set Default batch iteration name to
         └── <batch name>_v<iteration####>_<workstation>_<user nickname>
 
-    Media Panel Tab
+    Media Panel Tab (in Flame 2027.x this is in the SYSTEM tab of Preferences)
         ├── set Batch shelf to 1
         ├── set Reel Group to 2
         ├── set Show Batch iterations (first column)
